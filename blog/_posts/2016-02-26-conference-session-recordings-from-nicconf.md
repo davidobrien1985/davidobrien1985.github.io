@@ -1,6 +1,6 @@
 ---
 id: 3297
-title: Conference session recordings from NicConf
+title: Conference session recordings from NicConf 2016
 date: 2016-02-26T22:30:30+00:00
 author: "David O'Brien"
 layout: post
