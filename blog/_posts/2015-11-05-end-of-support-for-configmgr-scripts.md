@@ -29,16 +29,18 @@ This comes down to a couple of reasons:
   * no test environment anymore
   * really, like really not my focus anymore
 
-I am going to leave the code here on my blog of course, but it&#8217;s also already on Github: https://github.com/davidobrien1985/ConfigMgr
+I am going to leave the code here on my blog of course, but it's also already on Github: https://github.com/davidobrien1985/ConfigMgr
 
 Check here for the ConfigMgr 2012 R2 documentation script: https://github.com/davidobrien1985/ConfigMgr/blob/master/DocumentCM12R2v2.ps1
 
 Go check it out. Fork it, make it better (some really need it!), get it out there and contribute back to the community.
 
-I&#8217;m happy to respond to issues on Github or maybe fix some really obvious problems/bugs with my code.
+I'm happy to respond to issues on Github or maybe fix some really obvious problems/bugs with my code.
 
 You will see more of my content on other (more interesting?!) topics here of course, but also on www.powershellmagazine.com for example. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Community,ConfigMgr,github,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2015/11/end-of-support-for-configmgr-scripts/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

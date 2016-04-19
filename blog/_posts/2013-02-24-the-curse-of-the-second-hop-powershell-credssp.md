@@ -25,7 +25,7 @@ tags:
   - Powershell
   - SCCM
 ---
-I recently started migrating my PowerShell scripts for ConfigMgr to Orchestrator (read here: <a href="http://www.david-obrien.net/?p=744" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=744', 'http://www.david-obrien.net/?p=744']);" target="_blank">http://www.david-obrien.net/?p=744</a>) and came across this issue I didn’t quite understand at the beginning.
+I recently started migrating my PowerShell scripts for ConfigMgr to Orchestrator (read here: [http://www.david-obrien.net/?p=744](http://www.david-obrien.net/?p=744)) and came across this issue I didn’t quite understand at the beginning.
 
 # Credential Security Support Provider
 
@@ -35,9 +35,9 @@ This provider is used to delegate your credentials to remote servers, which is w
 
 More information on this provider is available here:
 
-  * <a href="http://support.microsoft.com/kb/951608" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://support.microsoft.com/kb/951608', 'Description of the Credential Security Support Provider (CredSSP) in Windows XP Service Pack 3']);" target="_blank">Description of the Credential Security Support Provider (CredSSP) in Windows XP Service Pack 3</a> (Technet)
-  * <a href="http://en.wikipedia.org/wiki/Security_Support_Provider_Interface" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://en.wikipedia.org/wiki/Security_Support_Provider_Interface', 'Security Support Provider Interface']);" target="_blank">Security Support Provider Interface</a> (Wikipedia)
-  * <a href="http://blogs.technet.com/b/heyscriptingguy/archive/2012/11/14/enable-powershell-quot-second-hop-quot-functionality-with-credssp.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.technet.com/b/heyscriptingguy/archive/2012/11/14/enable-powershell-quot-second-hop-quot-functionality-with-credssp.aspx', 'Enable PowerShell &#8220;Second-Hop&#8221; Functionality with CredSSP']);" target="_blank">Enable PowerShell &#8220;Second-Hop&#8221; Functionality with CredSSP</a> (Scripting Guy’s blog!)
+  * [Description of the Credential Security Support Provider (CredSSP) in Windows XP Service Pack 3](http://support.microsoft.com/kb/951608) (Technet)
+  * [Security Support Provider Interface](http://en.wikipedia.org/wiki/Security_Support_Provider_Interface) (Wikipedia)
+  * [Enable PowerShell "Second-Hop" Functionality with CredSSP](http://blogs.technet.com/b/heyscriptingguy/archive/2012/11/14/enable-powershell-quot-second-hop-quot-functionality-with-credssp.aspx) (Scripting Guy’s blog!)
 
 ## How to enable CredSSP?
 
@@ -65,19 +65,19 @@ That session is created under the runbook’s service account. No problem so far
   
 The problem arises when I now try to run a cmdlet which tries to access a different remote server, the second-hop. That query/command will fail. Why? Look at the security log of the last server:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/02/image5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/02/image5.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb5.png" width="276" height="211" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb5.png" width="276" height="211" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/02/image5.png)
 
 This last hop is done with the ANONYMOUS LOGON. That will in most cases, if not all the time, fail.
   
 A successful logon would, in our case, have looked something like this:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/02/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/02/image6.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb6.png" width="267" height="157" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb6.png" width="267" height="157" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/02/image6.png)
 
 How do we get it to work? There are a few ways to get it done, I chose GPO and, to be sure, PS cmdlets.
 
 The GPO that needs to be configured is related to the WinRM Client and I configured it this way:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/02/image7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/02/image7.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb7.png" width="265" height="78" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb7.png" width="265" height="78" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/02/image7.png)
 
 More info on that can be found in the linked Technet article above.
 
@@ -146,5 +146,7 @@ I’m basically converting the user’s credentials into a credential object whi
 When I now try to access a third server (second hop) from within my PSSession all is fine and the authentication happens under the user I provided. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Credential+Security+Provider,CredSSP,Microsoft,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/02/the-curse-of-the-second-hop-powershell-credssp/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

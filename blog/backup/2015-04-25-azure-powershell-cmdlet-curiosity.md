@@ -75,3 +75,4 @@ Thanks to <a href="http://www.twitter.com/alexandair" onclick="_gaq.push(['_trac
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Azure,Cloud,IaaS,Powershell,SDK" data-count="vertical" data-url="http://www.david-obrien.net/2015/04/azure-powershell-cmdlet-curiosity/">Tweet</a>
 </div>
+

@@ -36,7 +36,7 @@ It will ask you once and only once if you want to continue deleting any content 
 
 Lets say you have this folder structure:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/06/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/06/image.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="ConfigMgr folders" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb.png" width="244" height="185" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="ConfigMgr folders" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb.png" width="244" height="185" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image.png)
 
 If you want to delete all folders and packages beneath “LogiX_Test”, then you would have to execute the script like this:
 
@@ -52,7 +52,7 @@ If you want to delete all folders and packages beneath “LogiX_Test”, then yo
 
 Now we have this:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/06/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/06/image1.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="CM12 Folders" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb1.png" width="244" height="190" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="CM12 Folders" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb1.png" width="244" height="190" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image1.png)
 
 and you want to delete all content beneath “Tools”:
 
@@ -1094,10 +1094,11 @@ This is how the script looks like:
 
 Download the script from Codeplex:
 
-<a href="https://davidobrien.codeplex.com/SourceControl/latest#Delete-FolderStructure.ps1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://davidobrien.codeplex.com/SourceControl/latest#Delete-FolderStructure.ps1', 'Delete-FolderStructure.ps1']);" target="_blank">Delete-FolderStructure.ps1</a>
+[Delete-FolderStructure.ps1](https://davidobrien.codeplex.com/SourceControl/latest#Delete-FolderStructure.ps1)
 
 Feedback or questions welcome. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="CM12,ConfigMgr,Configuration+Manager,Powershell,WMI" data-count="vertical" data-url="http://www.david-obrien.net/2013/06/delete-whole-folder-structure-in-configmgr-2012powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

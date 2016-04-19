@@ -797,7 +797,7 @@ It’s weird that the same thing done manually via the configwizard.exe works, b
 
 Apparently this is what Citrix says:
 
-<a href="http://support.citrix.com/proddocs/topic/provisioning-61/pvs-install-silent-conf-wiz.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://support.citrix.com/proddocs/topic/provisioning-61/pvs-install-silent-conf-wiz.html', 'http://support.citrix.com/proddocs/topic/provisioning-61/pvs-install-silent-conf-wiz.html']);" >http://support.citrix.com/proddocs/topic/provisioning-61/pvs-install-silent-conf-wiz.html</a>
+[http://support.citrix.com/proddocs/topic/provisioning-61/pvs-install-silent-conf-wiz.html](http://support.citrix.com/proddocs/topic/provisioning-61/pvs-install-silent-conf-wiz.html)
 
 ###### Prerequisite
 
@@ -907,8 +907,9 @@ Line 37 is the one where I set the right Encoding and that’s how it works! Des
 
 I thought nowadays to automate a software would be easier. When searching the internet you don’t find a lot of people who install PVS unattended (or they don’t speak about it) and if you find something it’s nearly always about some problems they have.
 
-Take a look at Simon Pettit’s blog article about automating PVS with RES Automation Manager if you don’t want to use Powershell ![Winking smile](http://www.david-obrien.de/wp-content/uploads/2012/08/wlEmoticon-winkingsmile1.png) <a href="http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/', 'http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/']);" >http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/</a> 
+Take a look at Simon Pettit’s blog article about automating PVS with RES Automation Manager if you don’t want to use Powershell ![Winking smile](http://www.david-obrien.de/wp-content/uploads/2012/08/wlEmoticon-winkingsmile1.png) [http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/](http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,Citrix,Provisioning+Services,PVS" data-count="vertical" data-url="http://www.david-obrien.net/2012/08/unattended-installation-of-citrix-provisioning-services/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

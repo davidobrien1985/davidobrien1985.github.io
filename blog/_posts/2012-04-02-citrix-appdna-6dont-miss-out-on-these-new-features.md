@@ -20,13 +20,13 @@ tags:
   - update
   - upgrade
 ---
-After <a href="http://www.citrix.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.citrix.com', 'Citrix']);" target="_blank">Citrix</a>’s acquisition of AppDNA in November 2011, the product formerly known as AppDNA AppTitude underwent some major rebranding and was just a few days ago reborn as Citrix AppDNA.
+After [Citrix](http://www.citrix.com)’s acquisition of AppDNA in November 2011, the product formerly known as AppDNA AppTitude underwent some major rebranding and was just a few days ago reborn as Citrix AppDNA.
 
 # First impressions
 
 The first impression is: “<span style="text-decoration: underline;">fancy</span>”
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/04/logon_screen.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/04/logon_screen.jpg', '']);" class="broken_link"><img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="logon_screen" src="http://www.david-obrien.de/wp-content/uploads/2012/04/logon_screen_thumb.jpg" alt="logon_screen" width="315" height="219" border="0" /></a>
+[<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="logon_screen" src="http://www.david-obrien.de/wp-content/uploads/2012/04/logon_screen_thumb.jpg" alt="logon_screen" width="315" height="219" border="0" />]("logon_screen" http://www.david-obrien.de/wp-content/uploads/2012/04/logon_screen.jpg)
   
 Cool new colours, cool new look and some cool new features.
 
@@ -47,7 +47,7 @@ But what with those environments where you have a Windows 7 image for Notebooks,
 With AppDNA 6 you can now import more than one OS image per OS to get all the information you need regarding to your specific needs.
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/04/OS_images.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/04/OS_images.jpg', '']);" class="broken_link"><img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OS_images" src="http://www.david-obrien.de/wp-content/uploads/2012/04/OS_images_thumb.jpg" alt="OS_images" width="227" height="272" border="0" /></a>
+  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OS_images" src="http://www.david-obrien.de/wp-content/uploads/2012/04/OS_images_thumb.jpg" alt="OS_images" width="227" height="272" border="0" />]("OS_images" http://www.david-obrien.de/wp-content/uploads/2012/04/OS_images.jpg)
 </p>
 
 # Reporting
@@ -63,7 +63,7 @@ You don’t have to disable the module rules, just create your own report.
 You either do this via drag&drop from the existing module rules or, for the more advanced,  create SQL queries.
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/04/custom_reports.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/04/custom_reports.jpg', '']);" class="broken_link"><img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="custom_reports" src="http://www.david-obrien.de/wp-content/uploads/2012/04/custom_reports_thumb.jpg" alt="custom_reports" width="304" height="205" border="0" /></a>
+  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="custom_reports" src="http://www.david-obrien.de/wp-content/uploads/2012/04/custom_reports_thumb.jpg" alt="custom_reports" width="304" height="205" border="0" />]("custom_reports" http://www.david-obrien.de/wp-content/uploads/2012/04/custom_reports.jpg)
 </p>
 
 ## Organizational Reports
@@ -80,7 +80,7 @@ I don’t know how many enterprise customers really use anything else than Micro
   Although the GUI says different, VMWare Workstation 8 is now fully supported for Install Capture imports.
 </p>
 
-# <a href="http://www.david-obrien.de/wp-content/uploads/2012/04/install_capture.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/04/install_capture.jpg', '']);" class="broken_link"><img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="install_capture" src="http://www.david-obrien.de/wp-content/uploads/2012/04/install_capture_thumb.jpg" alt="install_capture" width="309" height="120" border="0" /></a>
+# [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="install_capture" src="http://www.david-obrien.de/wp-content/uploads/2012/04/install_capture_thumb.jpg" alt="install_capture" width="309" height="120" border="0" />]("install_capture" http://www.david-obrien.de/wp-content/uploads/2012/04/install_capture.jpg)
 
 # Integrated Login
 
@@ -89,7 +89,7 @@ As you might see on the Logon screen shown above, it is now possible to log on t
 This will make user administration a bit easier.
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/04/users.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/04/users.jpg', '']);" class="broken_link"><img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="users" src="http://www.david-obrien.de/wp-content/uploads/2012/04/users_thumb.jpg" alt="users" width="368" height="62" border="0" /></a>
+  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="users" src="http://www.david-obrien.de/wp-content/uploads/2012/04/users_thumb.jpg" alt="users" width="368" height="62" border="0" />]("users" http://www.david-obrien.de/wp-content/uploads/2012/04/users.jpg)
 </p>
 
 # What, unfortunately, didn’t change?
@@ -106,5 +106,6 @@ I could import all of my existing Forward Path scripts and Task Scripts. That sa
 <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" src="http://www.david-obrien.de/wp-content/uploads/2012/04/wlEmoticon-winkingsmile.png" alt="Winking smile" /> 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="APPDNA,AppTitude,Citrix,Migration,reporting,update,upgrade" data-count="vertical" data-url="http://www.david-obrien.net/2012/04/citrix-appdna-6dont-miss-out-on-these-new-features/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

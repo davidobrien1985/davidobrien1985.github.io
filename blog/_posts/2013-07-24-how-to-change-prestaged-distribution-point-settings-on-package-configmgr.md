@@ -1,6 +1,6 @@
 ---
 id: 1132
-title: 'How to change prestaged Distribution Point settings on Package &#8211; ConfigMgr'
+title: 'How to change prestaged Distribution Point settings on Package - ConfigMgr'
 date: 2013-07-24T09:23:18+00:00
 author: "David O'Brien"
 layout: post
@@ -23,27 +23,27 @@ tags:
   - scripting
   - System Center Configuration Manager
 ---
-This is a quick one. A user on the <a href="http://social.technet.microsoft.com/Forums/en-US/9528f907-08a3-4fca-9dc4-e35575b490d4/need-a-script-to-change-package-distribution-settings" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://social.technet.microsoft.com/Forums/en-US/9528f907-08a3-4fca-9dc4-e35575b490d4/need-a-script-to-change-package-distribution-settings', 'ConfigMgr SDK technet forums']);" target="_blank">ConfigMgr SDK technet forums</a> asked this question on how to change the package&#8217;s option &#8220;Prestaged distribution point settings&#8221;.<figure class="wp-caption aligncenter" style="max-width: 244px">
+This is a quick one. A user on the [ConfigMgr SDK technet forums](http://social.technet.microsoft.com/Forums/en-US/9528f907-08a3-4fca-9dc4-e35575b490d4/need-a-script-to-change-package-distribution-settings) asked this question on how to change the package's option "Prestaged distribution point settings".<figure class="wp-caption aligncenter" style="max-width: 244px">
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/07/prestaged_app.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/07/prestaged_app.jpg', '']);" class="broken_link"><img style="margin-left: auto; display: block; margin-right: auto; border: 0px;" title="prestaged_app" alt="Configure prestaged distribution point settings" src="http://www.david-obrien.net/wp-content/uploads/2013/07/prestaged_app_thumb.jpg" width="244" height="224" border="0" /></a><figcaption class="wp-caption-text">Configure prestaged distribution point settings</figcaption></figure> 
+[<img style="margin-left: auto; display: block; margin-right: auto; border: 0px;" title="prestaged_app" alt="Configure prestaged distribution point settings" src="http://www.david-obrien.net/wp-content/uploads/2013/07/prestaged_app_thumb.jpg" width="244" height="224" border="0" />]("prestaged_app" http://www.david-obrien.net/wp-content/uploads/2013/07/prestaged_app.jpg)<figcaption class="wp-caption-text">Configure prestaged distribution point settings</figcaption></figure> 
 
-These three options all configure how a distribution point, that is enabled for prestaged content will behave regarding content download. The DP can either automatically download content, that&#8217;s distributed to it, or only download content changes (so the initial replication of files needs to be &#8216;offline&#8217;) or it only accepts manually copied content.
+These three options all configure how a distribution point, that is enabled for prestaged content will behave regarding content download. The DP can either automatically download content, that's distributed to it, or only download content changes (so the initial replication of files needs to be 'offline') or it only accepts manually copied content.
 
 # SMS_Package and PkgFlags
 
-This option is again configured on the SMS_Package WMI class and lies inside the PkgFlags property. More info here: <a href="http://msdn.microsoft.com/en-us/library/cc144959.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/cc144959.aspx', 'http://msdn.microsoft.com/en-us/library/cc144959.aspx']);" >http://msdn.microsoft.com/en-us/library/cc144959.aspx</a>
+This option is again configured on the SMS_Package WMI class and lies inside the PkgFlags property. More info here: [http://msdn.microsoft.com/en-us/library/cc144959.aspx](http://msdn.microsoft.com/en-us/library/cc144959.aspx)
 
 These three integer values can be set:
 
-  * 16777216 for &#8216;Manually copy content&#8217;
-  * 32 for &#8216;Automatically download content&#8217;
-  * 16 for &#8216;Download only changes&#8217;
+  * 16777216 for 'Manually copy content'
+  * 32 for 'Automatically download content'
+  * 16 for 'Download only changes'
 
 # Applications
 
-The same configuration can be done for Applications, but haven&#8217;t found the time to do that with them. Will update the script as soon as it&#8217;s done.
+The same configuration can be done for Applications, but haven't found the time to do that with them. Will update the script as soon as it's done.
 
-You can download the script here: <a href="https://davidobrien.codeplex.com/SourceControl/latest#set-PackagePrestageDownloadBehaviour.ps1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://davidobrien.codeplex.com/SourceControl/latest#set-PackagePrestageDownloadBehaviour.ps1', 'https://davidobrien.codeplex.com/SourceControl/latest#set-PackagePrestageDownloadBehaviour.ps1']);" >https://davidobrien.codeplex.com/SourceControl/latest#set-PackagePrestageDownloadBehaviour.ps1</a>
+You can download the script here: [https://davidobrien.codeplex.com/SourceControl/latest#set-PackagePrestageDownloadBehaviour.ps1](https://davidobrien.codeplex.com/SourceControl/latest#set-PackagePrestageDownloadBehaviour.ps1)
 
 And here it is:
 
@@ -141,5 +141,7 @@ foreach ($Pkg in $Packages)
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,CM12,ConfigMgr2012R2,Powershell,scripting,System+Center+Configuration+Manager" data-count="vertical" data-url="http://www.david-obrien.net/2013/07/how-to-change-prestaged-distribution-point-settings-on-package-configmgr/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

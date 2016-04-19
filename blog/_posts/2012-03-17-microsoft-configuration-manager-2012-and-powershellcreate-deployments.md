@@ -31,7 +31,7 @@ Hi all,
 
 here another quick script I wrote to deploy a specified Task Sequence to a given collection.
 
-This was a real quick one, as I could find out all the required values through WMIExplorer (thanks to <a href="http://thepowershellguy.com/blogs/posh/archive/2007/03/22/powershell-wmi-explorer-part-1.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://thepowershellguy.com/blogs/posh/archive/2007/03/22/powershell-wmi-explorer-part-1.aspx', 'http://thepowershellguy.com/blogs/posh/archive/2007/03/22/powershell-wmi-explorer-part-1.aspx']);" >http://thepowershellguy.com/blogs/posh/archive/2007/03/22/powershell-wmi-explorer-part-1.aspx</a> ), some self-made WMI queries and SMSProv.log (always look in here for help!!!)
+This was a real quick one, as I could find out all the required values through WMIExplorer (thanks to [http://thepowershellguy.com/blogs/posh/archive/2007/03/22/powershell-wmi-explorer-part-1.aspx](http://thepowershellguy.com/blogs/posh/archive/2007/03/22/powershell-wmi-explorer-part-1.aspx) ), some self-made WMI queries and SMSProv.log (always look in here for help!!!)
 
 So here’s my script:
 
@@ -99,12 +99,13 @@ As my customer would like to deploy one Task Sequence to round about 150 collect
 
 ## SMS_Advertisement
 
-For more information on the SMS_Advertisement WMI class, see <a href="http://msdn.microsoft.com/en-us/library/cc146108.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/cc146108.aspx', 'http://msdn.microsoft.com/en-us/library/cc146108.aspx']);" >http://msdn.microsoft.com/en-us/library/cc146108.aspx</a>
+For more information on the SMS_Advertisement WMI class, see [http://msdn.microsoft.com/en-us/library/cc146108.aspx](http://msdn.microsoft.com/en-us/library/cc146108.aspx)
   
 There you’ll find more about the AdvertFlags, RemoteClientFlags and TimeFlags, as you will configure your deployment via these values, e.g “Deployment is available” or “Deployment is required and allowed to PXE”.
 
 Any questions? Contact me here or via Twitter @david_obrien 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,ConfigMgr2012,Configuration+Manager,Powershell,SCCM,SCCM+2012,scripting,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2012/03/microsoft-configuration-manager-2012-and-powershellcreate-deployments/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

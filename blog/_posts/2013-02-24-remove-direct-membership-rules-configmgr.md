@@ -62,7 +62,7 @@ XA-01 is a member of the collection, but it wasn’t added via a direct membersh
 
 That’s why my script doesn’t really do error handling.
   
-There is already a connect feedback opened: <a href="https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling', 'https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling']);" title="https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling">https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling</a>
+There is already a connect feedback opened: [https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling]("https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling" https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/779832/powershell-cmdlets-output-and-error-handling)
 
 # Remove Direct Membership rules
 
@@ -289,5 +289,6 @@ Another approach would be to directly use the WMI method DeleteMembershipRule in
 Remember to execute the script in a 32bit PowerShell, otherwise the script won’t run. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,Collections,ConfigMgr,Configuration+Manager,Powershell,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/02/remove-direct-membership-rules-configmgr/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

@@ -372,5 +372,6 @@ The script needs to run on a ConfigMgr management point.
 Questions? Just ask… (Twitter: @david_obrien) or comment here. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,ConfigMgr2012,Configuration+Manager,Microsoft,Powershell,SCCM,SCCM+2007,SCCM+2012,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2012/07/import-computer-to-configuration-manager-2007-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

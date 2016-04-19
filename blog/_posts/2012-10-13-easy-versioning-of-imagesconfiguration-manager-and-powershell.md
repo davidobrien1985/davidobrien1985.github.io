@@ -43,7 +43,7 @@ As always I want to do all this with as little manual effort as possible. How ni
   
 Unfortunately there’s one step where we will always need to change something in the Task Sequence, and that’s the name of our result, the captured .wim file.
 
-<a href="http://david-obrien.de/wp-content/uploads/2012/10/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.de/wp-content/uploads/2012/10/image3.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb3.png" alt="image" width="325" height="112" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb3.png" alt="image" width="325" height="112" border="0" />]("image" http://david-obrien.de/wp-content/uploads/2012/10/image3.png)
 
 There’s no way Microsoft gave us a out-of-the-box way to use versioning here. When you create a new image you also need to change its name in here. As I’m already getting old (I’m 27 now  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://david-obrien.de/wp-content/uploads/2012/10/wlEmoticon-winkingsmile1.png" alt="Winking smile" />) I tend to forget this step.
   
@@ -51,7 +51,7 @@ That’s the reason why I always wanted to build something to let me forget abou
 
 # Microsoft.SMS.TSEnvironment and Powershell
 
-Good for us, Microsoft gave us variables to work with. There are a lot of variables already built-in to a Task Sequence (<a href="http://technet.microsoft.com/en-us/library/hh273375.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/hh273375.aspx', 'http://technet.microsoft.com/en-us/library/hh273375.aspx']);" target="_blank">http://technet.microsoft.com/en-us/library/hh273375.aspx</a>), but there was none that I could use.
+Good for us, Microsoft gave us variables to work with. There are a lot of variables already built-in to a Task Sequence ([http://technet.microsoft.com/en-us/library/hh273375.aspx](http://technet.microsoft.com/en-us/library/hh273375.aspx)), but there was none that I could use.
   
 My goal was to use a variable for my filename so that I wouldn’t always need to change it in my Task Sequence.
   
@@ -219,15 +219,15 @@ I checked how my variable looks during Task Sequence:
 
 &nbsp;
 
-<a href="http://david-obrien.de/wp-content/uploads/2012/10/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.de/wp-content/uploads/2012/10/image4.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb4.png" alt="image" width="300" height="263" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb4.png" alt="image" width="300" height="263" border="0" />]("image" http://david-obrien.de/wp-content/uploads/2012/10/image4.png)
 
 My variable now holds the OS which is getting installed (I could also get that out of an existing variable at an earlier stage) and the current date and time.
 
 This is now my Task Sequence.
 
-<a href="http://david-obrien.de/wp-content/uploads/2012/10/image5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.de/wp-content/uploads/2012/10/image5.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb5.png" alt="image" width="293" height="156" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb5.png" alt="image" width="293" height="156" border="0" />]("image" http://david-obrien.de/wp-content/uploads/2012/10/image5.png)
 
-<a href="http://david-obrien.de/wp-content/uploads/2012/10/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.de/wp-content/uploads/2012/10/image6.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb6.png" alt="image" width="293" height="114" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/10/image_thumb6.png" alt="image" width="293" height="114" border="0" />]("image" http://david-obrien.de/wp-content/uploads/2012/10/image6.png)
 
 Notice the variable inside my filepath (%ImageName%).
 
@@ -243,10 +243,11 @@ Notice the variable inside my filepath (%ImageName%).
 
 # Requirements
 
-Before WinPE 4.0 we would have needed to run these commands as VBS or batch, because there would be no Powershell support in WinPE. Now we can do exactly this by adding Powershell to our WinPE. Here’s a good article of how this works: <a href="http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/', 'http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/']);" >http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/</a>
+Before WinPE 4.0 we would have needed to run these commands as VBS or batch, because there would be no Powershell support in WinPE. Now we can do exactly this by adding Powershell to our WinPE. Here’s a good article of how this works: [http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/](http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/)
 
 That’s it, I hope you like it. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,ConfigMgr+2012,Configuration+Manager,Configuration+Manager+2012,Powershell,SCCM,SCCM+2012,scripting,Task+Sequence" data-count="vertical" data-url="http://www.david-obrien.net/2012/10/easy-versioning-of-imagesconfiguration-manager-and-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

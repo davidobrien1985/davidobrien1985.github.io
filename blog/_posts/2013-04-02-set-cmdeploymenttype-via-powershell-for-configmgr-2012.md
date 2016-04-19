@@ -45,7 +45,7 @@ So what to do?
 
 # Application model SDK for ConfigMgr 2012
 
-After some digging around and testing and trying a colleague and I found the app model SDK for ConfigMgr 2012 and a nice blog article on MSDN for this: <a href="http://blogs.msdn.com/b/one_line_of_code_at_a_time/archive/2012/01/17/microsoft-system-center-configuration-manager-2012-package-conversion-manager-plugin.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.msdn.com/b/one_line_of_code_at_a_time/archive/2012/01/17/microsoft-system-center-configuration-manager-2012-package-conversion-manager-plugin.aspx', 'http://blogs.msdn.com/b/one_line_of_code_at_a_time/archive/2012/01/17/microsoft-system-center-configuration-manager-2012-package-conversion-manager-plugin.aspx']);" >http://blogs.msdn.com/b/one_line_of_code_at_a_time/archive/2012/01/17/microsoft-system-center-configuration-manager-2012-package-conversion-manager-plugin.aspx</a>
+After some digging around and testing and trying a colleague and I found the app model SDK for ConfigMgr 2012 and a nice blog article on MSDN for this: [http://blogs.msdn.com/b/one_line_of_code_at_a_time/archive/2012/01/17/microsoft-system-center-configuration-manager-2012-package-conversion-manager-plugin.aspx](http://blogs.msdn.com/b/one_line_of_code_at_a_time/archive/2012/01/17/microsoft-system-center-configuration-manager-2012-package-conversion-manager-plugin.aspx)
 
 This was still not exactly what I was looking for, but it helped a lot!
 
@@ -67,17 +67,17 @@ We obviously want to configure something inside of an application, so that’s w
 
 We now have $application filled with one of our applications. We can see lots of interesting and not so interesting properties.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/04/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/04/image.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="SMS_Application" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb.png" width="244" height="200" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="SMS_Application" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb.png" width="244" height="200" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image.png)
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/04/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/04/image1.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="SMS_Application" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb1.png" width="244" height="105" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="SMS_Application" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb1.png" width="244" height="105" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image1.png)
 
-The most interesting is “**SDMPackageXML**”. (<a href="http://msdn.microsoft.com/en-us/library/hh949251.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh949251.aspx', 'http://msdn.microsoft.com/en-us/library/hh949251.aspx']);" >http://msdn.microsoft.com/en-us/library/hh949251.aspx</a> )
+The most interesting is “**SDMPackageXML**”. ([http://msdn.microsoft.com/en-us/library/hh949251.aspx](http://msdn.microsoft.com/en-us/library/hh949251.aspx) )
   
 On MSDN they define it as follows:
   
 ”Digest XML that defines the application.”
 
-So all the properties we want to configure are somewhere in there! MSDN further tells us that this is another <a href="http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/', 'lazy property']);" target="_blank">lazy property</a> (more info on them here: <a href="http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/', 'http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/']);" >http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/</a>)
+So all the properties we want to configure are somewhere in there! MSDN further tells us that this is another [lazy property](http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/) (more info on them here: [http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/](http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/))
 
 In order to get to SDMPackageXML we need to get a direct reference to our application, we do the following:
 
@@ -93,7 +93,7 @@ In order to get to SDMPackageXML we need to get a direct reference to our applic
 
 Now we can have a look at $Application.SDMPackageXML (not a beauty, I know):
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/04/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/04/image2.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="SDMPackageXML" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb2.png" width="266" height="75" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="SDMPackageXML" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb2.png" width="266" height="75" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image2.png)
 
 Someone, sometime ago could have said, well, let the people just write here, but they didn’t. We can’t just do stuff here (right now!).
 
@@ -101,7 +101,7 @@ Someone, sometime ago could have said, well, let the people just write here, but
 
 The above mentioned MSDN article shows us how to DeSerialize this XML in order to do something with it.
 
-[Microsoft.ConfigurationManagement.ApplicationManagement.Serialization.SccmSerializer] helps us here and that’s as deep as I will go in this article. For more info: <a href="http://msdn.microsoft.com/en-us/library/jj154381.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/jj154381.aspx', 'http://msdn.microsoft.com/en-us/library/jj154381.aspx']);" >http://msdn.microsoft.com/en-us/library/jj154381.aspx</a>
+[Microsoft.ConfigurationManagement.ApplicationManagement.Serialization.SccmSerializer] helps us here and that’s as deep as I will go in this article. For more info: [http://msdn.microsoft.com/en-us/library/jj154381.aspx](http://msdn.microsoft.com/en-us/library/jj154381.aspx)
 
 Now after DeSerializing the XML, we can set the DeploymentType’s properties, but beware, PLEASE test the script in your environment. I doubt that you can use my script without testing and planning and also a bit of tuning.
 
@@ -125,7 +125,7 @@ Location  = new UNC path to source location
   
 FallbackToUnprotectedDP = can be $true or $false
   
-OnSlowNetwork = can be &#8220;Download&#8221; or &#8220;DoNothing&#8221;
+OnSlowNetwork = can be "Download" or "DoNothing"
   
 PeerCache = can be $true or $false (enable for BranchCache)
   
@@ -137,7 +137,7 @@ Installer.InstallCommandLine = new commandline if you like
 
 I’d love to hear some feedback of you. Did this script or any other help you? Do you have any comments?
 
-Script can also be downloaded via <a href="http://davidobrien.codeplex.com/SourceControl/changeset/view/e10007c575bfdbc6953b295174b96a9f130f34f1#set-DeploymentType.ps1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://davidobrien.codeplex.com/SourceControl/changeset/view/e10007c575bfdbc6953b295174b96a9f130f34f1#set-DeploymentType.ps1', 'my Codeplex repository']);" target="_blank">my Codeplex repository</a>.
+Script can also be downloaded via [my Codeplex repository](http://davidobrien.codeplex.com/SourceControl/changeset/view/e10007c575bfdbc6953b295174b96a9f130f34f1#set-DeploymentType.ps1).
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -822,5 +822,7 @@ Script can also be downloaded via <a href="http://davidobrien.codeplex.com/Sourc
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,lazy+properties,Powershell,SCCM,scripting,System+Center,WMI" data-count="vertical" data-url="http://www.david-obrien.net/2013/04/set-cmdeploymenttype-via-powershell-for-configmgr-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

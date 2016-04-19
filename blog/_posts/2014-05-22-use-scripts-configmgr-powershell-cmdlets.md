@@ -29,16 +29,17 @@ Up until now I always thought it is “common knowledge”, but here you go:
 
 Before doing any automation, log on to the machine which has the admin console installed and against which your scripts, runbooks or whatever are being executed and do the following:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/05/image17.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/05/image17.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb17.png" alt="image" width="322" height="200" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb17.png" alt="image" width="322" height="200" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image17.png)
 
 If that account, on that machine, has never before tried to load the ConfigMgr Powershell module, then the following message will appear:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/05/image18.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/05/image18.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb18.png" alt="image" width="328" height="130" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb18.png" alt="image" width="328" height="130" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image18.png)
 
 Accept this and after that you can run all the automation you want.
 
 Unfortunately, I haven’t found out how to automate that easily (or at all). I will test the “Import-Certificate” cmdlet soon and have a look if that can be leveraged for that. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,Configuration+Manager,Orchestrator,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2014/05/use-scripts-configmgr-powershell-cmdlets/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

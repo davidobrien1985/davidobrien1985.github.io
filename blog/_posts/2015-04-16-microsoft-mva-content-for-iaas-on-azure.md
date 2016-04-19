@@ -25,7 +25,7 @@ Are you interested in Azure? Are you thinking about extending your on-premises n
 
 Microsoft Virtual Academy has some great learning content you can use to get your head around all the new terminology, concepts and ideas.
 
-Here&#8217;s three examples of these **FREE** resources on MVA:
+Here's three examples of these **FREE** resources on MVA:
 
 <table border="0" width="428" cellspacing="0" cellpadding="0">
   <colgroup> <col width="428" /></colgroup>
@@ -33,7 +33,7 @@ Here&#8217;s three examples of these **FREE** resources on MVA:
 
 <!-- [if !supportLists]-->
 
-<span lang="EN-US">(1)   </span><a href="http://www.microsoftvirtualacademy.com/training-courses/establish-microsoft-azure-iaas-technical-fundamentals?WT.mc_id=13325-ITP-david-o-brien-mvp-content" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.microsoftvirtualacademy.com/training-courses/establish-microsoft-azure-iaas-technical-fundamentals?WT.mc_id=13325-ITP-david-o-brien-mvp-content', 'Microsoft Iaas Series I: IaaS Fundamentals']);" title="MVA IaaS Fundamentals"  target="_blank">Microsoft Iaas Series I: IaaS Fundamentals</a>
+<span lang="EN-US">(1)   </span>[Microsoft Iaas Series I: IaaS Fundamentals]("MVA IaaS Fundamentals" http://www.microsoftvirtualacademy.com/training-courses/establish-microsoft-azure-iaas-technical-fundamentals?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
   
 <!-- [if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
@@ -1331,18 +1331,20 @@ Name="List Table 7 Colorful Accent 6"></w:LsdException>
 
 <!--StartFragment-->
 
-<span lang="EN-US">(2)   </span><a href="http://www.microsoftvirtualacademy.com/training-courses/dive-deep-into-networking-storage-and-disaster-recovery-scenarios?WT.mc_id=13325-ITP-david-o-brien-mvp-content" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.microsoftvirtualacademy.com/training-courses/dive-deep-into-networking-storage-and-disaster-recovery-scenarios?WT.mc_id=13325-ITP-david-o-brien-mvp-content', 'Microsoft Iaas Series II:  Dive Deep into Networking Storage and Disaster Recovery\n']);" title="MVA IaaS Deep Dive Networking, Storage and DR"  target="_blank">Microsoft Iaas Series II:  Dive Deep into Networking Storage and Disaster Recovery<br /> </a>
+<span lang="EN-US">(2)   </span>[Microsoft Iaas Series II:  Dive Deep into Networking Storage and Disaster Recovery<br /> ]("MVA IaaS Deep Dive Networking, Storage and DR" http://www.microsoftvirtualacademy.com/training-courses/dive-deep-into-networking-storage-and-disaster-recovery-scenarios?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
   
-(3)   <a href="http://www.microsoftvirtualacademy.com/training-courses/embrace-open-source-technologies-to-accelerate-and-scale-solutions?WT.mc_id=13325-ITP-david-o-brien-mvp-content" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.microsoftvirtualacademy.com/training-courses/embrace-open-source-technologies-to-accelerate-and-scale-solutions?WT.mc_id=13325-ITP-david-o-brien-mvp-content', 'Microsoft Iaas Series III:  Embrace Open Source Technologies to Accelerate and Scale Solutions\n']);" title="MVA IaaS Open Source Technologies"  target="_blank">Microsoft Iaas Series III:  Embrace Open Source Technologies to Accelerate and Scale Solutions<br /> </a>
+(3)   [Microsoft Iaas Series III:  Embrace Open Source Technologies to Accelerate and Scale Solutions<br /> ]("MVA IaaS Open Source Technologies" http://www.microsoftvirtualacademy.com/training-courses/embrace-open-source-technologies-to-accelerate-and-scale-solutions?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
   
 Enjoy using this content and make sure you check out the other content on MVA as well.
 
-<a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', '&#8211; David']);" title=""  target="_blank">&#8211; David</a>
+[- David](http://www.twitter.com/david_obrien)
   
 <!--EndFragment-->
 
 &nbsp; 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,Azure,Cloud,IaaS,Microsoft,MVA" data-count="vertical" data-url="http://www.david-obrien.net/2015/04/microsoft-mva-content-for-iaas-on-azure/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

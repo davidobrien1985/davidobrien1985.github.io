@@ -36,7 +36,7 @@ Microsoft must have forgotten one big thing: Automation.
 
   * We still can’t install more than one Distribution Point from GUI 
       * There’s also no Microsoft native commandline to do this
-      * One way would be my script: <a href="http://www.david-obrien.net/2012/06/08/install-distribution-point-for-configuration-manager-2012/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/06/08/install-distribution-point-for-configuration-manager-2012/', 'How to install a Distribution Point via PowerShell']);" target="_blank">How to install a Distribution Point via PowerShell</a>
+      * One way would be my script: [How to install a Distribution Point via PowerShell](http://www.david-obrien.net/2012/06/08/install-distribution-point-for-configuration-manager-2012/)
   * No way to configure Distribution Points via commandline 
       * the SP1 cmdlet Set-CMDistributionPoint seems to enable us to add or remove a DP to or from a group only
 
@@ -56,9 +56,9 @@ Our approach will be to configure all distribution points the same. This is vers
 
 ### SMS\_SCI\_ADDRESS
 
-What we’re basically doing is create a new address to the distribution point and give this new address a new configuration. Like always we need to work with embedded classes again (see <a href="http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/', 'How to create a new Software Update Group']);" target="_blank">How to create a new Software Update Group</a> for more info).
+What we’re basically doing is create a new address to the distribution point and give this new address a new configuration. Like always we need to work with embedded classes again (see [How to create a new Software Update Group](http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/) for more info).
 
-Our main class will be **SMS\_SCI\_ADDRESS** (<a href="http://msdn.microsoft.com/en-us/library/hh948862.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh948862.aspx', 'Technet: SMS_SCI_ADDRESS']);" target="_blank">Technet: SMS_SCI_ADDRESS</a>) and here we need to add quite a lot properties:
+Our main class will be **SMS\_SCI\_ADDRESS** ([Technet: SMS_SCI_ADDRESS](http://msdn.microsoft.com/en-us/library/hh948862.aspx)) and here we need to add quite a lot properties:
 
   * SMS\_SCI\_ADDRESS.UsageSchedule
   * SMS\_SCI\_ADDRESS.RateLimitingSchedule
@@ -97,7 +97,7 @@ This is where I found the properties for “Pulse Mode”, “Connection Point�
 
 Here we configure these settings:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image8.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image8.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb8.png" width="287" height="265" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb8.png" width="287" height="265" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image8.png)
 
 We need to use the SMS_SiteControlDaySchedule class to configure these settings. This is done with an array of arrays.
 
@@ -148,14 +148,14 @@ This variable configures every hour of one day regarding to which priorities are
 </table>
 
 <p align="center">
-  (source: <a href="http://msdn.microsoft.com/en-us/library/cc145538.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/cc145538.aspx', 'MSDN']);" target="_blank">MSDN</a>)
+  (source: [MSDN](http://msdn.microsoft.com/en-us/library/cc145538.aspx))
 </p>
 
 <p align="left">
   By setting the variable to this values I’m telling it that the whole day is closed for replication.
 </p>
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image9.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image9.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb9.png" width="289" height="266" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb9.png" width="289" height="266" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image9.png)
 
 This page is set with this variable (array):
   
@@ -167,7 +167,7 @@ In order for the setting to have any impact I need to set the property “SMS\_S
 
 This is the command to execute the script:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image10.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image10.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb10.png" width="508" height="21" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb10.png" width="508" height="21" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image10.png)
 
 Be aware of the server’s FQDN, the script needs the FQDN of the distribution point.
   
@@ -611,8 +611,9 @@ Let me know what you think about the script or if you would like to see some mor
   </div>
 </div>
 
-Download the script here: <a href="http://davidobrien.codeplex.com/downloads/get/613106" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://davidobrien.codeplex.com/downloads/get/613106', 'http://davidobrien.codeplex.com/downloads/get/613106']);" target="_blank">http://davidobrien.codeplex.com/downloads/get/613106</a> 
+Download the script here: [http://davidobrien.codeplex.com/downloads/get/613106](http://davidobrien.codeplex.com/downloads/get/613106) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,Configuration+Manager,Distribution+Point,Microsoft,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/01/how-to-configure-configmgr-distribution-point/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

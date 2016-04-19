@@ -37,11 +37,11 @@ The step at the end will most likely don’t do a re-scan, because the cache is 
 
 The answer to this question has been around for some time now, as this problem was also present with ConfigMgr 2007.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image6.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb6.png" width="455" height="21" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb6.png" width="455" height="21" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image6.png)
 
 It’s possible to tell the SMS Agent to forget the cache (in fact, you’re telling it that the TTL is invalid, see picture above) and do a re-evaluation of Software Updates.
   
-There is a WMI method in the SMS Client’s namespace called “TriggerSchedule” which accepts certain ScheduleIDs. Jürgen Pietsch wrote them down here: <a href="http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/', 'http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/']);" title="http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/">http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/</a>
+There is a WMI method in the SMS Client’s namespace called “TriggerSchedule” which accepts certain ScheduleIDs. Jürgen Pietsch wrote them down here: [http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/]("http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/" http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/a535e509-fc6a-483c-bf24-7e2aa064e5b7/)
 
 Knowing the ID we can go ahead and trigger it. This can be done in several ways:
 
@@ -69,7 +69,7 @@ I translated it to PowerShell:
   </div>
 </div>
 
-Or even via the <a href="http://myitforum.com/myitforumwp/2012/05/07/config-manager-2012-right-click-tools/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://myitforum.com/myitforumwp/2012/05/07/config-manager-2012-right-click-tools/', 'Right-Click tools']);" target="_blank">Right-Click tools</a> by Ryan Ephgrave (MyITForum) for the ConfigMgr console (of course, not during the OSD).
+Or even via the [Right-Click tools](http://myitforum.com/myitforumwp/2012/05/07/config-manager-2012-right-click-tools/) by Ryan Ephgrave (MyITForum) for the ConfigMgr console (of course, not during the OSD).
 
 ## How to trigger Software Update rescan on Windows Server 2012 and Windows 8?
 
@@ -111,10 +111,11 @@ The trigger 113 is still available and can be used on Windows 8 and Windows Serv
 
 After executing the trigger via the PowerShell and having a look at the client’s ‘ScanAgent.log’, we see that it succeeded:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image7.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb7.png" width="317" height="76" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb7.png" width="317" height="76" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image7.png)
 
 Do you use other triggers on a regular basis? If so, which and why? I’m very interested in learning more about the other triggers and how you might use them. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Powershell,SCCM,Updates,WMI" data-count="vertical" data-url="http://www.david-obrien.net/2013/01/trigger-software-updates-rescan-in-configuration-manager-2012-sp1/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

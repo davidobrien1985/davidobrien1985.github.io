@@ -25,7 +25,7 @@ That customer was a bit scared of the manual work involved by creating all the d
 
 I sat down and wrote a script to parse through all the existing applications and create a deployment for each of it.
 
-Start-CMApplicationDeployment (<a href="http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx', 'http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx']);" >http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx</a>) looked really promising and easy to use, unfortunately it presented a huge problem.
+Start-CMApplicationDeployment ([http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx](http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx)) looked really promising and easy to use, unfortunately it presented a huge problem.
 
 > Start-CMApplicationDeployment –CollectionName %Collectionname% –Name %Applicationname% -DeployAction Uninstall -DeployPurpose Required -UserNotification HideAll
 
@@ -37,7 +37,7 @@ I had a look at SMSProv.log then and saw that the cmdlet looks like it’s going
 
 Other people already confirmed this problem and I actually had to go and use WMI again to create the deployment.
 
-Using WMI each deployment creation took only about 5 seconds. So what’s the deal here? I don’t know but I already filed a bug on connect for that. If you’re experiencing the same issue, then go on connect.microsoft.com and add some information to the bug. –> <a href="https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time', 'https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time']);" >https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time</a>
+Using WMI each deployment creation took only about 5 seconds. So what’s the deal here? I don’t know but I already filed a bug on connect for that. If you’re experiencing the same issue, then go on connect.microsoft.com and add some information to the bug. –> [https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time](https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time)
 
 Here’s part of the script I used to create and application via WMI.
 
@@ -64,10 +64,11 @@ $Deployment.Put()</pre>
 
 More info on this WMI class here on MSDN:
 
-SMS_ApplicationAssignment <a href="http://msdn.microsoft.com/en-us/library/hh949469.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh949469.aspx', 'http://msdn.microsoft.com/en-us/library/hh949469.aspx']);" >http://msdn.microsoft.com/en-us/library/hh949469.aspx</a>
+SMS_ApplicationAssignment [http://msdn.microsoft.com/en-us/library/hh949469.aspx](http://msdn.microsoft.com/en-us/library/hh949469.aspx)
   
-SMS_CIAssignmentBaseClass <a href="http://msdn.microsoft.com/en-us/library/hh949014.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh949014.aspx', 'http://msdn.microsoft.com/en-us/library/hh949014.aspx']);" >http://msdn.microsoft.com/en-us/library/hh949014.aspx</a> 
+SMS_CIAssignmentBaseClass [http://msdn.microsoft.com/en-us/library/hh949014.aspx](http://msdn.microsoft.com/en-us/library/hh949014.aspx) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Powershell,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/11/start-cmapplicationdeployment-takes-forever-complete-configmgr/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

@@ -40,7 +40,7 @@ There are a lot of people on the internet asking where the Network Access Accoun
   
 Well, it’s in “Configure Site Components” under Software Distribution Component Properties. There you can go and configure your NAA.
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/10/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/10/image.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb.png" alt="image" width="321" height="242" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb.png" alt="image" width="321" height="242" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/10/image.png)
 
 It’s not that complicated <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/10/wlEmoticon-winkingsmile.png" alt="Winking smile" />
 
@@ -54,7 +54,7 @@ Unfortunately, as always, Configuration Manager won’t just give you a Powershe
 
 While you can go and create the new or existing user for your NAA right through the AdminConsole, it’s not that easy via Script.
   
-First you need to create a user, which is going to be your Network Access Account. This user can be any domain user with access to your sources/Distribution Point. (<a href="http://technet.microsoft.com/en-us/library/bb680398.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/bb680398.aspx', 'About the Network Access Account (Microsoft Technet)']);" target="_blank">About the Network Access Account (Microsoft Technet)</a>)
+First you need to create a user, which is going to be your Network Access Account. This user can be any domain user with access to your sources/Distribution Point. ([About the Network Access Account (Microsoft Technet)](http://technet.microsoft.com/en-us/library/bb680398.aspx))
   
 To be able to create the user, you have to encrypt the user’s password, which is done via a WMI method of the SMS_Site class. (EncryptDataEx)
   
@@ -76,9 +76,9 @@ We now just need to fill the right values into the right Props and everything’
 
 At the end you can check in the GUI and also via the Powershell cmdlet “Get-CMAccount” if it worked:
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/10/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/10/image1.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb1.png" alt="image" width="326" height="170" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb1.png" alt="image" width="326" height="170" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/10/image1.png)
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/10/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/10/image2.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb2.png" alt="image" width="313" height="67" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb2.png" alt="image" width="313" height="67" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/10/image2.png)
 
 Here’s the script! If the script helped you or you have any comments, I’d love to hear it!
 
@@ -393,5 +393,6 @@ Here’s the script! If the script helped you or you have any comments, I’d lo
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,ConfigMgr+2012,ConfigMgr2012,Configuration+Manager,Configuration+Manager+2012,NAA,Network+Access+Account,Powershell,System+Center,System+Center+Configuration+Manager,WMI" data-count="vertical" data-url="http://www.david-obrien.net/2012/10/create-a-network-access-accountconfiguration-manager-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

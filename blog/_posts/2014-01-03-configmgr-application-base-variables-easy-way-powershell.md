@@ -1,6 +1,6 @@
 ---
 id: 1537
-title: 'ConfigMgr &#8211; Application Base variables the easy way with Powershell'
+title: 'ConfigMgr - Application Base variables the easy way with Powershell'
 date: 2014-01-03T23:28:00+00:00
 author: "David O'Brien"
 layout: post
@@ -30,33 +30,33 @@ There is more than one way of how you can install applications (and packages) du
 
 There is the “Install Application” step which lets you chose the applications you want to have installed:
   
-<a href="/media/2015/01/1422405870_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422405870_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405870_thumb.png" alt="" align="middle" /></a>
+[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405870_thumb.png" alt="" align="middle" />](/media/2015/01/1422405870_full.png)
 
 This is really easy, as long as you don’t want to install more than nine (9) applications in one step.
   
-<a href="/media/2015/01/1422405911_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422405911_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405911_thumb.png" alt="" align="middle" /></a>
+[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405911_thumb.png" alt="" align="middle" />](/media/2015/01/1422405911_full.png)
 
 The tenth application you want to install needs to be put into a second “Install Application” step.
   
-<a href="/media/2015/01/1422405952_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422405952_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405952_thumb.png" alt="" align="middle" /></a>
+[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405952_thumb.png" alt="" align="middle" />](/media/2015/01/1422405952_full.png)
 
 Not too handy I would say.
 
 The alternative?
 
-Use a dynamic list to define which applications need to be installed. This concept is far from new, you might have already seen it being used with Packages in CM07. Here is a TechNet description of it: <a href="http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication', 'http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication']);" title="http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication">http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication</a>
+Use a dynamic list to define which applications need to be installed. This concept is far from new, you might have already seen it being used with Packages in CM07. Here is a TechNet description of it: [http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication]("http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication" http://technet.microsoft.com/en-us/library/hh846237.aspx#BKMK_InstallApplication)
 
-<a href="/media/2015/01/1422405995_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422405995_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405995_thumb.png" alt="" align="middle" /></a>
+[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422405995_thumb.png" alt="" align="middle" />](/media/2015/01/1422405995_full.png)
 
 I here now told the Task Sequence to install all Applications that are members of the dynamic variable list named “BasisVariable”. You can pick any name you like here.
   
 In order for this to work now I need to deploy that Task Sequence to a collection and build that dynamic list. This is done via Collection variables.
 
-If you don’t know how to work with Collection Variables, have a look at some previous articles of mine on that topic: <a href="http://www.david-obrien.net/2013/01/12/how-do-variables-in-configuration-manager-2012-work-part-1/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2013/01/12/how-do-variables-in-configuration-manager-2012-work-part-1/', 'How do Variables in ConfigMgr work? Part 1']);" target="_blank">How do Variables in ConfigMgr work? Part 1</a> , <a href="http://www.david-obrien.net/2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/', 'Part 2']);" target="_blank">Part 2</a>, <a href="http://www.david-obrien.net/2013/01/15/how-do-variables-in-configuration-manager-2012-work-part-3/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2013/01/15/how-do-variables-in-configuration-manager-2012-work-part-3/', 'Part 3']);" target="_blank">Part 3</a>
+If you don’t know how to work with Collection Variables, have a look at some previous articles of mine on that topic: [How do Variables in ConfigMgr work? Part 1](http://www.david-obrien.net/2013/01/12/how-do-variables-in-configuration-manager-2012-work-part-1/) , [Part 2](http://www.david-obrien.net/2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/), [Part 3](http://www.david-obrien.net/2013/01/15/how-do-variables-in-configuration-manager-2012-work-part-3/)
 
 My collection now looks like this:
   
-<a href="/media/2015/01/1422406032_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422406032_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422406032_thumb.png" alt="" align="middle" /></a>
+[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422406032_thumb.png" alt="" align="middle" />](/media/2015/01/1422406032_full.png)
 
 I could continue this list up to 99 as long as I don’t break the count – and that’s the tricky bit. The list might be good enough for some time, but what if you have to remove PDFCreator from that deployment?
   
@@ -70,7 +70,7 @@ So, what now?
 
 ## ZTICoalesce.wsf from MDT {.}
 
-Microsoft is aware of this problem. In fact, they already gave you a script to workaround this problem. The Microsoft Deployment Toolkit (MDT) offers you a script called <a href="http://systemscenter.ru/mdt2012.en/zticoalescewsf.htm" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://systemscenter.ru/mdt2012.en/zticoalescewsf.htm', 'ZTICoalesce.wsf']);" target="_blank">ZTICoalesce.wsf</a> which takes the name of the Dynamic Variable List and repairs any gaps in the count.
+Microsoft is aware of this problem. In fact, they already gave you a script to workaround this problem. The Microsoft Deployment Toolkit (MDT) offers you a script called [ZTICoalesce.wsf](http://systemscenter.ru/mdt2012.en/zticoalescewsf.htm) which takes the name of the Dynamic Variable List and repairs any gaps in the count.
   
 That script is written in VBScript and I think VBScript is legacy and I’m really, I mean really, not good at it. That’s why I wanted to rebuild that whole “repair my dynamic variable list” into Powershell.
 
@@ -84,7 +84,7 @@ Argument 2: $LengthSuffix
 
 The second argument should, for now (maybe forever) be 2. That’s because if you want to use a dynamic variable list with Applications, then you need to use a suffix with the length of 2. For Packages, which I ignored, that suffix has a length of 3. For the time being it’s always 2.
   
-<a href="/media/2015/01/1422406070_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422406070_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422406070_thumb.png" alt="" align="middle" /></a>
+[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422406070_thumb.png" alt="" align="middle" />](/media/2015/01/1422406070_full.png)
 
 I copied my script into my MDT Package in the Scripts folder, that way it will always be copied down to the client and I can call it via the %ScriptRoot% variable. If you are not using MDT (why not?), you can still call that script from any other package.
 
@@ -94,7 +94,7 @@ If anything goes wrong during install, have a look here if the variable screwed 
 
 Here’s an example of the Log:
 
-<a href="/media/2015/01/1422406104_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422406104_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422406104_thumb.png" alt="" align="middle" /></a>
+[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422406104_thumb.png" alt="" align="middle" />](/media/2015/01/1422406104_full.png)
 
 ### Issues with the script {.}
 
@@ -104,7 +104,7 @@ In my example the list will end up with orphaned entries at the end of the list.
   
 Anyway, it feels nicer if one could delete the entry entirely. Any ideas?
 
-Download the script here: <a href="/media/2014/01/correct-BaseVars.zip" onclick="_gaq.push(['_trackEvent','download','/media/2014/01/correct-BaseVars.zip']);" target="_blank">correct-BaseVars</a>
+Download the script here: [correct-BaseVars](/media/2014/01/correct-BaseVars.zip)
 
 Here’s the script:
 
@@ -773,5 +773,7 @@ Here’s the script:
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,MDT,Microsoft+Deployment+Toolkit,Powershell,SCCM,scripting" data-count="vertical" data-url="http://www.david-obrien.net/2014/01/configmgr-application-base-variables-easy-way-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

@@ -41,9 +41,9 @@ Now how do you get the Powershell module to work? You need Powershell 3.0, that�
   
 Configuration Manager 2012 SP1 will support Windows Server 2012 as an underlying OS and the new server OS already ships with Powershell 3.0. As I already have updated my whole virtual Lab to Server 2012, I had to do nothing.
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/09/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/09/image.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb.png" alt="image" width="244" height="71" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb.png" alt="image" width="244" height="71" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/09/image.png)
 
-If you are still working with the legacy OS aka Windows Server 2008 R2 go download the correct version of the Windows Management Framework 3.0 from the Microsoft Download Center: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=34595" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.microsoft.com/en-us/download/details.aspx?id=34595', 'http://www.microsoft.com/en-us/download/details.aspx?id=34595']);" >http://www.microsoft.com/en-us/download/details.aspx?id=34595</a>
+If you are still working with the legacy OS aka Windows Server 2008 R2 go download the correct version of the Windows Management Framework 3.0 from the Microsoft Download Center: [http://www.microsoft.com/en-us/download/details.aspx?id=34595](http://www.microsoft.com/en-us/download/details.aspx?id=34595)
 
 # Update to System Center Configuration Manager 2012 SP1 beta
 
@@ -51,9 +51,9 @@ I won’t go into detail, that’s for other articles of other people. Just upgr
   
 Side note: I just upgraded my existing site with no problem. A colleague of mine upgraded his site and had problems with his PXE certificate afterwards.
   
-If you want to read more about the general upgrading process, have a look at my recent article about the upgrade to CTP2: <a href="http://www.david-obrien.de/?p=399" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=399', 'How to update Configuration Manager 2012 to SP1 CTP2']);" >How to update Configuration Manager 2012 to SP1 CTP2</a>
+If you want to read more about the general upgrading process, have a look at my recent article about the upgrade to CTP2: [How to update Configuration Manager 2012 to SP1 CTP2](http://www.david-obrien.de/?p=399)
 
-Be aware that you do not need to do an update from RTM to SP1 beta. The beta source is a full installer only without the ADK/WAIK. If you want to have a &#8220;supported&#8221; beta environment (is that possible?!), take a clean server, install the ADK and then install CM12 from the beta sources.
+Be aware that you do not need to do an update from RTM to SP1 beta. The beta source is a full installer only without the ADK/WAIK. If you want to have a "supported" beta environment (is that possible?!), take a clean server, install the ADK and then install CM12 from the beta sources.
 
 # How to find the module
 
@@ -2134,13 +2134,13 @@ If you want to see all the cmdlets for yourself, type
 
 I have already written lots of scripts/functions for Configuration Manager 2012 and with the new Powershell module I’m looking forward on continuing that.
 
-<a href="http://www.david-obrien.de/?p=413" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=413', 'How to import a new Computer']);" >How to import a new Computer</a>
+[How to import a new Computer](http://www.david-obrien.de/?p=413)
   
-<a href="http://www.david-obrien.de/?p=359" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=359', 'How to install a Distribution Point']);" >How to install a Distribution Point</a>
+[How to install a Distribution Point](http://www.david-obrien.de/?p=359)
   
-<a href="http://www.david-obrien.de/?p=312" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=312', 'My small Admin GUI for ConfigMgr']);" >My small Admin GUI for ConfigMgr</a>
+[My small Admin GUI for ConfigMgr](http://www.david-obrien.de/?p=312)
   
-<a href="http://www.david-obrien.de/?p=275" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=275', 'How to create Folders in ConfigMgr Console']);" >How to create Folders in ConfigMgr Console</a>
+[How to create Folders in ConfigMgr Console](http://www.david-obrien.de/?p=275)
 
 In the next couple of days/weeks I’ll try to update my scripts to the new commands and have a look at how powerful they really are!
   
@@ -2148,5 +2148,7 @@ So stay tuned!
 <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/09/wlEmoticon-smile.png" alt="Smile" /> 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,ConfigMgr2012,Configuration+Manager,Configuration+Manager+2012,Microsoft,Powershell,SCCM,SCCM+2012,SCCM2012,scripting,SP1,update" data-count="vertical" data-url="http://www.david-obrien.net/2012/09/ms-system-center-configuration-manager-2012-sp1-beta-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

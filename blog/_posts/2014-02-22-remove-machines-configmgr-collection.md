@@ -30,7 +30,7 @@ What they wanted to achieve was just to remove the client from the staging Colle
 
 # Maik Koster’s OSDWebService for SCCM {.}
 
-I am sure you all already know Maik Koster’s OSDWebService available on Codeplex? <a href="https://mdtcustomizations.codeplex.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://mdtcustomizations.codeplex.com/', 'https://mdtcustomizations.codeplex.com/']);" title="https://mdtcustomizations.codeplex.com/">https://mdtcustomizations.codeplex.com/</a>  
+I am sure you all already know Maik Koster’s OSDWebService available on Codeplex? [https://mdtcustomizations.codeplex.com/]("https://mdtcustomizations.codeplex.com/" https://mdtcustomizations.codeplex.com/)  
 It’s a really fine piece of tech and helps automate stuff that otherwise would have been scripted. Using Webservices also brings other advantages like easier authentication against a webservice than the SMSProvider and so on.
 
 This customer wanted to use this web service, implemented it and integrated it at the end of the Task Sequence to remove the machine from the Collection, in order to prevent users from accidently pressing F12 when booting, pressing next, next and enter and then wondering why their machines get reinstalled 😉
@@ -43,19 +43,19 @@ What’s the alternative to using a 3rd party Web Service? Use Orchestrator! Orc
 With the help of System Center 2012 R2 Orchestrator you would be able to trigger the removal of the client with only just a few simple steps.
 
 The Orchestrator runbook, if we would want to keep it REALLY simple, could look like this:  
-<a href="/media/2015/01/1422177636_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422177636_full.png', '']);" target="_blank"><img src="/media/2015/01/1422177636_thumb.png" align="middle" class="full aligncenter" title="" alt="" /></a>
+[<img src="/media/2015/01/1422177636_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177636_full.png)
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/02/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/02/image6.png', '']);" class="broken_link"></a> Configure it like this:<a href="http://www.david-obrien.net/wp-content/uploads/2014/02/image7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/02/image7.png', '']);" class="broken_link"></a> 
+[](http://www.david-obrien.net/wp-content/uploads/2014/02/image6.png) Configure it like this:[](http://www.david-obrien.net/wp-content/uploads/2014/02/image7.png) 
 
 <p class="wrapped">
 </p>
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/02/image8.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/02/image8.png', '']);" class="broken_link"></a><a href="/media/2015/01/1422177721_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422177721_full.png', '']);" target="_blank"><img src="/media/2015/01/1422177721_thumb.png" align="middle" class="full aligncenter" title="" alt="" /></a> 
+[](http://www.david-obrien.net/wp-content/uploads/2014/02/image8.png)[<img src="/media/2015/01/1422177721_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177721_full.png) 
 
-<a href="/media/2015/01/1422177764_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422177764_full.png', '']);" target="_blank"><img src="/media/2015/01/1422177764_thumb.png" align="middle" class="full aligncenter" title="" alt="" /></a>
+[<img src="/media/2015/01/1422177764_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177764_full.png)
 
 Check in the runbook and go back to the ConfigMgr console and edit your Task Sequence. The following will only work if you have MDT integrated into your ConfigMgr console, otherwise you won’t have access to the step I’m going to show you next.  
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/02/image9.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/02/image9.png', '']);" class="broken_link"></a><a href="/media/2015/01/1422177838_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/1422177838_full.png', '']);" target="_blank"><img src="/media/2015/01/1422177838_thumb.png" align="middle" class="full aligncenter" title="" alt="" /></a>  
+[](http://www.david-obrien.net/wp-content/uploads/2014/02/image9.png)[<img src="/media/2015/01/1422177838_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177838_full.png)  
 Near the end of my Win 8.1 deployment Task Sequence I add a step which will execute an Orchestrator Runbook. Again, you will only be able to select that step if you integrated the MDT Task Sequence extensions to your console. You only need to provide your Orchestrator server and select the appropriate Runbook. I select to specify the parameters myself that are needed for the “Initialize Data” Runbook activity. The ClientName will use the built-in OSD variable %OSDComputerName% and the CollectionID I set as a collection variable.
   
 I don’t need the Task Sequence to wait for runbook completion, so I just uncheck that box.
@@ -331,18 +331,20 @@ Downside to above script running as a scheduled task is that it **might** remove
 
 ## Orchestrator runbook run via ConfigMgr Status Filter Rule {.}
 
-The last alternative is pretty cool. I came up with this while thinking about what could be done, but then after searching the internet a bit I came across a blog post from Peter van der Woude: <a href="http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/', 'http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/']);" title="http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/">http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/</a>
+The last alternative is pretty cool. I came up with this while thinking about what could be done, but then after searching the internet a bit I came across a blog post from Peter van der Woude: [http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/]("http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/" http://www.petervanderwoude.nl/post/using-a-status-filter-rule-to-delete-a-collection-membership-via-orchestrator-and-configmgr-2012/)
 
 Here he demonstrates how to remove a client from a collection based on the Status Messages the client is sending up to the Management Point after Task Sequence completion.
 
-A bit more on Status Filter Rules can be found here: <a href="http://technet.microsoft.com/en-us/library/gg712680.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/gg712680.aspx', 'http://technet.microsoft.com/en-us/library/gg712680.aspx']);" title="http://technet.microsoft.com/en-us/library/gg712680.aspx">http://technet.microsoft.com/en-us/library/gg712680.aspx</a>
+A bit more on Status Filter Rules can be found here: [http://technet.microsoft.com/en-us/library/gg712680.aspx]("http://technet.microsoft.com/en-us/library/gg712680.aspx" http://technet.microsoft.com/en-us/library/gg712680.aspx)
 
 If you don’t want to use Orchestrator, you could still modify my script a bit and use the same Status Filter Rule and instead of executing the SCOJobRunner.exe use the Powershell Script.
 
 Have fun! <img src="http://www.david-obrien.net/David/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
 
-&#8211;&nbsp;<a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" title="David on Twitter" target="_blank">David</a>
+-&nbsp;[David]("David on Twitter" http://www.twitter.com/david_obrien)
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Microsoft,Orchestrator,Powershell,SCCM,SCOJobRunner,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2014/02/remove-machines-configmgr-collection/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

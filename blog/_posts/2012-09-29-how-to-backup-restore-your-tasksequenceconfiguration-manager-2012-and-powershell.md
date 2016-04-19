@@ -34,7 +34,7 @@ This is a quick way of “backing up” and restoring your Task Sequences, just 
 
 # Backup of Task Sequence
 
-I already showed you how to use the new Powershell module for ConfigMgr 2012 SP1 beta (<a href="http://www.david-obrien.de/?p=442" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=442', 'Powershell module for ConfigMgr 2012']);" >Powershell module for ConfigMgr 2012</a>) and today I will show you how to use a bit of it.
+I already showed you how to use the new Powershell module for ConfigMgr 2012 SP1 beta ([Powershell module for ConfigMgr 2012](http://www.david-obrien.de/?p=442)) and today I will show you how to use a bit of it.
 
 In order to access the cmdlets you need to open a 32-bit Powershell and add the module like I showed you in the previous article.
   
@@ -308,12 +308,14 @@ It won’t check if any of the package references are wrong, this might come in 
   
 So if you configured anything inside the Task Sequence’s properties, for example that it should use a boot image to boot from, then you will have to do that again.
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/09/image7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/09/image7.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb7.png" alt="image" width="287" height="302" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb7.png" alt="image" width="287" height="302" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/09/image7.png)
 
 It seems odd that Microsoft should have forgotten to give us a tool to export Task Sequences. Well this is a first step to do it without direct access to the Admin Console.
 
 Comments? Does anybody need this or is it just fun to know it works? 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,ConfigMgr+2012,Configuration+Manager,Microsoft,Powershell,SCCM,SCCM+2012,scripting,SysCtr,Task+Sequence" data-count="vertical" data-url="http://www.david-obrien.net/2012/09/how-to-backup-restore-your-tasksequenceconfiguration-manager-2012-and-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

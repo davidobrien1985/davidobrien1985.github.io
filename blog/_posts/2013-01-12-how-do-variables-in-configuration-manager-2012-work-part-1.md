@@ -35,11 +35,11 @@ The easiest way to achieve something like that is by variables.
 
 How and where do I set a variable you might ask. Quite easy. Open up the collection properties and look at “Collection variables”:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb.png" alt="image" width="302" height="319" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb.png" alt="image" width="302" height="319" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image.png)
 
 Here you can add new variables to the collection.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image1.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb1.png" alt="image" width="309" height="324" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb1.png" alt="image" width="309" height="324" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image1.png)
 
 You need to give the new variable a name and a value (although the value is optional). You can also mask a value (e.g. a password) by ticking the box “Do not display this value in the Configuration Manager console”.
 
@@ -55,9 +55,9 @@ I must not forget “AS-NET-Framework”, because otherwise only “WDS” would
 
 ## Variables read during Task Sequence
 
-The variable we just set will only be available during a task sequence, for that matter, in any task sequence. An example for that can be seen in this article I wrote: <a href="http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/', 'Easy versioning of Images–Configuration Manager and Powershell']);" target="_blank">Easy versioning of Images–Configuration Manager and Powershell</a>
+The variable we just set will only be available during a task sequence, for that matter, in any task sequence. An example for that can be seen in this article I wrote: [Easy versioning of Images–Configuration Manager and Powershell](http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/)
 
-If you want to know which other variables are available during a Task Sequence, have a look at this site: <a href="http://technet.microsoft.com/en-us/library/gg682064.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/gg682064.aspx', 'Technet: Task Sequence variables (Action and Built-In)']);" target="_blank">Technet: Task Sequence variables (Action and Built-In)</a>
+If you want to know which other variables are available during a Task Sequence, have a look at this site: [Technet: Task Sequence variables (Action and Built-In)](http://technet.microsoft.com/en-us/library/gg682064.aspx)
 
 You can also run this code in a script during a Task Sequence to write all the variables into for example your registry.
 
@@ -111,8 +111,9 @@ You’ll be surprised how many internal variables ConfigMgr uses.
 
 In the next part I’ll be talking about another way of setting variables to simulate different scenarios like deploying multiple OSs or just configuring machines differently.
 
-Part 2: <a href="http://www.david-obrien.net/2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/', 'How do variables in Configuration Manager 2012 work?']);" title="How do variables in Configuration Manager 2012 work? – Part 2"  target="_blank">How do variables in Configuration Manager 2012 work?</a> 
+Part 2: [How do variables in Configuration Manager 2012 work?]("How do variables in Configuration Manager 2012 work? – Part 2" http://www.david-obrien.net/2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="collection,ConfigMgr,Configuration+Manager,Microsoft,SCCM,SCCM+2012,variables" data-count="vertical" data-url="http://www.david-obrien.net/2013/01/how-do-variables-in-configuration-manager-2012-work-part-1/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

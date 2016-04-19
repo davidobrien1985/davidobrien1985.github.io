@@ -1,0 +1,73 @@
+---
+id: 1434
+title: Start-CMApplicationDeployment takes forever to complete in ConfigMgr
+date: 2013-11-02T17:45:59+00:00
+author: "David O'Brien"
+layout: post
+guid: http://www.david-obrien.net/?p=1434
+permalink: /2013/11/start-cmapplicationdeployment-takes-forever-complete-configmgr/
+categories:
+  - CM12
+  - ConfigMgr
+  - Configuration Manager
+  - Microsoft
+  - PowerShell
+  - scripting
+tags:
+  - ConfigMgr
+  - Powershell
+  - SCCM
+  - System Center
+---
+I recently had to create about 300 ConfigMgr 2012 Application Deployments for a customer migrating from NetInstall to Microsoft Configuration Manager 2012 SP1 (CM12).
+
+That customer was a bit scared of the manual work involved by creating all the deployments (install and uninstall), so I told them “Hey, no problem. There’s a built-in Powershell cmdlet that can do it for you.”
+
+I sat down and wrote a script to parse through all the existing applications and create a deployment for each of it.
+
+Start-CMApplicationDeployment (<a href="http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx', 'http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx']);" >http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx</a>) looked really promising and easy to use, unfortunately it presented a huge problem.
+
+> Start-CMApplicationDeployment –CollectionName %Collectionname% –Name %Applicationname% -DeployAction Uninstall -DeployPurpose Required -UserNotification HideAll
+
+In this CM12 SP1 CU3 environment it took the cmdlet 13 minutes for each application to create a deployment, although I was telling it the specific ApplicationName.
+  
+Seeing that I had to create an install and uninstall deployment for 300 apps in total that would’ve been 130 hrs or 5,5 days of waiting.
+  
+I had a look at SMSProv.log then and saw that the cmdlet looks like it’s going through all your applications and deployment types until it finds the right one to deploy.
+
+Other people already confirmed this problem and I actually had to go and use WMI again to create the deployment.
+
+Using WMI each deployment creation took only about 5 seconds. So what’s the deal here? I don’t know but I already filed a bug on connect for that. If you’re experiencing the same issue, then go on connect.microsoft.com and add some information to the bug. –> <a href="https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time', 'https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time']);" >https://connect.microsoft.com/ConfigurationManagervnext/feedback/details/807564/mvp-start-cmapplicationdeployment-takes-a-very-long-time</a>
+
+Here’s part of the script I used to create and application via WMI.
+
+<pre class="csharpcode">$DeploymentClass = [wmiclass] <span class="str">"\\localhost\root\sms\site_$($SiteCode):SMS_ApplicationAssignment"</span>
+
+$Deployment = $DeploymentClass.CreateInstance()
+$Deployment.ApplicationName                 = <span class="str">"PDFCreator"</span>
+$Deployment.AssignmentName                  = <span class="str">"Deploy PDFCreator"</span>
+$Deployment.AssignedCIs                     = 16781957
+$Deployment.CollectionName                  = <span class="str">"All Systems"</span>
+$Deployment.DesiredConfigType               = 2 # 1 means install, 2 means uninstall
+$Deployment.LocaleID                        = 1043
+$Deployment.NotifyUser                      = $<span class="kwrd">true</span>
+$Deployment.OfferTypeID                     = 2 # 0 means required, 2 means available
+$Deployment.OverrideServiceWindows          = $<span class="kwrd">false</span>
+$Deployment.RebootOutsideOfServiceWindows   = $<span class="kwrd">false</span>
+$Deployment.SourceSite                      = <span class="str">"PRI"</span>
+$Deployment.StartTime                       = <span class="str">"20131001120000.000000+***"</span>
+$Deployment.SuppressReboot                  = $<span class="kwrd">true</span>
+$Deployment.TargetCollectionID              = <span class="str">"SMS00001"</span>   # CollectionID where <span class="kwrd">to</span> deploy it <span class="kwrd">to</span>
+$Deployment.WoLEnabled                      = $<span class="kwrd">false</span>
+$Deployment.UseGMTTimes                     = $<span class="kwrd">true</span>
+$Deployment.Put()</pre>
+
+More info on this WMI class here on MSDN:
+
+SMS_ApplicationAssignment <a href="http://msdn.microsoft.com/en-us/library/hh949469.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh949469.aspx', 'http://msdn.microsoft.com/en-us/library/hh949469.aspx']);" >http://msdn.microsoft.com/en-us/library/hh949469.aspx</a>
+  
+SMS_CIAssignmentBaseClass <a href="http://msdn.microsoft.com/en-us/library/hh949014.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh949014.aspx', 'http://msdn.microsoft.com/en-us/library/hh949014.aspx']);" >http://msdn.microsoft.com/en-us/library/hh949014.aspx</a> 
+
+<div style="float: right; margin-left: 10px;">
+  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Powershell,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/11/start-cmapplicationdeployment-takes-forever-complete-configmgr/">Tweet</a>
+</div>

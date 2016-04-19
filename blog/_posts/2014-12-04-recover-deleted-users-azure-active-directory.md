@@ -18,7 +18,7 @@ tags:
   - Office365
   - Powershell
 ---
-You know of the <a href="http://technet.microsoft.com/en-us/library/dd392261%28v=ws.10%29.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/dd392261%28v=ws.10%29.aspx', 'recycle bin in Active Directory']);" target="_blank">recycle bin in Active Directory</a>, right?
+You know of the [recycle bin in Active Directory](http://technet.microsoft.com/en-us/library/dd392261%28v=ws.10%29.aspx), right?
 
 I guess this feature has probably saved a bunch of people already big time. Anyways, even the cloud can’t save you from stupidity, failures or “Are you sure? Of course I’m sure!” situations when, for whatever reason, user accounts get deleted when they should not have been deleted.
 
@@ -32,7 +32,7 @@ PowerShell to the rescue.
 
 Connect your PowerShell session to your Azure Active Directory by using the MSOnline module.
 
-<a href="/media/2014/12/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb.png" alt="image" width="396" height="198" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb.png" alt="image" width="396" height="198" border="0" />]("image" /media/2014/12/image.png)
 
 You can use the following function to easily connect yourself to MSOnline:
 
@@ -190,8 +190,10 @@ The Office 365 Admin Portal (<a href="https://portal.office.com" onclick="_gaq.p
 
 Still, the MSOnline cmdlets work both for Azure Active Directory and for users in your Office365 Active Directory.
 
-&#8211;<a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
+-<a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="AAD,active+directory,Azure,O365,Office365,Powershell" data-count="vertical" data-url="http://www.david-obrien.net/2014/12/recover-deleted-users-azure-active-directory/">Tweet</a>
 </div>
+
+

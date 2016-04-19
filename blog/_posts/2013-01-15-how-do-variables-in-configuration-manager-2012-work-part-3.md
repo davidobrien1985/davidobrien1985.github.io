@@ -21,7 +21,7 @@ tags:
 ---
 # Script to automate Collection creation and variable priority in SCCM 2012
 
-For part 1 read here <a href="http://www.david-obrien.net/?p=660" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=660', '&#8220;How do variables in Configuration Manager 2012 work? – Part 1&#8221;']);" target="_blank">&#8220;How do variables in Configuration Manager 2012 work? – Part 1&#8221;</a> and part 2 read here <a href="http://www.david-obrien.net/?p=676" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=676', '&#8220;How do variables in Configuration Manager 2012 work? – Part 2&#8221;']);" target="_blank">&#8220;How do variables in Configuration Manager 2012 work? – Part 2&#8221;</a>.
+For part 1 read here ["How do variables in Configuration Manager 2012 work? – Part 1"](http://www.david-obrien.net/?p=660) and part 2 read here ["How do variables in Configuration Manager 2012 work? – Part 2"](http://www.david-obrien.net/?p=676).
 
 I promised you to post the script to create the device collections with a configurable variable priority.
 
@@ -277,8 +277,10 @@ Save the script as “create-collection.ps1” and run it with this command on t
 
 .\create-collection.ps1 –SiteCode LAB –CollectionName TestCollection –CollectionVariablePrecedence 5
 
-Here is the article where I talk about the former script to create Collections: <a href="http://www.david-obrien.net/?p=570" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=570', 'How to create collections in ConfigMgr 2012 -video']);" target="_blank">How to create collections in ConfigMgr 2012 -video</a> 
+Here is the article where I talk about the former script to create Collections: [How to create collections in ConfigMgr 2012 -video](http://www.david-obrien.net/?p=570) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Collections,ConfigMgr,Configuration+Manager,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/01/how-do-variables-in-configuration-manager-2012-work-part-3/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

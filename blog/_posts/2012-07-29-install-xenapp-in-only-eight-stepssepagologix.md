@@ -64,7 +64,7 @@ It’s fairly simple to configure, because around 90% is done via variables that
 sepagoLogix is built up in eight steps.
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/08/folders.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/08/folders.jpg', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="folders" src="http://www.david-obrien.de/wp-content/uploads/2012/08/folders_thumb.jpg" alt="folders" width="223" height="181" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="folders" src="http://www.david-obrien.de/wp-content/uploads/2012/08/folders_thumb.jpg" alt="folders" width="223" height="181" border="0" />]("folders" http://www.david-obrien.de/wp-content/uploads/2012/08/folders.jpg)
 </p>
 
 <p align="left">
@@ -93,8 +93,9 @@ sepagoLogiX is a powerful framework which made XenApp deployments that much easi
 
 Of course this doesn’t mean that everything in sepagoLogiX fits every customer, but most of it does and you can focus on the stuff that’s special to your environment.
 
-Want some more information on sepagoLogix? Contact me <a href="https://twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/david_obrien', '@david_obrien']);" target="_blank">@david_obrien</a> or comment here… 
+Want some more information on sepagoLogix? Contact me [@david_obrien](https://twitter.com/david_obrien) or comment here… 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,Citrix,Powershell,Script,scripting,Sepago,sepagoLogiX,XenApp" data-count="vertical" data-url="http://www.david-obrien.net/2012/07/install-xenapp-in-only-eight-stepssepagologix/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

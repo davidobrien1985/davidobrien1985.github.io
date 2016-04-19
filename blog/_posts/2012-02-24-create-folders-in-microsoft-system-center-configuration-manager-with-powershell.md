@@ -31,7 +31,7 @@ I’m in the middle of a Configuration Manager implementation at a customer’s 
 
 As you all might know Microsoft got rid of the “subcollections” and gave us collection folders to arrange our collections.
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/02/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/02/image.png', '']);" class="broken_link"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.de/wp-content/uploads/2012/02/image_thumb.png" width="244" height="147" border="0" /></a>
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.de/wp-content/uploads/2012/02/image_thumb.png" width="244" height="147" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/02/image.png)
 
 My customer needs round about 150 folders and I am a lazy admin. What does a lazy admin do?
 
@@ -95,7 +95,7 @@ ObjectType = 5000 means that you’re creating a device collection, while Object
 
 What it’s not telling me here is that I also need the “ParentContainerNodeID”. I forgot that one and the error message told me that I missed that one.
 
-If you want to create a folder beneath the root, then your “ParentContainerNodeID&#8221; is “0”, otherwise you will have to evaluate the ID of your parent folder.
+If you want to create a folder beneath the root, then your “ParentContainerNodeID" is “0”, otherwise you will have to evaluate the ID of your parent folder.
 
 ## Powershell function
 
@@ -181,5 +181,7 @@ And this is how it looks:
                                   If you need some help or got some questions left, just ask! 
                                   
                                   <div style="float: right; margin-left: 10px;">
-                                    <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Configuration+Manager,create+folders,Microsoft,Powershell,SCCM,SCCM+2012,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2012/02/create-folders-in-microsoft-system-center-configuration-manager-with-powershell/">Tweet</a>
+                                    [Tweet](https://twitter.com/share)
                                   </div>
+
+

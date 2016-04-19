@@ -54,5 +54,6 @@ This command needs to run on a server where the Active Directory module is insta
 first. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Intune,Powershell,SCCM,Windows+Intune" data-count="vertical" data-url="http://www.david-obrien.net/2013/12/set-user-principal-name-via-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

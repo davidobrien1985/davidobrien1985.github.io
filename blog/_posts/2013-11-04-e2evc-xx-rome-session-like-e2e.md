@@ -1,6 +1,6 @@
 ---
 id: 1446
-title: 'E2EVC XX in Rome &#8211; my session and why I like E2E'
+title: 'E2EVC XX in Rome - my session and why I like E2E'
 date: 2013-11-04T11:16:48+00:00
 author: "David O'Brien"
 layout: post
@@ -62,5 +62,7 @@ The next E2EVC has already been announced for Los Angeles next May,Brussels also
 Alex, Clare and Anne-Marie did a great job keeping us all comfortable and getting us all safely from and to the airport. (which other conference does that???) THANK YOU! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Citrix,Community,ConfigMgr,E2EVC,Microsoft,speaker" data-count="vertical" data-url="http://www.david-obrien.net/2013/11/e2evc-xx-rome-session-like-e2e/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

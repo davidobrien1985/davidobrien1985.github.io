@@ -28,7 +28,7 @@ tags:
 ---
 **[Update 07.01.2013]**
 
-This post is still valid. Nevertheless, find a more recent script version here: <a href="http://www.david-obrien.net/2013/01/07/update-how-to-create-a-new-software-update-group-in-configmgr-2012/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2013/01/07/update-how-to-create-a-new-software-update-group-in-configmgr-2012/', '&#8220;Update: How to create a new Software Update Group in ConfigMgr 2012&#8221;']);" title="Update: How to create a new Software Update Group in ConfigMgr 2012"  target="_blank">&#8220;Update: How to create a new Software Update Group in ConfigMgr 2012&#8221;</a>
+This post is still valid. Nevertheless, find a more recent script version here: ["Update: How to create a new Software Update Group in ConfigMgr 2012"]("Update: How to create a new Software Update Group in ConfigMgr 2012" http://www.david-obrien.net/2013/01/07/update-how-to-create-a-new-software-update-group-in-configmgr-2012/)
 
 On my way to automating everything possible in Microsoft System Center 2012 Configuration Manager I thought about new things to play with.
   
@@ -44,11 +44,11 @@ Unfortunately Microsoft doesn’t give us a cmdlet to just create a new Software
 
 I’m still learning a lot of Powershell and those embedded properties in WMI were quite a challenge for me.
   
-In order to create a new Software Update Group one has to use the WMI class SMS_AuthorizationList (clearly!) and this has a lot of properties. (<a href="http://msdn.microsoft.com/en-us/library/hh949278.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh949278.aspx', 'MSDN: SMS_AuthorizationList']);" target="_blank">MSDN: SMS_AuthorizationList</a>)
+In order to create a new Software Update Group one has to use the WMI class SMS_AuthorizationList (clearly!) and this has a lot of properties. ([MSDN: SMS_AuthorizationList](http://msdn.microsoft.com/en-us/library/hh949278.aspx))
   
-For example the Software Update Group’s name is a lazy property and if you want to set it you have to do it via another embedded class (<a href="http://msdn.microsoft.com/en-us/library/cc145662.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/cc145662.aspx', 'MSDN: SMS_CI_LocalizedProperties']);" target="_blank">MSDN: SMS_CI_LocalizedProperties</a>).
+For example the Software Update Group’s name is a lazy property and if you want to set it you have to do it via another embedded class ([MSDN: SMS_CI_LocalizedProperties](http://msdn.microsoft.com/en-us/library/cc145662.aspx)).
   
-If you want to know what a lazy property is, have a look at Trevor Sullivan’s blog article about those weirdos: <a href="http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/', 'http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/']);" title="http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/">http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/</a>
+If you want to know what a lazy property is, have a look at Trevor Sullivan’s blog article about those weirdos: [http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/]("http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/" http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/)
 
 For the stuff we want to do we need the following WMI classes:
 
@@ -66,7 +66,7 @@ First we need to find the future members of our new Update Group. That was a bit
 
 ## How do I find the Knowledge Base ID?
 
-Every update by Microsoft is published on their site, for example a Dot Net 3.5 SP1 hotfix for Windows 7 can be found here: <a href="http://support.microsoft.com/kb/976462" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://support.microsoft.com/kb/976462', 'http://support.microsoft.com/kb/976462']);" title="http://support.microsoft.com/kb/976462">http://support.microsoft.com/kb/976462</a>
+Every update by Microsoft is published on their site, for example a Dot Net 3.5 SP1 hotfix for Windows 7 can be found here: [http://support.microsoft.com/kb/976462]("http://support.microsoft.com/kb/976462" http://support.microsoft.com/kb/976462)
   
 For our script to run you’ll need the number at the end of the URL, 976462.
 
@@ -473,8 +473,10 @@ The script needs error handling! Right now it won’t tell you what it did and i
   
 Interaction: One KB can contain more than one hotfixes (e.g. KB890830). If the script finds more than one hotfix it should ask which one to add. Right now it adds all of them.
 
-I hope you like it! Text me here or on Twitter (<a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', '@david_obrien']);" target="_blank">@david_obrien</a>) if you do. 
+I hope you like it! Text me here or on Twitter ([@david_obrien](http://www.twitter.com/david_obrien)) if you do. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,CM12,ConfigMgr,ConfigMgr+2012,Powershell,SCCM,Software+Updates,WSUS" data-count="vertical" data-url="http://www.david-obrien.net/2012/12/create-a-new-software-update-group-in-configmgr/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

@@ -1,6 +1,6 @@
 ---
 id: 3062
-title: 'Azure Automation &#8211; Webhooks'
+title: 'Azure Automation - Webhooks'
 date: 2015-05-05T09:00:57+00:00
 author: "David O'Brien"
 layout: post
@@ -22,7 +22,7 @@ tags:
 ---
 # Continuous Deployment with Azure Automation
 
-This part of my &#8220;What&#8217;s new in Azure Automation&#8221; series will focus on something that a lot of people (me included) are quite excited about &#8211; Webhooks.
+This part of my "What's new in Azure Automation" series will focus on something that a lot of people (me included) are quite excited about - Webhooks.
 
 ## What is a webhook?
 
@@ -40,17 +40,17 @@ The first use case that came to my mind was the following. Somebody commits a ch
 
 This is the whole idea behind Continuous Deployment, automated deployment of newly developed content into your environment (test / dev / prod).
 
-There are so many use cases where webhooks can now support you in your work, it doesn&#8217;t need to be git, there are other services in which you can hook into. Maybe you have your own service developed in-house?
+There are so many use cases where webhooks can now support you in your work, it doesn't need to be git, there are other services in which you can hook into. Maybe you have your own service developed in-house?
 
 # How to set up webhook from Github to Azure Automation?
 
-All you have to do is create your webhook on a published runbook. This is important, your runbook has to be published, otherwise you won&#8217;t be able to create a webhook.
+All you have to do is create your webhook on a published runbook. This is important, your runbook has to be published, otherwise you won't be able to create a webhook.
 
-<a href="/media/2015/05/RB_Webhook.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/05/RB_Webhook.png', '']);" ><img class="img-responsive aligncenter wp-image-3064 size-medium" src="/media/2015/05/RB_Webhook-298x300.png" alt="Azure Automation create webhook" width="298" height="300" srcset="/media/2015/05/RB_Webhook-298x300.png 298w, /media/2015/05/RB_Webhook.png 624w" sizes="(max-width: 298px) 100vw, 298px" /></a>
+[<img class="img-responsive aligncenter wp-image-3064 size-medium" src="/media/2015/05/RB_Webhook-298x300.png" alt="Azure Automation create webhook" width="298" height="300" srcset="/media/2015/05/RB_Webhook-298x300.png 298w, /media/2015/05/RB_Webhook.png 624w" sizes="(max-width: 298px) 100vw, 298px" />](/media/2015/05/RB_Webhook.png)
 
-Copy the URL, that&#8217;s also important, as you won&#8217;t be able to view that URL after creating the webhook. Now go to your service, for example github, and add that URL. For github this would look like this:
+Copy the URL, that's also important, as you won't be able to view that URL after creating the webhook. Now go to your service, for example github, and add that URL. For github this would look like this:
 
-<a href="/media/2015/05/Github_Webhook.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/05/Github_Webhook.png', '']);" ><img class="img-responsive aligncenter wp-image-3065 size-medium" src="/media/2015/05/Github_Webhook-300x196.png" alt="Github webhook" width="300" height="196" srcset="/media/2015/05/Github_Webhook-300x196.png 300w, /media/2015/05/Github_Webhook.png 931w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+[<img class="img-responsive aligncenter wp-image-3065 size-medium" src="/media/2015/05/Github_Webhook-300x196.png" alt="Github webhook" width="300" height="196" srcset="/media/2015/05/Github_Webhook-300x196.png 300w, /media/2015/05/Github_Webhook.png 931w" sizes="(max-width: 300px) 100vw, 300px" />](/media/2015/05/Github_Webhook.png)
 
 Paste the URL into the first text box and keep the content type as application/JSON.
 
@@ -95,8 +95,10 @@ From here on your imagination is the limit I would say. I will absolutely check
 
 Exciting times ahead!
 
-&#8211; <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
+- <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Azure+Automation,Continuous+Deployment,git,github,TFS,web+hooks,Webhooks" data-count="vertical" data-url="http://www.david-obrien.net/2015/05/azure-automation-webhooks/">Tweet</a>
 </div>
+
+

@@ -23,7 +23,7 @@ A fellow Configuration Manager community member, Nickolaj Andersen, posted a blo
 
 **BE AWARE: This is totally unsupported on Win8!!! Do backups first!**
 
-Find his article here: <a href="http://www.scconfigmgr.com/2013/04/13/enable-deduplication-for-your-lab-environment-in-windows-8/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.scconfigmgr.com/2013/04/13/enable-deduplication-for-your-lab-environment-in-windows-8/', 'http://www.scconfigmgr.com/2013/04/13/enable-deduplication-for-your-lab-environment-in-windows-8/']);" >http://www.scconfigmgr.com/2013/04/13/enable-deduplication-for-your-lab-environment-in-windows-8/</a>
+Find his article here: [http://www.scconfigmgr.com/2013/04/13/enable-deduplication-for-your-lab-environment-in-windows-8/](http://www.scconfigmgr.com/2013/04/13/enable-deduplication-for-your-lab-environment-in-windows-8/)
 
 I tried it on my disk (both SSD and HDD) and saved a huge amount of disk space for my private lab on my notebook. I’m running Win8 with Hyper-V and run my System Center environment in there and need a lot of disk space. Due to the still high prices of SSDs I only got a 256GB Samsung 830 SSD and a 512GB HDD.
   
@@ -33,12 +33,13 @@ So what did I gain by enabling Nickolaj’s tip?
 
 This is what I get back as a result when running “Get-DedupStatus”:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/04/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/04/image3.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Get-DedupStatus" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb3.png" width="279" height="49" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Get-DedupStatus" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb3.png" width="279" height="49" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image3.png)
 
 So I actually saved quite a bit on my disks!
 
 If you aren’t scared of playing around a bit, look at Nickolaj’s article! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Data+deduplication,dedup,Powershell,SSD,Win8" data-count="vertical" data-url="http://www.david-obrien.net/2013/04/data-deduplication-on-win8/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

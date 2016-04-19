@@ -70,8 +70,9 @@ In line 1 just change the Name of the Client you want to check and in line 2 cha
   
 Because of lines 1 and 5 you need to import the ConfigMgr Powershell module first.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/01/image10.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/01/image10.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Collection Membership" alt="SCCM Collection Membership" src="http://www.david-obrien.net/wp-content/uploads/2014/01/image_thumb10.png" width="244" height="63" border="0" /></a> 
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Collection Membership" alt="SCCM Collection Membership" src="http://www.david-obrien.net/wp-content/uploads/2014/01/image_thumb10.png" width="244" height="63" border="0" />]("SCCM Collection Membership" http://www.david-obrien.net/wp-content/uploads/2014/01/image10.png) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Microsoft,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2014/01/find-configmgr-collection-membership-client-via-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

@@ -50,7 +50,7 @@ I mainly used PowerShell cmdlets from the SQLPS module, which ships with SQL Ser
 
 This is a screenshots of the functions I am using in my script to first do a SQL AlwaysOn Availability Group health-check (is everything synchronised?Does everything report back as healthy? Do a backup…) and after that I’m moving on to ConfigMgr.
 
-<a href="/media/2014/12/image7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image7.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb7.png" alt="image" width="347" height="157" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb7.png" alt="image" width="347" height="157" border="0" />]("image" /media/2014/12/image7.png)
 
 The idea is to put each node of an Availability Group, as soon as the script deems it healthy, into a pre-created ConfigMgr collection which has the appropriate updates/patches/hotfixes deployed to it and then execute all required deployments.
 
@@ -251,8 +251,10 @@ Switch<span class="sy0">-</span>SqlAvailabilityGroup <span class="kw5">-Path</sp
 
 Have fun automating!
 
-&#8211; <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
+- <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="AlwaysOn,automation,ConfigMgr,hotfixes,Powershell,SCCM,scripting,SQL,SQLPS,Updates,WSUS" data-count="vertical" data-url="http://www.david-obrien.net/2014/12/update-sql-always-cluster-configmgr-powershell/">Tweet</a>
 </div>
+
+

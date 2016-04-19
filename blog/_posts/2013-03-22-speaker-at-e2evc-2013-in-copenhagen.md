@@ -34,7 +34,7 @@ tags:
   - SCSM
   - System Center
 ---
-In case you don’t know what E2EVC is, then go have a look at <a href="http://www.e2evc.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.e2evc.com', 'www.e2evc.com']);" >www.e2evc.com</a>. It’s from 31.May to 02.June 2013. You might remember the PubForum? That’s it!
+In case you don’t know what E2EVC is, then go have a look at [www.e2evc.com](http://www.e2evc.com). It’s from 31.May to 02.June 2013. You might remember the PubForum? That’s it!
 
 # Sessions at E2EVC
 
@@ -55,5 +55,6 @@ I’m already very excited to speak at E2EVC again and meet all those I met last
 Like last year, I’ll try to do a “live ticker” from the event to keep you updated. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Citrix,Community,ConfigMgr,E2EVC,Microsoft,Orchestrator,SCCM,SCSM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/03/speaker-at-e2evc-2013-in-copenhagen/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

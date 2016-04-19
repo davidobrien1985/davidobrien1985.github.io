@@ -419,5 +419,6 @@ Well, here’s the script which will delete all deployments for a given Collecti
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="advertisements,automation,ConfigMgr,Configuration+Manager,deployments,Microsoft,Powershell,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/03/how-to-remove-deployments-in-configmgrpowershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

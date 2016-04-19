@@ -19,11 +19,11 @@ tags:
 ---
 Microsoft just released the following blog post on the support of Data Deduplication on Windows Server 2012 R2 in combination with System Center 2012 R2 Configuration Manager.
 
-<a href="http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx', 'http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx']);" title="http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx">http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx</a>
+[http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx]("http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx" http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx)
 
 Then Johan (@Jarwidmark) published his post on how to actually configure deduplication and a small summary on the support statement:
 
-<a href="http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx', 'http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx']);" title="http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx">http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx</a>
+[http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx]("http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx" http://www.deploymentresearch.com/Research/tabid/62/EntryId/151/Using-Data-DeDuplication-with-ConfigMgr-2012-R2.aspx)
 
 &nbsp;
 
@@ -98,5 +98,6 @@ In line 9 you should also add any exclusions you want. Like Johan and the MS art
 Have fun saving space! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Deduplication,Powershell,SCCM,Server+2012" data-count="vertical" data-url="http://www.david-obrien.net/2014/02/enable-deduplication-powershell-configmgr-exclusions/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

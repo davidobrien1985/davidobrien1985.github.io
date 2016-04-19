@@ -25,11 +25,11 @@ tags:
 ---
 # Setting the Cache Size and Location and clear the Cache for SCCM Agent
 
-Today a colleague of mine asked me about an issue he has in one of his projects regarding the ConfigMgr client cache. He’s having a situation where already deployed agents fill up their cache to a point where software distribution isn’t possible anymore. This is kind of the same issue as I already stated on connect and others did on technet (<a href="http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/84f2f3fe-5626-454a-9d3a-6fb16ff784d7" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/84f2f3fe-5626-454a-9d3a-6fb16ff784d7', 'Application cache not purging when pushed via OSD TS']);" target="_blank">Application cache not purging when pushed via OSD TS</a>). This article on technet describes how to set these settings during client push or installation during OSD. (<a href="http://technet.microsoft.com/en-us/library/gg699356.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/gg699356.aspx', 'About Client Installation Properties in Configuration Manager']);" target="_blank">About Client Installation Properties in Configuration Manager</a>)
+Today a colleague of mine asked me about an issue he has in one of his projects regarding the ConfigMgr client cache. He’s having a situation where already deployed agents fill up their cache to a point where software distribution isn’t possible anymore. This is kind of the same issue as I already stated on connect and others did on technet ([Application cache not purging when pushed via OSD TS](http://social.technet.microsoft.com/Forums/en-US/configmanagerosd/thread/84f2f3fe-5626-454a-9d3a-6fb16ff784d7)). This article on technet describes how to set these settings during client push or installation during OSD. ([About Client Installation Properties in Configuration Manager](http://technet.microsoft.com/en-us/library/gg699356.aspx))
 
 ## Setting the Cache Size in CM12
 
-I found two ways to configure the cache size for an already deployed ConfigMgr Agent. The first is via the ConfigMgr Agent ComObject (<a href="http://msdn.microsoft.com/en-us/library/cc143521.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/cc143521.aspx', 'Software Distribution Client Control Panel Automation']);" target="_blank">Software Distribution Client Control Panel Automation</a>) and looks like this:
+I found two ways to configure the cache size for an already deployed ConfigMgr Agent. The first is via the ConfigMgr Agent ComObject ([Software Distribution Client Control Panel Automation](http://msdn.microsoft.com/en-us/library/cc143521.aspx)) and looks like this:
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -567,7 +567,7 @@ If you want to change the Cache Location you can also chose between above mentio
   </div>
 </div>
 
-And here comes the way to do this via COM. Thanks to Andy Morgan (<a href="http://www.thinkiosk.ie" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.thinkiosk.ie', 'www.thinkiosk.ie']);" class="broken_link">www.thinkiosk.ie</a> or @andyjmorgan) for your help, although it looks like MSDN documentation misled me and I didn’t need the “basic string”. Anyway, thanks!
+And here comes the way to do this via COM. Thanks to Andy Morgan ([www.thinkiosk.ie](http://www.thinkiosk.ie) or @andyjmorgan) for your help, although it looks like MSDN documentation misled me and I didn’t need the “basic string”. Anyway, thanks!
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -920,5 +920,6 @@ I spent the day configuring a lot of properties of the client and came to the co
 **TEST THE SCRIPTS IN YOUR LAB FIRST!!! I take NO responsibility for any issues!** 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,CM12,ConfigMgr,Configuration+Manager,Microsoft,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/02/how-to-configure-the-configmgr-client/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

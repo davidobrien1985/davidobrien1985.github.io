@@ -1,6 +1,6 @@
 ---
 id: 1671
-title: 'Why you shouldn&#8217;t use the Powershell pipe when using ConfigMgr'
+title: 'Why you shouldn't use the Powershell pipe when using ConfigMgr'
 date: 2014-04-02T21:05:52+00:00
 author: "David O'Brien"
 layout: post
@@ -30,7 +30,7 @@ The answer to that is best shown with a quick example.
 
 # Find ConfigMgr device with Powershell
 
-My ConfigMgr demo environment consists of approximately 2500 demo machines in one domain. I now want to find a certain machine and I only know its name. As the Admin Console won&#8217;t show more than 1,000 devices at first search by default I reckon it&#8217;s faster to use Powershell.
+My ConfigMgr demo environment consists of approximately 2500 demo machines in one domain. I now want to find a certain machine and I only know its name. As the Admin Console won't show more than 1,000 devices at first search by default I reckon it's faster to use Powershell.
 
 Using the built-in ConfigMgr cmdlet would look like this:
   
@@ -56,7 +56,7 @@ Using the built-in ConfigMgr cmdlet would look like this:
   </div>
 </div>
 
-This will give me the machine I&#8217;m looking for.
+This will give me the machine I'm looking for.
 
 Here are some other ways to get one machine, they all work, but which is the most performant of them?
 
@@ -116,12 +116,13 @@ Here are the results:
 
 What happens when you use the pipe?
   
-Using the pipe tells Powershell to first execute the left side of the pipe and then take all those results over to the right side of the pipe and go through them again and find the result.Means: The first time it&#8217;s getting ALL devices, even those not necessary and then the where-object searches through ALL those devices again. Why do it twice when you can get it right the first time around?
+Using the pipe tells Powershell to first execute the left side of the pipe and then take all those results over to the right side of the pipe and go through them again and find the result.Means: The first time it's getting ALL devices, even those not necessary and then the where-object searches through ALL those devices again. Why do it twice when you can get it right the first time around?
 
 # Results
 
-The results are obvious: Don&#8217;t use the &#8216;Where-Object&#8217; cmdlet. If possible use Get-WmiObject with -filter or even better -Query parameter. 
+The results are obvious: Don't use the 'Where-Object' cmdlet. If possible use Get-WmiObject with -filter or even better -Query parameter. 
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="CM12,ConfigMgr+2012,Configuration+Manager,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2014/04/filter-faster-piping-using-configmgr/">Tweet</a>
 </div>
+

@@ -1,6 +1,6 @@
 ---
 id: 919
-title: 'Documentation for your ConfigMgr environment with Powershell &#8211; maintenance windows'
+title: 'Documentation for your ConfigMgr environment with Powershell - maintenance windows'
 date: 2013-04-22T23:40:11+00:00
 author: "David O'Brien"
 layout: post
@@ -22,7 +22,7 @@ tags:
   - SCCM
   - System Center
 ---
-After writing my previous script which creates new maintenance windows via Powershell on your ConfigMgr / SCCM 2012 device collections (<a href="http://www.david-obrien.net/?p=910" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=910', 'look here']);" target="_blank">look here</a>) I had quite a few dummy maintenance windows all over my test environment.
+After writing my previous script which creates new maintenance windows via Powershell on your ConfigMgr / SCCM 2012 device collections ([look here](http://www.david-obrien.net/?p=910)) I had quite a few dummy maintenance windows all over my test environment.
 
 What does the lazy consultant do instead of looking for every single one of those dummies? He lets someone else do it… in this case, I wrote a script which creates a little logfile including all the collections that have a maintenance window configured.
 
@@ -46,7 +46,7 @@ He asks me that after 2 hours of scripting… Good for me, that reports requires
   
 EXTREMELY helpful for troubleshooting, but not what I was aiming at.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/04/image5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/04/image5.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Report for maintenance windows in ConfigMgr 2012" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb5.png" width="317" height="64" border="0" /></a>
+[<img style="background-image: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Report for maintenance windows in ConfigMgr 2012" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb5.png" width="317" height="64" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image5.png)
 
 &nbsp;
 
@@ -66,9 +66,9 @@ This script only needs to be run on the site’s management point and requires t
 
 The script will create a file in the filepath which will look a bit like this:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/04/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/04/image6.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Script output file" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb6.png" width="321" height="168" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Script output file" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb6.png" width="321" height="168" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image6.png)
 
-You can also download the code here: <a href="https://davidobrien.codeplex.com/SourceControl/changeset/view/5e8367118d7e06f92b0d42780ac2486acb4bd01f#Get-MaintenanceWindows.ps1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://davidobrien.codeplex.com/SourceControl/changeset/view/5e8367118d7e06f92b0d42780ac2486acb4bd01f#Get-MaintenanceWindows.ps1', 'https://davidobrien.codeplex.com/SourceControl/changeset/view/5e8367118d7e06f92b0d42780ac2486acb4bd01f#Get-MaintenanceWindows.ps1']);" >https://davidobrien.codeplex.com/SourceControl/changeset/view/5e8367118d7e06f92b0d42780ac2486acb4bd01f#Get-MaintenanceWindows.ps1</a>
+You can also download the code here: [https://davidobrien.codeplex.com/SourceControl/changeset/view/5e8367118d7e06f92b0d42780ac2486acb4bd01f#Get-MaintenanceWindows.ps1](https://davidobrien.codeplex.com/SourceControl/changeset/view/5e8367118d7e06f92b0d42780ac2486acb4bd01f#Get-MaintenanceWindows.ps1)
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -991,5 +991,7 @@ By the way, don’t worry if you’ll get an error on your commandline stating s
 Looking forward to your comments! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,documentation,maintenance+windows,Powershell,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/04/documentation-for-your-configmgr-environment-with-powershell-maintenance-windows/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

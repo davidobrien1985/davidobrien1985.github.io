@@ -23,7 +23,7 @@ tags:
   - profilemigrator
   - XenDesktop
 ---
-<a href="http://www.citrix.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.citrix.com', 'Citrix']);" target="_blank">Citrix</a> Synergy is just about to start and I thought I could talk a bit about Profile Migrator, as it’s part of Citrix’s Desktop Transformation Model.<span style="line-height: 26px; letter-spacing: 1px; font-family: helvetica, arial, sans-serif; color: #999999; font-size: 22px">&nbsp;</span>
+[Citrix](http://www.citrix.com) Synergy is just about to start and I thought I could talk a bit about Profile Migrator, as it’s part of Citrix’s Desktop Transformation Model.<span style="line-height: 26px; letter-spacing: 1px; font-family: helvetica, arial, sans-serif; color: #999999; font-size: 22px">&nbsp;</span>
 
 In this scenario I am going to show you in a quick demonstration how fast and easy you can actually migrate a local Windows XP user to a XenDesktop based Windows 7 user.
 
@@ -37,5 +37,6 @@ Your clients will thank you if you know about this <img style="border-bottom-sty
 Have fun, and btw: it IS weird to hear your own voice.
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Citrix,Citrix+Profile+Management,profile+migration,Profile+Migrator,profilemigrator,XenDesktop" data-count="vertical" data-url="http://www.david-obrien.net/2011/10/local-to-anywhereprofile-migrator-cloud-migration/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

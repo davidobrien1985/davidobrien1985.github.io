@@ -27,13 +27,13 @@ tags:
 ---
 This article won’t go into details on what content prestaging in SCCM 2012 is, there are a lot of good articles around, here just a few of them:
 
-  * <a href="http://blogs.technet.com/b/inside_osd/archive/2011/04/11/configuration-manger-2012-content-prestaging.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.technet.com/b/inside_osd/archive/2011/04/11/configuration-manger-2012-content-prestaging.aspx', 'http://blogs.technet.com/b/inside_osd/archive/2011/04/11/configuration-manger-2012-content-prestaging.aspx']);" target="_blank">http://blogs.technet.com/b/inside_osd/archive/2011/04/11/configuration-manger-2012-content-prestaging.aspx</a>
-  * <a href="http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/', 'http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/']);" title="http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/">http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/</a> (by MVP Kent Agerlund <a href="https://twitter.com/agerlund" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/agerlund', '@agerlund']);" target="_blank">@agerlund</a> )
-  * <a href="http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent', 'http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent']);" title="http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent">http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent</a>
+  * [http://blogs.technet.com/b/inside_osd/archive/2011/04/11/configuration-manger-2012-content-prestaging.aspx](http://blogs.technet.com/b/inside_osd/archive/2011/04/11/configuration-manger-2012-content-prestaging.aspx)
+  * [http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/]("http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/" http://blog.coretech.dk/kea/configuration-manager-2012-prestage-content-on-distribution-points/) (by MVP Kent Agerlund [@agerlund](https://twitter.com/agerlund) )
+  * [http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent]("http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent" http://technet.microsoft.com/en-us/library/gg682083.aspx#BKMK_PrestagingContent)
 
 ## SCCM 2012 SP1 brings Powershell
 
-I already wrote an article about the Powershell module and how you load it into your session ( <a href="http://www.david-obrien.net/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/', 'http://www.david-obrien.net/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/']);" target="_blank">http://www.david-obrien.net/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/</a> ), so I’m not going into this topic too much either <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" alt="Zwinkerndes Smiley" src="http://www.david-obrien.net/wp-content/uploads/2013/02/wlEmoticon-winkingsmile1.png" />
+I already wrote an article about the Powershell module and how you load it into your session ( [http://www.david-obrien.net/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/](http://www.david-obrien.net/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/) ), so I’m not going into this topic too much either <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" alt="Zwinkerndes Smiley" src="http://www.david-obrien.net/wp-content/uploads/2013/02/wlEmoticon-winkingsmile1.png" />
 
 I am however going a bit into detail on the problems I first had to solve.
 
@@ -49,7 +49,7 @@ The path to this reg key is ‘HKLM\Software\Microsoft\SMS\Setup\’ and the val
   
 The problem is, that registry key is written inside the x64 part of the registry and we are running a x86 Powershell. When we are now trying to query anything under ‘HKLM\Software\…’ we’re actually looking inside ‘HKLM\Software\Wow6432Node\…’.
   
-In case you don’t know what I’m talking about, take a look at <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx', 'http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx']);" title="http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx</a>
+In case you don’t know what I’m talking about, take a look at [http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx]("http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx" http://msdn.microsoft.com/en-us/library/windows/desktop/ms724072(v=vs.85).aspx)
 
 In Powershell 3 there is a way to query the 64bit part of registry out of a 32bit Powershell, it was tricky and it’s not my code to be honest. It’s a shame I can’t remember the site where I got it from, so if anyone recognizes the code as his, please say so and I give you full credit on this one <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" alt="Zwinkerndes Smiley" src="http://www.david-obrien.net/wp-content/uploads/2013/02/wlEmoticon-winkingsmile1.png" />
 
@@ -79,7 +79,7 @@ In Powershell 3 there is a way to query the 64bit part of registry out of a 32bi
 
 The script I wrote basically needs only a few parameters to execute the ConfigMgr 2012 native cmdlet Publish-CMPreStageContent, which then will go and create a ‘*.pkgx’ file which then can be extracted at a remote site distribution point.
   
-For the full syntax of this cmdlet have a look at <a href="http://technet.microsoft.com/en-us/library/jj821974.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/jj821974.aspx', 'http://technet.microsoft.com/en-us/library/jj821974.aspx']);" title="http://technet.microsoft.com/en-us/library/jj821974.aspx">http://technet.microsoft.com/en-us/library/jj821974.aspx</a> or use
+For the full syntax of this cmdlet have a look at [http://technet.microsoft.com/en-us/library/jj821974.aspx]("http://technet.microsoft.com/en-us/library/jj821974.aspx" http://technet.microsoft.com/en-us/library/jj821974.aspx) or use
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -105,7 +105,7 @@ Or if you want it to, it creates one prestaging file out of any one of the above
 
 Example:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/02/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/02/image.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb.png" width="431" height="47" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/02/image_thumb.png" width="431" height="47" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/02/image.png)
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -143,8 +143,8 @@ This concept is called “Parameter Sets” and is quite a handy feature I just 
   
 More information can be found here:
 
-  * <a href="http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx', 'http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx']);" title="http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx">http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx</a> (by Scripting Guy Ed Wilson)
-  * <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx', 'http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx']);" title="http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx</a>
+  * [http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx]("http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx" http://blogs.technet.com/b/heyscriptingguy/archive/2011/06/30/use-parameter-sets-to-simplify-powershell-commands.aspx) (by Scripting Guy Ed Wilson)
+  * [http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx]("http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx" http://msdn.microsoft.com/en-us/library/windows/desktop/dd878348(v=vs.85).aspx)
 
 ## ExtractContent.exe to extract prestaged content
 
@@ -1500,8 +1500,9 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
   </div>
 </div>
 
-The script can also be found on <a href="http://davidobrien.codeplex.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://davidobrien.codeplex.com', 'davidobrien.codeplex.com']);" target="_blank">davidobrien.codeplex.com</a> 
+The script can also be found on [davidobrien.codeplex.com](http://davidobrien.codeplex.com) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,CM12,ConfigMgr,Configuration+Manager,Distribution+Point,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/02/how-to-prestage-content-in-configuration-manager-2012-script/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

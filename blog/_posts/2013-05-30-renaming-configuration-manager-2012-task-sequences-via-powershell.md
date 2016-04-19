@@ -35,11 +35,11 @@ Scenario 2 – rename a lot of Task Sequences (add a Suffix)
 
 There is a Powershell cmdlet Get-CMTaskSequence, but the problem with this one and with all the other built-in cmdlets is, it won’t output anything that you can use to go on working with.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/05/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/05/image2.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="Get-CMTaskSequence" alt="Get-CMTaskSequence output objects" src="http://www.david-obrien.net/wp-content/uploads/2013/05/image_thumb2.png" width="301" height="133" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="Get-CMTaskSequence" alt="Get-CMTaskSequence output objects" src="http://www.david-obrien.net/wp-content/uploads/2013/05/image_thumb2.png" width="301" height="133" border="0" />]("Get-CMTaskSequence" http://www.david-obrien.net/wp-content/uploads/2013/05/image2.png)
 
 Whereas if we use WMI we get wonderful output objects like strings!
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/05/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/05/image3.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="Gwmi SMS_TaskSequencePackage" alt="Gwmi SMS_TaskSequencePackage" src="http://www.david-obrien.net/wp-content/uploads/2013/05/image_thumb3.png" width="244" height="195" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="Gwmi SMS_TaskSequencePackage" alt="Gwmi SMS_TaskSequencePackage" src="http://www.david-obrien.net/wp-content/uploads/2013/05/image_thumb3.png" width="244" height="195" border="0" />]("Gwmi SMS_TaskSequencePackage" http://www.david-obrien.net/wp-content/uploads/2013/05/image3.png)
 
 As it’s usually the case, I’ll go with WMI!
 
@@ -143,5 +143,6 @@ You want to still let the developer copy the Task Sequence from the DEV folder t
 I bet there are lots more scenarios you can think of, but I guess these two short scripts will get you on your way! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Powershell,SCCM,scripting,Task+Sequence" data-count="vertical" data-url="http://www.david-obrien.net/2013/05/renaming-configuration-manager-2012-task-sequences-via-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

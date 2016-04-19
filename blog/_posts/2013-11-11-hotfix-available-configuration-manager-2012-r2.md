@@ -22,7 +22,7 @@ tags:
 ---
 Last Friday Microsoft released the ‘not-so-long-but-even-more’-awaited hotfix for two issues that came with Microsoft System Center 2012 R2 Configuration Manager.
 
-That download is available here: <a href="http://support.microsoft.com/kb/2905002" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://support.microsoft.com/kb/2905002', 'http://support.microsoft.com/kb/2905002']);" >http://support.microsoft.com/kb/2905002</a>
+That download is available here: [http://support.microsoft.com/kb/2905002](http://support.microsoft.com/kb/2905002)
 
 It fixes the following two issues: (source Support.microsoft.com)
 
@@ -49,9 +49,9 @@ When operating system image files are downloaded to Configuration Manager 2012 R
 
 ## Background Information on these issues
 
-Fellow **MVP Johan Arwidmark** (<a href="http://www.deploymentresearch.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.deploymentresearch.com', 'www.deploymentresearch.com']);" >www.deploymentresearch.com</a> ) wrote a nice guide on how to Upgrade from ConfigMgr 2012 SP1 to R2 and also highlighted those two issues and some workarounds.
+Fellow **MVP Johan Arwidmark** ([www.deploymentresearch.com](http://www.deploymentresearch.com) ) wrote a nice guide on how to Upgrade from ConfigMgr 2012 SP1 to R2 and also highlighted those two issues and some workarounds.
 
-<a href="http://www.deploymentresearch.com/Research/tabid/62/EntryId/117/A-Geeks-Guide-for-upgrading-to-ConfigMgr-2012-R2-and-MDT-2013.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.deploymentresearch.com/Research/tabid/62/EntryId/117/A-Geeks-Guide-for-upgrading-to-ConfigMgr-2012-R2-and-MDT-2013.aspx', 'http://www.deploymentresearch.com/Research/tabid/62/EntryId/117/A-Geeks-Guide-for-upgrading-to-ConfigMgr-2012-R2-and-MDT-2013.aspx']);" >http://www.deploymentresearch.com/Research/tabid/62/EntryId/117/A-Geeks-Guide-for-upgrading-to-ConfigMgr-2012-R2-and-MDT-2013.aspx</a>
+[http://www.deploymentresearch.com/Research/tabid/62/EntryId/117/A-Geeks-Guide-for-upgrading-to-ConfigMgr-2012-R2-and-MDT-2013.aspx](http://www.deploymentresearch.com/Research/tabid/62/EntryId/117/A-Geeks-Guide-for-upgrading-to-ConfigMgr-2012-R2-and-MDT-2013.aspx)
 
 Please go to his site for more information.
 
@@ -63,16 +63,17 @@ Now is the time to do your backups again, test them and then upgrade your Labs a
 
 With this hotfix KB2905002 come 4 new update packages that need to be deployed in your environment:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_console.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/11/updates_console.jpg', '']);" class="broken_link"><img class="img-responsive aligncenter size-full wp-image-1458" alt="KB2905002" src="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_console.jpg" width="905" height="210" srcset="/media/2013/11/updates_console-250x58.jpg 250w, /media/2013/11/updates_console.jpg 905w" sizes="(max-width: 905px) 100vw, 905px" /></a>
+[<img class="img-responsive aligncenter size-full wp-image-1458" alt="KB2905002" src="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_console.jpg" width="905" height="210" srcset="/media/2013/11/updates_console-250x58.jpg 250w, /media/2013/11/updates_console.jpg 905w" sizes="(max-width: 905px) 100vw, 905px" />](http://www.david-obrien.net/wp-content/uploads/2013/11/updates_console.jpg)
 
 &nbsp;
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_filesystem.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/11/updates_filesystem.jpg', '']);" class="broken_link"><img class="img-responsive aligncenter size-full wp-image-1459" alt="KB2905002" src="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_filesystem.jpg" width="496" height="180" /></a>
+[<img class="img-responsive aligncenter size-full wp-image-1459" alt="KB2905002" src="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_filesystem.jpg" width="496" height="180" />](http://www.david-obrien.net/wp-content/uploads/2013/11/updates_filesystem.jpg)
 
-Take special care deploying those Client updates during Task Sequences. I usually use this technique: <a href="http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/', 'http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/']);" >http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/</a>
+Take special care deploying those Client updates during Task Sequences. I usually use this technique: [http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/](http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/)
 
 Good luck! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Hotfix,Microsoft,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/11/hotfix-available-configuration-manager-2012-r2/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

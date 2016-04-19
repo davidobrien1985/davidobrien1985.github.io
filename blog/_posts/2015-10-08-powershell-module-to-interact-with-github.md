@@ -22,11 +22,11 @@ tags:
   - powershell gallery
   - Windows PowerShell
 ---
-I sometimes find myself in a situation where I need to do something on Github, but, because I still once in a while use Windows machines which don&#8217;t have any git installed, I have to go and use the Web UI, pretty clunky.
+I sometimes find myself in a situation where I need to do something on Github, but, because I still once in a while use Windows machines which don't have any git installed, I have to go and use the Web UI, pretty clunky.
 
 # Github API
 
-Fortunately github offers a great Rest API with an awesome documentation. <a href="https://developer.github.com/v3/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://developer.github.com/v3/', 'https://developer.github.com/v3/']);" target="_blank">https://developer.github.com/v3/</a>
+Fortunately github offers a great Rest API with an awesome documentation. [https://developer.github.com/v3/](https://developer.github.com/v3/)
 
 All calls to the Github API are over _**https **_and accept and respond with _**json**_.
 
@@ -129,7 +129,7 @@ Remove<span class="sy0">-</span>GithubRepository</pre>
 
 # Contributions welcome!
 
-Of course, as always, if you want to add something to the module or would like to &#8220;properly&#8221; report and issue with the module, head over to Gitlab and check out the repository directly:
+Of course, as always, if you want to add something to the module or would like to "properly" report and issue with the module, head over to Gitlab and check out the repository directly:
 
 <a href="https://gitlab.com/dobrien/GithubConnect" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://gitlab.com/dobrien/GithubConnect', 'https://gitlab.com/dobrien/GithubConnect']);" target="_blank">https://gitlab.com/dobrien/GithubConnect</a>
 
@@ -140,3 +140,5 @@ Is this helpful?
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,DevOps,git,github,gitlab,Powershell,powershell+gallery,Windows+PowerShell" data-count="vertical" data-url="http://www.david-obrien.net/2015/10/powershell-module-to-interact-with-github/">Tweet</a>
 </div>
+
+

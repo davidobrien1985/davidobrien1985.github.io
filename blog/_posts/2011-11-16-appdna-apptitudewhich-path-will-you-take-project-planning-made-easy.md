@@ -47,7 +47,7 @@ And if everything fails I will have to install my apps locally onto the user’s
 
 The results of my forward path looks like this:
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0pt; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0pt; border-bottom-width: 0pt; margin-left: auto; border-left-width: 0pt; margin-right: auto; padding-top: 0px" class="lightbox" title="forward_path" alt="forward_path" src="http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path_thumb.jpg" width="244" height="120" /></a>
+[<img style="background-image: none; border-right-width: 0pt; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0pt; border-bottom-width: 0pt; margin-left: auto; border-left-width: 0pt; margin-right: auto; padding-top: 0px" class="lightbox" title="forward_path" alt="forward_path" src="http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path_thumb.jpg" width="244" height="120" />]("forward_path" http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path.jpg)
 
 I can now see at one glance which applications can fulfil my wishes and which don’t. 
 
@@ -57,10 +57,11 @@ I can now see at one glance which applications can fulfil my wishes and which do
 
 If you want to create a forward path yourself, just click on “Forward Path config” and have a look at what you can do.
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path_create.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path_create.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="forward_path_create" border="0" alt="forward_path_create" src="http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path_create_thumb.jpg" width="244" height="131" /></a>
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="forward_path_create" border="0" alt="forward_path_create" src="http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path_create_thumb.jpg" width="244" height="131" />]("forward_path_create" http://www.david-obrien.de/wp-content/uploads/2012/01/forward_path_create.jpg)
 
 Contact me if you need some help with it!
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="APPDNA,Applications,AppTitude,Forward+Path,Project+Planning,Windows+7" data-count="vertical" data-url="http://www.david-obrien.net/2011/11/appdna-apptitudewhich-path-will-you-take-project-planning-made-easy/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

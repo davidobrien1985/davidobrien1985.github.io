@@ -25,7 +25,7 @@ tags:
   - Script
   - unattended
 ---
-There’s a lot that changed in ConfigMgr2012 (e.g. <a href="http://www.david-obrien.de/?p=176" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=176', 'Client Log Files']);" target="_blank">Client Log Files</a> ), but also inter-site communication. Most of it is now done via SQL replication and not only via inbox/outbox replication.
+There’s a lot that changed in ConfigMgr2012 (e.g. [Client Log Files](http://www.david-obrien.de/?p=176) ), but also inter-site communication. Most of it is now done via SQL replication and not only via inbox/outbox replication.
 
 According to Microsoft, also the way we now have to install ConfigMgr sites has changed. In SCCM 2007 one could use an ini file to install primary and secondary sites (earlier article: Install Secondary Site unattended).
 
@@ -33,7 +33,7 @@ I asked a lot of Microsoft guys and they all said that it’s not possible anymo
 
 ## Script to install
 
-Thanks to Rod Trent (<a href="http://myitforum.com/myitforumwp/2012/01/13/configmgr-2012-tip-grab-the-unattended-installation-file-during-setup" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://myitforum.com/myitforumwp/2012/01/13/configmgr-2012-tip-grab-the-unattended-installation-file-during-setup', 'ConfigMgr 2012 tip: grab the Unattended Installation file during setup']);" target="_blank">ConfigMgr 2012 tip: grab the Unattended Installation file during setup</a>) I came upon the “ConfigMgrAutoSave.ini” which has some valuable information regarding the installation process of ConfigMgr sites.
+Thanks to Rod Trent ([ConfigMgr 2012 tip: grab the Unattended Installation file during setup](http://myitforum.com/myitforumwp/2012/01/13/configmgr-2012-tip-grab-the-unattended-installation-file-during-setup)) I came upon the “ConfigMgrAutoSave.ini” which has some valuable information regarding the installation process of ConfigMgr sites.
 
 As in 2007, the /script switch of setup.exe still works in ConfigMgr2012. 
 
@@ -201,5 +201,6 @@ Installing a primary site would work with this “ConfigMgrAutoSave.ini”:
 I didn’t test this script, but I believe it should work, as I’ve already seen other articles around doing this. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,Installation,Microsoft,SCCM,SCCM+2012,Script,unattended" data-count="vertical" data-url="http://www.david-obrien.net/2012/01/microsoft-system-center-configuration-manager-2012unattended-installation-of-sites/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

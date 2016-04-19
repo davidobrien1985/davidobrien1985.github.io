@@ -28,5 +28,6 @@ This is quite some work compared to just writing about what you do, recording an
 Hope you like my videos and remember, “sharing is caring”  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.net/wp-content/uploads/2012/12/wlEmoticon-winkingsmile1.png" alt="Winking smile" />So share my content if you like it! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Powershell,SCCM,video,YouTube" data-count="vertical" data-url="http://www.david-obrien.net/2012/12/new-video-series-for-configmgr-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

@@ -18,19 +18,19 @@ tags:
   - Powershell
   - scripting
 ---
-Like always, if people are talking languages they will have dialects or accents (I don&#8217;t  <img src="http://www.david-obrien.net/David/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />). PowerShell is not an exception here.
+Like always, if people are talking languages they will have dialects or accents (I don't  <img src="http://www.david-obrien.net/David/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />). PowerShell is not an exception here.
   
 There are so many people nowadays writing PowerShell all over the world or even in just one company, that there have to be some ground rules.
 
-Obviously PowerShell already has its own rules, otherwise it wouldn&#8217;t work, but just knowing the words doesn&#8217;t make it easier for everybody to understand.
+Obviously PowerShell already has its own rules, otherwise it wouldn't work, but just knowing the words doesn't make it easier for everybody to understand.
 
-Especially in environments where a lot of people are working on the same scripts / code, there have to be rules so that anybody can go and understand and edit anybody&#8217;s script
+Especially in environments where a lot of people are working on the same scripts / code, there have to be rules so that anybody can go and understand and edit anybody's script
 
 # PowerShell scripting guidelines
 
-This here is just a short list that I like to send out to customers or colleagues or anybody on social media (hence this article) if I get asked about some scripting guidelines. This is not a complete list and obviously this is how I like to write my scripts. If you don&#8217;t agree, tell me why, I&#8217;m happy to consider new ways of doing it.
+This here is just a short list that I like to send out to customers or colleagues or anybody on social media (hence this article) if I get asked about some scripting guidelines. This is not a complete list and obviously this is how I like to write my scripts. If you don't agree, tell me why, I'm happy to consider new ways of doing it.
 
-I&#8217;d be happy to add more tips / guidelines to this list. Just add yours to the comment section and I&#8217;ll add them in here.
+I'd be happy to add more tips / guidelines to this list. Just add yours to the comment section and I'll add them in here.
 
   * Readability 
       * Camel case: 
@@ -40,7 +40,7 @@ I&#8217;d be happy to add more tips / guidelines to this list. Just add yours to
   
             get-cmdevicecollectiondirectmembershiprule
       * Make your code easy to read for humans!
-      * Avoid &#8216;Hungarian notation&#8217;: <a href="http://windowsitpro.com/blog/what-do-not-do-powershell-part-5" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://windowsitpro.com/blog/what-do-not-do-powershell-part-5', 'http://windowsitpro.com/blog/what-do-not-do-powershell-part-5']);" >http://windowsitpro.com/blog/what-do-not-do-powershell-part-5</a>
+      * Avoid 'Hungarian notation': [http://windowsitpro.com/blog/what-do-not-do-powershell-part-5](http://windowsitpro.com/blog/what-do-not-do-powershell-part-5)
       * Use comments to describe what you are doing 
           * Create comment based help (Header)
           * If you had to google / bing something, copy the URL to the solution into a comment
@@ -50,7 +50,7 @@ I&#8217;d be happy to add more tips / guidelines to this list. Just add yours to
       * NO aliases in a script
   * Verb-Noun 
       * Cmdlets always use verb-Noun
-      * Approved verbs : <a href="https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx', 'https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx']);" >https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx</a>
+      * Approved verbs : [https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx)
       * Also applies to custom functions
   * Write reusable code 
       * Use as many functions as possible
@@ -94,7 +94,7 @@ Do<span class="sy0">-</span>Stuff
           * Do early parameter validation 
               * Maybe even already in the param() block
   * Strings and variable expansion 
-      * If a string does not need to expand a variable, use single quotes (&#8216;), otherwise double quotes (&#8220;)
+      * If a string does not need to expand a variable, use single quotes ('), otherwise double quotes (")
   * Never use the backtick (\`) to continue a command on the next line, it makes code impossible to read 
       * If the command is too long to easily understand it, use Splatting 
           * Get-Help about_Splatting
@@ -111,3 +111,5 @@ Do<span class="sy0">-</span>Stuff
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,DevOps,ITPro,Microsoft,PoSh,Powershell,scripting" data-count="vertical" data-url="http://www.david-obrien.net/2015/04/powershell-scripting-guidelines/">Tweet</a>
 </div>
+
+

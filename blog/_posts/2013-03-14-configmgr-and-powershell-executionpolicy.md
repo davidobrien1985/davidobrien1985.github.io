@@ -31,7 +31,7 @@ In order to execute a Powershell script, you have to set your ExecutionPolicy. I
 
 Here you will find a bit more about executing Powershell scripts in general:
 
-  * <a href="http://technet.microsoft.com/en-us/library/ee176949.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/ee176949.aspx', 'Running Windows PowerShell Scripts (Technet)']);" target="_blank">Running Windows PowerShell Scripts (Technet)</a>
+  * [Running Windows PowerShell Scripts (Technet)](http://technet.microsoft.com/en-us/library/ee176949.aspx)
 
 # Client Settings in ConfigMgr
 
@@ -40,7 +40,7 @@ With ConfigMgr 2012 we’re now able to deploy some default or custom “client 
 In the device client settings we’ll find a group for “Computer Agent” and in it a setting for the Powershell Execution Policy.
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="ConfigMgr client settings" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb.png" width="292" height="224" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="ConfigMgr client settings" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb.png" width="292" height="224" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image.png)
 </p>
 
 This defaults to “restricted”, just like the “normal” execution policy does aswell.
@@ -50,7 +50,7 @@ Now I usually set the execution policy via GPO, but there you’re unable to tar
 I reset my GPO to “not configured”, which should mean that the execution policy is set to restricted again. I can verify that in the registry.
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image1.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="Powershell Execution Policy in registry" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb1.png" width="298" height="86" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="Powershell Execution Policy in registry" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb1.png" width="298" height="86" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image1.png)
 </p>
 
 Now I want to set my Execution policy via the Client settings to be able to execute powershell scripts in applications, packages and task sequences.
@@ -58,13 +58,13 @@ Now I want to set my Execution policy via the Client settings to be able to exec
 Therefore I created a new client setting device policy and configured the execution policy to Bypass.
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image2.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="Execution Policy SCCM bypass" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb2.png" width="271" height="210" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="Execution Policy SCCM bypass" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb2.png" width="271" height="210" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image2.png)
 </p>
 
 I deployed this policy to one of my device collections in order to reconfigure my computer’s execution policy.
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image3.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="SCCM client settings" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb3.png" width="286" height="53" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="SCCM client settings" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb3.png" width="286" height="53" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image3.png)
 </p>
 
 Before updating my client’s policy I checked all the execution policies on the client by running
@@ -82,7 +82,7 @@ Before updating my client’s policy I checked all the execution policies on the
 and got back this:
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image4.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="Get-ExecutionPolicy" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb4.png" width="303" height="66" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="Get-ExecutionPolicy" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb4.png" width="303" height="66" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image4.png)
 </p>
 
 Like I expected. “MachinePolicy” is my unconfigured GPO, which sets it to undefined/restricted and I believe LocalMachine is the default client setting.
@@ -91,12 +91,12 @@ Now after updating the client’s machine policy I find the following settings.
 
 Registry (still the same):
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image5.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Registry Powershell" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb5.png" width="275" height="77" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Registry Powershell" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb5.png" width="275" height="77" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image5.png)
 
 Powershell query (still the same):
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image6.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb6.png" width="278" height="59" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb6.png" width="278" height="59" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image6.png)
 </p>
 
 Executing the following WMI query on the client tells me a bit more about the ConfigMgr client settings:
@@ -118,14 +118,14 @@ The Branding Title is just the “organization name displayed in software center
 The output is quite interesting:
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image7.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="CCM_ClientAgentConfig" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb7.png" width="316" height="35" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="CCM_ClientAgentConfig" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb7.png" width="316" height="35" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image7.png)
 </p>
 
 As I said above, I left the default policy like it is per default and configured my custom settings to bypass. It looks like there’s definitely something happening.
   
 These are only the policies that are requested by the SMS Agent, there’s another WMI namespace representing the actual config. Lets see what this one tells us.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image8.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image8.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb8.png" width="316" height="33" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb8.png" width="316" height="33" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image8.png)
 
 Well, the execution policy should have changed to Bypass. As I showed you above, it hasn’t.
 
@@ -172,7 +172,7 @@ The commandline would then look like this:
 The above file I’m creating in the temp folder will then look like this:
 
 <p align="center">
-  <a href="http://www.david-obrien.net/wp-content/uploads/2013/03/image9.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/03/image9.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb9.png" width="244" height="108" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb9.png" width="244" height="108" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image9.png)
 </p>
 
 <p align="left">
@@ -184,5 +184,6 @@ The above file I’m creating in the temp folder will then look like this:
 </p>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,ExecutionPolicy,Powershell,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/03/configmgr-and-powershell-executionpolicy/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

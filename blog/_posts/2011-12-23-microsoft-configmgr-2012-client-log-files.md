@@ -49,15 +49,15 @@ tags:
 </p>
 
 <p align="left">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_1.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_1.jpg', '']);" class="broken_link"><img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_1" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_1_thumb.jpg" alt="logfiles_1" width="229" height="285" /></a>
+  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_1" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_1_thumb.jpg" alt="logfiles_1" width="229" height="285" />]("logfiles_1" http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_1.jpg)
 </p>
 
 <p align="left">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_2.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_2.jpg', '']);" class="broken_link"><img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_2" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_2_thumb.jpg" alt="logfiles_2" width="225" height="259" /></a>
+  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_2" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_2_thumb.jpg" alt="logfiles_2" width="225" height="259" />]("logfiles_2" http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_2.jpg)
 </p>
 
 <p align="left">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_3.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_3.jpg', '']);" class="broken_link"><img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_3" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_3_thumb.jpg" alt="logfiles_3" width="233" height="110" /></a>
+  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_3" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_3_thumb.jpg" alt="logfiles_3" width="233" height="110" />]("logfiles_3" http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_3.jpg)
 </p>
 
 <p align="left">
@@ -511,5 +511,6 @@ tags:
 </p>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr2012,Configuration+Manager,log+files,logfiles,logs,Microsoft,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2011/12/microsoft-configmgr-2012-client-log-files/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

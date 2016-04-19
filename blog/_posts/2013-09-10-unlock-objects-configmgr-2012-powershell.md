@@ -22,17 +22,17 @@ tags:
 ---
 # Unlocking packages or apps in ConfigMgr 2012
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/09/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/09/image.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border-width: 0px;" title="locked object in SCCM" alt="locked object in SCCM" src="http://www.david-obrien.net/wp-content/uploads/2013/09/image_thumb.png" width="320" height="153" border="0" /></a>
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border-width: 0px;" title="locked object in SCCM" alt="locked object in SCCM" src="http://www.david-obrien.net/wp-content/uploads/2013/09/image_thumb.png" width="320" height="153" border="0" />]("locked object in SCCM" http://www.david-obrien.net/wp-content/uploads/2013/09/image.png)
 
 Crap! Do you know this message? Most probably your console just crashed a minute ago while you were editing this application and you’re trying to open up this application again. Well, too bad, please wait for 30 minutes and then come back please.
   
 This is because your lock on that object has not been released the moment your console crashed.
 
-For more information on this, use the search engine of your choice (google \*g\*) and look for SEDO (**S**erialized **E**diting of **D**istributed **O**bjects) or try this site: <a href="http://blogs.technet.com/b/sudheesn/archive/2012/10/28/sedo-serialized-editing-of-distributed-objects-configmgr-2012.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.technet.com/b/sudheesn/archive/2012/10/28/sedo-serialized-editing-of-distributed-objects-configmgr-2012.aspx', 'http://blogs.technet.com/b/sudheesn/archive/2012/10/28/sedo-serialized-editing-of-distributed-objects-configmgr-2012.aspx']);" >http://blogs.technet.com/b/sudheesn/archive/2012/10/28/sedo-serialized-editing-of-distributed-objects-configmgr-2012.aspx</a>
+For more information on this, use the search engine of your choice (google \*g\*) and look for SEDO (**S**erialized **E**diting of **D**istributed **O**bjects) or try this site: [http://blogs.technet.com/b/sudheesn/archive/2012/10/28/sedo-serialized-editing-of-distributed-objects-configmgr-2012.aspx](http://blogs.technet.com/b/sudheesn/archive/2012/10/28/sedo-serialized-editing-of-distributed-objects-configmgr-2012.aspx)
 
 ## Unlocking objects (before Powershell)
 
-At least I hate waiting, even more if it’s 30 minutes because of a stupid lock I don’t want to have anymore. So what could be done? Wait… or go to your database and delete the lock. Not the best solution!!! Microsoft hates admins who directly touch and alter the database. But for a very long time this was the only solution to this problem: <a href="http://myitforum.com/myitforumwp/2013/02/22/unlocking-configmgr-2012-objects/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://myitforum.com/myitforumwp/2013/02/22/unlocking-configmgr-2012-objects/', 'http://myitforum.com/myitforumwp/2013/02/22/unlocking-configmgr-2012-objects/']);" >http://myitforum.com/myitforumwp/2013/02/22/unlocking-configmgr-2012-objects/</a>
+At least I hate waiting, even more if it’s 30 minutes because of a stupid lock I don’t want to have anymore. So what could be done? Wait… or go to your database and delete the lock. Not the best solution!!! Microsoft hates admins who directly touch and alter the database. But for a very long time this was the only solution to this problem: [http://myitforum.com/myitforumwp/2013/02/22/unlocking-configmgr-2012-objects/](http://myitforum.com/myitforumwp/2013/02/22/unlocking-configmgr-2012-objects/)
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; width: 97.5%; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; width: 100%; color: black; direction: ltr; text-align: left; line-height: 12pt; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -120,7 +120,7 @@ At least I hate waiting, even more if it’s 30 minutes because of a stupid lock
   
 > OutBuffer, PipelineVariable, and OutVariable. For more information, see
   
-> about_CommonParameters (<a href="http://go.microsoft.com/fwlink/?LinkID=113216)" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://go.microsoft.com/fwlink/?LinkID=113216)', 'http://go.microsoft.com/fwlink/?LinkID=113216)']);" >http://go.microsoft.com/fwlink/?LinkID=113216)</a>.
+> about_CommonParameters ([http://go.microsoft.com/fwlink/?LinkID=113216)](http://go.microsoft.com/fwlink/?LinkID=113216)).
 > 
 > INPUTS
   
@@ -211,5 +211,6 @@ Use these cmdlets to get the InputObjects:
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,Configuration+Manager,Powershell,SysCtr,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/09/unlock-objects-configmgr-2012-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

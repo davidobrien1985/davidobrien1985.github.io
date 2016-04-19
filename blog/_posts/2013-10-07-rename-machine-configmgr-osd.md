@@ -29,7 +29,7 @@ We thought about using LiteTouch (MDT) with UDI to set the new computername, but
 
 That’s why we set up a custom SQL database which kind of looks like this:
 
-<a href="/media/2013/10/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2013/10/image3.png', '']);" ><img class="img-responsive aligncenter wp-image-1376 size-thumbnail" src="/media/2013/10/image3-150x150.png" alt="image.png" width="150" height="150" /></a><a href="/media/2013/10/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2013/10/image4.png', '']);" ><img class="img-responsive aligncenter wp-image-1378 size-thumbnail" src="/media/2013/10/image4-150x150.png" alt="image.png" width="150" height="150" /></a>
+[<img class="img-responsive aligncenter wp-image-1376 size-thumbnail" src="/media/2013/10/image3-150x150.png" alt="image.png" width="150" height="150" />](/media/2013/10/image3.png)[<img class="img-responsive aligncenter wp-image-1378 size-thumbnail" src="/media/2013/10/image4-150x150.png" alt="image.png" width="150" height="150" />](/media/2013/10/image4.png)
 
 ## How to Query SQL Database from WinPE
 
@@ -198,11 +198,11 @@ I’m here doing this via script, because I wanted total zero-touch.
   </div>
 </div>
 
-I already used this in another script of mine here to set the name of a new image during Build & Capture: <a href="http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/', 'http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/']);" >http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/</a>
+I already used this in another script of mine here to set the name of a new image during Build & Capture: [http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/](http://www.david-obrien.net/2012/10/13/easy-versioning-of-imagesconfiguration-manager-and-powershell/)
 
 This powershell script has to run quite early, before the OS gets installed.
 
-<a href="/media/2013/10/image5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2013/10/image5.png', '']);" ><img class="img-responsive aligncenter size-thumbnail wp-image-1380" src="/media/2013/10/image5-150x150.png" alt="image.png" width="150" height="150" /></a>
+[<img class="img-responsive aligncenter size-thumbnail wp-image-1380" src="/media/2013/10/image5-150x150.png" alt="image.png" width="150" height="150" />](/media/2013/10/image5.png)
 
 ## Alternative: How to rename Computer after installation
 
@@ -352,7 +352,7 @@ Here I assume that you did not want to use SQL authentication and did not find a
 
 This Powershell script I would run after the CM12 client got installed, but still during the Task Sequence. Here we can run a command line in another user’s context. This user should have read permissions to the database. Just like before, we query the database and set the Powershell variable $OSDComputerName to the value in our database.
   
-We can now use the Powershell cmdlet “Rename-Computer” (<a href="http://technet.microsoft.com/en-us/library/hh849792.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/hh849792.aspx', 'http://technet.microsoft.com/en-us/library/hh849792.aspx']);" >http://technet.microsoft.com/en-us/library/hh849792.aspx</a>) to rename the localhost to its new name.
+We can now use the Powershell cmdlet “Rename-Computer” ([http://technet.microsoft.com/en-us/library/hh849792.aspx](http://technet.microsoft.com/en-us/library/hh849792.aspx)) to rename the localhost to its new name.
   
 In order for this to work we need a domain user with permission to do so and create a new PSCredential object out of this user. See lines 2 and 3 from the bottom.
   
@@ -365,5 +365,6 @@ I know that this could have all been quite a lot easier with UDI or MDT database
 Looking forward to your comments! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="CM12,ConfigMgr,Powershell,SCCM,SQL,System+Center,WinPE" data-count="vertical" data-url="http://www.david-obrien.net/2013/10/rename-machine-configmgr-osd/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

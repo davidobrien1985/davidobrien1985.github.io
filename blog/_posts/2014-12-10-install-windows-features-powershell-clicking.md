@@ -1,6 +1,6 @@
 ---
 id: 2844
-title: 'Install Windows features through PowerShell &#8211; by clicking'
+title: 'Install Windows features through PowerShell - by clicking'
 date: 2014-12-10T14:56:23+00:00
 author: "David O'Brien"
 layout: post
@@ -19,9 +19,9 @@ tags:
 
 I am currently rebuilding my home lab (again! This time properly, I promise.) and my goal is to use as much PowerShell as possible.
 
-I am building everything on a Dell XPS 15 laptop with a 1TB Samsung SSD and 16GB RAM. Enough for a mid-size mobile lab. The host runs Windows Server 2012 R2, what else? On top of that I have also installed the <a href="http://blogs.msdn.com/b/powershell/archive/2014/11/18/windows-management-framework-5-0-preview-november-2014-is-now-available.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.msdn.com/b/powershell/archive/2014/11/18/windows-management-framework-5-0-preview-november-2014-is-now-available.aspx', 'Windows Management Framework 5 November Preview']);" target="_blank">Windows Management Framework 5 November Preview</a> in order to use all the latest and greatest features of PowerShell, for example Desired State Configuration in its latest version.
+I am building everything on a Dell XPS 15 laptop with a 1TB Samsung SSD and 16GB RAM. Enough for a mid-size mobile lab. The host runs Windows Server 2012 R2, what else? On top of that I have also installed the [Windows Management Framework 5 November Preview](http://blogs.msdn.com/b/powershell/archive/2014/11/18/windows-management-framework-5-0-preview-november-2014-is-now-available.aspx) in order to use all the latest and greatest features of PowerShell, for example Desired State Configuration in its latest version.
 
-Of course, I have also downloaded the <a href="http://blogs.msdn.com/b/powershell/archive/2014/10/28/powershell-dsc-reskit-wave-8-now-with-100-resources.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.msdn.com/b/powershell/archive/2014/10/28/powershell-dsc-reskit-wave-8-now-with-100-resources.aspx', 'DSC Resource Kit']);" target="_blank">DSC Resource Kit</a> in its latest Wave, number 8.
+Of course, I have also downloaded the [DSC Resource Kit](http://blogs.msdn.com/b/powershell/archive/2014/10/28/powershell-dsc-reskit-wave-8-now-with-100-resources.aspx) in its latest Wave, number 8.
 
 I started out using DSC to deploy my DNS Server and Active Directory Domain Services, after that I thought to myself, “Which Roles and Features do I need?”. That’s the moment I usually go and run the following PowerShell command on my Server OS:
 
@@ -79,11 +79,11 @@ Did you know that this cmdlet also has an –OutputMode parameter?
 > 
 > The values of this parameter determine how many items you can send down the pipeline.
 > 
-> &#8212; **None**: No items. This is the default value.
+> - **None**: No items. This is the default value.
 > 
-> &#8212; **Single**: Zero items or one item. Use this value when the next command can take only one input object.
+> - **Single**: Zero items or one item. Use this value when the next command can take only one input object.
 > 
-> &#8212; **Multiple**: Zero, one, or many items. Use this value when the next command can take multiple input objects. This value is equivalent to the **Passthru** parameter.
+> - **Multiple**: Zero, one, or many items. Use this value when the next command can take multiple input objects. This value is equivalent to the **Passthru** parameter.
 > 
 > This parameter is introduced in Windows PowerShell 3.0.
 
@@ -123,8 +123,10 @@ This way I can easily go and install all the Windows Roles and Features I like i
 
 Have fun!
 
-&#8211; <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
+- <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,Powershell,Script" data-count="vertical" data-url="http://www.david-obrien.net/2014/12/install-windows-features-powershell-clicking/">Tweet</a>
 </div>
+
+

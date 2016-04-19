@@ -25,7 +25,7 @@ tags:
 
 This is a short overview of what I found new in ConfigMgr SP1 update:
 
-  * I am able to **update my pre-release SP1 to RTM** (Thanks <a href="http://twitter.com/pvanderwoude" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://twitter.com/pvanderwoude', '@pvanderwoude']);" target="_blank">@pvanderwoude</a>) 
+  * I am able to **update my pre-release SP1 to RTM** (Thanks [@pvanderwoude](http://twitter.com/pvanderwoude)) 
       * although I doubt MS will support that for anyone but TAP customers
   * There are 56 prerequisites for this new release 
       * SQL Express 2012
@@ -40,8 +40,9 @@ This is a short overview of what I found new in ConfigMgr SP1 update:
   * Bitlocker 
       * much faster encryption due to only encrypting what’s written on disk
       * preprovisioning in WinPE
-  * Powershell cmdlets for Site Server (see my previous blog <a href="http://david-obrien.de/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.de/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/', 'ConfigMgr 2012 SP1 Powershell']);" target="_blank">ConfigMgr 2012 SP1 Powershell</a>)
+  * Powershell cmdlets for Site Server (see my previous blog [ConfigMgr 2012 SP1 Powershell](http://david-obrien.de/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/))
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,Configuration+Manager,SCCM,SP1,System+Center+Configuration+Manager,update" data-count="vertical" data-url="http://www.david-obrien.net/2012/12/whats-new-in-configmgr-sp1/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

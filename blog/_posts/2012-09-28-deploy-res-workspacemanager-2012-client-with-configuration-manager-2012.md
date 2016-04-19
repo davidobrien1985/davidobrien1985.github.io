@@ -41,19 +41,19 @@ Copy the RES-WM-2012.msi to a share of your choice and make sure that you can ac
   
 Start creating a new Application, it’s really just a few clicks.
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/09/RESWM_Application_11.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/09/RESWM_Application_11.jpg', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="RESWM_Application_1" src="http://www.david-obrien.de/wp-content/uploads/2012/09/RESWM_Application_1_thumb.jpg" alt="RESWM_Application_1" width="322" height="265" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="RESWM_Application_1" src="http://www.david-obrien.de/wp-content/uploads/2012/09/RESWM_Application_1_thumb.jpg" alt="RESWM_Application_1" width="322" height="265" border="0" />]("RESWM_Application_1" http://www.david-obrien.de/wp-content/uploads/2012/09/RESWM_Application_11.jpg)
 
 In the next window you are asked to further configure the installation.
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/09/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/09/image6.png', '']);" class="broken_link"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb6.png" alt="image" width="319" height="263" border="0" /></a>
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb6.png" alt="image" width="319" height="263" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/09/image6.png)
 </p>
 
 My installation program looks like this:
 
-msiexec /i &#8220;RES-WM-2012.msi&#8221; DBTYPE=MSSQL DBSERVER=SQL01 DBNAME=WorkspaceManager DBUSER=WorkspaceManager DBPASSWORD=%Password% /qn
+msiexec /i "RES-WM-2012.msi" DBTYPE=MSSQL DBSERVER=SQL01 DBNAME=WorkspaceManager DBUSER=WorkspaceManager DBPASSWORD=%Password% /qn
 
-For more information on deploying the Client, refer to the Admin Guide on ressoftware.com: <a href="http://tinyurl.com/c9nurso" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://tinyurl.com/c9nurso', 'http://tinyurl.com/c9nurso']);" title="http://tinyurl.com/c9nurso">http://tinyurl.com/c9nurso</a>
+For more information on deploying the Client, refer to the Admin Guide on ressoftware.com: [http://tinyurl.com/c9nurso]("http://tinyurl.com/c9nurso" http://tinyurl.com/c9nurso)
 
 # Install and uninstall
 
@@ -62,5 +62,7 @@ That’s it! Now all you need to do is either integrate the application into a T
 Same goes for uninstall. Unfortunately the client won’t get deleted in the RES Database, this is something I will have to build myself. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr2012,Configuration+Manager,Configuration+Manager+2012,RES,SCCM,SCCM+2012,Workspace+Manager" data-count="vertical" data-url="http://www.david-obrien.net/2012/09/deploy-res-workspacemanager-2012-client-with-configuration-manager-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

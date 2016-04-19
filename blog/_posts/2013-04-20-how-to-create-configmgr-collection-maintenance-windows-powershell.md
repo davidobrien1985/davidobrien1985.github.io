@@ -1,6 +1,6 @@
 ---
 id: 910
-title: 'How to create ConfigMgr collection maintenance windows &#8211; Powershell'
+title: 'How to create ConfigMgr collection maintenance windows - Powershell'
 date: 2013-04-20T00:08:31+00:00
 author: "David O'Brien"
 layout: post
@@ -30,13 +30,13 @@ A customer once asked me what those maintenance windows on collections are for a
   
 If you don’t know the answer to either of those two questions, read these articles:
 
-<a href="http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/', 'http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/']);" >http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/</a>
+[http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/](http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/)
 
-<a href="http://henkhoogendoorn.blogspot.de/2011/04/maintenance-windows-in-configmgr-2012.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://henkhoogendoorn.blogspot.de/2011/04/maintenance-windows-in-configmgr-2012.html', 'http://henkhoogendoorn.blogspot.de/2011/04/maintenance-windows-in-configmgr-2012.html']);" >http://henkhoogendoorn.blogspot.de/2011/04/maintenance-windows-in-configmgr-2012.html</a>
+[http://henkhoogendoorn.blogspot.de/2011/04/maintenance-windows-in-configmgr-2012.html](http://henkhoogendoorn.blogspot.de/2011/04/maintenance-windows-in-configmgr-2012.html)
 
-<a href="http://technet.microsoft.com/en-us/library/hh508762.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/hh508762.aspx', 'http://technet.microsoft.com/en-us/library/hh508762.aspx']);" >http://technet.microsoft.com/en-us/library/hh508762.aspx</a>
+[http://technet.microsoft.com/en-us/library/hh508762.aspx](http://technet.microsoft.com/en-us/library/hh508762.aspx)
 
-<a href="http://blogs.technet.com/b/server-cloud/archive/2012/03/28/business-hours-vs-maintenance-windows-with-system-center-2012-configuration-manager.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.technet.com/b/server-cloud/archive/2012/03/28/business-hours-vs-maintenance-windows-with-system-center-2012-configuration-manager.aspx', 'http://blogs.technet.com/b/server-cloud/archive/2012/03/28/business-hours-vs-maintenance-windows-with-system-center-2012-configuration-manager.aspx']);" >http://blogs.technet.com/b/server-cloud/archive/2012/03/28/business-hours-vs-maintenance-windows-with-system-center-2012-configuration-manager.aspx</a>
+[http://blogs.technet.com/b/server-cloud/archive/2012/03/28/business-hours-vs-maintenance-windows-with-system-center-2012-configuration-manager.aspx](http://blogs.technet.com/b/server-cloud/archive/2012/03/28/business-hours-vs-maintenance-windows-with-system-center-2012-configuration-manager.aspx)
 
 I wouldn’t be me if I didn’t try to automate the creation of maintenance windows.
 
@@ -44,13 +44,13 @@ This article shows you an example of how to create a new maintenance window for 
 
 ## SMS_ScheduleMethods
 
-We’re going to use one of the WMI subclasses of SMS_ScheduleMethods again which we already know from my script to automate the Offline Servicing process for OS images. (here: <a href="http://www.david-obrien.net/2012/12/17/how-to-automate-offline-servicing-in-configuration-manager-2012/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/12/17/how-to-automate-offline-servicing-in-configuration-manager-2012/', 'Automation of Offline Servicing']);" target="_blank">Automation of Offline Servicing</a>)
+We’re going to use one of the WMI subclasses of SMS_ScheduleMethods again which we already know from my script to automate the Offline Servicing process for OS images. (here: [Automation of Offline Servicing](http://www.david-obrien.net/2012/12/17/how-to-automate-offline-servicing-in-configuration-manager-2012/))
   
-Today it’ll be the <a href="http://msdn.microsoft.com/en-us/library/hh948339.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh948339.aspx', 'SMS_ST_RecurInterval']);" target="_blank">SMS_ST_RecurInterval</a> class which will help us achieve our task.
+Today it’ll be the [SMS_ST_RecurInterval](http://msdn.microsoft.com/en-us/library/hh948339.aspx) class which will help us achieve our task.
 
 ## SMS_ServiceWindow
 
-This class (<a href="http://msdn.microsoft.com/en-us/library/cc143300.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/cc143300.aspx', 'SMS_ServiceWindow']);" target="_blank">SMS_ServiceWindow</a>) will define our maintenance / service window and will be embedded into the SMS_CollectionSettings instance of that collection which we want to configure.
+This class ([SMS_ServiceWindow](http://msdn.microsoft.com/en-us/library/cc143300.aspx)) will define our maintenance / service window and will be embedded into the SMS_CollectionSettings instance of that collection which we want to configure.
 
 As usual, this is a lazy property and we need the WMI instance of our collection and in comparison to my earlier scripts I found a slightly easier way on doing so.
   
@@ -62,7 +62,7 @@ This script should help you create lots of different maintenance windows (only 1
 
 Comments or questions much appreciated!
 
-Here’s the link to Codeplex: <a href="https://davidobrien.codeplex.com/SourceControl/changeset/view/c473426cf644d97ecbdc602d55550b77a7c1f8ee#New-MaintenanceWindow.ps1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://davidobrien.codeplex.com/SourceControl/changeset/view/c473426cf644d97ecbdc602d55550b77a7c1f8ee#New-MaintenanceWindow.ps1', 'https://davidobrien.codeplex.com/SourceControl/changeset/view/c473426cf644d97ecbdc602d55550b77a7c1f8ee#New-MaintenanceWindow.ps1']);" >https://davidobrien.codeplex.com/SourceControl/changeset/view/c473426cf644d97ecbdc602d55550b77a7c1f8ee#New-MaintenanceWindow.ps1</a>
+Here’s the link to Codeplex: [https://davidobrien.codeplex.com/SourceControl/changeset/view/c473426cf644d97ecbdc602d55550b77a7c1f8ee#New-MaintenanceWindow.ps1](https://davidobrien.codeplex.com/SourceControl/changeset/view/c473426cf644d97ecbdc602d55550b77a7c1f8ee#New-MaintenanceWindow.ps1)
 
 How to use it:
 
@@ -76,7 +76,7 @@ How to use it:
   </div>
 </div>
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/04/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/04/image4.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Create new maintenance window on SCCM collection" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb4.png" width="303" height="232" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Create new maintenance window on SCCM collection" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb4.png" width="303" height="232" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image4.png)
 
 &nbsp;
 
@@ -583,5 +583,7 @@ How to use it:
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,Collections,ConfigMgr,Configuration+Manager,Microsoft,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/04/how-to-create-configmgr-collection-maintenance-windows-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

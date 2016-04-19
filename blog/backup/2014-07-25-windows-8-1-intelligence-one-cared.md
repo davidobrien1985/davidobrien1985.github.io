@@ -34,9 +34,9 @@ Of course, I am deploying Windows 8.1 Update (latest and greatest!) to these tab
 
 These tablets (Lenovo Thinkpad Tablet 10 by the way) are of course touch and always used with touch, because the retail agents will be walking around with these devices. Because of this the customer wants the Operating System to boot to Start and not to desktop and use as many modern / immersive applications as possible, for example IE11.
 
-It&#8217;s pretty easy to force this behaviour via Group Policy. What would happen though, if the Organisational Unit (OU) these tablets are in, does not only have tablets, but also Laptops which are not touch enabled? You would need to create some kind of filter to only apply this setting to the touch-enabled tablets, right? WRONG!
+It's pretty easy to force this behaviour via Group Policy. What would happen though, if the Organisational Unit (OU) these tablets are in, does not only have tablets, but also Laptops which are not touch enabled? You would need to create some kind of filter to only apply this setting to the touch-enabled tablets, right? WRONG!
 
-Microsoft implemented a neat little feature into Windows 8.1 Update which automatically detects whether it is running on a tablet / slate or something else. This feature, if it detects that it&#8217;s running on a slate device, will automatically let Windows boot to Start and set File Type Associations to open up the modern / immersive applications. If it detects that it&#8217;s running on a mobile or desktop device, then it will boot to Desktop and use the desktop IE11.
+Microsoft implemented a neat little feature into Windows 8.1 Update which automatically detects whether it is running on a tablet / slate or something else. This feature, if it detects that it's running on a slate device, will automatically let Windows boot to Start and set File Type Associations to open up the modern / immersive applications. If it detects that it's running on a mobile or desktop device, then it will boot to Desktop and use the desktop IE11.
 
 Pretty cool, huh? So away goes that GPO!
 
@@ -44,7 +44,7 @@ Pretty cool, huh? So away goes that GPO!
 
 # POWER\_PLATFORM\_ROLE enumeration
 
-How does Windows 8.1 Update know what it&#8217;s running on? It&#8217;s checking a hardware property, which needs to be set by the device&#8217;s vendor. It&#8217;s called POWER\_PLATFORM\_ROLE, seems to be part of PowrProf.dll and can be queried like this:
+How does Windows 8.1 Update know what it's running on? It's checking a hardware property, which needs to be set by the device's vendor. It's called POWER\_PLATFORM\_ROLE, seems to be part of PowrProf.dll and can be queried like this:
 
 <div id="wpshdo_11" class="wp-synhighlighter-outer">
   <div id="wpshdt_11" class="wp-synhighlighter-expanded">
@@ -68,9 +68,9 @@ How does Windows 8.1 Update know what it&#8217;s running on? It&#8217;s checking
 
 More information on this POWER\_PLATFORM\_ROLE can be found here: <a href="http://msdn.microsoft.com/en-us/library/aa373174%28v=vs.85%29.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/aa373174%28v=vs.85%29.aspx', 'http://msdn.microsoft.com/en-us/library/aa373174%28v=vs.85%29.aspx']);" title="http://msdn.microsoft.com/en-us/library/aa373174%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/aa373174%28v=vs.85%29.aspx</a>
 
-What&#8217;s the result of above query if you run it on your device? Chances are it&#8217;s probably 1, 2 or 4. Bad luck, this cool feature won&#8217;t work on your device.
+What's the result of above query if you run it on your device? Chances are it's probably 1, 2 or 4. Bad luck, this cool feature won't work on your device.
 
-Windows will only boot to Start if this property has a value of &#8216;8&#8217;. (<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx', 'http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx']);" title="http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx</a>)
+Windows will only boot to Start if this property has a value of '8'. (<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx', 'http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx']);" title="http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/windows/desktop/aa373174%28v=vs.85%29.aspx</a>)
 
 I started a quick poll on Twitter the other day asking people to run that query and report back with their result and hardware:
 
@@ -322,12 +322,13 @@ I started a quick poll on Twitter the other day asking people to run that query 
   </tr>
 </table>
 
-I guess you get the point. No vendor bothers to call their touch devices what they are. Not even Microsoft, not even on the latest of the latest devices! It&#8217;s a bit like the Chassis Type thing we here and there have to struggle with when we try to rely on MDT to gather if the device we want to deploy to is a Laptop or a Desktop.
+I guess you get the point. No vendor bothers to call their touch devices what they are. Not even Microsoft, not even on the latest of the latest devices! It's a bit like the Chassis Type thing we here and there have to struggle with when we try to rely on MDT to gather if the device we want to deploy to is a Laptop or a Desktop.
 
 If you are in a position where you are buying devices for your company, then please do us all a favour and try to force the vendor to put in the correct value in this property.
   
-Maybe you have a device that already tells you the truth and you want to have it on this list? Just put it into the comments and I&#8217;ll update the table. 
+Maybe you have a device that already tells you the truth and you want to have it on this list? Just put it into the comments and I'll update the table. 
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="BIOS,ConfigMgr,deployment,GPO,Hardware,MDT,SCCM,Tablet,UEFI,WMI" data-count="vertical" data-url="http://www.david-obrien.net/2014/07/windows-8-1-intelligence-one-cared/">Tweet</a>
 </div>
+

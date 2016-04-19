@@ -38,16 +38,18 @@ In order for us to get that information we need to query the CCM_Application cla
 
 # 
 
-Take a look at the MSDN article for this WMI class: <a href="http://msdn.microsoft.com/en-us/library/jj874280.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/jj874280.aspx', 'http://msdn.microsoft.com/en-us/library/jj874280.aspx']);" title="http://msdn.microsoft.com/en-us/library/jj874280.aspx">http://msdn.microsoft.com/en-us/library/jj874280.aspx</a>
+Take a look at the MSDN article for this WMI class: [http://msdn.microsoft.com/en-us/library/jj874280.aspx]("http://msdn.microsoft.com/en-us/library/jj874280.aspx" http://msdn.microsoft.com/en-us/library/jj874280.aspx)
 
 I am currently trying to get around the Where-Object pipe, because this can be quite slow, especially if you have a lot of deployments to that machine, unfortunately the WQL query still gives me the finger…
 
   * **$_.IsMachineTarget** means that this deployment is for the device
   * **$_.InstallState –ne Installed** means that the application isn’t installed yet
-  * **$_.ResolvedState -eq &#8216;Installed&#8217;** means that it’s a required installation. Otherwise it would say “Available”.
+  * **$_.ResolvedState -eq 'Installed'** means that it’s a required installation. Otherwise it would say “Available”.
 
 Would love some feedback if this works on your machines. I only tried it on CM12 R2 and SP1 CU3 and the ConfigMgr documentation wasn’t too helpful. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="CM12,ConfigMgr+2012,Configuration+Manager,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/12/find-required-deployments-configmgr-clients/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

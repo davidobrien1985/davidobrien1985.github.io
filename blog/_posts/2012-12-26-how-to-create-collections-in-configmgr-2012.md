@@ -29,7 +29,7 @@ tags:
 
 # Create new Collections in SCCM 2012
 
-This video explains how to create new user and device Collections in Configuration Manager 2012 using first the console and then my script (found here: <a href="http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/', 'http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/']);" title="http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/">http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/</a> )
+This video explains how to create new user and device Collections in Configuration Manager 2012 using first the console and then my script (found here: [http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/]("http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/" http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/) )
 
 Have fun!
 
@@ -49,5 +49,6 @@ Have fun!
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager+2012,Powershell,SCCM,SCCM+2012,tutorial,video" data-count="vertical" data-url="http://www.david-obrien.net/2012/12/how-to-create-collections-in-configmgr-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

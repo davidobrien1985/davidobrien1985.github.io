@@ -28,17 +28,17 @@ tags:
 
 Some days ago I was asked if I had a script that could create new Configuration Manager 2012 applications (like in the new App model) from script. At that time I did not, but this just changed.
 
-With the new cmdlets most scripts aren&#8217;t that long anymore, so is this, quite short.
+With the new cmdlets most scripts aren't that long anymore, so is this, quite short.
 
-This script won&#8217;t create all the application types that could be created, like MacOSX, AppV, Android or such. This script can only create deployment types for MSI and basic &#8220;script installers&#8221;.
+This script won't create all the application types that could be created, like MacOSX, AppV, Android or such. This script can only create deployment types for MSI and basic "script installers".
 
-MSI is easy, I just did a &#8220;automatic import&#8221; for MSIs. So not too much to do here, at least for me. If you need to append some switches/parameters to the commandline, you will have to do that manually after mass import.
+MSI is easy, I just did a "automatic import" for MSIs. So not too much to do here, at least for me. If you need to append some switches/parameters to the commandline, you will have to do that manually after mass import.
 
-Script installer is a bit more complicated. The Add-CMDeploymentType won&#8217;t allow you to add any other detection method than detection by script. You can&#8217;t add a detection by file / registry / folder / &#8230; via the powershell cmdlet.
+Script installer is a bit more complicated. The Add-CMDeploymentType won't allow you to add any other detection method than detection by script. You can't add a detection by file / registry / folder / ... via the powershell cmdlet.
   
 In this import script I used a placeholder for the detection script, that way the cmdlet will work but you will need to go into these deployment types and reconfigure the detection method to your liking.
 
-Here&#8217;s an example of how to import AppV applications. It&#8217;s german, but if you look at the script I guess you&#8217;ll get the idea.
+Here's an example of how to import AppV applications. It's german, but if you look at the script I guess you'll get the idea.
 
 ## Import via XML
 
@@ -86,7 +86,7 @@ I will upload an example XML file. You should be able to extend this file in ord
 &lt;/Applications&gt;</pre>
 </div>
 
-Here&#8217;s the script:
+Here's the script:
 
 <div class="wlWriterEditableSmartContent" id="scid:812469c5-0cb0-4c63-8c15-c81123a09de7:1ba02734-512d-40ed-bd26-ef12dc4b8900" style="margin: 0px; padding: 0px; float: none; display: inline;">
   <pre class="vb">[CmdletBinding( SupportsShouldProcess = $False, ConfirmImpact = "None", DefaultParameterSetName = "" ) ]
@@ -156,5 +156,7 @@ I hope this article gives you an idea of how to accomplish the task of mass impo
 Comments and questions are welcome as always! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,ConfigMgr+2012,Configuration+Manager,Powershell,SCCM,SysCtr,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/07/create-new-configmgr-applications-from-script-with-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

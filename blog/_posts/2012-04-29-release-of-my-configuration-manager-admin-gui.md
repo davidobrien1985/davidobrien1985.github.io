@@ -33,19 +33,19 @@ Go ahead and download the package here: Download Link
 
 Deploy a Task Sequence to a defined collection:
   
-&#8211; the Task Sequence will be available as soon as possible
+- the Task Sequence will be available as soon as possible
   
-&#8211; it will be available via PXE boot
+- it will be available via PXE boot
   
-&#8211; it will be required
+- it will be required
 
 Import machines:
   
-&#8211; import a single machine to a given collection
+- import a single machine to a given collection
   
-&#8211; import any given number of machines via a CSV file
+- import any given number of machines via a CSV file
   
-&#8211; the CSV needs to have the following format:
+- the CSV needs to have the following format:
   
 _C0012324;00-00-11-11-22-33
   
@@ -57,11 +57,11 @@ C0012326;00-03-11-11-22-33_
 
 I am going to continue working on the script as much as my time permits. There are still lots of things that I would like to see covered, such as
 
-&#8211; create variables (collections and machines)
+- create variables (collections and machines)
   
-&#8211; configure the Task Sequence deployments yourself
+- configure the Task Sequence deployments yourself
   
-&#8211; create applications
+- create applications
 
 # Why all this?
 
@@ -72,5 +72,7 @@ And then I do believe, that this could be of interest for some people or even co
 I am looking forward to your feedback! Here or on Twitter (@david_obrien) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Configuration+Manager+2012,Microsoft,Powershell,SCCM,SCCM+2012,scripting,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2012/04/release-of-my-configuration-manager-admin-gui/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

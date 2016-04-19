@@ -35,7 +35,7 @@ tags:
 
 # Image Offline Servicing in SCCM 2012
 
-In my last post (<a href="http://david-obrien.de/?p=532" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.de/?p=532', 'Create a new Software Update Group in ConfigMgr']);" target="_blank">Create a new Software Update Group in ConfigMgr</a>) I showed you how to create a new Software Update Group, e.g. when the latest Microsoft updates are available. By the way, there will be an upgrade to that post!
+In my last post ([Create a new Software Update Group in ConfigMgr](http://david-obrien.de/?p=532)) I showed you how to create a new Software Update Group, e.g. when the latest Microsoft updates are available. By the way, there will be an upgrade to that post!
 
 Today I’m going to show you how to automate the process called Image Offline Servicing by script.
 
@@ -49,11 +49,11 @@ This process is now built-in to ConfigMgr 2012.
 
 You can configure the process inside the GUI:
 
-<a href="http://david-obrien.de/wp-content/uploads/2012/12/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.de/wp-content/uploads/2012/12/image.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/12/image_thumb.png" alt="image" width="339" height="103" /></a>
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto;" title="image" src="http://david-obrien.de/wp-content/uploads/2012/12/image_thumb.png" alt="image" width="339" height="103" />]("image" http://david-obrien.de/wp-content/uploads/2012/12/image.png)
 
 Doing this you can apply any Software Updates that haven’t already been applied to the image without recapturing the image.
   
-I know that people have probably done this stuff for many years now, for example like this: <a href="http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx', 'http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx']);" title="http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx">http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx</a>
+I know that people have probably done this stuff for many years now, for example like this: [http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx]("http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx" http://blogs.technet.com/b/configmgrdogs/archive/2012/02/15/applying-windows-updates-to-a-base-wim-using-dism-and-powershell.aspx)
 
 But now we’re able to do this inside of our ConfigMgr console and with one click can see which updates are inside of an Image Package.
 
@@ -103,13 +103,13 @@ You’re welcome to share any idea you have!
 
 As we’re about to create an event which needs to be scheduled, we have to also create a Schedule Token to tell ConfigMgr when to run the event, for example once, daily, weekly or monthly.
   
-Our event is going to run only once. We therefore need a subclass of the SMS\_ScheduleToken WMI class. That’ll be the SMS\_ST_NonRecurring class. (MSDN: <a href="http://msdn.microsoft.com/en-us/library/hh948302.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh948302.aspx', 'http://msdn.microsoft.com/en-us/library/hh948302.aspx']);" title="http://msdn.microsoft.com/en-us/library/hh948302.aspx">http://msdn.microsoft.com/en-us/library/hh948302.aspx</a>)
+Our event is going to run only once. We therefore need a subclass of the SMS\_ScheduleToken WMI class. That’ll be the SMS\_ST_NonRecurring class. (MSDN: [http://msdn.microsoft.com/en-us/library/hh948302.aspx]("http://msdn.microsoft.com/en-us/library/hh948302.aspx" http://msdn.microsoft.com/en-us/library/hh948302.aspx))
 
-For more info on all this, look at Jeff Huston’s article about these SMS Schedule Tokens: <a href="http://jeff.squarecontrol.com/archives/92" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jeff.squarecontrol.com/archives/92', 'http://jeff.squarecontrol.com/archives/92']);" title="http://jeff.squarecontrol.com/archives/92"  class="broken_link">http://jeff.squarecontrol.com/archives/92</a>
+For more info on all this, look at Jeff Huston’s article about these SMS Schedule Tokens: [http://jeff.squarecontrol.com/archives/92]("http://jeff.squarecontrol.com/archives/92" http://jeff.squarecontrol.com/archives/92)
 
 ## How to run the Offline Servicing Manager process
 
-This one was quite tricky to find, as it seems to be complete undocumented. I wondered why the Schedule wouldn’t fire off and start the Offline Servicing process, until I had a look at the SMSProv.log file and saw that at the very end of the whole adding of updates to the schedule there was a method run called RunOfflineServicingManager, which is part of the WMI class SMS_Imagepackage. I wasn’t able to find this method in the SDK and MSDN (<a href="http://msdn.microsoft.com/en-us/library/hh948758.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://msdn.microsoft.com/en-us/library/hh948758.aspx', 'http://msdn.microsoft.com/en-us/library/hh948758.aspx']);" title="http://msdn.microsoft.com/en-us/library/hh948758.aspx">http://msdn.microsoft.com/en-us/library/hh948758.aspx</a>).
+This one was quite tricky to find, as it seems to be complete undocumented. I wondered why the Schedule wouldn’t fire off and start the Offline Servicing process, until I had a look at the SMSProv.log file and saw that at the very end of the whole adding of updates to the schedule there was a method run called RunOfflineServicingManager, which is part of the WMI class SMS_Imagepackage. I wasn’t able to find this method in the SDK and MSDN ([http://msdn.microsoft.com/en-us/library/hh948758.aspx]("http://msdn.microsoft.com/en-us/library/hh948758.aspx" http://msdn.microsoft.com/en-us/library/hh948758.aspx)).
 
 With the help of the WMIExplorer I was able to write a small function to execute the process.
 
@@ -1048,5 +1048,6 @@ Combining this script with my previous one to create a Software Update Group, yo
 Comments are welcome and looked forward to  <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="http://david-obrien.de/wp-content/uploads/2012/12/wlEmoticon-smile.png" alt="Smile" />Either here or via Twitter (@david_obrien). 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,ConfigMgr,ConfigMgr+2012,Configuration+Manager,Powershell,SCCM,SCCM+2012,System+Center+Configuration+Manager" data-count="vertical" data-url="http://www.david-obrien.net/2012/12/how-to-automate-offline-servicing-in-configuration-manager-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

@@ -77,12 +77,12 @@ I can’t find anything on how to create/import a certificate and bind it to a D
 
 <span style="text-decoration: line-through;">After creating a Distribution Point with my script I can see it in the ConfigMgr console and inside the database’s Site Control file (without the certificate properties!)</span>
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/06/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/06/image.png', '']);" class="broken_link"><span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb.png" alt="image" width="370" height="229" border="0" /></span></a>
+[<span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb.png" alt="image" width="370" height="229" border="0" /></span>]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image.png)
 
 <span style="text-decoration: line-through;">As soon as I open up it’s properties inside the console the “Apply” (german: “Übernehmen”) button is active, without me doing anything!</span>
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/06/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/06/image1.png', '']);" class="broken_link"><span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb1.png" alt="image" width="331" height="316" border="0" /></span></a>
+  [<span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb1.png" alt="image" width="331" height="316" border="0" /></span>]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image1.png)
 </p>
 
 <span style="text-decoration: line-through;">When I press the button, only that, nothing else, the window closes and ConfigMgr creates a self-signed certificate and assigns it to the Distribution Point, which can then be seen in the Site Control File.</span>
@@ -1092,5 +1092,6 @@ Here’s the working script:
 Looking forward to your feedback via comments, tweets or mail! 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,ConfigMgr2012,Configuration+Manager,Configuration+Manager+2012,Install+Distribution+Point,Installation,Powershell,SCCM+2012,SCCM2012,Script,silent,System+Center,unattended" data-count="vertical" data-url="http://www.david-obrien.net/2012/06/install-distribution-point-for-configuration-manager-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

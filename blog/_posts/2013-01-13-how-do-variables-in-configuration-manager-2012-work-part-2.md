@@ -23,7 +23,7 @@ tags:
   - SCCM 2012
   - variables
 ---
-This is part 2 of my little series about variables in Configuration Manager 2012, for part 1 read here: <a href="http://www.david-obrien.net/?p=660" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=660', 'http://www.david-obrien.net/?p=660']);" target="_blank">http://www.david-obrien.net/?p=660</a>
+This is part 2 of my little series about variables in Configuration Manager 2012, for part 1 read here: [http://www.david-obrien.net/?p=660](http://www.david-obrien.net/?p=660)
 
 In part 1 I talked about setting variables on collections and machines directly.
 
@@ -37,11 +37,11 @@ All built-in collections are limited by the “All Systems” collection and thi
   
 While creating any new collection you’re being asked which collection the new one should be limited by.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image2.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb2.png" alt="image" width="317" height="117" border="0" /></a>Limiting collection means that machines, in order to be a member of the limited collection, need also to be a member of the limiting collection.
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb2.png" alt="image" width="317" height="117" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image2.png)Limiting collection means that machines, in order to be a member of the limited collection, need also to be a member of the limiting collection.
 
 I created an example of how it could look like when using such limited collections.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image3.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb3.png" alt="image" width="318" height="96" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb3.png" alt="image" width="318" height="96" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image3.png)
   
 This way it’s possible to add machines to the “All Departments” collection and configure variables with default values for all departments in the company. Then I add all machines to their respective department collection and if needed configure any deviating variables on the collection, not the machine. In doing so it’s possible to spot the configuration of each machine just by looking at its collection membership and knowing what was configured on the collection.
 
@@ -85,11 +85,11 @@ True, maybe not the most creative example, but I guess you get the point. A mach
 
 Every collection has a property called “Variable Priority”. By default this is set to the value “1”, means lowest. The highest value is “9”, highest.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image4.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb4.png" alt="image" width="294" height="308" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb4.png" alt="image" width="294" height="308" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image4.png)
 
 Any collection, a machine is member of, that has a higher priority, will overwrite these variables. The priority can only be set per collection, not per variable.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/01/image5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/01/image5.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb5.png" alt="image" width="296" height="313" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb5.png" alt="image" width="296" height="313" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image5.png)
 
 ## Use of a generic Task Sequence
 
@@ -114,5 +114,6 @@ Create a “parent collection” with all base variables, create other collectio
 Part 3 will contain a little script to set the collection’s variable priority. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="collection,ConfigMgr,Configuration+Manager,Microsoft,SCCM,SCCM+2012,variables" data-count="vertical" data-url="http://www.david-obrien.net/2013/01/how-do-variables-in-configuration-manager-2012-work-part-2/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

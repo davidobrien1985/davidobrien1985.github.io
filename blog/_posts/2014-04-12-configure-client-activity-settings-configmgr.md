@@ -25,7 +25,7 @@ tags:
 
 Ever wondered what triggers the ConfigMgr client change its Client Activity status from Active to Inactive?
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/04/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/04/image.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/04/image_thumb.png" width="306" height="102" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/04/image_thumb.png" width="306" height="102" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/04/image.png)
 
 My lab doesn’t have any inactive client at the moment, but I guess you know what I mean <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" alt="Winking smile" src="http://www.david-obrien.net/wp-content/uploads/2014/04/wlEmoticon-winkingsmile.png" />
 
@@ -33,7 +33,7 @@ My lab doesn’t have any inactive client at the moment, but I guess you know wh
 
 There isn’t too much information on the internet how to configure the client’s behaviour and I myself searched about 1.5 hours today until a colleague of mine helped me out with a simple screenshot.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/04/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/04/image1.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/04/image_thumb1.png" width="314" height="195" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/04/image_thumb1.png" width="314" height="195" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/04/image1.png)
 
 I always forget about this configuration menu and I really don’t understand why Microsoft put it there. This should be in the client settings or discovery node.
 
@@ -49,14 +49,15 @@ Then there is also one Site Maintenance Tasks which cleans up your environment. 
 > 
 > When enabled, configure this task to run at an interval greater than the **Heartbeat Discovery** schedule. This enables active clients to send a Heartbeat Discovery record to mark their client record as active so this task does not delete them.
 
-<a href="http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks', 'http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks']);" title="http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks">http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks</a>
+[http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks]("http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks" http://technet.microsoft.com/en-us/library/e555d7e3-3681-440a-82d0-319d2b4bdd08#BKMK_PlanMaintenanceTasks)
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/04/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/04/image2.png', '']);" class="broken_link"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/04/image_thumb2.png" width="318" height="164" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/04/image_thumb2.png" width="318" height="164" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/04/image2.png)
 
 &nbsp;
 
-From there I actually found the following technet article on the Client Status Settings which describes it pretty well: <a href="http://technet.microsoft.com/en-us/library/hh338432" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/hh338432', 'http://technet.microsoft.com/en-us/library/hh338432']);" title="http://technet.microsoft.com/en-us/library/hh338432">http://technet.microsoft.com/en-us/library/hh338432</a> 
+From there I actually found the following technet article on the Client Status Settings which describes it pretty well: [http://technet.microsoft.com/en-us/library/hh338432]("http://technet.microsoft.com/en-us/library/hh338432" http://technet.microsoft.com/en-us/library/hh338432) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Client+Activity,Client+Status,CM12,ConfigMgr,Configuration+Manager,Microsoft,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2014/04/configure-client-activity-settings-configmgr/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

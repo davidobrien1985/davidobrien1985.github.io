@@ -21,7 +21,7 @@ tags:
 ---
 ## Update to previous post on Software Update Groups
 
-In this post I’m presenting you version 1.0 of my script (<a href="http://david-obrien.net/?p=532" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://david-obrien.net/?p=532', 'http://david-obrien.net/?p=532']);" target="_blank">http://david-obrien.net/?p=532</a>)to create a new Software Update Group in Configuration Manager 2012.
+In this post I’m presenting you version 1.0 of my script ([http://david-obrien.net/?p=532](http://david-obrien.net/?p=532))to create a new Software Update Group in Configuration Manager 2012.
   
 The last version lacked some features which I wanted to see in it.
 
@@ -963,8 +963,9 @@ Do you have any requests or comments?
   </div>
 </div>
 
-You can also find a demo of this script in my latest video: <a href="http://www.david-obrien.net/?p=640" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=640', 'http://www.david-obrien.net/?p=640']);" target="_blank">http://www.david-obrien.net/?p=640</a> 
+You can also find a demo of this script in my latest video: [http://www.david-obrien.net/?p=640](http://www.david-obrien.net/?p=640) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,Powershell,SCCM" data-count="vertical" data-url="http://www.david-obrien.net/2013/01/update-how-to-create-a-new-software-update-group-in-configmgr-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

@@ -42,9 +42,9 @@ I kind of reproduced the behaviour in my environment and I really can’t explai
 
 Here is what my Task Sequence looks like:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/01/TS1.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/01/TS1.jpg', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Task Sequence" alt="SCCM Task Sequence" src="http://www.david-obrien.net/wp-content/uploads/2014/01/TS1_thumb.jpg" width="244" height="98" border="0" /></a>
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Task Sequence" alt="SCCM Task Sequence" src="http://www.david-obrien.net/wp-content/uploads/2014/01/TS1_thumb.jpg" width="244" height="98" border="0" />]("SCCM Task Sequence" http://www.david-obrien.net/wp-content/uploads/2014/01/TS1.jpg)
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/01/ts2.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/01/ts2.jpg', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Task Sequence" alt="SCCM Task Sequence" src="http://www.david-obrien.net/wp-content/uploads/2014/01/ts2_thumb.jpg" width="244" height="90" border="0" /></a>
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Task Sequence" alt="SCCM Task Sequence" src="http://www.david-obrien.net/wp-content/uploads/2014/01/ts2_thumb.jpg" width="244" height="90" border="0" />]("SCCM Task Sequence" http://www.david-obrien.net/wp-content/uploads/2014/01/ts2.jpg)
 
 I only configured six applications to be installed in this test and even two applications to be installed a second time (which I, to be honest, only discovered afterwards).
 
@@ -56,13 +56,13 @@ I tested this Task Sequence both online and as “Stand alone media” and came 
 
 This is how the cache looks like after installing Windows 8.1 after stand alone installation:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/01/cache.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/01/cache.jpg', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="ccmcache" alt="ccmcache" src="http://www.david-obrien.net/wp-content/uploads/2014/01/cache_thumb.jpg" width="244" height="179" border="0" /></a>
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="ccmcache" alt="ccmcache" src="http://www.david-obrien.net/wp-content/uploads/2014/01/cache_thumb.jpg" width="244" height="179" border="0" />]("ccmcache" http://www.david-obrien.net/wp-content/uploads/2014/01/cache.jpg)
 
 As you can see the Task Sequence behaved a bit differently in my environment than in the customer’s environment. The Task Sequence even copied the applications that weren’t referenced twice. Although it did not copy 6*6 application folders, “only” 8. This is a bit different to what my customer is experiencing, but still not what I expected.
 
 The online installation looks like this:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/01/image11.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/01/image11.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="ccmcache" alt="ccmcache" src="http://www.david-obrien.net/wp-content/uploads/2014/01/image_thumb11.png" width="244" height="139" border="0" /></a>This is sort of what I would expect. It’s clearly not more copy processes than necessary, but those sources were still all copied to the cache before the first installation even was installed.
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="ccmcache" alt="ccmcache" src="http://www.david-obrien.net/wp-content/uploads/2014/01/image_thumb11.png" width="244" height="139" border="0" />]("ccmcache" http://www.david-obrien.net/wp-content/uploads/2014/01/image11.png)This is sort of what I would expect. It’s clearly not more copy processes than necessary, but those sources were still all copied to the cache before the first installation even was installed.
 
 ## Summing up
 
@@ -77,7 +77,7 @@ I will keep you updated here on this issue.
 
 ## Hotfix available KB2928122
 
-Microsoft just publicly released the following hotfix to solve this issue: <a href="http://support.microsoft.com/kb/2928122" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://support.microsoft.com/kb/2928122', 'http://support.microsoft.com/kb/2928122']);" target="_blank">http://support.microsoft.com/kb/2928122</a>
+Microsoft just publicly released the following hotfix to solve this issue: [http://support.microsoft.com/kb/2928122](http://support.microsoft.com/kb/2928122)
 
 Description:
 
@@ -99,5 +99,6 @@ Description:
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Issue,Microsoft,SCCM,Task+Sequence" data-count="vertical" data-url="http://www.david-obrien.net/2014/01/multiple-copy-applications-configmgr-task-sequence/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

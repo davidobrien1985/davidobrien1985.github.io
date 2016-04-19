@@ -35,9 +35,9 @@ But most of the times we do have these kinds of problems:
         
         &nbsp;
         
-        <a href="http://www.david-obrien.de/wp-content/uploads/2011/11/import_sccm.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2011/11/import_sccm.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="import_sccm" border="0" alt="import_sccm" src="http://www.david-obrien.de/wp-content/uploads/2011/11/import_sccm_thumb.jpg" width="244" height="151" /></a>
+        [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="import_sccm" border="0" alt="import_sccm" src="http://www.david-obrien.de/wp-content/uploads/2011/11/import_sccm_thumb.jpg" width="244" height="151" />]("import_sccm" http://www.david-obrien.de/wp-content/uploads/2011/11/import_sccm.jpg)
         
-        <a href="http://www.david-obrien.de/wp-content/uploads/2011/11/sccm_import.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2011/11/sccm_import.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="sccm_import" border="0" alt="sccm_import" src="http://www.david-obrien.de/wp-content/uploads/2011/11/sccm_import_thumb.jpg" width="623" height="321" /></a>
+        [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="sccm_import" border="0" alt="sccm_import" src="http://www.david-obrien.de/wp-content/uploads/2011/11/sccm_import_thumb.jpg" width="623" height="321" />]("sccm_import" http://www.david-obrien.de/wp-content/uploads/2011/11/sccm_import.jpg)
         
         You can import your SCCM collections and, most important, your packages. Depending on your environment your working in or your user’s rights, you can chose between connecting to a SCCM Management Point’s WMI namespace or a SCCM Database.
         
@@ -48,7 +48,7 @@ But most of the times we do have these kinds of problems:
         Hitting “Start Import” will start a connection with either your SCCM site server or the database to import your data. Depending on how many packages you’ve got in your environment this process can take a few minutes.   
         When import is complete you will find new entries under “Deployed Packages”.
         
-        <a href="http://www.david-obrien.de/wp-content/uploads/2011/11/deployed_packages.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2011/11/deployed_packages.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="deployed_packages" border="0" alt="deployed_packages" src="http://www.david-obrien.de/wp-content/uploads/2011/11/deployed_packages_thumb.jpg" width="686" height="186" /></a>
+        [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="deployed_packages" border="0" alt="deployed_packages" src="http://www.david-obrien.de/wp-content/uploads/2011/11/deployed_packages_thumb.jpg" width="686" height="186" />]("deployed_packages" http://www.david-obrien.de/wp-content/uploads/2011/11/deployed_packages.jpg)
         
         This looks a bit off the same as we already know it from “Import Applications”, only now, because we imported not only the packages but also the programs, we get the install command and the correct source location as well. 
         
@@ -70,5 +70,7 @@ But most of the times we do have these kinds of problems:
         But what about the other software deployment tools like Altiris or Netinstall (Frontrange DSM)? Unfortunately they don’t have this nice integration into AppTitude. But surely you can export your packages from any software deployment tool of your choice and import them with the matching command line into AppTitude.
         
         <div style="float: right; margin-left: 10px;">
-          <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="APPDNA,AppTitude,ConfigMgr,Netinstall,SCCM,SCCM+2007,SCCM+2012" data-count="vertical" data-url="http://www.david-obrien.net/2011/11/appdna-apptitude-microsoft-sccm-can-it-get-any-easier/">Tweet</a>
+          [Tweet](https://twitter.com/share)
         </div>
+
+

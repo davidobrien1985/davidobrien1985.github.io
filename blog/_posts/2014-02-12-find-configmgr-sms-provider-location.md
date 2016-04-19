@@ -23,13 +23,13 @@ tags:
 ---
 In my role as a technical consultant I sometimes need to visit customer sites where there are already ConfigMgr environments in place and I need to quickly find my way around.
 
-One cool way of getting a quick overview would be my <a href="http://www.david-obrien.net/?p=1592" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/?p=1592', 'Inventory Script for Configuration Manager']);" target="_blank">Inventory Script for Configuration Manager</a>.
+One cool way of getting a quick overview would be my [Inventory Script for Configuration Manager](http://www.david-obrien.net/?p=1592).
 
 I now had to quickly find all the SMS Providers that were installed in a site.
 
 # ConfigMgr SMS Provider
 
-What’s the SMS Provider you ask? Quoting <a href="http://technet.microsoft.com/en-us/library/gg712282.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/gg712282.aspx', 'http://technet.microsoft.com/en-us/library/gg712282.aspx']);" title="http://technet.microsoft.com/en-us/library/gg712282.aspx">http://technet.microsoft.com/en-us/library/gg712282.aspx</a>
+What’s the SMS Provider you ask? Quoting [http://technet.microsoft.com/en-us/library/gg712282.aspx]("http://technet.microsoft.com/en-us/library/gg712282.aspx" http://technet.microsoft.com/en-us/library/gg712282.aspx)
 
 > The SMS Provider is the interface between the Configuration Manager console and the site database. This role is installed when you install a central administration site or primary site. Secondary sites do not install the SMS Provider. You can install the SMS Provider on the site server, the site database server (unless the site database is hosted on a clustered instance of SQL Server), or on another computer. You can also move the SMS Provider to another computer after the site is installed, or install multiple SMS Providers on additional computers. To move or install additional SMS Providers for a site, run Configuration Manager Setup, select the option **Perform site maintenance or reset the Site**, click **Next** , and then on the **Site Maintenance** page, select the option **Modify SMS Provider configuration**.
 > 
@@ -43,7 +43,7 @@ What’s the SMS Provider you ask? Quoting <a href="http://technet.microsoft.com
 
 To find all the SMS Providers in your environment you can check via the Console by looking at the Administration Node –> Site Configuration –> Sites and open up the Site’s properties.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/02/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/02/image3.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Site Properties" alt="SCCM Site Properties" src="http://www.david-obrien.net/wp-content/uploads/2014/02/image_thumb3.png" width="224" height="126" border="0" /></a>
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Site Properties" alt="SCCM Site Properties" src="http://www.david-obrien.net/wp-content/uploads/2014/02/image_thumb3.png" width="224" height="126" border="0" />]("SCCM Site Properties" http://www.david-obrien.net/wp-content/uploads/2014/02/image3.png)
 
 You see that I have two SMS Providers in my environment.
 
@@ -63,8 +63,9 @@ As an alternative you can just open up a Powershell on one SMS Provider you know
 
 This will give you something like this:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/02/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/02/image4.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SMS_ProviderLocation" alt="SMS_ProviderLocation" src="http://www.david-obrien.net/wp-content/uploads/2014/02/image_thumb4.png" width="244" height="34" border="0" /></a> 
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SMS_ProviderLocation" alt="SMS_ProviderLocation" src="http://www.david-obrien.net/wp-content/uploads/2014/02/image_thumb4.png" width="244" height="34" border="0" />]("SMS_ProviderLocation" http://www.david-obrien.net/wp-content/uploads/2014/02/image4.png) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Powershell,SCCM,SMS+Provider,System+Center,WMI" data-count="vertical" data-url="http://www.david-obrien.net/2014/02/find-configmgr-sms-provider-location/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

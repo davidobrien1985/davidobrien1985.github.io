@@ -33,11 +33,11 @@ Well, as I wanted to save the configuration I discovered that the Save button wa
 
 &nbsp;
 
-<a href="/media/2015/01/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/image.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2015/01/image_thumb.png" alt="image" width="452" height="340" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2015/01/image_thumb.png" alt="image" width="452" height="340" border="0" />]("image" /media/2015/01/image.png)
 
 I already started to believe that there was something wrong with my WAP installation, when I went back to Twitter and asked around:
 
-<a href="/media/2015/01/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/01/image1.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2015/01/image_thumb1.png" alt="image" width="269" height="323" border="0" /></a>
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2015/01/image_thumb1.png" alt="image" width="269" height="323" border="0" />]("image" /media/2015/01/image1.png)
 
 That’s strange, why would WAP have a check in there somewhere for a network being available, but then won’t tell me?
   
@@ -47,8 +47,10 @@ Weirdest thing here: I didn’t need to add a network to the plan (although you 
 
 No idea if this kind of behaviour is likely to happen in other places in WAP as well, but if you come across this anywhere else, it’s worth checking if there are any requirements you have not met.
 
-&#8211; <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
+- [David](http://www.twitter.com/david_obrien) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Azure,System+Center,WAP,WAPack" data-count="vertical" data-url="http://www.david-obrien.net/2015/01/missing-save-button-while-creating-a-windowsazurepackp-plan/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

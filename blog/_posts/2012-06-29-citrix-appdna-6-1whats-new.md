@@ -47,16 +47,16 @@ A lot of rebranding has been done. Citrix tried to get rid of the name “AppTit
 
 Before:
 
-<a href="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_beforeUpdate.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_beforeUpdate.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="IIS_beforeUpdate" border="0" alt="IIS_beforeUpdate" src="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_beforeUpdate_thumb.jpg" width="173" height="152" /></a>
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="IIS_beforeUpdate" border="0" alt="IIS_beforeUpdate" src="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_beforeUpdate_thumb.jpg" width="173" height="152" />]("IIS_beforeUpdate" http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_beforeUpdate.jpg)
 
 After:
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_afterUpdate.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_afterUpdate.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="IIS_afterUpdate" border="0" alt="IIS_afterUpdate" src="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_afterUpdate_thumb.jpg" width="177" height="153" /></a>
+  [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="IIS_afterUpdate" border="0" alt="IIS_afterUpdate" src="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_afterUpdate_thumb.jpg" width="177" height="153" />]("IIS_afterUpdate" http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_afterUpdate.jpg)
 </p>
 
 <p align="center">
-  <a href="http://www.david-obrien.de/wp-content/uploads/2012/06/update_registry.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/06/update_registry.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="update_registry" border="0" alt="update_registry" src="http://www.david-obrien.de/wp-content/uploads/2012/06/update_registry_thumb.jpg" width="244" height="56" /></a>
+  [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="update_registry" border="0" alt="update_registry" src="http://www.david-obrien.de/wp-content/uploads/2012/06/update_registry_thumb.jpg" width="244" height="56" />]("update_registry" http://www.david-obrien.de/wp-content/uploads/2012/06/update_registry.jpg)
 </p>
 
 ## 
@@ -101,5 +101,6 @@ Hope they will soon come up with the automation of AppDNA, like importing an App
 Also waiting for XenDesktop support and a module for Windows 8 and Server 2012. I will try to find out something about the roadmap regarding these points!
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="App-DNA,APPDNA,Applications,Citrix,Microsoft,Migration" data-count="vertical" data-url="http://www.david-obrien.net/2012/06/citrix-appdna-6-1whats-new/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

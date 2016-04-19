@@ -75,8 +75,10 @@ Although I have to admit that there are not that many scenarios for deploying a 
 
 [Update]
 
-More info available on Kent Agerlund’s blog: <a href="http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/', 'http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/']);" >http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/</a>
+More info available on Kent Agerlund’s blog: [http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/](http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/)
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,ConfigMgr+2012,ConfigMgr2012,Configuration+Manager,Configuration+Manager+2012,Linux,Microsoft,MSTechEd,SCCM,SCCM+2012,TechEd,UNIX,Win7,Windows+7,Windows+8" data-count="vertical" data-url="http://www.david-obrien.net/2012/06/microsoft-teched-north-america-configuration-manager/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

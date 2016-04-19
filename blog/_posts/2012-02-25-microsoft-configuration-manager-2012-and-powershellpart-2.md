@@ -21,7 +21,7 @@ tags:
   - Powershell
   - System Center
 ---
-Just wanted to keep you up-to-date regarding my task to automatically build a folder-collection structure in a customer’s Configuration Manager 2012 environment. (see also article <a href="http://www.david-obrien.de/?p=275" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/?p=275', 'http://www.david-obrien.de/?p=275']);" target="_blank">http://www.david-obrien.de/?p=275</a>)
+Just wanted to keep you up-to-date regarding my task to automatically build a folder-collection structure in a customer’s Configuration Manager 2012 environment. (see also article [http://www.david-obrien.de/?p=275](http://www.david-obrien.de/?p=275))
 
 ## Create Configuration Manager device collections
 
@@ -441,5 +441,6 @@ This isn’t too hard a task, so here’s my script:
                                                                                                                                                                   Any questions? Just comment here, send me a mail or contact me on twitter (@david_obrien) 
                                                                                                                                                                   
                                                                                                                                                                   <div style="float: right; margin-left: 10px;">
-                                                                                                                                                                    <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Configuration+Manager,Configuration+Manager+2012,Microsoft,Powershell,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2012/02/microsoft-configuration-manager-2012-and-powershellpart-2/">Tweet</a>
+                                                                                                                                                                    [Tweet](https://twitter.com/share)
                                                                                                                                                                   </div>
+

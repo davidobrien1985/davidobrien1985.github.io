@@ -23,7 +23,7 @@ tags:
   - x64
   - XenApp; APP-V
 ---
-In my last <a href="http://www.sepago.de/d/david/2011/09/20/am-i-compatible-to-my-future-plans" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.sepago.de/d/david/2011/09/20/am-i-compatible-to-my-future-plans', 'article']);" >article</a> about AppTitude I gave you a short overview of what AppTitude is and where it can help you save time and such save you money.
+In my last [article](http://www.sepago.de/d/david/2011/09/20/am-i-compatible-to-my-future-plans) about AppTitude I gave you a short overview of what AppTitude is and where it can help you save time and such save you money.
 
 This article will all be about how you can actually go and import your applications and let them be analysed by AppTitude.
 
@@ -73,12 +73,13 @@ On pressing “import” the following steps will run:
                       * the VM is shut down/suspended or whatever action you configure</ul> 
                     We can now find our freshly imported application in AppTitude ‘s application list.
                     
-                    <a href="http://www.david-obrien.de/wp-content/uploads/2012/01/application_overview.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.de/wp-content/uploads/2012/01/application_overview.jpg', '']);" class="broken_link"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="application_overview" border="0" alt="application_overview" src="http://www.david-obrien.de/wp-content/uploads/2012/01/application_overview_thumb.jpg" width="244" height="74" /></a>
+                    [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="application_overview" border="0" alt="application_overview" src="http://www.david-obrien.de/wp-content/uploads/2012/01/application_overview_thumb.jpg" width="244" height="74" />]("application_overview" http://www.david-obrien.de/wp-content/uploads/2012/01/application_overview.jpg)
                     
                     As a next step the next application could be processed, this way a fully automated import can be managed, with nearly no effort.
                     
                     The next part of this series will cover the analysed application and what reports you can generate out of your data. Stay tuned!
                     
                     <div style="float: right; margin-left: 10px;">
-                      <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="compatibility,SBC,Streaming,Win7,x64,XenApp%3B+APP-V" data-count="vertical" data-url="http://www.david-obrien.net/2011/10/am-i-compatible-to-my-future-plans-how-app-dnas-apptitude-helps-along-the-way-part-2/">Tweet</a>
+                      [Tweet](https://twitter.com/share)
                     </div>
+

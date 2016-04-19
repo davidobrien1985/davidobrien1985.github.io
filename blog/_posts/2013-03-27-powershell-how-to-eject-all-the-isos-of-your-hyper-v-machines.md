@@ -128,5 +128,6 @@ After that, all is good again.
 </div>
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Hyper-V,Powershell,Win8" data-count="vertical" data-url="http://www.david-obrien.net/2013/03/powershell-how-to-eject-all-the-isos-of-your-hyper-v-machines/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

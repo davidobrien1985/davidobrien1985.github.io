@@ -28,7 +28,7 @@ I started by writing this tiny little script which moves task sequences from one
 
 Execute the script like this:
 
-> .\move-TaskSequence.ps1 -TaskSequenceName  &#8220;Deploy_Win8&#8221; -TargetFolderName Win8 -SiteCode PR1 -CMProvider cm12
+> .\move-TaskSequence.ps1 -TaskSequenceName  "Deploy_Win8" -TargetFolderName Win8 -SiteCode PR1 -CMProvider cm12
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
@@ -232,8 +232,10 @@ Execute the script like this:
   </div>
 </div>
 
-The script can also be downloaded here: <a href="https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1', 'https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1']);" >https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1</a> 
+The script can also be downloaded here: [https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1](https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,Powershell,scripting,Task+Sequence" data-count="vertical" data-url="http://www.david-obrien.net/2013/06/move-configmgr-task-sequences-with-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

@@ -1,6 +1,6 @@
 ---
 id: 3043
-title: 'Azure Automation &#8211; what&#8217;s new?'
+title: 'Azure Automation, what is new?'
 date: 2015-05-05T00:53:19+00:00
 author: "David O'Brien"
 layout: post
@@ -20,26 +20,26 @@ tags:
   - Powershell
   - PSDSC
 ---
-Microsoft has just released the next iteration of Azure Automation on their Microsoft Cloud and announced a lot of new features around it at their <a href="http://ignite.microsoft.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://ignite.microsoft.com', 'Microsoft Ignite Conference']);" target="_blank">Microsoft Ignite Conference</a>.
-  
+Microsoft has just released the next iteration of Azure Automation on their Microsoft Cloud and announced a lot of new features around it at their [Microsoft Ignite Conference](http://ignite.microsoft.com).
+
 This is just an overview of the features I am most excited about.
 
 # New Preview Portal
 
-  * Automation node is now available in the new <a href="http://portal.azure.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://portal.azure.com', 'http://portal.azure.com']);" >http://portal.azure.com</a>
+  * Automation node is now available in the new [http://portal.azure.com](http://portal.azure.com)
 
 # Graphical User Interface for Azure Automation
 
-  * Orchestrator&#8217;s appeal always was the simple &#8220;drag and drop&#8221; experience while building runbooks. While this was usually quite limited and you quickly had to revert back to writing PowerShell code, the idea was that you could easily see what was happening.
+  * Orchestrator's appeal always was the simple "drag and drop" experience while building runbooks. While this was usually quite limited and you quickly had to revert back to writing PowerShell code, the idea was that you could easily see what was happening.
   * Graphical runbooks give you the ability to now view what is happening in that runbook at a single glance.
 
-<a href="/media/2015/05/AA_GraphicalRunbook.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/05/AA_GraphicalRunbook.png', '']);" ><img class="img-responsive aligncenter wp-image-3045 size-thumbnail" src="/media/2015/05/AA_GraphicalRunbook-150x150.png" alt="Azure Automation Graphical Runbooks" width="150" height="150" /></a>
+[<img class="img-responsive aligncenter wp-image-3045 size-thumbnail" src="/media/2015/05/AA_GraphicalRunbook-150x150.png" alt="Azure Automation Graphical Runbooks" width="150" height="150" />](/media/2015/05/AA_GraphicalRunbook.png)
 
-  * Azure Automation has now two types of runbooks, graphical and textual. While both essentially still run PowerShell Workflow, while creating a graphical runbook you don&#8217;t have to think about that and (for now at least) you are unable to see the actual code.
+  * Azure Automation has now two types of runbooks, graphical and textual. While both essentially still run PowerShell Workflow, while creating a graphical runbook you don't have to think about that and (for now at least) you are unable to see the actual code.
 
 # Hybrid runbook workers for Azure Automation
 
-  * Wow! When I saw this I thought &#8220;Yes, that&#8217;s what I want&#8221;. Hook up on-premises servers into your Azure Automation environment. These servers will receive jobs from Azure Automation, execute them and report back the results. No details yet as to how this will be charged to customers (will workloads executed on-premises be part of the free 500mins/month?), but I am very excited to see Azure Automation evolve into this.
+  * Wow! When I saw this I thought "Yes, that's what I want". Hook up on-premises servers into your Azure Automation environment. These servers will receive jobs from Azure Automation, execute them and report back the results. No details yet as to how this will be charged to customers (will workloads executed on-premises be part of the free 500mins/month?), but I am very excited to see Azure Automation evolve into this.
 
 # Webhooks for Azure Automation
 
@@ -51,14 +51,16 @@ This is just an overview of the features I am most excited about.
   * Azure Automation DSC allows you to manage PowerShell Desired State Configuration in the cloud. Cloud or on-premises servers can retrieve these configurations, conform to the desired state they specify, and report back on their compliance.
   * Essentially, this is a PowerShell DSC Pull Server in the cloud
 
-Seeing how Azure Automation progresses only shows that those people still betting on Orchestrator and its &#8220;drag and drop&#8221; activities are still living in the past. SMA will most likely get all those new graphical UI runbooks as well, but you still need to know how to write PowerShell. Just recently I was told that admins and users of such orchestration tools should not be expected to be able to write code / scripts. Alright, I thought that guy was plain wrong and missed a couple of very important announcements in the industry.
+Seeing how Azure Automation progresses only shows that those people still betting on Orchestrator and its "drag and drop" activities are still living in the past. SMA will most likely get all those new graphical UI runbooks as well, but you still need to know how to write PowerShell. Just recently I was told that admins and users of such orchestration tools should not be expected to be able to write code / scripts. Alright, I thought that guy was plain wrong and missed a couple of very important announcements in the industry.
 
-This is not a complete list of new stuff, these are just features I am excited to see. They all make sense to be hosted on Azure and I&#8217;m looking forward to be using them in real life.
-  
+This is not a complete list of new stuff, these are just features I am excited to see. They all make sense to be hosted on Azure and I'm looking forward to be using them in real life.
+
 Stay tuned for some more detailed articles on certain features.
 
-&#8211; <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" title="David on Twitter"  target="_blank">David</a> 
+- [David]("David on Twitter" http://www.twitter.com/david_obrien)
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Azure,Cloud,Ignite,Microsoft,Orchestrator,Powershell,PSDSC" data-count="vertical" data-url="http://www.david-obrien.net/2015/05/azure-automation-whats-new/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

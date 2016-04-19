@@ -26,7 +26,7 @@ tags:
 
 While doing a new Windows Build for my Lab I came across an issue which I at first was unable to solve and I’m still not certain as to why this issue occured.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/11/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/11/image2.png', '']);" class="broken_link"><img style="margin-right: auto; margin-left: auto; float: none; display: block;" title="ZTIOSRole.wsf" alt="ZTIOSRole.wsf" src="http://www.david-obrien.net/wp-content/uploads/2013/11/image_thumb2.png" width="189" height="243" border="0" /></a>
+[<img style="margin-right: auto; margin-left: auto; float: none; display: block;" title="ZTIOSRole.wsf" alt="ZTIOSRole.wsf" src="http://www.david-obrien.net/wp-content/uploads/2013/11/image_thumb2.png" width="189" height="243" border="0" />]("ZTIOSRole.wsf" http://www.david-obrien.net/wp-content/uploads/2013/11/image2.png)
 
 I wanted to add some OS features to a Windows Server 2012 R2 installation and was pretty surprised when I saw that none of them got installed.
 
@@ -182,7 +182,7 @@ So what was the problem? No MDT script which used Powershell executed successful
 
 I usually set my Powershell ExecutionPolicy via GPO for my users in my Lab, because I sometimes forget to set it during script runtime. The user I used for auto logon for this Task Sequence also had this GPO applied to him and it was set to “Bypass”.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/11/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/11/image3.png', '']);" class="broken_link"><img style="margin-right: auto; margin-left: auto; float: none; display: block;" title="GPO Powershell" alt="GPO Powershell" src="http://www.david-obrien.net/wp-content/uploads/2013/11/image_thumb3.png" width="244" height="58" border="0" /></a>
+[<img style="margin-right: auto; margin-left: auto; float: none; display: block;" title="GPO Powershell" alt="GPO Powershell" src="http://www.david-obrien.net/wp-content/uploads/2013/11/image_thumb3.png" width="244" height="58" border="0" />]("GPO Powershell" http://www.david-obrien.net/wp-content/uploads/2013/11/image3.png)
 
 ## 
 
@@ -208,12 +208,13 @@ This is a snippet from ZTIOSRole.wsf:
 
 I reset that Policy to “not defined” and re-executed my Task Sequence and now all is fine. No idea why these lines should have a problem when ExecutionPolicy has been previously set via GPO.
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/11/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/11/image4.png', '']);" class="broken_link"><img style="margin-right: auto; margin-left: auto; float: none; display: block;" title="ZTIOSRolePS.log" alt="ZTIOSRolePS.log" src="http://www.david-obrien.net/wp-content/uploads/2013/11/image_thumb4.png" width="244" height="25" border="0" /></a>
+[<img style="margin-right: auto; margin-left: auto; float: none; display: block;" title="ZTIOSRolePS.log" alt="ZTIOSRolePS.log" src="http://www.david-obrien.net/wp-content/uploads/2013/11/image_thumb4.png" width="244" height="25" border="0" />]("ZTIOSRolePS.log" http://www.david-obrien.net/wp-content/uploads/2013/11/image4.png)
 
 Both logs get created and all my roles and features are installed.
   
 Anyone else came across this problem and knows why setting an ExecutionPolicy via GPO is a problem? 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Configuration+Manager,GPO,MDT+2013,Powershell,SCCM,Windows+Server+2012+R2" data-count="vertical" data-url="http://www.david-obrien.net/2013/11/whats-wrong-ztiosrole-mdt-configmgr/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

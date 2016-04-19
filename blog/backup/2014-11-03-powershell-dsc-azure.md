@@ -142,7 +142,7 @@ I need to specify the zip file and the Configuration I want DSC to apply. The Co
 
 New-AzureVM will then create the VM just as we have configured it to be.
 
-## Powershell DSC &#8211; What’s happening in the background?
+## Powershell DSC - What’s happening in the background?
 
 What are we doing here? That is a valid question. How does that VM know that it should apply that DSC configuration?
 
@@ -152,7 +152,7 @@ I can only assume at this point. It might be this:
 
 You might have seen blog posts where people explain how to leverage DSC ‘during’ OS Deployment. That’s exactly what Microsoft is doing here as well. They are injecting a bit of code into the machines unattend.xml, so that during the specialization phase it knows that it should execute a task that will initiate the DSC run. Pretty clever.
   
-This approach, however, wouldn&#8217;t work on an existing VM.
+This approach, however, wouldn't work on an existing VM.
 
 Jumping onto a VM that has the DSC extension installed and already executed our configuration, we can see the following:
 
@@ -195,7 +195,7 @@ This will cause the VM to apply the new configuration straight away.
 
 # Scenario 3: Azure DSC from preview portal
 
-You can, if for whatever weird reason, you don&#8217;t like/want to use Powershell, use the Azure preview portal to add the VM Extension and add configuration to VMs.
+You can, if for whatever weird reason, you don't like/want to use Powershell, use the Azure preview portal to add the VM Extension and add configuration to VMs.
 
 <a href="http://www.david-obrien.net/wp-content/uploads/2014/11/2014-11-03-05_26_48-Microsoft-Azure-Internet-Explorer.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/11/2014-11-03-05_26_48-Microsoft-Azure-Internet-Explorer.png', '']);" class="broken_link"><img class="img-responsive aligncenter wp-image-2511 size-large" src="http://www.david-obrien.net/wp-content/uploads/2014/11/2014-11-03-05_26_48-Microsoft-Azure-Internet-Explorer-1024x747.png" alt="2014-11-03 05_26_48-Microsoft Azure - Internet Explorer" width="800" height="583" /></a><a href="http://www.david-obrien.net/wp-content/uploads/2014/11/2014-11-03-05_34_51-Microsoft-Azure-Internet-Explorer.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/11/2014-11-03-05_34_51-Microsoft-Azure-Internet-Explorer.png', '']);" class="broken_link"><img class="img-responsive aligncenter wp-image-2521 size-large" src="http://www.david-obrien.net/wp-content/uploads/2014/11/2014-11-03-05_34_51-Microsoft-Azure-Internet-Explorer-1024x694.png" alt="2014-11-03 05_34_51-Microsoft Azure - Internet Explorer" width="800" height="542" srcset="/media/2014/11/2014-11-03-05_34_51-Microsoft-Azure-Internet-Explorer-300x203.png 300w, /media/2014/11/2014-11-03-05_34_51-Microsoft-Azure-Internet-Explorer-1024x694.png 1024w, /media/2014/11/2014-11-03-05_34_51-Microsoft-Azure-Internet-Explorer-221x150.png 221w" sizes="(max-width: 800px) 100vw, 800px" /></a>
 
@@ -216,3 +216,4 @@ I hope this level 300-ish overview of DSC on Azure gave you a good idea of how y
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Azure,Desired+State+Configuration,DevOps,DSC,IaaS,Powershell,PSDSC" data-count="vertical" data-url="http://www.david-obrien.net/2014/11/powershell-dsc-azure/">Tweet</a>
 </div>
+

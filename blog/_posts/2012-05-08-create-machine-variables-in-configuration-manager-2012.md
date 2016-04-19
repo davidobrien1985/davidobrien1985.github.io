@@ -338,8 +338,9 @@ This is the script that interprets the above XML file:
   </div>
 </div>
 
-Lines 1 to 15 are mainly blabla, the interesting part is below! I’m going through the whole XML file (line 19) and then taking every variable block (as said above that’s from <ConfigMgrMachineVariable> to </ConfigMgrMachineVariable>) I pipe the values into a newly created WMI instance to create a new machine variable. I will soon try to integrate this script into my <a href="http://www.sepago.de/e/david/2012/04/23/release-of-my-configuration-manager-admin-gui" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.sepago.de/e/david/2012/04/23/release-of-my-configuration-manager-admin-gui', 'ConfigMgr Admin GUI']);" target="_blank">ConfigMgr Admin GUI</a>, to make setting machine variables easier than it already is. 
+Lines 1 to 15 are mainly blabla, the interesting part is below! I’m going through the whole XML file (line 19) and then taking every variable block (as said above that’s from <ConfigMgrMachineVariable> to </ConfigMgrMachineVariable>) I pipe the values into a newly created WMI instance to create a new machine variable. I will soon try to integrate this script into my [ConfigMgr Admin GUI](http://www.sepago.de/e/david/2012/04/23/release-of-my-configuration-manager-admin-gui), to make setting machine variables easier than it already is. 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="ConfigMgr,Configuration+Manager,SCCM,variables" data-count="vertical" data-url="http://www.david-obrien.net/2012/05/create-machine-variables-in-configuration-manager-2012/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+

@@ -19,7 +19,7 @@ tags:
   - SCCM
   - System Center
 ---
-I did a little cleanup of my ConfigMgr collections and came across a problem I already had before but did not solve properly and someone on Niall’s forum also had (<a href="http://www.windows-noob.com/forums/index.php?/topic/8770-powershell-to-set-full-device-schedule-in-sccm-2012/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.windows-noob.com/forums/index.php?/topic/8770-powershell-to-set-full-device-schedule-in-sccm-2012/', 'http://www.windows-noob.com/forums/index.php?/topic/8770-powershell-to-set-full-device-schedule-in-sccm-2012/']);" >http://www.windows-noob.com/forums/index.php?/topic/8770-powershell-to-set-full-device-schedule-in-sccm-2012/</a>).
+I did a little cleanup of my ConfigMgr collections and came across a problem I already had before but did not solve properly and someone on Niall’s forum also had ([http://www.windows-noob.com/forums/index.php?/topic/8770-powershell-to-set-full-device-schedule-in-sccm-2012/](http://www.windows-noob.com/forums/index.php?/topic/8770-powershell-to-set-full-device-schedule-in-sccm-2012/)).
 
 How do you configure “Schedule a full Update on this collection” on already existing collections?
 
@@ -51,9 +51,9 @@ Well, that’s also what I usually do. Microsoft says, though, to not enable thi
 
 Lets just assume that you have some collections where you want to have a full update every 4 hours.
 
-I want to do that configuration on all my Software Update Management collections and I know that their names all start with “SUM”. (Please, use naming schemes!!!”&#8221;)
+I want to do that configuration on all my Software Update Management collections and I know that their names all start with “SUM”. (Please, use naming schemes!!!”")
 
-At first I had a look at the cmdlet <a href="http://technet.microsoft.com/en-us/library/jj821878(v=sc.10).aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/jj821878(v=sc.10).aspx', 'Set-CMDeviceCollection']);" target="_blank">Set-CMDeviceCollection</a> but that won’t do anything about the schedules. After that I remembered that I already did something similar to packages and the above forum post on <a href="http://www.windows-noob.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.windows-noob.com', 'www.windows-noob.com']);" >www.windows-noob.com</a> shows it: <a href="http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/', 'http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/']);" title="http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/">http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/</a>
+At first I had a look at the cmdlet [Set-CMDeviceCollection](http://technet.microsoft.com/en-us/library/jj821878(v=sc.10).aspx) but that won’t do anything about the schedules. After that I remembered that I already did something similar to packages and the above forum post on [www.windows-noob.com](http://www.windows-noob.com) shows it: [http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/]("http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/" http://www.david-obrien.net/2013/07/23/how-to-edit-configmgr-packages-update-on-schedule/)
 
 I didn’t need to do much change to this script, just a bit of renaming and such:
 
@@ -483,7 +483,7 @@ I didn’t need to do much change to this script, just a bit of renaming and suc
 
 If you have a look at line 53 in that code, you’ll see my query for those collections I’d like to reconfigure.
 
-> $Collections = Get-WmiObject -Class SMS\_Collection -Namespace root\sms\site\_$SiteCode -Filter &#8220;CollectionType = &#8216;2&#8217; AND Name like &#8216;SUM%'&#8221;
+> $Collections = Get-WmiObject -Class SMS\_Collection -Namespace root\sms\site\_$SiteCode -Filter "CollectionType = '2' AND Name like 'SUM%'"
 
 CollectionType = ‘2’ means it’s a device collection, 1 would be user collection.
   
@@ -495,12 +495,14 @@ Execute the script like this:
 
 Before the script:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/10/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/10/image6.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb6.png" width="234" height="244" border="0" /></a>After the script:
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb6.png" width="234" height="244" border="0" />]("Collection Properties" http://www.david-obrien.net/wp-content/uploads/2013/10/image6.png)After the script:
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/10/image7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/10/image7.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Powershell script" alt="Powershell script" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb7.png" width="244" height="28" border="0" /></a>
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Powershell script" alt="Powershell script" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb7.png" width="244" height="28" border="0" />]("Powershell script" http://www.david-obrien.net/wp-content/uploads/2013/10/image7.png)
   
-<a href="http://www.david-obrien.net/wp-content/uploads/2013/10/image8.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2013/10/image8.png', '']);" class="broken_link"><img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb8.png" width="236" height="244" border="0" /></a> 
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb8.png" width="236" height="244" border="0" />]("Collection Properties" http://www.david-obrien.net/wp-content/uploads/2013/10/image8.png) 
 
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Collections,ConfigMgr2012R2,Microsoft,Powershell,SCCM,System+Center" data-count="vertical" data-url="http://www.david-obrien.net/2013/10/how-to-configure-full-update-collection-in-configmgr-with-powershell/">Tweet</a>
+  [Tweet](https://twitter.com/share)
 </div>
+
+

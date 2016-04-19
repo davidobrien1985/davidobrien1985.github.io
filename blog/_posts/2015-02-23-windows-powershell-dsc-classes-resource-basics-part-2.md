@@ -1,6 +1,6 @@
 ---
 id: 2979
-title: 'Windows PowerShell DSC &#8211; classes &#8211; resource basics (part 2)'
+title: 'Windows PowerShell DSC - classes - resource basics (part 2)'
 date: 2015-02-23T08:42:16+00:00
 author: "David O'Brien"
 layout: post
@@ -20,13 +20,13 @@ tags:
   - WMF5
 ---
 <p class="">
-  In part one of this miniseries I explained some principals around using the new class keyword in Windows PowerShell DSC resource modules. If you haven&#8217;t read that article yet, go find it here:<br /> <a href="http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/', 'http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/']);" target="_blank">http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/</a><br /> This part 2 will concentrate on the <i style="font-weight: bold;">enum </i>keyword and the three main functions in each resource class.
+  In part one of this miniseries I explained some principals around using the new class keyword in Windows PowerShell DSC resource modules. If you haven't read that article yet, go find it here:<br /> [http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/](http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/)<br /> This part 2 will concentrate on the <i style="font-weight: bold;">enum </i>keyword and the three main functions in each resource class.
 </p>
 
 # Enum -erate input {.}
 
 <p class="">
-  One of the most important things in every script (no matter what language) is error handling. PowerShell and DSC is no exception here. For me, part of error handling is also to validate input  users can provide your script or application with.<br /> <strong>Enum</strong> is used to implement constant values inside of a variable. A limitation that is currently still present is that you need to implement the enum in the script where you&#8217;re using it. This is apparently different in the .Net Framework, where they are always available as soon as the class library is loaded.<br /> In a cmdlet based DSC resource we would do something like this:
+  One of the most important things in every script (no matter what language) is error handling. PowerShell and DSC is no exception here. For me, part of error handling is also to validate input  users can provide your script or application with.<br /> <strong>Enum</strong> is used to implement constant values inside of a variable. A limitation that is currently still present is that you need to implement the enum in the script where you're using it. This is apparently different in the .Net Framework, where they are always available as soon as the class library is loaded.<br /> In a cmdlet based DSC resource we would do something like this:
 </p>
 
 <p class="">
@@ -55,7 +55,7 @@ tags:
 </p>
 
 <p class="">
-  Now with the enum keyword that&#8217;s much easier:<br /> 
+  Now with the enum keyword that's much easier:<br /> 
   
   <div id="wpshdo_28" class="wp-synhighlighter-outer">
     <div id="wpshdt_28" class="wp-synhighlighter-expanded">
@@ -113,11 +113,11 @@ medium
 </div>
 
 <p class="">
-  The delimiter between values is &#8216;newline&#8217;, so no comma, semicolon or other fancy stuff.
+  The delimiter between values is 'newline', so no comma, semicolon or other fancy stuff.
 </p>
 
 <p class="">
-  You can now go and check with PowerShell if a user&#8217;s input is valid by executing the following:
+  You can now go and check with PowerShell if a user's input is valid by executing the following:
 </p>
 
 <div id="wpshdo_30" class="wp-synhighlighter-outer">
@@ -190,16 +190,16 @@ class Test
   </div>
 </div>
 
-Since the November update of WMF 5 there is a change in how you use variables in the scope of a class. In order to use a variable in one of the class&#8217;s methods, you need to reference it with the $this scope variable. The $this scope doesn&#8217;t only apply to the enum keyword, but to all variables used inside a class based DSC resource as well, and, for that matter, all classes used in PowerShell.
+Since the November update of WMF 5 there is a change in how you use variables in the scope of a class. In order to use a variable in one of the class's methods, you need to reference it with the $this scope variable. The $this scope doesn't only apply to the enum keyword, but to all variables used inside a class based DSC resource as well, and, for that matter, all classes used in PowerShell.
   
 For more information on $this, execute _**get-help about\_Automatic\_Variables**_ in your PowerShell.
 
-**As a side note**, make sure you read all the release notes that come with the WMF 5 previews. This is a big change in how to handle variables and a lot of people (including myself) missed that and wondered why their classes didn&#8217;t work anymore.
+**As a side note**, make sure you read all the release notes that come with the WMF 5 previews. This is a big change in how to handle variables and a lot of people (including myself) missed that and wondered why their classes didn't work anymore.
 
 # Get, Set, Test your DSC resource {.}
 
 <p class="">
-  We are talking about DSC and even though we&#8217;re now talking about class based resources, we do have to remember the three minimum functions our DSC resources must implement as well. We used to call them <b>Get-TargetResource</b>, <b>Set-TargetResource</b> and <b>Test-TargetResource. </b>Not anymore, they are now just <strong>Get()</strong>, <strong>Set()</strong> and <strong>Test()</strong>. Looks a lot like a method, right?<br /> These three methods still do exactly the same as they used to and they also still need to have the following output:
+  We are talking about DSC and even though we're now talking about class based resources, we do have to remember the three minimum functions our DSC resources must implement as well. We used to call them <b>Get-TargetResource</b>, <b>Set-TargetResource</b> and <b>Test-TargetResource. </b>Not anymore, they are now just <strong>Get()</strong>, <strong>Set()</strong> and <strong>Test()</strong>. Looks a lot like a method, right?<br /> These three methods still do exactly the same as they used to and they also still need to have the following output:
 </p>
 
   * Get() 
@@ -221,9 +221,9 @@ For more information on $this, execute _**get-help about\_Automatic\_Variables*
 
 <a href="/media/2015/02/1424380983_full.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2015/02/1424380983_full.png', '']);" target="_blank"><img class="img-responsive full aligncenter" src="/media/2015/02/1424380983_thumb.png" alt="Windows PowerShell DSC resource class" width="246" height="368" align="middle" /></a>
 
-We can see that now, instead of defining all the variables inside of each function&#8217;s scope, we define the variables in the class&#8217; scope. This looks a lot tidier and, at least to me, makes much more sense.
+We can see that now, instead of defining all the variables inside of each function's scope, we define the variables in the class' scope. This looks a lot tidier and, at least to me, makes much more sense.
   
-You&#8217;ll see that I used a couple of properties in this param block that might be unfamiliar at first.
+You'll see that I used a couple of properties in this param block that might be unfamiliar at first.
 
   * <!-- [if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
@@ -542,7 +542,7 @@ UnhideWhenUsed="false" QFormat="true" Name="Book Title"></w:LsdException>
     <!--StartFragment-->
     
     <span lang="EN-US">[</span><span lang="EN-US">DscResource</span><span lang="EN-US">()</span><span lang="EN-US">], tells PowerShell that the following class is a DSC resource</span>
-  * <span lang="EN-US">[</span><span lang="EN-US">DscProperty</span><span lang="EN-US">(Key)]</span> , a DSC resource requires at least one Key value. This uniquely identifies the resource instance. It also means that this parameter is required. If it&#8217;s not set, DSC will not execute.
+  * <span lang="EN-US">[</span><span lang="EN-US">DscProperty</span><span lang="EN-US">(Key)]</span> , a DSC resource requires at least one Key value. This uniquely identifies the resource instance. It also means that this parameter is required. If it's not set, DSC will not execute.
   * <!-- [if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
 <o:RelyOnVML></o:RelyOnVML>
@@ -859,7 +859,7 @@ UnhideWhenUsed="false" QFormat="true" Name="Book Title"></w:LsdException>
     
     <!--StartFragment-->
     
-    <span lang="EN-US">[</span><span lang="EN-US">DscProperty</span><span lang="EN-US">(NotConfigurable)], this is a &#8220;read only&#8221; parameter which will be set by the Get() method.</span>
+    <span lang="EN-US">[</span><span lang="EN-US">DscProperty</span><span lang="EN-US">(NotConfigurable)], this is a "read only" parameter which will be set by the Get() method.</span>
   * <!-- [if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
 <o:RelyOnVML></o:RelyOnVML>
@@ -1228,7 +1228,7 @@ Save the file as **_[classname].psm1_** in a folder in the **$PSModulePath** whi
 
 # New-ModuleManifest {.}
 
-From here on there&#8217;s not a really big difference between working with a cmdlet or class based resource.
+From here on there's not a really big difference between working with a cmdlet or class based resource.
   
 Use the New-ModuleManifest cmdlet to create the psd1 file.
 
@@ -1252,16 +1252,18 @@ Use the New-ModuleManifest cmdlet to create the psd1 file.
   </div>
 </div>
 
-In my previous article (<a href="http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/', 'http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/']);" target="_blank">http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/</a> ) I mentioned that Get-DscResource is unable to find class based resource modules. Guess what?! Microsoft changed that with the current February release of WMF5.
+In my previous article ([http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/](http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/) ) I mentioned that Get-DscResource is unable to find class based resource modules. Guess what?! Microsoft changed that with the current February release of WMF5.
   
 In order to find your resource module, though, you need to add a new parameter to your Module Manifest, which is called <span lang="EN-US"><strong>DscResourcesToExport</strong>. This will make the class based resource discoverable to Get-DscResource.</span>
 
-In the next part I will walk through my converted ConfigMgr resource and show you a couple of more classes I&#8217;ve implemented into this resource.
+In the next part I will walk through my converted ConfigMgr resource and show you a couple of more classes I've implemented into this resource.
 
 Until then, enjoy automating!
   
-&#8211; <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
+- <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="classes,Desired+State+Configuration,Powershell,PSDSC,WMF5" data-count="vertical" data-url="http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-resource-basics-part-2/">Tweet</a>
 </div>
+
+
