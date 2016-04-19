@@ -20,11 +20,17 @@ github_username:  davidobrien1985
 # Build settings
 markdown: kramdown
 
+kramdown:
+  input: GFM
+
 gems:
+ - jekyll-coffeescript
  - jekyll-paginate
  - jekyll-sitemap
  - jekyll-feed
  - jekyll-mentions
+# - pygments.rb
+ - redcarpet
 
 exclude:
  - .gitignore
