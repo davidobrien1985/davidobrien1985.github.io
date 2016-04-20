@@ -1,5 +1,4 @@
 ---
-id: 3297
 title: AWS EC2 user_data on Windows
 date: 2016-04-21T22:30:30+00:00
 author: "David O'Brien"
