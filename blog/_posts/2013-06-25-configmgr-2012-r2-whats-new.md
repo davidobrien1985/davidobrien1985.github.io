@@ -3,7 +3,7 @@ id: 1048
 title: 'ConfigMgr 2012 R2 - what&rsquo;s new?'
 date: 2013-06-25T07:53:38+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1048
 permalink: /2013/06/configmgr-2012-r2-whats-new/
 categories:

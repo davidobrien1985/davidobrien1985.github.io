@@ -1,9 +1,9 @@
 ---
 id: 3048
-title: 'Azure Automation - graphical runbooks'
+title: Azure Automation - graphical runbooks
 date: 2015-05-05T07:00:38+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3048
 permalink: /2015/05/azure-automation-graphical-runbooks/
 categories:
@@ -25,7 +25,7 @@ tags:
 # Microsoft Ignite
 
 Microsoft Ignite 2015 conference is in full swing and they have already announced a lot of cool things at last week's Build conference that we've seen covered in a lot of articles. This article here will focus on one of the new features in Azure Automation.
-  
+
 I have already touched this in my [last article here](http://www.david-obrien.net/2015/05/azure-automation-whats-new), Azure Automation now comes with a graphical user interface to author runbooks.
 
 ## Why do you need an Azure Automation GUI?
@@ -35,7 +35,7 @@ To be honest, no idea, but it's something still a lot of people think they need.
 # Authoring runbooks on Azure Automation
 
 You basically now have got two options to author runbooks, a textual and a graphical option. Make your choice, you **cannot** convert a runbook afterwards. At least not yet, maybe later.
-  
+
 How does it look like authoring a graphical runbook now? Is it like System Center Orchestrator? Fortunately not!
 
 [<img class="img-responsive aligncenter wp-image-3050 size-medium" src="/media/2015/05/AA_Runbooks-300x82.png" alt="AA_Runbooks" width="300" height="82" srcset="/media/2015/05/AA_Runbooks-300x82.png 300w, /media/2015/05/AA_Runbooks.png 828w" sizes="(max-width: 300px) 100vw, 300px" />](/media/2015/05/AA_Runbooks.png)
@@ -49,7 +49,7 @@ Clicking a graphical runbook will open up the next pane (by the way, I really li
 [<img class="img-responsive aligncenter wp-image-3053 " src="/media/2015/05/RB_Overview-300x280.png" alt="Azure Automation Runbook Overview" width="233" height="217" />](/media/2015/05/RB_Overview.png)
 
 Hit edit and we'll get to the actual editing pane.
-  
+
 What we'll see next is new.
 
 [<img class="img-responsive aligncenter wp-image-3057 size-medium" src="/media/2015/05/RB_Editing1-300x145.png" alt="Azure Automation Runbook Editor" width="300" height="145" srcset="/media/2015/05/RB_Editing1-300x145.png 300w, /media/2015/05/RB_Editing1-1024x495.png 1024w, /media/2015/05/RB_Editing1-768x372.png 768w, /media/2015/05/RB_Editing1.png 1349w" sizes="(max-width: 300px) 100vw, 300px" />](/media/2015/05/RB_Editing1.png)
@@ -67,19 +67,19 @@ Pick a cmdlet, like Add-AzureAccount, which is part of the "Azure" module, right
 [<img class="img-responsive aligncenter wp-image-3056 size-medium" src="/media/2015/05/RB_Activity-300x208.png" alt="Azure Automation Runbook Activity" width="300" height="208" srcset="/media/2015/05/RB_Activity-300x208.png 300w, /media/2015/05/RB_Activity.png 909w" sizes="(max-width: 300px) 100vw, 300px" />](/media/2015/05/RB_Activity.png)
 
 I will not go into detail as to how each and every cmdlet can be configured, the Runbook Editor keeps that task fairly easy.
-  
+
 Having only 7 modules at hand is a bit restricting, so we need to make more modules available. Joe Levy wrote a good article about creating Azure Automation Integration Modules: [http://azure.microsoft.com/blog/2014/12/15/authoring-integration-modules-for-azure-automation/](http://azure.microsoft.com/blog/2014/12/15/authoring-integration-modules-for-azure-automation/)
 
 ## Links
 
 What is making this whole graphical editing / authoring so interesting is seeing the actual flow of activities in our runbook, something that is hard to grasp from just looking at code. However, I am not saying that it's impossible to understand code.
-  
+
 Links make the graphical authoring so powerful and easy to configure. You configure an activity, add a second one and tie them to each other by creating a link, just like you did in System Center Orchestrator. Links can be configured to run in two different modes, as a Pipeline or a Sequence.
 
 A Pipeline would be the equivalent of a foreach loop in PowerShell, whereas a Sequence is just telling the runbook to go to the next activity.
 
 Links can have conditions and basically act like the Data Bus in System Center Orchestrator.
-  
+
 However, you can't configure colours on those links, that's something a lot of people did in Orchestrator.
 
 ## Call runbook from runbook
@@ -103,12 +103,12 @@ However, this can all change in the future.
 This was just a first look at the new graphical runbooks in Azure Automation. I am looking forward to testing this new way of authoring runbooks on Azure.
 
 Here are the other articles from my Ignite series so far:
-  
+
 Azure Automation – what’s new?
 
 What are your thoughts on this?
 
-- [David](http://www.twitter.com/david_obrien) 
+- [David](http://www.twitter.com/david_obrien)
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)

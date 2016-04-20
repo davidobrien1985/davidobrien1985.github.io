@@ -3,7 +3,7 @@ id: 464
 title: Re-adding PXE support to Configuration Manager Site
 date: 2012-09-18T14:27:39+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=464
 permalink: /2012/09/re-adding-pxe-support-to-configuration-manager-site/
 categories:

@@ -3,7 +3,7 @@ id: 553
 title: 'What&rsquo;s new in ConfigMgr SP1?'
 date: 2012-12-20T23:55:07+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://david-obrien.de/?p=553
 permalink: /2012/12/whats-new-in-configmgr-sp1/
 categories:

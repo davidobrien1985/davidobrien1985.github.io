@@ -3,7 +3,7 @@ id: 1061
 title: Mass import of ConfigMgr applications from script with Powershell
 date: 2013-07-10T21:03:56+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1061
 permalink: /2013/07/create-new-configmgr-applications-from-script-with-powershell/
 categories:

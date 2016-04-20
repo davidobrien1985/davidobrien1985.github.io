@@ -3,7 +3,7 @@ id: 1373
 title: Speaking at E2EVC conference Rome
 date: 2013-10-05T12:15:13+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1373
 permalink: /2013/10/speaking-e2evc-conference-rome/
 categories:

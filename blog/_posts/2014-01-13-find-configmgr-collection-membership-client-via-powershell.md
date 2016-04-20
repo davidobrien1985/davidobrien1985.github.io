@@ -3,7 +3,7 @@ id: 1567
 title: How to find ConfigMgr Collection membership of client via Powershell?
 date: 2014-01-13T15:47:52+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1567
 permalink: /2014/01/find-configmgr-collection-membership-client-via-powershell/
 categories:

@@ -3,7 +3,7 @@ id: 410
 title: Citrix AppDNA 6.1–what’s new?
 date: 2012-06-29T13:10:25+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=410
 permalink: /2012/06/citrix-appdna-6-1whats-new/
 categories:

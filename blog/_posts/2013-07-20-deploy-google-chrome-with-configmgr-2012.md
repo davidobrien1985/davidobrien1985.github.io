@@ -3,7 +3,7 @@ id: 1093
 title: Deploy Google Chrome with ConfigMgr 2012
 date: 2013-07-20T01:04:22+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1093
 permalink: /2013/07/deploy-google-chrome-with-configmgr-2012/
 categories:

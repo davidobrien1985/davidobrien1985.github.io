@@ -3,7 +3,7 @@ id: 1931
 title: Speaker at TechEd Australia
 date: 2014-09-02T23:21:02+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1931
 permalink: /2014/09/speaker-teched-australia/
 categories:

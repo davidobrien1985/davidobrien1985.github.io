@@ -1,9 +1,9 @@
 ---
 id: 3062
-title: 'Azure Automation - Webhooks'
+title: Azure Automation - Webhooks
 date: 2015-05-05T09:00:57+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3062
 permalink: /2015/05/azure-automation-webhooks/
 categories:
@@ -31,7 +31,7 @@ Github has a very good explanation of webhooks:
 > Webhooks allow you to build or set up integrations which subscribe to certain events on GitHub.com. When one of those events is triggered, we’ll send a HTTP POST payload to the webhook’s configured URL. Webhooks can be used to update an external issue tracker, trigger CI builds, update a backup mirror, or even deploy to your production server. You’re only limited by your imagination.
 
 What that means is that you can now do something on, for example, github and that automatically triggers a runbook on Azure Automation.
-  
+
 Webhooks were already previously available for Azure websites.
 
 ## Why use webhooks with Azure Automation?
@@ -65,14 +65,14 @@ Every commit (or whatever type of trigger you configure) will now call that runb
         <td align="left" width="80%">
           <a name="#codesyntax_37"></a><a id="wpshat_37" class="wp-synhighlighter-title" href="#codesyntax_37"  onClick="javascript:wpsh_toggleBlock(37)" title="Click to show/hide code block">Source code</a>
         </td>
-        
+
         <td align="right">
           <a href="#codesyntax_37" onClick="javascript:wpsh_code(37)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_37" onClick="javascript:wpsh_print(37)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
         </td>
       </tr>
     </table>
   </div>
-  
+
   <div id="wpshdi_37" class="wp-synhighlighter-inner" style="display: block;">
     <pre class="powershell" style="font-family:monospace;">Workflow Test<span class="sy0">-</span>Workflow
 <span class="br0">&#123;</span>
@@ -81,7 +81,7 @@ Every commit (or whatever type of trigger you configure) will now call that runb
 <span class="re0">$webhookData</span>
 <span class="br0">&#41;</span>
 &nbsp;
-<span class="re0">$a</span> <span class="sy0">=</span> <span class="re0">$webhookData</span> <span class="sy0">|</span> ConvertTo<span class="sy0">-</span>Json 
+<span class="re0">$a</span> <span class="sy0">=</span> <span class="re0">$webhookData</span> <span class="sy0">|</span> ConvertTo<span class="sy0">-</span>Json
 &nbsp;
 <span class="re0">$b</span> <span class="sy0">=</span> <span class="re0">$a</span> <span class="sy0">|</span> ConvertFrom<span class="sy0">-</span>Json
 &nbsp;
@@ -95,7 +95,7 @@ From here on your imagination is the limit I would say. I will absolutely check
 
 Exciting times ahead!
 
-- <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
+- <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a>
 
 <div style="float: right; margin-left: 10px;">
   <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Azure+Automation,Continuous+Deployment,git,github,TFS,web+hooks,Webhooks" data-count="vertical" data-url="http://www.david-obrien.net/2015/05/azure-automation-webhooks/">Tweet</a>

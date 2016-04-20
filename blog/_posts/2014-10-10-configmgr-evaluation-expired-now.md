@@ -3,7 +3,7 @@ id: 2191
 title: 'ConfigMgr evaluation expired - what now?'
 date: 2014-10-10T15:42:42+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2191
 permalink: /2014/10/configmgr-evaluation-expired-now/
 categories:

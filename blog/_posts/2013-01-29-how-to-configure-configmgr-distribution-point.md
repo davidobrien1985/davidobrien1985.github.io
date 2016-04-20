@@ -3,7 +3,7 @@ id: 705
 title: How to configure ConfigMgr Distribution Point
 date: 2013-01-29T21:28:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=705
 permalink: /2013/01/how-to-configure-configmgr-distribution-point/
 categories:

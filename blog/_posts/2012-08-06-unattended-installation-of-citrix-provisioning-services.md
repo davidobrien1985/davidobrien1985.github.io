@@ -3,7 +3,7 @@ id: 419
 title: Unattended installation of Citrix Provisioning Services
 date: 2012-08-06T15:45:14+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=419
 permalink: /2012/08/unattended-installation-of-citrix-provisioning-services/
 categories:

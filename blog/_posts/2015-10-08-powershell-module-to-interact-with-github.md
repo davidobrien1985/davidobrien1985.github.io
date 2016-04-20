@@ -3,7 +3,7 @@ id: 3116
 title: PowerShell module to interact with Github
 date: 2015-10-08T22:00:25+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3116
 permalink: /2015/10/powershell-module-to-interact-with-github/
 categories:

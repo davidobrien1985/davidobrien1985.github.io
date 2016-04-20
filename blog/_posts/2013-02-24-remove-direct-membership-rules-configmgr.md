@@ -3,7 +3,7 @@ id: 756
 title: 'Remove direct membership rules &ndash; ConfigMgr'
 date: 2013-02-24T23:04:32+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=756
 permalink: /2013/02/remove-direct-membership-rules-configmgr/
 categories:

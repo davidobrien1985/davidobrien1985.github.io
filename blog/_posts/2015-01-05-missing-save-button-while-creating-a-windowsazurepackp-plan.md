@@ -3,7 +3,7 @@ id: 2863
 title: Missing Save button while creating a Windows Azure Pack Plan
 date: 2015-01-05T19:08:23+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2863
 permalink: /2015/01/missing-save-button-while-creating-a-windowsazurepackp-plan/
 categories:

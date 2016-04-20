@@ -3,7 +3,7 @@ id: 287
 title: Microsoft Configuration Manager 2012 and Powershell–Create Deployments
 date: 2012-03-17T11:11:21+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=287
 permalink: /2012/03/microsoft-configuration-manager-2012-and-powershellcreate-deployments/
 categories:

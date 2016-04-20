@@ -3,7 +3,7 @@ id: 971
 title: 'System Center 2012 R2 - Preview available'
 date: 2013-06-25T05:14:07+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=971
 permalink: /2013/06/system-center-2012-r2-preview-available/
 categories:

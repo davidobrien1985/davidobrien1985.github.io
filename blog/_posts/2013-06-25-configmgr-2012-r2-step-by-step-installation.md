@@ -3,7 +3,7 @@ id: 1015
 title: 'ConfigMgr 2012 R2 - Step by Step installation'
 date: 2013-06-25T06:59:57+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1015
 permalink: /2013/06/configmgr-2012-r2-step-by-step-installation/
 categories:

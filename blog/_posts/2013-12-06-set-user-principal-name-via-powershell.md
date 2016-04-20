@@ -3,7 +3,7 @@ id: 1495
 title: Set User Principal Name via Powershell
 date: 2013-12-06T22:08:01+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1495
 permalink: /2013/12/set-user-principal-name-via-powershell/
 categories:

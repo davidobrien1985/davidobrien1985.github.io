@@ -3,7 +3,7 @@ id: 2760
 title: Recover deleted users in Azure Active Directory
 date: 2014-12-04T20:12:31+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2760
 permalink: /2014/12/recover-deleted-users-azure-active-directory/
 categories:

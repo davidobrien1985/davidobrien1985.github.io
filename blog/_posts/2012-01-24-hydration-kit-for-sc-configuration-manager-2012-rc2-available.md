@@ -3,7 +3,7 @@ id: 241
 title: Hydration Kit for SC Configuration Manager 2012 RC2 available
 date: 2012-01-24T18:26:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=241
 permalink: /2012/01/hydration-kit-for-sc-configuration-manager-2012-rc2-available/
 if_slider_image:

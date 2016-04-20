@@ -3,7 +3,7 @@ id: 1790
 title: 'How to - ConfigMgr collection updates'
 date: 2014-05-10T00:45:24+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1790
 permalink: /2014/05/configmgr-collection-updates/
 categories:

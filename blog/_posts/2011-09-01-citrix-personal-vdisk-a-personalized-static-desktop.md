@@ -3,7 +3,7 @@ id: 107
 title: 'Citrix personal vDisk - a personalized static Desktop'
 date: 2011-09-01T13:38:39+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=107
 permalink: /2011/09/citrix-personal-vdisk-a-personalized-static-desktop/
 categories:

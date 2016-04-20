@@ -3,7 +3,7 @@ id: 904
 title: 'How to install Software Update Point for ConfigMgr 2012 - Powershell'
 date: 2013-04-17T23:49:04+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=904
 permalink: /2013/04/how-to-install-software-update-point-for-configmgr-2012-powershell/
 categories:

@@ -3,7 +3,7 @@ id: 3108
 title: PowerShell DSC to manage PowerShell modules
 date: 2015-09-24T22:01:57+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3108
 permalink: /2015/09/powershell-dsc-to-manage-powershell-modules/
 categories:

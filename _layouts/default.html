@@ -1,44 +1,31 @@
-<!DOCTYPE html>
-<html>
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/print.css" media="print" />
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title> {{ page.title }} </title>
+    {% include head.html %}
+    {% include head/custom.html %}
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <a href="/"> <h1> {{ site.title }} </h1></a>
-        <h2>...and all about Microsoft automation on Azure, AWS and your own DC.</h2>
-        <a href="https://github.com/davidobrien1985" class="button"><small>View my code on</small> GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
-          {{ content }}
+    {{ content }}
 
-        </section>
-
-        <aside id="sidebar">
-            <a class="twitter-timeline"  href="https://twitter.com/hashtag/PowerShell" data-widget-id="722384478522355712">#PowerShell Tweets</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </aside>
-      </div>
+    <div class="page__footer">
+      <footer>
+        {% include footer.html %}
+      </footer>
     </div>
+
+    {% include scripts.html %}
+    {% include footer/custom.html %}
 
   </body>
 </html>

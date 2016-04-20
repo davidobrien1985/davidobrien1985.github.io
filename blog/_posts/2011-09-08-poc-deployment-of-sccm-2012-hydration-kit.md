@@ -3,7 +3,7 @@ id: 143
 title: 'PoC Deployment of SCCM 2012 - Hydration Kit'
 date: 2011-09-08T09:54:02+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=143
 permalink: /2011/09/poc-deployment-of-sccm-2012-hydration-kit/
 categories:

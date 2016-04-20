@@ -3,7 +3,7 @@ id: 526
 title: 'Easy versioning of Images&ndash;Configuration Manager and Powershell'
 date: 2012-10-13T11:12:52+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://david-obrien.de/?p=526
 permalink: /2012/10/easy-versioning-of-imagesconfiguration-manager-and-powershell/
 categories:

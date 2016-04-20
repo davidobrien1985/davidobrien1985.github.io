@@ -3,7 +3,7 @@ id: 153
 title: How to install Windows 8 on XenServer 5.6
 date: 2011-09-22T10:02:28+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=153
 permalink: /2011/09/how-to-install-windows-8-on-xenserver-5-6/
 categories:

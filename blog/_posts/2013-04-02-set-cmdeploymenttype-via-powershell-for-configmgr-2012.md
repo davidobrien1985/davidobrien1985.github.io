@@ -3,7 +3,7 @@ id: 891
 title: Set-CMDeploymentType via Powershell for ConfigMgr 2012
 date: 2013-04-02T21:25:15+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=891
 permalink: /2013/04/set-cmdeploymenttype-via-powershell-for-configmgr-2012/
 categories:

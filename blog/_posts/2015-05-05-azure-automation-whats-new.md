@@ -1,9 +1,9 @@
 ---
 id: 3043
-title: 'Azure Automation, what is new?'
+title: Azure Automation, what is new?
 date: 2015-05-05T00:53:19+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3043
 permalink: /2015/05/azure-automation-whats-new/
 categories:

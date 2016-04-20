@@ -3,7 +3,7 @@ id: 1840
 title: How to publish URL shortcuts to Windows 8.1
 date: 2014-06-26T21:36:29+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1840
 permalink: /2014/06/publish-url-shortcuts-windows-8-1/
 categories:

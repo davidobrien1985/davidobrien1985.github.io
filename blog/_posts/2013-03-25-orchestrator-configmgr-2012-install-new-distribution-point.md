@@ -3,7 +3,7 @@ id: 865
 title: 'Orchestrator &amp; ConfigMgr 2012 Install new Distribution Point'
 date: 2013-03-25T11:31:38+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=865
 permalink: /2013/03/orchestrator-configmgr-2012-install-new-distribution-point/
 categories:

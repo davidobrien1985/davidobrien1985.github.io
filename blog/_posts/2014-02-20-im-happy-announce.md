@@ -1,9 +1,9 @@
 ---
 id: 1631
-title: 'I am happy to announce'
+title: I am happy to announce
 date: 2014-02-20T09:11:24+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1631
 permalink: /2014/02/im-happy-announce/
 categories:

@@ -3,7 +3,7 @@ id: 3297
 title: Conference session recordings from NicConf 2016
 date: 2016-02-26T22:30:30+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3297
 permalink: /2016/02/conference-session-recordings-from-nicconf/
 categories:

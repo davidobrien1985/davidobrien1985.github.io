@@ -3,7 +3,7 @@ id: 901
 title: Data deduplication on Win8
 date: 2013-04-13T21:03:39+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=901
 permalink: /2013/04/data-deduplication-on-win8/
 categories:

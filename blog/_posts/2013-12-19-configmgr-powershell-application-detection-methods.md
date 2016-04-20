@@ -3,7 +3,7 @@ id: 1505
 title: ConfigMgr Powershell Application Detection Methods
 date: 2013-12-19T02:20:12+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1505
 permalink: /2013/12/configmgr-powershell-application-detection-methods/
 categories:

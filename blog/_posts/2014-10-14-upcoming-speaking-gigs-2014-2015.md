@@ -3,7 +3,7 @@ id: 2231
 title: Upcoming speaking gigs 2014 / 2015
 date: 2014-10-14T17:00:54+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2231
 permalink: /2014/10/upcoming-speaking-gigs-2014-2015/
 categories:

@@ -3,7 +3,7 @@ id: 359
 title: Install Distribution Point for Configuration Manager 2012
 date: 2012-06-08T23:35:45+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=359
 permalink: /2012/06/install-distribution-point-for-configuration-manager-2012/
 categories:

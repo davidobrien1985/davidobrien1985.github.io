@@ -3,7 +3,7 @@ id: 2651
 title: Deploy SMA Server via Powershell DSC resource
 date: 2014-11-14T11:52:39+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2651
 permalink: /2014/11/deploy-sma-server-via-powershell-dsc-resource/
 categories:

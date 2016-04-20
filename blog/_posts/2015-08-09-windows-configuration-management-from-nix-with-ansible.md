@@ -3,7 +3,7 @@ id: 3098
 title: 'Windows configuration management - from *nix with Ansible'
 date: 2015-08-09T09:19:13+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3098
 permalink: /2015/08/windows-configuration-management-from-nix-with-ansible/
 categories:

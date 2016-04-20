@@ -3,7 +3,7 @@ id: 1655
 title: 'Orchestrator &ndash; Delete Collection Rule activity'
 date: 2014-02-22T00:29:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1655
 permalink: /2014/02/orchestrator-delete-collection-rule-activity/
 categories:

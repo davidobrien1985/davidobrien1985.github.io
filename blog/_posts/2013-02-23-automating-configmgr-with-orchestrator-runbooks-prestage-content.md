@@ -3,7 +3,7 @@ id: 744
 title: 'Automating ConfigMgr with Orchestrator Runbooks - PreStage content'
 date: 2013-02-23T15:52:10+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=744
 permalink: /2013/02/automating-configmgr-with-orchestrator-runbooks-prestage-content/
 categories:

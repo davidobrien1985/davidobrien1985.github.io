@@ -3,7 +3,7 @@ id: 261
 title: Am I compatible to my future plans? How APP-DNA ’s AppTitude helps along the way…(Part 1)
 date: 2011-09-26T18:58:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=261
 permalink: /2011/09/am-i-compatible-to-my-future-plans-how-app-dna-s-apptitude-helps-along-the-waypart-1/
 categories:

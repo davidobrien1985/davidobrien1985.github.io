@@ -3,7 +3,7 @@ id: 3032
 title: PowerShell scripting guidelines
 date: 2015-04-29T20:05:13+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3032
 permalink: /2015/04/powershell-scripting-guidelines/
 categories:

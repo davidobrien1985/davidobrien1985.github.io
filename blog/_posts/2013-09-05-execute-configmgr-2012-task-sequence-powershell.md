@@ -3,7 +3,7 @@ id: 1253
 title: How to execute ConfigMgr 2012 Task Sequence from Powershell
 date: 2013-09-05T16:21:46+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1253
 permalink: /2013/09/execute-configmgr-2012-task-sequence-powershell/
 categories:

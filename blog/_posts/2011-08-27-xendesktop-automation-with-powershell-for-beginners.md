@@ -3,7 +3,7 @@ id: 39
 title: XenDesktop automation with Powershell (for beginners)
 date: 2011-08-27T00:29:15+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=39
 permalink: /2011/08/xendesktop-automation-with-powershell-for-beginners/
 categories:

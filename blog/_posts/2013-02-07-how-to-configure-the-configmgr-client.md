@@ -3,7 +3,7 @@ id: 718
 title: How to configure the ConfigMgr Client cache
 date: 2013-02-07T16:42:04+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=718
 permalink: /2013/02/how-to-configure-the-configmgr-client/
 categories:

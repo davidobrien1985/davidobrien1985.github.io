@@ -3,7 +3,7 @@ id: 665
 title: Create Machine variables in Configuration Manager 2012
 date: 2012-05-08T12:25:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=665
 permalink: /2012/05/create-machine-variables-in-configuration-manager-2012/
 categories:

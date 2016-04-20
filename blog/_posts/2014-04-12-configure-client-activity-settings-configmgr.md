@@ -3,7 +3,7 @@ id: 1716
 title: How to configure client activity settings in ConfigMgr
 date: 2014-04-12T00:44:04+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1716
 permalink: /2014/04/configure-client-activity-settings-configmgr/
 categories:

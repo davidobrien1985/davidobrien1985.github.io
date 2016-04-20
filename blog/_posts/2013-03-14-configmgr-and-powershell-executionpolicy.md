@@ -3,7 +3,7 @@ id: 787
 title: ConfigMgr and Powershell ExecutionPolicy
 date: 2013-03-14T22:40:10+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=787
 permalink: /2013/03/configmgr-and-powershell-executionpolicy/
 categories:

@@ -3,7 +3,7 @@ id: 1051
 title: Move ConfigMgr Task Sequences with Powershell
 date: 2013-06-27T10:07:23+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1051
 permalink: /2013/06/move-configmgr-task-sequences-with-powershell/
 categories:

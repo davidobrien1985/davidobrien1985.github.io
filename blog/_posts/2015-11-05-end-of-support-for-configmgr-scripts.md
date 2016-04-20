@@ -3,7 +3,7 @@ id: 3122
 title: End of support for ConfigMgr scripts
 date: 2015-11-05T20:15:11+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3122
 permalink: /2015/11/end-of-support-for-configmgr-scripts/
 categories:

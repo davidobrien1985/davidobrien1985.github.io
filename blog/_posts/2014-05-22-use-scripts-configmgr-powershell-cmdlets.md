@@ -3,7 +3,7 @@ id: 1826
 title: How to use scripts with ConfigMgr Powershell cmdlets
 date: 2014-05-22T21:46:40+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1826
 permalink: /2014/05/use-scripts-configmgr-powershell-cmdlets/
 categories:

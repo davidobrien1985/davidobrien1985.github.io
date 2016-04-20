@@ -3,7 +3,7 @@ id: 2913
 title: 'Bye bye Windows - Hello Mac'
 date: 2015-01-26T00:58:38+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2913
 permalink: /2015/01/bye-bye-windows-hello-mac/
 categories:

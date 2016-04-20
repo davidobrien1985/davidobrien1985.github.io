@@ -3,7 +3,7 @@ id: 1492
 title: Find required deployments on ConfigMgr clients
 date: 2013-12-06T21:33:17+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1492
 permalink: /2013/12/find-required-deployments-configmgr-clients/
 categories:

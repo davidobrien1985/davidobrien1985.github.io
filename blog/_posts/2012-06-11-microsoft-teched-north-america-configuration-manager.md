@@ -3,7 +3,7 @@ id: 369
 title: 'Microsoft TechEd North America &#038; Configuration Manager'
 date: 2012-06-11T20:03:05+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=369
 permalink: /2012/06/microsoft-teched-north-america-configuration-manager/
 categories:

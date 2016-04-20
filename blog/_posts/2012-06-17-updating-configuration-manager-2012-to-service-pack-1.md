@@ -3,7 +3,7 @@ id: 399
 title: Updating Configuration Manager 2012 to Service Pack 1
 date: 2012-06-17T10:36:05+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=399
 permalink: /2012/06/updating-configuration-manager-2012-to-service-pack-1/
 categories:

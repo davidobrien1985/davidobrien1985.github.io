@@ -3,7 +3,7 @@ id: 815
 title: Speaker at E2EVC 2013 in Copenhagen
 date: 2013-03-22T18:32:37+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=815
 permalink: /2013/03/speaker-at-e2evc-2013-in-copenhagen/
 categories:

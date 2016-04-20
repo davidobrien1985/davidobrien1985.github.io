@@ -3,7 +3,7 @@ id: 236
 title: App-DNA AppTitude–Self Provisioning
 date: 2011-12-20T18:24:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=236
 permalink: /2011/12/app-dna-apptitudeself-provisioning/
 if_slider_image:

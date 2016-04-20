@@ -3,7 +3,7 @@ id: 935
 title: Live from E2EVC 2013 Copenhagen
 date: 2013-05-27T20:48:13+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=935
 permalink: /2013/05/live-from-e2evc-2013-copenhagen/
 categories:

@@ -3,7 +3,7 @@ id: 486
 title: 'How to backup &#038; restore your TaskSequence–Configuration Manager 2012 and Powershell'
 date: 2012-09-29T14:41:18+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=486
 permalink: /2012/09/how-to-backup-restore-your-tasksequenceconfiguration-manager-2012-and-powershell/
 categories:

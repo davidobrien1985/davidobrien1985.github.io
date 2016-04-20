@@ -3,7 +3,7 @@ id: 660
 title: 'How do variables in Configuration Manager 2012 work? &ndash; Part 1'
 date: 2013-01-12T12:18:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=660
 permalink: /2013/01/how-do-variables-in-configuration-manager-2012-work-part-1/
 categories:

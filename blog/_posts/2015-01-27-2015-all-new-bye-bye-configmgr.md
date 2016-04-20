@@ -3,7 +3,7 @@ id: 2919
 title: '2015 - all new, bye bye ConfigMgr'
 date: 2015-01-27T14:23:55+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2919
 permalink: /2015/01/2015-all-new-bye-bye-configmgr/
 categories:

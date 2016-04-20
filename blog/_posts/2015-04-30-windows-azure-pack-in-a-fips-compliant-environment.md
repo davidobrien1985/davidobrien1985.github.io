@@ -3,7 +3,7 @@ id: 3039
 title: Windows Azure Pack in a FIPS compliant environment
 date: 2015-04-30T23:46:18+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3039
 permalink: /2015/04/windows-azure-pack-in-a-fips-compliant-environment/
 categories:

@@ -3,7 +3,7 @@ id: 275
 title: Create Folders in Microsoft System Center Configuration Manager 2012 with Powershell
 date: 2012-02-24T13:01:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=275
 permalink: /2012/02/create-folders-in-microsoft-system-center-configuration-manager-with-powershell/
 if_slider_image:

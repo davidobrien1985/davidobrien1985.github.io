@@ -3,7 +3,7 @@ id: 285
 title: Microsoft Configuration Manager 2012 and Powershell–Part 2
 date: 2012-02-25T16:42:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=285
 permalink: /2012/02/microsoft-configuration-manager-2012-and-powershellpart-2/
 categories:

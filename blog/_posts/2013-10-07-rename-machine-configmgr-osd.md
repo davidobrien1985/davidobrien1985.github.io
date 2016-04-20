@@ -3,7 +3,7 @@ id: 1382
 title: How to rename machine during ConfigMgr OSD
 date: 2013-10-07T13:05:58+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1382
 permalink: /2013/10/rename-machine-configmgr-osd/
 categories:

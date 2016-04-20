@@ -3,7 +3,7 @@ id: 919
 title: 'Documentation for your ConfigMgr environment with Powershell - maintenance windows'
 date: 2013-04-22T23:40:11+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=919
 permalink: /2013/04/documentation-for-your-configmgr-environment-with-powershell-maintenance-windows/
 categories:

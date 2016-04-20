@@ -3,7 +3,7 @@ id: 576
 title: 'How to set a Network Access Account in ConfigMgr 2012&ndash;video'
 date: 2012-12-28T16:54:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=576
 permalink: /2012/12/how-to-set-a-network-access-account-in-configmgr-2012video/
 jwplayermodule_fb_headers_id:

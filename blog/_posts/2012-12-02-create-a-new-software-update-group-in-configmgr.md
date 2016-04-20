@@ -3,7 +3,7 @@ id: 532
 title: Create a new Software Update Group in ConfigMgr
 date: 2012-12-02T23:23:42+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://david-obrien.de/?p=532
 permalink: /2012/12/create-a-new-software-update-group-in-configmgr/
 categories:

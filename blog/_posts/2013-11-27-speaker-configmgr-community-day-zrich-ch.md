@@ -3,7 +3,7 @@ id: 1484
 title: 'Speaker am ConfigMgr Community Day in Z&uuml;rich / CH'
 date: 2013-11-27T21:43:08+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1484
 permalink: /2013/11/speaker-configmgr-community-day-zrich-ch/
 categories:

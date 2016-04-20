@@ -3,7 +3,7 @@ id: 2979
 title: 'Windows PowerShell DSC - classes - resource basics (part 2)'
 date: 2015-02-23T08:42:16+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2979
 permalink: /2015/02/windows-powershell-dsc-classes-resource-basics-part-2/
 categories:

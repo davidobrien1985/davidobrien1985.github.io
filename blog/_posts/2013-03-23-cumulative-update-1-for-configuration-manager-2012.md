@@ -3,7 +3,7 @@ id: 842
 title: Cumulative Update 1 for Configuration Manager 2012
 date: 2013-03-23T10:19:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=842
 permalink: /2013/03/cumulative-update-1-for-configuration-manager-2012/
 categories:

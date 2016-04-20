@@ -3,7 +3,7 @@ id: 693
 title: How to trigger Software Updates Re-Scan in Configuration Manager 2012 SP1
 date: 2013-01-23T11:56:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=693
 permalink: /2013/01/trigger-software-updates-rescan-in-configuration-manager-2012-sp1/
 categories:

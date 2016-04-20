@@ -1,9 +1,9 @@
 ---
 id: 1397
-title: 'Powershell , what is new in ConfigMgr 2012 R2 RTM'
+title: Powershell , what is new in ConfigMgr 2012 R2 RTM
 date: 2013-10-18T13:21:52+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1397
 permalink: /2013/10/powershell-whats-new-in-configmgr2012r2/
 categories:

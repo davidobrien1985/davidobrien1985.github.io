@@ -3,7 +3,7 @@ id: 1270
 title: System Center Universe (SCU_DACH) live blog
 date: 2013-09-16T08:02:01+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1270
 permalink: /2013/09/system-center-universe-scu_dach-live-blog/
 categories:

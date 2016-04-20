@@ -3,7 +3,7 @@ id: 2944
 title: 'Azure PowerShell IaaS - Notes from the field'
 date: 2015-01-30T12:18:47+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2944
 permalink: /2015/01/azure-powershell-iaas-notes-from-the-field/
 categories:

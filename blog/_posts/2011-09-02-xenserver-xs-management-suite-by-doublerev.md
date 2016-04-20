@@ -3,7 +3,7 @@ id: 136
 title: 'XenServer - XS Management Suite by DoubleRev'
 date: 2011-09-02T08:23:31+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=136
 permalink: /2011/09/xenserver-xs-management-suite-by-doublerev/
 categories:

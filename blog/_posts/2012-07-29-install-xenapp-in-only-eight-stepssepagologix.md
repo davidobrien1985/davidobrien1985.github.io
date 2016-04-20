@@ -3,7 +3,7 @@ id: 436
 title: Install XenApp in only eight steps–sepagoLogiX
 date: 2012-07-29T20:27:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=436
 permalink: /2012/07/install-xenapp-in-only-eight-stepssepagologix/
 categories:

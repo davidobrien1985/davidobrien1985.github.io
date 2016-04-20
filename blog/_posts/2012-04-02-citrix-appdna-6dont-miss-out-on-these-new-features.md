@@ -3,7 +3,7 @@ id: 308
 title: Citrix AppDNA 6–don’t miss out on these new features!
 date: 2012-04-02T20:20:35+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=308
 permalink: /2012/04/citrix-appdna-6dont-miss-out-on-these-new-features/
 categories:

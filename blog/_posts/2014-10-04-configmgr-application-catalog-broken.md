@@ -3,7 +3,7 @@ id: 1950
 title: ConfigMgr Application catalog broken
 date: 2014-10-04T00:29:31+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1950
 permalink: /2014/10/configmgr-application-catalog-broken/
 categories:

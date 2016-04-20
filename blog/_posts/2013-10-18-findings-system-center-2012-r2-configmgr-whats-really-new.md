@@ -1,9 +1,9 @@
 ---
 id: 1409
-title: 'Findings in System Center 2012 R2 ConfigMgr, what is really new?'
+title: Findings in System Center 2012 R2 ConfigMgr, what is really new
 date: 2013-10-18T22:11:43+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1409
 permalink: /2013/10/findings-system-center-2012-r2-configmgr-whats-really-new/
 categories:

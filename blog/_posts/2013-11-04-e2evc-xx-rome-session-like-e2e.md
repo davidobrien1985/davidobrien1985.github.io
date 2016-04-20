@@ -3,7 +3,7 @@ id: 1446
 title: 'E2EVC XX in Rome - my session and why I like E2E'
 date: 2013-11-04T11:16:48+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1446
 permalink: /2013/11/e2evc-xx-rome-session-like-e2e/
 categories:

@@ -3,7 +3,7 @@ id: 185
 title: local to anywhere–Profile Migrator cloud migration
 date: 2011-10-21T17:58:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=185
 permalink: /2011/10/local-to-anywhereprofile-migrator-cloud-migration/
 if_slider_image:

@@ -3,7 +3,7 @@ id: 3092
 title: 'From here on - Automating the universe'
 date: 2015-07-21T19:51:58+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3092
 permalink: /2015/07/from-here-on-automating-the-universe/
 categories:

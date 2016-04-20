@@ -3,7 +3,7 @@ id: 344
 title: I’m at E2EVC 2012 in Vienna (“Live Feed”)
 date: 2012-05-27T14:22:43+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=344
 permalink: /2012/05/im-at-e2evc-2012-in-vienna-live-feed-2/
 categories:

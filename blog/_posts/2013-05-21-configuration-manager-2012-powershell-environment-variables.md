@@ -3,7 +3,7 @@ id: 930
 title: Configuration Manager 2012 powershell environment variables
 date: 2013-05-21T15:13:08+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=930
 permalink: /2013/05/configuration-manager-2012-powershell-environment-variables/
 categories:

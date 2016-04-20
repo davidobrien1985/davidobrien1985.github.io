@@ -3,7 +3,7 @@ id: 216
 title: AppDNA AppTitude–which path will you take? Project planning made easy
 date: 2011-11-16T18:22:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=216
 permalink: /2011/11/appdna-apptitudewhich-path-will-you-take-project-planning-made-easy/
 if_slider_image:

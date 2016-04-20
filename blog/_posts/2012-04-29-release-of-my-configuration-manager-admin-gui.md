@@ -3,7 +3,7 @@ id: 312
 title: Release of my Configuration Manager Admin GUI
 date: 2012-04-29T01:08:07+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=312
 permalink: /2012/04/release-of-my-configuration-manager-admin-gui/
 categories:

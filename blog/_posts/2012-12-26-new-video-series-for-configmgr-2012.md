@@ -3,7 +3,7 @@ id: 566
 title: New video series for ConfigMgr 2012
 date: 2012-12-26T23:09:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=566
 permalink: /2012/12/new-video-series-for-configmgr-2012/
 categories:

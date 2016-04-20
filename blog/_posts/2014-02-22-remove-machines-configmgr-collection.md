@@ -3,7 +3,7 @@ id: 1644
 title: How to remove machines from ConfigMgr Collection
 date: 2014-02-22T00:13:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1644
 permalink: /2014/02/remove-machines-configmgr-collection/
 categories:

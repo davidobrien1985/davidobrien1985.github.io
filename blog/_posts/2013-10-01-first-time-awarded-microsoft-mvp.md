@@ -3,7 +3,7 @@ id: 1355
 title: First time awarded as Microsoft MVP
 date: 2013-10-01T17:01:28+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1355
 permalink: /2013/10/first-time-awarded-microsoft-mvp/
 categories:

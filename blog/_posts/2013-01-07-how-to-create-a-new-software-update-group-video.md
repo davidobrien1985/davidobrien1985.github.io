@@ -3,7 +3,7 @@ id: 640
 title: 'How to create a new Software Update Group &ndash; video'
 date: 2013-01-07T22:10:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=640
 permalink: /2013/01/how-to-create-a-new-software-update-group-video/
 jwplayermodule_fb_headers_id:

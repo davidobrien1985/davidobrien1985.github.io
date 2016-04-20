@@ -3,7 +3,7 @@ id: 710
 title: Travelling with the SurfaceRT
 date: 2013-01-30T23:03:30+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=710
 permalink: /2013/01/travelling-with-the-surfacert/
 categories:

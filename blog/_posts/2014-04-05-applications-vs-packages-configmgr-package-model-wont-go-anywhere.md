@@ -1,9 +1,9 @@
 ---
 id: 1700
-title: 'Applications vs Packages, why the ConfigMgr Package model will not go anywhere'
+title: Applications vs Packages, why the ConfigMgr Package model will not go anywhere
 date: 2014-04-05T10:34:06+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1700
 permalink: /2014/04/applications-vs-packages-configmgr-package-model-wont-go-anywhere/
 categories:

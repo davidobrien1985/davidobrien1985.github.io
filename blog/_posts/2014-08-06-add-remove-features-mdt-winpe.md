@@ -3,7 +3,7 @@ id: 1894
 title: Add or remove features in MDT WinPE
 date: 2014-08-06T15:56:35+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1894
 permalink: /2014/08/add-remove-features-mdt-winpe/
 categories:

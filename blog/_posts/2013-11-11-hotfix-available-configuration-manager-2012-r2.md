@@ -3,7 +3,7 @@ id: 1450
 title: Hotfix available for Configuration Manager 2012 R2
 date: 2013-11-11T15:35:58+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1450
 permalink: /2013/11/hotfix-available-configuration-manager-2012-r2/
 categories:

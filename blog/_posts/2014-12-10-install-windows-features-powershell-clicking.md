@@ -3,7 +3,7 @@ id: 2844
 title: 'Install Windows features through PowerShell - by clicking'
 date: 2014-12-10T14:56:23+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=2844
 permalink: /2014/12/install-windows-features-powershell-clicking/
 categories:

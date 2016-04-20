@@ -3,7 +3,7 @@ id: 3088
 title: 'DevOps - PowerShell in a Continuos Integration pipeline'
 date: 2015-07-16T13:24:56+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=3088
 permalink: /2015/07/devops-powershell-in-a-continuos-integration-pipeline/
 categories:

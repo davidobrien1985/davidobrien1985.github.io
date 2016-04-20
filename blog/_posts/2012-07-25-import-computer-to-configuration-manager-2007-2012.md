@@ -3,7 +3,7 @@ id: 413
 title: Import Computer to Configuration Manager 2007 / 2012
 date: 2012-07-25T21:51:05+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=413
 permalink: /2012/07/import-computer-to-configuration-manager-2007-2012/
 categories:

@@ -3,7 +3,7 @@ id: 751
 title: 'The curse of the second hop &amp; PowerShell &ndash; CredSSP'
 date: 2013-02-24T01:33:08+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=751
 permalink: /2013/02/the-curse-of-the-second-hop-powershell-credssp/
 categories:

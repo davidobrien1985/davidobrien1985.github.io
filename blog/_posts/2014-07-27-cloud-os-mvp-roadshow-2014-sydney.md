@@ -3,7 +3,7 @@ id: 1877
 title: 'Cloud OS MVP Roadshow 2014 - Sydney'
 date: 2014-07-27T08:29:59+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1877
 permalink: /2014/07/cloud-os-mvp-roadshow-2014-sydney/
 categories:

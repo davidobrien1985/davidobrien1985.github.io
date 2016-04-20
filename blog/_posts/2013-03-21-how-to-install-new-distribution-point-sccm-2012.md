@@ -3,7 +3,7 @@ id: 809
 title: 'How to install new Distribution Point&ndash;SCCM 2012'
 date: 2013-03-21T00:20:11+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=809
 permalink: /2013/03/how-to-install-new-distribution-point-sccm-2012/
 categories:

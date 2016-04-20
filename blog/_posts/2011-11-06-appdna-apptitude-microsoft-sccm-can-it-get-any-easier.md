@@ -3,7 +3,7 @@ id: 210
 title: 'AppDNA Apptitude &#038; Microsoft SCCM – can it get any easier?'
 date: 2011-11-06T18:20:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=210
 permalink: /2011/11/appdna-apptitude-microsoft-sccm-can-it-get-any-easier/
 if_slider_image:

@@ -3,7 +3,7 @@ id: 1498
 title: 'End of year - all new - Change'
 date: 2013-12-12T01:35:47+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1498
 permalink: /2013/12/end-year-new-change/
 categories:

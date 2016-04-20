@@ -3,7 +3,7 @@ id: 1537
 title: 'ConfigMgr - Application Base variables the easy way with Powershell'
 date: 2014-01-03T23:28:00+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.net/?p=1537
 permalink: /2014/01/configmgr-application-base-variables-easy-way-powershell/
 categories:

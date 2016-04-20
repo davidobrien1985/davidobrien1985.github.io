@@ -3,7 +3,7 @@ id: 480
 title: Deploy RES WorkspaceManager 2012 Client with Configuration Manager 2012
 date: 2012-09-28T15:55:49+00:00
 author: "David O'Brien"
-layout: post
+layout: single
 guid: http://www.david-obrien.de/?p=480
 permalink: /2012/09/deploy-res-workspacemanager-2012-client-with-configuration-manager-2012/
 categories:
