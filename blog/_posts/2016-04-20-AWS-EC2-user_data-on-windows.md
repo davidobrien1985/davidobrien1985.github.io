@@ -1,6 +1,6 @@
 ---
 title: AWS EC2 user_data on Windows
-date: 2016-04-20T22:30:30
+date: 2016-04-20T12:30:30
 author: "David O'Brien"
 layout: single
 permalink: /2016/04/aws-ec2-user_data-on-windows/
