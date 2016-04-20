@@ -30,13 +30,14 @@ comments:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "/blog/_posts/"
       type: posts
     values:
+      layout: single
       read_time: true
   # _pages
   - scope:
-      path: ""
+      path: "/_pages/"
       type: pages
     values:
       layout: single
