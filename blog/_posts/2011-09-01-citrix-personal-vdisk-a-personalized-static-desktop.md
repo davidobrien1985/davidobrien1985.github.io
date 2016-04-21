@@ -30,9 +30,9 @@ On the server side, there isn't much to see or do, only two powershell scripts, 
 
 What does "personal vDisk" even mean?
 
-Usually a desktop's storage created by the XenDesktop MCS looks something like this:<figure id="attachment_110" class="wp-caption aligncenter" style="max-width: 300px">
+Usually a desktop's storage created by the XenDesktop MCS looks something like this:
 
-[<img class="img-responsive size-medium wp-image-110" title="storage_no_vdisk" src="http://www.david-obrien.de/wp-content/uploads/2011/09/storage_no_vdisk-300x71.jpg" alt="" width="300" height="71" />]("storage_no_vdisk" http://www.david-obrien.de/wp-content/uploads/2011/09/storage_no_vdisk.jpg)<figcaption class="wp-caption-text">Storage tab of a MCS Desktop in XenServer</figcaption></figure>
+![storage without vDisk](/media/2011/09/storage_no_vdisk.jpg "storage_no_vdisk")
 
 We have the Difference Disk and the Identity Disk. That's it! Changes to the OS are stored to the Diff-disk and usually discarded at reboot.
 

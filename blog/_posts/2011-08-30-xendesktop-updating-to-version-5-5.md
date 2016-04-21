@@ -15,11 +15,9 @@ As XenDesktop 5.5 just got released the other day I planned to upgrade the lab e
 
 My environment looks like this:
 
-1 XenDesktop Controller
-
-1 XenServer Pool containing of 2 XenServer 5.6 SP2 with attached iSCSI storage
-
-1 Windows 7 Master VM
+* 1 XenDesktop Controller
+* 1 XenServer Pool containing of 2 XenServer 5.6 SP2 with attached iSCSI storage
+* 1 Windows 7 Master VM
 
 I usually work with the MCS, due to the fact that it's easier to maintain in a lab than PVS.
 
@@ -39,7 +37,7 @@ The real changes are on the other side, the user side. As we all know we have to
 
 You might ask yourself by now what the big news are about XD5.5.
 
-Here is what Citrix says: (Citrix: http://support.citrix.com/proddocs/topic/xendesktop-als/cds-whats-new-xd5fp1.html)
+Here is what Citrix says: (Citrix: <http://support.citrix.com/proddocs/topic/xendesktop-als/cds-whats-new-xd5fp1.html>)
 
 At a Citrix Solutions Roundtable I was once told that Citrix updates XenDesktop only in halves with each update cycle. XD5 was the release in which the consoles underwent a major upgrade, so 5.5 is the release in which the VDA gets its new features. XD6 will then again be the release for the administrator.
 
