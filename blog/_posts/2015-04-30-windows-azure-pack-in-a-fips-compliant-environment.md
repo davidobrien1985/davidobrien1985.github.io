@@ -46,7 +46,7 @@ The eventlog (Application and Services log for Windows Azure Pack) will tell you
   </div>
   
   <div id="wpshdi_36" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-</span>WinEvent <span class="kw5">-LogName</span> Microsoft<span class="sy0">-</span>WindowsAzurePack<span class="sy0">-</span>MgmtSvc<span class="sy0">-</span>ConfigSite<span class="sy0">/</span>Operational <span class="sy0">-</span>MaxEvents 1 <span class="sy0">|</span> <span class="kw2">fl</span> <span class="sy0">*</span></pre>
+    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-WinEvent <span class="kw5">-LogName Microsoft<span class="sy0">-WindowsAzurePack<span class="sy0">-MgmtSvc<span class="sy0">-ConfigSite<span class="sy0">/Operational <span class="sy0">-MaxEvents 1 <span class="sy0">| <span class="kw2">fl <span class="sy0">*
   </div>
 </div>
 

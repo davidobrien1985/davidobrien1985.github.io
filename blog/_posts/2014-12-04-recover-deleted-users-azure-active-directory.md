@@ -52,51 +52,51 @@ You can use the following function to easily connect yourself to MSOnline:
   </div>
   
   <div id="wpshdi_18" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;"><span class="co1">#region Functions</span>
-<span class="kw3">Function</span> Save<span class="sy0">-</span>Password
-<span class="br0">&#123;</span>
-  <span class="kw3">Param</span>
-  <span class="br0">&#40;</span>
-    <span class="br0">[</span>parameter<span class="br0">&#40;</span>Mandatory <span class="sy0">=</span> <span class="re0">$true</span><span class="br0">&#41;</span><span class="br0">]</span>
-    <span class="br0">[</span><span class="re3">String</span><span class="br0">]</span>
-    <span class="re0">$FilePath</span><span class="sy0">,</span>
+    <pre class="powershell" style="font-family:monospace;"><span class="co1">#region Functions
+<span class="kw3">Function Save<span class="sy0">-Password
+<span class="br0">&#123;
+  <span class="kw3">Param
+  <span class="br0">&#40;
+    <span class="br0">[parameter<span class="br0">&#40;Mandatory <span class="sy0">= <span class="re0">$true<span class="br0">&#41;<span class="br0">]
+    <span class="br0">[<span class="re3">String<span class="br0">]
+    <span class="re0">$FilePath<span class="sy0">,
 &nbsp;
-    <span class="br0">[</span>parameter<span class="br0">&#40;</span>Mandatory <span class="sy0">=</span> <span class="re0">$false</span><span class="br0">&#41;</span><span class="br0">]</span>
-    <span class="br0">[</span><span class="kw3">Switch</span><span class="br0">]</span>
-    <span class="re0">$PassThru</span>
-  <span class="br0">&#41;</span>
+    <span class="br0">[parameter<span class="br0">&#40;Mandatory <span class="sy0">= <span class="re0">$false<span class="br0">&#41;<span class="br0">]
+    <span class="br0">[<span class="kw3">Switch<span class="br0">]
+    <span class="re0">$PassThru
+  <span class="br0">&#41;
 &nbsp;
-  <span class="re0">$secure</span> <span class="sy0">=</span> <span class="kw1">Read-Host</span> <span class="kw5">-AsSecureString</span> <span class="st0">'Enter your Azure organization ID password.'</span>
-  <span class="re0">$encrypted</span> <span class="sy0">=</span> <span class="kw1">ConvertFrom-SecureString</span> <span class="kw5">-SecureString</span> <span class="re0">$secure</span>
-  <span class="re0">$result</span> <span class="sy0">=</span> <span class="kw1">Set-Content</span> <span class="kw5">-Path</span> <span class="re0">$FilePath</span> <span class="kw5">-Value</span> <span class="re0">$encrypted</span> <span class="kw5">-PassThru</span>
+  <span class="re0">$secure <span class="sy0">= <span class="kw1">Read-Host <span class="kw5">-AsSecureString <span class="st0">'Enter your Azure organization ID password.'
+  <span class="re0">$encrypted <span class="sy0">= <span class="kw1">ConvertFrom-SecureString <span class="kw5">-SecureString <span class="re0">$secure
+  <span class="re0">$result <span class="sy0">= <span class="kw1">Set-Content <span class="kw5">-Path <span class="re0">$FilePath <span class="kw5">-Value <span class="re0">$encrypted <span class="kw5">-PassThru
 &nbsp;
-  <span class="kw3">if</span> <span class="br0">&#40;</span><span class="sy0">!</span><span class="re0">$result</span><span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
-    <span class="kw3">throw</span> <span class="st0">"Failed to store encrypted string at $FilePath."</span>
-  <span class="br0">&#125;</span>
-  <span class="kw3">if</span> <span class="br0">&#40;</span><span class="re0">$PassThru</span><span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
-    <span class="kw1">Get-ChildItem</span> <span class="re0">$FilePath</span>
-  <span class="br0">&#125;</span>
-<span class="br0">&#125;</span>
+  <span class="kw3">if <span class="br0">&#40;<span class="sy0">!<span class="re0">$result<span class="br0">&#41;
+  <span class="br0">&#123;
+    <span class="kw3">throw <span class="st0">"Failed to store encrypted string at $FilePath."
+  <span class="br0">&#125;
+  <span class="kw3">if <span class="br0">&#40;<span class="re0">$PassThru<span class="br0">&#41;
+  <span class="br0">&#123;
+    <span class="kw1">Get-ChildItem <span class="re0">$FilePath
+  <span class="br0">&#125;
+<span class="br0">&#125;
 &nbsp;
-<span class="co1">#endregion Functions</span>
-<span class="co1">#region connect to MSOnline</span>
-try <span class="br0">&#123;</span>
-  <span class="kw3">if</span> <span class="br0">&#40;</span><span class="kw4">-not</span> <span class="br0">&#40;</span>Get<span class="sy0">-</span>Module <span class="kw5">-Name</span> MSOnline<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-    <span class="re0">$null</span> <span class="sy0">=</span> Import<span class="sy0">-</span>Module <span class="kw5">-Name</span> MSOnline
-  <span class="br0">&#125;</span>
-<span class="br0">&#125;</span> 
-catch <span class="br0">&#123;</span>
-  <span class="kw1">Write-Error</span> <span class="kw5">-Message</span> <span class="br0">&#123;</span><span class="br0">&#125;</span> <span class="kw4">-f</span> <span class="re0">$PSItem</span>;
-<span class="br0">&#125;</span>
+<span class="co1">#endregion Functions
+<span class="co1">#region connect to MSOnline
+try <span class="br0">&#123;
+  <span class="kw3">if <span class="br0">&#40;<span class="kw4">-not <span class="br0">&#40;Get<span class="sy0">-Module <span class="kw5">-Name MSOnline<span class="br0">&#41;<span class="br0">&#41; <span class="br0">&#123;
+    <span class="re0">$null <span class="sy0">= Import<span class="sy0">-Module <span class="kw5">-Name MSOnline
+  <span class="br0">&#125;
+<span class="br0">&#125; 
+catch <span class="br0">&#123;
+  <span class="kw1">Write-Error <span class="kw5">-Message <span class="br0">&#123;<span class="br0">&#125; <span class="kw4">-f <span class="re0">$PSItem;
+<span class="br0">&#125;
 &nbsp;
-<span class="re0">$FilePath</span> <span class="sy0">=</span> Save<span class="sy0">-</span>Password <span class="kw5">-FilePath</span> <span class="st0">'C:\Users\David\OneDrive\Scripts\Azure\Password_MSOL.txt'</span> <span class="kw5">-PassThru</span>
-<span class="re0">$userName</span> <span class="sy0">=</span> <span class="st0">'david@dopsftw.onmicrosoft.com'</span>
-<span class="re0">$securePassword</span> <span class="sy0">=</span> <span class="kw1">ConvertTo-SecureString</span> <span class="br0">&#40;</span><span class="kw1">Get-Content</span> <span class="kw5">-Path</span> <span class="re0">$FilePath</span><span class="br0">&#41;</span>
-<span class="re0">$msolcred</span> <span class="sy0">=</span> <span class="kw1">New-Object</span> System.Management.Automation.PSCredential<span class="br0">&#40;</span><span class="re0">$userName</span><span class="sy0">,</span> <span class="re0">$securePassword</span><span class="br0">&#41;</span>
+<span class="re0">$FilePath <span class="sy0">= Save<span class="sy0">-Password <span class="kw5">-FilePath <span class="st0">'C:\Users\David\OneDrive\Scripts\Azure\Password_MSOL.txt' <span class="kw5">-PassThru
+<span class="re0">$userName <span class="sy0">= <span class="st0">'david@dopsftw.onmicrosoft.com'
+<span class="re0">$securePassword <span class="sy0">= <span class="kw1">ConvertTo-SecureString <span class="br0">&#40;<span class="kw1">Get-Content <span class="kw5">-Path <span class="re0">$FilePath<span class="br0">&#41;
+<span class="re0">$msolcred <span class="sy0">= <span class="kw1">New-Object System.Management.Automation.PSCredential<span class="br0">&#40;<span class="re0">$userName<span class="sy0">, <span class="re0">$securePassword<span class="br0">&#41;
 &nbsp;
-connect<span class="sy0">-</span>msolservice <span class="kw5">-credential</span> $msolcred</pre>
+connect<span class="sy0">-msolservice <span class="kw5">-credential $msolcred
   </div>
 </div>
 
@@ -124,7 +124,7 @@ The way you restore a user account in this situation is very simple using PowerS
   </div>
   
   <div id="wpshdi_19" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-</span>MsolUser <span class="sy0">-</span>ReturnDeletedUser</pre>
+    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-MsolUser <span class="sy0">-ReturnDeletedUser
   </div>
 </div>
 
@@ -148,7 +148,7 @@ This will show all user accounts that have been previously deleted.
   </div>
   
   <div id="wpshdi_20" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-</span>MsolUser <span class="sy0">-</span>ReturnDeletedUsers <span class="sy0">|</span> <span class="kw3">foreach</span> <span class="br0">&#123;</span><span class="re0">$PSItem</span> <span class="sy0">|</span> <span class="kw2">fl</span> <span class="sy0">*</span> <span class="kw5">-Force</span><span class="br0">&#125;</span></pre>
+    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-MsolUser <span class="sy0">-ReturnDeletedUsers <span class="sy0">| <span class="kw3">foreach <span class="br0">&#123;<span class="re0">$PSItem <span class="sy0">| <span class="kw2">fl <span class="sy0">* <span class="kw5">-Force<span class="br0">&#125;
   </div>
 </div>
 
@@ -176,7 +176,7 @@ Use the following command to restore deleted accounts:
   </div>
   
   <div id="wpshdi_21" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Restore<span class="sy0">-</span>MsolUser <span class="sy0">-</span>UserPrincipalName <span class="st0">'TestUser01@dopsftw.onmicrosoft.com'</span></pre>
+    <pre class="powershell" style="font-family:monospace;">Restore<span class="sy0">-MsolUser <span class="sy0">-UserPrincipalName <span class="st0">'TestUser01@dopsftw.onmicrosoft.com'
   </div>
 </div>
 

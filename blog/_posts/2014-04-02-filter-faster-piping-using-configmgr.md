@@ -52,7 +52,7 @@ Using the built-in ConfigMgr cmdlet would look like this:
   </div>
 
   <div id="wpshdi_4" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-</span>CMDevice <span class="kw5">-Name</span> <span class="st0">"CON-LAP-01"</span></pre>
+    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-CMDevice <span class="kw5">-Name <span class="st0">"CON-LAP-01"
   </div>
 </div>
 
@@ -76,9 +76,9 @@ Here are some other ways to get one machine, they all work, but which is the mos
   </div>
 
   <div id="wpshdi_5" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;"><span class="kw1">Get-WmiObject</span> –Class SMS_R_System –Namespace root\sms\site_HQ1 <span class="sy0">|</span> <span class="kw1">Where-Object</span> <span class="br0">&#123;</span><a href="about:blank"><span class="kw6">$_</span></a>.Name –eq „DO<span class="sy0">-</span>LAP<span class="sy0">-</span>0“<span class="br0">&#125;</span>
-<span class="kw1">Get-WmiObject</span> <span class="kw5">-Namespace</span> root\sms\site_HQ1 <span class="kw5">-Query</span> <span class="st0">"SELECT * FROM SMS_R_System where name='DO-LAP-0'"</span>
-Get<span class="sy0">-</span>CMDevice –Name <span class="st0">"DO-LAP-0"</span></pre>
+    <pre class="powershell" style="font-family:monospace;"><span class="kw1">Get-WmiObject –Class SMS_R_System –Namespace root\sms\site_HQ1 <span class="sy0">| <span class="kw1">Where-Object <span class="br0">&#123;<a href="about:blank"><span class="kw6">$_</a>.Name –eq „DO<span class="sy0">-LAP<span class="sy0">-0“<span class="br0">&#125;
+<span class="kw1">Get-WmiObject <span class="kw5">-Namespace root\sms\site_HQ1 <span class="kw5">-Query <span class="st0">"SELECT * FROM SMS_R_System where name='DO-LAP-0'"
+Get<span class="sy0">-CMDevice –Name <span class="st0">"DO-LAP-0"
   </div>
 </div>
 
@@ -100,11 +100,11 @@ Measuring how long each of these commands will take in my environment is pretty 
   </div>
 
   <div id="wpshdi_6" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;"><span class="kw1">Measure-Command</span> <span class="kw5">-Expression</span> <span class="br0">&#123;</span>Get<span class="sy0">-</span>CMDevice –Name <span class="st0">"DO-LAP-0"</span><span class="br0">&#125;</span>
-<span class="kw1">Measure-Command</span> <span class="kw5">-Expression</span> <span class="br0">&#123;</span><span class="kw1">Get-WmiObject</span> –Class SMS_R_System –Namespace root\sms\site_HQ1  <span class="sy0">|</span> <span class="kw3">where</span> <span class="br0">&#123;</span><a href="about:blank"><span class="kw6">$_</span></a>.Name –eq „DO<span class="sy0">-</span>LAP<span class="sy0">-</span>0“<span class="br0">&#125;</span><span class="br0">&#125;</span>
-<span class="kw1">Measure-Command</span> <span class="kw5">-Expression</span> <span class="br0">&#123;</span><span class="kw1">Get-WmiObject</span> <span class="kw5">-Namespace</span> root\SMS\site_HQ1 <span class="kw5">-Query</span> <span class="st0">"SELECT * FROM SMS_R_System where name='DO-LAP-0'"</span><span class="br0">&#125;</span>
-<span class="kw1">Measure-Command</span> <span class="kw5">-Expression</span> <span class="br0">&#123;</span>Get<span class="sy0">-</span>CMDevice <span class="sy0">|</span> <span class="kw1">Where-Object</span> <span class="br0">&#123;</span><a href="about:blank"><span class="kw6">$_</span></a>.Name <span class="kw4">-eq</span> <span class="st0">"DO-LAP-0"</span><span class="br0">&#125;</span><span class="br0">&#125;</span>
-<span class="kw1">Measure-Command</span> <span class="kw5">-Expression</span> <span class="br0">&#123;</span><span class="kw1">Get-WmiObject</span> <span class="kw5">-Namespace</span> root\sms\site_HQ1 <span class="kw5">-Class</span> SMS_R_System <span class="sy0">-</span><span class="kw3">Filter</span> <span class="st0">"name='DO-LAP-0'"</span><span class="br0">&#125;</span></pre>
+    <pre class="powershell" style="font-family:monospace;"><span class="kw1">Measure-Command <span class="kw5">-Expression <span class="br0">&#123;Get<span class="sy0">-CMDevice –Name <span class="st0">"DO-LAP-0"<span class="br0">&#125;
+<span class="kw1">Measure-Command <span class="kw5">-Expression <span class="br0">&#123;<span class="kw1">Get-WmiObject –Class SMS_R_System –Namespace root\sms\site_HQ1  <span class="sy0">| <span class="kw3">where <span class="br0">&#123;<a href="about:blank"><span class="kw6">$_</a>.Name –eq „DO<span class="sy0">-LAP<span class="sy0">-0“<span class="br0">&#125;<span class="br0">&#125;
+<span class="kw1">Measure-Command <span class="kw5">-Expression <span class="br0">&#123;<span class="kw1">Get-WmiObject <span class="kw5">-Namespace root\SMS\site_HQ1 <span class="kw5">-Query <span class="st0">"SELECT * FROM SMS_R_System where name='DO-LAP-0'"<span class="br0">&#125;
+<span class="kw1">Measure-Command <span class="kw5">-Expression <span class="br0">&#123;Get<span class="sy0">-CMDevice <span class="sy0">| <span class="kw1">Where-Object <span class="br0">&#123;<a href="about:blank"><span class="kw6">$_</a>.Name <span class="kw4">-eq <span class="st0">"DO-LAP-0"<span class="br0">&#125;<span class="br0">&#125;
+<span class="kw1">Measure-Command <span class="kw5">-Expression <span class="br0">&#123;<span class="kw1">Get-WmiObject <span class="kw5">-Namespace root\sms\site_HQ1 <span class="kw5">-Class SMS_R_System <span class="sy0">-<span class="kw3">Filter <span class="st0">"name='DO-LAP-0'"<span class="br0">&#125;
   </div>
 </div>
 

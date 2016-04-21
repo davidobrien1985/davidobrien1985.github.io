@@ -37,7 +37,7 @@ Fault offset: 0x000000000005f61a
 Faulting process id: 0xae4
 Faulting application start time: 0x01cec5d767184634
 Faulting application path: C:\Windows\system32\svchost.exe
-Faulting module path: C:\Program Files\Microsoft Configuration Manager\bin\x64\MSVCR100.dll</pre>
+Faulting module path: C:\Program Files\Microsoft Configuration Manager\bin\x64\MSVCR100.dll
 
 **Note** This problem affects only distribution points that are installed on site servers.
 

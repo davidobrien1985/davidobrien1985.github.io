@@ -50,7 +50,7 @@ The latter however is not the actual curl, but just an alias for Invoke-WebReque
   </div>
   
   <div id="wpshdi_39" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;"><span class="kw1">Get-Alias</span> curl</pre>
+    <pre class="powershell" style="font-family:monospace;"><span class="kw1">Get-Alias curl
   </div>
 </div>
 
@@ -91,8 +91,8 @@ Find it and install it through the PSGet module:
   </div>
   
   <div id="wpshdi_40" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Find<span class="sy0">-</span>Module <span class="kw5">-Name</span> GithubConnect
-Install<span class="sy0">-</span>Module <span class="kw5">-Name</span> GithubConnect</pre>
+    <pre class="powershell" style="font-family:monospace;">Find<span class="sy0">-Module <span class="kw5">-Name GithubConnect
+Install<span class="sy0">-Module <span class="kw5">-Name GithubConnect
   </div>
 </div>
 
@@ -114,16 +114,16 @@ The following cmdlets are currently implemented in version 0.5:
   </div>
   
   <div id="wpshdi_41" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Connect<span class="sy0">-</span>Github
-Get<span class="sy0">-</span>GithubBranch
-Get<span class="sy0">-</span>GithubOrgRepository
-Get<span class="sy0">-</span>GithubOwnRepositories
-Get<span class="sy0">-</span>GithubPublicRepositories
-Get<span class="sy0">-</span>GithubWebhook
-List<span class="sy0">-</span>GithubBranches
-New<span class="sy0">-</span>GithubRepository
-New<span class="sy0">-</span>GithubWebhook
-Remove<span class="sy0">-</span>GithubRepository</pre>
+    <pre class="powershell" style="font-family:monospace;">Connect<span class="sy0">-Github
+Get<span class="sy0">-GithubBranch
+Get<span class="sy0">-GithubOrgRepository
+Get<span class="sy0">-GithubOwnRepositories
+Get<span class="sy0">-GithubPublicRepositories
+Get<span class="sy0">-GithubWebhook
+List<span class="sy0">-GithubBranches
+New<span class="sy0">-GithubRepository
+New<span class="sy0">-GithubWebhook
+Remove<span class="sy0">-GithubRepository
   </div>
 </div>
 

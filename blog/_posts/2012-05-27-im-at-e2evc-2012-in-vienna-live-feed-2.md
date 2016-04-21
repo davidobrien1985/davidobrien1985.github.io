@@ -47,68 +47,59 @@ This is my second community event (after ICE Lingen 2011 [www.ice-lingen.de](htt
 
 Keep following this article to stay up to date on the sessions I visit.
 
-# 
-
-# 
-
 # Arrival at Conference
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0226" src="/media/2012/05/IMAG0226_thumb.jpg" alt="IMAG0226" width="148" height="244" border="0" />]("IMAG0226" /media/2012/05/IMAG0226.jpg)
+![]("IMAG0226" /media/2012/05/IMAG0226.jpg)
 
 Alex’s welcoming was a bit delayed due to some misorganization on the hotel’s side.
 
 RES then showed what they have been doing the last months and what can be expected to be released by them in the next couple of days/weeks/months.
-  
+
 They’re going to release the RES Workspace Manager 2012 and Hyperdrive in the next days and I think especially the latter sounds really interesting.
 
 # SMSPasscode 6.1 Session
 
-David Hald from SMSPasscode talks about the threats that are out there in the world and security breaches. Apparently RAS are protected by Spiderman <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
-  
+David Hald from SMSPasscode talks about the threats that are out there in the world and security breaches. Apparently RAS are protected by Spiderman ;)
+
 A demo environment of SMSPasscode 6.1 (released last Monday) is available at demo.smspasscode.com
-
-# 
-
-# 
 
 # AppDNA Session
 
 This was my session. I believe the video recording and PowerPoint slides will soon be available for everyone to download.
-  
-My feeling is that it went quite well. It’s my first time at E2EVC, so I can only guess <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
 
-The internet connection is still unavailable  <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" />So I’m writing this offline, hoping I can upload the updates later on or tonight. Up until now all the sessions have been really interesting!
+My feeling is that it went quite well. It’s my first time at E2EVC, so I can only guess ;)
+
+The internet connection is still unavailable so I’m writing this offline, hoping I can upload the updates later on or tonight. Up until now all the sessions have been really interesting!
 
 # Whiptail
 
-  * Silicon Storage Arrays
-  * claim to have solved the “lifetime” problem with flash drives 
-      * have their own OS above the hardware which accumulates write processes
-      * writes one storage cell after another, so that one storage cell only gets written to the second time if all the other cells already have a write on them
+* Silicon Storage Arrays
+* claim to have solved the “lifetime” problem with flash drives
+* have their own OS above the hardware which accumulates write processes
+* writes one storage cell after another, so that one storage cell only gets written to the second time if all the other cells already have a write on them
 
 # AppSense Session
 
 I don’t know much about AppSense, so most of the session is quite new to me.
 
-  * System Center Operations Manager Management Packs for 2007 and 2012
-  * Environment Manager 8.3 just released 
-      * Desktop settings can be set to be “shared” or “separate”, meaning if they should roam between OS versions
-    
-      * User managed applications (Strata Apps from AppSense Labs):
-      * applications user want to use, but are not part of the company
-      * applications are installed into a sandbox
-      * another filter driver <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" />
-    
-      * DataLocker (also from AppSense Labs)
-      * encryption/decryption of data
-      * free product
-      * native DropBox integration in iOS
-    
-      * DataNow:
-      * Data broker, follow-me-data
-      * virtual appliance
-      * sounds and looks like Citrix ShareFile
-      * enterprise connector to Active Directory
+* System Center Operations Manager Management Packs for 2007 and 2012
+* Environment Manager 8.3 just released
+* Desktop settings can be set to be “shared” or “separate”, meaning if they should roam between OS versions
+* User managed applications (Strata Apps from AppSense Labs):
+* applications user want to use, but are not part of the company
+* applications are installed into a sandbox
+* another filter driver :(
+
+* DataLocker (also from AppSense Labs)
+  * encryption/decryption of data
+  * free product
+  * native DropBox integration in iOS
+
+* DataNow:
+  * Data broker, follow-me-data
+  * virtual appliance
+  * sounds and looks like Citrix ShareFile
+  * enterprise connector to Active Directory
 
 I expected to hear something about their profile management solution, but that was left out completely. Guess that means that I have to go look myself.
 
@@ -120,30 +111,26 @@ Interesting VM backup & recovery product, also new to me.
 
 Interesting session about network problems in a RDS environment, where “Flow Control” on Router actually slowed down the User expperience
 
-# Cracking with Remko Weijnen ( [@remkoweijnen](https://twitter.com/#!/RemkoWeijnen))
+# Cracking with Remko Weijnen ( [@remkoweijnen](https://twitter.com//RemkoWeijnen))
 
-How to crack a setup installer, which doesn’t want to install on your client. I honestly didn’t understand more than 2%  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />Most of the time it looked like Matrix, with HexEditors, IDAPro and lots of funny programs.
-
-&nbsp;
+How to crack a setup installer, which doesn’t want to install on your client. I honestly didn’t understand more than 2% ;) Most of the time it looked like Matrix, with HexEditors, IDAPro and lots of funny programs.
 
 # RES Master Class: Dynamic Desktop Studio
 
 Day 2 of E2EVC starts early at 9am with RES Master Class (Dynamic Desktop Studio at work)
 
-Awesome, we got “The IT Crowd: Version 1.0”…in dutch <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
+Awesome, we got “The IT Crowd: Version 1.0”…in dutch ;)
 
-  * The Master Class will cover the installation of a RES WorkspaceManager and Automation Manager environment, which in the end is supposed to be capable of creating a new employee user workspace fully automatically.
-  * install RES Automation Manager 2012
-  * works with SQL login only
-  * created a workflow to automatically join a Client to a Domain, there are lots of other modules to use, like install ConfigMgr applications, App-V Packages and so on
-  * install Workspace Manager 2012 RC (will be generally available next week!)
-  * configure Workspace Manager agent via Automation Manager
-  * create an AD user in Automation Manager
-  * [tutorials.ressoftware.com](http://tutorials.ressoftware.com) for more information
+* The Master Class will cover the installation of a RES WorkspaceManager and Automation Manager environment, which in the end is supposed to be capable of creating a new employee user workspace fully automatically.
+* install RES Automation Manager 2012
+* works with SQL login only
+* created a workflow to automatically join a Client to a Domain, there are lots of other modules to use, like install ConfigMgr applications, App-V Packages and so on
+* install Workspace Manager 2012 RC (will be generally available next week!)
+* configure Workspace Manager agent via Automation Manager
+* create an AD user in Automation Manager
+* [tutorials.ressoftware.com](http://tutorials.ressoftware.com) for more information
 
-<p align="center">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="IMAG0202" src="/media/2012/05/IMAG0202_thumb.jpg" alt="IMAG0202" width="244" height="148" border="0" />]("IMAG0202" /media/2012/05/IMAG0202.jpg)
-</p>
+![]("IMAG0202" /media/2012/05/IMAG0202.jpg)>
 
 # Next E2EVC / PubForum
 
@@ -153,18 +140,18 @@ Alex ([@E2EVC](https://twitter.com/#!/E2EVC)) just announced that the next E2EVC
 
 Well this was an interesting session about User Environment Management. I will definitely have a look at it.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0203" src="/media/2012/05/IMAG0203_thumb.jpg" alt="IMAG0203" width="244" height="148" border="0" />]("IMAG0203" /media/2012/05/IMAG0203.jpg)
+![]("IMAG0203" /media/2012/05/IMAG0203.jpg)
 
 For more information on Pierre’s tool, look at CitrixTools.net or [VirtualDesktops.info](http://VirtualDesktops.info)
 
 # The Bandwidth Matrix by [@IngmarVerheij](http://twitter.com/#!/IngmarVerheij)
 
 Ingmar announced the release of [www.thebandwidthmatrix.com](http://www.thebandwidthmatrix.com) , a bandwidth benchmarking website (beta) for Citrix ICA connections.
-  
+
 Have to check the website, shown some interesting results during the session.
-  
+
 For now it’s “only” ICA protocol, but others will follow, like PCoIP.
-  
+
 Follow @TheBandwidthMatrix on Twitter!
 
 # Citrix CloudGateway – the simple way by [@archynet](http://twitter.com/#!/archynet)
@@ -173,13 +160,11 @@ Stéphane talked about the new product CloudGateway by Citrix.
 
 Citrix Storefront Receiver 1.2 maybe released by July 2012.
 
-  * No SDK
-  * No Powershell Snapin
-  * No SSON
+* No SDK
+* No Powershell Snapin
+* No SSON
 
 Java client fallback will not be possible in Receiver Storefront, but native HTML5 support will come.
-
-# 
 
 # Day 3 of E2EVC
 
@@ -188,9 +173,9 @@ It’s been a short night in Vienna and I’m already back in the InterCity Hote
 # ThinKiosk by [@andyjmorgan](http://twitter.com/#!/andyjmorgan)
 
 Sitting in Andrew Morgan’s session "Leveraging old enterprise PC’s with ThinKiosk to lower the Desktop cost".
-  
+
 ThinKiosk is a DotNet 2.0 application, which locks down the whole desktop and just presents the user with the configured Citrix WebInterface. It’s a free community tool available at [www.andrewmorgan.ie/thinkiosk](http://www.andrewmorgan.ie/thinkiosk)
-  
+
 This way the user is only able to work with the published desktop and do nothing more with his local desktop!
 
 [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0214" src="/media/2012/05/IMAG0214_thumb.jpg" alt="IMAG0214" width="244" height="148" border="0" />]("IMAG0214" /media/2012/05/IMAG0214.jpg)[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0216" src="/media/2012/05/IMAG0216_thumb.jpg" alt="IMAG0216" width="244" height="148" border="0" />]("IMAG0216" /media/2012/05/IMAG0216.jpg)
@@ -226,15 +211,15 @@ He even showed us the Matrix! <img class="img-responsive wlEmoticon wlEmoticon-w
 
 [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0225" src="/media/2012/05/IMAG0225_thumb.jpg" alt="IMAG0225" width="244" height="148" border="0" />]("IMAG0225" /media/2012/05/IMAG0225.jpg)
 
-# 
+#
 
 # Sum Up
 
 All in all my first E2EVC was a really cool experience. I got to meet all the people I already knew from Twitter and such in person (which is always great!), talk to them, discuss with them and get a beer with them.
-  
+
 This was also the first time I presented in front of such a large and skilled audience and if there’s no too bad feedback, then this was not the last you’ve seen of me!
-  
-It’s a shame that I can’t make it to Hamburg in November, but I will definitely try to make Stockholm next year! 
+
+It’s a shame that I can’t make it to Hamburg in November, but I will definitely try to make Stockholm next year!
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)

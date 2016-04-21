@@ -32,47 +32,41 @@ Go ahead and download the package here: Download Link
 # What’s covered?
 
 Deploy a Task Sequence to a defined collection:
-  
-- the Task Sequence will be available as soon as possible
-  
-- it will be available via PXE boot
-  
-- it will be required
+
+* the Task Sequence will be available as soon as possible
+
+* it will be available via PXE boot
+
+* it will be required
 
 Import machines:
-  
-- import a single machine to a given collection
-  
-- import any given number of machines via a CSV file
-  
-- the CSV needs to have the following format:
-  
+
+* import a single machine to a given collection
+
+* import any given number of machines via a CSV file
+
+* the CSV needs to have the following format:
+
+```
 _C0012324;00-00-11-11-22-33
-  
 C0012325;01-00-11-11-22-33
-  
 C0012326;00-03-11-11-22-33_
+```
 
 # What will some day be covered?
 
 I am going to continue working on the script as much as my time permits. There are still lots of things that I would like to see covered, such as
 
-- create variables (collections and machines)
-  
-- configure the Task Sequence deployments yourself
-  
-- create applications
+* create variables (collections and machines)
+
+* configure the Task Sequence deployments yourself
+
+* create applications
 
 # Why all this?
 
 Some of you might ask why I am doing this? First of all, because it’s fun. I learned quite a lot about Powershell scripting during the last weeks. It’s really interesting to see what you can do in Configuration Manager 2012 via Powershell.
-  
+
 And then I do believe, that this could be of interest for some people or even companies.
 
-I am looking forward to your feedback! Here or on Twitter (@david_obrien) 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+I am looking forward to your feedback! Here or on Twitter (@david_obrien)

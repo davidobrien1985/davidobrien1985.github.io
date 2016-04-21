@@ -78,7 +78,7 @@ If you don't have a git client installed on your machine (why wouldn't you???) t
   </div>
   
   <div id="wpshdi_42" class="wp-synhighlighter-inner" style="display: block;">
-    git clone https:<span class="sy0">//</span>github.com<span class="sy0">/</span>davidobrien1985<span class="sy0">/</span>vagrant_ansible.git<br /> <span class="kw3">cd</span> vagrant_ansible<br /> Vagrant up
+    git clone https:<span class="sy0">//github.com<span class="sy0">/davidobrien1985<span class="sy0">/vagrant_ansible.git<br /> <span class="kw3">cd vagrant_ansible<br /> Vagrant up
   </div>
 </div>
 
@@ -106,7 +106,7 @@ We are installing Ansible from source, so we need to run one more command to get
   </div>
   
   <div id="wpshdi_43" class="wp-synhighlighter-inner" style="display: block;">
-    <span class="kw3">source</span> ansible<span class="sy0">/</span>hacking<span class="sy0">/</span>env-setup
+    <span class="kw3">source ansible<span class="sy0">/hacking<span class="sy0">/env-setup
   </div>
 </div>
 

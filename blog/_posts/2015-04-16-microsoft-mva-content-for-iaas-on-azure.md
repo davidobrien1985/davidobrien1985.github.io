@@ -33,7 +33,7 @@ Here's three examples of these **FREE** resources on MVA:
 
 <!-- [if !supportLists]-->
 
-<span lang="EN-US">(1)   </span>[Microsoft Iaas Series I: IaaS Fundamentals]("MVA IaaS Fundamentals" http://www.microsoftvirtualacademy.com/training-courses/establish-microsoft-azure-iaas-technical-fundamentals?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
+<span lang="EN-US">(1)   [Microsoft Iaas Series I: IaaS Fundamentals]("MVA IaaS Fundamentals" http://www.microsoftvirtualacademy.com/training-courses/establish-microsoft-azure-iaas-technical-fundamentals?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
   
 <!-- [if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
@@ -1331,7 +1331,7 @@ Name="List Table 7 Colorful Accent 6"></w:LsdException>
 
 <!--StartFragment-->
 
-<span lang="EN-US">(2)   </span>[Microsoft Iaas Series II:  Dive Deep into Networking Storage and Disaster Recovery<br /> ]("MVA IaaS Deep Dive Networking, Storage and DR" http://www.microsoftvirtualacademy.com/training-courses/dive-deep-into-networking-storage-and-disaster-recovery-scenarios?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
+<span lang="EN-US">(2)   [Microsoft Iaas Series II:  Dive Deep into Networking Storage and Disaster Recovery<br /> ]("MVA IaaS Deep Dive Networking, Storage and DR" http://www.microsoftvirtualacademy.com/training-courses/dive-deep-into-networking-storage-and-disaster-recovery-scenarios?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
   
 (3)   [Microsoft Iaas Series III:  Embrace Open Source Technologies to Accelerate and Scale Solutions<br /> ]("MVA IaaS Open Source Technologies" http://www.microsoftvirtualacademy.com/training-courses/embrace-open-source-technologies-to-accelerate-and-scale-solutions?WT.mc_id=13325-ITP-david-o-brien-mvp-content)
   

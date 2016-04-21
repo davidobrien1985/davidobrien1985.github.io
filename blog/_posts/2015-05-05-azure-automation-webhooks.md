@@ -74,20 +74,20 @@ Every commit (or whatever type of trigger you configure) will now call that runb
   </div>
 
   <div id="wpshdi_37" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Workflow Test<span class="sy0">-</span>Workflow
-<span class="br0">&#123;</span>
-<span class="kw3">Param</span><span class="br0">&#40;</span>
-<span class="br0">[</span><span class="re3">object</span><span class="br0">]</span>
-<span class="re0">$webhookData</span>
-<span class="br0">&#41;</span>
+    <pre class="powershell" style="font-family:monospace;">Workflow Test<span class="sy0">-Workflow
+<span class="br0">&#123;
+<span class="kw3">Param<span class="br0">&#40;
+<span class="br0">[<span class="re3">object<span class="br0">]
+<span class="re0">$webhookData
+<span class="br0">&#41;
 &nbsp;
-<span class="re0">$a</span> <span class="sy0">=</span> <span class="re0">$webhookData</span> <span class="sy0">|</span> ConvertTo<span class="sy0">-</span>Json
+<span class="re0">$a <span class="sy0">= <span class="re0">$webhookData <span class="sy0">| ConvertTo<span class="sy0">-Json
 &nbsp;
-<span class="re0">$b</span> <span class="sy0">=</span> <span class="re0">$a</span> <span class="sy0">|</span> ConvertFrom<span class="sy0">-</span>Json
+<span class="re0">$b <span class="sy0">= <span class="re0">$a <span class="sy0">| ConvertFrom<span class="sy0">-Json
 &nbsp;
-<span class="re0">$RequestBody</span> <span class="sy0">=</span> <span class="re0">$b</span>.RequestBody <span class="sy0">|</span> ConvertFrom<span class="sy0">-</span>Json
-<span class="re0">$RequestBody</span>
-<span class="br0">&#125;</span></pre>
+<span class="re0">$RequestBody <span class="sy0">= <span class="re0">$b.RequestBody <span class="sy0">| ConvertFrom<span class="sy0">-Json
+<span class="re0">$RequestBody
+<span class="br0">&#125;
   </div>
 </div>
 

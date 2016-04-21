@@ -83,7 +83,7 @@ I will upload an example XML file. You should be able to extend this file in ord
 			&lt;/DeploymentType&gt;
 		&lt;/DeploymentTypes&gt;
 	&lt;/Application&gt;
-&lt;/Applications&gt;</pre>
+&lt;/Applications&gt;
 </div>
 
 Here's the script:
@@ -142,7 +142,7 @@ foreach ($App in $Applications.Applications.Application)
             }
     }
 
-Set-Location C:\</pre>
+Set-Location C:\
 </div>
 
 This is how you execute the script:

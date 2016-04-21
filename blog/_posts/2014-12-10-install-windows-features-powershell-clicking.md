@@ -41,7 +41,7 @@ I started out using DSC to deploy my DNS Server and Active Directory Domain Serv
   </div>
   
   <div id="wpshdi_24" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-</span>WindowsFeature <span class="sy0">|</span> Out<span class="sy0">-</span>GridView</pre>
+    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-WindowsFeature <span class="sy0">| Out<span class="sy0">-GridView
   </div>
 </div>
 
@@ -63,7 +63,7 @@ On Windows Client you’d have to run:
   </div>
   
   <div id="wpshdi_25" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-</span>WindowsOptionalFeature <span class="sy0">-</span>Online <span class="sy0">|</span> Out<span class="sy0">-</span>GridView</pre>
+    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-WindowsOptionalFeature <span class="sy0">-Online <span class="sy0">| Out<span class="sy0">-GridView
   </div>
 </div>
 
@@ -109,7 +109,7 @@ This is nothing you would run in a script, but definitely handy to know. So inst
   </div>
   
   <div id="wpshdi_26" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Install<span class="sy0">-</span>WindowsFeature <span class="kw5">-Name</span> <span class="sy0">@</span><span class="br0">&#40;</span><span class="br0">&#40;</span>Get<span class="sy0">-</span>WindowsFeature<span class="br0">&#41;</span>.<span class="kw3">Where</span><span class="br0">&#40;</span><span class="br0">&#123;</span><span class="re0">$PSItem</span>.InstallState –ne ‘Installed’<span class="br0">&#125;</span><span class="br0">&#41;</span> <span class="sy0">|</span> Out<span class="sy0">-</span>GridView <span class="sy0">-</span>OutputMode Multiple<span class="br0">&#41;</span> <span class="sy0">-</span>IncludeManagementTools –Verbose</pre>
+    <pre class="powershell" style="font-family:monospace;">Install<span class="sy0">-WindowsFeature <span class="kw5">-Name <span class="sy0">@<span class="br0">&#40;<span class="br0">&#40;Get<span class="sy0">-WindowsFeature<span class="br0">&#41;.<span class="kw3">Where<span class="br0">&#40;<span class="br0">&#123;<span class="re0">$PSItem.InstallState –ne ‘Installed’<span class="br0">&#125;<span class="br0">&#41; <span class="sy0">| Out<span class="sy0">-GridView <span class="sy0">-OutputMode Multiple<span class="br0">&#41; <span class="sy0">-IncludeManagementTools –Verbose
   </div>
 </div>
 

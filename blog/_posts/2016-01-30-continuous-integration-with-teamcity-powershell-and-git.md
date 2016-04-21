@@ -26,7 +26,7 @@ This article will focus on the tools and the configuration used (in MY environme
 
 [<img class="img-responsive aligncenter" src="/media/2016/01/1454145901_thumb.png" alt="" align="middle" />](/media/2016/01/1454145901_full.png)<!--more-->
 
-#  <span style="color: inherit; font-family: open_sanssemibold, sans-serif; font-size: 26px;">Continuous Integration for PowerShell modules</span>
+#  <span style="color: inherit; font-family: open_sanssemibold, sans-serif; font-size: 26px;">Continuous Integration for PowerShell modules
 
 If you haven't yet heard of Continuous Integration (CI) then this Wikipedia article will give you a good overview of what is involved in CI: <https://en.wikipedia.org/wiki/Continuous_integration>
 
@@ -86,7 +86,7 @@ The actual action that gets executed is fairly dull. It uses the PackageManageme
   </div>
 
   <div id="wpshdi_49" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-</span>PackageProvider <span class="kw5">-Name</span> NuGet <span class="sy0">-</span>ForceBootstrap</pre>
+    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-PackageProvider <span class="kw5">-Name NuGet <span class="sy0">-ForceBootstrap
   </div>
 </div>
 
@@ -119,35 +119,35 @@ The ScriptAnalyzer step runs the command "Invoke-ScriptAnalyzer" and checks if t
   </div>
 
   <div id="wpshdi_50" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">try <span class="br0">&#123;</span>
-    <span class="kw3">if</span> <span class="br0">&#40;</span>Get<span class="sy0">-</span>Module PSScriptAnalyzer<span class="br0">&#41;</span> <span class="br0">&#123;</span>
-        Import<span class="sy0">-</span>Module <span class="kw5">-Name</span> PSScriptAnalyzer <span class="kw5">-ErrorAction</span> Stop
-    <span class="br0">&#125;</span>
-    <span class="kw3">else</span> <span class="br0">&#123;</span>
-        Install<span class="sy0">-</span>Module PSScriptAnalyzer <span class="kw5">-Force</span>
-    <span class="br0">&#125;</span>
-<span class="br0">&#125;</span>
-catch <span class="br0">&#123;</span>
-    <span class="kw1">Write-Error</span> <span class="kw5">-Message</span> <a href="about:blank"><span class="kw6">$_</span></a>
+    <pre class="powershell" style="font-family:monospace;">try <span class="br0">&#123;
+    <span class="kw3">if <span class="br0">&#40;Get<span class="sy0">-Module PSScriptAnalyzer<span class="br0">&#41; <span class="br0">&#123;
+        Import<span class="sy0">-Module <span class="kw5">-Name PSScriptAnalyzer <span class="kw5">-ErrorAction Stop
+    <span class="br0">&#125;
+    <span class="kw3">else <span class="br0">&#123;
+        Install<span class="sy0">-Module PSScriptAnalyzer <span class="kw5">-Force
+    <span class="br0">&#125;
+<span class="br0">&#125;
+catch <span class="br0">&#123;
+    <span class="kw1">Write-Error <span class="kw5">-Message <a href="about:blank"><span class="kw6">$_</a>
     exit 1
-<span class="br0">&#125;</span>
+<span class="br0">&#125;
 &nbsp;
-try <span class="br0">&#123;</span>
-    <span class="re0">$rules</span> <span class="sy0">=</span> Get<span class="sy0">-</span>ScriptAnalyzerRule <span class="sy0">-</span>Severity Warning<span class="sy0">,</span>Error <span class="kw5">-ErrorAction</span> Stop
-    <span class="re0">$results</span> <span class="sy0">=</span> Invoke<span class="sy0">-</span>ScriptAnalyzer <span class="kw5">-Path</span> <span class="sy0">%</span>system.teamcity.build.checkoutDir<span class="sy0">%</span> <span class="sy0">-</span>IncludeRule <span class="re0">$rules</span>.RuleName <span class="kw5">-Recurse</span> <span class="kw5">-ErrorAction</span> Stop
-    <span class="re0">$results</span>
-<span class="br0">&#125;</span>
-catch <span class="br0">&#123;</span>
-    <span class="kw1">Write-Error</span> <span class="kw5">-Message</span> <a href="about:blank"><span class="kw6">$_</span></a>
+try <span class="br0">&#123;
+    <span class="re0">$rules <span class="sy0">= Get<span class="sy0">-ScriptAnalyzerRule <span class="sy0">-Severity Warning<span class="sy0">,Error <span class="kw5">-ErrorAction Stop
+    <span class="re0">$results <span class="sy0">= Invoke<span class="sy0">-ScriptAnalyzer <span class="kw5">-Path <span class="sy0">%system.teamcity.build.checkoutDir<span class="sy0">% <span class="sy0">-IncludeRule <span class="re0">$rules.RuleName <span class="kw5">-Recurse <span class="kw5">-ErrorAction Stop
+    <span class="re0">$results
+<span class="br0">&#125;
+catch <span class="br0">&#123;
+    <span class="kw1">Write-Error <span class="kw5">-Message <a href="about:blank"><span class="kw6">$_</a>
     exit 1
-<span class="br0">&#125;</span>
-<span class="kw3">if</span> <span class="br0">&#40;</span><span class="re0">$results</span>.Count <span class="kw4">-gt</span> 0<span class="br0">&#41;</span> <span class="br0">&#123;</span>
-    <span class="kw1">Write-Host</span> <span class="st0">"Analysis of your code threw $($results.Count) warnings or errors. Please go back and check your code."</span>
+<span class="br0">&#125;
+<span class="kw3">if <span class="br0">&#40;<span class="re0">$results.Count <span class="kw4">-gt 0<span class="br0">&#41; <span class="br0">&#123;
+    <span class="kw1">Write-Host <span class="st0">"Analysis of your code threw $($results.Count) warnings or errors. Please go back and check your code."
     exit 1
-<span class="br0">&#125;</span>
-<span class="kw3">else</span> <span class="br0">&#123;</span>
-    <span class="kw1">Write-Host</span> <span class="st0">'Awesome code! No issues found!'</span> <span class="kw5">-Foregroundcolor</span> green
-<span class="br0">&#125;</span></pre>
+<span class="br0">&#125;
+<span class="kw3">else <span class="br0">&#123;
+    <span class="kw1">Write-Host <span class="st0">'Awesome code! No issues found!' <span class="kw5">-Foregroundcolor green
+<span class="br0">&#125;
   </div>
 </div>
 
@@ -171,26 +171,26 @@ The code should be pretty self-explanatory. Only if there are neither Warnings n
   </div>
 
   <div id="wpshdi_51" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">try <span class="br0">&#123;</span>
-  <span class="kw3">if</span> <span class="br0">&#40;</span>Get<span class="sy0">-</span>Module Pester<span class="br0">&#41;</span> <span class="br0">&#123;</span>
-    Import<span class="sy0">-</span>Module <span class="kw5">-Name</span> Pester <span class="kw5">-ErrorAction</span> Stop
-  <span class="br0">&#125;</span>
-  <span class="kw3">else</span> <span class="br0">&#123;</span>
-    Install<span class="sy0">-</span>Module Pester <span class="kw5">-Force</span>
-  <span class="br0">&#125;</span>
-  <span class="re0">$checkoutdir</span> <span class="sy0">=</span> <span class="st0">"%system.teamcity.build.checkoutDir%"</span>
-  <span class="re0">$pester_xml</span> <span class="sy0">=</span> <span class="kw1">Join-Path</span> <span class="re0">$checkoutdir</span> pester_xml.xml
-  <span class="re0">$result</span> <span class="sy0">=</span> Invoke<span class="sy0">-</span>Pester <span class="sy0">-</span>OutputFile <span class="re0">$pester_xml</span> <span class="sy0">-</span>OutputFormat NUnitXml <span class="kw5">-PassThru</span> <span class="kw5">-Strict</span> <span class="kw5">-ErrorAction</span> Stop
+    <pre class="powershell" style="font-family:monospace;">try <span class="br0">&#123;
+  <span class="kw3">if <span class="br0">&#40;Get<span class="sy0">-Module Pester<span class="br0">&#41; <span class="br0">&#123;
+    Import<span class="sy0">-Module <span class="kw5">-Name Pester <span class="kw5">-ErrorAction Stop
+  <span class="br0">&#125;
+  <span class="kw3">else <span class="br0">&#123;
+    Install<span class="sy0">-Module Pester <span class="kw5">-Force
+  <span class="br0">&#125;
+  <span class="re0">$checkoutdir <span class="sy0">= <span class="st0">"%system.teamcity.build.checkoutDir%"
+  <span class="re0">$pester_xml <span class="sy0">= <span class="kw1">Join-Path <span class="re0">$checkoutdir pester_xml.xml
+  <span class="re0">$result <span class="sy0">= Invoke<span class="sy0">-Pester <span class="sy0">-OutputFile <span class="re0">$pester_xml <span class="sy0">-OutputFormat NUnitXml <span class="kw5">-PassThru <span class="kw5">-Strict <span class="kw5">-ErrorAction Stop
 &nbsp;
-  <span class="kw3">if</span> <span class="br0">&#40;</span><span class="re0">$result</span>.FailedCount <span class="kw4">-gt</span> 0<span class="br0">&#41;</span> <span class="br0">&#123;</span>
-    <span class="kw3">throw</span> <span class="st0">"{0} tests did not pass"</span> <span class="kw4">-f</span> <span class="re0">$result</span>.FailedCount
-  <span class="br0">&#125;</span>
-<span class="br0">&#125;</span>
-catch <span class="br0">&#123;</span>
-  <span class="re0">$msg</span> <span class="sy0">=</span> <a href="about:blank"><span class="kw6">$_</span></a>
-  <span class="kw1">Write-Error</span> <span class="kw5">-ErrorRecord</span> <span class="re0">$msg</span>
-  exit <span class="nu0">1</span>
-<span class="br0">&#125;</span></pre>
+  <span class="kw3">if <span class="br0">&#40;<span class="re0">$result.FailedCount <span class="kw4">-gt 0<span class="br0">&#41; <span class="br0">&#123;
+    <span class="kw3">throw <span class="st0">"{0} tests did not pass" <span class="kw4">-f <span class="re0">$result.FailedCount
+  <span class="br0">&#125;
+<span class="br0">&#125;
+catch <span class="br0">&#123;
+  <span class="re0">$msg <span class="sy0">= <a href="about:blank"><span class="kw6">$_</a>
+  <span class="kw1">Write-Error <span class="kw5">-ErrorRecord <span class="re0">$msg
+  exit <span class="nu0">1
+<span class="br0">&#125;
   </div>
 </div>
 

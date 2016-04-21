@@ -74,7 +74,7 @@ As we are going to execute a Task Sequence we are able to put an asterisk "*" in
 $ProgramID = "*"
 $PackageID = "%PutInYourPackageID%"
 
-$UI.ExecuteProgram($ProgramID, $PackageID, $true)</pre>
+$UI.ExecuteProgram($ProgramID, $PackageID, $true)
 </div>
 
 ## Alternative : GetAvailableApplications

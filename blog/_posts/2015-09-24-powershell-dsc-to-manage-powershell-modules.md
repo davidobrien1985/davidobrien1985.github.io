@@ -74,7 +74,7 @@ The Resource / Module itself is available on the PowerShell Gallery and can easi
   </div>
   
   <div id="wpshdi_38" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Install<span class="sy0">-</span>Module <span class="kw5">-Name</span> PowerShellModule</pre>
+    <pre class="powershell" style="font-family:monospace;">Install<span class="sy0">-Module <span class="kw5">-Name PowerShellModule
   </div>
 </div>
 

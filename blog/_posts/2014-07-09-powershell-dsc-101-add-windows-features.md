@@ -42,17 +42,17 @@ Being based on Powershell, DSC knows certain keywords you can use in your config
   
   <div id="wpshdi_8" class="wp-synhighlighter-inner" style="display: block;">
     <pre class="powershell" style="font-family:monospace;">Configuration SimpleDSC
-<span class="br0">&#123;</span>
-        <span class="kw3">param</span> <span class="br0">&#40;</span> <span class="re0">$NodeName</span> <span class="br0">&#41;</span>
-        Node <span class="re0">$NodeName</span>
-        <span class="br0">&#123;</span>
+<span class="br0">&#123;
+        <span class="kw3">param <span class="br0">&#40; <span class="re0">$NodeName <span class="br0">&#41;
+        Node <span class="re0">$NodeName
+        <span class="br0">&#123;
             WindowsFeature WebServer
-                <span class="br0">&#123;</span>
-                    Ensure <span class="sy0">=</span> <span class="st0">"Present"</span>
-                    Name <span class="sy0">=</span> <span class="st0">"Web-Server"</span>
-		<span class="br0">&#125;</span>
-	<span class="br0">&#125;</span>
-<span class="br0">&#125;</span></pre>
+                <span class="br0">&#123;
+                    Ensure <span class="sy0">= <span class="st0">"Present"
+                    Name <span class="sy0">= <span class="st0">"Web-Server"
+		<span class="br0">&#125;
+	<span class="br0">&#125;
+<span class="br0">&#125;
   </div>
 </div>
 

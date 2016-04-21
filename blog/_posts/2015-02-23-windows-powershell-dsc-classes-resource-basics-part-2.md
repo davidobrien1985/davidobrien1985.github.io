@@ -46,10 +46,10 @@ tags:
     </div>
     
     <div id="wpshdi_27" class="wp-synhighlighter-inner" style="display: block;">
-      <pre class="powershell" style="font-family:monospace;"><span class="kw3">param</span> <span class="br0">&#40;</span>
-<span class="br0">[</span>ValidateSet<span class="br0">&#40;</span><span class="st0">'Present'</span><span class="sy0">,</span> <span class="st0">'Absent'</span><span class="br0">&#41;</span><span class="br0">]</span>
-<span class="br0">[</span><span class="re3">string</span><span class="br0">]</span><span class="re0">$Ensure</span> <span class="sy0">=</span> <span class="st0">'Present'</span>
-<span class="br0">&#41;</span></pre>
+      <pre class="powershell" style="font-family:monospace;"><span class="kw3">param <span class="br0">&#40;
+<span class="br0">[ValidateSet<span class="br0">&#40;<span class="st0">'Present'<span class="sy0">, <span class="st0">'Absent'<span class="br0">&#41;<span class="br0">]
+<span class="br0">[<span class="re3">string<span class="br0">]<span class="re0">$Ensure <span class="sy0">= <span class="st0">'Present'
+<span class="br0">&#41;
     </div>
   </div>
 </p>
@@ -73,10 +73,10 @@ tags:
     </div>
     
     <div id="wpshdi_28" class="wp-synhighlighter-inner" style="display: block;">
-      <pre class="powershell" style="font-family:monospace;">enum Ensure <span class="br0">&#123;</span>
+      <pre class="powershell" style="font-family:monospace;">enum Ensure <span class="br0">&#123;
 Present
 Absent
-<span class="br0">&#125;</span></pre>
+<span class="br0">&#125;
     </div>
   </div>
   
@@ -99,16 +99,16 @@ Absent
   </div>
   
   <div id="wpshdi_29" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">enum HouseType <span class="br0">&#123;</span>
+    <pre class="powershell" style="font-family:monospace;">enum HouseType <span class="br0">&#123;
 Tent
 House
-<span class="br0">&#125;</span>
+<span class="br0">&#125;
 &nbsp;
-enum HouseSize <span class="br0">&#123;</span>
+enum HouseSize <span class="br0">&#123;
 large
 small
 medium
-<span class="br0">&#125;</span></pre>
+<span class="br0">&#125;
   </div>
 </div>
 
@@ -136,12 +136,12 @@ medium
   </div>
   
   <div id="wpshdi_30" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">enum HouseSize <span class="br0">&#123;</span>
+    <pre class="powershell" style="font-family:monospace;">enum HouseSize <span class="br0">&#123;
 large
 small
 medium
-<span class="br0">&#125;</span>
-<span class="br0">[</span>enum<span class="br0">]</span>::IsDefined<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="br0">[</span>HouseSize<span class="br0">]</span><span class="br0">&#41;</span><span class="sy0">,</span><span class="st0">'tiny'</span><span class="br0">&#41;</span></pre>
+<span class="br0">&#125;
+<span class="br0">[enum<span class="br0">]::IsDefined<span class="br0">&#40;<span class="br0">&#40;<span class="br0">[HouseSize<span class="br0">]<span class="br0">&#41;<span class="sy0">,<span class="st0">'tiny'<span class="br0">&#41;
   </div>
 </div>
 
@@ -166,27 +166,27 @@ In a class based DSC resource this would look something like this:
   
   <div id="wpshdi_31" class="wp-synhighlighter-inner" style="display: block;">
     <pre class="powershell" style="font-family:monospace;">enum Ensure
-<span class="br0">&#123;</span>
+<span class="br0">&#123;
    Absent
    Present
-<span class="br0">&#125;</span>
+<span class="br0">&#125;
 &nbsp;
-<span class="br0">[</span>DscResource<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">]</span>
+<span class="br0">[DscResource<span class="br0">&#40;<span class="br0">&#41;<span class="br0">]
 class Test
-<span class="br0">&#123;</span>
-   <span class="br0">[</span>DscResourceKey<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">]</span>
-   <span class="br0">[</span><span class="re3">string</span><span class="br0">]</span> <span class="re0">$Test</span>
-   <span class="br0">[</span>DscResourceMandatory<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">]</span>
-   <span class="br0">[</span>Ensure<span class="br0">]</span> <span class="re0">$Ensure</span> 
+<span class="br0">&#123;
+   <span class="br0">[DscResourceKey<span class="br0">&#40;<span class="br0">&#41;<span class="br0">]
+   <span class="br0">[<span class="re3">string<span class="br0">] <span class="re0">$Test
+   <span class="br0">[DscResourceMandatory<span class="br0">&#40;<span class="br0">&#41;<span class="br0">]
+   <span class="br0">[Ensure<span class="br0">] <span class="re0">$Ensure 
 &nbsp;
-   <span class="br0">[</span>void<span class="br0">]</span> <span class="kw2">Set</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
+   <span class="br0">[void<span class="br0">] <span class="kw2">Set<span class="br0">&#40;<span class="br0">&#41;
 &nbsp;
-   <span class="br0">&#123;</span>
-      <span class="kw3">if</span><span class="br0">&#40;</span><span class="re0">$this</span>.Ensure <span class="kw4">-eq</span> <span class="br0">[</span>Ensure<span class="br0">]</span>::Present<span class="br0">&#41;</span>
-      <span class="br0">&#123;</span>
+   <span class="br0">&#123;
+      <span class="kw3">if<span class="br0">&#40;<span class="re0">$this.Ensure <span class="kw4">-eq <span class="br0">[Ensure<span class="br0">]::Present<span class="br0">&#41;
+      <span class="br0">&#123;
         Try
-        <span class="br0">&#123;</span> 
-<span class="co1">#### and so on...</span></pre>
+        <span class="br0">&#123; 
+<span class="co1">#### and so on...
   </div>
 </div>
 
@@ -541,8 +541,8 @@ UnhideWhenUsed="false" QFormat="true" Name="Book Title"></w:LsdException>
     
     <!--StartFragment-->
     
-    <span lang="EN-US">[</span><span lang="EN-US">DscResource</span><span lang="EN-US">()</span><span lang="EN-US">], tells PowerShell that the following class is a DSC resource</span>
-  * <span lang="EN-US">[</span><span lang="EN-US">DscProperty</span><span lang="EN-US">(Key)]</span> , a DSC resource requires at least one Key value. This uniquely identifies the resource instance. It also means that this parameter is required. If it's not set, DSC will not execute.
+    <span lang="EN-US">[<span lang="EN-US">DscResource<span lang="EN-US">()<span lang="EN-US">], tells PowerShell that the following class is a DSC resource
+  * <span lang="EN-US">[<span lang="EN-US">DscProperty<span lang="EN-US">(Key)] , a DSC resource requires at least one Key value. This uniquely identifies the resource instance. It also means that this parameter is required. If it's not set, DSC will not execute.
   * <!-- [if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
 <o:RelyOnVML></o:RelyOnVML>
@@ -859,7 +859,7 @@ UnhideWhenUsed="false" QFormat="true" Name="Book Title"></w:LsdException>
     
     <!--StartFragment-->
     
-    <span lang="EN-US">[</span><span lang="EN-US">DscProperty</span><span lang="EN-US">(NotConfigurable)], this is a "read only" parameter which will be set by the Get() method.</span>
+    <span lang="EN-US">[<span lang="EN-US">DscProperty<span lang="EN-US">(NotConfigurable)], this is a "read only" parameter which will be set by the Get() method.
   * <!-- [if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
 <o:RelyOnVML></o:RelyOnVML>
@@ -1176,7 +1176,7 @@ UnhideWhenUsed="false" QFormat="true" Name="Book Title"></w:LsdException>
     
     <!--StartFragment-->
     
-    <span lang="EN-US">[</span><span lang="EN-US">DscProperty</span><span lang="EN-US">(Mandatory)]</span><!--EndFragment--> , means this parameter is required. Without this the DSC resource will not be executed.
+    <span lang="EN-US">[<span lang="EN-US">DscProperty<span lang="EN-US">(Mandatory)]<!--EndFragment--> , means this parameter is required. Without this the DSC resource will not be executed.
 
 As an example for a class based resource I have migrated my cmdlet based resource to install a ConfigMgr primary site to a class based one. As you can see, inside of the class I can write regular PowerShell. In this case this is the Get() method of that resource.
 
@@ -1196,29 +1196,29 @@ As an example for a class based resource I have migrated my cmdlet based resourc
   </div>
   
   <div id="wpshdi_32" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">        <span class="br0">[</span>ConfigMgrClass<span class="br0">]</span> Get<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-            <span class="re0">$Configuration</span> <span class="sy0">=</span> <span class="br0">[</span><span class="re3">hashtable</span><span class="br0">]</span>::new<span class="br0">&#40;</span><span class="br0">&#41;</span>
-            <span class="re0">$Configuration</span>.Add<span class="br0">&#40;</span><span class="st0">'SiteCode'</span><span class="sy0">,</span> <span class="re0">$this</span>.SiteCode<span class="br0">&#41;</span>
-            try <span class="br0">&#123;</span>
-                <span class="re0">$CMSite</span> <span class="sy0">=</span> Get<span class="sy0">-</span>CimInstance <span class="sy0">-</span>ClassName SMS_Site <span class="kw5">-Namespace</span> root\SMS\Site_$<span class="br0">&#40;</span><span class="re0">$this</span>.SiteCode<span class="br0">&#41;</span> <span class="kw5">-ErrorAction</span> Stop
-                <span class="kw3">if</span> <span class="br0">&#40;</span><span class="re0">$CMSite</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-                    <span class="re0">$Configuration</span>.Add<span class="br0">&#40;</span><span class="st0">'Ensure'</span><span class="sy0">,</span><span class="st0">'Present'</span><span class="br0">&#41;</span>
-                <span class="br0">&#125;</span>
-                <span class="kw3">else</span> <span class="br0">&#123;</span>
-                    <span class="re0">$Configuration</span>.Add<span class="br0">&#40;</span><span class="st0">'Ensure'</span><span class="sy0">,</span><span class="st0">'Absent'</span><span class="br0">&#41;</span>
-                <span class="br0">&#125;</span>
-            <span class="br0">&#125;</span>
-            catch <span class="br0">&#123;</span>
-                <span class="re0">$exception</span> <span class="sy0">=</span> <a href="about:blank"><span class="kw6">$_</span></a>
-                 <span class="kw1">Write-Verbose</span> <span class="st0">'Error occurred'</span>
-                 <span class="kw3">while</span> <span class="br0">&#40;</span><span class="re0">$exception</span>.InnerException <span class="kw4">-ne</span> <span class="re0">$null</span><span class="br0">&#41;</span>
-                 <span class="br0">&#123;</span>
-                     <span class="re0">$exception</span> <span class="sy0">=</span> <span class="re0">$exception</span>.InnerException
-                     <span class="kw1">Write-Verbose</span> <span class="re0">$exception</span>.message
-                 <span class="br0">&#125;</span>
-                <span class="br0">&#125;</span>    
-            <span class="kw3">return</span> <span class="re0">$Configuration</span>
-        <span class="br0">&#125;</span></pre>
+    <pre class="powershell" style="font-family:monospace;">        <span class="br0">[ConfigMgrClass<span class="br0">] Get<span class="br0">&#40;<span class="br0">&#41; <span class="br0">&#123;
+            <span class="re0">$Configuration <span class="sy0">= <span class="br0">[<span class="re3">hashtable<span class="br0">]::new<span class="br0">&#40;<span class="br0">&#41;
+            <span class="re0">$Configuration.Add<span class="br0">&#40;<span class="st0">'SiteCode'<span class="sy0">, <span class="re0">$this.SiteCode<span class="br0">&#41;
+            try <span class="br0">&#123;
+                <span class="re0">$CMSite <span class="sy0">= Get<span class="sy0">-CimInstance <span class="sy0">-ClassName SMS_Site <span class="kw5">-Namespace root\SMS\Site_$<span class="br0">&#40;<span class="re0">$this.SiteCode<span class="br0">&#41; <span class="kw5">-ErrorAction Stop
+                <span class="kw3">if <span class="br0">&#40;<span class="re0">$CMSite<span class="br0">&#41; <span class="br0">&#123;
+                    <span class="re0">$Configuration.Add<span class="br0">&#40;<span class="st0">'Ensure'<span class="sy0">,<span class="st0">'Present'<span class="br0">&#41;
+                <span class="br0">&#125;
+                <span class="kw3">else <span class="br0">&#123;
+                    <span class="re0">$Configuration.Add<span class="br0">&#40;<span class="st0">'Ensure'<span class="sy0">,<span class="st0">'Absent'<span class="br0">&#41;
+                <span class="br0">&#125;
+            <span class="br0">&#125;
+            catch <span class="br0">&#123;
+                <span class="re0">$exception <span class="sy0">= <a href="about:blank"><span class="kw6">$_</a>
+                 <span class="kw1">Write-Verbose <span class="st0">'Error occurred'
+                 <span class="kw3">while <span class="br0">&#40;<span class="re0">$exception.InnerException <span class="kw4">-ne <span class="re0">$null<span class="br0">&#41;
+                 <span class="br0">&#123;
+                     <span class="re0">$exception <span class="sy0">= <span class="re0">$exception.InnerException
+                     <span class="kw1">Write-Verbose <span class="re0">$exception.message
+                 <span class="br0">&#125;
+                <span class="br0">&#125;    
+            <span class="kw3">return <span class="re0">$Configuration
+        <span class="br0">&#125;
   </div>
 </div>
 
@@ -1248,13 +1248,13 @@ Use the New-ModuleManifest cmdlet to create the psd1 file.
   </div>
   
   <div id="wpshdi_33" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">New<span class="sy0">-</span>ModuleManifest <span class="kw5">-Path</span> <span class="st0">'C:\Program Files\WindowsPowerShell\Modules\ConfigMgrClass\ConfigMgrclass.psd1'</span> <span class="sy0">-</span>DscResourcesToExport <span class="st0">'ConfigMgrClass'</span> <span class="sy0">-</span>PowerShellVersion 5.0 <span class="kw5">-Description</span> <span class="st0">'Class based DSC resource to install roles and features of ConfigMgr'</span> <span class="sy0">-</span>ModuleVersion <span class="st0">'1.0.0.0'</span> <span class="sy0">-</span>Guid $<span class="br0">&#40;</span><span class="br0">[</span>guid<span class="br0">]</span>::NewGuid<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="sy0">-</span>Author <span class="st0">'David OBrien'</span> <span class="sy0">-</span>RootModule <span class="st0">'.\ConfigMgrClass.psm1'</span> <span class="sy0">-</span>CompanyName <span class="st0">'DOCorp'</span></pre>
+    <pre class="powershell" style="font-family:monospace;">New<span class="sy0">-ModuleManifest <span class="kw5">-Path <span class="st0">'C:\Program Files\WindowsPowerShell\Modules\ConfigMgrClass\ConfigMgrclass.psd1' <span class="sy0">-DscResourcesToExport <span class="st0">'ConfigMgrClass' <span class="sy0">-PowerShellVersion 5.0 <span class="kw5">-Description <span class="st0">'Class based DSC resource to install roles and features of ConfigMgr' <span class="sy0">-ModuleVersion <span class="st0">'1.0.0.0' <span class="sy0">-Guid $<span class="br0">&#40;<span class="br0">[guid<span class="br0">]::NewGuid<span class="br0">&#40;<span class="br0">&#41;<span class="br0">&#41; <span class="sy0">-Author <span class="st0">'David OBrien' <span class="sy0">-RootModule <span class="st0">'.\ConfigMgrClass.psm1' <span class="sy0">-CompanyName <span class="st0">'DOCorp'
   </div>
 </div>
 
 In my previous article ([http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/](http://www.david-obrien.net/2015/02/windows-powershell-dsc-classes-introduction-part-1/) ) I mentioned that Get-DscResource is unable to find class based resource modules. Guess what?! Microsoft changed that with the current February release of WMF5.
   
-In order to find your resource module, though, you need to add a new parameter to your Module Manifest, which is called <span lang="EN-US"><strong>DscResourcesToExport</strong>. This will make the class based resource discoverable to Get-DscResource.</span>
+In order to find your resource module, though, you need to add a new parameter to your Module Manifest, which is called <span lang="EN-US"><strong>DscResourcesToExport</strong>. This will make the class based resource discoverable to Get-DscResource.
 
 In the next part I will walk through my converted ConfigMgr resource and show you a couple of more classes I've implemented into this resource.
 

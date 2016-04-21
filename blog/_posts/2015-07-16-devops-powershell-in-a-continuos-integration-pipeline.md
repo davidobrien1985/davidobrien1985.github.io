@@ -29,7 +29,7 @@ This is a recording of my 20mins session at the last Melbourne System Center, In
 
 It is a quick dive into PowerShell Desired State Configuration (PSDSC), Pester Unit Testing, Source Control with Gitlab, a Continuous Integration TeamCity server and a short intro into NuGet Package Management. This all falls under the big topic DevOps.
 
-<span class='embed-youtube' style='text-align:center; display: block;'></span>
+<span class='embed-youtube' style='text-align:center; display: block;'>
 
 This video is more a teaser of what can be done, it's not a complete guide (those will follow), nor did I talk about every single aspect of it. Also I might have missed a couple of steps here because of time constraints.
 

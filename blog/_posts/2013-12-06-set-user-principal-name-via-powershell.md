@@ -27,7 +27,7 @@ In case you need to do that for more than one user at a time, then you might fin
 
 <div id="codeSnippetWrapper" style="margin: 20px 0px 10px; padding: 4px; border: 1px solid silver; width: 97.5%; text-align: left; line-height: 12pt; overflow: auto; font-family: 'Courier New', courier, monospace; font-size: 8pt; cursor: text; direction: ltr; max-height: 200px; background-color: #f4f4f4;">
   <div id="codeSnippet" style="padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;"><span style="color: #0000ff;">Get</span>-ADUser -Filter * -SearchBase 'ou=nonAdmins,ou=User,ou=Administration,dc=<span style="color: #0000ff;">do</span>,dc=local' -Properties userPrincipalName | foreach { <span style="color: #0000ff;">Set</span>-ADUser $_ -UserPrincipalName <span style="color: #006080;">"$($_.samaccountname)@david.test"</span>}</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Get-ADUser -Filter * -SearchBase 'ou=nonAdmins,ou=User,ou=Administration,dc=do,dc=local' -Properties userPrincipalName | foreach { Set-ADUser $_ -UserPrincipalName "$($_.samaccountname)@david.test"}
     
     <p>
       <!--CRLF-->
@@ -42,7 +42,7 @@ This command needs to run on a server where the Active Directory module is insta
 <div id="codeSnippetWrapper" style="margin: 20px 0px 10px; padding: 4px; border: 1px solid silver; width: 97.5%; text-align: left; line-height: 12pt; overflow: auto; font-family: 'Courier New', courier, monospace; font-size: 8pt; cursor: text; direction: ltr; max-height: 200px; background-color: #f4f4f4;">
   <div id="codeSnippet" style="padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">
     <p>
-      Import-<span style="color: #0000ff;">Module</span> ActiveDirectory
+      Import-Module ActiveDirectory
     </p>
     
     <p>

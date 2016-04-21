@@ -48,7 +48,7 @@ In [\\{siteserver}\SMS_{SiteCode}\hotfix\](file://\\{siteserver}\SMS_{SiteCode}\
 
 <div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">msiexec.exe /p configmgr2012adminui-sp1-kb2817245-i386.msp /L*v %TEMP%\configmgr2012adminui-sp1-kb2817245-i386.msp.LOG /q REINSTALL=ALL REINSTALLMODE=mous</pre>
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">msiexec.exe /p configmgr2012adminui-sp1-kb2817245-i386.msp /L*v %TEMP%\configmgr2012adminui-sp1-kb2817245-i386.msp.LOG /q REINSTALL=ALL REINSTALLMODE=mous
     
     <p>
       <!--CRLF-->

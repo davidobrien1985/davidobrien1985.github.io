@@ -76,17 +76,17 @@ I'd be happy to add more tips / guidelines to this list. Just add yours to the c
           
           <div id="wpshdi_35" class="wp-synhighlighter-inner" style="display: block;">
             <pre class="powershell" style="font-family:monospace;">Try
-<span class="br0">&#123;</span>
-Get<span class="sy0">-</span>WindowsFeature 
-<span class="br0">&#125;</span>
+<span class="br0">&#123;
+Get<span class="sy0">-WindowsFeature 
+<span class="br0">&#125;
 catch 
-<span class="br0">&#123;</span>
-<span class="kw1">Write-Error</span> <span class="kw5">-Message</span> <a href="about:blank"><span class="kw6">$_</span></a> 
-<span class="br0">&#125;</span>
+<span class="br0">&#123;
+<span class="kw1">Write-Error <span class="kw5">-Message <a href="about:blank"><span class="kw6">$_</a> 
+<span class="br0">&#125;
 finally 
-<span class="br0">&#123;</span>
-Do<span class="sy0">-</span>Stuff 
-<span class="br0">&#125;</span></pre>
+<span class="br0">&#123;
+Do<span class="sy0">-Stuff 
+<span class="br0">&#125;
           </div>
         </div>
     

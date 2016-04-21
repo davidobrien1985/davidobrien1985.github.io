@@ -212,7 +212,7 @@ foreach ($Pkg in $Packages)
             {
                 Write-Verbose "$($Pkg.Name) could not be edited."
             }
-    }</pre>
+    }
 >     </div>
 >     
 >     <div style="float: right; margin-left: 10px;">

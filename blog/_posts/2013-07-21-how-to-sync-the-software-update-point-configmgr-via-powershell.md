@@ -88,7 +88,7 @@ if ($Return.ReturnValue -eq "0")
 else
     {
         Write-Verbose "There was an error syncing the SUP"
-    }</pre>
+    }
 </div>
 
 <div style="float: right; margin-left: 10px;">

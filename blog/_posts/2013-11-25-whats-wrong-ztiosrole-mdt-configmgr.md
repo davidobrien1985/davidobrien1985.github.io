@@ -34,139 +34,139 @@ This is a snippet of ZTIOSRole.log:
 
 <div id="codeSnippetWrapper" style="margin: 20px 0px 10px; padding: 4px; border: 1px solid silver; width: 97.5%; text-align: left; line-height: 12pt; overflow: auto; font-family: 'Courier New', courier, monospace; font-size: 8pt; cursor: text; direction: ltr; max-height: 200px; background-color: #f4f4f4;">
   <div id="codeSnippet" style="padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Microsoft Deployment Toolkit version: 6.2.5019.0    ZTIOSRole    23.11.2013 14:58:06    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Microsoft Deployment Toolkit version: 6.2.5019.0    ZTIOSRole    23.11.2013 14:58:06    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">The task sequencer log <span style="color: #0000ff;">is</span> located at C:\Users\ADMINI~1\AppData\Local\Temp\1\SMSTSLog\SMSTS.LOG.  <span style="color: #0000ff;">For</span> task sequence failures, please consult this log.    ZTIOSRole    23.11.2013 14:58:06    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">The task sequencer log is located at C:\Users\ADMINI~1\AppData\Local\Temp\1\SMSTSLog\SMSTS.LOG.  For task sequence failures, please consult this log.    ZTIOSRole    23.11.2013 14:58:06    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Roles will be installed.    ZTIOSRole    23.11.2013 14:58:06    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Roles will be installed.    ZTIOSRole    23.11.2013 14:58:06    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">No items were specified <span style="color: #0000ff;">in</span> variable OSRoles.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">No items were specified in variable OSRoles.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">No items were specified <span style="color: #0000ff;">in</span> variable OSRoleServices.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">No items were specified in variable OSRoleServices.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">Features specified <span style="color: #0000ff;">in</span> Feature:    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">Features specified in Feature:    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">  NET-Framework-Core    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">  NET-Framework-Core    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">No items were specified <span style="color: #0000ff;">in</span> variable OptionalOSRoles.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">No items were specified in variable OptionalOSRoles.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">No items were specified <span style="color: #0000ff;">in</span> variable OptionalOSRoleServices.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">No items were specified in variable OptionalOSRoleServices.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">No items were specified <span style="color: #0000ff;">in</span> variable OptionalOSFeatures.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">No items were specified in variable OptionalOSFeatures.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">ZTI Heartbeat: Processing roles (0% complete    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">ZTI Heartbeat: Processing roles (0% complete    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;"><span style="color: #0000ff;">Property</span> Parameters <span style="color: #0000ff;">is</span> now = -FeatureName NET-Framework-Core    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">Property Parameters is now = -FeatureName NET-Framework-Core    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Using a local <span style="color: #0000ff;">or</span> mapped drive, no connection <span style="color: #0000ff;">is</span> required.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Using a local or mapped drive, no connection is required.    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">Copying source files locally from E:\Deploy\Operating Systems\WS2012R2\sources\sxs    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">Copying source files locally from E:\Deploy\Operating Systems\WS2012R2\sources\sxs    ZTIOSRole    23.11.2013 14:58:07    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;"><span style="color: #0000ff;">Property</span> Parameters <span style="color: #0000ff;">is</span> now = -FeatureName NET-Framework-Core -Source <span style="color: #006080;">"C:\MININT\sources\X64"</span>    ZTIOSRole    23.11.2013 14:58:14    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Property Parameters is now = -FeatureName NET-Framework-Core -Source "C:\MININT\sources\X64"    ZTIOSRole    23.11.2013 14:58:14    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">PowerShell version detected: 4.0    ZTIOSRole    23.11.2013 14:58:14    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">PowerShell version detected: 4.0    ZTIOSRole    23.11.2013 14:58:14    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">About <span style="color: #0000ff;">to</span> run: <span style="color: #006080;">"E:\Deploy\Tools\Modules\Microsoft.BDD.TaskSequenceModule\Microsoft.BDD.TaskSequencePSHost40.exe"</span> <span style="color: #006080;">"E:\Deploy\Scripts\ZTIOSRolePS.ps1"</span> <span style="color: #006080;">"C:\MININT\SMSOSD\OSDLOGS"</span> -FeatureName NET-Framework-Core -Source <span style="color: #006080;">"C:\MININT\sources\X64"</span>    ZTIOSRole    23.11.2013 14:58:14    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">About to run: "E:\Deploy\Tools\Modules\Microsoft.BDD.TaskSequenceModule\Microsoft.BDD.TaskSequencePSHost40.exe" "E:\Deploy\Scripts\ZTIOSRolePS.ps1" "C:\MININT\SMSOSD\OSDLOGS" -FeatureName NET-Framework-Core -Source "C:\MININT\sources\X64"    ZTIOSRole    23.11.2013 14:58:14    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;"><span style="color: #0000ff;">Property</span> Parameters <span style="color: #0000ff;">is</span> now =     ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">Property Parameters is now =     ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;"><span style="color: #0000ff;">ERROR</span> - NET-Framework-Core role processing via PowerShell failed, rc = 10904    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">ERROR - NET-Framework-Core role processing via PowerShell failed, rc = 10904    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;"><span style="color: #0000ff;">Property</span> InstalledRoles001 <span style="color: #0000ff;">is</span> now = NET-FRAMEWORK-CORE    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">Property InstalledRoles001 is now = NET-FRAMEWORK-CORE    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">One <span style="color: #0000ff;">or</span> more roles were <span style="color: #0000ff;">not</span> processed successfully    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">One or more roles were not processed successfully    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">FAILURE: 1: Server Blue Role Processing    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">FAILURE: 1: Server Blue Role Processing    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">ZTIOSRole processing completed successfully.    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">ZTIOSRole processing completed successfully.    ZTIOSRole    23.11.2013 14:58:16    0 (0x0000)
     
     <p>
       <!--CRLF-->
@@ -192,13 +192,13 @@ This is a snippet from ZTIOSRole.wsf:
 
 <div id="codeSnippetWrapper" style="margin: 20px 0px 10px; padding: 4px; border: 1px solid silver; width: 97.5%; text-align: left; line-height: 12pt; overflow: auto; font-family: 'Courier New', courier, monospace; font-size: 8pt; cursor: text; direction: ltr; max-height: 200px; background-color: #f4f4f4;">
   <div id="codeSnippet" style="padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">iRetVal = RunPowerShellScript(<span style="color: #006080;">"ZTIOSRolePS.ps1"</span>, <span style="color: #0000ff;">true</span>)</pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">iRetVal = RunPowerShellScript("ZTIOSRolePS.ps1", true)
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">oEnvironment.Item(<span style="color: #006080;">"Parameters"</span>) = <span style="color: #006080;">""</span></pre>
+    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">oEnvironment.Item("Parameters") = ""
     
     <p>
       <!--CRLF-->

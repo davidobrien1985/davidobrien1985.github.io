@@ -45,535 +45,535 @@ That .out file contains all valid parameters with description to silently run th
 
 <div id="codeSnippetWrapper" style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; width: 97.5%; font-family: 'Courier New', courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; cursor: text; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="text-align: left; line-height: 12pt; background-color: #f4f4f4; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;">
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum1" style="color: #606060;"> 1:</span> Monday, July 23, 2012 11:16:38</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum1" style="color: #606060;"> 1: Monday, July 23, 2012 11:16:38
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum2" style="color: #606060;"> 2:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum2" style="color: #606060;"> 2:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum3" style="color: #606060;"> 3:</span> ConfigWizard version 6.1, © 2001-2012 Citrix Systems, Inc. All rights reserved.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum3" style="color: #606060;"> 3: ConfigWizard version 6.1, © 2001-2012 Citrix Systems, Inc. All rights reserved.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum4" style="color: #606060;"> 4:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum4" style="color: #606060;"> 4:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum5" style="color: #606060;"> 5:</span> IP Address Assignement Service</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum5" style="color: #606060;"> 5: IP Address Assignement Service
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum6" style="color: #606060;"> 6:</span>  IPServiceType=n       <span style="color: #0000ff;">If</span> n <span style="color: #0000ff;">is</span> 0, uses Microsoft DHCP.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum6" style="color: #606060;"> 6:  IPServiceType=n       If n is 0, uses Microsoft DHCP.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum7" style="color: #606060;"> 7:</span>                        <span style="color: #0000ff;">If</span> n <span style="color: #0000ff;">is</span> 2, uses Provisioning Services BOOTP service.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum7" style="color: #606060;"> 7:                        If n is 2, uses Provisioning Services BOOTP service.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum8" style="color: #606060;"> 8:</span>                        <span style="color: #0000ff;">If</span> n <span style="color: #0000ff;">is</span> 3, uses Other BOOTP <span style="color: #0000ff;">or</span> DHCP service.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum8" style="color: #606060;"> 8:                        If n is 3, uses Other BOOTP or DHCP service.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum9" style="color: #606060;"> 9:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum9" style="color: #606060;"> 9:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum10" style="color: #606060;"> 10:</span> PXE Service Type</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum10" style="color: #606060;"> 10: PXE Service Type
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum11" style="color: #606060;"> 11:</span>  PXEServiceType=n      <span style="color: #0000ff;">If</span> this <span style="color: #0000ff;">not</span> found, uses another device.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum11" style="color: #606060;"> 11:  PXEServiceType=n      If this not found, uses another device.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum12" style="color: #606060;"> 12:</span>                        <span style="color: #0000ff;">If</span> n <span style="color: #0000ff;">is</span> 0, uses Microsoft DHCP.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum12" style="color: #606060;"> 12:                        If n is 0, uses Microsoft DHCP.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum13" style="color: #606060;"> 13:</span>                        <span style="color: #0000ff;">If</span> n <span style="color: #0000ff;">is</span> 1, uses Provisioning Services PXE.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum13" style="color: #606060;"> 13:                        If n is 1, uses Provisioning Services PXE.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum14" style="color: #606060;"> 14:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum14" style="color: #606060;"> 14:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum15" style="color: #606060;"> 15:</span> Farm Configuration</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum15" style="color: #606060;"> 15: Farm Configuration
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum16" style="color: #606060;"> 16:</span>  FarmConfiguration=x        x <span style="color: #0000ff;">is</span> 0 <span style="color: #0000ff;">for</span> already configured, 1 <span style="color: #0000ff;">for</span> create farm, <span style="color: #0000ff;">or</span> 2 <span style="color: #0000ff;">for</span> join existing farm.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum16" style="color: #606060;"> 16:  FarmConfiguration=x        x is 0 for already configured, 1 for create farm, or 2 for join existing farm.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum17" style="color: #606060;"> 17:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum17" style="color: #606060;"> 17:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum18" style="color: #606060;"> 18:</span> Database Server</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum18" style="color: #606060;"> 18: Database Server
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum19" style="color: #606060;"> 19:</span>  DatabaseServer=x        x <span style="color: #0000ff;">is</span> the name of the server.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum19" style="color: #606060;"> 19:  DatabaseServer=x        x is the name of the server.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum20" style="color: #606060;"> 20:</span>  DatabaseInstance=x      x <span style="color: #0000ff;">is</span> the name of the instance.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum20" style="color: #606060;"> 20:  DatabaseInstance=x      x is the name of the instance.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum21" style="color: #606060;"> 21:</span>  FailoverDatabaseServer=x    x <span style="color: #0000ff;">is</span> the name of the failover server.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum21" style="color: #606060;"> 21:  FailoverDatabaseServer=x    x is the name of the failover server.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum22" style="color: #606060;"> 22:</span>  FailoverDatabaseInstance=x  x <span style="color: #0000ff;">is</span> the name of the failover instance.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum22" style="color: #606060;"> 22:  FailoverDatabaseInstance=x  x is the name of the failover instance.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum23" style="color: #606060;"> 23:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum23" style="color: #606060;"> 23:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum24" style="color: #606060;"> 24:</span> Existing Farm</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum24" style="color: #606060;"> 24: Existing Farm
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum25" style="color: #606060;"> 25:</span>  FarmExisting=x        x <span style="color: #0000ff;">is</span> the name of the Farm.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum25" style="color: #606060;"> 25:  FarmExisting=x        x is the name of the Farm.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum26" style="color: #606060;"> 26:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum26" style="color: #606060;"> 26:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum27" style="color: #606060;"> 27:</span> Site</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum27" style="color: #606060;"> 27: Site
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum28" style="color: #606060;"> 28:</span>  Site=x        x <span style="color: #0000ff;">is</span> the name of the <span style="color: #0000ff;">new</span> site.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum28" style="color: #606060;"> 28:  Site=x        x is the name of the new site.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum29" style="color: #606060;"> 29:</span>  Collection=x  x <span style="color: #0000ff;">is</span> the <span style="color: #0000ff;">default</span> path of the <span style="color: #0000ff;">new</span> site.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum29" style="color: #606060;"> 29:  Collection=x  x is the default path of the new site.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum30" style="color: #606060;"> 30:</span>  ExistingSite=x  x <span style="color: #0000ff;">is</span> the name of the site selected.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum30" style="color: #606060;"> 30:  ExistingSite=x  x is the name of the site selected.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum31" style="color: #606060;"> 31:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum31" style="color: #606060;"> 31:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum32" style="color: #606060;"> 32:</span> Store</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum32" style="color: #606060;"> 32: Store
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum33" style="color: #606060;"> 33:</span>  Store=x        x <span style="color: #0000ff;">is</span> the name of the <span style="color: #0000ff;">new</span> store.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum33" style="color: #606060;"> 33:  Store=x        x is the name of the new store.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum34" style="color: #606060;"> 34:</span>  DefaultPath=x  x <span style="color: #0000ff;">is</span> the <span style="color: #0000ff;">default</span> path of the <span style="color: #0000ff;">new</span> store.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum34" style="color: #606060;"> 34:  DefaultPath=x  x is the default path of the new store.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum35" style="color: #606060;"> 35:</span>  ExistingStore=x  x <span style="color: #0000ff;">is</span> the name of the store selected.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum35" style="color: #606060;"> 35:  ExistingStore=x  x is the name of the store selected.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum36" style="color: #606060;"> 36:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum36" style="color: #606060;"> 36:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum37" style="color: #606060;"> 37:</span> <span style="color: #0000ff;">New</span> Farm</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum37" style="color: #606060;"> 37: New Farm
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum38" style="color: #606060;"> 38:</span>  DatabaseNew=x       x <span style="color: #0000ff;">is</span> the name of the <span style="color: #0000ff;">new</span> database.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum38" style="color: #606060;"> 38:  DatabaseNew=x       x is the name of the new database.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum39" style="color: #606060;"> 39:</span>  FarmNew=x           x <span style="color: #0000ff;">is</span> the name of the <span style="color: #0000ff;">new</span> farm.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum39" style="color: #606060;"> 39:  FarmNew=x           x is the name of the new farm.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum40" style="color: #606060;"> 40:</span>  SiteNew=x           x <span style="color: #0000ff;">is</span> the name of the <span style="color: #0000ff;">new</span> site.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum40" style="color: #606060;"> 40:  SiteNew=x           x is the name of the new site.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum41" style="color: #606060;"> 41:</span>  CollectionNew=x     x <span style="color: #0000ff;">is</span> the name of the <span style="color: #0000ff;">new</span> collection.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum41" style="color: #606060;"> 41:  CollectionNew=x     x is the name of the new collection.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum42" style="color: #606060;"> 42:</span>  ADGroup=x           x <span style="color: #0000ff;">is</span> <span style="color: #0000ff;">is</span> the Active Directory group.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum42" style="color: #606060;"> 42:  ADGroup=x           x is is the Active Directory group.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum43" style="color: #606060;"> 43:</span>  Group=x             x <span style="color: #0000ff;">is</span> <span style="color: #0000ff;">is</span> the Windows group.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum43" style="color: #606060;"> 43:  Group=x             x is is the Windows group.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum44" style="color: #606060;"> 44:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum44" style="color: #606060;"> 44:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum45" style="color: #606060;"> 45:</span> <span style="color: #0000ff;">New</span> Store</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum45" style="color: #606060;"> 45: New Store
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum46" style="color: #606060;"> 46:</span>  Store=x        x <span style="color: #0000ff;">is</span> the name of the <span style="color: #0000ff;">new</span> store.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum46" style="color: #606060;"> 46:  Store=x        x is the name of the new store.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum47" style="color: #606060;"> 47:</span>  DefaultPath=x  x <span style="color: #0000ff;">is</span> the <span style="color: #0000ff;">default</span> path of the <span style="color: #0000ff;">new</span> store.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum47" style="color: #606060;"> 47:  DefaultPath=x  x is the default path of the new store.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum48" style="color: #606060;"> 48:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum48" style="color: #606060;"> 48:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum49" style="color: #606060;"> 49:</span> License Server Name</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum49" style="color: #606060;"> 49: License Server Name
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum50" style="color: #606060;"> 50:</span>  LicenseServer=x        x <span style="color: #0000ff;">is</span> the name of the server.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum50" style="color: #606060;"> 50:  LicenseServer=x        x is the name of the server.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum51" style="color: #606060;"> 51:</span>  LicenseServerPort=x    x <span style="color: #0000ff;">is</span> the port number.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum51" style="color: #606060;"> 51:  LicenseServerPort=x    x is the port number.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum52" style="color: #606060;"> 52:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum52" style="color: #606060;"> 52:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum53" style="color: #606060;"> 53:</span> Stream Service User Account</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum53" style="color: #606060;"> 53: Stream Service User Account
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum54" style="color: #606060;"> 54:</span>  UserName=x  x <span style="color: #0000ff;">is</span> a user account name.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum54" style="color: #606060;"> 54:  UserName=x  x is a user account name.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum55" style="color: #606060;"> 55:</span>  UserPass=x  x <span style="color: #0000ff;">is</span> the password (<span style="color: #0000ff;">not</span> encrypted) <span style="color: #0000ff;">for</span> the user account.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum55" style="color: #606060;"> 55:  UserPass=x  x is the password (not encrypted) for the user account.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum56" style="color: #606060;"> 56:</span>  UserName2=x x <span style="color: #0000ff;">is</span> the password (encrypted) <span style="color: #0000ff;">for</span> the user account.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum56" style="color: #606060;"> 56:  UserName2=x x is the password (encrypted) for the user account.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum57" style="color: #606060;"> 57:</span>              UserPass <span style="color: #0000ff;">or</span> UserName2 can be used <span style="color: #0000ff;">for</span> the password.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum57" style="color: #606060;"> 57:              UserPass or UserName2 can be used for the password.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum58" style="color: #606060;"> 58:</span>  Network=1   Network <span style="color: #0000ff;">is</span> used <span style="color: #0000ff;">for</span> the <span style="color: #008000;">'Network service account' choice.</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum58" style="color: #606060;"> 58:  Network=1   Network is used for the <span style="color: #008000;">'Network service account' choice.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum59" style="color: #606060;"> 59:</span>  Database=1  Configure the database the database <span style="color: #0000ff;">for</span> the account.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum59" style="color: #606060;"> 59:  Database=1  Configure the database the database for the account.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum60" style="color: #606060;"> 60:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum60" style="color: #606060;"> 60:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum61" style="color: #606060;"> 61:</span> PasswordManagement</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum61" style="color: #606060;"> 61: PasswordManagement
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum62" style="color: #606060;"> 62:</span>  PasswordManagementInterval=x        x <span style="color: #0000ff;">is</span> the day internal between password resets.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum62" style="color: #606060;"> 62:  PasswordManagementInterval=x        x is the day internal between password resets.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum63" style="color: #606060;"> 63:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum63" style="color: #606060;"> 63:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum64" style="color: #606060;"> 64:</span> Stream Service Network Cards</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum64" style="color: #606060;"> 64: Stream Service Network Cards
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum65" style="color: #606060;"> 65:</span>  StreamNetworkAdapterIP=x  x <span style="color: #0000ff;">is</span> a comma delimited IP address list.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum65" style="color: #606060;"> 65:  StreamNetworkAdapterIP=x  x is a comma delimited IP address list.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum66" style="color: #606060;"> 66:</span>                            Uses first card <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span> found.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum66" style="color: #606060;"> 66:                            Uses first card if not found.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum67" style="color: #606060;"> 67:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum67" style="color: #606060;"> 67:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum68" style="color: #606060;"> 68:</span> Management Services First <span style="color: #0000ff;">and</span> Last Port</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum68" style="color: #606060;"> 68: Management Services First and Last Port
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum69" style="color: #606060;"> 69:</span>  ManagementFirstPort=n n <span style="color: #0000ff;">is</span> first port number.  6905 <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span> found.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum69" style="color: #606060;"> 69:  ManagementFirstPort=n n is first port number.  6905 if not found.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum70" style="color: #606060;"> 70:</span>  ManagementLastPort=n  n <span style="color: #0000ff;">is</span> the last port number.  6909 <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span> found.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum70" style="color: #606060;"> 70:  ManagementLastPort=n  n is the last port number.  6909 if not found.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum71" style="color: #606060;"> 71:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum71" style="color: #606060;"> 71:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum72" style="color: #606060;"> 72:</span> TFTP <span style="color: #0000ff;">and</span> Bootstrap File</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum72" style="color: #606060;"> 72: TFTP and Bootstrap File
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum73" style="color: #606060;"> 73:</span>  BootstrapFile=x        x <span style="color: #0000ff;">is</span> file.  TFTP <span style="color: #0000ff;">and</span> Bootstrap <span style="color: #0000ff;">not</span> used, <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span> found.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum73" style="color: #606060;"> 73:  BootstrapFile=x        x is file.  TFTP and Bootstrap not used, if not found.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum74" style="color: #606060;"> 74:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum74" style="color: #606060;"> 74:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum75" style="color: #606060;"> 75:</span> Boot Servers</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum75" style="color: #606060;"> 75: Boot Servers
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum76" style="color: #606060;"> 76:</span>  LS#=ip,subnet,gateway,port  # <span style="color: #0000ff;">is</span> the number of the server, 1 <span style="color: #0000ff;">is</span> the first.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum76" style="color: #606060;"> 76:  LS#=ip,subnet,gateway,port  # is the number of the server, 1 is the first.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum77" style="color: #606060;"> 77:</span>                              <span style="color: #0000ff;">If</span> <span style="color: #0000ff;">not</span> found, uses the first <span style="color: #0000ff;">in</span> the database <span style="color: #0000ff;">or</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum77" style="color: #606060;"> 77:                              If not found, uses the first in the database or
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum78" style="color: #606060;"> 78:</span>                              <span style="color: #0000ff;">if</span> none <span style="color: #0000ff;">in</span> the database, the first card found.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum78" style="color: #606060;"> 78:                              if none in the database, the first card found.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum79" style="color: #606060;"> 79:</span>                              <span style="color: #0000ff;">if</span> none <span style="color: #0000ff;">in</span> the database, the first card found.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum79" style="color: #606060;"> 79:                              if none in the database, the first card found.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum80" style="color: #606060;"> 80:</span>  AdvancedVerbose=x           x <span style="color: #0000ff;">is</span> 1 <span style="color: #0000ff;">when</span> verbose mode <span style="color: #0000ff;">is</span> turned <span style="color: #0000ff;">on</span>.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum80" style="color: #606060;"> 80:  AdvancedVerbose=x           x is 1 when verbose mode is turned on.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum81" style="color: #606060;"> 81:</span>  AdvancedInterrultSafeMode=x x <span style="color: #0000ff;">is</span> 1 <span style="color: #0000ff;">when</span> interrupt safe mode <span style="color: #0000ff;">is</span> turned <span style="color: #0000ff;">on</span>.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum81" style="color: #606060;"> 81:  AdvancedInterrultSafeMode=x x is 1 when interrupt safe mode is turned on.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum82" style="color: #606060;"> 82:</span>  AdvancedMemorySupport=x     x <span style="color: #0000ff;">is</span> 1 <span style="color: #0000ff;">when</span> advanced memory support <span style="color: #0000ff;">is</span> turned <span style="color: #0000ff;">on</span>.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum82" style="color: #606060;"> 82:  AdvancedMemorySupport=x     x is 1 when advanced memory support is turned on.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum83" style="color: #606060;"> 83:</span>  AdvancedRebootFromHD=x      x <span style="color: #0000ff;">is</span> 1 <span style="color: #0000ff;">when</span> reboot from hard drive <span style="color: #0000ff;">on</span> fail.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum83" style="color: #606060;"> 83:  AdvancedRebootFromHD=x      x is 1 when reboot from hard drive on fail.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum84" style="color: #606060;"> 84:</span>  AdvancedRecoverSeconds=x    x <span style="color: #0000ff;">is</span> the number of seconds <span style="color: #0000ff;">to</span> reboot <span style="color: #0000ff;">to</span> hard drive after fail.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum84" style="color: #606060;"> 84:  AdvancedRecoverSeconds=x    x is the number of seconds to reboot to hard drive after fail.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum85" style="color: #606060;"> 85:</span>  AdvancedLoginPolling=x      x <span style="color: #0000ff;">is</span> the number of milliseconds <span style="color: #0000ff;">for</span> login polling timeout.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum85" style="color: #606060;"> 85:  AdvancedLoginPolling=x      x is the number of milliseconds for login polling timeout.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum86" style="color: #606060;"> 86:</span>  AdvancedLoginGeneral=x      x <span style="color: #0000ff;">is</span> the number of milliseconds <span style="color: #0000ff;">for</span> login general timeout.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum86" style="color: #606060;"> 86:  AdvancedLoginGeneral=x      x is the number of milliseconds for login general timeout.
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum87" style="color: #606060;"> 87:</span></pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum87" style="color: #606060;"> 87:
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum88" style="color: #606060;"> 88:</span> Start Services</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum88" style="color: #606060;"> 88: Start Services
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum89" style="color: #606060;"> 89:</span>  NoStartServices=1     <span style="color: #0000ff;">Do</span> <span style="color: #0000ff;">not</span> start services <span style="color: #0000ff;">if</span> exists.</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum89" style="color: #606060;"> 89:  NoStartServices=1     Do not start services if exists.
     
     <p>
       <!--CRLF-->
@@ -585,175 +585,175 @@ If you like you can also run the configwizard with the “/s” switch. The wiza
 
 <div id="codeSnippetWrapper" style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; width: 97.5%; font-family: 'Courier New', courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; cursor: text; border: silver 1px solid; padding: 4px;">
   <div id="codeSnippet" style="text-align: left; line-height: 12pt; background-color: #f4f4f4; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;">
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum1" style="color: #606060;"> 1:</span> FarmConfiguration=1</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum1" style="color: #606060;"> 1: FarmConfiguration=1
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum2" style="color: #606060;"> 2:</span> DatabaseServer=SQL01</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum2" style="color: #606060;"> 2: DatabaseServer=SQL01
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum3" style="color: #606060;"> 3:</span> DatabaseInstance=</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum3" style="color: #606060;"> 3: DatabaseInstance=
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum4" style="color: #606060;"> 4:</span> DatabaseNew=DB_TEST</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum4" style="color: #606060;"> 4: DatabaseNew=DB_TEST
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum5" style="color: #606060;"> 5:</span> FarmNew=TEST_FARM</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum5" style="color: #606060;"> 5: FarmNew=TEST_FARM
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum6" style="color: #606060;"> 6:</span> SiteNew=TEST_SITE</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum6" style="color: #606060;"> 6: SiteNew=TEST_SITE
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum7" style="color: #606060;"> 7:</span> CollectionNew=COLL_TEST</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum7" style="color: #606060;"> 7: CollectionNew=COLL_TEST
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum8" style="color: #606060;"> 8:</span> ADGroup=<span style="color: #0000ff;">do</span>.local/Groups/AdminGroups/ADM_PVS</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum8" style="color: #606060;"> 8: ADGroup=do.local/Groups/AdminGroups/ADM_PVS
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum9" style="color: #606060;"> 9:</span> Store=STORE_TEST</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum9" style="color: #606060;"> 9: Store=STORE_TEST
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum10" style="color: #606060;"> 10:</span> DefaultPath=c:temp</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum10" style="color: #606060;"> 10: DefaultPath=c:temp
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum11" style="color: #606060;"> 11:</span> LicenseServer=srv1</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum11" style="color: #606060;"> 11: LicenseServer=srv1
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum12" style="color: #606060;"> 12:</span> LicenseServerPort=27000</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum12" style="color: #606060;"> 12: LicenseServerPort=27000
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum13" style="color: #606060;"> 13:</span> UserName=<span style="color: #0000ff;">do</span>adobrien</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum13" style="color: #606060;"> 13: UserName=doadobrien
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum14" style="color: #606060;"> 14:</span> UserName2=ppnfpjhhokjqqipoilofbgddnelsqibsprclcnbegeknkhnmckod</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum14" style="color: #606060;"> 14: UserName2=ppnfpjhhokjqqipoilofbgddnelsqibsprclcnbegeknkhnmckod
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum15" style="color: #606060;"> 15:</span> Database=1</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum15" style="color: #606060;"> 15: Database=1
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum16" style="color: #606060;"> 16:</span> PasswordManagementInterval=7</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum16" style="color: #606060;"> 16: PasswordManagementInterval=7
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum17" style="color: #606060;"> 17:</span> StreamNetworkAdapterIP=172.16.0.30</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum17" style="color: #606060;"> 17: StreamNetworkAdapterIP=172.16.0.30
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum18" style="color: #606060;"> 18:</span> IpcPortBase=6890</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum18" style="color: #606060;"> 18: IpcPortBase=6890
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum19" style="color: #606060;"> 19:</span> IpcPortCount=20</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum19" style="color: #606060;"> 19: IpcPortCount=20
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum20" style="color: #606060;"> 20:</span> SoapPort=54321</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum20" style="color: #606060;"> 20: SoapPort=54321
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum21" style="color: #606060;"> 21:</span> BootstrapFile=C:ProgramDataCitrixProvisioning ServicesTftpbootARDBP32.BIN</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum21" style="color: #606060;"> 21: BootstrapFile=C:ProgramDataCitrixProvisioning ServicesTftpbootARDBP32.BIN
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum22" style="color: #606060;"> 22:</span> LS1=172.16.0.30,0.0.0.0,0.0.0.0,6910</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum22" style="color: #606060;"> 22: LS1=172.16.0.30,0.0.0.0,0.0.0.0,6910
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum23" style="color: #606060;"> 23:</span> AdvancedVerbose=0</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum23" style="color: #606060;"> 23: AdvancedVerbose=0
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum24" style="color: #606060;"> 24:</span> AdvancedInterrultSafeMode=0</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum24" style="color: #606060;"> 24: AdvancedInterrultSafeMode=0
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum25" style="color: #606060;"> 25:</span> AdvancedMemorySupport=1</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum25" style="color: #606060;"> 25: AdvancedMemorySupport=1
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum26" style="color: #606060;"> 26:</span> AdvancedRebootFromHD=0</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum26" style="color: #606060;"> 26: AdvancedRebootFromHD=0
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum27" style="color: #606060;"> 27:</span> AdvancedRecoverSeconds=50</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum27" style="color: #606060;"> 27: AdvancedRecoverSeconds=50
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum28" style="color: #606060;"> 28:</span> AdvancedLoginPolling=5000</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: #f4f4f4; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum28" style="color: #606060;"> 28: AdvancedLoginPolling=5000
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum29" style="color: #606060;"> 29:</span> AdvancedLoginGeneral=30000</pre>
+    <pre style="text-align: left; line-height: 12pt; background-color: white; margin: 0em; width: 100%; font-family: 'Courier New', courier, monospace; direction: ltr; color: black; font-size: 8pt; overflow: visible; border-style: none; padding: 0px;"><span id="lnum29" style="color: #606060;"> 29: AdvancedLoginGeneral=30000
     
     <p>
       <!--CRLF-->
@@ -820,79 +820,79 @@ I’m doing the whole installation and configuration of Citrix Provisioning Serv
 It looks like this:
 
 <div>
-  <pre> 1: $installstring ="FarmConfiguration=1</pre>
+  <pre> 1: $installstring ="FarmConfiguration=1
   
-  <pre> 2: DatabaseServer=$DBServer</pre>
+  <pre> 2: DatabaseServer=$DBServer
   
-  <pre> 3: DatabaseInstance=$DBInstance</pre>
+  <pre> 3: DatabaseInstance=$DBInstance
   
-  <pre> 4: DatabaseNew=$DBName</pre>
+  <pre> 4: DatabaseNew=$DBName
   
-  <pre> 5: FarmNew=$FarmName</pre>
+  <pre> 5: FarmNew=$FarmName
   
-  <pre> 6: SiteNew=$SiteName</pre>
+  <pre> 6: SiteNew=$SiteName
   
-  <pre> 7: CollectionNew=$CollectionName</pre>
+  <pre> 7: CollectionNew=$CollectionName
   
-  <pre> 8: ADGroup=$AdminGroup</pre>
+  <pre> 8: ADGroup=$AdminGroup
   
-  <pre> 9: Store=$StoreName</pre>
+  <pre> 9: Store=$StoreName
   
-  <pre> 10: DefaultPath=$StorePath</pre>
+  <pre> 10: DefaultPath=$StorePath
   
-  <pre> 11: LicenseServer=$LicSrv</pre>
+  <pre> 11: LicenseServer=$LicSrv
   
-  <pre> 12: LicenseServerPort=27000</pre>
+  <pre> 12: LicenseServerPort=27000
   
-  <pre> 13: UserName=rzixtecabitpvsdbuser</pre>
+  <pre> 13: UserName=rzixtecabitpvsdbuser
   
-  <pre> 14: UserPass=TQlYjCDnuvqJu1FthjdU</pre>
+  <pre> 14: UserPass=TQlYjCDnuvqJu1FthjdU
   
-  <pre> 15: Database=1</pre>
+  <pre> 15: Database=1
   
-  <pre> 16: PasswordManagementInterval=7</pre>
+  <pre> 16: PasswordManagementInterval=7
   
-  <pre> 17: StreamNetworkAdapterIP=$IP</pre>
+  <pre> 17: StreamNetworkAdapterIP=$IP
   
-  <pre> 18: IpcPortBase=6890</pre>
+  <pre> 18: IpcPortBase=6890
   
-  <pre> 19: IpcPortCount=20</pre>
+  <pre> 19: IpcPortCount=20
   
-  <pre> 20: SoapPort=54321</pre>
+  <pre> 20: SoapPort=54321
   
-  <pre> 21: BootstrapFile=C:ProgramDataCitrixProvisioning ServicesTftpbootARDBP32.BIN</pre>
+  <pre> 21: BootstrapFile=C:ProgramDataCitrixProvisioning ServicesTftpbootARDBP32.BIN
   
-  <pre> 22: LS1=$IP,0.0.0.0,0.0.0.0,6910</pre>
+  <pre> 22: LS1=$IP,0.0.0.0,0.0.0.0,6910
   
-  <pre> 23: AdvancedVerbose=0</pre>
+  <pre> 23: AdvancedVerbose=0
   
-  <pre> 24: AdvancedInterrultSafeMode=0</pre>
+  <pre> 24: AdvancedInterrultSafeMode=0
   
-  <pre> 25: AdvancedMemorySupport=1</pre>
+  <pre> 25: AdvancedMemorySupport=1
   
-  <pre> 26: AdvancedRebootFromHD=0</pre>
+  <pre> 26: AdvancedRebootFromHD=0
   
-  <pre> 27: AdvancedRecoverSeconds=50</pre>
+  <pre> 27: AdvancedRecoverSeconds=50
   
-  <pre> 28: AdvancedLoginPolling=5000</pre>
+  <pre> 28: AdvancedLoginPolling=5000
   
-  <pre> 29: AdvancedLoginGeneral=30000</pre>
+  <pre> 29: AdvancedLoginGeneral=30000
   
-  <pre> 30: NoStartServices=1</pre>
+  <pre> 30: NoStartServices=1
   
-  <pre> 31: "}</pre>
+  <pre> 31: "}
   
-  <pre> 32:</pre>
+  <pre> 32:
   
-  <pre> 33: if (-not (Test-Path $(join-path $installpathServer configwizard.ans)))</pre>
+  <pre> 33: if (-not (Test-Path $(join-path $installpathServer configwizard.ans)))
   
-  <pre> 34:     {</pre>
+  <pre> 34:     {
   
-  <pre> 35:     New-Item -Path $(join-path $installpathServer configwizard.ans) -ItemType File</pre>
+  <pre> 35:     New-Item -Path $(join-path $installpathServer configwizard.ans) -ItemType File
   
-  <pre> 36:     }</pre>
+  <pre> 36:     }
   
-  <pre> 37: Set-Content -Path $(join-path $installpathServer configwizard.ans) -Value $installstring -Encoding Unicode</pre>
+  <pre> 37: Set-Content -Path $(join-path $installpathServer configwizard.ans) -Value $installstring -Encoding Unicode
 </div>
 
 &nbsp;

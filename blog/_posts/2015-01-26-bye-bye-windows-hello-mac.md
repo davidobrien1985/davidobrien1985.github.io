@@ -43,7 +43,7 @@ I have my lab running on Azure, on a Laptop (Dell XPS 15) and also on an older D
   
 I can use Office for Mac, which isn’t great, I know, but there’s Azure RemoteApp, which I could use if I wanted to. I can use OneDrive for Filesharing, Sharepoint Online for collaboration with my colleagues and OneNote is also here.
   
-Only app I have found to really not run great on my machine? Lync. Crashes all the time. **<span style="text-decoration: underline;">Microsoft, fix that please!<br /> </span>**I hate having to always plug my machine in to charge it. The Surface was never going long without a need for a charge. I couldn’t leave home for a 2 hour customer workshop with my Surface fully charged and not take the charger with me.
+Only app I have found to really not run great on my machine? Lync. Crashes all the time. **<span style="text-decoration: underline;">Microsoft, fix that please!<br /> **I hate having to always plug my machine in to charge it. The Surface was never going long without a need for a charge. I couldn’t leave home for a 2 hour customer workshop with my Surface fully charged and not take the charger with me.
   
 I needed battery life. I also needed a 13inch screen, but no weight please.
   

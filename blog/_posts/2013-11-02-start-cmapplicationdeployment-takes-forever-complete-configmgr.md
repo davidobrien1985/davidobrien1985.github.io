@@ -41,26 +41,26 @@ Using WMI each deployment creation took only about 5 seconds. So what’s the de
 
 Here’s part of the script I used to create and application via WMI.
 
-<pre class="csharpcode">$DeploymentClass = [wmiclass] <span class="str">"\\localhost\root\sms\site_$($SiteCode):SMS_ApplicationAssignment"</span>
+<pre class="csharpcode">$DeploymentClass = [wmiclass] "\\localhost\root\sms\site_$($SiteCode):SMS_ApplicationAssignment"
 
 $Deployment = $DeploymentClass.CreateInstance()
-$Deployment.ApplicationName                 = <span class="str">"PDFCreator"</span>
-$Deployment.AssignmentName                  = <span class="str">"Deploy PDFCreator"</span>
+$Deployment.ApplicationName                 = "PDFCreator"
+$Deployment.AssignmentName                  = "Deploy PDFCreator"
 $Deployment.AssignedCIs                     = 16781957
-$Deployment.CollectionName                  = <span class="str">"All Systems"</span>
+$Deployment.CollectionName                  = "All Systems"
 $Deployment.DesiredConfigType               = 2 # 1 means install, 2 means uninstall
 $Deployment.LocaleID                        = 1043
-$Deployment.NotifyUser                      = $<span class="kwrd">true</span>
+$Deployment.NotifyUser                      = $true
 $Deployment.OfferTypeID                     = 2 # 0 means required, 2 means available
-$Deployment.OverrideServiceWindows          = $<span class="kwrd">false</span>
-$Deployment.RebootOutsideOfServiceWindows   = $<span class="kwrd">false</span>
-$Deployment.SourceSite                      = <span class="str">"PRI"</span>
-$Deployment.StartTime                       = <span class="str">"20131001120000.000000+***"</span>
-$Deployment.SuppressReboot                  = $<span class="kwrd">true</span>
-$Deployment.TargetCollectionID              = <span class="str">"SMS00001"</span>   # CollectionID where <span class="kwrd">to</span> deploy it <span class="kwrd">to</span>
-$Deployment.WoLEnabled                      = $<span class="kwrd">false</span>
-$Deployment.UseGMTTimes                     = $<span class="kwrd">true</span>
-$Deployment.Put()</pre>
+$Deployment.OverrideServiceWindows          = $false
+$Deployment.RebootOutsideOfServiceWindows   = $false
+$Deployment.SourceSite                      = "PRI"
+$Deployment.StartTime                       = "20131001120000.000000+***"
+$Deployment.SuppressReboot                  = $true
+$Deployment.TargetCollectionID              = "SMS00001"   # CollectionID where to deploy it to
+$Deployment.WoLEnabled                      = $false
+$Deployment.UseGMTTimes                     = $true
+$Deployment.Put()
 
 More info on this WMI class here on MSDN:
 

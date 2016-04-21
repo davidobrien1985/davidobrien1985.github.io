@@ -100,7 +100,7 @@ During development of an Ansible playbook it is okay to have some interaction on
   </div>
   
   <div id="wpshdi_45" class="wp-synhighlighter-inner" style="display: block;">
-    ansible-playbook tagstest.yml <span class="re5">-i</span> inventory<span class="sy0">/</span>dev <span class="re5">--ask-vault-pass</span>
+    ansible-playbook tagstest.yml <span class="re5">-i inventory<span class="sy0">/dev <span class="re5">--ask-vault-pass
   </div>
 </div>
 
@@ -130,7 +130,7 @@ It wouldn't make sense to in an automated deployment process (from a CD server f
   </div>
   
   <div id="wpshdi_46" class="wp-synhighlighter-inner" style="display: block;">
-    ansible-playbook tagstest.yml <span class="re5">-i</span> inventory<span class="sy0">/</span>dev <span class="re5">--vault-password-file</span> vault-pass.txt
+    ansible-playbook tagstest.yml <span class="re5">-i inventory<span class="sy0">/dev <span class="re5">--vault-password-file vault-pass.txt
   </div>
 </div>
 
@@ -158,7 +158,7 @@ Continuous Integration / Continuous Deployment tools like Jenkins, TeamCity, Oct
   </div>
   
   <div id="wpshdi_47" class="wp-synhighlighter-inner" style="display: block;">
-    ansible-playbook tagstest.yml <span class="re5">-i</span> inventory<span class="sy0">/</span>dev <span class="re5">--vault-password-file</span> vault-pass.py
+    ansible-playbook tagstest.yml <span class="re5">-i inventory<span class="sy0">/dev <span class="re5">--vault-password-file vault-pass.py
   </div>
 </div>
 
@@ -184,7 +184,7 @@ This script here will require python to be available, imports the os module and 
   </div>
   
   <div id="wpshdi_48" class="wp-synhighlighter-inner" style="display: block;">
-    <span class="co0">#!/usr/bin/python</span><br /> import os<br /> print os.environ<span class="br0">[</span><span class="st_h">'ansible_vault_pass'</span><span class="br0">]</span>
+    <span class="co0">#!/usr/bin/python<br /> import os<br /> print os.environ<span class="br0">[<span class="st_h">'ansible_vault_pass'<span class="br0">]
   </div>
 </div>
 
