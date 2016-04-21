@@ -26,7 +26,7 @@ After [Citrix](http://www.citrix.com)’s acquisition of AppDNA in November 2011
 
 The first impression is: “<span style="text-decoration: underline;">fancy</span>”
 
-[<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="logon_screen" src="http://www.david-obrien.de/wp-content/uploads/2012/04/logon_screen_thumb.jpg" alt="logon_screen" width="315" height="219" border="0" />]("logon_screen" http://www.david-obrien.de/wp-content/uploads/2012/04/logon_screen.jpg)
+[<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="logon_screen" src="/media/2012/04/logon_screen_thumb.jpg" alt="logon_screen" width="315" height="219" border="0" />]("logon_screen" /media/2012/04/logon_screen.jpg)
   
 Cool new colours, cool new look and some cool new features.
 
@@ -47,7 +47,7 @@ But what with those environments where you have a Windows 7 image for Notebooks,
 With AppDNA 6 you can now import more than one OS image per OS to get all the information you need regarding to your specific needs.
 
 <p align="center">
-  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OS_images" src="http://www.david-obrien.de/wp-content/uploads/2012/04/OS_images_thumb.jpg" alt="OS_images" width="227" height="272" border="0" />]("OS_images" http://www.david-obrien.de/wp-content/uploads/2012/04/OS_images.jpg)
+  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OS_images" src="/media/2012/04/OS_images_thumb.jpg" alt="OS_images" width="227" height="272" border="0" />]("OS_images" /media/2012/04/OS_images.jpg)
 </p>
 
 # Reporting
@@ -63,7 +63,7 @@ You don’t have to disable the module rules, just create your own report.
 You either do this via drag&drop from the existing module rules or, for the more advanced,  create SQL queries.
 
 <p align="center">
-  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="custom_reports" src="http://www.david-obrien.de/wp-content/uploads/2012/04/custom_reports_thumb.jpg" alt="custom_reports" width="304" height="205" border="0" />]("custom_reports" http://www.david-obrien.de/wp-content/uploads/2012/04/custom_reports.jpg)
+  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="custom_reports" src="/media/2012/04/custom_reports_thumb.jpg" alt="custom_reports" width="304" height="205" border="0" />]("custom_reports" /media/2012/04/custom_reports.jpg)
 </p>
 
 ## Organizational Reports
@@ -80,7 +80,7 @@ I don’t know how many enterprise customers really use anything else than Micro
   Although the GUI says different, VMWare Workstation 8 is now fully supported for Install Capture imports.
 </p>
 
-# [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="install_capture" src="http://www.david-obrien.de/wp-content/uploads/2012/04/install_capture_thumb.jpg" alt="install_capture" width="309" height="120" border="0" />]("install_capture" http://www.david-obrien.de/wp-content/uploads/2012/04/install_capture.jpg)
+# [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="install_capture" src="/media/2012/04/install_capture_thumb.jpg" alt="install_capture" width="309" height="120" border="0" />]("install_capture" /media/2012/04/install_capture.jpg)
 
 # Integrated Login
 
@@ -89,21 +89,21 @@ As you might see on the Logon screen shown above, it is now possible to log on t
 This will make user administration a bit easier.
 
 <p align="center">
-  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="users" src="http://www.david-obrien.de/wp-content/uploads/2012/04/users_thumb.jpg" alt="users" width="368" height="62" border="0" />]("users" http://www.david-obrien.de/wp-content/uploads/2012/04/users.jpg)
+  [<img style="border: 0px currentcolor; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="users" src="/media/2012/04/users_thumb.jpg" alt="users" width="368" height="62" border="0" />]("users" /media/2012/04/users.jpg)
 </p>
 
 # What, unfortunately, didn’t change?
 
 There are still no documented/supported ways to automate workflows in AppDNA. There are customers who do want to automate the import process. Some even want to use XenDesktop for this task and I really hope that this will soon be possible, now that it’s all one company it shouldn’t be too difficult to integrate a way to communicate with XenDesktop VMs.
   
-I heard that maybe one day there even might be some integrated Powershell cmdlets available, maybe possible could be <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" src="http://www.david-obrien.de/wp-content/uploads/2012/04/wlEmoticon-winkingsmile.png" alt="Winking smile" />
+I heard that maybe one day there even might be some integrated Powershell cmdlets available, maybe possible could be <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" src="/media/2012/04/wlEmoticon-winkingsmile.png" alt="Winking smile" />
 
 Integration with Configuration Manager 2012 is also not available, although other Citrix products do support that (e.g. XenDesktop 5.6). But I believe this as well won’t take too long, as System Center 2012 just went RTM today.
 
 # What, thank someone, didn’t change?
 
 I could import all of my existing Forward Path scripts and Task Scripts. That saved me a lot of work. So if you’re upgrading from AppTitude 5 to AppDNA 6, make sure to export all of your customized scripts, you CAN still use them in the new version. Thank you, AppDNA! 
-<img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" src="http://www.david-obrien.de/wp-content/uploads/2012/04/wlEmoticon-winkingsmile.png" alt="Winking smile" /> 
+<img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" src="/media/2012/04/wlEmoticon-winkingsmile.png" alt="Winking smile" /> 
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)

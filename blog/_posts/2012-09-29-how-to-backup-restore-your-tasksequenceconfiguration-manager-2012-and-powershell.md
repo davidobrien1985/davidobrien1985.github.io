@@ -28,7 +28,7 @@ tags:
   - SysCtr
   - Task Sequence
 ---
-And here’s another quick one for the weekend, before the wife wants to go shopping <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/09/wlEmoticon-winkingsmile1.png" alt="Winking smile" />
+And here’s another quick one for the weekend, before the wife wants to go shopping <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/09/wlEmoticon-winkingsmile1.png" alt="Winking smile" />
 
 This is a quick way of “backing up” and restoring your Task Sequences, just in case you’re not doing it another way.
 
@@ -308,7 +308,7 @@ It won’t check if any of the package references are wrong, this might come in 
   
 So if you configured anything inside the Task Sequence’s properties, for example that it should use a boot image to boot from, then you will have to do that again.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb7.png" alt="image" width="287" height="302" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/09/image7.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2012/09/image_thumb7.png" alt="image" width="287" height="302" border="0" />]("image" /media/2012/09/image7.png)
 
 It seems odd that Microsoft should have forgotten to give us a tool to export Task Sequences. Well this is a first step to do it without direct access to the Admin Console.
 

@@ -40,9 +40,9 @@ There are a lot of people on the internet asking where the Network Access Accoun
   
 Well, it’s in “Configure Site Components” under Software Distribution Component Properties. There you can go and configure your NAA.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb.png" alt="image" width="321" height="242" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/10/image.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2012/10/image_thumb.png" alt="image" width="321" height="242" border="0" />]("image" /media/2012/10/image.png)
 
-It’s not that complicated <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/10/wlEmoticon-winkingsmile.png" alt="Winking smile" />
+It’s not that complicated <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/10/wlEmoticon-winkingsmile.png" alt="Winking smile" />
 
 But yesterday, while running through the woods, I thought that this should also be put into a script and today was the day I did it.
 
@@ -76,9 +76,9 @@ We now just need to fill the right values into the right Props and everything’
 
 At the end you can check in the GUI and also via the Powershell cmdlet “Get-CMAccount” if it worked:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb1.png" alt="image" width="326" height="170" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/10/image1.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2012/10/image_thumb1.png" alt="image" width="326" height="170" border="0" />]("image" /media/2012/10/image1.png)
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/10/image_thumb2.png" alt="image" width="313" height="67" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/10/image2.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2012/10/image_thumb2.png" alt="image" width="313" height="67" border="0" />]("image" /media/2012/10/image2.png)
 
 Here’s the script! If the script helped you or you have any comments, I’d love to hear it!
 

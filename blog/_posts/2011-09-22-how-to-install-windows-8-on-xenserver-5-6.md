@@ -14,9 +14,4 @@ tags:
   - Windows 8
   - XenServer
 ---
-New blog article on XenServer and Windows 8 on my sepago blog: [http://www.sepago.de/d/david/2011/09/22/how-to-install-windows-8-on-xenserver-56](http://www.sepago.de/d/david/2011/09/22/how-to-install-windows-8-on-xenserver-56) 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+New blog article on XenServer and Windows 8 on my sepago blog: [http://www.sepago.de/d/david/2011/09/22/how-to-install-windows-8-on-xenserver-56](http://www.sepago.de/d/david/2011/09/22/how-to-install-windows-8-on-xenserver-56)

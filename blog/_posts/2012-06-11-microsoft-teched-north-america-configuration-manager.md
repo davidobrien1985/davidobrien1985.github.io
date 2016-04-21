@@ -45,7 +45,7 @@ I’m not there myself, so this is just what I found in the community and what I
 
   * Microsoft announced availability of ConfigMgr 2012 SP1 CTP at the end of this week
 
-That would be great, I always like to test new stuff <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smiley" src="http://www.david-obrien.de/wp-content/uploads/2012/06/wlEmoticon-smile.png" />
+That would be great, I always like to test new stuff <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smiley" src="/media/2012/06/wlEmoticon-smile.png" />
 
   * Windows 8 support
 

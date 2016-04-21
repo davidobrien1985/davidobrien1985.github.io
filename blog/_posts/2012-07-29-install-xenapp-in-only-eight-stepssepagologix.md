@@ -64,7 +64,7 @@ It’s fairly simple to configure, because around 90% is done via variables that
 sepagoLogix is built up in eight steps.
 
 <p align="center">
-  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="folders" src="http://www.david-obrien.de/wp-content/uploads/2012/08/folders_thumb.jpg" alt="folders" width="223" height="181" border="0" />]("folders" http://www.david-obrien.de/wp-content/uploads/2012/08/folders.jpg)
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="folders" src="/media/2012/08/folders_thumb.jpg" alt="folders" width="223" height="181" border="0" />]("folders" /media/2012/08/folders.jpg)
 </p>
 
 <p align="left">

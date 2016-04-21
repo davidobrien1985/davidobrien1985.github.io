@@ -31,7 +31,7 @@ I’m in the middle of a Configuration Manager implementation at a customer’s 
 
 As you all might know Microsoft got rid of the “subcollections” and gave us collection folders to arrange our collections.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.de/wp-content/uploads/2012/02/image_thumb.png" width="244" height="147" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/02/image.png)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" alt="image" src="/media/2012/02/image_thumb.png" width="244" height="147" border="0" />]("image" /media/2012/02/image.png)
 
 My customer needs round about 150 folders and I am a lazy admin. What does a lazy admin do?
 

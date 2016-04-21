@@ -41,7 +41,7 @@ Now how do you get the Powershell module to work? You need Powershell 3.0, thatâ
   
 Configuration Manager 2012 SP1 will support Windows Server 2012 as an underlying OS and the new server OS already ships with Powershell 3.0. As I already have updated my whole virtual Lab to Server 2012, I had to do nothing.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb.png" alt="image" width="244" height="71" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/09/image.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/media/2012/09/image_thumb.png" alt="image" width="244" height="71" border="0" />]("image" /media/2012/09/image.png)
 
 If you are still working with the legacy OS aka Windows Server 2008 R2 go download the correct version of the Windows Management Framework 3.0 from the Microsoft Download Center: [http://www.microsoft.com/en-us/download/details.aspx?id=34595](http://www.microsoft.com/en-us/download/details.aspx?id=34595)
 
@@ -2145,7 +2145,7 @@ I have already written lots of scripts/functions for Configuration Manager 2012 
 In the next couple of days/weeks Iâ€™ll try to update my scripts to the new commands and have a look at how powerful they really are!
   
 So stay tuned! 
-<img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/09/wlEmoticon-smile.png" alt="Smile" /> 
+<img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="/media/2012/09/wlEmoticon-smile.png" alt="Smile" /> 
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)

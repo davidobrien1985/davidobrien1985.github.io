@@ -25,9 +25,9 @@ After downloading the update package from MyCitrix I mounted the ISO and fired u
 
 So what **did** happen? I started Desktop Studio, didn't look too different, then Desktop Director, which actually looks a bit different and then went to have a look at the install sources and compared the installers from XD5.5 to the installers from XD 5 SP1. And what a surprise - nothing changed! Look at the dates and sizes!
 
-[<img class="img-responsive size-medium wp-image-86 alignleft" title="XD5 SP1 installers" src="http://www.david-obrien.de/wp-content/uploads/2011/08/xd55_ddc_upgrade21-300x173.jpg" alt="" width="300" height="173" />]("XD5 SP1 installers" http://www.david-obrien.de/wp-content/uploads/2011/08/xd55_ddc_upgrade21.jpg)
+[<img class="img-responsive size-medium wp-image-86 alignleft" title="XD5 SP1 installers" src="/media/2011/08/xd55_ddc_upgrade21-300x173.jpg" alt="" width="300" height="173" />]("XD5 SP1 installers" /media/2011/08/xd55_ddc_upgrade21.jpg)
 
-[<img class="img-responsive aligncenter size-medium wp-image-88" title="XD 5.5 installers" src="http://www.david-obrien.de/wp-content/uploads/2011/08/xd55_ddc_upgrade2_compared2xd5sp1-300x176.jpg" alt="" width="300" height="176" />]("XD 5.5 installers" http://www.david-obrien.de/wp-content/uploads/2011/08/xd55_ddc_upgrade2_compared2xd5sp1.jpg)
+[<img class="img-responsive aligncenter size-medium wp-image-88" title="XD 5.5 installers" src="/media/2011/08/xd55_ddc_upgrade2_compared2xd5sp1-300x176.jpg" alt="" width="300" height="176" />]("XD 5.5 installers" /media/2011/08/xd55_ddc_upgrade2_compared2xd5sp1.jpg)
 
 But what did the installer do? It installed a new version of the Desktop Director, which got tweaked a bit here and there, and furthermore added some new policies.
 
@@ -43,7 +43,7 @@ At a Citrix Solutions Roundtable I was once told that Citrix updates XenDesktop 
 
 The nice and easy thing about XenDesktop is, that you can administer most things via the Desktop Studio GUI, especially everything which is going to happen on the Desktop side of XenDesktop. So lets have a quick look at the policies in XD5.5 Desktop Studio. In the policy section you can now filter all the policies that apply to either XD5, XD5.5 or both, which makes it really easy to test all the new policies like "Win7 Aero redirection" and such.
 
-[<img class="img-responsive aligncenter size-medium wp-image-91" title="XD5.5 policies" src="http://www.david-obrien.de/wp-content/uploads/2011/08/XD55_policies-300x129.jpg" alt="" width="300" height="129" />]("XD5.5 policies" http://www.david-obrien.de/wp-content/uploads/2011/08/XD55_policies.jpg)
+[<img class="img-responsive aligncenter size-medium wp-image-91" title="XD5.5 policies" src="/media/2011/08/XD55_policies-300x129.jpg" alt="" width="300" height="129" />]("XD5.5 policies" /media/2011/08/XD55_policies.jpg)
 
 As time permits I am going to test the new policies such as "Win7 Aero redirection" and all the other HDX settings.
 

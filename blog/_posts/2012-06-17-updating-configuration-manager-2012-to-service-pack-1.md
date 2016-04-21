@@ -35,7 +35,7 @@ It’s an early sunday morning, the fiancee is still asleep and I wanted to “q
 
 As there are new features (see previous article: [http://www.david-obrien.de/?p=369](http://www.david-obrien.de/?p=369)), there are also new prerequisites you need to fulfil before being able to update your site.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb2.png" alt="image" width="244" height="162" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image2.png)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb2.png" alt="image" width="244" height="162" border="0" />]("image" /media/2012/06/image2.png)
   
 Go download and install the [Windows 8 Assessment and Deployment Kit (ADK)](http://www.microsoft.com/en-us/download/details.aspx?id=28997), this in itself is just under 1MB size but it will download a huge amount of data during installation (approx. 3GB, depending on what features you install).
 
@@ -45,7 +45,7 @@ It will, for example, download the Silverlight 5 binaries.
 
 If any of your sites have a language pack installed, you will need to uninstall it before updating your site.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb3.png" alt="image" width="244" height="72" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image3.png)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb3.png" alt="image" width="244" height="72" border="0" />]("image" /media/2012/06/image3.png)
 
 Do this by running setup again and chose “site maintenance” and then “modify language settings”.
 
@@ -58,7 +58,7 @@ Do this by running setup again and chose “site maintenance” and then “modi
 </p>
 
 <p align="center">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb4.png" alt="image" width="244" height="28" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image4.png)
+  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb4.png" alt="image" width="244" height="28" border="0" />]("image" /media/2012/06/image4.png)
 </p>
 
 <p align="left">
@@ -66,15 +66,15 @@ Do this by running setup again and chose “site maintenance” and then “modi
 </p>
 
 <p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb5.png" alt="image" width="244" height="183" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image5.png)
+  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb5.png" alt="image" width="244" height="183" border="0" />]("image" /media/2012/06/image5.png)
 </p>
 
 <p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb6.png" alt="image" width="244" height="184" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image6.png)
+  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb6.png" alt="image" width="244" height="184" border="0" />]("image" /media/2012/06/image6.png)
 </p>
 
 <p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb7.png" alt="image" width="244" height="184" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image7.png)<br /> No errors, only warnings from my virtual environment…
+  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb7.png" alt="image" width="244" height="184" border="0" />]("image" /media/2012/06/image7.png)<br /> No errors, only warnings from my virtual environment…
 </p>
 
 <p align="left">
@@ -82,7 +82,7 @@ Do this by running setup again and chose “site maintenance” and then “modi
 </p>
 
 <p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb8.png" alt="image" width="244" height="183" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image8.png)
+  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb8.png" alt="image" width="244" height="183" border="0" />]("image" /media/2012/06/image8.png)
 </p>
 
 <p align="left">
@@ -90,7 +90,7 @@ Do this by running setup again and chose “site maintenance” and then “modi
 </p>
 
 <p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb9.png" alt="image" width="244" height="29" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image9.png)
+  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb9.png" alt="image" width="244" height="29" border="0" />]("image" /media/2012/06/image9.png)
 </p>
 
 <p align="left">
@@ -98,7 +98,7 @@ Do this by running setup again and chose “site maintenance” and then “modi
 </p>
 
 <p align="left">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb10.png" alt="image" width="244" height="38" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image10.png)
+  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb10.png" alt="image" width="244" height="38" border="0" />]("image" /media/2012/06/image10.png)
 </p>
 
 <div style="float: right; margin-left: 10px;">

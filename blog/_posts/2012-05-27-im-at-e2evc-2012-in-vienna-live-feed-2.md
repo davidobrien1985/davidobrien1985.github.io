@@ -53,7 +53,7 @@ Keep following this article to stay up to date on the sessions I visit.
 
 # Arrival at Conference
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0226" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0226_thumb.jpg" alt="IMAG0226" width="148" height="244" border="0" />]("IMAG0226" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0226.jpg)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0226" src="/media/2012/05/IMAG0226_thumb.jpg" alt="IMAG0226" width="148" height="244" border="0" />]("IMAG0226" /media/2012/05/IMAG0226.jpg)
 
 Alex’s welcoming was a bit delayed due to some misorganization on the hotel’s side.
 
@@ -63,7 +63,7 @@ They’re going to release the RES Workspace Manager 2012 and Hyperdrive in the 
 
 # SMSPasscode 6.1 Session
 
-David Hald from SMSPasscode talks about the threats that are out there in the world and security breaches. Apparently RAS are protected by Spiderman <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
+David Hald from SMSPasscode talks about the threats that are out there in the world and security breaches. Apparently RAS are protected by Spiderman <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
   
 A demo environment of SMSPasscode 6.1 (released last Monday) is available at demo.smspasscode.com
 
@@ -75,9 +75,9 @@ A demo environment of SMSPasscode 6.1 (released last Monday) is available at dem
 
 This was my session. I believe the video recording and PowerPoint slides will soon be available for everyone to download.
   
-My feeling is that it went quite well. It’s my first time at E2EVC, so I can only guess <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
+My feeling is that it went quite well. It’s my first time at E2EVC, so I can only guess <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
 
-The internet connection is still unavailable  <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" />So I’m writing this offline, hoping I can upload the updates later on or tonight. Up until now all the sessions have been really interesting!
+The internet connection is still unavailable  <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" />So I’m writing this offline, hoping I can upload the updates later on or tonight. Up until now all the sessions have been really interesting!
 
 # Whiptail
 
@@ -97,7 +97,7 @@ I don’t know much about AppSense, so most of the session is quite new to me.
       * User managed applications (Strata Apps from AppSense Labs):
       * applications user want to use, but are not part of the company
       * applications are installed into a sandbox
-      * another filter driver <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" />
+      * another filter driver <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" />
     
       * DataLocker (also from AppSense Labs)
       * encryption/decryption of data
@@ -122,7 +122,7 @@ Interesting session about network problems in a RDS environment, where “Flow C
 
 # Cracking with Remko Weijnen ( [@remkoweijnen](https://twitter.com/#!/RemkoWeijnen))
 
-How to crack a setup installer, which doesn’t want to install on your client. I honestly didn’t understand more than 2%  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />Most of the time it looked like Matrix, with HexEditors, IDAPro and lots of funny programs.
+How to crack a setup installer, which doesn’t want to install on your client. I honestly didn’t understand more than 2%  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />Most of the time it looked like Matrix, with HexEditors, IDAPro and lots of funny programs.
 
 &nbsp;
 
@@ -130,7 +130,7 @@ How to crack a setup installer, which doesn’t want to install on your client. 
 
 Day 2 of E2EVC starts early at 9am with RES Master Class (Dynamic Desktop Studio at work)
 
-Awesome, we got “The IT Crowd: Version 1.0”…in dutch <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
+Awesome, we got “The IT Crowd: Version 1.0”…in dutch <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
 
   * The Master Class will cover the installation of a RES WorkspaceManager and Automation Manager environment, which in the end is supposed to be capable of creating a new employee user workspace fully automatically.
   * install RES Automation Manager 2012
@@ -142,7 +142,7 @@ Awesome, we got “The IT Crowd: Version 1.0”…in dutch <img class="img-respo
   * [tutorials.ressoftware.com](http://tutorials.ressoftware.com) for more information
 
 <p align="center">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="IMAG0202" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0202_thumb.jpg" alt="IMAG0202" width="244" height="148" border="0" />]("IMAG0202" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0202.jpg)
+  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="IMAG0202" src="/media/2012/05/IMAG0202_thumb.jpg" alt="IMAG0202" width="244" height="148" border="0" />]("IMAG0202" /media/2012/05/IMAG0202.jpg)
 </p>
 
 # Next E2EVC / PubForum
@@ -153,7 +153,7 @@ Alex ([@E2EVC](https://twitter.com/#!/E2EVC)) just announced that the next E2EVC
 
 Well this was an interesting session about User Environment Management. I will definitely have a look at it.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0203" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0203_thumb.jpg" alt="IMAG0203" width="244" height="148" border="0" />]("IMAG0203" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0203.jpg)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0203" src="/media/2012/05/IMAG0203_thumb.jpg" alt="IMAG0203" width="244" height="148" border="0" />]("IMAG0203" /media/2012/05/IMAG0203.jpg)
 
 For more information on Pierre’s tool, look at CitrixTools.net or [VirtualDesktops.info](http://VirtualDesktops.info)
 
@@ -193,11 +193,11 @@ ThinKiosk is a DotNet 2.0 application, which locks down the whole desktop and ju
   
 This way the user is only able to work with the published desktop and do nothing more with his local desktop!
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0214" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0214_thumb.jpg" alt="IMAG0214" width="244" height="148" border="0" />]("IMAG0214" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0214.jpg)[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0216" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0216_thumb.jpg" alt="IMAG0216" width="244" height="148" border="0" />]("IMAG0216" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0216.jpg)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0214" src="/media/2012/05/IMAG0214_thumb.jpg" alt="IMAG0214" width="244" height="148" border="0" />]("IMAG0214" /media/2012/05/IMAG0214.jpg)[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0216" src="/media/2012/05/IMAG0216_thumb.jpg" alt="IMAG0216" width="244" height="148" border="0" />]("IMAG0216" /media/2012/05/IMAG0216.jpg)
 
 # “How real is virtual” by [@neilspellings](http://twitter.com/#!/neilspellings)
 
-Neil presented on Netscaler VPX and how to break it  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />Interesting demos on Netscaler VPX and XenMotioning them around and how this could affect your user’s experience.
+Neil presented on Netscaler VPX and how to break it  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />Interesting demos on Netscaler VPX and XenMotioning them around and how this could affect your user’s experience.
 
 &nbsp;
 
@@ -209,22 +209,22 @@ Comparing women to Fat/Thin Clients? Interesting analogy in this session. They t
   * there’s a market for both
 
 <p align="center">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="IMAG0219" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0219_thumb.jpg" alt="IMAG0219" width="244" height="148" border="0" />]("IMAG0219" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0219.jpg)
+  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="IMAG0219" src="/media/2012/05/IMAG0219_thumb.jpg" alt="IMAG0219" width="244" height="148" border="0" />]("IMAG0219" /media/2012/05/IMAG0219.jpg)
 </p>
 
 # “Gone in 60 seconds-#all #user #passwords on #XA/RDS SRV” by [@remkoweijnen](http://twitter.com/#!/remkoweijnen)
 
 This was actually one of the coolest but scariest sessions at E2E. Remko demonstrated how easy it is to get any logged on user’s password from any XenApp or RDS session.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0220" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0220_thumb.jpg" alt="IMAG0220" width="244" height="148" border="0" />]("IMAG0220" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0220.jpg)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0220" src="/media/2012/05/IMAG0220_thumb.jpg" alt="IMAG0220" width="244" height="148" border="0" />]("IMAG0220" /media/2012/05/IMAG0220.jpg)
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0222" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0222_thumb.jpg" alt="IMAG0222" width="244" height="148" border="0" />]("IMAG0222" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0222.jpg)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0222" src="/media/2012/05/IMAG0222_thumb.jpg" alt="IMAG0222" width="244" height="148" border="0" />]("IMAG0222" /media/2012/05/IMAG0222.jpg)
 
 Apparently a 7-year-old can go and get any user’s password in plain text from as far back as Win2000. Remko even programmed his own tool that goes and gets them for you.
 
-He even showed us the Matrix! <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
+He even showed us the Matrix! <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0225" src="http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0225_thumb.jpg" alt="IMAG0225" width="244" height="148" border="0" />]("IMAG0225" http://www.david-obrien.de/wp-content/uploads/2012/05/IMAG0225.jpg)
+[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0225" src="/media/2012/05/IMAG0225_thumb.jpg" alt="IMAG0225" width="244" height="148" border="0" />]("IMAG0225" /media/2012/05/IMAG0225.jpg)
 
 # 
 

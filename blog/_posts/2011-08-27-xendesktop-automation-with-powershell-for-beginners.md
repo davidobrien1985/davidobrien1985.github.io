@@ -23,7 +23,7 @@ Like, have you ever tried assigning a catalog to an IP address or ever wanted to
 
 By opening Desktop Studio we are presented with three default registers at the top of the console: Dashboard, Actions and Powershell.
 
-[<img class="img-responsive aligncenter size-medium wp-image-41" title="ps_example" src="http://www.david-obrien.de/wp-content/uploads/2011/08/ps_example-300x136.jpg" alt="" width="300" height="136" />]("ps_example" http://www.david-obrien.de/wp-content/uploads/2011/08/ps_example.jpg)
+[<img class="img-responsive aligncenter size-medium wp-image-41" title="ps_example" src="/media/2011/08/ps_example-300x136.jpg" alt="" width="300" height="136" />]("ps_example" /media/2011/08/ps_example.jpg)
 
 Everything you change, create or delete will eventually come up in there. Just try a bit around and have a look at a sort of history of what you've done.
 
@@ -33,7 +33,7 @@ Or maybe you're already an advanced user who wants to go ahead and use his own s
 
 Here's how:
 
-[<img class="img-responsive aligncenter size-medium wp-image-45" title="add-pssnapin" src="http://www.david-obrien.de/wp-content/uploads/2011/08/add-pssnapin-300x68.jpg" alt="" width="300" height="68" />]("add-pssnapin" http://www.david-obrien.de/wp-content/uploads/2011/08/add-pssnapin.jpg)
+[<img class="img-responsive aligncenter size-medium wp-image-45" title="add-pssnapin" src="/media/2011/08/add-pssnapin-300x68.jpg" alt="" width="300" height="68" />]("add-pssnapin" /media/2011/08/add-pssnapin.jpg)
 
 If you now enter `Get-Module -Module Citrix.*` you'll get all the available cmdlets. You can find an overview of them at Citrix's site: [http://support.citrix.com/static/kc/CTX127254/help/](http://support.citrix.com/static/kc/CTX127254/help/)
 

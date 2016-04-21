@@ -47,16 +47,16 @@ A lot of rebranding has been done. Citrix tried to get rid of the name “AppTit
 
 Before:
 
-[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="IIS_beforeUpdate" border="0" alt="IIS_beforeUpdate" src="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_beforeUpdate_thumb.jpg" width="173" height="152" />]("IIS_beforeUpdate" http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_beforeUpdate.jpg)
+[<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="IIS_beforeUpdate" border="0" alt="IIS_beforeUpdate" src="/media/2012/06/IIS_beforeUpdate_thumb.jpg" width="173" height="152" />]("IIS_beforeUpdate" /media/2012/06/IIS_beforeUpdate.jpg)
 
 After:
 
 <p align="center">
-  [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="IIS_afterUpdate" border="0" alt="IIS_afterUpdate" src="http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_afterUpdate_thumb.jpg" width="177" height="153" />]("IIS_afterUpdate" http://www.david-obrien.de/wp-content/uploads/2012/06/IIS_afterUpdate.jpg)
+  [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="IIS_afterUpdate" border="0" alt="IIS_afterUpdate" src="/media/2012/06/IIS_afterUpdate_thumb.jpg" width="177" height="153" />]("IIS_afterUpdate" /media/2012/06/IIS_afterUpdate.jpg)
 </p>
 
 <p align="center">
-  [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="update_registry" border="0" alt="update_registry" src="http://www.david-obrien.de/wp-content/uploads/2012/06/update_registry_thumb.jpg" width="244" height="56" />]("update_registry" http://www.david-obrien.de/wp-content/uploads/2012/06/update_registry.jpg)
+  [<img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="update_registry" border="0" alt="update_registry" src="/media/2012/06/update_registry_thumb.jpg" width="244" height="56" />]("update_registry" /media/2012/06/update_registry.jpg)
 </p>
 
 ## 
@@ -86,7 +86,7 @@ Be sure to check your execution profiles to work this way.
 
 ## Lakeside
 
-Still found no time to test the Lakeside integration, but will definitely do that after my holidays! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smiley" src="http://www.david-obrien.de/wp-content/uploads/2012/06/wlEmoticon-smile1.png" />&nbsp;  
+Still found no time to test the Lakeside integration, but will definitely do that after my holidays! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smiley" src="/media/2012/06/wlEmoticon-smile1.png" />&nbsp;  
 As I haven’t done that yet, I can’t say much about this feature, other than I will write an other article about this product soon! 
 
 ## Menus

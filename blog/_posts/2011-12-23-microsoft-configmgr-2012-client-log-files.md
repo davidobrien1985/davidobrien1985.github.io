@@ -49,15 +49,15 @@ tags:
 </p>
 
 <p align="left">
-  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_1" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_1_thumb.jpg" alt="logfiles_1" width="229" height="285" />]("logfiles_1" http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_1.jpg)
+  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_1" src="/media/2011/12/logfiles_1_thumb.jpg" alt="logfiles_1" width="229" height="285" />]("logfiles_1" /media/2011/12/logfiles_1.jpg)
 </p>
 
 <p align="left">
-  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_2" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_2_thumb.jpg" alt="logfiles_2" width="225" height="259" />]("logfiles_2" http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_2.jpg)
+  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_2" src="/media/2011/12/logfiles_2_thumb.jpg" alt="logfiles_2" width="225" height="259" />]("logfiles_2" /media/2011/12/logfiles_2.jpg)
 </p>
 
 <p align="left">
-  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_3" src="http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_3_thumb.jpg" alt="logfiles_3" width="233" height="110" />]("logfiles_3" http://www.david-obrien.de/wp-content/uploads/2011/12/logfiles_3.jpg)
+  [<img class="img-responsive lightbox" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial;" title="logfiles_3" src="/media/2011/12/logfiles_3_thumb.jpg" alt="logfiles_3" width="233" height="110" />]("logfiles_3" /media/2011/12/logfiles_3.jpg)
 </p>
 
 <p align="left">
@@ -65,7 +65,7 @@ tags:
 </p>
 
 <p align="left">
-  For the beginning I will focus on the most important log files (in my opinion). Lets start alphabetically (no guarantee on anything <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2011/12/wlEmoticon-winkingsmile.png" alt="Winking smile" /> ):
+  For the beginning I will focus on the most important log files (in my opinion). Lets start alphabetically (no guarantee on anything <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2011/12/wlEmoticon-winkingsmile.png" alt="Winking smile" /> ):
 </p>
 
 <div align="left">

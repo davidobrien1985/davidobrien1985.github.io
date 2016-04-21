@@ -42,7 +42,7 @@ tags:
 
 I like automating as much as possible, as you might have already learned from my other articles. My next plan was to script the installation of a site system role in Microsoft System Center Configuration Manager 2012, to be more precise, I wanted to deploy a Distribution Point. With no access to the GUI, totally scripted, with Powershell!
 
-And here comes the problem kicking you somewhere bad  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/06/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />There’s no documentation on how to do this. The only thing around is the ConfigMgr 2012 SDK PreRelease, and even there not everything is covered.
+And here comes the problem kicking you somewhere bad  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/06/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />There’s no documentation on how to do this. The only thing around is the ConfigMgr 2012 SDK PreRelease, and even there not everything is covered.
 
 # automation with Powershell
 
@@ -69,7 +69,7 @@ A Distribution Point usually has a certificate on it, whether it’s self-signed
   
 I can’t find anything on how to create/import a certificate and bind it to a Distribution Point. **<span style="font-size: medium;">[For Update see below!]</span>**
 
-<span style="text-decoration: line-through;">There has been a COM Object in ConfigMgr 2007, but this seems to have vanished. There was also a WMI method which is also gone.<br /> SMSProv.log tells me nothing, I used ProcMon and API monitors and I’m as wise as before… <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/06/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" /> What I did find out is, that it uses the local server’s crypto API.</span>
+<span style="text-decoration: line-through;">There has been a COM Object in ConfigMgr 2007, but this seems to have vanished. There was also a WMI method which is also gone.<br /> SMSProv.log tells me nothing, I used ProcMon and API monitors and I’m as wise as before… <img class="img-responsive wlEmoticon wlEmoticon-sadsmile" style="border-style: none;" src="/media/2012/06/wlEmoticon-sadsmile.png" alt="Trauriges Smiley" /> What I did find out is, that it uses the local server’s crypto API.</span>
 
 <span style="text-decoration: line-through;">Might be I’m just overlooking something, but this is driving me nuts.</span>
 
@@ -77,17 +77,17 @@ I can’t find anything on how to create/import a certificate and bind it to a D
 
 <span style="text-decoration: line-through;">After creating a Distribution Point with my script I can see it in the ConfigMgr console and inside the database’s Site Control file (without the certificate properties!)</span>
 
-[<span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb.png" alt="image" width="370" height="229" border="0" /></span>]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image.png)
+[<span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="/media/2012/06/image_thumb.png" alt="image" width="370" height="229" border="0" /></span>]("image" /media/2012/06/image.png)
 
 <span style="text-decoration: line-through;">As soon as I open up it’s properties inside the console the “Apply” (german: “Übernehmen”) button is active, without me doing anything!</span>
 
 <p align="center">
-  [<span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/06/image_thumb1.png" alt="image" width="331" height="316" border="0" /></span>]("image" http://www.david-obrien.de/wp-content/uploads/2012/06/image1.png)
+  [<span style="text-decoration: line-through;"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="/media/2012/06/image_thumb1.png" alt="image" width="331" height="316" border="0" /></span>]("image" /media/2012/06/image1.png)
 </p>
 
 <span style="text-decoration: line-through;">When I press the button, only that, nothing else, the window closes and ConfigMgr creates a self-signed certificate and assigns it to the Distribution Point, which can then be seen in the Site Control File.</span>
 
-<span style="text-decoration: line-through;">I’d like the community to have a look at my script and tell me what’s wrong <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/06/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" /></span>
+<span style="text-decoration: line-through;">I’d like the community to have a look at my script and tell me what’s wrong <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/06/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" /></span>
 
 <span style="text-decoration: line-through;">Now, here it comes: (old, not functioning script…)</span>
 

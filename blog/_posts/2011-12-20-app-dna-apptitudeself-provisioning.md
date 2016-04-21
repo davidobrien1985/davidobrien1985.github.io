@@ -41,19 +41,19 @@ You only need to follow a workflow now presented to you by Bob (AppTitude admin)
   * Carla: copies the install sources into any network share 
       * Carla: tells (via any way imaginable: call, mail, web-frontend) Bob where to find the install sources 
           * Bob: opens up the AppTitude console and goes to “Self Provisioning”</ul> 
-        > [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial" class="lightbox" title="overview" alt="overview" src="http://www.david-obrien.de/wp-content/uploads/2012/01/overview_thumb.jpg" width="244" height="63" />]("overview" http://www.david-obrien.de/wp-content/uploads/2012/01/overview.jpg)
+        > [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-image: initial" class="lightbox" title="overview" alt="overview" src="/media/2012/01/overview_thumb.jpg" width="244" height="63" />]("overview" /media/2012/01/overview.jpg)
         
           * Bob: selects the install file, in the folder that Carla just told him, with which the App is going to be installed (e.g.: setup.exe)
         
         > <p align="center">
-        >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="selected_app" alt="selected_app" src="http://www.david-obrien.de/wp-content/uploads/2012/01/selected_app_thumb.jpg" width="244" height="93" />]("selected_app" http://www.david-obrien.de/wp-content/uploads/2012/01/selected_app.jpg)
+        >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="selected_app" alt="selected_app" src="/media/2012/01/selected_app_thumb.jpg" width="244" height="93" />]("selected_app" /media/2012/01/selected_app.jpg)
         > </p>
         
           * Bob: if necessary he can change some configurations in the execution profile for this specific application 
               * Bob: if finished with last minute changes to the execution profile, then press “publish” 
                   * the app’s status changes from ready to published and a description file is being created</ul> 
             > <p align="center">
-            >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="published_app" alt="published_app" src="http://www.david-obrien.de/wp-content/uploads/2012/01/published_app_thumb.jpg" width="244" height="75" />]("published_app" http://www.david-obrien.de/wp-content/uploads/2012/01/published_app.jpg)
+            >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="published_app" alt="published_app" src="/media/2012/01/published_app_thumb.jpg" width="244" height="75" />]("published_app" /media/2012/01/published_app.jpg)
             > </p>
             
               * Bob: the path to the description file has to be sent to Carla, either by pressing “Export” or by pressing “Manifest list” 
@@ -61,27 +61,27 @@ You only need to follow a workflow now presented to you by Bob (AppTitude admin)
                       * the latter will create a “SelfProvisioning.txt” with the location of the description file</ul> 
                 
                 > <p align="center">
-                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="export_app" alt="export_app" src="http://www.david-obrien.de/wp-content/uploads/2012/01/export_app_thumb.jpg" width="244" height="108" />]("export_app" http://www.david-obrien.de/wp-content/uploads/2012/01/export_app.jpg)
+                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="export_app" alt="export_app" src="/media/2012/01/export_app_thumb.jpg" width="244" height="108" />]("export_app" /media/2012/01/export_app.jpg)
                 > </p>
                 
                   * Carla: opens up the “AppCapture.exe” on her client
                 
                 > <p align="center">
-                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="appcapture" alt="appcapture" src="http://www.david-obrien.de/wp-content/uploads/2012/01/appcapture_thumb.jpg" width="244" height="202" />]("appcapture" http://www.david-obrien.de/wp-content/uploads/2012/01/appcapture.jpg)
+                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="appcapture" alt="appcapture" src="/media/2012/01/appcapture_thumb.jpg" width="244" height="202" />]("appcapture" /media/2012/01/appcapture.jpg)
                 > </p>
                 
                   * Carla: enters the path to the description file and presses “Play” 
                       * the description file is read and interpreted by the AppCapture.exe and we now see the configured command line (the .exe) and execution profile (in this case without Before Snapshot!)
                 
                 > <p align="center">
-                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="appcapture_desc_read" alt="appcapture_desc_read" src="http://www.david-obrien.de/wp-content/uploads/2012/01/appcapture_desc_read_thumb.jpg" width="244" height="204" />]("appcapture_desc_read" http://www.david-obrien.de/wp-content/uploads/2012/01/appcapture_desc_read.jpg)
+                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="appcapture_desc_read" alt="appcapture_desc_read" src="/media/2012/01/appcapture_desc_read_thumb.jpg" width="244" height="204" />]("appcapture_desc_read" /media/2012/01/appcapture_desc_read.jpg)
                 > </p>
                 
                   * &nbsp; 
                       * after another press on play the exe is launched and monitored
                 
                 > <p align="center">
-                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="appcapture_installstarted" alt="appcapture_installstarted" src="http://www.david-obrien.de/wp-content/uploads/2012/01/appcapture_installstarted_thumb.jpg" width="244" height="212" />]("appcapture_installstarted" http://www.david-obrien.de/wp-content/uploads/2012/01/appcapture_installstarted.jpg)
+                >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="appcapture_installstarted" alt="appcapture_installstarted" src="/media/2012/01/appcapture_installstarted_thumb.jpg" width="244" height="212" />]("appcapture_installstarted" /media/2012/01/appcapture_installstarted.jpg)
                 > </p>
                 
                   * &nbsp; 
@@ -89,11 +89,11 @@ You only need to follow a workflow now presented to you by Bob (AppTitude admin)
                       * Carla: when the “After Snapshot” is done she again tells Bob that she’s finished and the App is ready to be imported 
                           * Bob: loads the results and after that the App is ready to be “moved to import” for further processing</ul> 
                         > <p align="center">
-                        >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="load_results" alt="load_results" src="http://www.david-obrien.de/wp-content/uploads/2012/01/load_results_thumb.jpg" width="244" height="118" />]("load_results" http://www.david-obrien.de/wp-content/uploads/2012/01/load_results.jpg)
+                        >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="load_results" alt="load_results" src="/media/2012/01/load_results_thumb.jpg" width="244" height="118" />]("load_results" /media/2012/01/load_results.jpg)
                         > </p>
                         > 
                         > <p align="center">
-                        >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="finished" alt="finished" src="http://www.david-obrien.de/wp-content/uploads/2012/01/finished_thumb.jpg" width="244" height="40" />]("finished" http://www.david-obrien.de/wp-content/uploads/2012/01/finished.jpg)
+                        >   [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-image: initial" class="lightbox" title="finished" alt="finished" src="/media/2012/01/finished_thumb.jpg" width="244" height="40" />]("finished" /media/2012/01/finished.jpg)
                         > </p>
                         
                           *   * from here on the App is no different than any other MSI

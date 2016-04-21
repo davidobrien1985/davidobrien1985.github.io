@@ -41,12 +41,12 @@ Copy the RES-WM-2012.msi to a share of your choice and make sure that you can ac
   
 Start creating a new Application, it’s really just a few clicks.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="RESWM_Application_1" src="http://www.david-obrien.de/wp-content/uploads/2012/09/RESWM_Application_1_thumb.jpg" alt="RESWM_Application_1" width="322" height="265" border="0" />]("RESWM_Application_1" http://www.david-obrien.de/wp-content/uploads/2012/09/RESWM_Application_11.jpg)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="RESWM_Application_1" src="/media/2012/09/RESWM_Application_1_thumb.jpg" alt="RESWM_Application_1" width="322" height="265" border="0" />]("RESWM_Application_1" /media/2012/09/RESWM_Application_11.jpg)
 
 In the next window you are asked to further configure the installation.
 
 <p align="center">
-  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="http://www.david-obrien.de/wp-content/uploads/2012/09/image_thumb6.png" alt="image" width="319" height="263" border="0" />]("image" http://www.david-obrien.de/wp-content/uploads/2012/09/image6.png)
+  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="/media/2012/09/image_thumb6.png" alt="image" width="319" height="263" border="0" />]("image" /media/2012/09/image6.png)
 </p>
 
 My installation program looks like this:

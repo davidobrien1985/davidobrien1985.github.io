@@ -23,7 +23,7 @@ That’s why I had and still have the task to automate Citrix’s Provisioning S
 
 # What’s been asked for?
 
-Citrix PVS farms need to be installed, created, configured and maintained. No more <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.de/wp-content/uploads/2012/08/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
+Citrix PVS farms need to be installed, created, configured and maintained. No more <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/08/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
 
 Doesn’t sound that much to ask for, bearing in mind that it’s 2012 and almost all products nowadays can easily be automated.
 
@@ -811,7 +811,7 @@ I promised an update as soon as I’d know anything more, and here it is. It wor
   
 I tend to write scripts or edit them in Notepad ++ or just Notepad and it seems as if that caused the problem. Looking at an original unedited “configwizard.ans” you will notice that it’s in Unicode, which is fine. It’s also what I saw when looking at it in Notepad ++, but not what my notebook did to it. After editing it, it saved it as ANSI, but continued to show Unicode. Looking at it from a different notebook one could see it was in ANSI.
 
-I don’t know why my machine would do that and it doesn’t matter anymore, that was the Windows 7 time, now is Windows 8 time and all is fine!!! ![Winking smile](http://www.david-obrien.de/wp-content/uploads/2012/08/wlEmoticon-winkingsmile1.png)
+I don’t know why my machine would do that and it doesn’t matter anymore, that was the Windows 7 time, now is Windows 8 time and all is fine!!! ![Winking smile](/media/2012/08/wlEmoticon-winkingsmile1.png)
 
 # Powershell to set encoding
 
@@ -907,7 +907,7 @@ Line 37 is the one where I set the right Encoding and that’s how it works! Des
 
 I thought nowadays to automate a software would be easier. When searching the internet you don’t find a lot of people who install PVS unattended (or they don’t speak about it) and if you find something it’s nearly always about some problems they have.
 
-Take a look at Simon Pettit’s blog article about automating PVS with RES Automation Manager if you don’t want to use Powershell ![Winking smile](http://www.david-obrien.de/wp-content/uploads/2012/08/wlEmoticon-winkingsmile1.png) [http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/](http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/) 
+Take a look at Simon Pettit’s blog article about automating PVS with RES Automation Manager if you don’t want to use Powershell ![Winking smile](/media/2012/08/wlEmoticon-winkingsmile1.png) [http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/](http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/) 
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)
