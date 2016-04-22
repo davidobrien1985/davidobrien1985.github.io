@@ -25,11 +25,9 @@ tags:
   - tutorial
   - video
 ---
-# 
-
 # Create new Collections in SCCM 2012
 
-This video explains how to create new user and device Collections in Configuration Manager 2012 using first the console and then my script (found here: [http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/]("http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/" http://www.david-obrien.net/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/) )
+This video explains how to create new user and device Collections in Configuration Manager 2012 using first the console and then my script (found here: [/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/](/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/ "/2012/02/25/microsoft-configuration-manager-2012-and-powershellpart-2/"))
 
 Have fun!
 

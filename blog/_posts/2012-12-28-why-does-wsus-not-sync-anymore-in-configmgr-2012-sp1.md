@@ -27,43 +27,27 @@ tags:
 This article is just as an information for everybody in the same situation. I can’t give any evidence for it being true, it’s just an observation I made (and at least one guy on Twitter confirmed it!).
 
 After doing my Microsoft System Center 2012 SP1 Configuration Manager upgrade (in-place, no fresh install) I wanted to check the latest updates on my Software Update Point and was quite surprised seeing no new ones.
-  
+
 Okay, it was offline for a while and I only sync every 14 days in my Lab, so I synced manually.
 
 After a few minutes I checked again and saw nothing, no new updates.
 
 So I had a look at the components status page and WCM.log and found that there was some error:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="WSUS_failed_sync" alt="WSUS_failed_sync" src="http://www.david-obrien.net/wp-content/uploads/2012/12/WSUS_failed_sync_thumb.jpg" width="423" height="39" border="0" />]("WSUS_failed_sync" http://www.david-obrien.net/wp-content/uploads/2012/12/WSUS_failed_sync.jpg)
+![WSUS failed sync](/media/2012/12/WSUS_failed_sync.jpg "WSUS_failed_sync")
 
 I went ahead and had a look at the WCM.log file:
 
-<p align="center">
-  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="WSUS_failed_sync_WCMlog" alt="WSUS_failed_sync_WCMlog" src="http://www.david-obrien.net/wp-content/uploads/2012/12/WSUS_failed_sync_WCMlog_thumb.jpg" width="344" height="55" border="0" />]("WSUS_failed_sync_WCMlog" http://www.david-obrien.net/wp-content/uploads/2012/12/WSUS_failed_sync_WCMlog.jpg)
-</p>
+![WSUS failed sync WCMlog](/media/2012/12/WSUS_failed_sync_WCMlog.jpg "WSUS_failed_sync_WCMlog")
 
-<p align="left">
-  Error 404, not found… but as a matter of fact, the real error is in the line above, it’s using port 80 to connect to my WSUS, which I never configured it to do.
-</p>
+Error 404, not found… but as a matter of fact, the real error is in the line above, it’s using port 80 to connect to my WSUS, which I never configured it to do.
 
-<h2 align="left">
-  How to set the WSUS port in ConfigMgr 2012 SP1
-</h2>
+## How to set the WSUS port in ConfigMgr 2012 SP1
 
-<p align="left">
-  Well, something during the upgrade to SP1 must have changed my configuration back to default, without telling me so.<br /> How to fix it?<br /> Go into your “Servers and Site System Roles” settings and open up the Software Update Point’s properties.
-</p>
+Well, something during the upgrade to SP1 must have changed my configuration back to default, without telling me so. How to fix it? Go into your “Servers and Site System Roles” settings and open up the Software Update Point’s properties.
 
-<p align="left">
-  [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="WSUS_config" alt="WSUS_config" src="http://www.david-obrien.net/wp-content/uploads/2012/12/WSUS_config_thumb.jpg" width="350" height="168" border="0" />]("WSUS_config" http://www.david-obrien.net/wp-content/uploads/2012/12/WSUS_config.jpg)
-</p>
+![WSUS config](/media/2012/12/WSUS_config.jpg "WSUS_config")
 
 After I changed the ports back to the numbers I need, everything was fine again.
 
-Would be great to know if anyone of you had the same problem or if it was just me (and one more from Twitter) 
-<img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" alt="Smile" src="http://www.david-obrien.net/wp-content/uploads/2012/12/wlEmoticon-smile1.png" /> 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+Would be great to know if anyone of you had the same problem or if it was just me (and one more from Twitter) :-)

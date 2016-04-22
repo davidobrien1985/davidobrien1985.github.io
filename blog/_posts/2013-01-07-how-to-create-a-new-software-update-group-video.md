@@ -17,14 +17,6 @@ categories:
 ---
 # Creating a new Software Update Group in ConfigMgr 2012
 
-This video is a demonstration of my script which I wrote in December 2012 ([Create a new Software Update Group in ConfigMgr](http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/), [http://david-obrien.net/?p=532](http://david-obrien.net/?p=532)).
+This video is a demonstration of my script which I wrote in December 2012 ([Create a new Software Update Group in ConfigMgr](/2012/12/02/create-a-new-software-update-group-in-configmgr/), [/2012/12/02/create-a-new-software-update-group-in-configmgr/](/2012/12/02/create-a-new-software-update-group-in-configmgr/)).
 
 I tweaked the script a bit in order to support some more features, which some people and I myself whished for.
-
-<div class='jwplayer' id='jwplayer-2'>
-</div>
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-

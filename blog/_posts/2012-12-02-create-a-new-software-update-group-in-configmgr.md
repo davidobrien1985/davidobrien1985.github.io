@@ -28,12 +28,12 @@ tags:
 ---
 **[Update 07.01.2013]**
 
-This post is still valid. Nevertheless, find a more recent script version here: ["Update: How to create a new Software Update Group in ConfigMgr 2012"]("Update: How to create a new Software Update Group in ConfigMgr 2012" http://www.david-obrien.net/2013/01/07/update-how-to-create-a-new-software-update-group-in-configmgr-2012/)
+This post is still valid. Nevertheless, find a more recent script version here: ["Update: How to create a new Software Update Group in ConfigMgr 2012"]("Update: How to create a new Software Update Group in ConfigMgr 2012" /2013/01/07/update-how-to-create-a-new-software-update-group-in-configmgr-2012/)
 
 On my way to automating everything possible in Microsoft System Center 2012 Configuration Manager I thought about new things to play with.
-  
+
 A week ago a colleague of mine asked me some questions regarding Software Update management in ConfigMgr and how we should handle them in a project that we both are currently working on.
-  
+
 His questions were related to how we would manage new software updates coming in every month.
 
 That brought up the idea of scripting the creation of new Software Update groups and adding new updates to them.
@@ -43,20 +43,18 @@ That brought up the idea of scripting the creation of new Software Update groups
 Unfortunately Microsoft doesn’t give us a cmdlet to just create a new Software Update group, so we have to do it ourself.
 
 I’m still learning a lot of Powershell and those embedded properties in WMI were quite a challenge for me.
-  
+
 In order to create a new Software Update Group one has to use the WMI class SMS_AuthorizationList (clearly!) and this has a lot of properties. ([MSDN: SMS_AuthorizationList](http://msdn.microsoft.com/en-us/library/hh949278.aspx))
-  
+
 For example the Software Update Group’s name is a lazy property and if you want to set it you have to do it via another embedded class ([MSDN: SMS_CI_LocalizedProperties](http://msdn.microsoft.com/en-us/library/cc145662.aspx)).
-  
+
 If you want to know what a lazy property is, have a look at Trevor Sullivan’s blog article about those weirdos: [http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/]("http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/" http://trevorsullivan.net/2010/09/28/powershell-configmgr-wmi-provider-feat-lazy-properties/)
 
 For the stuff we want to do we need the following WMI classes:
 
-  * SMS_SoftwareUpdate
-  * SMS\_CI\_LocalizedProperties
-  * SMS_AuthorizationList
-
-# 
+* SMS_SoftwareUpdate
+* SMS\_CI\_LocalizedProperties
+* SMS_AuthorizationList
 
 # Find the updates and link them
 
@@ -67,32 +65,26 @@ First we need to find the future members of our new Update Group. That was a bit
 ## How do I find the Knowledge Base ID?
 
 Every update by Microsoft is published on their site, for example a Dot Net 3.5 SP1 hotfix for Windows 7 can be found here: [http://support.microsoft.com/kb/976462]("http://support.microsoft.com/kb/976462" http://support.microsoft.com/kb/976462)
-  
+
 For our script to run you’ll need the number at the end of the URL, 976462.
 
 With this ID the script can now parse the SMS\_SoftwareUpdate class and find the CI\_ID we need to link this update to our new Update Group we’re about to create.
 
-<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
-  <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">(gwmi -ns root\sms\site_$($SiteCode) -class SMS_SoftwareUpdate | where {$_.ArticleID -eq $KBID }).CI_ID
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+```
+(gwmi -ns root\sms\site_$($SiteCode) -class SMS_SoftwareUpdate | where {$_.ArticleID -eq $KBID }).CI_ID
+```
 
 # Name the Update Group
 
 Looking at the SMS_AuthorizationList class we see the following properties:
 
-  * ****LocalizedDescription****
-  * ****LocalizedDisplayName****
-  * ****LocalizedInformativeURL****
-  * ****LocalizedPropertyLocaleID****
+* ****LocalizedDescription****
+* ****LocalizedDisplayName****
+* ****LocalizedInformativeURL****
+* ****LocalizedPropertyLocaleID****
 
 Cool, DisplayName, absolutely what we want! Unfortunately, this property is read-only. Damn!!!
-  
+
 What now?
 
 The property **LocalizedInformation** is read/write and seems to be able of what we want to achieve, naming the group. This property consists of an embedded WMI class named SMS\_CI\_LocalizedProperties.
@@ -101,355 +93,57 @@ Filling in the properties isn’t that difficult, you’ll see.
 
 # Create the Update Group
 
-This one is easy again. Create an instance of the SMS_AuthorizationList class, fill in the info and commit it, et voila! <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://david-obrien.de/wp-content/uploads/2012/12/wlEmoticon-winkingsmile.png" alt="Winking smile" />
+This one is easy again. Create an instance of the SMS_AuthorizationList class, fill in the info and commit it, et voila! ;-)
 
 This is the whole script:
 
-<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
-  <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">&lt;#
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">Functionality: This script creates a new Software Update Group in Microsoft System Center 2012 Configuration Manager
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">How does it work: create-SoftwareUpdateGroup.ps1 -UpdateGroupName $Name -KnowledgeBaseIDs $KBID -SiteCode
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">KnowledgeBaseID can contain comma separated KnowledgeBase IDs like 981852,16795779
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">Author: David O'Brien, david.obrien@sepago.de
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">Date: 02.12.2012
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">#&gt;
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">param (
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[string]$UpdateGroupName,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[array]$KnowledgeBaseIDs,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[string]$SiteCode
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Function create-Group {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[array]$CIIDs = @()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">foreach ($KBID in $KnowledgeBaseIDs)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $KBID
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $CIID = (gwmi -ns root\sms\site_$($SiteCode) -class SMS_SoftwareUpdate | where {$_.ArticleID -eq $KBID }).CI_ID
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $CIIDs += $CIID
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_CI_LocalizedProperties = "SMS_CI_LocalizedProperties"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$class_Localization = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$class_Localization.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_CI_LocalizedProperties)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$Localization = $class_Localization.CreateInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$Localization.DisplayName = $UpdateGroupName
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$Localization.LocaleID = 1033
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$Description += $Localization
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMSAuthorizationList = "SMS_AuthorizationList"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$class_AuthList = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$class_AuthList.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMSAuthorizationList)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$AuthList = $class_AuthList.CreateInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$AuthList.Updates = $CIIDs
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$AuthList.LocalizedInformation = $Description
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$AuthList.Put() | Out-Null
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">create-Group
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+```PowerShell
+<#
+Functionality: This script creates a new Software Update Group in Microsoft System Center 2012 Configuration Manager
+How does it work: create-SoftwareUpdateGroup.ps1 -UpdateGroupName $Name -KnowledgeBaseIDs $KBID -SiteCode
+KnowledgeBaseID can contain comma separated KnowledgeBase IDs like 981852,16795779
+Author: David O'Brien, david.obrien@sepago.de
+Date: 02.12.2012
+#>
+
+param (
+
+[string]$UpdateGroupName,
+[array]$KnowledgeBaseIDs,
+[string]$SiteCode
+)
+
+Function create-Group {
+
+[array]$CIIDs = @()
+
+foreach ($KBID in $KnowledgeBaseIDs)
+
+  {
+    $KBID
+    $CIID = (gwmi -ns root\sms\site_$($SiteCode) -class SMS_SoftwareUpdate | where {$_.ArticleID -eq $KBID }).CI_ID
+    $CIIDs += $CIID
+  }
+
+$SMS_CI_LocalizedProperties = "SMS_CI_LocalizedProperties"
+$class_Localization = [wmiclass]""
+$class_Localization.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_CI_LocalizedProperties)"
+$Localization = $class_Localization.CreateInstance()
+$Localization.DisplayName = $UpdateGroupName
+$Localization.LocaleID = 1033
+$Description += $Localization
+$SMSAuthorizationList = "SMS_AuthorizationList"
+$class_AuthList = [wmiclass]""
+$class_AuthList.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMSAuthorizationList)"
+$AuthList = $class_AuthList.CreateInstance()
+$AuthList.Updates = $CIIDs
+$AuthList.LocalizedInformation = $Description
+$AuthList.Put() | Out-Null
+
+}
+
+create-Group
+```
 
 # How do you use it?
 
@@ -458,25 +152,19 @@ Save the script under what ever name you like and execute it like this:
 create-SoftwareUpdateGroup.ps1 -UpdateGroupName $Name -KnowledgeBaseIDs $KBID –SiteCode $YourSiteCode
 
 $Name is the name of the Update Group you’re about to create.
-  
+
 $KBID is an array of the Knowledge Base IDs, e.g. 981852,16795779
-  
+
 $SiteCode is your Configuration Manager Site SiteCode
 
 # What’s next?
 
-This is version 0.1 <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://david-obrien.de/wp-content/uploads/2012/12/wlEmoticon-winkingsmile.png" alt="Winking smile" />
-  
+This is version 0.1.
+
 Following the completion of this version I had some more ideas that I like to put into the script, like using a text file/csv file with the KB IDs, rather than typing them on the command line.
-  
+
 The script needs error handling! Right now it won’t tell you what it did and if there was an error at some point.
-  
+
 Interaction: One KB can contain more than one hotfixes (e.g. KB890830). If the script finds more than one hotfix it should ask which one to add. Right now it adds all of them.
 
-I hope you like it! Text me here or on Twitter ([@david_obrien](http://www.twitter.com/david_obrien)) if you do. 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+I hope you like it! Text me here or on Twitter ([@david_obrien](http://www.twitter.com/david_obrien)) if you do.
