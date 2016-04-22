@@ -23,9 +23,9 @@ tags:
   - scripting
   - System Center Configuration Manager
 ---
-This is a quick one. A user on the [ConfigMgr SDK technet forums](http://social.technet.microsoft.com/Forums/en-US/9528f907-08a3-4fca-9dc4-e35575b490d4/need-a-script-to-change-package-distribution-settings) asked this question on how to change the package's option "Prestaged distribution point settings".<figure class="wp-caption aligncenter" style="max-width: 244px">
+This is a quick one. A user on the [ConfigMgr SDK technet forums](http://social.technet.microsoft.com/Forums/en-US/9528f907-08a3-4fca-9dc4-e35575b490d4/need-a-script-to-change-package-distribution-settings) asked this question on how to change the package's option "Prestaged distribution point settings".
 
-[<img style="margin-left: auto; display: block; margin-right: auto; border: 0px;" title="prestaged_app" alt="Configure prestaged distribution point settings" src="http://www.david-obrien.net/wp-content/uploads/2013/07/prestaged_app_thumb.jpg" width="244" height="224" border="0" />]("prestaged_app" http://www.david-obrien.net/wp-content/uploads/2013/07/prestaged_app.jpg)<figcaption class="wp-caption-text">Configure prestaged distribution point settings</figcaption></figure> 
+![prestaged app](/media/2013/07/prestaged_app.jpg)
 
 These three options all configure how a distribution point, that is enabled for prestaged content will behave regarding content download. The DP can either automatically download content, that's distributed to it, or only download content changes (so the initial replication of files needs to be 'offline') or it only accepts manually copied content.
 
@@ -35,9 +35,9 @@ This option is again configured on the SMS_Package WMI class and lies inside the
 
 These three integer values can be set:
 
-  * 16777216 for 'Manually copy content'
-  * 32 for 'Automatically download content'
-  * 16 for 'Download only changes'
+* 16777216 for 'Manually copy content'
+* 32 for 'Automatically download content'
+* 16 for 'Download only changes'
 
 # Applications
 
@@ -47,14 +47,13 @@ You can download the script here: [https://davidobrien.codeplex.com/SourceContro
 
 And here it is:
 
-<div class="wlWriterEditableSmartContent" id="scid:812469c5-0cb0-4c63-8c15-c81123a09de7:c7855446-96fd-478d-bbbf-4d1a09e3b7d4" style="float: none; margin: 0px; display: inline; padding: 0px;">
-  <pre class="vb">&lt;#
+```
 .SYNOPSIS
-	Script to set the "prestaged distribution point settings" option for every package in a folder
+    Script to set the "prestaged distribution point settings" option for every package in a folder
 .DESCRIPTION
-	Script to set the "prestaged distribution point settings" option for every package in a folder
+    Script to set the "prestaged distribution point settings" option for every package in a folder
 .PARAMETER SMSProvider
-    Hostname or FQDN of a SMSProvider in the Hierarchy 
+    Hostname or FQDN of a SMSProvider in the Hierarchy
     This parameter is mandatory!
     This parameter has an alias of SMS.
 .PARAMETER FolderName
@@ -62,26 +61,26 @@ And here it is:
     This parameter is mandatory!
     This parameter has an alias of FN.
 .EXAMPLE
-	PS C:\PSScript &gt; .\set-PackagePrestageDownloadBehaviour.ps1 -SMSProvider cm12 -FolderName test -verbose
+    PS C:\PSScript &gt; .\set-PackagePrestageDownloadBehaviour.ps1 -SMSProvider cm12 -FolderName test -verbose
 
     This will use CM12 as SMS Provider.
     This will use "Test" as the folder in which you want all packages to get edited.
     Will give you some verbose output.
 .INPUTS
-	None.  You cannot pipe objects to this script.
+    None.  You cannot pipe objects to this script.
 .OUTPUTS
-	No objects are output from this script.  This script creates a Word document.
+    No objects are output from this script.  This script creates a Word document.
 .LINK
-	http://www.david-obrien.net
+    http://www.david-obrien.net
 .NOTES
-	NAME: set-PackagePrestageDownloadBehaviour.ps1
-	VERSION: 1.0
-	AUTHOR: David O'Brien
-	LASTEDIT: July 24, 2013
+    NAME: set-PackagePrestageDownloadBehaviour.ps1
+    VERSION: 1.0
+    AUTHOR: David O'Brien
+    LASTEDIT: July 24, 2013
     Change history:
 .REMARKS
-	To see the examples, type: "Get-Help .\set-PackagePrestageDownloadBehaviour.ps1 -examples".
-	For more information, type: "Get-Help .\set-PackagePrestageDownloadBehaviour.ps1 -detailed".
+    To see the examples, type: "Get-Help .\set-PackagePrestageDownloadBehaviour.ps1 -examples".
+    For more information, type: "Get-Help .\set-PackagePrestageDownloadBehaviour.ps1 -detailed".
     This script will only work with Powershell 3.0.
 #&gt;
 
@@ -89,19 +88,19 @@ And here it is:
 
 param(
     [parameter(
-	Position = 1, 
-	Mandatory=$true )
-	] 
-	[Alias("SMS")]
-	[ValidateNotNullOrEmpty()]
+    Position = 1,
+    Mandatory=$true )
+    ]
+    [Alias("SMS")]
+    [ValidateNotNullOrEmpty()]
     [string]$SMSProvider = "",
 
     [parameter(
-	Position = 2, 
-	Mandatory=$true )
-	] 
-	[Alias("FN")]
-	[ValidateNotNullOrEmpty()]
+    Position = 2,
+    Mandatory=$true )
+    ]
+    [Alias("FN")]
+    [ValidateNotNullOrEmpty()]
     [string]$FolderName = ""
 )
 
@@ -125,7 +124,7 @@ $Packages = (Get-WmiObject -Class SMS_ObjectContainerItem -Namespace "root\SMS\s
 
 foreach ($Pkg in $Packages)
     {
-        try 
+        try
             {
                 $Pkg = Get-WmiObject -Class SMS_Package -Namespace root\sms\site_$SiteCode -ComputerName $SMSProvider -Filter "PackageID ='$($Pkg)'"
                 $Pkg = [wmi]$Pkg.__PATH
@@ -138,10 +137,4 @@ foreach ($Pkg in $Packages)
                 Write-Verbose "$($Pkg.Name) could not be edited."
             }
     }
-</div>
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+```

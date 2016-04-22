@@ -30,7 +30,7 @@ I already wrote about how to deploy a SMA (Service Management Automation) runboo
 
 The custom module released by Microsoft to be used to install a new SMA environment is actually pretty awesome. It already comes with six ready-to-go examples.
 
-[<img class="img-responsive aligncenter  wp-image-2681" src="http://www.david-obrien.net/wp-content/uploads/2014/11/xSCSMA_Examples.png" alt="xSCSMA_Examples" width="444" height="142" srcset="/media/2014/11/xSCSMA_Examples-1024x327.png 1024w, /media/2014/11/xSCSMA_Examples.png 1088w" sizes="(max-width: 444px) 100vw, 444px" />](http://www.david-obrien.net/wp-content/uploads/2014/11/xSCSMA_Examples.png)It doesn't matter if you'd like to deploy to only one server or multiple servers, if your SQL is a standalone machine or on the same box or even if you would like to a deployment on Server Technical Preview, you can use these examples and get your SMA environment up and running in no time.
+[<img class="img-responsive aligncenter  wp-image-2681" src="/media/2014/11/xSCSMA_Examples.png" alt="xSCSMA_Examples" width="444" height="142" srcset="/media/2014/11/xSCSMA_Examples-1024x327.png 1024w, /media/2014/11/xSCSMA_Examples.png 1088w" sizes="(max-width: 444px) 100vw, 444px" />](/media/2014/11/xSCSMA_Examples.png)It doesn't matter if you'd like to deploy to only one server or multiple servers, if your SQL is a standalone machine or on the same box or even if you would like to a deployment on Server Technical Preview, you can use these examples and get your SMA environment up and running in no time.
 
 **SMA Runbook Worker installation**
 

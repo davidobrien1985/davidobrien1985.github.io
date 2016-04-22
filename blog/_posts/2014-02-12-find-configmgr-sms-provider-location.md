@@ -43,7 +43,7 @@ What’s the SMS Provider you ask? Quoting [http://technet.microsoft.com/en-us/l
 
 To find all the SMS Providers in your environment you can check via the Console by looking at the Administration Node –> Site Configuration –> Sites and open up the Site’s properties.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Site Properties" alt="SCCM Site Properties" src="http://www.david-obrien.net/wp-content/uploads/2014/02/image_thumb3.png" width="224" height="126" border="0" />]("SCCM Site Properties" http://www.david-obrien.net/wp-content/uploads/2014/02/image3.png)
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Site Properties" alt="SCCM Site Properties" src="/media/2014/02/image_thumb3.png" width="224" height="126" border="0" />]("SCCM Site Properties" /media/2014/02/image3.png)
 
 You see that I have two SMS Providers in my environment.
 
@@ -63,7 +63,7 @@ As an alternative you can just open up a Powershell on one SMS Provider you know
 
 This will give you something like this:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SMS_ProviderLocation" alt="SMS_ProviderLocation" src="http://www.david-obrien.net/wp-content/uploads/2014/02/image_thumb4.png" width="244" height="34" border="0" />]("SMS_ProviderLocation" http://www.david-obrien.net/wp-content/uploads/2014/02/image4.png) 
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SMS_ProviderLocation" alt="SMS_ProviderLocation" src="/media/2014/02/image_thumb4.png" width="244" height="34" border="0" />]("SMS_ProviderLocation" /media/2014/02/image4.png) 
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)

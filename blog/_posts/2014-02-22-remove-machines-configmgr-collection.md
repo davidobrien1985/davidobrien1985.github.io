@@ -45,17 +45,17 @@ With the help of System Center 2012 R2 Orchestrator you would be able to trigger
 The Orchestrator runbook, if we would want to keep it REALLY simple, could look like this:  
 [<img src="/media/2015/01/1422177636_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177636_full.png)
 
-[](http://www.david-obrien.net/wp-content/uploads/2014/02/image6.png) Configure it like this:[](http://www.david-obrien.net/wp-content/uploads/2014/02/image7.png) 
+[](/media/2014/02/image6.png) Configure it like this:[](/media/2014/02/image7.png) 
 
 <p class="wrapped">
 </p>
 
-[](http://www.david-obrien.net/wp-content/uploads/2014/02/image8.png)[<img src="/media/2015/01/1422177721_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177721_full.png) 
+[](/media/2014/02/image8.png)[<img src="/media/2015/01/1422177721_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177721_full.png) 
 
 [<img src="/media/2015/01/1422177764_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177764_full.png)
 
 Check in the runbook and go back to the ConfigMgr console and edit your Task Sequence. The following will only work if you have MDT integrated into your ConfigMgr console, otherwise you won’t have access to the step I’m going to show you next.  
-[](http://www.david-obrien.net/wp-content/uploads/2014/02/image9.png)[<img src="/media/2015/01/1422177838_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177838_full.png)  
+[](/media/2014/02/image9.png)[<img src="/media/2015/01/1422177838_thumb.png" align="middle" class="full aligncenter" title="" alt="" />](/media/2015/01/1422177838_full.png)  
 Near the end of my Win 8.1 deployment Task Sequence I add a step which will execute an Orchestrator Runbook. Again, you will only be able to select that step if you integrated the MDT Task Sequence extensions to your console. You only need to provide your Orchestrator server and select the appropriate Runbook. I select to specify the parameters myself that are needed for the “Initialize Data” Runbook activity. The ClientName will use the built-in OSD variable %OSDComputerName% and the CollectionID I set as a collection variable.
   
 I don’t need the Task Sequence to wait for runbook completion, so I just uncheck that box.

@@ -27,38 +27,38 @@ But how do these new features look like?
 
 Up until ConfigMgr 2012 SP1 CU2 the Powershell module was x86 (32bit) only. This was sometimes a bit annoying when writing scripts and you needed to access 64bit resources and then 32bit stuff again. But now these problems are gone, Microsoft blessed us with a 64bit Powershell module.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="PScmdlets" alt="64bit Powershell" src="http://www.david-obrien.net/wp-content/uploads/2013/06/PScmdlets_thumb.jpg" width="270" height="39" border="0" />]("PScmdlets" http://www.david-obrien.net/wp-content/uploads/2013/06/PScmdlets.jpg)
+![PSCmdlets](/media/2013/06/PScmdlets.jpg)
 
 Now all these problems are gone, we can script in 64bit Powershell… or can we?!?!
 
 These are the cmdlets that (at this stage of tech preview!) are not available in 64bit, we still need to run these from a 32bit Powershell:
 
->   * Add-CMDistributionPoint
->   * Export-AntiMalwarePolicy
->   * Get-CMAntiMalwarePolicy
->   * Get-CMClientSettings
->   * New-CMSecondarySite
->   * New-CMTaskSequenceMedia
->   * New-CMVhd
->   * Publish-CMPrestageContent
->   * Publish-CMPrestageContentTaskSequence
->   * Set-CMAntiMalwarePolicy
->   * Set-CMClientSettings
->   * Set-CMDistributionPoint
->   * Set-CMVhd
->   * Start-CMDistributionPointUpgrade
+* Add-CMDistributionPoint
+* Export-AntiMalwarePolicy
+* Get-CMAntiMalwarePolicy
+* Get-CMClientSettings
+* New-CMSecondarySite
+* New-CMTaskSequenceMedia
+* New-CMVhd
+* Publish-CMPrestageContent
+* Publish-CMPrestageContentTaskSequence
+* Set-CMAntiMalwarePolicy
+* Set-CMClientSettings
+* Set-CMDistributionPoint
+* Set-CMVhd
+* Start-CMDistributionPointUpgrade
 
 ## Task Sequences
 
 There are quite some new options available inside the Task sequences.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb24.png" width="244" height="158" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image24.png)
+![image](/media/2013/06/image24.png)
 
 We can now install previously captured images into VHDs. Those then can be imported into SCVMM and deployed from there.
 
 Here are the new options inside the TS:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb25.png" width="244" height="170" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image25.png)
+![image](/media/2013/06/image25.png)
 
 It’s been already said that some MDT features have been put natively into ConfigMgr. And here they are!
 
@@ -66,7 +66,7 @@ It’s been already said that some MDT features have been put natively into Conf
 
 We are now able to run powershell scripts directly from the TS without MDT and without using the ‘run commandline’ step.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb26.png" width="244" height="132" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image26.png)
+![image](/media/2013/06/image26.png)
 
 This will be used most of the time by me!
 
@@ -74,17 +74,17 @@ This will be used most of the time by me!
 
 Another MDT step put into ConfigMgr. ‘Set dynamic variables’ during the Task Sequence depending on dynamic rules and variables you configure. If any of it are true, the variables wil be set.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb27.png" width="244" height="189" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image27.png)
+![image](/media/2013/06/image27.png)
 
 You can even chose from the existing TS variables that are available during TS execution.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb28.png" width="219" height="244" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image28.png)
+![image](/media/2013/06/image28.png)
 
 ### Check readiness
 
 Another powerful step for your Task Sequence. You can now check the readiness of the client the TS is running on and then decide if the client is suitable to go any further with the installation.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb29.png" width="244" height="109" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image29.png)
+![image](/media/2013/06/image29.png)
 
 ## Client Settings
 
@@ -92,32 +92,24 @@ What Client Settings are actually applied to this or that client? Ever asked you
 
 Now we have a resultant set of client settings:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb30.png" width="244" height="50" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image30.png)
+![image](/media/2013/06/image30.png)
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb31.png" width="244" height="188" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image31.png)
+![image](/media/2013/06/image31.png)
 
 ## Boot images
 
 As we now moved to R2 and also the new OSes are coming out, also the Boot Images got updated from Windows 8 to Windows 8.1
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb32.png" width="244" height="34" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image32.png)
+![image](/media/2013/06/image32.png)
 
 The two at the top are the new ones, the one below is the WinPE of Windows 8.
 
-It is now again possible to import and deploy WinPE 3.1, there was a problem on certain hardware with WinPE 4 (see here: [http://henkhoogendoorn.blogspot.nl/2013/05/bsod-in-vmware-41-when-booting-with.html]("http://henkhoogendoorn.blogspot.nl/2013/05/bsod-in-vmware-41-when-booting-with.html" http://henkhoogendoorn.blogspot.nl/2013/05/bsod-in-vmware-41-when-booting-with.html)).
+It is now again possible to import and deploy WinPE 3.1, there was a problem on certain hardware with WinPE 4 (see here: [http://henkhoogendoorn.blogspot.nl/2013/05/bsod-in-vmware-41-when-booting-with.html](http://henkhoogendoorn.blogspot.nl/2013/05/bsod-in-vmware-41-when-booting-with.html)).
 
 ## Virtual Hard Disks
 
 There is this node ‘Virtual Hard Disks’ where I suppose one can create a new VHD, but it is greyed out in my console.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/06/image_thumb33.png" width="244" height="227" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/06/image33.png)
+![image](/media/2013/06/image33.png)
 
-&nbsp;
-
-I will update this post with more info in the future. 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+I will update this post with more info in the future.

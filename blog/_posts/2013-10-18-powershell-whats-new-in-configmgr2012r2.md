@@ -26,7 +26,7 @@ I just did the upgrade of my local ConfigMgr Lab from 2012 R2 PREVIEW (!) to RTM
 
 This is a comparison of the number of cmdlets we had in R2 Preview to the number we have now:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border-width: 0px;" title="cmdlets_before_after" alt="cmdlets_before_after" src="http://www.david-obrien.net/wp-content/uploads/2013/10/cmdlets_before_after_thumb.jpg" width="358" height="29" border="0" />]("cmdlets_before_after" http://www.david-obrien.net/wp-content/uploads/2013/10/cmdlets_before_after.jpg)
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border-width: 0px;" title="cmdlets_before_after" alt="cmdlets_before_after" src="/media/2013/10/cmdlets_before_after_thumb.jpg" width="358" height="29" border="0" />]("cmdlets_before_after" /media/2013/10/cmdlets_before_after.jpg)
 
 And here’s a list of the cmdlets that are new for us in R2 RTM:
 

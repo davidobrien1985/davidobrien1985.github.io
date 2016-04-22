@@ -70,7 +70,7 @@ In line 1 just change the Name of the Client you want to check and in line 2 cha
   
 Because of lines 1 and 5 you need to import the ConfigMgr Powershell module first.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Collection Membership" alt="SCCM Collection Membership" src="http://www.david-obrien.net/wp-content/uploads/2014/01/image_thumb10.png" width="244" height="63" border="0" />]("SCCM Collection Membership" http://www.david-obrien.net/wp-content/uploads/2014/01/image10.png) 
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Collection Membership" alt="SCCM Collection Membership" src="/media/2014/01/image_thumb10.png" width="244" height="63" border="0" />]("SCCM Collection Membership" /media/2014/01/image10.png) 
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)

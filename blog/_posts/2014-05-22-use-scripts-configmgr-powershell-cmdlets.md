@@ -29,11 +29,11 @@ Up until now I always thought it is “common knowledge”, but here you go:
 
 Before doing any automation, log on to the machine which has the admin console installed and against which your scripts, runbooks or whatever are being executed and do the following:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb17.png" alt="image" width="322" height="200" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image17.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb17.png" alt="image" width="322" height="200" border="0" />]("image" /media/2014/05/image17.png)
 
 If that account, on that machine, has never before tried to load the ConfigMgr Powershell module, then the following message will appear:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb18.png" alt="image" width="328" height="130" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image18.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb18.png" alt="image" width="328" height="130" border="0" />]("image" /media/2014/05/image18.png)
 
 Accept this and after that you can run all the automation you want.
 

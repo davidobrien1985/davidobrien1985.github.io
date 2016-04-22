@@ -29,7 +29,7 @@ There has been a new date for the Cloud OS MVP Roadshow announced. The event wil
 
 &nbsp;
 
-<a href="http://www.david-obrien.net/wp-content/uploads/2014/09/clip_image002.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/09/clip_image002.jpg', '']);" name="_MailEndCompose" class="broken_link"><img title="clip_image002" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" border="0" alt="clip_image002" src="http://www.david-obrien.net/wp-content/uploads/2014/09/clip_image002_thumb.jpg" width="291" height="309" /></a>
+<a href="/media/2014/09/clip_image002.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/09/clip_image002.jpg', '']);" name="_MailEndCompose" class="broken_link"><img title="clip_image002" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" border="0" alt="clip_image002" src="/media/2014/09/clip_image002_thumb.jpg" width="291" height="309" /></a>
 
 **[/UPDATE]**
 
@@ -41,7 +41,7 @@ I will be speaking there alongside other MVPs about how to get you away from tha
 
 **<strike>IT'S COMPLETELY FREE!</strike>**
 
-<strike></strike><a href="http://www.david-obrien.net/wp-content/uploads/2014/07/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/wp-content/uploads/2014/07/image.png', '']);" class="broken_link"><strike><img title="image" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" border="0" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/07/image_thumb.png" width="373" height="176" /></strike></a>
+<strike></strike><a href="/media/2014/07/image.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/07/image.png', '']);" class="broken_link"><strike><img title="image" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" border="0" alt="image" src="/media/2014/07/image_thumb.png" width="373" height="176" /></strike></a>
 
 Here is another good write-up about previous Cloud OS Roadshow events: <a href="http://mvp.microsoft.com/en-us/story/Cloud%20OS%20MVP%20Roadshow-20140324162819" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://mvp.microsoft.com/en-us/story/Cloud%20OS%20MVP%20Roadshow-20140324162819', 'http://mvp.microsoft.com/en-us/story/Cloud%20OS%20MVP%20Roadshow-20140324162819']);" title="http://mvp.microsoft.com/en-us/story/Cloud%20OS%20MVP%20Roadshow-20140324162819">http://mvp.microsoft.com/en-us/story/Cloud%20OS%20MVP%20Roadshow-20140324162819</a>
 

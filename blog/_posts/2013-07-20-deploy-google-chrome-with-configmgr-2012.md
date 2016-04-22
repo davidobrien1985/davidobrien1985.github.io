@@ -20,7 +20,7 @@ tags:
   - System Center Configuration Manager
 ---
 Some of you might have already read on Twitter that I'm currently doing a little 'experiment'.
-  
+
 About a month ago I got me a Surface Pro and said to myself, "Now that you got it, you have to use it!" and started to think about how to do that. I came to the conclusion that all the stuff I do on my laptop (Mail, browsing, Word, Powerpoint, Excel) can easily be transfered to the Surface, what about demo labs? Well, that's why I still have the laptop... more in a separate article.
 
 This article will be about deploying Google Chrome with ConfigMgr 2012 to my notebook, which in fact now is managed by my ConfigMgr site.
@@ -35,36 +35,37 @@ The deployment itself is pretty easy. Google is very kind in offering a MSI pack
 
 They even give us loads of GPOs to configure the user experience: [https://support.google.com/chrome/a/answer/187202](https://support.google.com/chrome/a/answer/187202)
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Google Chrome Policies" alt="Google Chrome Policies" src="http://www.david-obrien.net/wp-content/uploads/2013/07/policies_thumb.jpg" width="228" height="244" border="0" />]("Google Chrome Policies" http://www.david-obrien.net/wp-content/uploads/2013/07/policies.jpg)
+![Chrome policies](/media/2013/07/policies.jpg)
 
 After downloading the MSI from above link you're able to deploy Chrome with ConfigMgr.
-  
+
 I'm a big fan of the new Application Model for client deployments (not so much for servers, but that's a different story) and seeing that we already have a MSI, what more could we ask for?
 
 This is how I configured it in ConfigMgr:
 
-[<img style="display: inline; border: 0px;" title="App_creation4" alt="App_creation4" src="http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation4_thumb.jpg" width="244" height="201" border="0" />]("App_creation4" http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation4.jpg) [<img style="display: inline; border: 0px;" title="App_creation1" alt="App_creation1" src="http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation1_thumb.jpg" width="244" height="200" border="0" />]("App_creation1" http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation1.jpg) [<img style="display: inline; border: 0px;" title="App_creation2" alt="App_creation2" src="http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation2_thumb.jpg" width="244" height="202" border="0" />]("App_creation2" http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation2.jpg) [<img style="display: inline; border: 0px;" title="App_creation3" alt="App_creation3" src="http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation3_thumb.jpg" width="244" height="201" border="0" />]("App_creation3" http://www.david-obrien.net/wp-content/uploads/2013/07/App_creation3.jpg)
+![image](/media/2013/07/App_creation4.jpg)
+![image](/media/2013/07/App_creation1.jpg)
+![image](/media/2013/07/App_creation2.jpg)
+![image](/media/2013/07/App_creation3.jpg)
 
 The nice thing with MSI applications is they get their Detection Method created automatically based on the Product Code:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Detection Method" alt="Detection Method" src="http://www.david-obrien.net/wp-content/uploads/2013/07/DT_2_thumb.jpg" width="244" height="210" border="0" />]("Detection Method" http://www.david-obrien.net/wp-content/uploads/2013/07/DT_2.jpg)
+![detection method](/media/2013/07/DT_2.jpg)
 
 I deployed it for a specific user and had a look at the user's Software Center / Application Catalog and there was my new deployment:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="appcatalog_1" alt="appcatalog_1" src="http://www.david-obrien.net/wp-content/uploads/2013/07/appcatalog_1_thumb.jpg" width="244" height="128" border="0" />]("appcatalog_1" http://www.david-obrien.net/wp-content/uploads/2013/07/appcatalog_1.jpg)I don't need an administrator's approval to install the application so I can continue right away until this little fellow tells me that everything went fine:
+![appcatalog](/media/2013/07/appcatalog_1.jpg)
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="softwarecenter_2" alt="softwarecenter_2" src="http://www.david-obrien.net/wp-content/uploads/2013/07/softwarecenter_2_thumb.jpg" width="244" height="140" border="0" />]("softwarecenter_2" http://www.david-obrien.net/wp-content/uploads/2013/07/softwarecenter_2.jpg)  I can confirm the successful installation by looking at the AppEnforce.log on the client, which tells me exactly what happened during execution.
+I don't need an administrator's approval to install the application so I can continue right away until this little fellow tells me that everything went fine:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="AppEnforce.log" alt="AppEnforce.log" src="http://www.david-obrien.net/wp-content/uploads/2013/07/log_2_thumb.jpg" width="244" height="119" border="0" />]("AppEnforce.log" http://www.david-obrien.net/wp-content/uploads/2013/07/log_2.jpg)
+![software center](/media/2013/07/softwarecenter_2.jpg)
+
+I can confirm the successful installation by looking at the AppEnforce.log on the client, which tells me exactly what happened during execution.
+
+![image](/media/2013/07/log_2.jpg)
 
 ## Google Chrome Policies
 
 In the beginning I said that Google provides an admin with GPOs to configure the user's experience. Here's just a quick example for some settings if you take a look at chrome://settings
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="chrome_settings" alt="chrome_settings" src="http://www.david-obrien.net/wp-content/uploads/2013/07/chrome_settings_thumb.jpg" width="244" height="236" border="0" />]("chrome_settings" http://www.david-obrien.net/wp-content/uploads/2013/07/chrome_settings.jpg) 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+![image](/media/2013/07/chrome_settings.jpg)

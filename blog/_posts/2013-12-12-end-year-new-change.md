@@ -31,7 +31,7 @@ These five years have been great to me. My first employer right after my apprent
 
 # Looking ahead - 2014 – all new
 
-[<img style="margin-left: 0px; display: inline; margin-right: 0px; border: 0px;" title="change-management1[1]" alt="change-management1[1]" src="http://www.david-obrien.net/wp-content/uploads/2013/12/changemanagement11_thumb.jpg" width="203" height="153" align="right" border="0" />]("change-management1[1]" http://www.david-obrien.net/wp-content/uploads/2013/12/changemanagement11.jpg)
+[<img style="margin-left: 0px; display: inline; margin-right: 0px; border: 0px;" title="change-management1[1]" alt="change-management1[1]" src="/media/2013/12/changemanagement11_thumb.jpg" width="203" height="153" align="right" border="0" />]("change-management1[1]" /media/2013/12/changemanagement11.jpg)
 
 2014 will be the year of change. I decided to leave sepago by March 2014 and find new challenges. I will still continue to work as an IT Consultant, but I want to do even more around System Center (especially ConfigMgr) than before, only somewhere else. This is a huge step for me personally, my career and also my family (mainly my wife). Why her?
   

@@ -28,7 +28,7 @@ tags:
   - SMA
   - TechEd
 ---
-[<img title="image" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: right; padding-top: 0px; padding-left: 0px; margin-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px; margin-right: 0px" border="0" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2014/09/image_thumb.png" width="244" align="right" height="91" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/09/image.png)I am quite excited to be chosen as a Speaker at the new TechEd format in Australia. The format will be quite different to what it used to be. Instead of four days on the Gold Coast it will now be split into two 2-day events in Sydney and Melbourne. I will have the pleasure to speak at both locations.
+[<img title="image" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: right; padding-top: 0px; padding-left: 0px; margin-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px; margin-right: 0px" border="0" alt="image" src="/media/2014/09/image_thumb.png" width="244" align="right" height="91" />]("image" /media/2014/09/image.png)I am quite excited to be chosen as a Speaker at the new TechEd format in Australia. The format will be quite different to what it used to be. Instead of four days on the Gold Coast it will now be split into two 2-day events in Sydney and Melbourne. I will have the pleasure to speak at both locations.
 
 # Datacenter transformation
 

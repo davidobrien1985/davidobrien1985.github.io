@@ -25,7 +25,7 @@ Besides leaving the Setup Screen open (which fellow MVP Peter Daalmans also ment
 
 In order to do this, just open up your updated Admin Console and go to your Monitoring – Reporting – Reports node.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Reports" alt="SCCM Reports" src="http://www.david-obrien.net/wp-content/uploads/2014/01/image_thumb9.png" width="244" height="104" border="0" />]("SCCM Reports" http://www.david-obrien.net/wp-content/uploads/2014/01/image9.png)
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Reports" alt="SCCM Reports" src="/media/2014/01/image_thumb9.png" width="244" height="104" border="0" />]("SCCM Reports" /media/2014/01/image9.png)
 
 Then just run ANY report you like, for example “All Collections”. If no window opens, I mean actually nothing happens after selecting “Run”, then the Reportviewer hasn’t been installed correctly. If that is the case, go into your [\\$server\SMS_$SiteCode\tools\ConsoleSetup](file://\\$server\SMS_$SiteCode\tools\ConsoleSetup) share and manually reinstall “ReportViewer.exe”.
 

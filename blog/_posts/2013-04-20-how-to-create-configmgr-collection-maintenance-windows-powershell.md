@@ -27,7 +27,7 @@ Here’s another one from my todo list (it’s getting shorter by the day…).
 # What are Maintenance Windows in Microsoft ConfigMgr 2012 ?
 
 A customer once asked me what those maintenance windows on collections are for and if he had to create them on every collection he has.
-  
+
 If you don’t know the answer to either of those two questions, read these articles:
 
 [http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/](http://allthingsconfigmgr.wordpress.com/2012/06/13/configmgr-101-maintenance-windows/)
@@ -44,8 +44,8 @@ This article shows you an example of how to create a new maintenance window for 
 
 ## SMS_ScheduleMethods
 
-We’re going to use one of the WMI subclasses of SMS_ScheduleMethods again which we already know from my script to automate the Offline Servicing process for OS images. (here: [Automation of Offline Servicing](http://www.david-obrien.net/2012/12/17/how-to-automate-offline-servicing-in-configuration-manager-2012/))
-  
+We’re going to use one of the WMI subclasses of SMS_ScheduleMethods again which we already know from my script to automate the Offline Servicing process for OS images. (here: [Automation of Offline Servicing](/2012/12/17/how-to-automate-offline-servicing-in-configuration-manager-2012/))
+
 Today it’ll be the [SMS_ST_RecurInterval](http://msdn.microsoft.com/en-us/library/hh948339.aspx) class which will help us achieve our task.
 
 ## SMS_ServiceWindow
@@ -53,9 +53,9 @@ Today it’ll be the [SMS_ST_RecurInterval](http://msdn.microsoft.com/en-us/libr
 This class ([SMS_ServiceWindow](http://msdn.microsoft.com/en-us/library/cc143300.aspx)) will define our maintenance / service window and will be embedded into the SMS_CollectionSettings instance of that collection which we want to configure.
 
 As usual, this is a lazy property and we need the WMI instance of our collection and in comparison to my earlier scripts I found a slightly easier way on doing so.
-  
+
 I obviously don’t need the “foreach loop” anymore if I already know that my variable only contains one instance of what I’m looking for, I’ll just do a $variable.Get().
-  
+
 Have a look at the script and you’ll know what I mean!
 
 This script should help you create lots of different maintenance windows (only 12hrs a day, certain time of the day, …).
@@ -66,524 +66,134 @@ Here’s the link to Codeplex: [https://davidobrien.codeplex.com/SourceControl/c
 
 How to use it:
 
-<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
-  <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">.\New-MaintenanceWindow.ps1 -SiteCode PR1 -ServiceWindowName "New Maintenance Window" -ServiceWindowDescription "24hrs maintenance window" -CollectionID PR10003A
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+```
+.\New-MaintenanceWindow.ps1 -SiteCode PR1 -ServiceWindowName "New Maintenance Window" -ServiceWindowDescription "24hrs maintenance window" -CollectionID PR10003A
+```
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="Create new maintenance window on SCCM collection" src="http://www.david-obrien.net/wp-content/uploads/2013/04/image_thumb4.png" width="303" height="232" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/04/image4.png)
+![create new maintenance window](/media/2013/04/image4.png)
 
-&nbsp;
+```
+[CmdletBinding()]
 
-<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
-  <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[CmdletBinding()]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">param(
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[string]$SiteCode,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[string]$ServiceWindowName,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[string]$ServiceWindowDescription,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[string]$CollectionID
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Function Convert-NormalDateToConfigMgrDate {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [CmdletBinding()]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    param (
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        [parameter(Mandatory=$true, ValueFromPipeline=$true)]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        [string]$starttime
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    )
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    return [System.Management.ManagementDateTimeconverter]::ToDMTFDateTime($starttime)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Function create-ScheduleToken {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_ST_RecurInterval = "SMS_ST_RecurInterval"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$class_SMS_ST_RecurInterval = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$class_SMS_ST_RecurInterval.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_ST_RecurInterval)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$scheduleToken = $class_SMS_ST_RecurInterval.CreateInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    if($scheduleToken)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $scheduleToken.DayDuration = 1
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $scheduleToken.HourDuration = 0
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $scheduleToken.IsGMT = $false
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $scheduleToken.MinuteDuration = 0
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $scheduleToken.StartTime = (Convert-NormalDateToConfigMgrDate $startTime)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $SMS_ScheduleMethods = "SMS_ScheduleMethods"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $class_SMS_ScheduleMethods = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $class_SMS_ScheduleMethods.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_ScheduleMethods)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $script:ScheduleString = $class_SMS_ScheduleMethods.WriteToString($scheduleToken)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        [string]$ScheduleString.StringData
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Function New-SMSServiceWindow {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$CollSettings = Get-WmiObject -class sms_collectionsettings -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.CollectionID -eq "$($CollectionID)"}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$CollSettings = [wmi]$CollSettings.__PATH
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$CollSettings.Get()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_ServiceWindow = "SMS_ServiceWindow"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$class_SMS_ServiceWindow = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$class_SMS_ServiceWindow.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_ServiceWindow)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_ServiceWindow = $class_SMS_ServiceWindow.CreateInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_ServiceWindow.Name                     = "$($ServiceWindowName)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_ServiceWindow.Description              = "$($ServiceWindowDescription)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_ServiceWindow.IsEnabled                = $true
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_ServiceWindow.ServiceWindowSchedules   = $scheduleString
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_ServiceWindow.ServiceWindowType        = 1 #1 is General, 5 is for OSD
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_ServiceWindow.StartTime                = "$(Get-Date -Format "yyyyMMddhhmmss.ffffff+***")"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$CollSettings.ServiceWindows += $SMS_ServiceWindow.psobject.baseobject
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$CollSettings.Put() |Out-Null
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">##############################################
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[datetime]$startTime = get-date
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$schedulestring = create-ScheduleToken
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">try
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        New-SMSServiceWindow
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">catch
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        Write-Error "There was an error creating the Maintenance Window $($ServiceWindowName) for Collection ID $($CollectionID)."
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+param(
 
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
+[string]$SiteCode,
 
+[string]$ServiceWindowName,
 
+[string]$ServiceWindowDescription,
+
+[string]$CollectionID
+
+)
+
+Function Convert-NormalDateToConfigMgrDate {
+
+    [CmdletBinding()]
+
+    param (
+
+        [parameter(Mandatory=$true, ValueFromPipeline=$true)]
+
+        [string]$starttime
+
+    )
+
+    return [System.Management.ManagementDateTimeconverter]::ToDMTFDateTime($starttime)
+
+}
+
+Function create-ScheduleToken {
+
+$SMS_ST_RecurInterval = "SMS_ST_RecurInterval"
+
+$class_SMS_ST_RecurInterval = [wmiclass]""
+
+$class_SMS_ST_RecurInterval.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_ST_RecurInterval)"
+
+$scheduleToken = $class_SMS_ST_RecurInterval.CreateInstance()
+
+    if($scheduleToken)
+
+        {
+
+        $scheduleToken.DayDuration = 1
+
+        $scheduleToken.HourDuration = 0
+
+        $scheduleToken.IsGMT = $false
+
+        $scheduleToken.MinuteDuration = 0
+
+        $scheduleToken.StartTime = (Convert-NormalDateToConfigMgrDate $startTime)
+
+        $SMS_ScheduleMethods = "SMS_ScheduleMethods"
+
+        $class_SMS_ScheduleMethods = [wmiclass]""
+
+        $class_SMS_ScheduleMethods.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_ScheduleMethods)"
+
+        $script:ScheduleString = $class_SMS_ScheduleMethods.WriteToString($scheduleToken)
+
+        [string]$ScheduleString.StringData
+
+        }
+
+}
+
+Function New-SMSServiceWindow {
+
+$CollSettings = Get-WmiObject -class sms_collectionsettings -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.CollectionID -eq "$($CollectionID)"}
+
+$CollSettings = [wmi]$CollSettings.__PATH
+
+$CollSettings.Get()
+
+$SMS_ServiceWindow = "SMS_ServiceWindow"
+
+$class_SMS_ServiceWindow = [wmiclass]""
+
+$class_SMS_ServiceWindow.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_ServiceWindow)"
+
+$SMS_ServiceWindow = $class_SMS_ServiceWindow.CreateInstance()
+
+$SMS_ServiceWindow.Name                     = "$($ServiceWindowName)"
+
+$SMS_ServiceWindow.Description              = "$($ServiceWindowDescription)"
+
+$SMS_ServiceWindow.IsEnabled                = $true
+
+$SMS_ServiceWindow.ServiceWindowSchedules   = $scheduleString
+
+$SMS_ServiceWindow.ServiceWindowType        = 1 #1 is General, 5 is for OSD
+
+$SMS_ServiceWindow.StartTime                = "$(Get-Date -Format "yyyyMMddhhmmss.ffffff+***")"
+
+$CollSettings.ServiceWindows += $SMS_ServiceWindow.psobject.baseobject
+
+$CollSettings.Put() |Out-Null
+
+}
+
+##############################################
+
+[datetime]$startTime = get-date
+
+$schedulestring = create-ScheduleToken
+
+try
+
+    {
+
+        New-SMSServiceWindow
+
+    }
+
+catch
+
+    {
+
+        Write-Error "There was an error creating the Maintenance Window $($ServiceWindowName) for Collection ID $($CollectionID)."
+
+    }
+```

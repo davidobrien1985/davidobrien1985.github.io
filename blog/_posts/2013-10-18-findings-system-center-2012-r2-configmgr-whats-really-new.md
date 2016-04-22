@@ -35,13 +35,13 @@ Here are my first few findings (article will probably get some updates over time
 
 Add new Site System Role – Distribution Point
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Add new Distribution Point" alt="Add new Distribution Point" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb9.png" width="244" height="213" border="0" />]("Add new Distribution Point" http://www.david-obrien.net/wp-content/uploads/2013/10/image9.png)
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Add new Distribution Point" alt="Add new Distribution Point" src="/media/2013/10/image_thumb9.png" width="244" height="213" border="0" />]("Add new Distribution Point" /media/2013/10/image9.png)
 
 There’s now a new tickbox available which “Enable and configure this Distribution Point for BranchCache”.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Extensions for Windows Intune" alt="Extensions for Windows Intune" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb10.png" width="219" height="244" border="0" />]("Extensions for Windows Intune" http://www.david-obrien.net/wp-content/uploads/2013/10/image10.png)We get a new node for Windows Intune – Extensions.
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Extensions for Windows Intune" alt="Extensions for Windows Intune" src="/media/2013/10/image_thumb10.png" width="219" height="244" border="0" />]("Extensions for Windows Intune" /media/2013/10/image10.png)We get a new node for Windows Intune – Extensions.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Boot Images" alt="Boot Images" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb11.png" width="281" height="63" border="0" />]("Boot Images" http://www.david-obrien.net/wp-content/uploads/2013/10/image11.png)
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Boot Images" alt="Boot Images" src="/media/2013/10/image_thumb11.png" width="281" height="63" border="0" />]("Boot Images" /media/2013/10/image11.png)
 
 With Windows ADK (Assessment and Deployment Toolkit) 8.1 we now have WinPE 5 Boot Images available.
 

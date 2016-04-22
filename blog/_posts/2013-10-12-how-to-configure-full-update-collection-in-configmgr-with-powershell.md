@@ -495,11 +495,11 @@ Execute the script like this:
 
 Before the script:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb6.png" width="234" height="244" border="0" />]("Collection Properties" http://www.david-obrien.net/wp-content/uploads/2013/10/image6.png)After the script:
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="/media/2013/10/image_thumb6.png" width="234" height="244" border="0" />]("Collection Properties" /media/2013/10/image6.png)After the script:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Powershell script" alt="Powershell script" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb7.png" width="244" height="28" border="0" />]("Powershell script" http://www.david-obrien.net/wp-content/uploads/2013/10/image7.png)
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Powershell script" alt="Powershell script" src="/media/2013/10/image_thumb7.png" width="244" height="28" border="0" />]("Powershell script" /media/2013/10/image7.png)
   
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb8.png" width="236" height="244" border="0" />]("Collection Properties" http://www.david-obrien.net/wp-content/uploads/2013/10/image8.png) 
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Collection Properties" alt="Collection Properties" src="/media/2013/10/image_thumb8.png" width="236" height="244" border="0" />]("Collection Properties" /media/2013/10/image8.png) 
 
 <div style="float: right; margin-left: 10px;">
   [Tweet](https://twitter.com/share)

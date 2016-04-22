@@ -157,7 +157,7 @@ Important information regarding this event:
   
 If you do want to attend and save a bit of money, go and register **BEFORE** this Friday, October 17th.
 
-[http://mms.mnscug.org/]("http://mms.mnscug.org/" http://mms.mnscug.org/) [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="MMS" src="http://www.david-obrien.net/wp-content/uploads/2014/10/MMS_thumb.png" alt="MMS" width="124" height="89" border="0" />]("MMS" http://www.david-obrien.net/wp-content/uploads/2014/10/MMS.png)
+[http://mms.mnscug.org/]("http://mms.mnscug.org/" http://mms.mnscug.org/) [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="MMS" src="/media/2014/10/MMS_thumb.png" alt="MMS" width="124" height="89" border="0" />]("MMS" /media/2014/10/MMS.png)
 
 &nbsp;
 
@@ -173,11 +173,11 @@ Register here for this event up in Queensland / Australia. It's completely **FRE
 
 Register here for this event in Norway: [www.nicconf.com](http://www.nicconf.com)
 
-Looking forward to going back to Europe after already being in Australia for one year <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="http://www.david-obrien.net/wp-content/uploads/2014/10/wlEmoticon-smile.png" alt="Smile" />
+Looking forward to going back to Europe after already being in Australia for one year <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="/media/2014/10/wlEmoticon-smile.png" alt="Smile" />
 
 &nbsp;
 
-Wow, these are a lot of sessions. Need to start preparing <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.net/wp-content/uploads/2014/10/wlEmoticon-winkingsmile1.png" alt="Winking smile" />
+Wow, these are a lot of sessions. Need to start preparing <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2014/10/wlEmoticon-winkingsmile1.png" alt="Winking smile" />
 
 I will update this list if I have to, so check regularly if I am in your area.
 

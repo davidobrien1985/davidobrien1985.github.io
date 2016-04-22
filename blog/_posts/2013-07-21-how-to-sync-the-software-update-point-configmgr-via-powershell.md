@@ -27,7 +27,7 @@ Synchronizing the Software Update Point in a ConfigMgr environment can happen in
 
 This can be configured in your site component's configuration:
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="Software Update Point configuration" alt="Software Update Point configuration" src="http://www.david-obrien.net/wp-content/uploads/2013/07/SUP_settings_thumb.jpg" width="244" height="150" border="0" />]("Software Update Point configuration" http://www.david-obrien.net/wp-content/uploads/2013/07/SUP_settings.jpg)
+![Software Update Point configuration](/media/2013/07/SUP_settings.jpg)
 
 In there you can configure the SUP to synchronize on a schedule or not. If you don't use a schedule, you'll have to sync manually.
 
@@ -37,7 +37,9 @@ Two ways to do that aswell 😉
 
 Synchronizing the SUP manually means log on to the console, go to your Software Library, choose the Software Updates node and then "All Software Updates". You'll then see a "Synchronize Software Updates" button in the upper ribbon.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="synchronize SUP manually" alt="synchronize SUP manually" src="http://www.david-obrien.net/wp-content/uploads/2013/07/SYNC_SUP_thumb.jpg" width="244" height="157" border="0" />]("synchronize SUP manually" http://www.david-obrien.net/wp-content/uploads/2013/07/SYNC_SUP.jpg)Hit that button to synchronize the SUP.
+![synchronize SUP manually](/media/2013/07/SYNC_SUP.jpg)
+
+Hit that button to synchronize the SUP.
 
 # How to use Powershell to sync SUP
 
@@ -47,14 +49,16 @@ It basically calls a method (SyncNow) from the SMS_SoftwareUpdate class.
 
 Execute the script like this:
 
-> .\sync-SUP.ps1 -SMSProvider %NameOfSMSProvider% -verbose
+```
+.\sync-SUP.ps1 -SMSProvider %NameOfSMSProvider% -verbose
+```
 
 The verbose switch is optional and will give you a bit of output in the end.
 
 Here's the script, you can also download it here: [https://davidobrien.codeplex.com/SourceControl/latest#sync-SUP.ps1](https://davidobrien.codeplex.com/SourceControl/latest#sync-SUP.ps1)
 
-<div class="wlWriterEditableSmartContent" id="scid:812469c5-0cb0-4c63-8c15-c81123a09de7:5d58620b-c683-4e80-865a-23ccece25274" style="float: none; margin: 0px; display: inline; padding: 0px;">
-  <pre class="vb">[CmdletBinding( SupportsShouldProcess = $False, ConfirmImpact = "None", DefaultParameterSetName = "" )]
+```
+[CmdletBinding( SupportsShouldProcess = $False, ConfirmImpact = "None", DefaultParameterSetName = "" )]
 
 param(
 [string]$SMSProvider
@@ -89,10 +93,5 @@ else
     {
         Write-Verbose "There was an error syncing the SUP"
     }
-</div>
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+```
 

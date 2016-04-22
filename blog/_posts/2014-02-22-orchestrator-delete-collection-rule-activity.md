@@ -26,7 +26,7 @@ tags:
 <p class="">
 </p>
 
-[](http://www.david-obrien.net/wp-content/uploads/2014/02/image10.png) 
+[](/media/2014/02/image10.png) 
 
 <p class="">
   Adding that activity and editing it will make it look like this:
@@ -37,7 +37,7 @@ tags:
 <p class="">
 </p>
 
-[](http://www.david-obrien.net/wp-content/uploads/2014/02/image11.png) 
+[](/media/2014/02/image11.png) 
 
 If you plan to delete a Direct Membership Rule and now think “nice, it’s already preconfigured to do so”… nope, it’s not.
 
@@ -50,7 +50,7 @@ If you plan to delete a Direct Membership Rule and now think “nice, it’s alr
 <p class="">
 </p>
 
-[](http://www.david-obrien.net/wp-content/uploads/2014/02/image12.png)
+[](/media/2014/02/image12.png)
   
 
 
@@ -62,7 +62,7 @@ Aha… Checking the “Membership Rule Type” selection we see what we actually
 <p class="">
 </p>
 
-[](http://www.david-obrien.net/wp-content/uploads/2014/02/image13.png) 
+[](/media/2014/02/image13.png) 
 
 Thought I’d share, because it took me two failures to actually properly read the error message and find what’s wrong.
 

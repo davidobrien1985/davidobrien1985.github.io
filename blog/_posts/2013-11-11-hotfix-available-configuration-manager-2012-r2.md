@@ -63,11 +63,11 @@ Now is the time to do your backups again, test them and then upgrade your Labs a
 
 With this hotfix KB2905002 come 4 new update packages that need to be deployed in your environment:
 
-[<img class="img-responsive aligncenter size-full wp-image-1458" alt="KB2905002" src="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_console.jpg" width="905" height="210" srcset="/media/2013/11/updates_console-250x58.jpg 250w, /media/2013/11/updates_console.jpg 905w" sizes="(max-width: 905px) 100vw, 905px" />](http://www.david-obrien.net/wp-content/uploads/2013/11/updates_console.jpg)
+[<img class="img-responsive aligncenter size-full wp-image-1458" alt="KB2905002" src="/media/2013/11/updates_console.jpg" width="905" height="210" srcset="/media/2013/11/updates_console-250x58.jpg 250w, /media/2013/11/updates_console.jpg 905w" sizes="(max-width: 905px) 100vw, 905px" />](/media/2013/11/updates_console.jpg)
 
 &nbsp;
 
-[<img class="img-responsive aligncenter size-full wp-image-1459" alt="KB2905002" src="http://www.david-obrien.net/wp-content/uploads/2013/11/updates_filesystem.jpg" width="496" height="180" />](http://www.david-obrien.net/wp-content/uploads/2013/11/updates_filesystem.jpg)
+[<img class="img-responsive aligncenter size-full wp-image-1459" alt="KB2905002" src="/media/2013/11/updates_filesystem.jpg" width="496" height="180" />](/media/2013/11/updates_filesystem.jpg)
 
 Take special care deploying those Client updates during Task Sequences. I usually use this technique: [http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/](http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/)
 

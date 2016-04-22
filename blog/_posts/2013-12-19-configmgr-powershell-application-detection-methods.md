@@ -27,7 +27,7 @@ I am being asked this quite a lot, so I thought I might also write about it a bi
 
 Already a while back a colleague asked me what needs to be done to make Application model Detection Methods work with Custom Powershell scripts.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto;" title="Powershell detection Method SCCM" alt="Powershell detection Method SCCM" src="http://www.david-obrien.net/wp-content/uploads/2013/12/image_thumb.png" width="244" height="161" border="0" />]("Powershell detection Method SCCM" http://www.david-obrien.net/wp-content/uploads/2013/12/image.png)
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto;" title="Powershell detection Method SCCM" alt="Powershell detection Method SCCM" src="/media/2013/12/image_thumb.png" width="244" height="161" border="0" />]("Powershell detection Method SCCM" /media/2013/12/image.png)
 
 I believed it to be really straight forward, but actually in the beginning it was a bit weird.
 
@@ -39,7 +39,7 @@ In general, in order for an Application Deployment to work, you would need to ha
   
 The above TechNet article shows that you can not only use MSI Product Code, but also loads of other ways, like does a certain file exist and does it also have a specific file size.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border-width: 0px;" title="SCCM Detection Method" alt="SCCM Detection Method" src="http://www.david-obrien.net/wp-content/uploads/2013/12/image_thumb1.png" width="244" height="240" border="0" />]("SCCM Detection Method" http://www.david-obrien.net/wp-content/uploads/2013/12/image1.png)If that is not enough you can check for Registry Keys and if even that doesn’t go far enough you can write your own scripts to detect an installed application, and this is where it gets interesting.
+[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border-width: 0px;" title="SCCM Detection Method" alt="SCCM Detection Method" src="/media/2013/12/image_thumb1.png" width="244" height="240" border="0" />]("SCCM Detection Method" /media/2013/12/image1.png)If that is not enough you can check for Registry Keys and if even that doesn’t go far enough you can write your own scripts to detect an installed application, and this is where it gets interesting.
 
 ### Powershell, VBScript and JSharp as CM12 Detection Methods
 

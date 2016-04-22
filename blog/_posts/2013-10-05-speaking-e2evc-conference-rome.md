@@ -22,9 +22,9 @@ tags:
   - speaker
   - System Center Configuration Manager
 ---
-After [Vienna in 2012](http://www.david-obrien.net/2012/05/27/im-at-e2evc-2012-in-vienna-live-feed-2/) and [Copenhagen this June](http://www.david-obrien.net/2013/05/27/live-from-e2evc-2013-copenhagen/), this will be my third time visiting and also speaking at E2EVC conference. This will also be my first speaking engagement as Microsoft MVP <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" alt="Smile" src="http://www.david-obrien.net/wp-content/uploads/2013/10/wlEmoticon-smile.png" />
+After [Vienna in 2012](http://www.david-obrien.net/2012/05/27/im-at-e2evc-2012-in-vienna-live-feed-2/) and [Copenhagen this June](http://www.david-obrien.net/2013/05/27/live-from-e2evc-2013-copenhagen/), this will be my third time visiting and also speaking at E2EVC conference. This will also be my first speaking engagement as Microsoft MVP <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" alt="Smile" src="/media/2013/10/wlEmoticon-smile.png" />
 
-## What is E2EVC?[<img style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/10/image_thumb2.png" width="244" height="77" align="right" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/10/image2.png)
+## What is E2EVC?[<img style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="image" src="/media/2013/10/image_thumb2.png" width="244" height="77" align="right" border="0" />]("image" /media/2013/10/image2.png)
 
 [E2EVC (Experts to Experts Virtualization Conference)](http://www.e2evc.com)  is a non-commercial, community-driven virtualization event. It started out 10 years ago as Pubforum and repeated itself twice a year in a different european city.
   

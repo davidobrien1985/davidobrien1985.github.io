@@ -23,17 +23,11 @@ tags:
   - Service Manager
   - System Center
 ---
-Alex Juschin (E2EVC) was quite a busy guy and just uploaded (nearly) all the videos of the last [E2EVC (Pubforum) 2013 in Copenhagen](http://www.david-obrien.net/2013/05/27/live-from-e2evc-2013-copenhagen/).
+Alex Juschin (E2EVC) was quite a busy guy and just uploaded (nearly) all the videos of the last [E2EVC (Pubforum) 2013 in Copenhagen](/2013/05/27/live-from-e2evc-2013-copenhagen/).
 
 I had two sessions there and if you weren't there or if you were and couldn't see me or want to see me again... here is the video:
 
 ## Automation of daily tasks in Microsoft System Center 2012 ConfigMgr with the help of Orchestrator and Service Manager
-
-&nbsp;
-  
-
-  
-&nbsp;
 
 Unfortunately there went something wrong with the last 14min of the video and my display wasn't recorded anymore.
 
@@ -41,10 +35,5 @@ Download my presentation here:
 
 [Presentation in PDF Format](http://sdrv.ms/18fz6ae)
 
-[Presentation in PPT Format](http://sdrv.ms/18fzchZ) 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+[Presentation in PPT Format](http://sdrv.ms/18fzchZ)
 

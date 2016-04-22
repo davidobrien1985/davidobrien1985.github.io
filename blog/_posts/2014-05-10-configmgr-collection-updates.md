@@ -29,11 +29,11 @@ According to Technet ([http://technet.microsoft.com/en-us/library/gg682169.aspx]
 
 So they are nothing more than groups of objects in your environment. How you group them is not mentioned yet or for what reason.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb3.png" alt="image" width="311" height="56" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image3.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/media/2014/05/image_thumb3.png" alt="image" width="311" height="56" border="0" />]("image" /media/2014/05/image3.png)
 
 Collections can be used to deploy Software, Operating Systems, Task Sequences or settings to these managed groups.
 
-Basics covered, we all now know what a collection is and what it’s for. <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="http://www.david-obrien.net/wp-content/uploads/2014/05/wlEmoticon-winkingsmile.png" alt="Winking smile" />
+Basics covered, we all now know what a collection is and what it’s for. <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2014/05/wlEmoticon-winkingsmile.png" alt="Winking smile" />
 
 Collections have members and members can change, that’s why we need to regularly update our collections. This way we guarantee that collections reflect our environment as accurately as possible.
 
@@ -48,21 +48,21 @@ There are four ways collections can get their membership rules updates:
 
 ## ConfigMgr Collection full and manual update
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb4.png" alt="image" width="253" height="270" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image4.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb4.png" alt="image" width="253" height="270" border="0" />]("image" /media/2014/05/image4.png)
 
 When creating a collection through the console then this will be the default setting. A full update for this collection will run every seven days. This will then completely reevaluate the collection memberships. Speaking SQL it will execute a stored procedure on the database which will rebuild the view for that specific collection.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb5.png" alt="image" width="262" height="81" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image5.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb5.png" alt="image" width="262" height="81" border="0" />]("image" /media/2014/05/image5.png)
 
 After the full update runs you can check the properties of the view which represents that collection in your database and see that it was just newly created.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb6.png" alt="image" width="267" height="100" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image6.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb6.png" alt="image" width="267" height="100" border="0" />]("image" /media/2014/05/image6.png)
 
 You can image that creating a whole new view puts some load on your box, well, it’s alright for one collection, but if you run the full update too frequently on too many collections with too complex queries then you might get some performance problems.
 
 The same behaviour can be observed when using the **‘Update Membership’** (manual update) button in the Admin Console.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb7.png" alt="image" width="259" height="105" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image7.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb7.png" alt="image" width="259" height="105" border="0" />]("image" /media/2014/05/image7.png)
 
 This option will also trigger a full update on your collection.
 
@@ -74,11 +74,11 @@ If you are familiar with incremental backups then you should know what an increm
 
 The schedule on which this feature runs is configured per site, you can’t set it per collection.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb8.png" alt="image" width="266" height="144" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image8.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb8.png" alt="image" width="266" height="144" border="0" />]("image" /media/2014/05/image8.png)
 
 The default value in ConfigMgr 2012 R2 is 5 minutes. You can chose between 1 and 1440 minutes / 24hrs.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb9.png" alt="image" width="244" height="123" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image9.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb9.png" alt="image" width="244" height="123" border="0" />]("image" /media/2014/05/image9.png)
 
 ## Should you use incremental updates for collections?
 
@@ -98,7 +98,7 @@ Looking at their colleval.log gave me the following rough numbers:
 > 
 > One run through all collections took the CollEval component 650 * 15 seconds = 9750 seconds = 162.5 minutes = 2.7 hrs
 
-Cool  <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="http://www.david-obrien.net/wp-content/uploads/2014/05/wlEmoticon-smile.png" alt="Smile" />And after 5 minutes the component tried to run the next incremental update, where it wasn’t nearly finished with the first run, then after another 5 minutes the third and so on…
+Cool  <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="/media/2014/05/wlEmoticon-smile.png" alt="Smile" />And after 5 minutes the component tried to run the next incremental update, where it wasn’t nearly finished with the first run, then after another 5 minutes the third and so on…
 
 I ended up creating a script which would turn the incremental updates off on those collections.
 
@@ -123,7 +123,7 @@ Are you maybe a bit lazy and limit ever collection by ‘All Systems’? That’
 
 The following pretty picture (powered by MSPaint) is supposed to show you an easy collection design.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="http://www.david-obrien.net/wp-content/uploads/2014/05/image_thumb10.png" alt="image" width="294" height="212" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2014/05/image10.png)
+[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/05/image_thumb10.png" alt="image" width="294" height="212" border="0" />]("image" /media/2014/05/image10.png)
 
 What will happen here? If I say ‘Update Membership’ on ‘All Systems’ then the collection evaluation (CollEval) process will kick in and check for any new members in All Systems. There actually is one. So it’s put into ‘All Systems’. Furthermore via Hardware Inventory we know that it’s a Workstation. CollEval will now check ALL the collections that are limited by All Systems if these collections are going to be affected by this new member. As it is a workstation the ‘All Workstations’ collection will be updated and its limited collections will again be evaluated, both x64 and x86. Any collections limited by ‘All Servers’ will not be touched. Only ever the limited collections by a collection that has been changed. That Workstation is a 64bit OS, so x64 collection will be updated and only its limited collections evaluated, no collection underneath x86 will be.
 
