@@ -328,7 +328,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Package',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Package',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -340,7 +340,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Package',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Package',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -358,7 +358,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Application',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Application',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -370,7 +370,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Application',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Application',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -388,7 +388,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'OS',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='OS',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -400,7 +400,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'OS',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='OS',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -418,7 +418,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'BootImage',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='BootImage',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -430,7 +430,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'BootImage',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='BootImage',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -448,7 +448,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'DriverPackage',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='DriverPackage',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -460,7 +460,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'DriverPackage',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='DriverPackage',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -478,37 +478,37 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'AllInOne')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='AllInOne')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Package')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Package')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Application')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Application')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'OS')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='OS')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'BootImage')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='BootImage')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'DriverPackage')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='DriverPackage')]
     
     <p>
       <!--CRLF-->
@@ -526,37 +526,37 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'AllInOne')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='AllInOne')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Package')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Package')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'Application')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='Application')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'OS')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='OS')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'BootImage')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='BootImage')]
     
     <p>
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName=<span style="color: #008000;">'DriverPackage')]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    [Parameter(ParameterSetName='DriverPackage')]
     
     <p>
       <!--CRLF-->
@@ -730,7 +730,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $Subkeys = $reg.OpenSubKey(<span style="color: #008000;">'SOFTWARE\Microsoft\SMS\Setup\')
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $Subkeys = $reg.OpenSubKey('SOFTWARE\Microsoft\SMS\Setup\')
     
     <p>
       <!--CRLF-->
@@ -742,7 +742,7 @@ And here’s the script <img class="img-responsive wlEmoticon wlEmoticon-smile" 
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $AdminConsoleDirectory = $Subkeys.GetValue(<span style="color: #008000;">'UI Installation Directory')
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $AdminConsoleDirectory = $Subkeys.GetValue('UI Installation Directory')
     
     <p>
       <!--CRLF-->

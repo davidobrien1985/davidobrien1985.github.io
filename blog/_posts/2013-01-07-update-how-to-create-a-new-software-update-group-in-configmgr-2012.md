@@ -79,7 +79,7 @@ Do you have any requests or comments?
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">Author: David O<span style="color: #008000;">'Brien, david.obrien@gmx.de
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">Author: David O'Brien, david.obrien@gmx.de
     
     <p>
       <!--CRLF-->
@@ -253,7 +253,7 @@ Do you have any requests or comments?
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    The new Software Upate Group<span style="color: #008000;">'s description
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    The new Software Upate Group's description
     
     <p>
       <!--CRLF-->
@@ -265,7 +265,7 @@ Do you have any requests or comments?
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    comma-separated list of Microsoft knowledge base IDs for Updates. If you use this, don<span style="color: #008000;">'t use "DateUpdatesCreated" and "UseCSV".
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    comma-separated list of Microsoft knowledge base IDs for Updates. If you use this, don't use "DateUpdatesCreated" and "UseCSV".
     
     <p>
       <!--CRLF-->
@@ -277,7 +277,7 @@ Do you have any requests or comments?
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Date the Updates in the database get filtered by, format: yyyymmdd. If you use this, don<span style="color: #008000;">'t use "KnowledgeBaseIDs" and "UseCSV".
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Date the Updates in the database get filtered by, format: yyyymmdd. If you use this, don't use "KnowledgeBaseIDs" and "UseCSV".
     
     <p>
       <!--CRLF-->
@@ -301,7 +301,7 @@ Do you have any requests or comments?
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    A switch. Use this Parameter if you want to define the updates in a CSV file. If you use this, don<span style="color: #008000;">'t use "KnowledgeBaseIDs" and "DateUpdatesCreated".
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    A switch. Use this Parameter if you want to define the updates in a CSV file. If you use this, don't use "KnowledgeBaseIDs" and "DateUpdatesCreated".
     
     <p>
       <!--CRLF-->
@@ -361,7 +361,7 @@ Do you have any requests or comments?
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O<span style="color: #008000;">'Brien, david.obrien@gmx.de
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O'Brien, david.obrien@gmx.de
     
     <p>
       <!--CRLF-->

@@ -170,7 +170,7 @@ Java client fallback will not be possible in Receiver Storefront, but native HTM
 
 It’s been a short night in Vienna and I’m already back in the InterCity Hotel.
 
-# ThinKiosk by [@andyjmorgan](http://twitter.com/#!/andyjmorgan)
+# ThinKiosk by [@andyjmorgan](http://twitter.com/andyjmorgan)
 
 Sitting in Andrew Morgan’s session "Leveraging old enterprise PC’s with ThinKiosk to lower the Desktop cost".
 
@@ -178,40 +178,36 @@ ThinKiosk is a DotNet 2.0 application, which locks down the whole desktop and ju
 
 This way the user is only able to work with the published desktop and do nothing more with his local desktop!
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0214" src="/media/2012/05/IMAG0214_thumb.jpg" alt="IMAG0214" width="244" height="148" border="0" />]("IMAG0214" /media/2012/05/IMAG0214.jpg)[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0216" src="/media/2012/05/IMAG0216_thumb.jpg" alt="IMAG0216" width="244" height="148" border="0" />]("IMAG0216" /media/2012/05/IMAG0216.jpg)
+![image](/media/2012/05/IMAG0214.jpg "IMAG0214")
+![image](/media/2012/05/IMAG0216.jpg "IMAG0216")
 
-# “How real is virtual” by [@neilspellings](http://twitter.com/#!/neilspellings)
+# “How real is virtual” by [@neilspellings](http://twitter.com/neilspellings)
 
-Neil presented on Netscaler VPX and how to break it  <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />Interesting demos on Netscaler VPX and XenMotioning them around and how this could affect your user’s experience.
+Neil presented on Netscaler VPX and how to break it ;)
+interesting demos on Netscaler VPX and XenMotioning them around and how this could affect your user’s experience.
 
-&nbsp;
-
-# "Virtualization clients in enterprise, when to use what and why" by [@keesbaggerman](http://twitter.com/#!/kbaggerman/) and [@barryschiffer](http://twitter.com/#!/barryschiffer)
+# "Virtualization clients in enterprise, when to use what and why" by [@keesbaggerman](http://twitter.com/kbaggerman/) and [@barryschiffer](http://twitter.com/barryschiffer)
 
 Comparing women to Fat/Thin Clients? Interesting analogy in this session. They tested different thin/zero clients against a Fat Client.
 
   * power usage nearly the same with Fat Client and Thin Clients, why then use Thin Clients?
   * there’s a market for both
 
-<p align="center">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="IMAG0219" src="/media/2012/05/IMAG0219_thumb.jpg" alt="IMAG0219" width="244" height="148" border="0" />]("IMAG0219" /media/2012/05/IMAG0219.jpg)
-</p>
+![image](/media/2012/05/IMAG0219.jpg "IMAG0219")
 
-# “Gone in 60 seconds-#all #user #passwords on #XA/RDS SRV” by [@remkoweijnen](http://twitter.com/#!/remkoweijnen)
+# “Gone in 60 seconds-#all #user #passwords on #XA/RDS SRV” by [@remkoweijnen](http://twitter.com/remkoweijnen)
 
 This was actually one of the coolest but scariest sessions at E2E. Remko demonstrated how easy it is to get any logged on user’s password from any XenApp or RDS session.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0220" src="/media/2012/05/IMAG0220_thumb.jpg" alt="IMAG0220" width="244" height="148" border="0" />]("IMAG0220" /media/2012/05/IMAG0220.jpg)
+![image](/media/2012/05/IMAG0220.jpg "IMAG0220")
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0222" src="/media/2012/05/IMAG0222_thumb.jpg" alt="IMAG0222" width="244" height="148" border="0" />]("IMAG0222" /media/2012/05/IMAG0222.jpg)
+![image](/media/2012/05/IMAG0222.jpg "IMAG0222")
 
 Apparently a 7-year-old can go and get any user’s password in plain text from as far back as Win2000. Remko even programmed his own tool that goes and gets them for you.
 
-He even showed us the Matrix! <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2012/05/wlEmoticon-winkingsmile.png" alt="Zwinkerndes Smiley" />
+He even showed us the Matrix! ;)
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="IMAG0225" src="/media/2012/05/IMAG0225_thumb.jpg" alt="IMAG0225" width="244" height="148" border="0" />]("IMAG0225" /media/2012/05/IMAG0225.jpg)
-
-#
+![image](/media/2012/05/IMAG0225.jpg "IMAG0225")
 
 # Sum Up
 
@@ -220,9 +216,3 @@ All in all my first E2EVC was a really cool experience. I got to meet all the pe
 This was also the first time I presented in front of such a large and skilled audience and if there’s no too bad feedback, then this was not the last you’ve seen of me!
 
 It’s a shame that I can’t make it to Hamburg in November, but I will definitely try to make Stockholm next year!
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-

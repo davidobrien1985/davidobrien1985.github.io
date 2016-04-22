@@ -35,73 +35,41 @@ It’s an early sunday morning, the fiancee is still asleep and I wanted to “q
 
 As there are new features (see previous article: [http://www.david-obrien.de/?p=369](http://www.david-obrien.de/?p=369)), there are also new prerequisites you need to fulfil before being able to update your site.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb2.png" alt="image" width="244" height="162" border="0" />]("image" /media/2012/06/image2.png)
-  
+![image](/media/2012/06/image2.png "image")
+
 Go download and install the [Windows 8 Assessment and Deployment Kit (ADK)](http://www.microsoft.com/en-us/download/details.aspx?id=28997), this in itself is just under 1MB size but it will download a huge amount of data during installation (approx. 3GB, depending on what features you install).
 
 You also need to run the setupdl.exe (found in “smssetupbinx64”) or download the prerequisites from the GUI. This won’t download the ADK!
-  
+
 It will, for example, download the Silverlight 5 binaries.
 
 If any of your sites have a language pack installed, you will need to uninstall it before updating your site.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb3.png" alt="image" width="244" height="72" border="0" />]("image" /media/2012/06/image3.png)
+![image](/media/2012/06/image3.png "image")
 
 Do this by running setup again and chose “site maintenance” and then “modify language settings”.
 
-# 
-
 # Update the site
 
-<p align="left">
-  Before updating my sites I had a look at the buildnumbers:
-</p>
+Before updating my sites I had a look at the buildnumbers:
 
-<p align="center">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb4.png" alt="image" width="244" height="28" border="0" />]("image" /media/2012/06/image4.png)
-</p>
+![build number](/media/2012/06/image4.png "build number")
 
-<p align="left">
-  The update is quite straightforward, here some screenshots of it:
-</p>
+The update is quite straightforward, here some screenshots of it:
 
-<p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb5.png" alt="image" width="244" height="183" border="0" />]("image" /media/2012/06/image5.png)
-</p>
+![image](/media/2012/06/image5.png "image")
+![image](/media/2012/06/image6.png "image")
+![image](/media/2012/06/image7.png "image")
 
-<p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb6.png" alt="image" width="244" height="184" border="0" />]("image" /media/2012/06/image6.png)
-</p>
+No errors, only warnings from my virtual environment…
+The whole update took about 40minutes (in my virtual environment):
 
-<p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb7.png" alt="image" width="244" height="184" border="0" />]("image" /media/2012/06/image7.png)<br /> No errors, only warnings from my virtual environment…
-</p>
+![image](/media/2012/06/image8.png "image")
 
-<p align="left">
-  The whole update took about 40minutes (in my virtual environment):
-</p>
+Updated the CAS:
 
-<p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb8.png" alt="image" width="244" height="183" border="0" />]("image" /media/2012/06/image8.png)
-</p>
+![CAS updated](/media/2012/06/image9.png "CAS updated")
 
-<p align="left">
-  Updated the CAS:
-</p>
+I don’t want to get into details (that’s for another article), but the Boot images got updated to “Windows 8”.
 
-<p align="center">
-  [<img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb9.png" alt="image" width="244" height="29" border="0" />]("image" /media/2012/06/image9.png)
-</p>
-
-<p align="left">
-  I don’t want to get into details (that’s for another article), but the Boot images got updated to “Windows 8”.
-</p>
-
-<p align="left">
-  [<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="/media/2012/06/image_thumb10.png" alt="image" width="244" height="38" border="0" />]("image" /media/2012/06/image10.png)
-</p>
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+![image](/media/2012/06/image10.png "image")

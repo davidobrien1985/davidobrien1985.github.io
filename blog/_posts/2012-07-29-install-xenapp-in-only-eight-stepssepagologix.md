@@ -26,7 +26,7 @@ tags:
   - XenApp
 ---
 Recently I’m doing a lot of projects where customers either want to upgrade their existing Presentation Server 4 / 4.x / XenApp 5 or even 6 environments to XenApp 6.5 or also those who are new to SBC and implement XenApp the first time.
-  
+
 These are customers ranging from as few as a dozen XenApp servers up to environments with thousands of XenApp servers.
 
 ## Challenges
@@ -40,7 +40,7 @@ What more?
 ### Automation is key!
 
 An even more successful deployment can be rebuilt over and over again and the outcome should be exactly the same. This is also great for disaster recovery!
-  
+
 Automation makes documentation easier, because a well-written script is nearly as good, but of course is no substitute!
 
 Enough chit-chat… what am I talking about?
@@ -52,40 +52,26 @@ Some colleagues of mine at sepago started developing installation frameworks for
 XenApp 6.x brought some new features and concepts into this world and the framework grew further until it became known as sepagoLogiX, a collection of sepago best practices for RDS and XenApp, recommendations from Microsoft and Citrix and of course the whole installation and configuration of a XenApp farm, based completely on PowerShell.
 
 This framework is able to run stand-alone or in any ESD environment like Microsoft System Center Configuration Manager 2007/2012, Altiris, enteo NetInstall/DSM7 or whatever.
-  
+
 The trick is that it’s really fast and easy to implement, because this whole framework is run from only one “master-script”, which then itself executes all the other scripts (that’s for standalone) or e.g. for ConfigMgr there are already pre-configured Task Sequences one can import and use.
 
 It’s fairly simple to configure, because around 90% is done via variables that are written to the machine’s (the XenApp server to be) local registry and from there evaluated by sepagoLogiX. One can write these variables directly into the registry, use a *.reg file or ConfigMgr collection/machine variables.
-
-# 
 
 # eight ways to a successful deployment
 
 sepagoLogix is built up in eight steps.
 
-<p align="center">
-  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="folders" src="/media/2012/08/folders_thumb.jpg" alt="folders" width="223" height="181" border="0" />]("folders" /media/2012/08/folders.jpg)
-</p>
+![folders](/media/2012/08/folders.jpg "folders")
 
-<p align="left">
-  The first seven steps are kind of a must with sepagoLogiX to get your farm up and running. It starts with a bit of System customization in step 1 (registry, services, prerequisites for XenApp, hotfixes etc), continues with the XenApp installation itself in step 3 (also with HRP or any hotfixes you like), farm join or creation in step 4 and application publishing in step 7.
-</p>
+The first seven steps are kind of a must with sepagoLogiX to get your farm up and running. It starts with a bit of System customization in step 1 (registry, services, prerequisites for XenApp, hotfixes etc), continues with the XenApp installation itself in step 3 (also with HRP or any hotfixes you like), farm join or creation in step 4 and application publishing in step 7.
 
-<p align="left">
-  Step 8 is only an addon if you want to use Citrix Provisioning Services (PVS) in your environment. Here sepagoLogiX can automatically create a vDisk from your machine.
-</p>
+Step 8 is only an addon if you want to use Citrix Provisioning Services (PVS) in your environment. Here sepagoLogiX can automatically create a vDisk from your machine.
 
-<p align="left">
-  If you already know a bit about XenApp 6.x you might have noticed that sepagoLogiX also splits the installation and configuration of XenApp into two parts. This way you’re able to for example capture an image from this machine (manually or if you like with Microsoft ConfigMgr) and deploy this image later on with any technology you like, starting with step 4 and creating a new or joining an existing farm. You can even create a template (VMware or XenServer) at this point.
-</p>
+If you already know a bit about XenApp 6.x you might have noticed that sepagoLogiX also splits the installation and configuration of XenApp into two parts. This way you’re able to for example capture an image from this machine (manually or if you like with Microsoft ConfigMgr) and deploy this image later on with any technology you like, starting with step 4 and creating a new or joining an existing farm. You can even create a template (VMware or XenServer) at this point.
 
-<p align="left">
-  One can of course deviate from the standard by using steps 2 and 6, where you can put in any configuration/scripts/installs/whatever that’s specific to your environment.
-</p>
+One can of course deviate from the standard by using steps 2 and 6, where you can put in any configuration/scripts/installs/whatever that’s specific to your environment.
 
-<p align="left">
-  In using this standardized framework it’s now possible to deploy a new XenApp environment with less effort than before.
-</p>
+In using this standardized framework it’s now possible to deploy a new XenApp environment with less effort than before.
 
 ## Sum up
 
@@ -93,9 +79,4 @@ sepagoLogiX is a powerful framework which made XenApp deployments that much easi
 
 Of course this doesn’t mean that everything in sepagoLogiX fits every customer, but most of it does and you can focus on the stuff that’s special to your environment.
 
-Want some more information on sepagoLogix? Contact me [@david_obrien](https://twitter.com/david_obrien) or comment here… 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+Want some more information on sepagoLogix? Contact me [@david_obrien](https://twitter.com/david_obrien) or comment here…

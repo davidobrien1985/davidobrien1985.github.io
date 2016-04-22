@@ -41,7 +41,7 @@ Here’s the script:
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Author: David O<span style="color: #008000;">'Brien
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Author: David O'Brien
     
     <p>
       <!--CRLF-->
@@ -59,7 +59,7 @@ Here’s the script:
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    - 15.01.2013, David O<span style="color: #008000;">'Brien, david.obrien@gmx.de, added function Set-CollectionVariablePriority
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    - 15.01.2013, David O'Brien, david.obrien@gmx.de, added function Set-CollectionVariablePriority
     
     <p>
       <!--CRLF-->

@@ -105,7 +105,7 @@ I found two ways to configure the cache size for an already deployed ConfigMgr A
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O<span style="color: #008000;">'Brien, david.obrien@sepago.de
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O'Brien, david.obrien@sepago.de
     
     <p>
       <!--CRLF-->
@@ -285,7 +285,7 @@ The other way is via WMI and goes like this:
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O<span style="color: #008000;">'Brien, david.obrien@sepago.de
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O'Brien, david.obrien@sepago.de
     
     <p>
       <!--CRLF-->
@@ -381,7 +381,7 @@ The other way is via WMI and goes like this:
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Restart-Service -DisplayName <span style="color: #008000;">'SMS Agent Host'
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Restart-Service -DisplayName 'SMS Agent Host'
     
     <p>
       <!--CRLF-->
@@ -469,7 +469,7 @@ If you want to change the Cache Location you can also chose between above mentio
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O<span style="color: #008000;">'Brien, david.obrien@sepago.de
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O'Brien, david.obrien@sepago.de
     
     <p>
       <!--CRLF-->
@@ -553,7 +553,7 @@ If you want to change the Cache Location you can also chose between above mentio
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Restart-Service -DisplayName <span style="color: #008000;">'SMS Agent Host'
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Restart-Service -DisplayName 'SMS Agent Host'
     
     <p>
       <!--CRLF-->
@@ -631,7 +631,7 @@ And here comes the way to do this via COM. Thanks to Andy Morgan ([www.thinkiosk
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O<span style="color: #008000;">'Brien, david.obrien@sepago.de
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O'Brien, david.obrien@sepago.de
     
     <p>
       <!--CRLF-->
@@ -799,7 +799,7 @@ Here’s the script:
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O<span style="color: #008000;">'Brien, david.obrien@sepago.de
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    Author: David O'Brien, david.obrien@sepago.de
     
     <p>
       <!--CRLF-->

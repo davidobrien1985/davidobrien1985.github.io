@@ -156,7 +156,7 @@ The only parameters you need to provide are the SiteCode and a CollectionID.
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $Subkeys = $reg.OpenSubKey(<span style="color: #008000;">'SOFTWARE\Microsoft\SMS\Setup\')
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $Subkeys = $reg.OpenSubKey('SOFTWARE\Microsoft\SMS\Setup\')
     
     <p>
       <!--CRLF-->
@@ -168,7 +168,7 @@ The only parameters you need to provide are the SiteCode and a CollectionID.
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $AdminConsoleDirectory = $Subkeys.GetValue(<span style="color: #008000;">'UI Installation Directory')
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $AdminConsoleDirectory = $Subkeys.GetValue('UI Installation Directory')
     
     <p>
       <!--CRLF-->

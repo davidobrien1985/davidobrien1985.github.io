@@ -68,7 +68,7 @@ Well, here’s the script which will delete all deployments for a given Collecti
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[Parameter(ParameterSetName=<span style="color: #008000;">'ID',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[Parameter(ParameterSetName='ID',Position=0)]
     
     <p>
       <!--CRLF-->
@@ -80,7 +80,7 @@ Well, here’s the script which will delete all deployments for a given Collecti
       <!--CRLF-->
     </p>
     
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[Parameter(ParameterSetName=<span style="color: #008000;">'Name',Position=0)]
+    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[Parameter(ParameterSetName='Name',Position=0)]
     
     <p>
       <!--CRLF-->
