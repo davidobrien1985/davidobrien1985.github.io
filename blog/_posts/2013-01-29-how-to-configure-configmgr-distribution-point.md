@@ -25,7 +25,7 @@ tags:
 # Script to configure your SCCM 2012 Distribution Point
 
 This is one I came up with while going for a run last Sunday and what I missed a for long time in Configuration Manager.
-  
+
 Microsoft changed a lot with the 2012 release, especially regarding Distribution Points, which got some more intelligence now. They can be grouped into intelligent, dynamic Distribution Point Groups and also be configured to only communicate during certain times with their Site Management Point.
 
 Now I know that many companies have more than one location, possibly a lot more have more than 100 locations. Since ConfigMgr 2012 we don’t have to install Secondary Sites anymore to throttle network communication, we can use Distribution Points.
@@ -34,18 +34,18 @@ Now I know that many companies have more than one location, possibly a lot more 
 
 Microsoft must have forgotten one big thing: Automation.
 
-  * We still can’t install more than one Distribution Point from GUI 
-      * There’s also no Microsoft native commandline to do this
-      * One way would be my script: [How to install a Distribution Point via PowerShell](http://www.david-obrien.net/2012/06/08/install-distribution-point-for-configuration-manager-2012/)
-  * No way to configure Distribution Points via commandline 
-      * the SP1 cmdlet Set-CMDistributionPoint seems to enable us to add or remove a DP to or from a group only
+* We still can’t install more than one Distribution Point from GUI
+  * There’s also no Microsoft native commandline to do this
+  * One way would be my script: [How to install a Distribution Point via PowerShell](2012/06/08/install-distribution-point-for-configuration-manager-2012/)
+* No way to configure Distribution Points via commandline
+  * the SP1 cmdlet Set-CMDistributionPoint seems to enable us to add or remove a DP to or from a group only
 
 **Feature Request**: Would be cool to configure network throttling on a Distribution Point Group!
 
 ## Configure existing Distribution Points
 
 Back to my idea I had during running:
-  
+
 You have a big number of Distribution Points and want to configure them to only use the network for package replication on certain days of the week and only for certain priorities and maybe also only a certain amount of bandwidth (in percent).
 
 We want to configure these settings, but be sure to look at remote distribution points, as these settings are only configurable for remote DPs.
@@ -56,20 +56,20 @@ Our approach will be to configure all distribution points the same. This is vers
 
 ### SMS\_SCI\_ADDRESS
 
-What we’re basically doing is create a new address to the distribution point and give this new address a new configuration. Like always we need to work with embedded classes again (see [How to create a new Software Update Group](http://www.david-obrien.net/2012/12/02/create-a-new-software-update-group-in-configmgr/) for more info).
+What we’re basically doing is create a new address to the distribution point and give this new address a new configuration. Like always we need to work with embedded classes again (see [How to create a new Software Update Group](/2012/12/02/create-a-new-software-update-group-in-configmgr/) for more info).
 
 Our main class will be **SMS\_SCI\_ADDRESS** ([Technet: SMS_SCI_ADDRESS](http://msdn.microsoft.com/en-us/library/hh948862.aspx)) and here we need to add quite a lot properties:
 
-  * SMS\_SCI\_ADDRESS.UsageSchedule
-  * SMS\_SCI\_ADDRESS.RateLimitingSchedule
-  * SMS\_SCI\_ADDRESS.AddressPriorityOrder
-  * SMS\_SCI\_ADDRESS.AddressType
-  * SMS\_SCI\_ADDRESS.DesSiteCode
-  * SMS\_SCI\_ADDRESS.DestinationType
-  * SMS\_SCI\_ADDRESS.SiteCode
-  * SMS\_SCI\_ADDRESS.UnlimitedRateForAll
-  * SMS\_SCI\_ADDRESS.PropLists (embedded class: SMS_EmbeddedPropertyList)
-  * SMS\_SCI\_ADDRESS.Props (embedded class: SMS_EmbeddedProperty)
+* SMS\_SCI\_ADDRESS.UsageSchedule
+* SMS\_SCI\_ADDRESS.RateLimitingSchedule
+* SMS\_SCI\_ADDRESS.AddressPriorityOrder
+* SMS\_SCI\_ADDRESS.AddressType
+* SMS\_SCI\_ADDRESS.DesSiteCode
+* SMS\_SCI\_ADDRESS.DestinationType
+* SMS\_SCI\_ADDRESS.SiteCode
+* SMS\_SCI\_ADDRESS.UnlimitedRateForAll
+* SMS\_SCI\_ADDRESS.PropLists (embedded class: SMS_EmbeddedPropertyList)
+* SMS\_SCI\_ADDRESS.Props (embedded class: SMS_EmbeddedProperty)
 
 This class is well documented, so filling the properties wasn’t too difficult. A bit of a challenge were the two properties .PropLists and .Props. You can’t query them directly, so I tend to go the way via the Site Control File.
 
@@ -77,18 +77,10 @@ This class is well documented, so filling the properties wasn’t too difficult.
 
 Open your SQL Management Studio and create a new query on your CM Database.
 
-<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
-  <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">Select SiteControl From vSMS_SC_SiteControlXML Where SiteCode = 'SITECODE'
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+`Select SiteControl From vSMS_SC_SiteControlXML Where SiteCode = 'SITECODE'`
 
 Execute and access your Site Control File (SCF) in an xml format. Now search the SCF and look for the distribution point’s address properties.
-  
+
 This is where I found the properties for “Pulse Mode”, “Connection Point” and “LAN Login”.
 
 ## How to create the Addresse’s usage schedule
@@ -97,11 +89,11 @@ This is where I found the properties for “Pulse Mode”, “Connection Point�
 
 Here we configure these settings:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb8.png" width="287" height="265" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image8.png)
+![image](/media/2013/01/image8.png "image")
 
 We need to use the SMS_SiteControlDaySchedule class to configure these settings. This is done with an array of arrays.
 
-$HourUsageSchedule = @(4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4)
+`$HourUsageSchedule = @(4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4)`
 
 This variable configures every hour of one day regarding to which priorities are allowed to be replicated. Element [0] is the first hour of the day.
 
@@ -110,510 +102,191 @@ This variable configures every hour of one day regarding to which priorities are
     <td valign="top" width="200">
       1
     </td>
-    
+
     <td valign="top" width="200">
       ALL_PRIORITY
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="200">
       2
     </td>
-    
+
     <td valign="top" width="200">
       ALL_BUT_LOW
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="200">
       3
     </td>
-    
+
     <td valign="top" width="200">
       HIGH_ONLY
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="200">
       4
     </td>
-    
+
     <td valign="top" width="200">
       CLOSED
     </td>
   </tr>
 </table>
 
-<p align="center">
-  (source: [MSDN](http://msdn.microsoft.com/en-us/library/cc145538.aspx))
-</p>
 
-<p align="left">
-  By setting the variable to this values I’m telling it that the whole day is closed for replication.
-</p>
+(source: [MSDN](http://msdn.microsoft.com/en-us/library/cc145538.aspx))
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb9.png" width="289" height="266" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image9.png)
+By setting the variable to this values I’m telling it that the whole day is closed for replication.
+
+
+![image](/media/2013/01/image9.png "image")
 
 This page is set with this variable (array):
-  
-$RateLimitingSchedule = @(10,20,30,40,50,60,70,80,90,100,90,80,70,60,50,40,30,20,10,70,10,20,30,40)
+
+`$RateLimitingSchedule = @(10,20,30,40,50,60,70,80,90,100,90,80,70,60,50,40,30,20,10,70,10,20,30,40)`
 
 Here I’m telling it how much bandwidth (relative) for every hour of the day the replication process is allowed to use. The minimum value is 1 and maximum is 100.
-  
+
 In order for the setting to have any impact I need to set the property “SMS\_SCI\_ADDRESS.UnlimitedRateForAll” to $false. Otherwise it would replicate at an unlimited rate.
 
 This is the command to execute the script:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" alt="image" src="http://www.david-obrien.net/wp-content/uploads/2013/01/image_thumb10.png" width="508" height="21" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/01/image10.png)
+![image](/media/2013/01/image10.png "image")
 
 Be aware of the server’s FQDN, the script needs the FQDN of the distribution point.
-  
+
 In the future I will implement a workflow to execute the script with different configurations on more than just one server.
 
 Let me know what you think about the script or if you would like to see some more of it or different things!
 
-<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
-  <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">param(
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[parameter(Mandatory=$true)]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[String]$ServerName,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[parameter(Mandatory=$true)]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[String]$SiteCode
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;"># Set the schedules first!
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">#Array containing 24 elements, one for each hour of the day. A value of true indicates that the address (sender) embedding SMS_SiteControlDaySchedule can be used as a backup.
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$UsageAsBackup = @($true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">#Array containing 24 elements, one for each hour of the day. This property specifies the type of usage for each hour.
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;"># 1 means all Priorities, 2 means all but low, 3 is high only, 4 means none
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$HourUsageSchedule = @(4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">#Set RateLimitingSchedule, array for every hour of the day, percentage of how much bandwidth can be used, min 1, max 100
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$RateLimitingSchedule = @(10,20,30,40,50,60,70,80,90,100,90,80,70,60,50,40,30,20,10,70,10,20,30,40)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS = "SMS_SCI_ADDRESS"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$class_SMS_SCI_ADDRESS = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$class_SMS_SCI_ADDRESS.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_SCI_ADDRESS)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS = $class_SMS_SCI_ADDRESS.CreateInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;"># Set the UsageSchedule
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SiteControlDaySchedule           = "SMS_SiteControlDaySchedule"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SiteControlDaySchedule_class     = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SiteControlDaySchedule_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):$($SMS_SiteControlDaySchedule)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SiteControlDaySchedule              = $SMS_SiteControlDaySchedule_class.createInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SiteControlDaySchedule.Backup    = $UsageAsBackup
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SiteControlDaySchedule.HourUsage = $HourUsageSchedule
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SiteControlDaySchedule.Update    = $true
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.UsageSchedule        = @($SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.RateLimitingSchedule = $RateLimitingSchedule
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.AddressPriorityOrder = "0"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.AddressType          = "MS_LAN"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.DesSiteCode          = "$($ServerName)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.DestinationType      = "1"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.SiteCode             = "$($SiteCode)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.UnlimitedRateForAll  = $false
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;"># Set the embedded Properties
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedpropertyList = $null
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty_class = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):SMS_EmbeddedPropertyList"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedpropertyList                 = $embeddedproperty_class.createInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedpropertyList.PropertyListName     = "Pulse Mode"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedpropertyList.Values        = @(0,5,8) #second value is size of data block in KB, third is delay between data blocks in seconds
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.PropLists += $embeddedpropertyList
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty = $null
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty_class = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):SMS_EmbeddedProperty"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty                 = $embeddedproperty_class.createInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty.PropertyName     = "Connection Point"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty.Value         = "0"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty.Value1        = "$($ServerName)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty.Value2        = "SMS_DP$"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.Props += $embeddedproperty
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty = $null
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty_class = [wmiclass]""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):SMS_EmbeddedProperty"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty                 = $embeddedproperty_class.createInstance()
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty.PropertyName     = "LAN Login"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty.Value         = "0"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$embeddedproperty.Value1        = ""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$embeddedproperty.Value2        = ""
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.Props += $embeddedproperty
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">$SMS_SCI_ADDRESS.Put() | Out-Null
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+```
+param(
 
-Download the script here: [http://davidobrien.codeplex.com/downloads/get/613106](http://davidobrien.codeplex.com/downloads/get/613106) 
+[parameter(Mandatory=$true)]
 
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
+[String]$ServerName,
 
+[parameter(Mandatory=$true)]
+
+[String]$SiteCode
+
+)
+
+# Set the schedules first!
+
+#Array containing 24 elements, one for each hour of the day. A value of true indicates that the address (sender) embedding SMS_SiteControlDaySchedule can be used as a backup.
+
+$UsageAsBackup = @($true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true,$true)
+
+#Array containing 24 elements, one for each hour of the day. This property specifies the type of usage for each hour.
+
+# 1 means all Priorities, 2 means all but low, 3 is high only, 4 means none
+
+$HourUsageSchedule = @(4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4)
+
+#Set RateLimitingSchedule, array for every hour of the day, percentage of how much bandwidth can be used, min 1, max 100
+
+$RateLimitingSchedule = @(10,20,30,40,50,60,70,80,90,100,90,80,70,60,50,40,30,20,10,70,10,20,30,40)
+
+$SMS_SCI_ADDRESS = "SMS_SCI_ADDRESS"
+
+$class_SMS_SCI_ADDRESS = [wmiclass]""
+
+$class_SMS_SCI_ADDRESS.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS_SCI_ADDRESS)"
+
+$SMS_SCI_ADDRESS = $class_SMS_SCI_ADDRESS.CreateInstance()
+
+# Set the UsageSchedule
+
+$SMS_SiteControlDaySchedule           = "SMS_SiteControlDaySchedule"
+
+$SMS_SiteControlDaySchedule_class     = [wmiclass]""
+
+$SMS_SiteControlDaySchedule_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):$($SMS_SiteControlDaySchedule)"
+
+$SMS_SiteControlDaySchedule              = $SMS_SiteControlDaySchedule_class.createInstance()
+
+$SMS_SiteControlDaySchedule.Backup    = $UsageAsBackup
+
+$SMS_SiteControlDaySchedule.HourUsage = $HourUsageSchedule
+
+$SMS_SiteControlDaySchedule.Update    = $true
+
+$SMS_SCI_ADDRESS.UsageSchedule        = @($SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule,$SMS_SiteControlDaySchedule)
+
+$SMS_SCI_ADDRESS.RateLimitingSchedule = $RateLimitingSchedule
+
+$SMS_SCI_ADDRESS.AddressPriorityOrder = "0"
+
+$SMS_SCI_ADDRESS.AddressType          = "MS_LAN"
+
+$SMS_SCI_ADDRESS.DesSiteCode          = "$($ServerName)"
+
+$SMS_SCI_ADDRESS.DestinationType      = "1"
+
+$SMS_SCI_ADDRESS.SiteCode             = "$($SiteCode)"
+
+$SMS_SCI_ADDRESS.UnlimitedRateForAll  = $false
+
+# Set the embedded Properties
+
+$embeddedpropertyList = $null
+
+$embeddedproperty_class = [wmiclass]""
+
+$embeddedproperty_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):SMS_EmbeddedPropertyList"
+
+$embeddedpropertyList                 = $embeddedproperty_class.createInstance()
+
+$embeddedpropertyList.PropertyListName     = "Pulse Mode"
+
+$embeddedpropertyList.Values        = @(0,5,8) #second value is size of data block in KB, third is delay between data blocks in seconds
+
+$SMS_SCI_ADDRESS.PropLists += $embeddedpropertyList
+
+$embeddedproperty = $null
+
+$embeddedproperty_class = [wmiclass]""
+
+$embeddedproperty_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):SMS_EmbeddedProperty"
+
+$embeddedproperty                 = $embeddedproperty_class.createInstance()
+
+$embeddedproperty.PropertyName     = "Connection Point"
+
+$embeddedproperty.Value         = "0"
+
+$embeddedproperty.Value1        = "$($ServerName)"
+
+$embeddedproperty.Value2        = "SMS_DP$"
+
+$SMS_SCI_ADDRESS.Props += $embeddedproperty
+
+$embeddedproperty = $null
+
+$embeddedproperty_class = [wmiclass]""
+
+$embeddedproperty_class.psbase.Path = "ROOT\SMS\Site_$($SiteCode):SMS_EmbeddedProperty"
+
+$embeddedproperty                 = $embeddedproperty_class.createInstance()
+
+$embeddedproperty.PropertyName     = "LAN Login"
+
+$embeddedproperty.Value         = "0"
+
+$embeddedproperty.Value1        = ""
+
+$embeddedproperty.Value2        = ""
+
+$SMS_SCI_ADDRESS.Props += $embeddedproperty
+
+$SMS_SCI_ADDRESS.Put() | Out-Null
+```
+
+Download the script here: [http://davidobrien.codeplex.com/downloads/get/613106](http://davidobrien.codeplex.com/downloads/get/613106)

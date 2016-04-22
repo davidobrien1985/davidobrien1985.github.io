@@ -21,23 +21,45 @@ tags:
   - System Center
   - update
 ---
-This night the CU1 for SCCM 2012 got released and I just want to share with you the process of update. The download is available here: [http://support.microsoft.com/kb/2817245/en-us]("http://support.microsoft.com/kb/2817245/en-us" http://support.microsoft.com/kb/2817245/en-us) Before updating your site, please do a **backup** of your site and verify that it was successful!
+This night the CU1 for SCCM 2012 got released and I just want to share with you the process of update. The download is available here: [http://support.microsoft.com/kb/2817245/en-us](http://support.microsoft.com/kb/2817245/en-us) Before updating your site, please do a **backup** of your site and verify that it was successful!
 
 # Step-by-step installation of CU1 for ConfigMgr 2012 SP1
 
-For those of you who like reading logfiles, the whole update is logged under C:\windows\temp\configmgr2012-sp1-cu1-kb2817245-x64-enu.log Step 1: [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="CU1 setup step 1" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb10.png" width="276" height="181" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image10.png) Step 2: Accept the EULA [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="accept the EULA" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb11.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image11.png) Step 3: Prerequisite check [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="prerequisite check before setup" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb12.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image12.png) Step 4: Update the Site database Here you’re asked whether you want setup to update the site database automatically or if you want to update it manually later on. If you are not allowed to update the database remotely or just don’t like doing it that way, you can chose “No, I will update the site database later.” and then will find a sql script (just a bit over 2000lines long) in the following location to update the site database: **\\<Server Name>\SMS_<Site Code>\Hotfix\<KB Number>\update.sql** [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="update the site database" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb13.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image13.png) Step 5: Creating other update packages [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="creating other update packages" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb14.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image14.png) [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="update package for site servers" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb15.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image15.png) [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="update package for consoles" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb16.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image16.png) [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="update package for clients" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb17.png" width="244" height="159" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image17.png) Step 6: Summary [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="setup summary" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb18.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image18.png) Step 7: Installation progress [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="setup progress" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb19.png" width="244" height="161" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image19.png) 4 minutes later: [<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" alt="setup progress completed" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb20.png" width="244" height="161" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image20.png) Step 8: Installation completed
+For those of you who like reading logfiles, the whole update is logged under C:\windows\temp\configmgr2012-sp1-cu1-kb2817245-x64-enu.log
 
-<p align="center">
-  [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" alt="setup completed" src="http://www.david-obrien.net/wp-content/uploads/2013/03/image_thumb21.png" width="244" height="160" border="0" />]("image" http://www.david-obrien.net/wp-content/uploads/2013/03/image21.png)
-</p>
+Step 1: ![step1](/media/2013/03/image10.png)
+Step 2: Accept the EULA
+![accept_eula](/media/2013/03/image11.png)
+Step 3: Prerequisite check
+![prereq check](/media/2013/03/image12.png)
+Step 4: Update the Site database Here you’re asked whether you want setup to update the site database automatically or if you want to update it manually later on. If you are not allowed to update the database remotely or just don’t like doing it that way, you can chose “No, I will update the site database later.” and then will find a sql script (just a bit over 2000lines long) in the following location to update the site database: **\\<Server Name>\SMS_<Site Code>\Hotfix\<KB Number>\update.sql**
 
-  First thing I’ll try are the new and updated Powershell cmdlets!
+![update site database](/media/2013/03/image13.png)
+
+Step 5: Creating other update packages
+![creating other packages](/media/2013/03/image14.png)
+![creating other packages](/media/2013/03/image15.png)
+![creating other packages](/media/2013/03/image16.png)
+![creating other packages](/media/2013/03/image17.png)
+
+Step 6: Summary
+![summary](/media/2013/03/image18.png)
+
+Step 7: Installation progress
+![install progress](/media/2013/03/image19.png)
+4 minutes later:
+![setup complete](/media/2013/03/image20.png)
+Step 8: Installation completed
+
+![complete](/media/2013/03/image21.png)
+
+First thing I’ll try are the new and updated Powershell cmdlets!
 
 # [Update] These are the new cmdlets for ConfigMgr 2012 SP1 CU1
 
 As I wanted to check the new cmdlets that were promised before and in the KB, I had a look at the module.
-  
-These are supposed to now be included. For more information have a look at my other article [here]("Found! – Where are my new ConfigMgr 2012 SP1 CU1 cmdlets?" http://www.david-obrien.net/2013/03/23/found-where-are-my-new-configmgr-2012-sp1-cu1-cmdlets/).
+
+These are supposed to now be included. For more information have a look at my other article [Found! – Where are my new ConfigMgr 2012 SP1 CU1 cmdlets?] /2013/03/23/found-where-are-my-new-configmgr-2012-sp1-cu1-cmdlets/).
 
 <table width="400" border="0" cellspacing="0" cellpadding="2">
   <tr>
@@ -164,10 +186,3 @@ These are supposed to now be included. For more information have a look at my ot
     </td>
   </tr>
 </table>
-
-&nbsp; 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-

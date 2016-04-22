@@ -43,18 +43,13 @@ After visiting E2EVC the first time last year in Vienna and doing one session ab
 So I’m happy to announce that I’ll be doing two (2) sessions in Copenhagen.
 
 Session 1:
-  
+
 Early Bird Saturday 08:15-08:55 Installation automatisation for XenApp, XenDesktop and other Citrix Products
 
 Session 2:
-  
+
 Sunday 10:00-10:45 Automatisation of daily Tasks in Microsoft System Center ConfigMgr with help of Orchestrator and Service Manager (SCSM)
 
 I’m already very excited to speak at E2EVC again and meet all those I met last year and new people from all around the globe!
 
-Like last year, I’ll try to do a “live ticker” from the event to keep you updated. 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+Like last year, I’ll try to do a “live ticker” from the event to keep you updated.

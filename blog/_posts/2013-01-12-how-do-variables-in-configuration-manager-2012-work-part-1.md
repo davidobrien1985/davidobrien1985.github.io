@@ -74,4 +74,4 @@ You’ll be surprised how many internal variables ConfigMgr uses.
 
 In the next part I’ll be talking about another way of setting variables to simulate different scenarios like deploying multiple OSs or just configuring machines differently.
 
-Part 2: [How do variables in Configuration Manager 2012 work?]("How do variables in Configuration Manager 2012 work? – Part 2" /2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/)
+Part 2: [How do variables in Configuration Manager 2012 work?](/2013/01/13/how-do-variables-in-configuration-manager-2012-work-part-2/)

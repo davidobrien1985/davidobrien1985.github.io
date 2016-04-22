@@ -27,398 +27,76 @@ tags:
   - System Center
 ---
 In preparation to a customer workshop I’m having today, I went through the ConfigMgr 2012 Integration Pack for Microsoft System Center 2012 Configuration Manager.
-  
-Cool stuff in there, for example “Deploy a Task Sequence”. Nice, but I also want to be able to delete the deployment again. I couldn’t find it, so what else could I do than write a script myself? (which I will turn into a runbook later)
 
-&nbsp;
+Cool stuff in there, for example “Deploy a Task Sequence”. Nice, but I also want to be able to delete the deployment again. I couldn’t find it, so what else could I do than write a script myself? (which I will turn into a runbook later)
 
 # Legacy Advertisements from SCCM 2007
 
 One could answer my request with the “Remove-CMDeployment” cmdlet from the ConfigMgr Powershell module. But hey, that’s only for application deployments, not for Task Sequences.
-  
+
 I browsed through my Management Point’s WMI space and found some interesting classes, starting with SMS\_Advertisement, SMS\_AdvertisementInfo and SMS_AdvertisementStatusInformation.
-  
+
 And here I was thinking that the term “Advertisement” is dead and isn’t used anymore with ConfigMgr 2012.
 
 Well, here’s the script which will delete all deployments for a given CollectionName or CollectionID.
 
-<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; font-family: 'Courier New', courier, monospace; direction: ltr; text-align: left; margin: 20px 0px 10px; line-height: 12pt; max-height: 200px; width: 97.5%; background-color: #f4f4f4; border: silver 1px solid; padding: 4px;">
-  <div id="codeSnippet" style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[CmdletBinding()]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">param(
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[string]$SiteCode,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[Parameter(ParameterSetName='ID',Position=0)]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[string]$CollectionID,
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">[Parameter(ParameterSetName='Name',Position=0)]
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">[string]$CollectionName
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">if ($CollectionID)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $Advertisement = Get-WmiObject -Class SMS_Advertisement -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.CollectionID -eq "$($CollectionID)"}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        if (($Advertisement -eq $null) -or ($Advertisement -eq ""))
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">            {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">                Write-Error "Could not find any deployment on the given collection"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">                exit 1
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">            }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        Write-Verbose "Will delete the Deployment $($Collection).AdvertisementName"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $Advertisement | Remove-WmiObject
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        if ($?)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">            {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">                Write-Verbose "Successfully deleted the deployment"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">            }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        else
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">            {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">                Write-Error -Message "There was an error deleting the deployment"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">            }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">    }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">else
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        Write-Verbose "Enumerating the CollectionID"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $CollectionID = (Get-WmiObject -Class SMS_Collection -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.Name -eq "$($CollectionName)"}).CollectionID
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        if (($CollectionID -eq $null) -or ($CollectionID -eq ""))
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">            {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">                Write-Error "The given Collection could not be found"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">                exit 1
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">            }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        $Advertisement = Get-WmiObject -Class SMS_Advertisement -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.CollectionID -eq "$($CollectionID)"}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        if (($Advertisement -eq $null) -or ($Advertisement -eq ""))
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">            {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">                Write-Error "Could not find any deployment on the given collection"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">                exit 1
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">            }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        Write-Verbose "Will delete the Deployment $($Advertisement.AdvertisementName)"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">        $Advertisement | Remove-WmiObject
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        if ($?)
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">            {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">                Write-Verbose "Successfully deleted the deployment"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">            }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">        else
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">            {
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">                Write-Error -Message "There was an error deleting the deployment"
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">            }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: white; border-style: none; padding: 0px;">    }
-    
-    <p>
-      <!--CRLF-->
-    </p>
-    
-    <pre style="overflow: visible; font-size: 8pt; font-family: 'Courier New', courier, monospace; color: black; direction: ltr; text-align: left; margin: 0em; line-height: 12pt; width: 100%; background-color: #f4f4f4; border-style: none; padding: 0px;">
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+```PowerShell
+[CmdletBinding()]
 
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
+param(
+[string]$SiteCode,
+[Parameter(ParameterSetName='ID',Position=0)]
+[string]$CollectionID,
+[Parameter(ParameterSetName='Name',Position=0)]
+[string]$CollectionName
+)
 
+if ($CollectionID)
+    {
+        $Advertisement = Get-WmiObject -Class SMS_Advertisement -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.CollectionID -eq "$($CollectionID)"}
+        if (($Advertisement -eq $null) -or ($Advertisement -eq ""))
+            {
+                Write-Error "Could not find any deployment on the given collection"
+                exit 1
+            }
+
+        Write-Verbose "Will delete the Deployment $($Collection).AdvertisementName"
+        $Advertisement | Remove-WmiObject
+        if ($?)
+            {
+                Write-Verbose "Successfully deleted the deployment"
+            }
+        else
+            {
+                Write-Error -Message "There was an error deleting the deployment"
+            }
+    }
+else
+    {
+        Write-Verbose "Enumerating the CollectionID"
+        $CollectionID = (Get-WmiObject -Class SMS_Collection -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.Name -eq "$($CollectionName)"}).CollectionID
+        if (($CollectionID -eq $null) -or ($CollectionID -eq ""))
+            {
+                Write-Error "The given Collection could not be found"
+                exit 1
+            }
+
+        $Advertisement = Get-WmiObject -Class SMS_Advertisement -Namespace root\sms\site_$($SiteCode) | Where-Object {$_.CollectionID -eq "$($CollectionID)"}
+        if (($Advertisement -eq $null) -or ($Advertisement -eq ""))
+            {
+                Write-Error "Could not find any deployment on the given collection"
+                exit 1
+            }
+
+        Write-Verbose "Will delete the Deployment $($Advertisement.AdvertisementName)"
+        $Advertisement | Remove-WmiObject
+        if ($?)
+            {
+                Write-Verbose "Successfully deleted the deployment"
+            }
+        else
+            {
+                Write-Error -Message "There was an error deleting the deployment"
+            }
+    }
+```
