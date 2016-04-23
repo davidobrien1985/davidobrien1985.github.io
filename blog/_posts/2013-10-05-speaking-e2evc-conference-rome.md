@@ -22,12 +22,14 @@ tags:
   - speaker
   - System Center Configuration Manager
 ---
-After [Vienna in 2012](http://www.david-obrien.net/2012/05/27/im-at-e2evc-2012-in-vienna-live-feed-2/) and [Copenhagen this June](http://www.david-obrien.net/2013/05/27/live-from-e2evc-2013-copenhagen/), this will be my third time visiting and also speaking at E2EVC conference. This will also be my first speaking engagement as Microsoft MVP <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" alt="Smile" src="/media/2013/10/wlEmoticon-smile.png" />
+After [Vienna in 2012](/2012/05/27/im-at-e2evc-2012-in-vienna-live-feed-2/) and [Copenhagen this June](/2013/05/27/live-from-e2evc-2013-copenhagen/), this will be my third time visiting and also speaking at E2EVC conference. This will also be my first speaking engagement as Microsoft MVP :-)
 
-## What is E2EVC?[<img style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" alt="image" src="/media/2013/10/image_thumb2.png" width="244" height="77" align="right" border="0" />]("image" /media/2013/10/image2.png)
+## What is E2EVC?
 
-[E2EVC (Experts to Experts Virtualization Conference)](http://www.e2evc.com)  is a non-commercial, community-driven virtualization event. It started out 10 years ago as Pubforum and repeated itself twice a year in a different european city.
-  
+![image](/media/2013/10/image2.png)
+
+[E2EVC (Experts to Experts Virtualization Conference)](http://www.e2evc.com) is a non-commercial, community-driven virtualization event. It started out 10 years ago as Pubforum and repeated itself twice a year in a different european city.
+
 At E2EVC IT Pros from all over Europe and even the World come together for a weekend (Friday to Sunday) full of presentations, Master Classes and talks.
 
 Here you get the chance to talk to vendors and experts with your favourite beverage in hand and just have a great time!
@@ -38,22 +40,17 @@ If you want to get high level content for low level price, there’s still some 
 
 Here are some facts about E2EVC in Rome:
 
-  * 18 countries visiting. Germany, Austria, Swiss, UK, Ireland, Netherlands, Belgium, France, Sweden, Norway, Jersey, USA, Denmark, Italy, Croatia, Spain, Malta, Israel
-  * 18 Microsoft MVP, 15 Citrix CTP and 6 vExperts. We cover all of the technologies!
-  * For Rome we have 28 sessions and 1 Master Class in 3 days
-  * Last time there was MVP Community Lead, this time there will be Citrix CTP community lead Perrine Crampton!
-  * 110 people registered so far and from those are (figures are approximate): 
-      * 28% Dutch
-      * 15% German
-      * 15% Norwegian
-      * 11% UK
-      * 10% USA
+* 18 countries visiting. Germany, Austria, Swiss, UK, Ireland, Netherlands, Belgium, France, Sweden, Norway, Jersey, USA, Denmark, Italy, Croatia, Spain, Malta, Israel
+* 18 Microsoft MVP, 15 Citrix CTP and 6 vExperts. We cover all of the technologies!
+* For Rome we have 28 sessions and 1 Master Class in 3 days
+* Last time there was MVP Community Lead, this time there will be Citrix CTP community lead Perrine Crampton!
+* 110 people registered so far and from those are (figures are approximate):
+  * 28% Dutch
+  * 15% German
+  * 15% Norwegian
+  * 11% UK
+  * 10% USA
 
 ## Powershell and System Center 2012 R2 Configuration Manager combined
 
-I’ll be having a speaker slot on Saturday showing you some pretty cool stuff about what’s possible with the Powershell cmdlets in System Center 2012 R2 Configuration Manager. So if you’re into Powershell, and even if not(!), and have to or like working with ConfigMgr, then don’t miss my session full of cool demos! 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+I’ll be having a speaker slot on Saturday showing you some pretty cool stuff about what’s possible with the Powershell cmdlets in System Center 2012 R2 Configuration Manager. So if you’re into Powershell, and even if not(!), and have to or like working with ConfigMgr, then don’t miss my session full of cool demos!

@@ -27,12 +27,12 @@ I sat down and wrote a script to parse through all the existing applications and
 
 Start-CMApplicationDeployment ([http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx](http://technet.microsoft.com/en-us/library/jj821911(v=sc.10).aspx)) looked really promising and easy to use, unfortunately it presented a huge problem.
 
-> Start-CMApplicationDeployment –CollectionName %Collectionname% –Name %Applicationname% -DeployAction Uninstall -DeployPurpose Required -UserNotification HideAll
+`Start-CMApplicationDeployment –CollectionName %Collectionname% –Name %Applicationname% -DeployAction Uninstall -DeployPurpose Required -UserNotification HideAll`
 
 In this CM12 SP1 CU3 environment it took the cmdlet 13 minutes for each application to create a deployment, although I was telling it the specific ApplicationName.
-  
+
 Seeing that I had to create an install and uninstall deployment for 300 apps in total that would’ve been 130 hrs or 5,5 days of waiting.
-  
+
 I had a look at SMSProv.log then and saw that the cmdlet looks like it’s going through all your applications and deployment types until it finds the right one to deploy.
 
 Other people already confirmed this problem and I actually had to go and use WMI again to create the deployment.
@@ -41,7 +41,8 @@ Using WMI each deployment creation took only about 5 seconds. So what’s the de
 
 Here’s part of the script I used to create and application via WMI.
 
-<pre class="csharpcode">$DeploymentClass = [wmiclass] "\\localhost\root\sms\site_$($SiteCode):SMS_ApplicationAssignment"
+```
+DeploymentClass = [wmiclass] "\\localhost\root\sms\site_$($SiteCode):SMS_ApplicationAssignment"
 
 $Deployment = $DeploymentClass.CreateInstance()
 $Deployment.ApplicationName                 = "PDFCreator"
@@ -61,14 +62,10 @@ $Deployment.TargetCollectionID              = "SMS00001"   # CollectionID where 
 $Deployment.WoLEnabled                      = $false
 $Deployment.UseGMTTimes                     = $true
 $Deployment.Put()
+```
 
 More info on this WMI class here on MSDN:
 
 SMS_ApplicationAssignment [http://msdn.microsoft.com/en-us/library/hh949469.aspx](http://msdn.microsoft.com/en-us/library/hh949469.aspx)
-  
-SMS_CIAssignmentBaseClass [http://msdn.microsoft.com/en-us/library/hh949014.aspx](http://msdn.microsoft.com/en-us/library/hh949014.aspx) 
 
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+SMS_CIAssignmentBaseClass [http://msdn.microsoft.com/en-us/library/hh949014.aspx](http://msdn.microsoft.com/en-us/library/hh949014.aspx)
