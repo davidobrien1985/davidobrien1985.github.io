@@ -26,167 +26,155 @@ Here's my speaking schedule up until next February:
     <td valign="top" width="197">
       <strong>Topic</strong>
     </td>
-    
+
     <td valign="top" width="142">
       <strong>Date</strong>
     </td>
-    
+
     <td valign="top" width="439">
       <strong>Event</strong>
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       Powershell Desired State Configuration
     </td>
-    
+
     <td valign="top" width="142">
       27/10/2014-28/10/2014
     </td>
-    
+
     <td valign="top" width="439">
       [TechEd Australia Sydney](http://www.microsoft.com/en-au/teched/default.aspx)
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       Service Management Automation / Azure Automation (with Trevor Sullivan)
     </td>
-    
+
     <td valign="top" width="142">
       11/11/2014-13/11/2014
     </td>
-    
+
     <td valign="top" width="439">
       [Midwest Management Summit (Minneapolis / USA)](http://mms.mnscug.org/)
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       Powershell Desired State Configuration (with Jeff Wouters)
     </td>
-    
+
     <td valign="top" width="142">
       11/11/2014-13/11/2014
     </td>
-    
+
     <td valign="top" width="439">
       [Midwest Management Summit (Minneapolis / USA)](http://mms.mnscug.org/)
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       Powershell Tips 'n Tricks (co-presenting with Jeff Wouters and Trevor Sullivan)
     </td>
-    
+
     <td valign="top" width="142">
       11/11/2014-13/11/2014
     </td>
-    
+
     <td valign="top" width="439">
       [Midwest Management Summit (Minneapolis / USA)](http://mms.mnscug.org/)
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       Service Management Automation and ConfigMgr
     </td>
-    
+
     <td valign="top" width="142">
       11/11/2014-13/11/2014
     </td>
-    
+
     <td valign="top" width="439">
       [Midwest Management Summit (Minneapolis / USA)](http://mms.mnscug.org/)
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       not yet finalised
     </td>
-    
+
     <td valign="top" width="142">
       22/11/2014
     </td>
-    
+
     <td valign="top" width="439">
       [Brisbane Infrastructure Saturday (Australia)](http://infrastructuresaturday.com/)
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       not yet finalised
     </td>
-    
+
     <td valign="top" width="142">
       22/11/2014
     </td>
-    
+
     <td valign="top" width="439">
       [Brisbane Infrastructure Saturday (Australia)](http://infrastructuresaturday.com/)
     </td>
   </tr>
-  
+
   <tr>
     <td valign="top" width="197">
       Service Management Automation & Azure Automation
     </td>
-    
+
     <td valign="top" width="142">
       12/02/2015-13/02/2015
     </td>
-    
+
     <td valign="top" width="439">
       [NICConf 2015 (Oslo)](http://nicconf.com/)
     </td>
   </tr>
 </table>
 
-&nbsp;
-
 # Midwest Management Summit - MMS
 
 Important information regarding this event:
-  
+
 If you do want to attend and save a bit of money, go and register **BEFORE** this Friday, October 17th.
 
-[http://mms.mnscug.org/]("http://mms.mnscug.org/" http://mms.mnscug.org/) [<img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="MMS" src="/media/2014/10/MMS_thumb.png" alt="MMS" width="124" height="89" border="0" />]("MMS" /media/2014/10/MMS.png)
+[http://mms.mnscug.org/](http://mms.mnscug.org/) 
 
-&nbsp;
+![MMS](/media/2014/10/MMS.png)
 
 # Brisbane Infrastructure Saturday
 
 Register here for this event up in Queensland / Australia. It's completely **FREE!!!**
 
-[http://www.infrastructuresaturday.com/]("http://www.infrastructuresaturday.com/" http://www.infrastructuresaturday.com/)
-
-&nbsp;
+[http://www.infrastructuresaturday.com/](http://www.infrastructuresaturday.com/)
 
 # NICConf 2015
 
 Register here for this event in Norway: [www.nicconf.com](http://www.nicconf.com)
 
-Looking forward to going back to Europe after already being in Australia for one year <img class="img-responsive wlEmoticon wlEmoticon-smile" style="border-style: none;" src="/media/2014/10/wlEmoticon-smile.png" alt="Smile" />
+Looking forward to going back to Europe after already being in Australia for one year.
 
-&nbsp;
-
-Wow, these are a lot of sessions. Need to start preparing <img class="img-responsive wlEmoticon wlEmoticon-winkingsmile" style="border-style: none;" src="/media/2014/10/wlEmoticon-winkingsmile1.png" alt="Winking smile" />
+Wow, these are a lot of sessions. Need to start preparing ;-)
 
 I will update this list if I have to, so check regularly if I am in your area.
 
 Do you have a User Group and would like me to speak while I am in your area? Just contact me and we'll sort something out.
 
-- [David](www.twitter.com/david_obrien) 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+- [David](www.twitter.com/david_obrien)

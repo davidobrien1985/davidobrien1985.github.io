@@ -32,168 +32,90 @@ PowerShell to the rescue.
 
 Connect your PowerShell session to your Azure Active Directory by using the MSOnline module.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb.png" alt="image" width="396" height="198" border="0" />]("image" /media/2014/12/image.png)
+![image](/media/2014/12/image.png)
 
 You can use the following function to easily connect yourself to MSOnline:
 
-<div id="wpshdo_18" class="wp-synhighlighter-outer">
-  <div id="wpshdt_18" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_18"></a><a id="wpshat_18" class="wp-synhighlighter-title" href="#codesyntax_18"  onClick="javascript:wpsh_toggleBlock(18)" title="Click to show/hide code block">Source code</a>
-        </td>
-        
-        <td align="right">
-          <a href="#codesyntax_18" onClick="javascript:wpsh_code(18)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_18" onClick="javascript:wpsh_print(18)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-  <div id="wpshdi_18" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;"><span class="co1">#region Functions
-<span class="kw3">Function Save<span class="sy0">-Password
-<span class="br0">&#123;
-  <span class="kw3">Param
-  <span class="br0">&#40;
-    <span class="br0">[parameter<span class="br0">&#40;Mandatory <span class="sy0">= <span class="re0">$true<span class="br0">&#41;<span class="br0">]
-    <span class="br0">[<span class="re3">String<span class="br0">]
-    <span class="re0">$FilePath<span class="sy0">,
-&nbsp;
-    <span class="br0">[parameter<span class="br0">&#40;Mandatory <span class="sy0">= <span class="re0">$false<span class="br0">&#41;<span class="br0">]
-    <span class="br0">[<span class="kw3">Switch<span class="br0">]
-    <span class="re0">$PassThru
-  <span class="br0">&#41;
-&nbsp;
-  <span class="re0">$secure <span class="sy0">= <span class="kw1">Read-Host <span class="kw5">-AsSecureString <span class="st0">'Enter your Azure organization ID password.'
-  <span class="re0">$encrypted <span class="sy0">= <span class="kw1">ConvertFrom-SecureString <span class="kw5">-SecureString <span class="re0">$secure
-  <span class="re0">$result <span class="sy0">= <span class="kw1">Set-Content <span class="kw5">-Path <span class="re0">$FilePath <span class="kw5">-Value <span class="re0">$encrypted <span class="kw5">-PassThru
-&nbsp;
-  <span class="kw3">if <span class="br0">&#40;<span class="sy0">!<span class="re0">$result<span class="br0">&#41;
-  <span class="br0">&#123;
-    <span class="kw3">throw <span class="st0">"Failed to store encrypted string at $FilePath."
-  <span class="br0">&#125;
-  <span class="kw3">if <span class="br0">&#40;<span class="re0">$PassThru<span class="br0">&#41;
-  <span class="br0">&#123;
-    <span class="kw1">Get-ChildItem <span class="re0">$FilePath
-  <span class="br0">&#125;
-<span class="br0">&#125;
-&nbsp;
-<span class="co1">#endregion Functions
-<span class="co1">#region connect to MSOnline
-try <span class="br0">&#123;
-  <span class="kw3">if <span class="br0">&#40;<span class="kw4">-not <span class="br0">&#40;Get<span class="sy0">-Module <span class="kw5">-Name MSOnline<span class="br0">&#41;<span class="br0">&#41; <span class="br0">&#123;
-    <span class="re0">$null <span class="sy0">= Import<span class="sy0">-Module <span class="kw5">-Name MSOnline
-  <span class="br0">&#125;
-<span class="br0">&#125; 
-catch <span class="br0">&#123;
-  <span class="kw1">Write-Error <span class="kw5">-Message <span class="br0">&#123;<span class="br0">&#125; <span class="kw4">-f <span class="re0">$PSItem;
-<span class="br0">&#125;
-&nbsp;
-<span class="re0">$FilePath <span class="sy0">= Save<span class="sy0">-Password <span class="kw5">-FilePath <span class="st0">'C:\Users\David\OneDrive\Scripts\Azure\Password_MSOL.txt' <span class="kw5">-PassThru
-<span class="re0">$userName <span class="sy0">= <span class="st0">'david@dopsftw.onmicrosoft.com'
-<span class="re0">$securePassword <span class="sy0">= <span class="kw1">ConvertTo-SecureString <span class="br0">&#40;<span class="kw1">Get-Content <span class="kw5">-Path <span class="re0">$FilePath<span class="br0">&#41;
-<span class="re0">$msolcred <span class="sy0">= <span class="kw1">New-Object System.Management.Automation.PSCredential<span class="br0">&#40;<span class="re0">$userName<span class="sy0">, <span class="re0">$securePassword<span class="br0">&#41;
-&nbsp;
-connect<span class="sy0">-msolservice <span class="kw5">-credential $msolcred
-  </div>
-</div>
+```
+#region Functions
+Function Save-Password
+{
+  Param
+  (
+    [parameter(Mandatory = $true)]
+    [String]
+    $FilePath,
 
-Logged on to your Azure Portal (<a href="https://manage.windowsazure.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://manage.windowsazure.com', 'https://manage.windowsazure.com']);" >https://manage.windowsazure.com</a> ) you can view all your users in your Domains.
+    [parameter(Mandatory = $false)]
+    [Switch]
+    $PassThru
+  )
 
-<a href="/media/2014/12/image1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image1.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb1.png" alt="image" width="367" height="287" border="0" /></a>
+  $secure = Read-Host -AsSecureString 'Enter your Azure organization ID password.'
+  $encrypted = ConvertFrom-SecureString -SecureString $secure
+  $result = Set-Content -Path $FilePath -Value $encrypted -PassThru
+
+  if (!$result)
+  {
+    throw "Failed to store encrypted string at $FilePath."
+  }
+  if ($PassThru)
+  {
+    Get-ChildItem $FilePath
+  }
+}
+
+#endregion Functions
+#region connect to MSOnline
+try {
+  if (-not (Get-Module -Name MSOnline)) {
+    $null = Import-Module -Name MSOnline
+  }
+}
+catch {
+  Write-Error -Message {0} -f $PSItem;
+}
+
+$FilePath = Save-Password -FilePath 'C:\Users\David\OneDrive\Scripts\Azure\Password_MSOL.txt' -PassThru
+$userName = 'david@dopsftw.onmicrosoft.com'
+$securePassword = ConvertTo-SecureString (Get-Content -Path $FilePath)
+$msolcred = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+connect-msolservice -credential $msolcred
+```
+
+Logged on to your Azure Portal (<https://manage.windowsazure.com> ) you can view all your users in your Domains.
+
+![image](/media/2014/12/image1.png)
 
 What you can’t do via this GUI/website is, view a recycle bin. If you go and delete a user from here, that user is gone from your view.
 
 The way you restore a user account in this situation is very simple using PowerShell.
 
-<div id="wpshdo_19" class="wp-synhighlighter-outer">
-  <div id="wpshdt_19" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_19"></a><a id="wpshat_19" class="wp-synhighlighter-title" href="#codesyntax_19"  onClick="javascript:wpsh_toggleBlock(19)" title="Click to show/hide code block">Source code</a>
-        </td>
-        
-        <td align="right">
-          <a href="#codesyntax_19" onClick="javascript:wpsh_code(19)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_19" onClick="javascript:wpsh_print(19)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-  <div id="wpshdi_19" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-MsolUser <span class="sy0">-ReturnDeletedUser
-  </div>
-</div>
+`Get-MsolUser -ReturnDeletedUser`
 
-<a href="/media/2014/12/image2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image2.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb2.png" alt="image" width="388" height="50" border="0" /></a>
+![image](/media/2014/12/image2.png)
 
 This will show all user accounts that have been previously deleted.
 
-<div id="wpshdo_20" class="wp-synhighlighter-outer">
-  <div id="wpshdt_20" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_20"></a><a id="wpshat_20" class="wp-synhighlighter-title" href="#codesyntax_20"  onClick="javascript:wpsh_toggleBlock(20)" title="Click to show/hide code block">Source code</a>
-        </td>
-        
-        <td align="right">
-          <a href="#codesyntax_20" onClick="javascript:wpsh_code(20)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_20" onClick="javascript:wpsh_print(20)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-  <div id="wpshdi_20" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-MsolUser <span class="sy0">-ReturnDeletedUsers <span class="sy0">| <span class="kw3">foreach <span class="br0">&#123;<span class="re0">$PSItem <span class="sy0">| <span class="kw2">fl <span class="sy0">* <span class="kw5">-Force<span class="br0">&#125;
-  </div>
-</div>
+`Get-MsolUser -ReturnDeletedUsers | foreach {$PSItem | fl * -Force}`
 
 This will show you even more information on that deleted user. For example if you have a look at the ‘SoftDeletionTimestamp’ property. The first picture is from the user before we deleted it, the second after we deleted it.
 
-&nbsp;
+![image](/media/2014/12/image3.png)
 
-<a href="/media/2014/12/image3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image3.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb3.png" alt="image" width="214" height="273" border="0" /></a><a href="/media/2014/12/image4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image4.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb4.png" alt="image" width="219" height="244" border="0" /></a>
+![image](/media/2014/12/image4.png)
 
 Use the following command to restore deleted accounts:
 
-<div id="wpshdo_21" class="wp-synhighlighter-outer">
-  <div id="wpshdt_21" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_21"></a><a id="wpshat_21" class="wp-synhighlighter-title" href="#codesyntax_21"  onClick="javascript:wpsh_toggleBlock(21)" title="Click to show/hide code block">Source code</a>
-        </td>
-        
-        <td align="right">
-          <a href="#codesyntax_21" onClick="javascript:wpsh_code(21)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_21" onClick="javascript:wpsh_print(21)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-  <div id="wpshdi_21" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Restore<span class="sy0">-MsolUser <span class="sy0">-UserPrincipalName <span class="st0">'TestUser01@dopsftw.onmicrosoft.com'
-  </div>
-</div>
+`Restore-MsolUser -UserPrincipalName 'TestUser01@dopsftw.onmicrosoft.com'`
 
 # Office 365 Admin Portal – deleted users
 
-The Office 365 Admin Portal (<a href="https://portal.office.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://portal.office.com', 'https://portal.office.com']);" >https://portal.office.com</a> ) makes it a bit easier for the common administrator to restore deleted user accounts.
+The Office 365 Admin Portal (<https://portal.office.com> ) makes it a bit easier for the common administrator to restore deleted user accounts.
 
-<a href="/media/2014/12/image5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image5.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb5.png" alt="image" width="371" height="139" border="0" /></a>
+![image](/media/2014/12/image5.png)
 
-<a href="/media/2014/12/image6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/image6.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/12/image_thumb6.png" alt="image" width="381" height="174" border="0" /></a>
+![image](/media/2014/12/image6.png)
 
 Still, the MSOnline cmdlets work both for Azure Active Directory and for users in your Office365 Active Directory.
-
--<a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
-
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="AAD,active+directory,Azure,O365,Office365,Powershell" data-count="vertical" data-url="http://www.david-obrien.net/2014/12/recover-deleted-users-azure-active-directory/">Tweet</a>
-</div>
-
-

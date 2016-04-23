@@ -22,38 +22,17 @@ tags:
   - Windows Intune
 ---
 A while ago I implemented Windows Intune into my ConfigMgr 2012 R2 lab and during that process I also had to set a User Principal Name (UPN) for my users’ Active Directory Account.
-  
+
 In case you need to do that for more than one user at a time, then you might find this little Powershell line helpful:
 
-<div id="codeSnippetWrapper" style="margin: 20px 0px 10px; padding: 4px; border: 1px solid silver; width: 97.5%; text-align: left; line-height: 12pt; overflow: auto; font-family: 'Courier New', courier, monospace; font-size: 8pt; cursor: text; direction: ltr; max-height: 200px; background-color: #f4f4f4;">
-  <div id="codeSnippet" style="padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">
-    <pre style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: white;">Get-ADUser -Filter * -SearchBase 'ou=nonAdmins,ou=User,ou=Administration,dc=do,dc=local' -Properties userPrincipalName | foreach { Set-ADUser $_ -UserPrincipalName "$($_.samaccountname)@david.test"}
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+```
+Get-ADUser -Filter * -SearchBase 'ou=nonAdmins,ou=User,ou=Administration,dc=do,dc=local' -Properties userPrincipalName | foreach { Set-ADUser $_ -UserPrincipalName "$($_.samaccountname)@david.test"}
+```
 
 You will need to change the –SearchBase property to reflect the path to that OU in your Active Directory where the users are for whom you want to change the UPN. You also need to change <“@david.test>” to the UPN you want to use.
 
 This command needs to run on a server where the Active Directory module is installed. You might need to run
 
-<div id="codeSnippetWrapper" style="margin: 20px 0px 10px; padding: 4px; border: 1px solid silver; width: 97.5%; text-align: left; line-height: 12pt; overflow: auto; font-family: 'Courier New', courier, monospace; font-size: 8pt; cursor: text; direction: ltr; max-height: 200px; background-color: #f4f4f4;">
-  <div id="codeSnippet" style="padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: 'Courier New', courier, monospace; font-size: 8pt; direction: ltr; background-color: #f4f4f4;">
-    <p>
-      Import-Module ActiveDirectory
-    </p>
-    
-    <p>
-      <!--CRLF-->
-    </p>
-  </div>
-</div>
+`Import-Module ActiveDirectory`
 
-first. 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+first.

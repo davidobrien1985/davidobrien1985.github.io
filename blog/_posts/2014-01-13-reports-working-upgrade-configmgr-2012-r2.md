@@ -18,22 +18,17 @@ tags:
   - SCCM
 ---
 At today’s ConfigMgr User Group meeting Wally Mead (Microsoft Product Group) mentioned something to check after upgrading from ConfigMgr 2012 SP1 to R2.
-  
-Besides leaving the Setup Screen open (which fellow MVP Peter Daalmans also mentions here: [http://configmgrblog.com/2014/01/07/quick-configmgr-2012-r2-installation-tip-wally-mead/]("http://configmgrblog.com/2014/01/07/quick-configmgr-2012-r2-installation-tip-wally-mead/" http://configmgrblog.com/2014/01/07/quick-configmgr-2012-r2-installation-tip-wally-mead/) ) Wally also suggested checking if your reports still work.
 
-## Check reports node in ConfigMgr console
+Besides leaving the Setup Screen open (which fellow MVP Peter Daalmans also mentions here: [http://configmgrblog.com/2014/01/07/quick-configmgr-2012-r2-installation-tip-wally-mead/](http://configmgrblog.com/2014/01/07/quick-configmgr-2012-r2-installation-tip-wally-mead/) ) Wally also suggested checking if your reports still work.
+
+# Check reports node in ConfigMgr console
 
 In order to do this, just open up your updated Admin Console and go to your Monitoring – Reporting – Reports node.
 
-[<img style="float: none; margin-left: auto; display: block; margin-right: auto; border: 0px;" title="SCCM Reports" alt="SCCM Reports" src="/media/2014/01/image_thumb9.png" width="244" height="104" border="0" />]("SCCM Reports" /media/2014/01/image9.png)
+![SCCM Reports](/media/2014/01/image9.png)
 
 Then just run ANY report you like, for example “All Collections”. If no window opens, I mean actually nothing happens after selecting “Run”, then the Reportviewer hasn’t been installed correctly. If that is the case, go into your [\\$server\SMS_$SiteCode\tools\ConsoleSetup](file://\\$server\SMS_$SiteCode\tools\ConsoleSetup) share and manually reinstall “ReportViewer.exe”.
 
 If the window opens, but after that nothing happens, then this is maybe no fix for you.
 
-Maybe you are running into this issue and this helps you. 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
+Maybe you are running into this issue and this helps you.

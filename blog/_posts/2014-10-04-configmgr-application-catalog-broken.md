@@ -24,14 +24,8 @@ This customer does quite a lot of customisation on their servers. Granting permi
 
 They for example redirect the system temp to C:\temp and take away all the permissions the user 'Local Service' has to that temp directory.
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2014/10/image_thumb2.png" alt="image" width="244" height="136" border="0" />]("image" /media/2014/10/image2.png)
+![image](/media/2014/10/image2.png)
 
 As soon as I added 'Local Service' again with full permissions, all was fine and the ConfigMgr Application Catalog started up again.
 
-- [David](www.twitter.com/david_obrien) 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+- [David](www.twitter.com/david_obrien)

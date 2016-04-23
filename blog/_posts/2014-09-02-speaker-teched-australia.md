@@ -28,26 +28,26 @@ tags:
   - SMA
   - TechEd
 ---
-[<img title="image" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: right; padding-top: 0px; padding-left: 0px; margin-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px; margin-right: 0px" border="0" alt="image" src="/media/2014/09/image_thumb.png" width="244" align="right" height="91" />]("image" /media/2014/09/image.png)I am quite excited to be chosen as a Speaker at the new TechEd format in Australia. The format will be quite different to what it used to be. Instead of four days on the Gold Coast it will now be split into two 2-day events in Sydney and Melbourne. I will have the pleasure to speak at both locations.
+![image](/media/2014/09/image.png)
+
+I am quite excited to be chosen as a Speaker at the new TechEd format in Australia. The format will be quite different to what it used to be. Instead of four days on the Gold Coast it will now be split into two 2-day events in Sydney and Melbourne. I will have the pleasure to speak at both locations.
 
 # Datacenter transformation
 
 My two sessions will be - who would've guessed- around automation. My two sessions will be:
 
-  * _Be in total control with Desired State Configuration (Sydney, October 27-28 2014)_ 
-      * _Bye-bye Orchestrator, there's a new kid in town (Melbourne, October 7-82014)_ </ul> 
-    The exact times of the two sessions are not yet available, but the agenda should be published quite soon.
-    
-    ## Wishes? Comments?
-    
-    There's still time for you to ask me to cover some things you would like to see in my sessions. I'm all about community and interaction with the community, so if you have any comments or wishes, then please let me know as soon as possible and I will try to implement them into my sessions.
-    
-    # TechEd Australia
-    
-    More information about the event can be found on the official event website by Microsoft: [http://www.microsoft.com/en-au/teched/default.aspx]("http://www.microsoft.com/en-au/teched/default.aspx" http://www.microsoft.com/en-au/teched/default.aspx)
-    
-    <div style="float: right; margin-left: 10px;">
-      [Tweet](https://twitter.com/share)
-    </div>
+* Be in total control with Desired State Configuration (Sydney, October 27-28 2014)
+* Bye-bye Orchestrator, there's a new kid in town (Melbourne, October 7-82014)
+
+The exact times of the two sessions are not yet available, but the agenda should be published quite soon.
+
+## Wishes? Comments?
+
+There's still time for you to ask me to cover some things you would like to see in my sessions. I'm all about community and interaction with the community, so if you have any comments or wishes, then please let me know as soon as possible and I will try to implement them into my sessions.
+
+# TechEd Australia
+
+More information about the event can be found on the official event website by Microsoft: [http://www.microsoft.com/en-au/teched/default.aspx](http://www.microsoft.com/en-au/teched/default.aspx)
+
 
 

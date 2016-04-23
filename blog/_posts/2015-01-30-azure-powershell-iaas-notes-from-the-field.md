@@ -19,51 +19,33 @@ tags:
   - SDK
 ---
 I was tasked to write a bunch of PowerShell scripts to deploy a new Active Directory Domain Services (ADDS) Server onto Azure.
-  
+
 The end goal would be to have some kind of synchronisation running between the off-premises and the on-premises environment, the off-prem basically being the Test/Dev environment for that customer.
-  
+
 Over the last couple of days I wrote down some notes on about what I did and what curiosities I found.
 
 If you haven’t yet started using the Azure PowerShell SDK, go check out [http://azure.microsoft.com/en-us/documentation/articles/install-configure-powershell/](http://azure.microsoft.com/en-us/documentation/articles/install-configure-powershell/) . This will help you get started.
 
-# PowerShell SDK for Azure {.}
+# PowerShell SDK for Azure
 
-  * as with everything you are trying to automate, it **helps a lot** to have a basic idea of how stuff works.
-  * there are 509 cmdlets in the Azure module. That’s a lot!
+* as with everything you are trying to automate, it **helps a lot** to have a basic idea of how stuff works.
+* there are 509 cmdlets in the Azure module. That’s a lot!
 
-[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422578282_thumb.png" alt="" align="middle" />](/media/2015/01/1422578282_full.png)
+![image](/media/2015/01/1422578282_full.png)
 
-  * the whole SDK is likely to change over time, the documentation clearly says so. So, after you go and updated your SDK version, go check if everything still works as expected!
+* the whole SDK is likely to change over time, the documentation clearly says so. So, after you go and updated your SDK version, go check if everything still works as expected!
 
-<p class="">
-  [<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422434319_thumb.png" alt="" align="middle" />](/media/2015/01/1422434319_full.png)
-</p>
+![image](/media/2015/01/1422434319_full.png)
 
-  * you can and should do as much yourself as you can, don’t rely on built-in logic that creates everything for you if not specified, like creating storage accounts (New-AzureStorageAccount) , Cloud Services (New-AzureService) and such if you run New-AzureVM without having anything created beforehand
-  * [New-AzureStorageAccount](https://www.twitter.com/david_obrien) only accepts a name parameter that is between 3 and 24 characters long, lowercase and only letters and numbers. Why only lowercase?
-  * In order to run New-AzureStorageAccount you first need to run [Set-AzureSubscription](https://msdn.microsoft.com/en-us/library/dn495189.aspx) with the CurrentStorageAccountName parameter
-  * [Remove-AzureVM](https://msdn.microsoft.com/en-us/library/azure/dn495264.aspx) is a good example of “bad” / old documentation, it’s missing the parameter -DeleteVHD. The article states that the cmdlet doesn’t remove the underlying VHD. Using the DeleteVHD param it now does. Strangely enough, “Get-Help Remove-AzureVM -Full” kind of contradicts itself here.
+* you can and should do as much yourself as you can, don’t rely on built-in logic that creates everything for you if not specified, like creating storage accounts (New-AzureStorageAccount) , Cloud Services (New-AzureService) and such if you run New-AzureVM without having anything created beforehand
+* New-AzureStorageAccount only accepts a name parameter that is between 3 and 24 characters long, lowercase and only letters and numbers. Why only lowercase?
+* In order to run New-AzureStorageAccount you first need to run [Set-AzureSubscription](https://msdn.microsoft.com/en-us/library/dn495189.aspx) with the CurrentStorageAccountName parameter
+* [Remove-AzureVM](https://msdn.microsoft.com/en-us/library/azure/dn495264.aspx) is a good example of “bad” / old documentation, it’s missing the parameter -DeleteVHD. The article states that the cmdlet doesn’t remove the underlying VHD. Using the DeleteVHD param it now does. Strangely enough, “Get-Help Remove-AzureVM -Full” kind of contradicts itself here.
 
-[<img class="img-responsive full aligncenter" title="" src="/media/2015/01/1422492443_thumb.png" alt="" align="middle" />](/media/2015/01/1422492443_full.png)
+![image](/media/2015/01/1422492443_full.png)
 
-<p class="">
-  <p>
-    I will continue to update this article over time. These are just my first findings (and personal notes for me to remember in the future) on this topic.
-  </p>
-  
-  <p>
-    Do you have something to add to this list?
-  </p>
-  
-  <p>
-    Until then, have fun automating.
-  </p>
-  
-  <p>
-    - [David](#) 
-    
-    <div style="float: right; margin-left: 10px;">
-      [Tweet](https://twitter.com/share)
-    </div>
+I will continue to update this article over time. These are just my first findings (and personal notes for me to remember in the future) on this topic.
 
+Do you have something to add to this list?
 
+Until then, have fun automating.

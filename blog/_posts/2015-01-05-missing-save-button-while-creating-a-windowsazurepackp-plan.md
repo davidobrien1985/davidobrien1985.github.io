@@ -31,26 +31,18 @@ I went into the Plan Service and started configuring stuff. I selected the corre
 
 Well, as I wanted to save the configuration I discovered that the Save button wasn’t there. It wasn’t greyed out or so, it was actually missing. See the screenshot, **those buttons weren’t there!**
 
-&nbsp;
-
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2015/01/image_thumb.png" alt="image" width="452" height="340" border="0" />]("image" /media/2015/01/image.png)
+![image](/media/2015/01/image.png)
 
 I already started to believe that there was something wrong with my WAP installation, when I went back to Twitter and asked around:
 
-[<img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="image" src="/media/2015/01/image_thumb1.png" alt="image" width="269" height="323" border="0" />]("image" /media/2015/01/image1.png)
+![image](/media/2015/01/image1.png)
 
 That’s strange, why would WAP have a check in there somewhere for a network being available, but then won’t tell me?
-  
+
 I set up a Logical Network, a VM Network and connected them to the cloud and et voila, there was my save button.
 
 Weirdest thing here: I didn’t need to add a network to the plan (although you actually need to in order to actually in the end use it), it still let me save it.
 
 No idea if this kind of behaviour is likely to happen in other places in WAP as well, but if you come across this anywhere else, it’s worth checking if there are any requirements you have not met.
 
-- [David](http://www.twitter.com/david_obrien) 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+- [David](http://www.twitter.com/david_obrien)

@@ -15,7 +15,7 @@ tags:
   - Powershell
   - Script
 ---
-#  Rebuilding my home lab with PowerShell
+# Rebuilding my home lab with PowerShell
 
 I am currently rebuilding my home lab (again! This time properly, I promise.) and my goal is to use as much PowerShell as possible.
 
@@ -25,67 +25,33 @@ Of course, I have also downloaded the [DSC Resource Kit](http://blogs.msdn.com/b
 
 I started out using DSC to deploy my DNS Server and Active Directory Domain Services, after that I thought to myself, “Which Roles and Features do I need?”. That’s the moment I usually go and run the following PowerShell command on my Server OS:
 
-<div id="wpshdo_24" class="wp-synhighlighter-outer">
-  <div id="wpshdt_24" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_24"></a><a id="wpshat_24" class="wp-synhighlighter-title" href="#codesyntax_24"  onClick="javascript:wpsh_toggleBlock(24)" title="Click to show/hide code block">Source code</a>
-        </td>
-        
-        <td align="right">
-          <a href="#codesyntax_24" onClick="javascript:wpsh_code(24)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_24" onClick="javascript:wpsh_print(24)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-  <div id="wpshdi_24" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-WindowsFeature <span class="sy0">| Out<span class="sy0">-GridView
-  </div>
-</div>
+`Get-WindowsFeature | Out-GridView`
 
 On Windows Client you’d have to run:
 
-<div id="wpshdo_25" class="wp-synhighlighter-outer">
-  <div id="wpshdt_25" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_25"></a><a id="wpshat_25" class="wp-synhighlighter-title" href="#codesyntax_25"  onClick="javascript:wpsh_toggleBlock(25)" title="Click to show/hide code block">Source code</a>
-        </td>
-        
-        <td align="right">
-          <a href="#codesyntax_25" onClick="javascript:wpsh_code(25)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_25" onClick="javascript:wpsh_print(25)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-  <div id="wpshdi_25" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-WindowsOptionalFeature <span class="sy0">-Online <span class="sy0">| Out<span class="sy0">-GridView
-  </div>
-</div>
+`Get-WindowsOptionalFeature -Online | Out-GridView`
 
-# Out-GridView
+## Out-GridView
 
-<a href="http://technet.microsoft.com/en-us/library/hh849920.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://technet.microsoft.com/en-us/library/hh849920.aspx', 'Out-GridView']);" target="_blank">Out-GridView</a> is a very handy cmdlet first introduced in PowerShell v2 already. It will take an input object and display it in an external grid view.
+Out-GriedView (<http://technet.microsoft.com/en-us/library/hh849920.aspx>) is a very handy cmdlet first introduced in PowerShell v2 already. It will take an input object and display it in an external grid view.
 
 Did you know that this cmdlet also has an –OutputMode parameter?
 
-> ##### -OutputMode<OutputModeOption>
-> 
-> Send items from the interactive window down the pipeline as input to other commands. By default, this cmdlet does not generate any output. To send items from the interactive window down the pipeline, click to select the items and then click OK.
-> 
-> The values of this parameter determine how many items you can send down the pipeline.
-> 
-> - **None**: No items. This is the default value.
-> 
-> - **Single**: Zero items or one item. Use this value when the next command can take only one input object.
-> 
-> - **Multiple**: Zero, one, or many items. Use this value when the next command can take multiple input objects. This value is equivalent to the **Passthru** parameter.
-> 
-> This parameter is introduced in Windows PowerShell 3.0.
+```
+-OutputMode<OutputModeOption>
+
+Send items from the interactive window down the pipeline as input to other commands. By default, this cmdlet does not generate any output. To send items from the interactive window down the pipeline, click to select the items and then click OK.
+
+The values of this parameter determine how many items you can send down the pipeline.
+
+— None: No items. This is the default value.
+
+— Single: Zero items or one item. Use this value when the next command can take only one input object.
+
+— Multiple: Zero, one, or many items. Use this value when the next command can take multiple input objects. This value is equivalent to the Passthru parameter.
+
+This parameter is introduced in Windows PowerShell 3.0.
+```
 
 What does that mean? Well, we can use the Windows which opens to select items and use them as InputObjects on the cmdline. Cool, right?
 
@@ -93,27 +59,11 @@ What does that mean? Well, we can use the Windows which opens to select items an
 
 This is nothing you would run in a script, but definitely handy to know. So instead of writing a long DSC configuration, which I could, but that would take me time and I would have to remember all the FeatureNames, or writing an even longer script, I just run this:
 
-<div id="wpshdo_26" class="wp-synhighlighter-outer">
-  <div id="wpshdt_26" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_26"></a><a id="wpshat_26" class="wp-synhighlighter-title" href="#codesyntax_26"  onClick="javascript:wpsh_toggleBlock(26)" title="Click to show/hide code block">Source code</a>
-        </td>
-        
-        <td align="right">
-          <a href="#codesyntax_26" onClick="javascript:wpsh_code(26)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_26" onClick="javascript:wpsh_print(26)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-  <div id="wpshdi_26" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Install<span class="sy0">-WindowsFeature <span class="kw5">-Name <span class="sy0">@<span class="br0">&#40;<span class="br0">&#40;Get<span class="sy0">-WindowsFeature<span class="br0">&#41;.<span class="kw3">Where<span class="br0">&#40;<span class="br0">&#123;<span class="re0">$PSItem.InstallState –ne ‘Installed’<span class="br0">&#125;<span class="br0">&#41; <span class="sy0">| Out<span class="sy0">-GridView <span class="sy0">-OutputMode Multiple<span class="br0">&#41; <span class="sy0">-IncludeManagementTools –Verbose
-  </div>
-</div>
+```
+Install-WindowsFeature -Name @((Get-WindowsFeature).Where({$PSItem.InstallState –ne ‘Installed’}) | Out-GridView -OutputMode Multiple) -IncludeManagementTools –Verbose
+```
 
-<a href="/media/2014/12/PS.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', '/media/2014/12/PS.png', '']);" ><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="PS" src="/media/2014/12/PS_thumb.png" alt="PS" width="421" height="108" border="0" /></a>
+![image](/media/2014/12/PS.png)
 
 This command will open up a window presenting you with all the available Features and Roles on that system, which not have been installed yet.
 
@@ -122,11 +72,3 @@ The trick here is that Install-WindowsFeature accepts an array of “Name”, wh
 This way I can easily go and install all the Windows Roles and Features I like in just one go.
 
 Have fun!
-
-- <a href="http://www.twitter.com/david_obrien" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.twitter.com/david_obrien', 'David']);" target="_blank">David</a> 
-
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="automation,Powershell,Script" data-count="vertical" data-url="http://www.david-obrien.net/2014/12/install-windows-features-powershell-clicking/">Tweet</a>
-</div>
-
-
