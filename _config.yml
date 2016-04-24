@@ -84,7 +84,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "David O'Brien"
-  avatar           : "http://davidobrien1985.github.io/images/me.png"
+  avatar           : "me.png"
   bio              : "MVP for Cloud and Datacentre management. Interested in all things automation."
   location         : "Melbourne Australia"
   email            : "me@david-obrien.net"
