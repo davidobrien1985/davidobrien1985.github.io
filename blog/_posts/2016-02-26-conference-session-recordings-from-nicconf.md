@@ -22,17 +22,8 @@ tags:
 
 This year I was able to again make the long trip to Europe to present at the [Nordic Infrastructure Conference NicConf](http://www.nicconf.com) in Oslo/Norway.
 
-![<img class="img-responsive aligncenter" src="/media/2016/02/nicconf1-300x225.jpeg" alt=" align="middle" />](/media/2016/02/nicconf1.jpeg)
+![NiConf](/media/2016/02/nicconf1.jpeg)
 
 I had two sessions, one was "Ansible - Configuration Management on Linux" and the other one was "PowerShell on AWS".
 
 Here are the session recordings, I hope you enjoy watching them as much as I enjoyed doing the sessions. If you've been there, thank you and hopefully see you next year again!
-
-
-
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-

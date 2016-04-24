@@ -26,30 +26,30 @@ This is just an overview of the features I am most excited about.
 
 # New Preview Portal
 
-  * Automation node is now available in the new [http://portal.azure.com](http://portal.azure.com)
+* Automation node is now available in the new [http://portal.azure.com](http://portal.azure.com)
 
 # Graphical User Interface for Azure Automation
 
-  * Orchestrator's appeal always was the simple "drag and drop" experience while building runbooks. While this was usually quite limited and you quickly had to revert back to writing PowerShell code, the idea was that you could easily see what was happening.
-  * Graphical runbooks give you the ability to now view what is happening in that runbook at a single glance.
+* Orchestrator's appeal always was the simple "drag and drop" experience while building runbooks. While this was usually quite limited and you quickly had to revert back to writing PowerShell code, the idea was that you could easily see what was happening.
+* Graphical runbooks give you the ability to now view what is happening in that runbook at a single glance.
 
-[<img class="img-responsive aligncenter wp-image-3045 size-thumbnail" src="/media/2015/05/AA_GraphicalRunbook-150x150.png" alt="Azure Automation Graphical Runbooks" width="150" height="150" />](/media/2015/05/AA_GraphicalRunbook.png)
+![Azure Automation Graphical Runbook](/media/2015/05/AA_GraphicalRunbook.png)
 
-  * Azure Automation has now two types of runbooks, graphical and textual. While both essentially still run PowerShell Workflow, while creating a graphical runbook you don't have to think about that and (for now at least) you are unable to see the actual code.
+* Azure Automation has now two types of runbooks, graphical and textual. While both essentially still run PowerShell Workflow, while creating a graphical runbook you don't have to think about that and (for now at least) you are unable to see the actual code.
 
 # Hybrid runbook workers for Azure Automation
 
-  * Wow! When I saw this I thought "Yes, that's what I want". Hook up on-premises servers into your Azure Automation environment. These servers will receive jobs from Azure Automation, execute them and report back the results. No details yet as to how this will be charged to customers (will workloads executed on-premises be part of the free 500mins/month?), but I am very excited to see Azure Automation evolve into this.
+* Wow! When I saw this I thought "Yes, that's what I want". Hook up on-premises servers into your Azure Automation environment. These servers will receive jobs from Azure Automation, execute them and report back the results. No details yet as to how this will be charged to customers (will workloads executed on-premises be part of the free 500mins/month?), but I am very excited to see Azure Automation evolve into this.
 
 # Webhooks for Azure Automation
 
-  * Continuous Deployment is now a lot easier with Webhooks supported for Azure Automation
-  * Set up a webhook to git or any other of your Source Control products and whenever you push something to your repository (commit and sync) a specific Azure Automation runbook can be kicked off which will (for example) import that new commit as a new runbook into Azure Automation
+* Continuous Deployment is now a lot easier with Webhooks supported for Azure Automation
+* Set up a webhook to git or any other of your Source Control products and whenever you push something to your repository (commit and sync) a specific Azure Automation runbook can be kicked off which will (for example) import that new commit as a new runbook into Azure Automation
 
 # Desired State Configuration on Azure
 
-  * Azure Automation DSC allows you to manage PowerShell Desired State Configuration in the cloud. Cloud or on-premises servers can retrieve these configurations, conform to the desired state they specify, and report back on their compliance.
-  * Essentially, this is a PowerShell DSC Pull Server in the cloud
+* Azure Automation DSC allows you to manage PowerShell Desired State Configuration in the cloud. Cloud or on-premises servers can retrieve these configurations, conform to the desired state they specify, and report back on their compliance.
+* Essentially, this is a PowerShell DSC Pull Server in the cloud
 
 Seeing how Azure Automation progresses only shows that those people still betting on Orchestrator and its "drag and drop" activities are still living in the past. SMA will most likely get all those new graphical UI runbooks as well, but you still need to know how to write PowerShell. Just recently I was told that admins and users of such orchestration tools should not be expected to be able to write code / scripts. Alright, I thought that guy was plain wrong and missed a couple of very important announcements in the industry.
 
@@ -57,10 +57,4 @@ This is not a complete list of new stuff, these are just features I am excited t
 
 Stay tuned for some more detailed articles on certain features.
 
-- [David]("David on Twitter" http://www.twitter.com/david_obrien)
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+[David](http://www.twitter.com/david_obrien)

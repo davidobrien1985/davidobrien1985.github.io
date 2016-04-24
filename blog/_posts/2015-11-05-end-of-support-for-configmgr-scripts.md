@@ -25,9 +25,9 @@ A lot of this code made it onto this blog and some of it is even pretty popular 
 
 This comes down to a couple of reasons:
 
-  * not enough time
-  * no test environment anymore
-  * really, like really not my focus anymore
+* not enough time
+* no test environment anymore
+* really, like really not my focus anymore
 
 I am going to leave the code here on my blog of course, but it's also already on Github: https://github.com/davidobrien1985/ConfigMgr
 
@@ -37,10 +37,4 @@ Go check it out. Fork it, make it better (some really need it!), get it out ther
 
 I'm happy to respond to issues on Github or maybe fix some really obvious problems/bugs with my code.
 
-You will see more of my content on other (more interesting?!) topics here of course, but also on www.powershellmagazine.com for example. 
-
-<div style="float: right; margin-left: 10px;">
-  [Tweet](https://twitter.com/share)
-</div>
-
-
+You will see more of my content on other (more interesting?!) topics here of course, but also on www.powershellmagazine.com for example.

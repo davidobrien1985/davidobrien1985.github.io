@@ -24,9 +24,9 @@ On Twitter I was following a conversation where someone said that he needed an e
 
 This article will focus on the tools and the configuration used (in MY environment) to accomplish Continuous Integration.
 
-[<img class="img-responsive aligncenter" src="/media/2016/01/1454145901_thumb.png" alt="" align="middle" />](/media/2016/01/1454145901_full.png)<!--more-->
+![image](/media/2016/01/1454145901_full.png)
 
-#  <span style="color: inherit; font-family: open_sanssemibold, sans-serif; font-size: 26px;">Continuous Integration for PowerShell modules
+# Continuous Integration for PowerShell modules
 
 If you haven't yet heard of Continuous Integration (CI) then this Wikipedia article will give you a good overview of what is involved in CI: <https://en.wikipedia.org/wiki/Continuous_integration>
 
@@ -36,17 +36,17 @@ In a nutshell CI means that as a developer (You write PowerShell? You're a devel
 
 This build artefact can now be picked up by tools like Bamboo, Octopus Deploy, Ansible, Chef or Puppet.
 
-# PowerShell module good practices
+## PowerShell module good practices
 
 In this chapter I don't really want to talk about how to structure your PowerShell module, but just some things that I found over time that make it a lot easier to get your module through your build pipeline.
 
-  * add your test files to the source code
-      * githubconnect.Tests.ps1 is the script that gets automatically executed by our Pester step. (later more)
+* add your test files to the source code
+  * githubconnect.Tests.ps1 is the script that gets automatically executed by our Pester step. (later more)
 
-[<img class="img-responsive aligncenter" src="/media/2016/01/1454146307_thumb.png" alt="" align="middle" />](/media/2016/01/1454146307_full.png)
+![powershell tests](/media/2016/01/1454146307_full.png)
 
   * use your IDE to trim whitespace from line endings
-      * most decent IDEs will have a function in them to remove whitespace. This will prevent some Code Styleguide checks from failing.
+    * most decent IDEs will have a function in them to remove whitespace. This will prevent some Code Styleguide checks from failing.
       * I use VS Code for my development and use this extension.
   * I'd recommend having a generic pipeline for your modules. Have a "policy" that says that your module needs at least the Pester test script.
   * You either use one Source Code Repository for all your modules, each module is in its own subfolder, or have multiple pipelines where each pipeline monitors only one repository and builds only one module. Alternatively one could also add multiple VCS roots to a pipeline, if your CI tool supports that.
@@ -55,14 +55,14 @@ In this chapter I don't really want to talk about how to structure your PowerShe
 
 My basic CI pipeline is split into four stages:
 
-  1. Preparation
-      1. Here I make sure that the build agent is configured the way I need it to be.
-  2. Validation
-      1. In this stage all the tests are run.
-  3. Build
-      1. The artefact is created. In some special cases this stage might be empty or disabled.
-  4. Upload
-      1. The artefact is uploaded to the configured repositories. (NuGet, PowerShell Gallery, Artefactory, Nexus, etc.)
+1. Preparation
+  1. Here I make sure that the build agent is configured the way I need it to be.
+2. Validation
+  1. In this stage all the tests are run.
+3. Build
+  1. The artefact is created. In some special cases this stage might be empty or disabled.
+4. Upload
+  1. The artefact is uploaded to the configured repositories. (NuGet, PowerShell Gallery, Artefactory, Nexus, etc.)
 
 ## Preparation stage
 
@@ -70,135 +70,84 @@ This stage is special. This is the very first stage in my CI pipeline, it kicks 
 
 The actual action that gets executed is fairly dull. It uses the PackageManagement module to bootstrap nugget.exe onto your system, that's it. **Caveat: **Your machine needs internet connectivity to download the executable.
 
-<div id="wpshdo_49" class="wp-synhighlighter-outer">
-  <div id="wpshdt_49" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_49"></a><a id="wpshat_49" class="wp-synhighlighter-title" href="#codesyntax_49"  onClick="javascript:wpsh_toggleBlock(49)" title="Click to show/hide code block">Source code</a>
-        </td>
+`Get-PackageProvider -Name NuGet -ForceBootstrap`
 
-        <td align="right">
-          <a href="#codesyntax_49" onClick="javascript:wpsh_code(49)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_49" onClick="javascript:wpsh_print(49)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div id="wpshdi_49" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">Get<span class="sy0">-PackageProvider <span class="kw5">-Name NuGet <span class="sy0">-ForceBootstrap
-  </div>
-</div>
-
-<img class="img-responsive size-full wp-image-3279 alignleft" src="/media/2016/01/TC-PrepStep.png" alt="TC-PrepStep" width="1163" height="829" srcset="/media/2016/01/TC-PrepStep-300x214.png 300w, /media/2016/01/TC-PrepStep-768x547.png 768w, /media/2016/01/TC-PrepStep-1024x730.png 1024w, /media/2016/01/TC-PrepStep.png 1163w" sizes="(max-width: 1163px) 100vw, 1163px" />
-
+![teamcity](/media/2016/01/TC-PrepStep.png)
 ## Validation stage
 
 The validation stage consists of two steps in my case.
 
-  * ScriptAnalyzer
-  * Pester
+* ScriptAnalyzer
+* Pester
 
 The ScriptAnalyzer step runs the command "Invoke-ScriptAnalyzer" and checks if there are any obvious issues with code. We don't have to add anything to our code in order to run these Style tests, those test definitions are built in to the PSScriptAnalyzer PowerShell module.
 
-<img class="img-responsive aligncenter size-full wp-image-3282" src="/media/2016/01/tc-scriptanalyzer.png" alt="tc-scriptanalyzer" width="1522" height="967" srcset="/media/2016/01/tc-scriptanalyzer-300x191.png 300w, /media/2016/01/tc-scriptanalyzer-768x488.png 768w, /media/2016/01/tc-scriptanalyzer-1024x651.png 1024w, /media/2016/01/tc-scriptanalyzer.png 1522w" sizes="(max-width: 1522px) 100vw, 1522px" />
+![teamcity](/media/2016/01/tc-scriptanalyzer.png)
 
-<div id="wpshdo_50" class="wp-synhighlighter-outer">
-  <div id="wpshdt_50" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_50"></a><a id="wpshat_50" class="wp-synhighlighter-title" href="#codesyntax_50"  onClick="javascript:wpsh_toggleBlock(50)" title="Click to show/hide code block">Source code</a>
-        </td>
+```
+try {
+    if (Get-Module PSScriptAnalyzer) {
+        Import-Module -Name PSScriptAnalyzer -ErrorAction Stop
+    }
+    else {
+        Install-Module PSScriptAnalyzer -Force
+    }
+}
+catch {
+    Write-Error -Message $_
+    exit 1
+}
 
-        <td align="right">
-          <a href="#codesyntax_50" onClick="javascript:wpsh_code(50)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_50" onClick="javascript:wpsh_print(50)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div id="wpshdi_50" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">try <span class="br0">&#123;
-    <span class="kw3">if <span class="br0">&#40;Get<span class="sy0">-Module PSScriptAnalyzer<span class="br0">&#41; <span class="br0">&#123;
-        Import<span class="sy0">-Module <span class="kw5">-Name PSScriptAnalyzer <span class="kw5">-ErrorAction Stop
-    <span class="br0">&#125;
-    <span class="kw3">else <span class="br0">&#123;
-        Install<span class="sy0">-Module PSScriptAnalyzer <span class="kw5">-Force
-    <span class="br0">&#125;
-<span class="br0">&#125;
-catch <span class="br0">&#123;
-    <span class="kw1">Write-Error <span class="kw5">-Message <a href="about:blank"><span class="kw6">$_</a>
+try {
+    $rules = Get-ScriptAnalyzerRule -Severity Warning,Error -ErrorAction Stop
+    $results = Invoke-ScriptAnalyzer -Path %system.teamcity.build.checkoutDir% -IncludeRule $rules.RuleName -Recurse -ErrorAction Stop
+    $results
+}
+catch {
+    Write-Error -Message $_
     exit 1
-<span class="br0">&#125;
-&nbsp;
-try <span class="br0">&#123;
-    <span class="re0">$rules <span class="sy0">= Get<span class="sy0">-ScriptAnalyzerRule <span class="sy0">-Severity Warning<span class="sy0">,Error <span class="kw5">-ErrorAction Stop
-    <span class="re0">$results <span class="sy0">= Invoke<span class="sy0">-ScriptAnalyzer <span class="kw5">-Path <span class="sy0">%system.teamcity.build.checkoutDir<span class="sy0">% <span class="sy0">-IncludeRule <span class="re0">$rules.RuleName <span class="kw5">-Recurse <span class="kw5">-ErrorAction Stop
-    <span class="re0">$results
-<span class="br0">&#125;
-catch <span class="br0">&#123;
-    <span class="kw1">Write-Error <span class="kw5">-Message <a href="about:blank"><span class="kw6">$_</a>
+}
+if ($results.Count -gt 0) {
+    Write-Host "Analysis of your code threw $($results.Count) warnings or errors. Please go back and check your code."
     exit 1
-<span class="br0">&#125;
-<span class="kw3">if <span class="br0">&#40;<span class="re0">$results.Count <span class="kw4">-gt 0<span class="br0">&#41; <span class="br0">&#123;
-    <span class="kw1">Write-Host <span class="st0">"Analysis of your code threw $($results.Count) warnings or errors. Please go back and check your code."
-    exit 1
-<span class="br0">&#125;
-<span class="kw3">else <span class="br0">&#123;
-    <span class="kw1">Write-Host <span class="st0">'Awesome code! No issues found!' <span class="kw5">-Foregroundcolor green
-<span class="br0">&#125;
-  </div>
-</div>
+}
+else {
+    Write-Host 'Awesome code! No issues found!' -Foregroundcolor green
+}
+```
 
 The code should be pretty self-explanatory. Only if there are neither Warnings nor Errors in my modules do I move on to running the Pester tests in the next step.
 
-<img class="img-responsive aligncenter size-full wp-image-3283" src="/media/2016/01/tc-pester.png" alt="tc-pester" width="1515" height="908" srcset="/media/2016/01/tc-pester-300x180.png 300w, /media/2016/01/tc-pester-768x460.png 768w, /media/2016/01/tc-pester-1024x614.png 1024w, /media/2016/01/tc-pester.png 1515w" sizes="(max-width: 1515px) 100vw, 1515px" />
+![powershell pester](/media/2016/01/tc-pester.png)
 
-<div id="wpshdo_51" class="wp-synhighlighter-outer">
-  <div id="wpshdt_51" class="wp-synhighlighter-expanded">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left" width="80%">
-          <a name="#codesyntax_51"></a><a id="wpshat_51" class="wp-synhighlighter-title" href="#codesyntax_51"  onClick="javascript:wpsh_toggleBlock(51)" title="Click to show/hide code block">Source code</a>
-        </td>
+```
+try {
+  if (Get-Module Pester) {
+    Import-Module -Name Pester -ErrorAction Stop
+  }
+  else {
+    Install-Module Pester -Force
+  }
+  $checkoutdir = "%system.teamcity.build.checkoutDir%"
+  $pester_xml = Join-Path $checkoutdir pester_xml.xml
+  $result = Invoke-Pester -OutputFile $pester_xml -OutputFormat NUnitXml -PassThru -Strict -ErrorAction Stop
 
-        <td align="right">
-          <a href="#codesyntax_51" onClick="javascript:wpsh_code(51)" title="Show code only"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/code.png" /></a>&nbsp;<a href="#codesyntax_51" onClick="javascript:wpsh_print(51)" title="Print code"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/printer.png" /></a>&nbsp;<a href="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/About.html', '']);" target="_blank" title="Show plugin information"><img border="0" style="border: 0 none" src="http://www.david-obrien.net/David/wp-content/plugins/wp-synhighlight/themes/default/images/info.gif" /></a>&nbsp;
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div id="wpshdi_51" class="wp-synhighlighter-inner" style="display: block;">
-    <pre class="powershell" style="font-family:monospace;">try <span class="br0">&#123;
-  <span class="kw3">if <span class="br0">&#40;Get<span class="sy0">-Module Pester<span class="br0">&#41; <span class="br0">&#123;
-    Import<span class="sy0">-Module <span class="kw5">-Name Pester <span class="kw5">-ErrorAction Stop
-  <span class="br0">&#125;
-  <span class="kw3">else <span class="br0">&#123;
-    Install<span class="sy0">-Module Pester <span class="kw5">-Force
-  <span class="br0">&#125;
-  <span class="re0">$checkoutdir <span class="sy0">= <span class="st0">"%system.teamcity.build.checkoutDir%"
-  <span class="re0">$pester_xml <span class="sy0">= <span class="kw1">Join-Path <span class="re0">$checkoutdir pester_xml.xml
-  <span class="re0">$result <span class="sy0">= Invoke<span class="sy0">-Pester <span class="sy0">-OutputFile <span class="re0">$pester_xml <span class="sy0">-OutputFormat NUnitXml <span class="kw5">-PassThru <span class="kw5">-Strict <span class="kw5">-ErrorAction Stop
-&nbsp;
-  <span class="kw3">if <span class="br0">&#40;<span class="re0">$result.FailedCount <span class="kw4">-gt 0<span class="br0">&#41; <span class="br0">&#123;
-    <span class="kw3">throw <span class="st0">"{0} tests did not pass" <span class="kw4">-f <span class="re0">$result.FailedCount
-  <span class="br0">&#125;
-<span class="br0">&#125;
-catch <span class="br0">&#123;
-  <span class="re0">$msg <span class="sy0">= <a href="about:blank"><span class="kw6">$_</a>
-  <span class="kw1">Write-Error <span class="kw5">-ErrorRecord <span class="re0">$msg
-  exit <span class="nu0">1
-<span class="br0">&#125;
-  </div>
-</div>
+  if ($result.FailedCount -gt 0) {
+    throw "{0} tests did not pass" -f $result.FailedCount
+  }
+}
+catch {
+  $msg = $_
+  Write-Error -ErrorRecord $msg
+  exit 1
+}
+```
 
 Just as with ScriptAnalyzer, if it's not installed, TeamCity will make sure that Pester gets installed on the machine first.
 
 Invoke-Pester will search all .Tests. files and execute them. We are also telling Pester to output to an XML file. Pester supports the NUnitXml format that TeamCity also understands and is able to interpret and visualise the results on the TeamCity website.
 
-<img class="img-responsive aligncenter size-full wp-image-3284" src="/media/2016/01/tc-pester-feature.png" alt="tc-pester-feature" width="1583" height="388" srcset="/media/2016/01/tc-pester-feature-300x74.png 300w, /media/2016/01/tc-pester-feature-768x188.png 768w, /media/2016/01/tc-pester-feature-1024x251.png 1024w, /media/2016/01/tc-pester-feature.png 1583w" sizes="(max-width: 1583px) 100vw, 1583px" />
+![pester feature](/media/2016/01/tc-pester-feature.png)
 
 With these two steps have we already done quite a bit. Nice!
 
@@ -208,7 +157,7 @@ In the case of these PowerShell modules I am keeping my "Build" stage empty, as 
 
 The "Upload" stage is where I publish my artefact to the world for other systems to pick up and deploy from.
 
-<img class="img-responsive aligncenter size-full wp-image-3285" src="/media/2016/01/tc-publish.png" alt="tc-publish" width="1586" height="723" srcset="/media/2016/01/tc-publish-300x137.png 300w, /media/2016/01/tc-publish-768x350.png 768w, /media/2016/01/tc-publish-1024x467.png 1024w, /media/2016/01/tc-publish.png 1586w" sizes="(max-width: 1586px) 100vw, 1586px" />
+![teamcity publish](/media/2016/01/tc-publish.png)
 
 The magic happens with "Publish-Module", which automatically creates a deployable artefact out of the PowerShell module and uploads it to the Microsoft PowerShell Gallery.
 
@@ -218,14 +167,8 @@ I obviously don't want to put my PowerShell Gallery API Key into my scripts whic
 
 To sum this up I can show you a run of one build where the Pester Unit tests failed and where TeamCity notified me of a failed build.
 
-<img class="img-responsive aligncenter size-full wp-image-3286" src="/media/2016/01/tc-result.png" alt="tc-result" width="1579" height="268" srcset="/media/2016/01/tc-result-300x51.png 300w, /media/2016/01/tc-result-768x130.png 768w, /media/2016/01/tc-result-1024x174.png 1024w, /media/2016/01/tc-result.png 1579w" sizes="(max-width: 1579px) 100vw, 1579px" />
+![teamcity result](/media/2016/01/tc-result.png)
 
 With this configuration in TeamCity we achieved actual CI, Continuous Integration. Every time someone commits / checks-in code to our Git repository's Master branch TeamCity will notice this change and trigger a job. If everything is fine then all we have to do is wait and after a successful run worry about deployment.
 
 I hope this overview will get you started with configuring your own TeamCity pipeline / project for your PowerShell code. If not, hit me up on Twitter or here and ask.
-
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://twitter.com/share', 'Tweet']);" class="twitter-share-button" data-hashtags="Continuous+Deployment,Continuous+Integration,DevOps,git,github,Powershell" data-count="vertical" data-url="http://www.david-obrien.net/2016/01/continuous-integration-with-teamcity-powershell-and-git/">Tweet</a>
-</div>
-
-
