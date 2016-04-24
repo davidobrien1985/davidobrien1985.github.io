@@ -35,6 +35,7 @@ defaults:
     values:
       layout: single
       read_time: true
+      author_profile: true
   # _pages
   - scope:
       path: "/_pages/"
@@ -81,7 +82,7 @@ google_ad_slot           :
 author:
   name             : "David O'Brien"
   avatar           : "me.png"
-  bio              : "I am an amazing person."
+  bio              : "MVP for Cloud and Datacentre management. Interested in all things automation."
   location         : "Melbourne Australia"
   email            : "me@david-obrien.net"
   # uri              :
