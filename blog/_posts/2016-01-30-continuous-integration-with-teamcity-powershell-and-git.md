@@ -73,6 +73,7 @@ The actual action that gets executed is fairly dull. It uses the PackageManageme
 `Get-PackageProvider -Name NuGet -ForceBootstrap`
 
 ![teamcity](/media/2016/01/TC-PrepStep.png)
+
 ## Validation stage
 
 The validation stage consists of two steps in my case.
