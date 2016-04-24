@@ -36,6 +36,7 @@ defaults:
       layout: single
       read_time: true
       author_profile: true
+      share: true
   # _pages
   - scope:
       path: "/_pages/"
