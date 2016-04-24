@@ -4,7 +4,7 @@ title: Create Folders in Microsoft System Center Configuration Manager 2012 with
 date: 2012-02-24T13:01:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=275
+
 permalink: /2012/02/create-folders-in-microsoft-system-center-configuration-manager-with-powershell/
 if_slider_image:
   -
@@ -96,3 +96,5 @@ Function Create-CollectionFolder($FolderName)
 ```
 
 If you need some help or got some questions left, just ask!
+
+

@@ -4,7 +4,7 @@ title: 'DevOps - PowerShell in a Continuos Integration pipeline'
 date: 2015-07-16T13:24:56+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3088
+
 permalink: /2015/07/devops-powershell-in-a-continuos-integration-pipeline/
 categories:
   - automation
@@ -34,3 +34,5 @@ It is a quick dive into PowerShell Desired State Configuration (PSDSC), Pester U
 This video is more a teaser of what can be done, it's not a complete guide (those will follow), nor did I talk about every single aspect of it. Also I might have missed a couple of steps here because of time constraints.
 
 Enjoy the recording and comments are obviously most welcome.
+
+

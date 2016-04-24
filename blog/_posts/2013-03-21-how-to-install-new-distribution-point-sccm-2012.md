@@ -4,7 +4,7 @@ title: 'How to install new Distribution Point&ndash;SCCM 2012'
 date: 2013-03-21T00:20:11+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=809
+
 permalink: /2013/03/how-to-install-new-distribution-point-sccm-2012/
 categories:
   - automation
@@ -329,3 +329,5 @@ Invoke-WmiMethod -Namespace "root\SMS\site_$SiteCode" -class "SMS_SiteControlFil
 
 $SiteControlFile = Invoke-WmiMethod -Namespace "root\SMS\site_$SiteCode" -class "SMS_SiteControlFile" -name "ReleaseSessionHandle" -ArgumentList $SiteControlFile.SessionHandle -ComputerName $MPServer
 ```
+
+

@@ -4,7 +4,7 @@ title: 'Bye bye Windows - Hello Mac'
 date: 2015-01-26T00:58:38+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=2913
+
 permalink: /2015/01/bye-bye-windows-hello-mac/
 categories:
   - Mac
@@ -73,3 +73,4 @@ Did you just recently change platforms? Do you have a Surface Pro 3 and want to 
 Drop me a line here or on Twitter!
 
 [- David](http://www.twitter.com/david_obrien)
+

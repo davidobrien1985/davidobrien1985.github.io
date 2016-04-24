@@ -4,7 +4,7 @@ title: 'ConfigMgr 2012 R2 CU 1 available - walkthrough'
 date: 2014-03-29T08:54:16+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1673
+
 permalink: /2014/03/configmgr-2012-r2-cu-1-available-walkthrough/
 categories:
   - CM12
@@ -72,3 +72,4 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\Setup
 ![image]](/media/2014/03/pic11.jpg)
 
 Good luck with your update!
+

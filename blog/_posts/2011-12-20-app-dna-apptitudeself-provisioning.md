@@ -4,7 +4,7 @@ title: App-DNA AppTitude–Self Provisioning
 date: 2011-12-20T18:24:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=236
+
 permalink: /2011/12/app-dna-apptitudeself-provisioning/
 if_slider_image:
   -
@@ -87,5 +87,7 @@ You only need to follow a workflow now presented to you by Bob (AppTitude admin)
 
 In my opinion the nice thing about SelfProvisioning is that the AppTitude admin doesn’t have to worry about the installation or configuration of applications. This is the sole responsibility of the software department and not the AppTitude admin.
 This way the software department can make their applications “AppTitude ready” without access to the AppTitude console.
+
+
 
 

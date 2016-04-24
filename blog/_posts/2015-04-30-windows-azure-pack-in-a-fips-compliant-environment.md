@@ -4,7 +4,7 @@ title: Windows Azure Pack in a FIPS compliant environment
 date: 2015-04-30T23:46:18+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3039
+
 permalink: /2015/04/windows-azure-pack-in-a-fips-compliant-environment/
 categories:
   - Azure
@@ -70,3 +70,5 @@ So far I didn't encounter any problems re-enabling the GPO on the WAP server, ho
 ## Community Feedback
 
 Have you come across this issue? Were you able to fix this? Add your comments to the article or contact me on [Twitter](http://www.twitter.com/david_obrien)
+
+

@@ -4,7 +4,7 @@ title: 'Remove direct membership rules &ndash; ConfigMgr'
 date: 2013-02-24T23:04:32+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=756
+
 permalink: /2013/02/remove-direct-membership-rules-configmgr/
 categories:
   - ConfigMgr
@@ -113,3 +113,5 @@ else
 Another approach would be to directly use the WMI method DeleteMembershipRule in the class SMS_Collection, but as we all should try to use the new cmdlets, I didn’t bother to use WMI ;-)
 
 Remember to execute the script in a 32bit PowerShell, otherwise the script won’t run.
+
+

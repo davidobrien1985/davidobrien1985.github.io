@@ -4,7 +4,7 @@ title: How to configure Full Update on Collection in ConfigMgr with Powershell
 date: 2013-10-12T09:37:10+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1392
+
 permalink: /2013/10/how-to-configure-full-update-collection-in-configmgr-with-powershell/
 categories:
   - ConfigMgr 2012 R2
@@ -134,3 +134,5 @@ After the script:
 ![PowerShell script](/media/2013/10/image7.png)
 
 ![Collection properties](/media/2013/10/image8.png)
+
+

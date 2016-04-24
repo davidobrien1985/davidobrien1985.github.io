@@ -4,7 +4,7 @@ title: How to find the ConfigMgr SMS Provider Location
 date: 2014-02-12T12:46:09+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1626
+
 permalink: /2014/02/find-configmgr-sms-provider-location/
 categories:
   - ConfigMgr
@@ -58,3 +58,4 @@ As an alternative you can just open up a Powershell on one SMS Provider you know
 This will give you something like this:
 
 ![SMS_ProviderLocation](/media/2014/02/image4.png)
+

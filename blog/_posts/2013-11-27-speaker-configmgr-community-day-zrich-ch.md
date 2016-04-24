@@ -4,7 +4,7 @@ title: 'Speaker am ConfigMgr Community Day in Z&uuml;rich / CH'
 date: 2013-11-27T21:43:08+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1484
+
 permalink: /2013/11/speaker-configmgr-community-day-zrich-ch/
 categories:
   - Community
@@ -37,3 +37,5 @@ Ich werde natürlich einiges zum Thema ConfigMgr und Automatisierung mit **Power
 Es sind noch ein paar Plätze frei, also meldet euch an und trefft viele bekannte Namen aus der ConfigMgr Community!
 
 Ich freue mich schon drauf!
+
+

@@ -4,7 +4,7 @@ title: 'ConfigMgr 2012 R2 - what&rsquo;s new?'
 date: 2013-06-25T07:53:38+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1048
+
 permalink: /2013/06/configmgr-2012-r2-whats-new/
 categories:
   - ConfigMgr 2012 R2
@@ -113,3 +113,5 @@ There is this node ‘Virtual Hard Disks’ where I suppose one can create a new
 ![image](/media/2013/06/image33.png)
 
 I will update this post with more info in the future.
+
+

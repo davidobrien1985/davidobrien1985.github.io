@@ -17,4 +17,8 @@ tags:
   - automation
 ---
 
+
+
 As I have been previously doing more work on the other cloud, namely Amazon Web Services (AWS), I have found a few things that are worth mentioning and in this article here I will start with EC2 instances and their deployment / provisioning on AWS.
+
+

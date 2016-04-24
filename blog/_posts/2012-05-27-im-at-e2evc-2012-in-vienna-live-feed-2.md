@@ -4,7 +4,7 @@ title: I’m at E2EVC 2012 in Vienna (“Live Feed”)
 date: 2012-05-27T14:22:43+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=344
+
 permalink: /2012/05/im-at-e2evc-2012-in-vienna-live-feed-2/
 categories:
   - App-V
@@ -216,3 +216,5 @@ All in all my first E2EVC was a really cool experience. I got to meet all the pe
 This was also the first time I presented in front of such a large and skilled audience and if there’s no too bad feedback, then this was not the last you’ve seen of me!
 
 It’s a shame that I can’t make it to Hamburg in November, but I will definitely try to make Stockholm next year!
+
+

@@ -4,7 +4,7 @@ title: Missing Save button while creating a Windows Azure Pack Plan
 date: 2015-01-05T19:08:23+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=2863
+
 permalink: /2015/01/missing-save-button-while-creating-a-windowsazurepackp-plan/
 categories:
   - Azure
@@ -46,3 +46,4 @@ Weirdest thing here: I didn’t need to add a network to the plan (although you 
 No idea if this kind of behaviour is likely to happen in other places in WAP as well, but if you come across this anywhere else, it’s worth checking if there are any requirements you have not met.
 
 - [David](http://www.twitter.com/david_obrien)
+

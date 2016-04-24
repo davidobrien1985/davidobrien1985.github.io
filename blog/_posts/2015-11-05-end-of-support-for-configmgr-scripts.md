@@ -4,7 +4,7 @@ title: End of support for ConfigMgr scripts
 date: 2015-11-05T20:15:11+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3122
+
 permalink: /2015/11/end-of-support-for-configmgr-scripts/
 categories:
   - CM12
@@ -38,3 +38,5 @@ Go check it out. Fork it, make it better (some really need it!), get it out ther
 I'm happy to respond to issues on Github or maybe fix some really obvious problems/bugs with my code.
 
 You will see more of my content on other (more interesting?!) topics here of course, but also on www.powershellmagazine.com for example.
+
+

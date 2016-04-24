@@ -4,7 +4,7 @@ title: 'PoC Deployment of SCCM 2012 - Hydration Kit'
 date: 2011-09-08T09:54:02+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=143
+
 permalink: /2011/09/poc-deployment-of-sccm-2012-hydration-kit/
 categories:
   - MDT
@@ -25,3 +25,5 @@ It has been designed to quickly deploy a standalone SCCM 2012 Beta 2 environment
 All you have to do is download the required sources and copy them to the right place.
 
 This kit is really cool for quick presentations at a customer's site or even PoCs.
+
+

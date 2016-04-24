@@ -4,7 +4,7 @@ title: PowerShell scripting guidelines
 date: 2015-04-29T20:05:13+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3032
+
 permalink: /2015/04/powershell-scripting-guidelines/
 categories:
   - PowerShell
@@ -88,3 +88,4 @@ finally
   * If a script can only run with a certain PS Version ($PSVersionTable), use Set-StrictMode -Version X
   * If there is a cmdlet and an executable to do the same thing (Get-Service vs sc.exe), prefer the cmdlet.
   * Perfect is the enemy of good!
+

@@ -4,7 +4,7 @@ title: Enable Deduplication with Powershell for ConfigMgr exclusions
 date: 2014-02-21T15:58:43+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1658
+
 permalink: /2014/02/enable-deduplication-powershell-configmgr-exclusions/
 categories:
   - ConfigMgr
@@ -44,3 +44,5 @@ Set-DedupVolume –Volume D: -ExcludeFolder 'D:\ContentSource'
 ```
 
 Have fun saving space!
+
+

@@ -4,7 +4,7 @@ title: 'Install Windows features through PowerShell - by clicking'
 date: 2014-12-10T14:56:23+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=2844
+
 permalink: /2014/12/install-windows-features-powershell-clicking/
 categories:
   - automation
@@ -72,3 +72,4 @@ The trick here is that Install-WindowsFeature accepts an array of “Name”, wh
 This way I can easily go and install all the Windows Roles and Features I like in just one go.
 
 Have fun!
+

@@ -4,7 +4,7 @@ title: How to unlock objects in ConfigMgr 2012 with Powershell
 date: 2013-09-10T20:52:48+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1264
+
 permalink: /2013/09/unlock-objects-configmgr-2012-powershell/
 categories:
   - CM12
@@ -147,3 +147,5 @@ Get-CMOperatingSystemImage
 Get-CMBootImage
 Get-CMTaskSequence
 ```
+
+

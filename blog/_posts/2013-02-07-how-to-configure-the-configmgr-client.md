@@ -4,7 +4,7 @@ title: How to configure the ConfigMgr Client cache
 date: 2013-02-07T16:42:04+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=718
+
 permalink: /2013/02/how-to-configure-the-configmgr-client/
 categories:
   - CM12
@@ -214,3 +214,5 @@ You could now go ahead and use the script above and move the cache to a differen
 I spent the day configuring a lot of properties of the client and came to the conclusion, that it’s not too easily done. Some things aren’t documented and then I guess also not supported. The thing with the cache location is most probably not supported the way I’m doing it, so beware when testing it in your LAB! I’m still testing it and will tell you when it’s kind of safe to use.
 
 **TEST THE SCRIPTS IN YOUR LAB FIRST!!! I take NO responsibility for any issues!**
+
+

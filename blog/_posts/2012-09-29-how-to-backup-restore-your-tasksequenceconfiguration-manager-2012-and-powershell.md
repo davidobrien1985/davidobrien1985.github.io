@@ -4,7 +4,7 @@ title: 'How to backup &#038; restore your TaskSequence–Configuration Manager 2
 date: 2012-09-29T14:41:18+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=486
+
 permalink: /2012/09/how-to-backup-restore-your-tasksequenceconfiguration-manager-2012-and-powershell/
 categories:
   - automation
@@ -100,3 +100,5 @@ So if you configured anything inside the Task Sequence’s properties, for examp
 It seems odd that Microsoft should have forgotten to give us a tool to export Task Sequences. Well this is a first step to do it without direct access to the Admin Console.
 
 Comments? Does anybody need this or is it just fun to know it works?
+
+

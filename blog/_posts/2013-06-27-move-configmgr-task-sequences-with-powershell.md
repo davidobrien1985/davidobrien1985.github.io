@@ -4,7 +4,7 @@ title: Move ConfigMgr Task Sequences with Powershell
 date: 2013-06-27T10:07:23+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1051
+
 permalink: /2013/06/move-configmgr-task-sequences-with-powershell/
 categories:
   - ConfigMgr 2012
@@ -64,3 +64,5 @@ param (
 ```
 
 The script can also be downloaded here: [https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1](https://davidobrien.codeplex.com/SourceControl/latest#move-TaskSequence.ps1)
+
+

@@ -4,7 +4,7 @@ title: Create a new Software Update Group in ConfigMgr
 date: 2012-12-02T23:23:42+00:00
 author: "David O'Brien"
 layout: single
-guid: http://david-obrien.de/?p=532
+
 permalink: /2012/12/create-a-new-software-update-group-in-configmgr/
 categories:
   - ConfigMgr
@@ -168,3 +168,5 @@ The script needs error handling! Right now it won’t tell you what it did and i
 Interaction: One KB can contain more than one hotfixes (e.g. KB890830). If the script finds more than one hotfix it should ask which one to add. Right now it adds all of them.
 
 I hope you like it! Text me here or on Twitter ([@david_obrien](http://www.twitter.com/david_obrien)) if you do.
+
+

@@ -4,7 +4,7 @@ title: Renaming Configuration Manager 2012 Task Sequences via Powershell
 date: 2013-05-30T23:03:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=941
+
 permalink: /2013/05/renaming-configuration-manager-2012-task-sequences-via-powershell/
 categories:
   - CM12
@@ -77,3 +77,5 @@ foreach ($TS in $TSs)
 ```
 
 I bet there are lots more scenarios you can think of, but I guess these two short scripts will get you on your way!
+
+

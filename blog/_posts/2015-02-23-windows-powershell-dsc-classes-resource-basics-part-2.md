@@ -4,7 +4,7 @@ title: 'Windows PowerShell DSC - classes - resource basics (part 2)'
 date: 2015-02-23T08:42:16+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=2979
+
 permalink: /2015/02/windows-powershell-dsc-classes-resource-basics-part-2/
 categories:
   - automation
@@ -185,3 +185,4 @@ In order to find your resource module, though, you need to add a new parameter t
 In the next part I will walk through my converted ConfigMgr resource and show you a couple of more classes I've implemented into this resource.
 
 Until then, enjoy automating!
+

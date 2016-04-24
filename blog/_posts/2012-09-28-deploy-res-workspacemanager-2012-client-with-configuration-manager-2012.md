@@ -4,7 +4,7 @@ title: Deploy RES WorkspaceManager 2012 Client with Configuration Manager 2012
 date: 2012-09-28T15:55:49+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=480
+
 permalink: /2012/09/deploy-res-workspacemanager-2012-client-with-configuration-manager-2012/
 categories:
   - automation
@@ -56,4 +56,6 @@ For more information on deploying the Client, refer to the Admin Guide on ressof
 That’s it! Now all you need to do is either integrate the application into a Task Sequence or deploy it directly to a collection and the receiving machine will install the Client and show up in the RES WM console right away.
 
 Same goes for uninstall. Unfortunately the client won’t get deleted in the RES Database, this is something I will have to build myself.
+
+
 

@@ -4,7 +4,7 @@ title: How to automate Offline Servicing in Configuration Manager 2012
 date: 2012-12-17T10:55:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://david-obrien.de/?p=543
+
 permalink: /2012/12/how-to-automate-offline-servicing-in-configuration-manager-2012/
 categories:
   - automation
@@ -243,3 +243,5 @@ run-OfflineServicingManager
 Combining this script with my previous one to create a Software Update Group, you are able to automate the whole stuff!
 
 Comments are welcome and looked forward to  ;-) Either here or via Twitter (@david_obrien).
+
+

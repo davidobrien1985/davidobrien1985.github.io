@@ -4,7 +4,7 @@ title: 'Citrix personal vDisk - a personalized static Desktop'
 date: 2011-09-01T13:38:39+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=107
+
 permalink: /2011/09/citrix-personal-vdisk-a-personalized-static-desktop/
 categories:
   - Citrix
@@ -103,4 +103,6 @@ In my case drive F: contains all the Logs and the VHD file "personal vDisk" uses
 Looking at V: you will notice that this looks quite a lot like your C: drive. I told you that the file system filter driver redirects changes on C: to your personal vDisk. So whatever the user changes on his system will eventually land on V: and because of that also on my F: drive, the VHD.
 
 I will go on and play a bit with this nice new feature of XenDesktop 5.5, it does look quite cool and I hope that some customers will come to the same conclusion.
+
+
 

@@ -1,7 +1,7 @@
 ---
 title: Ansible
 author: David O'Brien
-layout: page
+layout: single
 featured_topic: true
 sidebar_exclude: true
 icon: fa-cogs

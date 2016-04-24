@@ -4,7 +4,7 @@ title: Citrix AppDNA 6–don’t miss out on these new features!
 date: 2012-04-02T20:20:35+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=308
+
 permalink: /2012/04/citrix-appdna-6dont-miss-out-on-these-new-features/
 categories:
   - APP-DNA
@@ -96,3 +96,5 @@ Integration with Configuration Manager 2012 is also not available, although othe
 # What, thank someone, didn’t change?
 
 I could import all of my existing Forward Path scripts and Task Scripts. That saved me a lot of work. So if you’re upgrading from AppTitude 5 to AppDNA 6, make sure to export all of your customized scripts, you CAN still use them in the new version. Thank you, AppDNA! ;)
+
+

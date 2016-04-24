@@ -4,7 +4,7 @@ title: Speaking at E2EVC conference Rome
 date: 2013-10-05T12:15:13+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1373
+
 permalink: /2013/10/speaking-e2evc-conference-rome/
 categories:
   - Community
@@ -54,3 +54,4 @@ Here are some facts about E2EVC in Rome:
 ## Powershell and System Center 2012 R2 Configuration Manager combined
 
 I’ll be having a speaker slot on Saturday showing you some pretty cool stuff about what’s possible with the Powershell cmdlets in System Center 2012 R2 Configuration Manager. So if you’re into Powershell, and even if not(!), and have to or like working with ConfigMgr, then don’t miss my session full of cool demos!
+

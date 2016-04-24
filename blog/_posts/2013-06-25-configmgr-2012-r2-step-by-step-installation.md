@@ -4,7 +4,7 @@ title: 'ConfigMgr 2012 R2 - Step by Step installation'
 date: 2013-06-25T06:59:57+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1015
+
 permalink: /2013/06/configmgr-2012-r2-step-by-step-installation/
 categories:
   - ConfigMgr 2012
@@ -131,3 +131,4 @@ All build numbers have now been updated to 7884.
 ![CMTrace](/media/2013/06/CMtrace.jpg)
 
 ![image](/media/2013/06/image23.png)
+

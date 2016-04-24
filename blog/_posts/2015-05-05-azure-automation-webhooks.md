@@ -4,7 +4,7 @@ title: Azure Automation - Webhooks
 date: 2015-05-05T09:00:57+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3062
+
 permalink: /2015/05/azure-automation-webhooks/
 categories:
   - Azure
@@ -78,3 +78,4 @@ Param(
 From here on your imagination is the limit I would say. I will absolutely check this out further and see what I can come up with.
 
 Exciting times ahead!
+

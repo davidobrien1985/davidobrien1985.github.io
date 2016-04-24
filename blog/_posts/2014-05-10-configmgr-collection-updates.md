@@ -4,7 +4,7 @@ title: 'How to - ConfigMgr collection updates'
 date: 2014-05-10T00:45:24+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1790
+
 permalink: /2014/05/configmgr-collection-updates/
 categories:
   - Collections
@@ -127,3 +127,4 @@ What will happen here? If I say ‘Update Membership’ on ‘All Systems’ the
 What would have been if all your collections were limited to ‘All Systems’? Right, because of one new member ALL your collections would have been evaluated. Imagine that happening in your uber large environment with hundreds of collections with complex queries and such.
 
 So always keep in mind: Don’t limit your collections by ‘All Systems’! Except if you are doing OSD, then you kind of have to. Except, if you’re using unknown computer support, then you don’t.
+

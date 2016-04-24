@@ -4,7 +4,7 @@ title: Microsoft MVA content for IaaS on Azure
 date: 2015-04-16T08:15:51+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3011
+
 permalink: /2015/04/microsoft-mva-content-for-iaas-on-azure/
 categories:
   - Azure
@@ -36,3 +36,5 @@ Here's three examples of these **FREE** resources on MVA:
 Enjoy using this content and make sure you check out the other content on MVA as well.
 
 [- David](http://www.twitter.com/david_obrien)
+
+

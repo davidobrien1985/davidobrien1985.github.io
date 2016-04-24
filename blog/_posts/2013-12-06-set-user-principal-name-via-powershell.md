@@ -4,7 +4,7 @@ title: Set User Principal Name via Powershell
 date: 2013-12-06T22:08:01+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1495
+
 permalink: /2013/12/set-user-principal-name-via-powershell/
 categories:
   - Active Directory
@@ -36,3 +36,4 @@ This command needs to run on a server where the Active Directory module is insta
 `Import-Module ActiveDirectory`
 
 first.
+

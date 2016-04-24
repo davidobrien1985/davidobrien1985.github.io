@@ -4,7 +4,7 @@ title: Am I compatible to my future plans? How APP-DNA ’s AppTitude helps alon
 date: 2011-09-26T18:58:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=261
+
 permalink: /2011/09/am-i-compatible-to-my-future-plans-how-app-dna-s-apptitude-helps-along-the-waypart-1/
 categories:
   - APP-DNA
@@ -58,3 +58,5 @@ The basic idea is that Apptitude controls a virtual machine, takes a ‘snapshot
 To make those changes easier to analyse, Apptitude creates an msi file out of those changes and imports this msi file into its own datastore. By the way, this msi file can’t be used to deploy this software onto clients.
 
 How the install & capture works in detail, what you can get out of the reports and what else AppTitude has to offer will be covered in the next part of this series. Stay tuned!
+
+

@@ -4,7 +4,7 @@ title: Boost up your System Center know how with MS Virtual Academy
 date: 2013-12-21T11:30:39+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1518
+
 permalink: /2013/12/boost-system-center-know-ms-virtual-academy/
 categories:
   - Microsoft
@@ -32,3 +32,5 @@ Courses range from Level 100 (Beginner) to Level 300 (Advanced) and contain of d
 So head over there and boost up your knowledge!
 
 [Microsoft Virtual Academy – System Center 2012](www.microsoftvirtualacademy.com/product-training/system-center#?mtag=MVP5000267)
+
+

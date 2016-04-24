@@ -4,7 +4,7 @@ title: I am happy to announce
 date: 2014-02-20T09:11:24+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1631
+
 permalink: /2014/02/im-happy-announce/
 categories:
   - Community
@@ -33,3 +33,4 @@ I am very much excited about this move and I’m really looking forward to worki
 These are very exciting times for me and my wife with still a lot to organize, but we are so happy that all worked out fine!
 
 I will still blog, tweet and mail you all, from next month on only a few time zones ahead.
+

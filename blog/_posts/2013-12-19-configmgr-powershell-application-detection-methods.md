@@ -4,7 +4,7 @@ title: ConfigMgr Powershell Application Detection Methods
 date: 2013-12-19T02:20:12+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1505
+
 permalink: /2013/12/configmgr-powershell-application-detection-methods/
 categories:
   - CM12
@@ -292,3 +292,5 @@ else
 If the Agent can’t find that file in that Path it won’t write anything back to the Console or STDOUT and the agent knows that this Application hasn’t been installed yet.
 
 In the end it’s really not too complicated using Powershell for your Detection Methods and I actually like using it a lot.
+
+

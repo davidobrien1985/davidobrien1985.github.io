@@ -4,7 +4,7 @@ title: Travelling with the SurfaceRT
 date: 2013-01-30T23:03:30+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=710
+
 permalink: /2013/01/travelling-with-the-surfacert/
 categories:
   - Microsoft
@@ -36,3 +36,5 @@ Anyhow, for the moment I still have to use my notebook and the Surface, at least
 For all the writing stuff I can use the Surface, it's light, its battery lasts for ages and it has all the Office products I need (Word and OneNote with Skydrive). It's actually (nearly) everything I need for the moment.
 
 More to come!
+
+

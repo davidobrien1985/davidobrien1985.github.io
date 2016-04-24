@@ -4,7 +4,7 @@ title: 'How do variables in Configuration Manager 2012 work? &ndash; Part 3'
 date: 2013-01-15T15:32:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=682
+
 permalink: /2013/01/how-do-variables-in-configuration-manager-2012-work-part-3/
 categories:
   - ConfigMgr
@@ -79,4 +79,6 @@ Save the script as “create-collection.ps1” and run it with this command on t
 ```
 
 Here is the article where I talk about the former script to create Collections: [How to create collections in ConfigMgr 2012 -video](http://www.david-obrien.net/?p=570)
+
+
 

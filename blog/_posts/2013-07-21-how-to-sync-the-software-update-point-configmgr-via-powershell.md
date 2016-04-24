@@ -4,7 +4,7 @@ title: How to sync the Software Update Point (ConfigMgr) via Powershell
 date: 2013-07-21T10:58:56+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1107
+
 permalink: /2013/07/how-to-sync-the-software-update-point-configmgr-via-powershell/
 categories:
   - ConfigMgr 2012 R2
@@ -94,4 +94,6 @@ else
         Write-Verbose "There was an error syncing the SUP"
     }
 ```
+
+
 

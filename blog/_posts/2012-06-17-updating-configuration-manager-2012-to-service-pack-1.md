@@ -4,7 +4,7 @@ title: Updating Configuration Manager 2012 to Service Pack 1
 date: 2012-06-17T10:36:05+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=399
+
 permalink: /2012/06/updating-configuration-manager-2012-to-service-pack-1/
 categories:
   - ConfigMgr
@@ -73,3 +73,5 @@ Updated the CAS:
 I don’t want to get into details (that’s for another article), but the Boot images got updated to “Windows 8”.
 
 ![image](/media/2012/06/image10.png "image")
+
+

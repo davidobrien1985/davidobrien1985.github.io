@@ -4,7 +4,7 @@ title: How to configure ConfigMgr Distribution Point
 date: 2013-01-29T21:28:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=705
+
 permalink: /2013/01/how-to-configure-configmgr-distribution-point/
 categories:
   - automation
@@ -290,3 +290,5 @@ $SMS_SCI_ADDRESS.Put() | Out-Null
 ```
 
 Download the script here: [http://davidobrien.codeplex.com/downloads/get/613106](http://davidobrien.codeplex.com/downloads/get/613106)
+
+

@@ -4,7 +4,7 @@ title: XenDesktop automation with Powershell (for beginners)
 date: 2011-08-27T00:29:15+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=39
+
 permalink: /2011/08/xendesktop-automation-with-powershell-for-beginners/
 categories:
   - PowerShell
@@ -40,4 +40,6 @@ If you now enter `Get-Module -Module Citrix.*` you'll get all the available cmdl
 One could also go and add these to his/her own Powershell profile. For those, look here: [http://msdn.microsoft.com/en-us/library/bb613488(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/bb613488(v=vs.85).aspx)
 
 btw my most-used commandline is: `Set-BrokerDesktopGroup -Name %DesktopGroupName% -InMaintenanceMode $True`
+
+
 

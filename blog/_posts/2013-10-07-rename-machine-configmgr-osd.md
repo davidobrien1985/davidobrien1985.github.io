@@ -4,7 +4,7 @@ title: How to rename machine during ConfigMgr OSD
 date: 2013-10-07T13:05:58+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1382
+
 permalink: /2013/10/rename-machine-configmgr-osd/
 categories:
   - CM12
@@ -168,3 +168,5 @@ You need to reboot after this step in order to rename the computer and just be a
 I know that this could have all been quite a lot easier with UDI or MDT database integration, but this was just not possible (or am I missing something?).
 
 Looking forward to your comments!
+
+

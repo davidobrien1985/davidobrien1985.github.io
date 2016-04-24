@@ -4,7 +4,7 @@ title: Why you shouldn't use the Powershell pipe when using ConfigMgr
 date: 2014-04-02T21:05:52+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1671
+
 permalink: /2014/04/filter-faster-piping-using-configmgr/
 categories:
   - automation
@@ -69,3 +69,4 @@ Using the pipe tells Powershell to first execute the left side of the pipe and t
 # Results
 
 The results are obvious: Don't use the 'Where-Object' cmdlet. If possible use Get-WmiObject with -filter or even better -Query parameter.
+

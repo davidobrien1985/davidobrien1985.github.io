@@ -4,7 +4,7 @@ title: 'How to prestage content in Configuration Manager 2012 &ndash; Script'
 date: 2013-02-12T09:44:36+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=733
+
 permalink: /2013/02/how-to-prestage-content-in-configuration-manager-2012-script/
 categories:
   - automation
@@ -491,3 +491,5 @@ else
 ```
 
 The script can also be found on [davidobrien.codeplex.com](http://davidobrien.codeplex.com)
+
+

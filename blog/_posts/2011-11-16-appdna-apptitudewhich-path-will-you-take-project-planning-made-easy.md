@@ -4,7 +4,7 @@ title: AppDNA AppTitude–which path will you take? Project planning made easy
 date: 2011-11-16T18:22:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=216
+
 permalink: /2011/11/appdna-apptitudewhich-path-will-you-take-project-planning-made-easy/
 if_slider_image:
   -
@@ -58,3 +58,5 @@ If you want to create a forward path yourself, just click on “Forward Path con
 ![forward path create](/media/2012/01/forward_path_create.jpg "forward_path_create")
 
 Contact me if you need some help with it!
+
+

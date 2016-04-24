@@ -4,7 +4,7 @@ title: How to configure client activity settings in ConfigMgr
 date: 2014-04-12T00:44:04+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1716
+
 permalink: /2014/04/configure-client-activity-settings-configmgr/
 categories:
   - ConfigMgr
@@ -54,3 +54,4 @@ When enabled, configure this task to run at an interval greater than the **Heart
 ![image](/media/2014/04/image2.png)
 
 From there I actually found the following technet article on the Client Status Settings which describes it pretty well: [http://technet.microsoft.com/en-us/library/hh338432](http://technet.microsoft.com/en-us/library/hh338432)
+

@@ -4,7 +4,7 @@ title: Continuous Integration with PowerShell, TeamCity and Git
 date: 2016-01-30T21:31:19+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3273
+
 permalink: /2016/01/continuous-integration-with-teamcity-powershell-and-git/
 categories:
   - Cloud
@@ -20,6 +20,9 @@ tags:
   - github
   - Powershell
 ---
+
+
+
 On Twitter I was following a conversation where someone said that he needed an easier way to publish PowerShell modules to the Microsoft PowerShell Gallery. His issue was that there were too many manual steps involved in publishing to the Gallery. Actually, publishing is really easy, but all those tests (Lint tests, Unit Tests, Script Guides, etc.) take some time to run manually. This is where automation helps.
 
 This article will focus on the tools and the configuration used (in MY environment) to accomplish Continuous Integration.
@@ -173,3 +176,4 @@ To sum this up I can show you a run of one build where the Pester Unit tests fai
 With this configuration in TeamCity we achieved actual CI, Continuous Integration. Every time someone commits / checks-in code to our Git repository's Master branch TeamCity will notice this change and trigger a job. If everything is fine then all we have to do is wait and after a successful run worry about deployment.
 
 I hope this overview will get you started with configuring your own TeamCity pipeline / project for your PowerShell code. If not, hit me up on Twitter or here and ask.
+

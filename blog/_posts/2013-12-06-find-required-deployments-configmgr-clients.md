@@ -4,7 +4,7 @@ title: Find required deployments on ConfigMgr clients
 date: 2013-12-06T21:33:17+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1492
+
 permalink: /2013/12/find-required-deployments-configmgr-clients/
 categories:
   - ConfigMgr
@@ -39,3 +39,4 @@ I am currently trying to get around the Where-Object pipe, because this can be q
 * **$_.ResolvedState -eq 'Installed'** means that it’s a required installation. Otherwise it would say “Available”.
 
 Would love some feedback if this works on your machines. I only tried it on CM12 R2 and SP1 CU3 and the ConfigMgr documentation wasn’t too helpful.
+

@@ -4,7 +4,7 @@ title: Mass import of ConfigMgr applications from script with Powershell
 date: 2013-07-10T21:03:56+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1061
+
 permalink: /2013/07/create-new-configmgr-applications-from-script-with-powershell/
 categories:
   - automation
@@ -156,3 +156,5 @@ Make sure you run this script on a server with an installed Admin Console and on
 I hope this article gives you an idea of how to accomplish the task of mass import of applications into your ConfigMgr environment.
 
 Comments and questions are welcome as always!
+
+

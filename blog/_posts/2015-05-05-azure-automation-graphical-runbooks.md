@@ -4,7 +4,7 @@ title: Azure Automation - graphical runbooks
 date: 2015-05-05T07:00:38+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3048
+
 permalink: /2015/05/azure-automation-graphical-runbooks/
 categories:
   - Azure
@@ -107,3 +107,4 @@ Here are the other articles from my Ignite series so far:
 Azure Automation – what’s new?
 
 What are your thoughts on this?
+

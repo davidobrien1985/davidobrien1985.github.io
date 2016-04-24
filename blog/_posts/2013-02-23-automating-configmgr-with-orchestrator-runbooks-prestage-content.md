@@ -4,7 +4,7 @@ title: 'Automating ConfigMgr with Orchestrator Runbooks - PreStage content'
 date: 2013-02-23T15:52:10+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=744
+
 permalink: /2013/02/automating-configmgr-with-orchestrator-runbooks-prestage-content/
 categories:
   - ConfigMgr
@@ -92,4 +92,6 @@ Fire it off and enjoy the results!
 Download the runbooks here: [http://davidobrien.codeplex.com/releases/view/102376](http://davidobrien.codeplex.com/releases/view/102376)
 
 More runbooks will come! Promise!
+
+
 

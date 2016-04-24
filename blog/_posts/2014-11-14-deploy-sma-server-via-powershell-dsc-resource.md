@@ -4,7 +4,7 @@ title: Deploy SMA Server via Powershell DSC resource
 date: 2014-11-14T11:52:39+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=2651
+
 permalink: /2014/11/deploy-sma-server-via-powershell-dsc-resource/
 categories:
   - DSC
@@ -61,3 +61,5 @@ The only remaining question now is: How much easier should Microsoft make it to 
 Have fun automating!
 
 -[David](http://twitter.com/david_obrien)
+
+

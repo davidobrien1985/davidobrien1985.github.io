@@ -4,7 +4,7 @@ title: Microsoft System Center Configuration Manager 2012–unattended installat
 date: 2012-01-17T18:25:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=238
+
 permalink: /2012/01/microsoft-system-center-configuration-manager-2012unattended-installation-of-sites/
 if_slider_image:
   -
@@ -124,3 +124,5 @@ CCARSiteServer=test0.osd.local
 ```
 
 I didn’t test this script, but I believe it should work, as I’ve already seen other articles around doing this.
+
+

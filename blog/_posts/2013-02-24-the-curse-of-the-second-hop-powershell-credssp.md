@@ -4,7 +4,7 @@ title: 'The curse of the second hop &amp; PowerShell &ndash; CredSSP'
 date: 2013-02-24T01:33:08+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=751
+
 permalink: /2013/02/the-curse-of-the-second-hop-powershell-credssp/
 categories:
   - ConfigMgr
@@ -90,3 +90,5 @@ New-PSSession -ComputerName cm12.do.local -ConfigurationName Microsoft.PowerShel
 I’m basically converting the user’s credentials into a credential object which can be used on the commandline to, for example, open a new PSSession. Then I’m telling the “New-PSSession” to use CredSSP authentication and the credential object.
 
 When I now try to access a third server (second hop) from within my PSSession all is fine and the authentication happens under the user I provided.
+
+

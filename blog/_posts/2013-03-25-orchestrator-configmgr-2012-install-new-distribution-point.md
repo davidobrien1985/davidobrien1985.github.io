@@ -4,7 +4,7 @@ title: 'Orchestrator &amp; ConfigMgr 2012 Install new Distribution Point'
 date: 2013-03-25T11:31:38+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=865
+
 permalink: /2013/03/orchestrator-configmgr-2012-install-new-distribution-point/
 categories:
   - automation
@@ -38,3 +38,5 @@ As usual with my runbooks, you’ll need to define your variables in the runbook
 ![image](/media/2013/03/image25.png)
 
 ![image](/media/2013/03/image26.png)
+
+

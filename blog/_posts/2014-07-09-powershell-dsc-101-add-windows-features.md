@@ -4,7 +4,7 @@ title: 'Powershell DSC 101 - How to add Windows Features'
 date: 2014-07-09T22:04:48+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1845
+
 permalink: /2014/07/powershell-dsc-101-add-windows-features/
 categories:
   - automation
@@ -59,3 +59,4 @@ You can find more information about the "WindowsFeature" DSC resource here: <htt
 In the next article I am going to show you how to leverage this basic knowledge here to deploy some cool custom Server Roles in your environment!
 
 I hope this short trip into DSC-land was already enough to get you hooked (if you're not already) onto the new Powershell features that came with Powershell 4.
+

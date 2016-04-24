@@ -4,7 +4,7 @@ title: Microsoft ConfigMgr 2012 – Client Log Files
 date: 2011-12-23T12:19:43+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=176
+
 permalink: /2011/12/microsoft-configmgr-2012-client-log-files/
 if_slider_image:
   -
@@ -222,3 +222,5 @@ For the beginning I will focus on the most important log files (in my opinion). 
 
 # Site Server log files
  The next article will cover an overview of ConfigMgr 2012 Site Server logfiles.
+
+

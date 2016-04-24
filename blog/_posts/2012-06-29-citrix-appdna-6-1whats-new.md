@@ -4,7 +4,7 @@ title: Citrix AppDNA 6.1–what’s new?
 date: 2012-06-29T13:10:25+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=410
+
 permalink: /2012/06/citrix-appdna-6-1whats-new/
 categories:
   - APP-DNA
@@ -82,4 +82,6 @@ More of a rebranding to Citrix than new features.
 
 Hope they will soon come up with the automation of AppDNA, like importing an Application into AppDNA silently via Powershell and then let it be analyzed etc
 Also waiting for XenDesktop support and a module for Windows 8 and Server 2012. I will try to find out something about the roadmap regarding these points!
+
+
 

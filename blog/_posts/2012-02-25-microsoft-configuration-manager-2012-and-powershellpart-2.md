@@ -4,7 +4,7 @@ title: Microsoft Configuration Manager 2012 and Powershell–Part 2
 date: 2012-02-25T16:42:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=285
+
 permalink: /2012/02/microsoft-configuration-manager-2012-and-powershellpart-2/
 categories:
   - ConfigMgr
@@ -116,3 +116,5 @@ move-collection $SourceContainerNodeID $collID $TargetContainerNodeID
 
 Now you’ve got two independent functions and need to combine them into one script.
 Any questions? Just comment here, send me a mail or contact me on twitter (@david_obrien)
+
+

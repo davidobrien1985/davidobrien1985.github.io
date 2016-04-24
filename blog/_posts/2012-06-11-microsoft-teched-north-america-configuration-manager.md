@@ -4,7 +4,7 @@ title: 'Microsoft TechEd North America &#038; Configuration Manager'
 date: 2012-06-11T20:03:05+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=369
+
 permalink: /2012/06/microsoft-teched-north-america-configuration-manager/
 categories:
   - Applications
@@ -77,4 +77,6 @@ Although I have to admit that there are not that many scenarios for deploying a 
 [Update]
 
 More info available on Kent Agerlund’s blog: [http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/](http://blog.coretech.dk/kea/configmgr-2012-sp1-announced-teched-2012/)
+
+
 

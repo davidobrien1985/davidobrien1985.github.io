@@ -4,7 +4,7 @@ title: Hotfix available for Configuration Manager 2012 R2
 date: 2013-11-11T15:35:58+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1450
+
 permalink: /2013/11/hotfix-available-configuration-manager-2012-r2/
 categories:
   - ConfigMgr 2012 R2
@@ -70,3 +70,5 @@ With this hotfix KB2905002 come 4 new update packages that need to be deployed i
 Take special care deploying those Client updates during Task Sequences. I usually use this technique: [http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/](http://deploymentramblings.wordpress.com/2013/08/22/installing-configmgr-2012-sp1-cu2-during-osd/)
 
 Good luck!
+
+

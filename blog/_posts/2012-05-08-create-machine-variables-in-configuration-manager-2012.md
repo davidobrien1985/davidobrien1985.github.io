@@ -4,7 +4,7 @@ title: Create Machine variables in Configuration Manager 2012
 date: 2012-05-08T12:25:00+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=665
+
 permalink: /2012/05/create-machine-variables-in-configuration-manager-2012/
 categories:
   - ConfigMgr
@@ -174,3 +174,5 @@ create-Variable
 ```
 
 Lines 1 to 15 are mainly blabla, the interesting part is below! I’m going through the whole XML file (line 19) and then taking every variable block (as said above that’s from `<ConfigMgrMachineVariable>` to `</ConfigMgrMachineVariable>`) I pipe the values into a newly created WMI instance to create a new machine variable. I will soon try to integrate this script into my [ConfigMgr Admin GUI](http://www.sepago.de/e/david/2012/04/23/release-of-my-configuration-manager-admin-gui), to make setting machine variables easier than it already is.
+
+

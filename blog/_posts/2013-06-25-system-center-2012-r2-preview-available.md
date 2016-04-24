@@ -4,7 +4,7 @@ title: 'System Center 2012 R2 - Preview available'
 date: 2013-06-25T05:14:07+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=971
+
 permalink: /2013/06/system-center-2012-r2-preview-available/
 categories:
   - ConfigMgr
@@ -43,3 +43,5 @@ I could write it all myself, but Henk Hoogendoorn already wrote a good overview 
 I’m already updating my Lab…
 
 ![image](/media/2013/06/image2.png)
+
+

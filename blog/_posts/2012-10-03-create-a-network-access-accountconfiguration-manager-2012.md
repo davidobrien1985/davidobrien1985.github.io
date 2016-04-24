@@ -4,7 +4,7 @@ title: Create a Network Access Account–Configuration Manager 2012
 date: 2012-10-03T21:58:43+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=493
+
 permalink: /2012/10/create-a-network-access-accountconfiguration-manager-2012/
 categories:
   - automation
@@ -169,3 +169,5 @@ $component.Props = $props
 
 $component.Put() | Out-Null
 ```
+
+

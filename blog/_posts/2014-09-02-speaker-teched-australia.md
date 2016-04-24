@@ -4,7 +4,7 @@ title: Speaker at TechEd Australia
 date: 2014-09-02T23:21:02+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1931
+
 permalink: /2014/09/speaker-teched-australia/
 categories:
   - Community
@@ -48,6 +48,8 @@ There's still time for you to ask me to cover some things you would like to see 
 # TechEd Australia
 
 More information about the event can be found on the official event website by Microsoft: [http://www.microsoft.com/en-au/teched/default.aspx](http://www.microsoft.com/en-au/teched/default.aspx)
+
+
 
 
 

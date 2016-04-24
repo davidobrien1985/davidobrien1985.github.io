@@ -4,7 +4,7 @@ title: Release of my Configuration Manager Admin GUI
 date: 2012-04-29T01:08:07+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.de/?p=312
+
 permalink: /2012/04/release-of-my-configuration-manager-admin-gui/
 categories:
   - ConfigMgr
@@ -70,3 +70,5 @@ Some of you might ask why I am doing this? First of all, because it’s fun. I l
 And then I do believe, that this could be of interest for some people or even companies.
 
 I am looking forward to your feedback! Here or on Twitter (@david_obrien)
+
+

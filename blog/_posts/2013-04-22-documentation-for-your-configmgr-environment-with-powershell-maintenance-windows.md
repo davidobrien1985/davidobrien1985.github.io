@@ -4,7 +4,7 @@ title: 'Documentation for your ConfigMgr environment with Powershell - maintenan
 date: 2013-04-22T23:40:11+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=919
+
 permalink: /2013/04/documentation-for-your-configmgr-environment-with-powershell-maintenance-windows/
 categories:
   - ConfigMgr
@@ -321,3 +321,5 @@ foreach ($CollectionID in $CollIDs)
 By the way, don’t worry if you’ll get an error on your commandline stating some invalid arguments in line 56. I’m working on it, but as far as I can see, it doesn’t affect functionality.
 
 Looking forward to your comments!
+
+

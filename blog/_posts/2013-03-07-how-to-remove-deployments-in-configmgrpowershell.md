@@ -4,7 +4,7 @@ title: 'How to remove deployments in ConfigMgr&ndash;Powershell'
 date: 2013-03-07T09:31:07+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=761
+
 permalink: /2013/03/how-to-remove-deployments-in-configmgrpowershell/
 categories:
   - automation
@@ -100,3 +100,5 @@ else
             }
     }
 ```
+
+

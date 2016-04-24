@@ -4,7 +4,7 @@ title: 'ConfigMgr evaluation expired - what now?'
 date: 2014-10-10T15:42:42+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=2191
+
 permalink: /2014/10/configmgr-evaluation-expired-now/
 categories:
   - ConfigMgr
@@ -55,3 +55,4 @@ After setup completion and a console restart the console now reflects the change
 I am not talking about supportability here, because I don't know if this is even supported. Anyway, if you need to ask yourself this question, you're probably doing something else very wrong. (like running an eval in production...)
 
 - [David](http://twitter.com/david_obrien)
+

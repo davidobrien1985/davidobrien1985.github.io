@@ -4,7 +4,7 @@ title: Recover deleted users in Azure Active Directory
 date: 2014-12-04T20:12:31+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=2760
+
 permalink: /2014/12/recover-deleted-users-azure-active-directory/
 categories:
   - Azure
@@ -119,3 +119,5 @@ The Office 365 Admin Portal (<https://portal.office.com> ) makes it a bit easier
 ![image](/media/2014/12/image6.png)
 
 Still, the MSOnline cmdlets work both for Azure Active Directory and for users in your Office365 Active Directory.
+
+

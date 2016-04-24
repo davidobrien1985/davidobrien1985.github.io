@@ -4,7 +4,7 @@ title: 'How to edit ConfigMgr packages - update on schedule'
 date: 2013-07-23T22:41:51+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1117
+
 permalink: /2013/07/how-to-edit-configmgr-packages-update-on-schedule/
 categories:
   - automation
@@ -187,3 +187,4 @@ foreach ($Pkg in $Packages)
             }
     }
 ```
+

@@ -4,7 +4,7 @@ title: Azure Automation, what is new?
 date: 2015-05-05T00:53:19+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=3043
+
 permalink: /2015/05/azure-automation-whats-new/
 categories:
   - Azure
@@ -58,3 +58,5 @@ This is not a complete list of new stuff, these are just features I am excited t
 Stay tuned for some more detailed articles on certain features.
 
 [David](http://www.twitter.com/david_obrien)
+
+

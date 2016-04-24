@@ -4,7 +4,7 @@ title: System Center Universe (SCU_DACH) live blog
 date: 2013-09-16T08:02:01+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1270
+
 permalink: /2013/09/system-center-universe-scu_dach-live-blog/
 categories:
   - Community
@@ -275,4 +275,6 @@ There has been a cancellation of a session and I jumped in. A huge opportunity t
 Thanks to [Marcel Zehner](http://marcelzehner.ch/) and itNetX for organizing this great event. There will be a SCU_DACH next year again.
 It was great meeting so many experts on System Center topics and talking with them.
 As far as I know all the sessions got recorded and will be put online soon.
+
+
 

@@ -4,7 +4,7 @@ title: 'How to change prestaged Distribution Point settings on Package - ConfigM
 date: 2013-07-24T09:23:18+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1132
+
 permalink: /2013/07/how-to-change-prestaged-distribution-point-settings-on-package-configmgr/
 categories:
   - CM12
@@ -138,3 +138,5 @@ foreach ($Pkg in $Packages)
             }
     }
 ```
+
+

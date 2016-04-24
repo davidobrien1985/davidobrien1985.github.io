@@ -4,7 +4,7 @@ title: 'How to install Software Update Point for ConfigMgr 2012 - Powershell'
 date: 2013-04-17T23:49:04+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=904
+
 permalink: /2013/04/how-to-install-software-update-point-for-configmgr-2012-powershell/
 categories:
   - CM12
@@ -299,3 +299,5 @@ Both scripts are also available for download from my Codeplex site:
 New-SUP.ps1 : [https://davidobrien.codeplex.com/SourceControl/changeset/view/4d169b271787b39781306381ef1e11239256be28#New-SUP.ps1](https://davidobrien.codeplex.com/SourceControl/changeset/view/4d169b271787b39781306381ef1e11239256be28#New-SUP.ps1)
 
 New-SiteSystem.ps1 : [https://davidobrien.codeplex.com/SourceControl/changeset/view/4d169b271787b39781306381ef1e11239256be28#new-sitesystem.ps1](https://davidobrien.codeplex.com/SourceControl/changeset/view/4d169b271787b39781306381ef1e11239256be28#new-sitesystem.ps1)
+
+

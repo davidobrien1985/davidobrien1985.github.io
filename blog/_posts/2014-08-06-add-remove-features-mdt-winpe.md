@@ -4,7 +4,7 @@ title: Add or remove features in MDT WinPE
 date: 2014-08-06T15:56:35+00:00
 author: "David O'Brien"
 layout: single
-guid: http://www.david-obrien.net/?p=1894
+
 permalink: /2014/08/add-remove-features-mdt-winpe/
 categories:
   - automation
@@ -49,3 +49,4 @@ Restart your MDT Deployment Workbench, go back to the Deploymentshare's properti
 Have fun deploying your WinPEs!
 
 - [David](http://www.twitter.com/david_obrien)
+
