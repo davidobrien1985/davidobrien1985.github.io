@@ -4,7 +4,6 @@ title: Continuous Integration with PowerShell, TeamCity and Git
 date: 2016-01-30T21:31:19+00:00
 author: "David O'Brien"
 layout: single
-
 permalink: /2016/01/continuous-integration-with-teamcity-powershell-and-git/
 categories:
   - Cloud
