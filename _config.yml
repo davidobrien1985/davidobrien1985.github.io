@@ -47,7 +47,7 @@ defaults:
   #     layout: single
   #     author_profile: true
 
-include: ["_pages"]
+include: ["_pages","blog/_posts"]
 
 # SEO Related
 google_site_verification :
