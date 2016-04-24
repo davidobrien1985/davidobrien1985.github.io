@@ -11,7 +11,7 @@ title                    : "PowerShell for the win!"
 title_separator          : "-"
 name                     : "David O'Brien"
 description              : "An amazing website."
-url                      : "//davidobrien1985.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://davidobrien1985.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 gh_repo                  : "http://www.github.com/davidobrien1985"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -28,10 +28,10 @@ comments:
     colorscheme          : # "light" (default), "dark"
 
 defaults:
-  # _posts
-  - scope:
+  -
+    scope:
       path: "/blog/_posts/"
-      type: posts
+      #type: posts
     values:
       layout: single
       read_time: true
@@ -39,8 +39,8 @@ defaults:
       share: true
       comments: true
       related: true
-  # _pages
-  - scope:
+  -
+    scope:
       path: "/_pages/"
       type: pages
     values:

@@ -4,7 +4,8 @@ title: Conference session recordings from NicConf 2016
 date: 2016-02-26T22:30:30+00:00
 author: "David O'Brien"
 layout: single
-
+share: true
+author_profile: true
 permalink: /2016/02/conference-session-recordings-from-nicconf/
 categories:
   - Ansible
