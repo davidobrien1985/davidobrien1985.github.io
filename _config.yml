@@ -10,12 +10,12 @@ locale                   : "en-US"
 title                    : "PowerShell for the win!"
 title_separator          : "-"
 name                     : "David O'Brien"
-description              : "An amazing website."
+description              : "All about automation."
 url                      : "https://davidobrien1985.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 gh_repo                  : "http://www.github.com/davidobrien1985"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
