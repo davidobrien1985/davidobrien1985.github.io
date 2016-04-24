@@ -15,7 +15,7 @@ url                      : "https://davidobrien1985.github.io" # the base hostna
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 gh_repo                  : "http://www.github.com/davidobrien1985"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : true # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
