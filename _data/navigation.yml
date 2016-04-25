@@ -6,3 +6,5 @@ main:
     url: "/tags/"
   - title: "Conferences"
     url: "/conferences/"
+  - title: "About David"
+    url: "/about-me/"
