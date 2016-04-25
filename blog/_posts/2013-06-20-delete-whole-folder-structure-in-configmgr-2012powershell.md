@@ -2,7 +2,7 @@
 id: 957
 title: 'Delete whole folder structure in ConfigMgr 2012&ndash;Powershell'
 date: 2013-06-20T14:12:40+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/06/delete-whole-folder-structure-in-configmgr-2012powershell/
@@ -119,7 +119,7 @@ This is how the script looks like:
 
     VERSION: 1.0
 
-    AUTHOR: David O'Brien
+    
 
     LASTEDIT: June 20, 2013
 
@@ -363,5 +363,6 @@ Download the script from Codeplex:
 [Delete-FolderStructure.ps1](https://davidobrien.codeplex.com/SourceControl/latest#Delete-FolderStructure.ps1)
 
 Feedback or questions welcome.
+
 
 

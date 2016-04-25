@@ -2,7 +2,7 @@
 id: 185
 title: local to anywhere–Profile Migrator cloud migration
 date: 2011-10-21T17:58:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2011/10/local-to-anywhereprofile-migrator-cloud-migration/
@@ -35,5 +35,6 @@ Your clients will thank you if you know about this.
 </div>
 
 Have fun, and btw: it IS weird to hear your own voice.
+
 
 

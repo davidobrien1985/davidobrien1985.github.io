@@ -2,7 +2,7 @@
 id: 3127
 title: Securing sensible data with Ansible
 date: 2016-01-27T11:19:08+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2016/01/securing-sensible-data-ansible/
@@ -121,4 +121,5 @@ print os.environ['ansible_vault_pass']
 Great experience!
 
 Enjoy using Ansible in a more secure fashion.
+
 

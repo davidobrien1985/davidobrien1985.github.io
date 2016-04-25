@@ -2,7 +2,7 @@
 id: 1137
 title: 'Video - Automate daily tasks in ConfigMgr 2012'
 date: 2013-08-09T07:43:05+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/08/video-automate-daily-tasks-in-configmgr-2012/
@@ -36,6 +36,7 @@ Download my presentation here:
 [Presentation in PDF Format](http://sdrv.ms/18fz6ae)
 
 [Presentation in PPT Format](http://sdrv.ms/18fzchZ)
+
 
 
 

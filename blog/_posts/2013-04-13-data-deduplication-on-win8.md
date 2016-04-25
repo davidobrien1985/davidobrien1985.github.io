@@ -2,7 +2,7 @@
 id: 901
 title: Data deduplication on Win8
 date: 2013-04-13T21:03:39+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/04/data-deduplication-on-win8/
@@ -38,6 +38,7 @@ This is what I get back as a result when running “Get-DedupStatus”:
 So I actually saved quite a bit on my disks!
 
 If you aren’t scared of playing around a bit, look at Nickolaj’s article!
+
 
 
 

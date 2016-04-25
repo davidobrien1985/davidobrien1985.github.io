@@ -2,7 +2,7 @@
 id: 436
 title: Install XenApp in only eight steps–sepagoLogiX
 date: 2012-07-29T20:27:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/07/install-xenapp-in-only-eight-stepssepagologix/
@@ -80,5 +80,6 @@ sepagoLogiX is a powerful framework which made XenApp deployments that much easi
 Of course this doesn’t mean that everything in sepagoLogiX fits every customer, but most of it does and you can focus on the stuff that’s special to your environment.
 
 Want some more information on sepagoLogix? Contact me [@david_obrien](https://twitter.com/david_obrien) or comment here…
+
 
 

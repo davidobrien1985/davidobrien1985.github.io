@@ -26,3 +26,4 @@ I had two sessions, one was "Ansible - Configuration Management on Linux" and th
 
 Here are the session recordings, I hope you enjoy watching them as much as I enjoyed doing the sessions. If you've been there, thank you and hopefully see you next year again!
 
+

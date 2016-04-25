@@ -2,7 +2,7 @@
 id: 136
 title: 'XenServer - XS Management Suite by DoubleRev'
 date: 2011-09-02T08:23:31+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2011/09/xenserver-xs-management-suite-by-doublerev/
@@ -32,5 +32,6 @@ This suite has some nice features like
 Personally, I think it comes at quite a price, but just looked at its features, it's really cool.
 
 There are also some more free tools on their site: [http://www.doublerev.com/](http://www.doublerev.com/)
+
 
 

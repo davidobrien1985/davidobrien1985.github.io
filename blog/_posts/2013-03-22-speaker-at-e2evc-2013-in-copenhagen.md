@@ -2,7 +2,7 @@
 id: 815
 title: Speaker at E2EVC 2013 in Copenhagen
 date: 2013-03-22T18:32:37+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/03/speaker-at-e2evc-2013-in-copenhagen/
@@ -53,5 +53,6 @@ Sunday 10:00-10:45 Automatisation of daily Tasks in Microsoft System Center Conf
 I’m already very excited to speak at E2EVC again and meet all those I met last year and new people from all around the globe!
 
 Like last year, I’ll try to do a “live ticker” from the event to keep you updated.
+
 
 

@@ -2,7 +2,7 @@
 id: 464
 title: Re-adding PXE support to Configuration Manager Site
 date: 2012-09-18T14:27:39+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/09/re-adding-pxe-support-to-configuration-manager-site/
@@ -69,5 +69,6 @@ I don’t know if this is a bug or has something to do with my environment, but 
 One can resolve this error by renaming the file to any other name you like. After that all the services are able to start like before.
 
 Searching for this EventID 7000 I found the following Technet article: [http://support.microsoft.com/default.aspx?scid=kb;en-us;Q325680](http://support.microsoft.com/default.aspx?scid=kb;en-us;Q325680)
+
 
 

@@ -2,7 +2,7 @@
 id: 891
 title: Set-CMDeploymentType via Powershell for ConfigMgr 2012
 date: 2013-04-02T21:25:15+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/04/set-cmdeploymenttype-via-powershell-for-configmgr-2012/
@@ -287,5 +287,6 @@ $application.SDMPackageXML = $newappxml
 
 $application.Put() | Out-Null
 ```
+
 
 

@@ -2,7 +2,7 @@
 id: 2768
 title: 'Update SQL Always On Cluster with ConfigMgr &amp; Powershell'
 date: 2014-12-08T22:00:08+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/12/update-sql-always-cluster-configmgr-powershell/
@@ -232,4 +232,5 @@ Switch-SqlAvailabilityGroup -Path SQLSERVER:\Sql\$PrimaryReplicaServer\Default\A
 ```
 
 Have fun automating!
+
 

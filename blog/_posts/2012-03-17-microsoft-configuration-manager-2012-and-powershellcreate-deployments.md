@@ -2,7 +2,7 @@
 id: 287
 title: Microsoft Configuration Manager 2012 and Powershell–Create Deployments
 date: 2012-03-17T11:11:21+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/03/microsoft-configuration-manager-2012-and-powershellcreate-deployments/
@@ -74,5 +74,6 @@ For more information on the SMS_Advertisement WMI class, see [http://msdn.micros
 There you’ll find more about the AdvertFlags, RemoteClientFlags and TimeFlags, as you will configure your deployment via these values, e.g “Deployment is available” or “Deployment is required and allowed to PXE”.
 
 Any questions? Contact me here or via Twitter @david_obrien
+
 
 

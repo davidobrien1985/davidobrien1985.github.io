@@ -2,7 +2,7 @@
 id: 3273
 title: Continuous Integration with PowerShell, TeamCity and Git
 date: 2016-01-30T21:31:19+00:00
-author: "David O'Brien"
+
 layout: single
 permalink: /2016/01/continuous-integration-with-teamcity-powershell-and-git/
 categories:
@@ -175,4 +175,5 @@ To sum this up I can show you a run of one build where the Pester Unit tests fai
 With this configuration in TeamCity we achieved actual CI, Continuous Integration. Every time someone commits / checks-in code to our Git repository's Master branch TeamCity will notice this change and trigger a job. If everything is fine then all we have to do is wait and after a successful run worry about deployment.
 
 I hope this overview will get you started with configuring your own TeamCity pipeline / project for your PowerShell code. If not, hit me up on Twitter or here and ask.
+
 

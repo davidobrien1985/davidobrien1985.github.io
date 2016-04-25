@@ -2,7 +2,7 @@
 id: 526
 title: 'Easy versioning of Images&ndash;Configuration Manager and Powershell'
 date: 2012-10-13T11:12:52+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/10/easy-versioning-of-imagesconfiguration-manager-and-powershell/
@@ -81,7 +81,7 @@ Setting a new variable is nearly as easy as getting one. Here’s the script I w
 #Requirements:
 #         - running Task Sequence environment
 #         - Powershell added to your boot image
-#Author: David O'Brien, david.obrien@sepago.de
+#
 #####
 
 $date = get-date -UFormat %Y%m%d
@@ -116,5 +116,6 @@ Notice the variable inside my filepath (%ImageName%).
 Before WinPE 4.0 we would have needed to run these commands as VBS or batch, because there would be no Powershell support in WinPE. Now we can do exactly this by adding Powershell to our WinPE. Here’s a good article of how this works: [http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/](http://myitforum.com/myitforumwp/2012/10/07/configmgr-2012-sp1-beta-boot-image-optional-components/)
 
 That’s it, I hope you like it.
+
 
 

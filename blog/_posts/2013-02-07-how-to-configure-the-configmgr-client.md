@@ -2,7 +2,7 @@
 id: 718
 title: How to configure the ConfigMgr Client cache
 date: 2013-02-07T16:42:04+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/02/how-to-configure-the-configmgr-client/
@@ -44,7 +44,7 @@ I found two ways to configure the cache size for an already deployed ConfigMgr A
 .EXAMPLE
     .\set-CacheSize.ps1 -CacheSize 10000 -Verbose
 .NOTES
-    Author: David O'Brien, david.obrien@sepago.de
+    
     Version: 1.0
     Change history
         07.02.2013 - first release
@@ -78,7 +78,7 @@ The other way is via WMI and goes like this:
 .EXAMPLE
     .\set-CacheSize.ps1 -CacheSize 10000 -Verbose
 .NOTES
-    Author: David O'Brien, david.obrien@sepago.de
+    
     Version: 1.0
     Change history
         07.02.2013 - first release
@@ -116,7 +116,7 @@ If you want to change the Cache Location you can also chose between above mentio
 .EXAMPLE
     .\set-CacheLocation.ps1 -CacheLocation "C:\temp\ccmcache"
 .NOTES
-    Author: David O'Brien, david.obrien@sepago.de
+    
     Version: 1.0
     Change history
         07.02.2013 - first release
@@ -148,7 +148,7 @@ And here comes the way to do this via COM. Thanks to Andy Morgan ([www.thinkiosk
 .EXAMPLE
     .\set-CacheLocation.ps1 -CacheLocation "C:\temp\"
 .NOTES
-    Author: David O'Brien, david.obrien@sepago.de
+    
     Version: 1.0
     Change history
         07.02.2013 - first release
@@ -185,7 +185,7 @@ Here’s the script:
 .EXAMPLE
     .\clear-ClientCache.ps1
 .NOTES
-    Author: David O'Brien, david.obrien@sepago.de
+    
     Version: 1.0
     Change history
         07.02.2013 - first release
@@ -214,5 +214,6 @@ You could now go ahead and use the script above and move the cache to a differen
 I spent the day configuring a lot of properties of the client and came to the conclusion, that it’s not too easily done. Some things aren’t documented and then I guess also not supported. The thing with the cache location is most probably not supported the way I’m doing it, so beware when testing it in your LAB! I’m still testing it and will tell you when it’s kind of safe to use.
 
 **TEST THE SCRIPTS IN YOUR LAB FIRST!!! I take NO responsibility for any issues!**
+
 
 

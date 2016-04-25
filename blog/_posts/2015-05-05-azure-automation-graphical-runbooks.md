@@ -2,7 +2,7 @@
 id: 3048
 title: Azure Automation - graphical runbooks
 date: 2015-05-05T07:00:38+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/05/azure-automation-graphical-runbooks/
@@ -26,17 +26,17 @@ tags:
 
 Microsoft Ignite 2015 conference is in full swing and they have already announced a lot of cool things at last week's Build conference that we've seen covered in a lot of articles. This article here will focus on one of the new features in Azure Automation.
 
-I have already touched this in my [last article here](/2015/05/azure-automation-whats-new), Azure Automation now comes with a graphical user interface to author runbooks.
+I have already touched this in my [last article here](/2015/05/azure-automation-whats-new), Azure Automation now comes with a graphical user interface to 
 
 ## Why do you need an Azure Automation GUI?
 
 To be honest, no idea, but it's something still a lot of people think they need. Funny thing is, they say that thinking that they can't expect everybody to be able to code. True, but if you want to still be around in the upcoming future (jobwise, in IT), you kinda do.
 
-## Authoring runbooks on Azure Automation
+## 
 
-You basically now have got two options to author runbooks, a textual and a graphical option. Make your choice, you **cannot** convert a runbook afterwards. At least not yet, maybe later.
+You basically now have got two options to 
 
-How does it look like authoring a graphical runbook now? Is it like System Center Orchestrator? Fortunately not!
+How does it look like 
 
 ![Azure Automation Runbooks](/media/2015/05/AA_Runbooks.png)
 
@@ -68,13 +68,13 @@ Pick a cmdlet, like Add-AzureAccount, which is part of the "Azure" module, right
 
 I will not go into detail as to how each and every cmdlet can be configured, the Runbook Editor keeps that task fairly easy.
 
-Having only 7 modules at hand is a bit restricting, so we need to make more modules available. Joe Levy wrote a good article about creating Azure Automation Integration Modules: [http://azure.microsoft.com/blog/2014/12/15/authoring-integration-modules-for-azure-automation/](http://azure.microsoft.com/blog/2014/12/15/authoring-integration-modules-for-azure-automation/)
+Having only 7 modules at hand is a bit restricting, so we need to make more modules available. Joe Levy wrote a good article about creating Azure Automation Integration Modules: [http://azure.microsoft.com/blog/2014/12/15/
 
 ## Links
 
-What is making this whole graphical editing / authoring so interesting is seeing the actual flow of activities in our runbook, something that is hard to grasp from just looking at code. However, I am not saying that it's impossible to understand code.
+What is making this whole graphical editing / 
 
-Links make the graphical authoring so powerful and easy to configure. You configure an activity, add a second one and tie them to each other by creating a link, just like you did in System Center Orchestrator. Links can be configured to run in two different modes, as a Pipeline or a Sequence.
+Links make the graphical 
 
 A Pipeline would be the equivalent of a foreach loop in PowerShell, whereas a Sequence is just telling the runbook to go to the next activity.
 
@@ -92,7 +92,7 @@ If all this is still not enough, you can still write actual PowerShell Workflow 
 
 ![Azure Automation workflow](/media/2015/05/RB_Workflow.png)
 
-## Why a graphical UI to author Azure Automation runbooks?
+## Why a graphical UI to 
 
 I still don't understand why this was something so many people were apparently asking for, but from the first looks, Microsoft did a good job at implementing it. You still need to know PowerShell, you still need to understand the code you are writing and the flow of data in that code. What you might not have to worry about as much is handling the peculiarities of PowerShell Workflow. Although, only time will tell what people will prefer in real life as their choice of runbook type.
 
@@ -100,11 +100,12 @@ As it stands now you cannot export graphical runbooks, so you cannot view the ac
 
 However, this can all change in the future.
 
-This was just a first look at the new graphical runbooks in Azure Automation. I am looking forward to testing this new way of authoring runbooks on Azure.
+This was just a first look at the new graphical runbooks in Azure Automation. I am looking forward to testing this new way of 
 
 Here are the other articles from my Ignite series so far:
 
 Azure Automation – what’s new?
 
 What are your thoughts on this?
+
 

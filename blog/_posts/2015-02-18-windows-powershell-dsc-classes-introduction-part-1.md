@@ -2,7 +2,7 @@
 id: 2966
 title: 'Windows PowerShell DSC - classes - introduction (part 1)'
 date: 2015-02-18T06:43:17+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/02/windows-powershell-dsc-classes-introduction-part-1/
@@ -81,5 +81,6 @@ Download the WMF 5 November preview here: [http://www.microsoft.com/en-us/downl
 Enjoy!
 
 -[David](http://www.twitter.com/david_obrien)
+
 
 

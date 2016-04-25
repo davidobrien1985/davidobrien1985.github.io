@@ -2,7 +2,7 @@
 id: 594
 title: Why does WSUS not sync anymore in ConfigMgr 2012 SP1?
 date: 2012-12-28T22:05:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/12/why-does-wsus-not-sync-anymore-in-configmgr-2012-sp1/
@@ -51,5 +51,6 @@ Well, something during the upgrade to SP1 must have changed my configuration bac
 After I changed the ports back to the numbers I need, everything was fine again.
 
 Would be great to know if anyone of you had the same problem or if it was just me (and one more from Twitter) :-)
+
 
 

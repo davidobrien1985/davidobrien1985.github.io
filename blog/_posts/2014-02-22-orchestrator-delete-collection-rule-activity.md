@@ -2,7 +2,7 @@
 id: 1655
 title: 'Orchestrator &ndash; Delete Collection Rule activity'
 date: 2014-02-22T00:29:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/02/orchestrator-delete-collection-rule-activity/
@@ -46,5 +46,6 @@ Aha… Checking the “Membership Rule Type” selection we see what we actually
 ![image](/media/2014/02/image13.png)
 
 Thought I’d share, because it took me two failures to actually properly read the error message and find what’s wrong.
+
 
 

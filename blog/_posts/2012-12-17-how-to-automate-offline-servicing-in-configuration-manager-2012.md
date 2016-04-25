@@ -2,7 +2,7 @@
 id: 543
 title: How to automate Offline Servicing in Configuration Manager 2012
 date: 2012-12-17T10:55:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/12/how-to-automate-offline-servicing-in-configuration-manager-2012/
@@ -174,7 +174,7 @@ Function create-ImageServicingSchedule {
 #### begin function
 
 Function add-UpdateToOfflineServicingSchedule {
-  $UpdateGroup = Get-WmiObject -Namespace root\sms\site_$SiteCode -Class SMS_AuthorizationList | where {$_.LocalizedDisplayName -eq "$($UpdateGroupName)"}
+  $UpdateGroup = Get-WmiObject -Namespace root\sms\site_$SiteCode -Class SMS_
   #direct reference to the Update Group
   $UpdateGroup = [wmi]"$($UpdateGroup.__PATH)"
 
@@ -243,5 +243,6 @@ run-OfflineServicingManager
 Combining this script with my previous one to create a Software Update Group, you are able to automate the whole stuff!
 
 Comments are welcome and looked forward to  ;-) Either here or via Twitter (@david_obrien).
+
 
 

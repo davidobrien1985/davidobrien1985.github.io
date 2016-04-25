@@ -2,7 +2,7 @@
 id: 3092
 title: 'From here on - Automating the universe'
 date: 2015-07-21T19:51:58+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/07/from-here-on-automating-the-universe/
@@ -28,4 +28,5 @@ My focus will finally shift away from Client Management to automation and Cloud 
 I am very excited about this opportunity and are looking forward to a lot of new and exciting projects.
 
 Expect more activity again in the coming months.
+
 

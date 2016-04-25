@@ -2,7 +2,7 @@
 id: 3108
 title: PowerShell DSC to manage PowerShell modules
 date: 2015-09-24T22:01:57+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/09/powershell-dsc-to-manage-powershell-modules/
@@ -80,4 +80,5 @@ With this little snippet I can make sure that the 'AzureExt' PowerShell module i
 Nice? Any feedback?
 
 Watch Github and the Gallery for updates!
+
 

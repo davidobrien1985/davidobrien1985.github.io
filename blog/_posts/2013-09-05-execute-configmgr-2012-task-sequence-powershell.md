@@ -2,7 +2,7 @@
 id: 1253
 title: How to execute ConfigMgr 2012 Task Sequence from Powershell
 date: 2013-09-05T16:21:46+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/09/execute-configmgr-2012-task-sequence-powershell/
@@ -90,5 +90,6 @@ Just released the article, here the first update 😉
 Ryan Ephgrave's Powershell Right Click Tools for ConfigMgr are able to do exactly this from the Admin Console. (https://psrightclicktools.codeplex.com/)
 
 This helps you if you have access to the console, if not or if you'd like to use Orchestrator or Service Manager or any other Automation Framework, look at the above.
+
 
 

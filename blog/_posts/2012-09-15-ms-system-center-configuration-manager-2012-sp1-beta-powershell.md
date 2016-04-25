@@ -2,7 +2,7 @@
 id: 442
 title: MS System Center Configuration Manager 2012 SP1 (beta) – Powershell
 date: 2012-09-15T09:28:51+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/09/ms-system-center-configuration-manager-2012-sp1-beta-powershell/
@@ -771,6 +771,7 @@ I have already written lots of scripts/functions for Configuration Manager 2012 
 In the next couple of days/weeks I’ll try to update my scripts to the new commands and have a look at how powerful they really are!
 
 So stay tuned!
+
 
 
 

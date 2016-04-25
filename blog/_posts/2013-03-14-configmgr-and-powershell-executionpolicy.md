@@ -2,7 +2,7 @@
 id: 787
 title: ConfigMgr and Powershell ExecutionPolicy
 date: 2013-03-14T22:40:10+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/03/configmgr-and-powershell-executionpolicy/
@@ -136,5 +136,6 @@ The above file I’m creating in the temp folder will then look like this:
 But that’s what I expected from the client setting.
 
 Where am I going wrong? Has anyone successfully used this setting and is able to shed a bit of light on this? I would really like to execute my scripts without using the executionpolicy parameter for every single one of them.
+
 
 

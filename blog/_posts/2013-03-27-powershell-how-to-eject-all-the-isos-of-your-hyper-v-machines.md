@@ -2,7 +2,7 @@
 id: 875
 title: 'Powershell&ndash;How to eject all the ISOs of your Hyper-V machines?'
 date: 2013-03-27T00:02:38+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/03/powershell-how-to-eject-all-the-isos-of-your-hyper-v-machines/
@@ -52,5 +52,6 @@ foreach ($VM in $VMs)
   }
 }
 ```
+
 
 

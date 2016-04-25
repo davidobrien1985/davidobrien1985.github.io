@@ -2,7 +2,7 @@
 id: 359
 title: Install Distribution Point for Configuration Manager 2012
 date: 2012-06-08T23:35:45+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/06/install-distribution-point-for-configuration-manager-2012/
@@ -91,7 +91,7 @@ What I did find out is, that it uses the local server’s crypto API.
 ```PowerShell
 ########
  # This script installs a Microsoft System Center Configuration Manager 2012 Distribution Point Server Role
-# Author: David O'Brien, sepago GmbH
+# 
 # date: 01.06.2012
 ########
 
@@ -224,7 +224,7 @@ Here’s the working script:
 ```PowerShell
 ########
 This script installs a Microsoft System Center Configuration Manager 2012 Distribution Point Server Role
-# Author: David O'Brien, sepago GmbH
+# 
  # date: 01.06.2012
 ########
 Function global:Set-Property($PropertyName,$Value,$Value1,$Value2,$roleproperties)
@@ -338,5 +338,6 @@ new-distributionpoint $server
 ```
 
 Looking forward to your feedback via comments, tweets or mail!
+
 
 

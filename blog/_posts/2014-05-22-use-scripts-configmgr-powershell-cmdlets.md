@@ -2,7 +2,7 @@
 id: 1826
 title: How to use scripts with ConfigMgr Powershell cmdlets
 date: 2014-05-22T21:46:40+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/05/use-scripts-configmgr-powershell-cmdlets/
@@ -38,4 +38,5 @@ If that account, on that machine, has never before tried to load the ConfigMgr P
 Accept this and after that you can run all the automation you want.
 
 Unfortunately, I haven’t found out how to automate that easily (or at all). I will test the “Import-Certificate” cmdlet soon and have a look if that can be leveraged for that.
+
 

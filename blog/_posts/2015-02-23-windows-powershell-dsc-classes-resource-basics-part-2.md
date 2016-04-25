@@ -2,7 +2,7 @@
 id: 2979
 title: 'Windows PowerShell DSC - classes - resource basics (part 2)'
 date: 2015-02-23T08:42:16+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/02/windows-powershell-dsc-classes-resource-basics-part-2/
@@ -175,7 +175,7 @@ From here on there's not a really big difference between working with a cmdlet o
 Use the New-ModuleManifest cmdlet to create the psd1 file.
 
 ```
-New-ModuleManifest -Path 'C:\Program Files\WindowsPowerShell\Modules\ConfigMgrClass\ConfigMgrclass.psd1' -DscResourcesToExport 'ConfigMgrClass' -PowerShellVersion 5.0 -Description 'Class based DSC resource to install roles and features of ConfigMgr' -ModuleVersion '1.0.0.0' -Guid $([guid]::NewGuid()) -Author 'David OBrien' -RootModule '.\ConfigMgrClass.psm1' -CompanyName 'DOCorp'
+New-ModuleManifest -Path 'C:\Program Files\WindowsPowerShell\Modules\ConfigMgrClass\ConfigMgrclass.psd1' -DscResourcesToExport 'ConfigMgrClass' -PowerShellVersion 5.0 -Description 'Class based DSC resource to install roles and features of ConfigMgr' -ModuleVersion '1.0.0.0' -Guid $([guid]::NewGuid()) -
 ```
 
 In my previous article ([/2015/02/windows-powershell-dsc-classes-introduction-part-1/](/2015/02/windows-powershell-dsc-classes-introduction-part-1/) ) I mentioned that Get-DscResource is unable to find class based resource modules. Guess what?! Microsoft changed that with the current February release of WMF5.
@@ -185,4 +185,5 @@ In order to find your resource module, though, you need to add a new parameter t
 In the next part I will walk through my converted ConfigMgr resource and show you a couple of more classes I've implemented into this resource.
 
 Until then, enjoy automating!
+
 

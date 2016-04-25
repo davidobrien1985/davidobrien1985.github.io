@@ -2,7 +2,7 @@
 id: 1480
 title: 'What&rsquo;s wrong with ZTIOSRole in MDT / ConfigMgr ?'
 date: 2013-11-25T10:04:48+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/11/whats-wrong-ztiosrole-mdt-configmgr/
@@ -107,5 +107,6 @@ I reset that Policy to “not defined” and re-executed my Task Sequence and no
 Both logs get created and all my roles and features are installed.
 
 Anyone else came across this problem and knows why setting an ExecutionPolicy via GPO is a problem?
+
 
 

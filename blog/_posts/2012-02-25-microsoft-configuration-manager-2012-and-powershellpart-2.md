@@ -2,7 +2,7 @@
 id: 285
 title: Microsoft Configuration Manager 2012 and Powershell–Part 2
 date: 2012-02-25T16:42:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/02/microsoft-configuration-manager-2012-and-powershellpart-2/
@@ -31,7 +31,7 @@ This isn’t too hard a task, so here’s my script:
 
 ```PowerShell
 #Functionality: creates a ConfigMgr collection
-#Author: David O'Brien
+#
 #date: 25.02.2012
 #####
 
@@ -69,7 +69,7 @@ Just go ahead and split your collection name until it matches your folder name a
 
 #####
 #Functionality: creates a ConfigMgr collection
-#Author: David O'Brien
+#
 date: 25.02.2012
 #####
 
@@ -84,7 +84,7 @@ Function Create-Collection($CollectionName)
 }
 #####
 #Functionality: moves a ConfigMgr collection from one folder to an other
-#Author: David O'Brien
+#
 #date: 25.02.2012
 #####
 
@@ -116,5 +116,6 @@ move-collection $SourceContainerNodeID $collID $TargetContainerNodeID
 
 Now you’ve got two independent functions and need to combine them into one script.
 Any questions? Just comment here, send me a mail or contact me on twitter (@david_obrien)
+
 
 

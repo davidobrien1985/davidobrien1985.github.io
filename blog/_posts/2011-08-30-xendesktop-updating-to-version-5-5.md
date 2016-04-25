@@ -2,7 +2,7 @@
 id: 79
 title: 'XenDesktop - Updating to version 5.5'
 date: 2011-08-30T09:19:43+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2011/08/xendesktop-updating-to-version-5-5/
@@ -48,6 +48,7 @@ The nice and easy thing about XenDesktop is, that you can administer most things
 As time permits I am going to test the new policies such as "Win7 Aero redirection" and all the other HDX settings.
 
 Until then, have fun with XenDesktop 5.5! I will!
+
 
 
 

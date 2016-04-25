@@ -2,7 +2,7 @@
 id: 1498
 title: 'End of year - all new - Change'
 date: 2013-12-12T01:35:47+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/12/end-year-new-change/
@@ -42,5 +42,6 @@ I'm already really excited about what's going to happen next year!
 Of course I will still be around, just somewhere else (just like money, it’s never gone, just somewhere else.)
 
 So keep following my blog for updates!
+
 
 

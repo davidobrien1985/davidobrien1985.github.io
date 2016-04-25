@@ -2,7 +2,7 @@
 id: 1117
 title: 'How to edit ConfigMgr packages - update on schedule'
 date: 2013-07-23T22:41:51+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/07/how-to-edit-configmgr-packages-update-on-schedule/
@@ -91,7 +91,7 @@ Here's the script:
 .NOTES
     NAME: set-UpdatePkgOnDPBySchedule.ps1
     VERSION: 1.0
-    AUTHOR: David O'Brien
+    
     LASTEDIT: July 23, 2013
     Change history:
 .REMARKS
@@ -187,4 +187,5 @@ foreach ($Pkg in $Packages)
             }
     }
 ```
+
 

@@ -2,7 +2,7 @@
 id: 854
 title: 'Found! - Where are my new ConfigMgr 2012 SP1 CU1 cmdlets?'
 date: 2013-03-23T13:05:48+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/03/found-where-are-my-new-configmgr-2012-sp1-cu1-cmdlets/
@@ -61,5 +61,6 @@ If you now take a look at your AdminConsole install folder and the configuration
 Would have been nice for the CU1 to tell us that it won’t update the locally installed console.
 
 Well, all good now. Testing the cmdlets next!
+
 
 

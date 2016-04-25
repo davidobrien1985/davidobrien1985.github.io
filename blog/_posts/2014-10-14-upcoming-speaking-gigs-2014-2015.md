@@ -2,7 +2,7 @@
 id: 2231
 title: Upcoming speaking gigs 2014 / 2015
 date: 2014-10-14T17:00:54+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/10/upcoming-speaking-gigs-2014-2015/
@@ -178,5 +178,6 @@ I will update this list if I have to, so check regularly if I am in your area.
 Do you have a User Group and would like me to speak while I am in your area? Just contact me and we'll sort something out.
 
 - [David](www.twitter.com/david_obrien)
+
 
 

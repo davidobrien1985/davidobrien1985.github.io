@@ -2,7 +2,7 @@
 id: 413
 title: Import Computer to Configuration Manager 2007 / 2012
 date: 2012-07-25T21:51:05+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/07/import-computer-to-configuration-manager-2007-2012/
@@ -82,5 +82,6 @@ Function Import-ConfigMgr
 The script needs to run on a ConfigMgr management point.
 
 Questions? Just ask… (Twitter: @david_obrien) or comment here.
+
 
 

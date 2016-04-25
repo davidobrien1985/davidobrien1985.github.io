@@ -2,7 +2,7 @@
 id: 1700
 title: Applications vs Packages, why the ConfigMgr Package model will not go anywhere
 date: 2014-04-05T10:34:06+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/04/applications-vs-packages-configmgr-package-model-wont-go-anywhere/
@@ -80,4 +80,5 @@ It is still not too intuitive to do any reporting or scripting with applications
 I believe what I want to say is, think before running to the app model and neglecting packages. It might be worthwhile while moving away from the package model to check each package if it would be better of as an application or maybe something completely else.
 
 What is your opinion on the app model? What problems did you encounter I did not pick up here?
+
 

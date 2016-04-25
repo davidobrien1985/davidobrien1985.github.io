@@ -2,7 +2,7 @@
 id: 238
 title: Microsoft System Center Configuration Manager 2012–unattended installation of Sites
 date: 2012-01-17T18:25:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/01/microsoft-system-center-configuration-manager-2012unattended-installation-of-sites/
@@ -124,5 +124,6 @@ CCARSiteServer=test0.osd.local
 ```
 
 I didn’t test this script, but I believe it should work, as I’ve already seen other articles around doing this.
+
 
 

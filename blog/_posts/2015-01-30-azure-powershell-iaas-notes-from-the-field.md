@@ -2,7 +2,7 @@
 id: 2944
 title: 'Azure PowerShell IaaS - Notes from the field'
 date: 2015-01-30T12:18:47+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/01/azure-powershell-iaas-notes-from-the-field/
@@ -49,5 +49,6 @@ I will continue to update this article over time. These are just my first findin
 Do you have something to add to this list?
 
 Until then, have fun automating.
+
 
 

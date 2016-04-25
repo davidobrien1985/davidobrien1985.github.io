@@ -2,7 +2,7 @@
 id: 1567
 title: How to find ConfigMgr Collection membership of client via Powershell?
 date: 2014-01-13T15:47:52+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/01/find-configmgr-collection-membership-client-via-powershell/
@@ -37,4 +37,5 @@ In line 1 just change the Name of the Client you want to check and in line 2 cha
 Because of lines 1 and 5 you need to import the ConfigMgr Powershell module first.
 
 ![SCCM Collection Membership](/media/2014/01/image10.png)
+
 

@@ -2,7 +2,7 @@
 id: 419
 title: Unattended installation of Citrix Provisioning Services
 date: 2012-08-06T15:45:14+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/08/unattended-installation-of-citrix-provisioning-services/
@@ -239,5 +239,6 @@ Line 37 is the one where I set the right Encoding and that’s how it works! Des
 I thought nowadays to automate a software would be easier. When searching the internet you don’t find a lot of people who install PVS unattended (or they don’t speak about it) and if you find something it’s nearly always about some problems they have.
 
 Take a look at Simon Pettit’s blog article about automating PVS with RES Automation Manager if you don’t want to use Powershell ;-) [http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/](http://virtualengine.co.uk/2012/automating-citrix-provisioning-server-install-with-res-am/)
+
 
 

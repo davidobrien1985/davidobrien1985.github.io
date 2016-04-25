@@ -2,7 +2,7 @@
 id: 930
 title: Configuration Manager 2012 powershell environment variables
 date: 2013-05-21T15:13:08+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/05/configuration-manager-2012-powershell-environment-variables/
@@ -38,5 +38,6 @@ This variable will resolve to the local path where the ConfigMgr 2012 logfiles a
 These variables are great for automation purposes, as we don’t have to go into registry anymore to look for the Admin console path and then import the Powershell module or register com-objects, we just use this variable.
 
 I will definitely rewrite my scripts to use these variables.
+
 
 

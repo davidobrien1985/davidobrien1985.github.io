@@ -2,7 +2,7 @@
 id: 910
 title: 'How to create ConfigMgr collection maintenance windows - Powershell'
 date: 2013-04-20T00:08:31+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/04/how-to-create-configmgr-collection-maintenance-windows-powershell/
@@ -197,5 +197,6 @@ catch
 
     }
 ```
+
 
 

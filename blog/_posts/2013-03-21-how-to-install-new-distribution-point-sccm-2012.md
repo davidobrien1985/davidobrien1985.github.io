@@ -2,7 +2,7 @@
 id: 809
 title: 'How to install new Distribution Point&ndash;SCCM 2012'
 date: 2013-03-21T00:20:11+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/03/how-to-install-new-distribution-point-sccm-2012/
@@ -45,7 +45,7 @@ That’s it. Take a look at the configurable items IN the script regarding the d
 
  This script installs a Microsoft System Center Configuration Manager 2012 Distribution Point Server Role
 
- Author: David O'Brien
+ 
 
  date: 01.06.2012
 
@@ -329,5 +329,6 @@ Invoke-WmiMethod -Namespace "root\SMS\site_$SiteCode" -class "SMS_SiteControlFil
 
 $SiteControlFile = Invoke-WmiMethod -Namespace "root\SMS\site_$SiteCode" -class "SMS_SiteControlFile" -name "ReleaseSessionHandle" -ArgumentList $SiteControlFile.SessionHandle -ComputerName $MPServer
 ```
+
 
 

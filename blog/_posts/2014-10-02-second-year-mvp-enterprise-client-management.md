@@ -2,7 +2,7 @@
 id: 1941
 title: Second year as MVP for Enterprise Client Management
 date: 2014-10-02T06:26:32+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/10/second-year-mvp-enterprise-client-management/
@@ -31,4 +31,5 @@ If you would like to learn more about the MVP Program or would like to have a lo
 You can also search for other MVPs on that site!
 
 ![image](/media/2014/10/image1.png)
+
 

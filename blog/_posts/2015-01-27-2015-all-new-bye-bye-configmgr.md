@@ -2,7 +2,7 @@
 id: 2919
 title: '2015 - all new, bye bye ConfigMgr'
 date: 2015-01-27T14:23:55+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/01/2015-all-new-bye-bye-configmgr/
@@ -36,4 +36,5 @@ This has already been on my mind for some time. I’m still going to do and blog
 Even more exciting times ahead!
 
 -[David](http://www.twitter.com/david_obrien)
+
 

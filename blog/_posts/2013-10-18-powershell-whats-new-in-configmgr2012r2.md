@@ -2,7 +2,7 @@
 id: 1397
 title: Powershell , what is new in ConfigMgr 2012 R2 RTM
 date: 2013-10-18T13:21:52+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/10/powershell-whats-new-in-configmgr2012r2/
@@ -117,5 +117,6 @@ Set-CMVhd
 Set-CMVpnProfileConfigurationItem
 Set-CMWirelessProfileConfigurationItem
 ```
+
 
 

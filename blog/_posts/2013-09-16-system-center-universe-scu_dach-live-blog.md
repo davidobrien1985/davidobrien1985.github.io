@@ -2,7 +2,7 @@
 id: 1270
 title: System Center Universe (SCU_DACH) live blog
 date: 2013-09-16T08:02:01+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/09/system-center-universe-scu_dach-live-blog/
@@ -155,7 +155,7 @@ I'm now in the SCVMM Networking: From Zero to Hero in two hours session with [Th
 
 ## What's new in ConfigMgr 2012 R2
 
-Lunch break is over and although I liked the SCVMM part 1, as a ConfigMgr person, I have to attend [Kent Agerlund's](http://blog.coretech.dk/author/kea/) session about "What's new in ConfigMgr 2012 R2".
+Lunch break is over and although I liked the SCVMM part 1, as a ConfigMgr person, I have to attend [Kent Agerlund's](http://blog.coretech.dk/
 
 ![image](/media/2013/09/20130916_142947.jpg)
 
@@ -206,7 +206,7 @@ Kent Agerlund is doing another ConfigMgr session about configuring Update Manage
   * pre R2: look at the ruleengine.log
     * it will show you in clear text how many updates it will download
 * SCUP - System Center Updates Publisher
-  * Authoring Tool
+  * 
   * Publishing Tool
   * Kent has a blog article describing how to configure SCUP and how to deploy 3rd party app updates
     * [http://blog.coretech.dk/kea/the-complete-scup-2011-installation-and-configuration-guide/](http://blog.coretech.dk/kea/the-complete-scup-2011-installation-and-configuration-guide/)
@@ -275,6 +275,7 @@ There has been a cancellation of a session and I jumped in. A huge opportunity t
 Thanks to [Marcel Zehner](http://marcelzehner.ch/) and itNetX for organizing this great event. There will be a SCU_DACH next year again.
 It was great meeting so many experts on System Center topics and talking with them.
 As far as I know all the sessions got recorded and will be put online soon.
+
 
 
 

@@ -2,7 +2,7 @@
 id: 1840
 title: How to publish URL shortcuts to Windows 8.1
 date: 2014-06-26T21:36:29+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/06/publish-url-shortcuts-windows-8-1/
@@ -85,4 +85,5 @@ The icon works and I can now deploy the custom Start Layout.
 Last issue that remains, and I still haven't found a solution for it, is the background colour of the tiles. For whatever reason they all take that ugly grey-ish background. If there's anybody reading this that knows how to change it, that would be very appreciated.
 
 - [@David_OBrien](http://twitter.com/david_obrien)
+
 

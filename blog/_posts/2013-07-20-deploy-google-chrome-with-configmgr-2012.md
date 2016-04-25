@@ -2,7 +2,7 @@
 id: 1093
 title: Deploy Google Chrome with ConfigMgr 2012
 date: 2013-07-20T01:04:22+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/07/deploy-google-chrome-with-configmgr-2012/
@@ -69,5 +69,6 @@ I can confirm the successful installation by looking at the AppEnforce.log on th
 In the beginning I said that Google provides an admin with GPOs to configure the user's experience. Here's just a quick example for some settings if you take a look at chrome://settings
 
 ![image](/media/2013/07/chrome_settings.jpg)
+
 
 

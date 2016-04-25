@@ -2,7 +2,7 @@
 id: 3128
 title: Ansible test lab in under 30 minutes
 date: 2016-01-25T02:12:51+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2016/01/ansible-test-lab-30-minutes/
@@ -79,4 +79,5 @@ When I'm done I just call the following code and my environment is gone. No worr
 `vagrant destroy`
 
 Enjoy your new toy!
+
 

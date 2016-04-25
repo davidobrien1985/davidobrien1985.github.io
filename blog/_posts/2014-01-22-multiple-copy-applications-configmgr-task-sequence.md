@@ -2,7 +2,7 @@
 id: 1579
 title: Multiple copy of Applications during ConfigMgr Task Sequence
 date: 2014-01-22T22:29:14+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/01/multiple-copy-applications-configmgr-task-sequence/
@@ -99,4 +99,5 @@ On the client that is installed by using this stand-alone media, the client cach
   \Windows\CCMCache\3\Application1.msi
   \Windows\CCMCache\4\Application2.msi
 ```
+
 

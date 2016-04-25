@@ -2,7 +2,7 @@
 id: 1537
 title: 'ConfigMgr - Application Base variables the easy way with Powershell'
 date: 2014-01-03T23:28:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/01/configmgr-application-base-variables-easy-way-powershell/
@@ -115,7 +115,7 @@ Here’s the script:
         Usage: .\correct-BaseVars.ps1 $NameOfBaseVariable $LengthSuffix
         $LengthSuffix should usually be 2 if you use Applications
 
-        Author: David O'Brien, me@david-obrien.net , Microsoft Enterprise Client Management MVP 2013
+        
         Date: 02.01.2014
 #>
 
@@ -213,4 +213,5 @@ foreach ($BaseVariable in $BaseVariableListFixed)
     $objSMSTS.Value("$($BaseVariable.Keys)") = "$($BaseVariable.Values)"
 }
  ```
+
 

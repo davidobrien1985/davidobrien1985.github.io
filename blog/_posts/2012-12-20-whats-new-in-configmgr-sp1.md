@@ -2,7 +2,7 @@
 id: 553
 title: 'What&rsquo;s new in ConfigMgr SP1?'
 date: 2012-12-20T23:55:07+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/12/whats-new-in-configmgr-sp1/
@@ -41,6 +41,7 @@ This is a short overview of what I found new in ConfigMgr SP1 update:
   * much faster encryption due to only encrypting what’s written on disk
   * preprovisioning in WinPE
 * Powershell cmdlets for Site Server (see my previous blog [ConfigMgr 2012 SP1 Powershell](/2012/09/15/ms-system-center-configuration-manager-2012-sp1-beta-powershell/))
+
 
 
 

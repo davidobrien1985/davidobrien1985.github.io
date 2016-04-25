@@ -2,7 +2,7 @@
 id: 1132
 title: 'How to change prestaged Distribution Point settings on Package - ConfigMgr'
 date: 2013-07-24T09:23:18+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/07/how-to-change-prestaged-distribution-point-settings-on-package-configmgr/
@@ -75,7 +75,7 @@ And here it is:
 .NOTES
     NAME: set-PackagePrestageDownloadBehaviour.ps1
     VERSION: 1.0
-    AUTHOR: David O'Brien
+    
     LASTEDIT: July 24, 2013
     Change history:
 .REMARKS
@@ -138,5 +138,6 @@ foreach ($Pkg in $Packages)
             }
     }
 ```
+
 
 

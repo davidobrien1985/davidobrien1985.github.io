@@ -2,7 +2,7 @@
 id: 267
 title: Am I compatible to my future plans? How App-DNA’s AppTitude helps along the way… (part 2)
 date: 2011-10-01T19:02:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2011/10/am-i-compatible-to-my-future-plans-how-app-dnas-apptitude-helps-along-the-way-part-2/
@@ -75,6 +75,7 @@ We can now find our freshly imported application in AppTitude ‘s application l
 As a next step the next application could be processed, this way a fully automated import can be managed, with nearly no effort.
 
 The next part of this series will cover the analysed application and what reports you can generate out of your data. Stay tuned!
+
 
 
 

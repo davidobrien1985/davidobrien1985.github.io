@@ -2,7 +2,7 @@
 id: 676
 title: 'How do variables in Configuration Manager 2012 work? &ndash; Part 2'
 date: 2013-01-13T02:05:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/01/how-do-variables-in-configuration-manager-2012-work-part-2/
@@ -113,5 +113,6 @@ One other way would be to use “includes” and not limiting collections.
 Create a “parent collection” with all base variables, create other collections with their variables and use an “include membership rule” to add the “child collections” to the parent.
 
 Part 3 will contain a little script to set the collection’s variable priority.
+
 
 

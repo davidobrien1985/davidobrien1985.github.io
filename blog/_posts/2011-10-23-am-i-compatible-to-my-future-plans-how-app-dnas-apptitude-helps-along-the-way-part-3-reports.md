@@ -2,7 +2,7 @@
 id: 208
 title: Am I compatible to my future plans? How App-DNA’s AppTitude helps along the way (part 3) – Reports
 date: 2011-10-23T17:59:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2011/10/am-i-compatible-to-my-future-plans-how-app-dnas-apptitude-helps-along-the-way-part-3-reports/
@@ -103,6 +103,7 @@ For this module AppTiude knows a fix which you can easily download and use the d
 You can now go and select other modules at the top of this page and merge the results per applicaion with the results of the different modules. This way you can already build your own case scenarios and have a detailed look at all rhe issues and problems which might come up during deployment.
 
 My next AppTiude article will cover Forward Paths and how to  configure them. according to your needs..
+
 
 
 

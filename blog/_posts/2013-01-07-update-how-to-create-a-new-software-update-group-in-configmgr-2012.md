@@ -2,7 +2,7 @@
 id: 647
 title: 'Update: How to create a new Software Update Group in ConfigMgr 2012'
 date: 2013-01-07T22:48:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/01/update-how-to-create-a-new-software-update-group-in-configmgr-2012/
@@ -40,7 +40,7 @@ Do you have any requests or comments?
 Functionality: This script creates a new Software Update Group in Microsoft System Center 2012 Configuration Manager
 How does it work: create-SoftwareUpdateGroup.ps1 -UpdateGroupName $Name -KnowledgeBaseIDs $KBID -SiteCode
 KnowledgeBaseID can contain comma separated KnowledgeBase IDs like 981852,16795779
-Author: David O'Brien, david.obrien@gmx.de
+
 Date: 02.12.2012
 #>
 
@@ -84,7 +84,7 @@ Function create-Group {
 .EXAMPLE
     .\create-SoftwareUpdateGroup.ps1 -SiteCode LAB -UpdateGroupName SUG-2012-December -Description "Microsoft Updates December 2012" -LogFilePath c:\Temp -UseCSV -CSVFilePath "C:\Temp\KBIDs.CSV"
 .NOTES
-    Author: David O'Brien, david.obrien@gmx.de
+    
     Version: 1.0
     Change history
         02.12.2012: first release
@@ -139,9 +139,9 @@ $Localization.DisplayName = $UpdateGroupName
 $Localization.Description = $Description
 $Localization.LocaleID = 1033
 $Information += $Localization
-$SMSAuthorizationList = "SMS_AuthorizationList"
+$SMS
 $class_AuthList = [wmiclass]""
-$class_AuthList.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMSAuthorizationList)"
+$class_AuthList.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS
 $AuthList = $class_AuthList.CreateInstance()
 $AuthList.Updates = $CIIDs
 $AuthList.LocalizedInformation = $Information
@@ -180,6 +180,7 @@ create-Group
 ```
 
 You can also find a demo of this script in my latest video: [http://www.david-obrien.net/?p=640](http://www.david-obrien.net/?p=640)
+
 
 
 

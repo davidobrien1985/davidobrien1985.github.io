@@ -2,7 +2,7 @@
 id: 532
 title: Create a new Software Update Group in ConfigMgr
 date: 2012-12-02T23:23:42+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/12/create-a-new-software-update-group-in-configmgr/
@@ -44,7 +44,7 @@ Unfortunately Microsoft doesn’t give us a cmdlet to just create a new Software
 
 I’m still learning a lot of Powershell and those embedded properties in WMI were quite a challenge for me.
 
-In order to create a new Software Update Group one has to use the WMI class SMS_AuthorizationList (clearly!) and this has a lot of properties. ([MSDN: SMS_AuthorizationList](http://msdn.microsoft.com/en-us/library/hh949278.aspx))
+In order to create a new Software Update Group one has to use the WMI class SMS_
 
 For example the Software Update Group’s name is a lazy property and if you want to set it you have to do it via another embedded class ([MSDN: SMS_CI_LocalizedProperties](http://msdn.microsoft.com/en-us/library/cc145662.aspx)).
 
@@ -54,7 +54,7 @@ For the stuff we want to do we need the following WMI classes:
 
 * SMS_SoftwareUpdate
 * SMS\_CI\_LocalizedProperties
-* SMS_AuthorizationList
+* SMS_
 
 # Find the updates and link them
 
@@ -76,7 +76,7 @@ With this ID the script can now parse the SMS\_SoftwareUpdate class and find the
 
 # Name the Update Group
 
-Looking at the SMS_AuthorizationList class we see the following properties:
+Looking at the SMS_
 
 * ****LocalizedDescription****
 * ****LocalizedDisplayName****
@@ -93,7 +93,7 @@ Filling in the properties isn’t that difficult, you’ll see.
 
 # Create the Update Group
 
-This one is easy again. Create an instance of the SMS_AuthorizationList class, fill in the info and commit it, et voila! ;-)
+This one is easy again. Create an instance of the SMS_
 
 This is the whole script:
 
@@ -102,7 +102,7 @@ This is the whole script:
 Functionality: This script creates a new Software Update Group in Microsoft System Center 2012 Configuration Manager
 How does it work: create-SoftwareUpdateGroup.ps1 -UpdateGroupName $Name -KnowledgeBaseIDs $KBID -SiteCode
 KnowledgeBaseID can contain comma separated KnowledgeBase IDs like 981852,16795779
-Author: David O'Brien, david.obrien@sepago.de
+
 Date: 02.12.2012
 #>
 
@@ -132,9 +132,9 @@ $Localization = $class_Localization.CreateInstance()
 $Localization.DisplayName = $UpdateGroupName
 $Localization.LocaleID = 1033
 $Description += $Localization
-$SMSAuthorizationList = "SMS_AuthorizationList"
+$SMS
 $class_AuthList = [wmiclass]""
-$class_AuthList.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMSAuthorizationList)"
+$class_AuthList.psbase.Path ="ROOT\SMS\Site_$($SiteCode):$($SMS
 $AuthList = $class_AuthList.CreateInstance()
 $AuthList.Updates = $CIIDs
 $AuthList.LocalizedInformation = $Description
@@ -168,5 +168,6 @@ The script needs error handling! Right now it won’t tell you what it did and i
 Interaction: One KB can contain more than one hotfixes (e.g. KB890830). If the script finds more than one hotfix it should ask which one to add. Right now it adds all of them.
 
 I hope you like it! Text me here or on Twitter ([@david_obrien](http://www.twitter.com/david_obrien)) if you do.
+
 
 

@@ -14,6 +14,6 @@ foreach ($file in $files) {
 
 foreach ($file in $files) {
     $content = Get-Content -Path $file.FullName -Raw
-    $content -replace 'guid:.+','' | Set-Content -Path $file.FullName
+    $content -replace 'author.+',$null | Set-Content -Path $file.FullName
     #$content -replace '{% include toc %}','' | Set-Content -Path $file.FullName
 }

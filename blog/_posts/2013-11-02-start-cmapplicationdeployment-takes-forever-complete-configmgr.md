@@ -2,7 +2,7 @@
 id: 1434
 title: Start-CMApplicationDeployment takes forever to complete in ConfigMgr
 date: 2013-11-02T17:45:59+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/11/start-cmapplicationdeployment-takes-forever-complete-configmgr/
@@ -69,5 +69,6 @@ More info on this WMI class here on MSDN:
 SMS_ApplicationAssignment [http://msdn.microsoft.com/en-us/library/hh949469.aspx](http://msdn.microsoft.com/en-us/library/hh949469.aspx)
 
 SMS_CIAssignmentBaseClass [http://msdn.microsoft.com/en-us/library/hh949014.aspx](http://msdn.microsoft.com/en-us/library/hh949014.aspx)
+
 
 

@@ -2,7 +2,7 @@
 id: 210
 title: 'AppDNA Apptitude &#038; Microsoft SCCM – can it get any easier?'
 date: 2011-11-06T18:20:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2011/11/appdna-apptitude-microsoft-sccm-can-it-get-any-easier/
@@ -61,6 +61,7 @@ For now Apptitude only supports import from SCCM2007 databases and does not supp
 ## The Others
 
 But what about the other software deployment tools like Altiris or Netinstall (Frontrange DSM)? Unfortunately they don’t have this nice integration into AppTitude. But surely you can export your packages from any software deployment tool of your choice and import them with the matching command line into AppTitude.
+
 
 
 

@@ -2,7 +2,7 @@
 id: 1877
 title: 'Cloud OS MVP Roadshow 2014 - Sydney'
 date: 2014-07-27T08:29:59+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/07/cloud-os-mvp-roadshow-2014-sydney/
@@ -38,5 +38,6 @@ I will be speaking there alongside other MVPs about how to get you away from tha
 Here is another good write-up about previous Cloud OS Roadshow events: <http://mvp.microsoft.com/en-us/story/Cloud%20OS%20MVP%20Roadshow-20140324162819>
 
 Looking forward to seeing you in Sydney!
+
 
 

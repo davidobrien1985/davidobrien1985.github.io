@@ -2,7 +2,7 @@
 id: 1562
 title: Reports not working after upgrade to ConfigMgr 2012 R2
 date: 2014-01-13T15:32:30+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/01/reports-working-upgrade-configmgr-2012-r2/
@@ -32,5 +32,6 @@ Then just run ANY report you like, for example “All Collections”. If no wind
 If the window opens, but after that nothing happens, then this is maybe no fix for you.
 
 Maybe you are running into this issue and this helps you.
+
 
 

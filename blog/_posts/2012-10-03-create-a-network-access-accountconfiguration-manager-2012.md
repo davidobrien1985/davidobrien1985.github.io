@@ -2,7 +2,7 @@
 id: 493
 title: Create a Network Access Account–Configuration Manager 2012
 date: 2012-10-03T21:58:43+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2012/10/create-a-network-access-accountconfiguration-manager-2012/
@@ -87,7 +87,7 @@ Here’s the script! If the script helped you or you have any comments, I’d lo
 
 #
 
-# Author: David O'Brien, david.obrien@sepago.de
+# 
 
 #
 
@@ -169,5 +169,6 @@ $component.Props = $props
 
 $component.Put() | Out-Null
 ```
+
 
 

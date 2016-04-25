@@ -2,7 +2,7 @@
 id: 3116
 title: PowerShell module to interact with Github
 date: 2015-10-08T22:00:25+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/10/powershell-module-to-interact-with-github/
@@ -80,4 +80,5 @@ Remove-GithubRepository
 Of course, as always, if you want to add something to the module or would like to "properly" report and issue with the module, head over to Gitlab and check out the repository directly: <https://gitlab.com/dobrien/GithubConnect>
 
 Is this helpful?
+
 

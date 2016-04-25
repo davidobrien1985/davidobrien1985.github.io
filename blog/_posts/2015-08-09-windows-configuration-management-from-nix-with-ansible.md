@@ -2,7 +2,7 @@
 id: 3098
 title: 'Windows configuration management - from *nix with Ansible'
 date: 2015-08-09T09:19:13+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2015/08/windows-configuration-management-from-nix-with-ansible/
@@ -93,4 +93,5 @@ Everybody was quite impressed with me that without really knowing Ansible that m
 Check out Ansible, it's really cool! And if you're using it on Windows, make sure you upload your custom modules and code modifications to git and tell us all about it. There's much to do to make it awesome on Windows.
 
 Looking forward to get PowerShell v5 RTM soon and then use that with Ansible.
+
 

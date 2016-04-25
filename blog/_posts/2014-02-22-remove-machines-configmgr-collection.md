@@ -2,7 +2,7 @@
 id: 1644
 title: How to remove machines from ConfigMgr Collection
 date: 2014-02-22T00:13:00+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2014/02/remove-machines-configmgr-collection/
@@ -150,4 +150,5 @@ If you don’t want to use Orchestrator, you could still modify my script a bit 
 Have fun!
 
 -[David](http://www.twitter.com/david_obrien)
+
 

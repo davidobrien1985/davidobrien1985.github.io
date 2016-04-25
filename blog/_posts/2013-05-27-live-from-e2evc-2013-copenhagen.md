@@ -2,7 +2,7 @@
 id: 935
 title: Live from E2EVC 2013 Copenhagen
 date: 2013-05-27T20:48:13+00:00
-author: "David O'Brien"
+
 layout: single
 
 permalink: /2013/05/live-from-e2evc-2013-copenhagen/
@@ -106,5 +106,6 @@ Thomas Maurer and Michael Rüefli talked about SCVMM 2012 mania.
 Been to VERY(!) interesting sessions today and again talked to a lot of intelligent people. It’s a shame that I couldn’t be at all the sessions, would’ve really liked to see Shawn Bass’s session which unfortunately was parallel to mine. But despite the early hour and “competing” against Shawn I was glad that so many people came to my session and gave me some nice feedback on it.
 
 Looking forward to tomorrow and the next E2EVC in Rome.
+
 
 
