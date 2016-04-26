@@ -56,7 +56,10 @@ UserData on Windows can call two different shells, well, the two that exist on W
 `script` will convert your code into a `.bat` file and call `cmd.exe`.
 `powershell` will convert your conde into a `.ps1` file and call `powershell.exe`.
 
+### userdata on Windows from CloudFormation
 
+CloudFormation uses `json` format to describe your environment / infrastructure. If you are familiar with Microsoft Azure then this will be similar to an Azure Resource Manager (ARM) template.
+Part of this CloudFormation template would be the `UserData` block as you can see below.
 
 ```json
 "UserData": {
@@ -169,3 +172,50 @@ UserData on Windows can call two different shells, well, the two that exist on W
   }
 },
 ```
+
+This example json is used to configure the local proxy on an instance leveraging the `script` call. This is done because here we are calling both PowerShell cmdlets and "legacy" executables like `netsh`.
+When both `script` and `powershell` are used in a userdata block then the batch script **always** gets executed first, no matter in what order the blocks are put in the userdata field.
+My recommendation is to only use `script` or `powershell`, not both.
+The `Ref` calls are used to gather input parameters to the CloudFormation script.
+
+## userdata with aws cli
+
+If you are going straight to the aws cli to provision your instances then using the userdata script is just as easy.
+
+```
+aws ec2 run-instances --image-id ami-fbc42a3 --count 1 --instance-type c4.large  --user-data file://user_data.txt --subnet-id subnet-fbc42a3 --security-group-ids sg-fbc42a3 --key-name david-dev
+```
+
+`user_data.txt` would consist of the cleartext code that you want run upon instance launch encapsulated in the `<powershell>$code</powershell>` syntax.
+
+## userdata with AWS PowerShell module
+
+Are you running your provisioning scripts on Windows and do you have access to the AWS PowerShell module? If yes, then [New-EC2Instance](http://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) has two parameters that will help you pass in your userdata into a new instance.
+
+`New-EC2Instance -ImageId ami-fbc42a3 -MinCount 1 -MaxCount 1 -InstanceType c4.large -KeyName david-dev -SecurityGroup sg-dev -userdatafile user_data.txt`
+
+or
+
+```
+$userdata = '<powershell>get-service</powershell>'
+$EncodeUserData = [System.Text.Encoding]::UTF8.GetBytes($userdata)
+$encuserData = [System.Convert]::ToBase64String($EncodeUserData)
+New-EC2Instance -ImageId ami-fbc42a3 -MinCount 1 -MaxCount 1 -InstanceType c4.large -KeyName david-dev -SecurityGroup sg-dev -userdata $encuserData
+```
+
+If you didn't know, the AWS PowerShell module is available on most AMIs out of the box. If not, and you are on WMF5 or have PackageManagement installed on your machine, then run the following command to install it from the command line:
+
+`Install-Module AWSPowerShell`
+
+## Execution context
+
+Depending on what you need to do you need to be aware of the execution context of your userdata script.
+If you are launching an AMI for the first time that has the "auto-generate Administrator password" flag set in the EC2Config then the script will execute in the context of the `localhost\\Administrator` accoun. If this is not the case then the context of the `EC2Config` service will be used, by default that is the `SYSTEM` account.
+
+## Troubleshooting
+
+The resulting script will be copied to the instance to the following path:
+`C:\\Program Files\\Amazon\\Ec2ConfigService\\Scripts\\UserScript.ps1.`
+Here you will be able to see the resulting script and check if your parameters were passed into your userdata script correctly for example.
+
+Start playing around with this, I'll post some more info on this in the future.
