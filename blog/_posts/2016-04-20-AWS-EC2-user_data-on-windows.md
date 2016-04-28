@@ -218,4 +218,4 @@ The resulting script will be copied to the instance to the following path:
 `C:\\Program Files\\Amazon\\Ec2ConfigService\\Scripts\\UserScript.ps1.`
 Here you will be able to see the resulting script and check if your parameters were passed into your userdata script correctly for example.
 
-Start playing around with this, I'll post some more info on this in the future.
+Start playing around with this, I will post some more info on this in the future.
