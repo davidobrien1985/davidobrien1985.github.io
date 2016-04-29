@@ -27,7 +27,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 
-sharing_url              : https://www.david-obrien.net
+sharing_url              : http://www.david-obrien.net
 
 defaults:
   -
