@@ -1,7 +1,6 @@
 ---
 title: AWS EC2 proxy settings on Windows
 date: 2016-04-20T12:30:30
-
 layout: single
 permalink: /2016/04/aws-ec2config-proxy-setttings//
 categories:
@@ -154,7 +153,7 @@ The `EC2Config` service is configured by a `EC2Config.exe.config` file and in th
   <system.net>
     <defaultProxy>
       <proxy
-        proxyaddress="{{ awsproxy }}"
+        proxyaddress="\{\{ awsproxy \}\}"
         bypassonlocal="true"
       />
       <bypasslist>
@@ -168,6 +167,6 @@ The `EC2Config` service is configured by a `EC2Config.exe.config` file and in th
 ```
 
 You might notice that I have specified `#jinja2: newline_sequence:'\\r\\n'` in the first line, this is because this file is used as a Jinja2 template in an Ansible playbook that provisions these EC2 instances.
-You can also see that there is a variable used for `proxyaddress` called `{{ awsproxy }}`. This variable is passed in to this file and the resulting file will overwrite the existing file on the Windows machine. Use whatever deployment process you already have to achieve the same outcome (Puppet, Chef or straight PowerShell can all do this easily).
+You can also see that there is a variable used for `proxyaddress` called `\{\{ awsproxy \}\}`. This variable is passed in to this file and the resulting file will overwrite the existing file on the Windows machine. Use whatever deployment process you already have to achieve the same outcome (Puppet, Chef or straight PowerShell can all do this easily).
 
 Restart the `EC2Config` service (`Restart-Service -Name Ec2Config`) and check the EC2Config service's log file (`C:\\Program Files\\Amazon\\Ec2ConfigService\\Logs\\Ec2ConfigLog.txt`). You should now see successful uploads of both metrics and logs on your instance and in your AWS console you should now be able to see the logs arriving.`
