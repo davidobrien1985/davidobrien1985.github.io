@@ -1,6 +1,6 @@
 ---
 title: AWS EC2 proxy settings on Windows
-date: 2016-04-20T12:30:30
+date: 2016-04-28T12:30:30
 layout: single
 permalink: /2016/04/aws-ec2config-proxy-setttings//
 categories:
