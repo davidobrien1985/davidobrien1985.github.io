@@ -1,6 +1,6 @@
 ---
 title: Deploying Microsoft Domain Controllers on AWS
-date: 2016-05-18T01:30:30
+date: 2016-05-17T01:30:30
 layout: single
 permalink: /2016/05/microsoft-domain-controllers-on-aws/
 categories:
