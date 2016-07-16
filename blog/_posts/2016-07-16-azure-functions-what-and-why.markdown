@@ -19,6 +19,7 @@ Evolution is everywhere, nature has it and so has IT. Every other day there is t
 IT networks went from disconnected machines to small local networks to the internet, we had datacentres and then the cloud. Cloud started as IaaS and evolved to SaaS and PaaS.
 Where before "cloud" you were very constraint in what you were able to do (unforeseen spike in customer transactions on your website? Bye bye website. Bye bye revenue.), you can now scale up as fast as you want, and maybe more importantly, scale down again and not spend money on a huge infrastructure.
 What will the next big leap be?
+<!--more-->
 
 ## Serverless compute - Azure Functions
 
@@ -46,9 +47,9 @@ If you are familiar with Azure Automation, then this should be a well-known conc
 Functions however go beyond what Azure Automation provides you with. Automation is limited to PowerShell and can really only be triggered by a webhook or the Azure SDK (API or CLI). 
 Functions are meant to execute functions, not full-blown workflows. You are expected to write primitives, not monoliths. Your primitive should be fast, light really fast. 
 
-![Azure Functions overview](/media/07/azure_functions_overview.png)
+![Azure Functions overview](/media/2016/07/azure_functions_overview.png)
 
-Why fast? You are, like with traditional IaaS, only paying for the time you are actually using your compute. The pricing overview for Functions (date: 16/07/2016) can be found here: https://azure.microsoft.com/en-us/pricing/details/functions/
+Why fast? You are, like with traditional IaaS, only paying for the time you are actually using your compute. The pricing overview for Functions (date: 16/07/2016) can be found here: <https://azure.microsoft.com/en-us/pricing/details/functions/>
 This means, as a small to medium shop, depending on your requirements for Functions, you can get quite a lot of execution time for very small money.
 Remember, you are charged by the 100ms. The faster your function, the less you pay. 
 
@@ -62,5 +63,5 @@ Azure Functions PowerShell is, when this article was written (16/07/2016) still 
 
 ## Open Source
 
-By the way, it's Open Source: https://github.com/azure/azure-webjobs-sdk-script 
+By the way, it's Open Source: <https://github.com/azure/azure-webjobs-sdk-script> 
 

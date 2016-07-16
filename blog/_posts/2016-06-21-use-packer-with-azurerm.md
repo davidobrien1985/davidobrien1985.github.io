@@ -18,6 +18,7 @@ Even though during day I'm almost completely on AWS, at night I am still working
 
 I just gave back my MacBook Pro and swapped it for a Microsoft SurfaceBook which means that I also have to go and set up all my dev environment again.
 What better opportunity could there be to start fresh and apply some learnings from the last months?
+<!--more-->
 
 ## Packer - tl;dr
 

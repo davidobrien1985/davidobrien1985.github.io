@@ -17,6 +17,7 @@ tags:
 
 I am currently building an end to end automation framework for a secure Windows environment on Amazon Web Services (AWS). This is really interesting as Google will give you at least a dozen hits on this topic, including AWS Quickstart templates to deploy a VPC with Remote Desktop Services Gateways, Domain Controllers, Domain members, etc, using CloudFormation.
 This one here is a very complete example of how to do it: <http://docs.aws.amazon.com/quickstart/latest/powershell-dsc/welcome.html>
+<!--more-->
 
 "What's the point of this article then?", you ask? Fair question.
 
