@@ -22,9 +22,7 @@ The following article will provide a more closer look at how Azure Functions can
 
 Now that I have done a quick intro to Azure Functions in general, I also need to make a quick statement:
 
-```
-Azure Functions is still in active development and is undergoing a lot of changes. I will try to keep these articles as up to date as possible, but please keep an eye on the "last updated" date on the articles and compare it to the actual Azure Functions version out there.
-```
+>Azure Functions is still in active development and is undergoing a lot of changes. I will try to keep these articles as up to date as possible, but please keep an eye on the "last updated" date on the articles and compare it to the actual Azure Functions version out there.
 
 With that out of the way, let's get into it.
 
@@ -204,11 +202,11 @@ I wasn't able to figure out which OS this is running as you don't have access to
 
 I used the following PowerShell "Function" at a meetup the other day to demonstrate the service.
 
-<http://gist-it.appspot.com/https://github.com/davidobrien1985/azure_functions/blob/master/icao_weather.ps1>
+<script src="http://gist-it.appspot.com/https://github.com/davidobrien1985/azure_functions/blob/master/icao_weather.ps1"></script>
 
 The code can be copied into the `HttpTrigger` template code window without change and then executed by calling the function's URL with a query_string provided on the URL.
 
-![Azure Function URL](/azure_functions_url.png)
+![Azure Function URL](/media/2016/07/azure_functions_url.png)
 
 In my example I would execute it like this:
 `https://dotest.azurewebsites.net/api/metar?icao=ymml`
