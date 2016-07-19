@@ -200,7 +200,7 @@ I wasn't able to figure out which OS this is running as you don't have access to
 
 ## Example Function with http trigger
 
-I used the following PowerShell "Function" at a meetup the other day to demonstrate the service. (actual code available ![here](https://github.com/davidobrien1985/azure_functions) )
+I used the following PowerShell "Function" at a meetup the other day to demonstrate the service. (actual code available [here](https://github.com/davidobrien1985/azure_functions) )
 
 <script src="https://gist.github.com/davidobrien1985/ba1c2e11b1b23e1ec262cc4dc61fb6c8.js"></script>
 
