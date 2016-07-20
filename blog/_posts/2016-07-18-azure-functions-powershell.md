@@ -32,7 +32,8 @@ I am going to assume here that you have already created your Function App, if no
 
 ## Environment
 
-Azure Functions is a shared environment. This means that you will unlikely get a dedicated runner for yourself to run your functions. This shouldn't cause too many issues, permitted that Microsoft can scale the number of runners quickly enough if need be. I don't want my customers to wait just because my job is queued up to be executed.
+Azure Functions on the free tier (app service) is a shared environment. This means that you won't get a dedicated runner for yourself to run your functions. This shouldn't cause too many issues, permitted that Microsoft can scale the number of runners quickly enough if need be. I don't want my customers to wait just because my job is queued up to be executed. 
+There is however the option to change over to a different app service plan to get dedicated runners. Check here for more info: <https://azure.microsoft.com/en-gb/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/>
 As of writing this article the PowerShell environment comes with PowerShell version 4 and the following configuration:
 
 ```
