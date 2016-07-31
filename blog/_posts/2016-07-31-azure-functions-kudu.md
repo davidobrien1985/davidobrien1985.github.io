@@ -60,5 +60,5 @@ In my opinion this is a really neat way of getting access to the actual environm
 As you can see in above screenshot there are way more tools available to make sense of your web app environment which I will cover in one of the next articles.<br>
 KUDU comes out of the box with a REST API that can easily be invoked via PowerShell. Examples and documentation for the API are available on the KUDU Github repository.
 <br>
-More info on KUDU can be found here: <https://blogs.msdn.microsoft.com/benjaminperkins/2014/03/24/using-kudu-with-windows-azure-web-sites/>
+More info on KUDU can be found here: <https://blogs.msdn.microsoft.com/benjaminperkins/2014/03/24/using-kudu-with-windows-azure-web-sites/><br>
 The official wiki is here: <https://github.com/projectkudu/kudu/wiki>
