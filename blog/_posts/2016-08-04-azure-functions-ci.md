@@ -15,7 +15,7 @@ tags:
 
 # Continuous Integration with Azure Functions
 
-After playing around a bit with Azure Functions over the last few articles it is now time to do it properly.
+After playing around a bit with [Azure](https://azure.microsoft.com/) Functions over the last few articles it is now time to do it properly.
 So far we have logged on to the Azure portal and navigated to the Functions App (<https://functions.azure.com>). We then selected the Function and edited it live in the online portal. <br>
 Nice experience to get started quickly, but if your app consists of multiple functions and if you want to follow best practices and have your code in source control, then we need to approach this product differently.
 
@@ -23,7 +23,7 @@ Nice experience to get started quickly, but if your app consists of multiple fun
 
 ## I've got the Function - now what?
 
-I usually develop my PowerShell code locally on my laptop (one reason why I went back to a Windows laptop actually) and then push the code to a git repository (either Github or Gitlab). <br>
+I usually develop my PowerShell code locally on my laptop (one reason why I went back to a Windows laptop actually) and then push the code to a git repository (either [Github](http://www.github.com) or [Gitlab](http://www.gitlab.com)). <br>
 So with our code finalised on my laptop and pushed to git, how do I get it into Azure? 
 Azure Functions, or better, the Web App surrounding the Azure Function can integrate with multiple source code repositories. This can be a VSTS repository, a Github repo or a local Azure git repository. <br>
 For this article I am going to demonstrate integration with Github.
