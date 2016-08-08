@@ -25,7 +25,7 @@ Nice experience to get started quickly, but if your app consists of multiple fun
 
 I usually develop my PowerShell code locally on my laptop (one reason why I went back to a Windows laptop actually) and then push the code to a git repository (either [Github](http://www.github.com) or [Gitlab](http://www.gitlab.com)). <br>
 So with our code finalised on my laptop and pushed to git, how do I get it into Azure? 
-Azure Functions, or better, the Web App surrounding the Azure Function can integrate with multiple source code repositories. This can be a VSTS repository, a Github repo or a local Azure git repository. <br>
+Azure Functions, or better, the Web App surrounding the Azure Function can integrate with multiple source code repositories. This can be a [VSTS](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx) repository, a Github repo or a local Azure git repository. <br>
 For this article I am going to demonstrate integration with Github.
 
 ## Git folder structure
