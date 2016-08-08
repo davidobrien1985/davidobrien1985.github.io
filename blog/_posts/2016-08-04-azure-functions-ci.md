@@ -39,6 +39,7 @@ Every function needs to be in its own subdirectory and needs to consist at least
 Azure will create a function for each subdirectory it detects. This is shown in the following two screenshots.<br>
 
 ![Azure Function CI Folders](/media/2016/08/git_structure.png)
+<br>
 ![Azure Function](/media/2016/08/azure_functions.png)
 
 ## function.json
@@ -74,7 +75,7 @@ Should something be not the way you expected it to be, Azure will provide you wi
 ![Azure Functions Deployment logs](/media/2016/08/azure_functions_deployment_logs.png)
 
 Every commit to your repository, or rather to the branch you selected in your deployment, will trigger a new deployment to Azure Functions and will show up in the portal, including the deployment log files, duration of deployment and "reason", which is your commit message. <br>
-Should you every need to revert a `git commit` you can even use a `git revert` and Azure will happily pick up your change.
+Should you ever need to revert a `git commit` you can even use a `git revert` and Azure will happily pick up your change.
 
 ![Azure Functions git revert](/media/2016/08/azure_functions_git_revert.png)
 
