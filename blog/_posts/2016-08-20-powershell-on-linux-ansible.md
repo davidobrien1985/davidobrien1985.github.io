@@ -1,6 +1,6 @@
 ---
 title: PowerShell on Linux - Get started with Ansible
-date: 2016-08-20T01:30:30
+date: 2016-08-19T12:30:30
 layout: single
 permalink: /2016/08/powershell-linux-ansible/
 categories:
@@ -62,7 +62,7 @@ RUN powershell
 
 In `cmd.exe` or `powershell.exe` verify that your docker VM is running by executing `docker --version`. You get output? Great.
 Save above code as `Dockerfile` in a new directory and change your shell to that directory.
-Our next execution will ask Docker to download the latest version of a container file system called `centos` and install a couple of things into this file system, most notably `Ansible` and `PowerShell`.
+Our next execution will ask Docker to download the latest version of a container file system called `centos` and install a couple of things into this file system, most notably `Ansible` (<https://www.ansible.com/>) and `PowerShell`.
 Regularly check the PowerShell repository and adjust the URL to the rpm file over time.
 
 `docker build -t ansible/powershell .`
