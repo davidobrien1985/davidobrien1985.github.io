@@ -27,7 +27,7 @@ Here are some links to catch up on the announcement:
 
 ## Getting started
 
-It is really easy to get started with PowerShell on Linux. Make sure that you read the [known issues](https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md) before you do.
+It is really easy to get started with PowerShell on Linux. Make sure that you read the [known issues](https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md) before you do.<br>
 Check out the [getting started](https://github.com/PowerShell/PowerShell/#get-powershell) instructions if you've already got an environment to run PowerShell in.
 
 You don't have a Linux VM handy? [Docker](https://docs.docker.com/engine/getstarted/step_one/#docker-for-windows) to the rescue.
@@ -60,16 +60,16 @@ RUN yum -y install powershell_linux.rpm
 RUN powershell
 ```
 
-In `cmd.exe` or `powershell.exe` verify that your docker VM is running by executing `docker --version`. You get output? Great.
-Save above code as `Dockerfile` in a new directory and change your shell to that directory.
-Our next execution will ask Docker to download the latest version of a container file system called `centos` and install a couple of things into this file system, most notably `Ansible` (<https://www.ansible.com/>) and `PowerShell`.
+In `cmd.exe` or `powershell.exe` verify that your docker VM is running by executing `docker --version`. You get output? Great.<br>
+Save above code as `Dockerfile` in a new directory and change your shell to that directory.<br>
+Our next execution will ask Docker to download the latest version of a container file system called `centos` and install a couple of things into this file system, most notably `Ansible` (<https://www.ansible.com/>) and `PowerShell`.<br>
 Regularly check the PowerShell repository and adjust the URL to the rpm file over time.
 
 `docker build -t ansible/powershell .`
 
 Follow the host output and understand what is happening.
 
-`docker run -i ansible/powershell powershell`
+`docker run -i ansible/powershell powershell`<br>
 We are here asking Docker to now run the container that we have just built and "log us in" after executing `powershell`.
 
 ```
@@ -96,9 +96,9 @@ SerializationVersion           1.1.0.1
 PS />
 ```
 
-Now, run the following on that line: `ansible all -i "localhost," -c local -m raw -a 'powershell' -vvvv`
-Wow! We just executed PowerShell, from Ansible, on Linux!
-I realise that we didn't do much, but where on from here? So many possibilities.
+Now, run the following on that line: `ansible all -i "localhost," -c local -m raw -a 'powershell' -vvvv`<br>
+Wow! We just executed PowerShell, from Ansible, on Linux!<br>
+I realise that we didn't do much, but where on from here? So many possibilities.<br>
 
 Type `exit` and you'll leave the container again.
 
