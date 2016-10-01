@@ -30,4 +30,6 @@ To me being a Microsoft MVP means that my hard work and feedback is appreciated 
 
 I'm looking forward to the upcoming MVP Summit in November and what the next year will hold for me and also for Microsoft.
 
+You can find my official MVP Profile here: <https://mvp.microsoft.com/en-us/PublicProfile/5000267?fullName=David%20%20O%27Brien>
+
 Cheers!
