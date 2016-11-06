@@ -54,10 +54,8 @@ So to reiterate, custom modules need to be copied into a directory underneath ea
 
 ## Write a PowerShell module for Azure Functions
 
-```
-Q: So what does this mean for us when writing our own modules?
-A: Not much, initially.
-```
+> Q: So what does this mean for us when writing our own modules?
+> A: Not much, initially.
 
 Writing the module still adheres to the same common principles as always. 
 
