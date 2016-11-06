@@ -29,6 +29,9 @@ I wondered how modules are handled and by checking out `.\azure-webjobs-sdk-scri
 For example we can see that the ExecutionPolicy is set to `Unrestricted`.
 
 The interesting bit starts in line 90 with the method `GetModuleFilePaths` where the Function runtime is told to start looking for all the module files available in the context of the currently running function. This method is implemented in the same file from line 260 onwards.
+
+![azure_functions_modules_dir](/media/2016/11/azure_functions_modules_dir.png)
+
 If you want to follow the code even further you will end up in this file: `.\azure-webjobs-sdk-script\src\WebJobs.Script\Description\PowerShell\PowerShellConstants.cs` in line 9. Now you will understand that Azure Functions will check for the existence of a folder called `modules` underneath the root of each function.
 Example:
 
