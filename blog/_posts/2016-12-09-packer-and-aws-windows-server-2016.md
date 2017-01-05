@@ -73,9 +73,9 @@ Set-Content -Value ($launchConfig | ConvertTo-Json) -Path C:\ProgramData\Amazon\
 
 This would set the administrator password to a known value and report that back to the AWS APIs, in an encrypted form of course. If this is an acceptable way of doing it or maybe just use the default behaviour (I would recommend the default, random) is up to you. Be aware that until the password has actually been set (see further down) that the password will be available in clear-text in this file.<br>
 
-The documentation for EC2Launch is quite hidden (to me at least it was), but once you find it, quite good. http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch.html
+The documentation for EC2Launch is quite hidden (to me at least it was), but once you find it, quite good. http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch.html <br>
 By default it will be okay to not edit the `LaunchConfig.json` at all and use the defaults. In that case AWS will manage the admin password, randomise it and forward it to the AWS console and API as we have all been used to in the past.<br>
-The way one executes this is now different though. As mentioned it is now a collection of PowerShell scripts and in the case of creating a new packer AMI you will need to add the following lines to the end of your packer JSON file.
+The way one executes this is now different though. As mentioned it is now a collection of PowerShell scripts and in the case of creating a new packer AMI you will need to add the following lines to the end of your packer JSON file. 
 
 ```
 {
