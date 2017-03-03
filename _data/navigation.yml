@@ -6,5 +6,5 @@ main:
     url: "/about-me/"
   # - title: "Posts by year"
   #   url: "/year-archive/"
-  # - title: "Posts by tags"
-  #   url: "/tags/"
+  - title: "Posts by tags"
+    url: "/tags/"
