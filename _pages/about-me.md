@@ -3,6 +3,7 @@ id: 294
 title: About me
 date: 2012-03-19T13:55:24+00:00
 permalink: /about-me/
+author_profile: true
 ---
 Hey everybody, welcome to my blog! Great to see you here and I hope you like what you read until now. What about me?
 My name is David O'Brien, born 1985,  married and I am a Senior DevOps / Automation / Cloud Engineer at Versent in Melbourne Australia. My fields of interest are mainly everything around automation, especially Windows PowerShell.<br>
