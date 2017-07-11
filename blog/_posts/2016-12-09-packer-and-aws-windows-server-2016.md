@@ -87,6 +87,23 @@ The way one executes this is now different though. As mentioned it is now a coll
 }
 ```
 
+## *Update* (11/07/2017)
+
+After getting some comments on this article I also now run into the issue that running the second script (`SysprepInstance.ps1`) in packer breaks my packer. After some research I would discourage people from using the "find & replace" method. It does work, for now. However, AWS has added a parameter (a switch actually) to the script.
+So, if you want to run packer to create AMIs then please use this snippet instead of the above:
+
+```
+{
+  "type": "powershell",
+  "inline": [
+    "C:\\ProgramData\\Amazon\\EC2-Windows\\Launch\\Scripts\\InitializeInstance.ps1 -Schedule",
+    "C:\\ProgramData\\Amazon\\EC2-Windows\\Launch\\Scripts\\SysprepInstance.ps1 -NoShutdown"
+  ]
+}
+```
+
+I have tested this against Windows Server 2016 base AMIs.
+
 ![initialize_instance](/media/2016/12/initialize_instance.png)
 
 The first script will create a Scheduled Task on the instance that is configured to launch on next OS launch (mind the `-Schedule`), read the `launchConfig.json` and execute whatever that file tells the script to do. That Scheduled Task will only execute once and never again.<br>
