@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "PowerShell for the win!"
+title                    : "Cloud for the win!"
 title_separator          : "-"
 name                     : "David O'Brien"
 description              : "All about automation in the cloud."
