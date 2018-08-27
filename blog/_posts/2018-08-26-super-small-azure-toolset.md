@@ -31,7 +31,7 @@ So I decided that especially CLIs I do not want to install on my laptop, instead
 Another great use case for this is whenever I get to a customer and they ask me "What do we need on our machines?", my response nowadays is "Docker, I'll bring the rest.".
 Last week someone complained to me about one of those container images being way too big (800MB download). So over the weekend I sat down and built a new container image based on [alpine Linux](https://hub.docker.com/_/alpine/). <br>
 Alpine doesn't come with anything, except for a fully functioning Linux OS and a package manager. If all you need is an OS to run a binary file on, Alpine is the perfect fit, as long as your binary does not care what OS it runs on. Alpine Linux is only 5MB (Yes, MEGABYTES!) in size.<br>
-Go head over to [docker hub](https://hub.docker.com/r/davidobrien/alpine_azure_tools/) and find the probably smallest docker image that has all the important tools on it to work on Azure.
+Go head over to <a href="https://hub.docker.com/r/davidobrien/alpine_azure_tools" target="_blank">docker hub</a> and find the probably smallest docker image that has all the important tools on it to work on Azure.
 
 * Azure CLI
 * bash
