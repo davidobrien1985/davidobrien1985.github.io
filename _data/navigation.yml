@@ -2,8 +2,8 @@
 main:
   - title: "Conferences"
     url: "/conferences/"
-  - title: "David O'Brien Consulting"
-    url: "https://davidobrienconsulting.com"
+  - title: "XIRUS"
+    url: "https://xirus.com.au"
   - title: "About David"
     url: "/about-me/"
   # - title: "Posts by year"
