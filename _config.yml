@@ -27,7 +27,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 
-sharing_url              : https://www.david-obrien.net
+sharing_url              : https://david-obrien.net
 
 defaults:
   -
@@ -86,7 +86,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "David O'Brien"
-  avatar           : "me.png"
+  avatar           : "me2.png"
   bio              : "MVP for Microsoft Azure. Interested in all things around cloud automation."
   location         : "Melbourne Australia"
   email            : "me@david-obrien.net"
@@ -102,7 +102,7 @@ author:
   # keybase          :
   # instagram        :
   # lastfm           :
-  linkedin         : davido7
+  linkedin         : obrien-david
   # pinterest        :
   # soundcloud       :
   # stackoverflow    : # http://stackoverflow.com/users/123456/username
