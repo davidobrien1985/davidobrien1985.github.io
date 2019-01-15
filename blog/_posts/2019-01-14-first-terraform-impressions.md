@@ -80,7 +80,8 @@ resource "azurerm_key_vault" "keyvault-prod" {
 }
 ```
 
-You'd expect some sort of `if` logic, but no, you are essentially saying `if variable equals this then deploy ONE resource otherwise deploy ZERO resources`. Very strange and I'm still very irritated by this.
+You'd expect some sort of `if` logic, but no, you are essentially saying `if variable equals this then deploy ONE resource otherwise deploy ZERO resources`. Very strange and I'm still very irritated by this.<br>
+I received feedback that the `count` should really ideally be (mis)used for feature toggling (which I'm kind of doing in this example) and not for environmental differences. Environment specific configuration should obviously come in to the system via environment variables or other `tfvar` files that are environment specific.
 
 ### IDE support for terraform
 
