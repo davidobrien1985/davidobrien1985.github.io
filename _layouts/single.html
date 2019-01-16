@@ -44,7 +44,12 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label
             }}</a></div>{% endif %}
       </section>
-
+      
+      <div class="page-content">
+        <div class="wrapper">
+          {% include github-comments.html %}
+        </div>
+      </div>
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
         <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
@@ -66,11 +71,6 @@ layout: default
       {% include post_pagination.html %}
     </div>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {% include github-comments.html %}
-      </div>
-    </div>
   </article>
 
   {% comment %}
