@@ -27,6 +27,9 @@
 
 @import "forms";
 
+@import "_gh-code.scss";
+@import "_gh-comments.scss";
+
 @import "page";
 @import "archive";
 @import "sidebar";
@@ -34,5 +37,3 @@
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
-@import "gh-code";
-@import "gh-comments";
