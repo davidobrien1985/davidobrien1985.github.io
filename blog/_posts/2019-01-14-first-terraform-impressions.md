@@ -1,7 +1,7 @@
 ---
 title: First steps with terraform
 date: 2019-01-14T00:01:30
-layout: single
+layout: single-github
 permalink: /2019/01/first-terraform-impressions
 categories:
   - azure
