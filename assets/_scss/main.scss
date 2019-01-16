@@ -27,8 +27,8 @@
 
 @import "forms";
 
-@import "_gh-code.scss";
-@import "_gh-comments.scss";
+@import "partials/ghcode";
+@import "partials/ghcomments";
 
 @import "page";
 @import "archive";
