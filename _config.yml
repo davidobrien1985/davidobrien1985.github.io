@@ -17,15 +17,17 @@ gh_repo                  : "http://www.github.com/davidobrien1985"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
-comments:
-  provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
-  disqus:
-    shortname            : "psftw" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+# comments:
+#   provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
+#   disqus:
+#     shortname            : "psftw" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+#   facebook:
+#     # https://developers.facebook.com/docs/plugins/comments
+#     appid                :
+#     num_posts            : # 5 (default)
+#     colorscheme          : # "light" (default), "dark"
+
+github_comments_repository: davidobrien1985/davidobrien1985.github.io
 
 sharing_url              : https://david-obrien.net
 
