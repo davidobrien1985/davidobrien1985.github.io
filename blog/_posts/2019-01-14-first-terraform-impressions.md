@@ -12,6 +12,7 @@ tags:
   - azure
   - automation
   - devops
+github_comments_issueid: 1
 ---
 
 Microsoft and terraform seems to be THE thing that everybody is talking about lately when it comes to Infrastructure as Code on Microsoft Azure.<br>
