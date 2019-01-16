@@ -36,7 +36,7 @@ Going forward I will assume some terraform knowledge. So if you don't know what 
 
 ### Terraform vs Azure ARM templates
 
-I've done quite a bit of work with Azure ARM templates. The native way to Azure to write Infrastructure as Code. ARM templates are written in JSON and that's terrible. I don't like JSON. Even a good IDE (like VS Code) won't change this fact. JSON is for machines and fortunately I'm not a machine.<br>
+I've done quite a bit of work with Azure ARM templates. The native way on Azure to write Infrastructure as Code. ARM templates are written in JSON and that's terrible. I don't like JSON. Even a good IDE (like VS Code) won't change this fact. JSON is for machines and fortunately I'm not a machine.<br>
 Terraform changes this with introducing something which is a bit more plain text like called HCL ([Hashicorp Configuration Language](https://github.com/hashicorp/hcl)). To the untrained eye it looks a bit like YAML but makes away with things like "your whitespace is wrong" errors.
 <br>
 Creating an Azure Resource Group with a virtual network can be achieved with just a few lines of code:
