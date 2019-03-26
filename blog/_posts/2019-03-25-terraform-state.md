@@ -41,7 +41,7 @@ Adding this snippet to your terraform script is pretty much it. The next time yo
 Can you already spot the issue?<br>
 If you executed the above and it did **not** error out, then you did one of two things:<br>
 
-1) you manually created the storage account or
+1) you manually created the storage account or<br>
 2) you already knew what was happening and hacked the code together until it worked.
 
 Our infracode requires infrastructure to begin with. Mhh. An Azure Storage Account requires an Azure Resource Group and the Storage Account itself of course. So now we are in a bit of a pickle. What creates the infrastructure that we require to be in place before we create our infrastructure?<br>
@@ -49,7 +49,7 @@ Some people might say that it is okay for this tiny bit of the overall infrastru
 If it is managed outside of terraform then what will create it? What is the process to recreate it in case it gets deleted or during an outage?<br>
 It is possible to have it all managed by terraform though, even if it feels a bit hacky. Here is a really good example of bootstrapping the backend. It uses AWS S3 as a backend, but the process will be identical for Azure Storage:
 
-- https://github.com/monterail/terraform-bootstrap-example/
+- [terraform bootstrap example](https://github.com/monterail/terraform-bootstrap-example/)
 
 ## Securing the backend
 
@@ -72,4 +72,5 @@ This is not just a technical problem, it is also a process question you need to 
 - Are changes to the state file tracked?
   - If I have access to the state file then I can also change / edit the state file to my liking and could cause terraform to delete or redeploy resources the next time terraform runs even if the terraform code does not intent that.
 
-These are just some of the questions you need to address in your implementation of terraform.
+These are just some of the questions you need to address in your implementation of terraform.<br>
+What other tips and tricks do you use to manage your terraform state?
