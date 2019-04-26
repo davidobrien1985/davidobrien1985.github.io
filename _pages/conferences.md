@@ -8,15 +8,17 @@ author_profile: true
 Want to know where you can see me speak or meet me in person?
 If you are organising an event and want me to speak at it, just get in touch.
 
-
 These are my already confirmed speaking engagements for the next months:
 
+- [PowerShell & DevOps Conference Asia 2019, Bangalore/India](http://psconf.asia/)
+
+Past speaking gigs:
+
+- [Global Azure Bootcamp 2019, Melbourne](https://globalazure.me/)
+- [Highload 2018, Moscow/Russia](https://www.highload.ru/)
 - [Riga Dev Days 2018, Latvia](http://rigadevdays.lv)
 - [TechMentor Redmond 2018, USA](https://techmentorevents.com/events/redmond-2018)
 - [IT DevConnections 2018 - Dallas, USA](http://www.itdevconnections.com)
-
-Past speaking gigs in 2016/2017:
-
 - [IT DevConnections 2017 - San Francisco, USA, 23-26/10/2016](http://www.itdevconnections.com)
 - [ExpertsLive Australia, 06-07/04/2017](https://www.expertslive.org.au/)
 - [Global Azure Bootcamp, Melbourne](https://global.azurebootcamp.net/)
