@@ -44,7 +44,7 @@ Very simple to deploy and automate and even works for multiple OS as you can tun
 
 Microsoft saw all of this and the need for a platform solution to these problems. Their offering to their customers is [Azure Bastion](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview) (in preview at the time of publication). It's a fully managed service, offering RDP and SSH access to any VM, directly from the portal, without the need to deploy any Gateways, VPNs or other jumpbox/bastion VMs. The connection is made to the VM's private IP address without any configuration required on any of the VMs.<br>
 
-![connect to azure bastion](media/2019/06/azure-bastion-connect.png)
+![connect to azure bastion](/media/2019/06/azure-bastion-connect.png)
 
 To deploy the Bastion Service one can follow the documentation linked to above and click your way through the portal, or, if you're serious about cloud, you can use infrastructure as code in the form of ARM templates, terraform or pulumi (to name a few).<br>
 I have put together both a terraform and a pulumi example to get everybody started with this.
