@@ -36,7 +36,7 @@ The examples will be both Azure PowerShell and the Azure CLI, pick whatever work
 
 > **Prerequisites**<br>
 > Either Azure PowerShell module or Azure CLI (TIP: Use the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5000267))<br>
-> Latest Pulumi CLI installed in your environment: https://www.pulumi.com/docs/get-started/install/ <br>
+> Latest Pulumi CLI installed in your environment: <https://www.pulumi.com/docs/get-started/install/> <br>
 > If you are going to use the CLI, make sure you have the `jq` command installed
 
 Once you are authenticated to Azure, follow these steps, making sure that resource names and locations work for you:
