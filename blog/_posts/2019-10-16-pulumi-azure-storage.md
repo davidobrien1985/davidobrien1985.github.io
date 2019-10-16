@@ -83,10 +83,11 @@ Most of the work is done now and you will soon be able to continue writing your 
 Pulumi will use the azure environment variables (your user tokens) to authenticate to Azure Storage when executing the following command:
 
 ```bash
-pulumi login --cloud-url az://pulumistate
+pulumi login azblob://state
 ```
 
-This will configure Pulumi's backend to the Azure Storage Container. You can now create a Pulumi stack and when running `pulumi up` the program will store the state on Azure Storage.
+This will configure Pulumi's backend to the Azure Storage Container. You can now create a Pulumi stack and when running `pulumi up` the program will store the state on Azure Storage.<br>
+For more information about the `pulumi login` command, read the [official documentation](https://www.pulumi.com/docs/reference/cli/pulumi_login/).
 
 ## Security Considerations
 
