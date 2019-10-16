@@ -26,7 +26,7 @@ Pulumi comes in several variations, free and [paid](https://www.pulumi.com/prici
 
 ## Why using Azure Storage for Pulumi is a good idea
 
-In cases where you are all-in on Microsoft Azure and also use [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops&WT.mc_id=DOP-MVP-5000267) for your CI/CD pipelines and services like [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/?WT.mc_id=AZ-MVP-5000267) for secrets management for example, using the paid Pulumi service **MIGHT** be duplication of services where you already get all the required features from Azure.<br>
+In cases where you are all-in on Microsoft Azure and also use [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops&WT.mc_id=DOP-MVP-5000267) for your CI/CD pipelines and services like [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/?WT.mc_id=AZ-MVP-5000267) for secrets management for example, using the paid Pulumi service **MIGHT** be duplication of services where you already get all the required features from Azure. Nobody wants to pay double, right?<br>
 This said, do your own research and make sure that not using the Pulumi service you are not missing out on features.
 
 ## Creating the Azure State Backend for Pulumi
