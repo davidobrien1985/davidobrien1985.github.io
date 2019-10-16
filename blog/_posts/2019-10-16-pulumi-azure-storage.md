@@ -86,8 +86,19 @@ Pulumi will use the azure environment variables (your user tokens) to authentica
 pulumi login azblob://state
 ```
 
-This will configure Pulumi's backend to the Azure Storage Container. You can now create a Pulumi stack and when running `pulumi up` the program will store the state on Azure Storage.<br>
+This will configure Pulumi's backend to the Azure Storage Container.<br>
 For more information about the `pulumi login` command, read the [official documentation](https://www.pulumi.com/docs/reference/cli/pulumi_login/).
+
+## Creating a Pulumi Stack
+
+Creating a Pulumi stack works just the same way as it did before, with one exception, you now need to provide a passphrase that secrets will be protected with.<br>
+Running `pulumi new` in an **empty** directory will walk you through the stack creation experience as can be seen in this screenshot here.
+
+![pulumi new stack](/media/2019/10/pulumi-new-stack.png)
+
+Once completed we can go over to our Azure Storage Account and check the contents of our container. You should see a folder structure similar to the one in the following screenshot. Something like `.pulumi/stacks` and a json file in there.
+
+![pulumi state on azure](/media/2019/10/pulumi-azure-state.png)
 
 ## Security Considerations
 
