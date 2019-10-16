@@ -34,14 +34,14 @@ This said, do your own research and make sure that not using the Pulumi service 
 Pulumi stores its infrastructure state file in json format by default inside the Pulumi service. Here I am going to show you how to deploy the backend on Azure Storage Services.<br>
 The examples will be both Azure PowerShell and the Azure CLI, pick whatever works for you.<br>
 
-> Prerequisites
-> Either Azure PowerShell module or Azure CLI (TIP: Use the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5000267))
-> Latest Pulumi CLI installed in your environment: https://www.pulumi.com/docs/get-started/install/
+> Prerequisites<br>
+> Either Azure PowerShell module or Azure CLI (TIP: Use the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5000267))<br>
+> Latest Pulumi CLI installed in your environment: https://www.pulumi.com/docs/get-started/install/ <br>
 > If you are going to use the CLI, make sure you have the `jq` command installed
 
 Once you are authenticated to Azure, follow these steps, making sure that resource names and locations work for you:
 
-1. Create the Azure Resource Group
+### Create the Azure Resource Group
 
 ```powershell
 New-AzResourceGroup -Name pulumistate -Location australiasoutheast
@@ -53,7 +53,7 @@ or
 az group create --name pulumistate --location australiasoutheast
 ```
 
-2. Create the Azure Storage Account
+### Create the Azure Storage Account
 
 > Storage Account names **MUST** be globally unique. So you most likely won't be able to use a name without a random string appended to the name. Check the [documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-storage-account-name-errors?WT.mc_id=DOP-MVP-5000267) for more information on errors around naming.
 
