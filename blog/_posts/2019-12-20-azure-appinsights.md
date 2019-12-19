@@ -1,6 +1,6 @@
 ---
 title: Installing Azure AppInsights Extension
-date: 2019-12-20T00:01:30
+date: 2019-12-19T00:01:30
 layout: single-github
 permalink: /2019/12/azure-appinsights
 categories:
