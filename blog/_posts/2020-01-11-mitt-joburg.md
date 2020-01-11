@@ -1,5 +1,5 @@
 ---
-title: Speaking at Microsoft The Tour Johannesburg
+title: Speaking at Microsoft Ignite The Tour Johannesburg
 date: 2020-01-11T00:01:30
 layout: single-github
 permalink: /2020/01/mitt-joburg
