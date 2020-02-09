@@ -53,7 +53,7 @@ You can use the following simple html for this example:
 
 The Azure Front Door designer will look something like this.
 
-![Front Door configuration](/media/2020/02/afd-config.png)
+[![Front Door configuration](/media/2020/02/afd-config.png)](/media/2020/02/afd-config.png)
 
 Now we can browse to the Front Door endpoint and see our app (or my blog if we didn't change the template). For a change to the maintenance website all we need to do is point the routing rule to the maintenance backend and save the config. About a minute later this configuration change will have populated globally and we will see the maintenance site.<br>
 To change it back we only have to reconfigure the routing rule again and point it to our application's backend. Easy as!<br>
