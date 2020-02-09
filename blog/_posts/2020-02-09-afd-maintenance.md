@@ -24,7 +24,7 @@ I have been deploying [Azure Front Door](https://docs.microsoft.com/en-us/azure/
 Azure Front Door (AFD) usually has one or more backends configured that tell the resource where to route requests to.<br>
 Let's take this over-simplified architecture here.
 
-**INSERT DRAWING OF AFD CONFIG**
+[![High Level Azure Front Door design](/media/2020/02/afd-hld.png)](/media/2020/02/afd-hld.png)
 
 The frontend is configured as `davidobrien.azurefd.net` with one backend configured as the web servers URI hosting the web site, then there is one routing rule that points all requests to `/` to said backend. Easy and straight forward.<br>
 AFD will send every request to `https://davidobrien.azurefd.net` to the configured backend.<br>
