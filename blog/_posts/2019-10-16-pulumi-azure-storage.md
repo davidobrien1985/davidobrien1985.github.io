@@ -94,11 +94,11 @@ For more information about the `pulumi login` command, read the [official docume
 Creating a Pulumi stack works just the same way as it did before, with one exception, you now need to provide a passphrase that secrets will be protected with.<br>
 Running `pulumi new` in an **empty** directory will walk you through the stack creation experience as can be seen in this screenshot here.
 
-![pulumi new stack](/media/2019/10/pulumi-new-stack.png)
+[![pulumi new stack](/media/2019/10/pulumi-new-stack.png)](/media/2019/10/pulumi-new-stack.png)
 
 Once completed we can go over to our Azure Storage Account and check the contents of our container. You should see a folder structure similar to the one in the following screenshot. Something like `.pulumi/stacks` and a json file in there.
 
-![pulumi state on azure](/media/2019/10/pulumi-azure-state.png)
+[![pulumi state on azure](/media/2019/10/pulumi-azure-state.png)](/media/2019/10/pulumi-azure-state.png)
 
 ## Security Considerations
 
