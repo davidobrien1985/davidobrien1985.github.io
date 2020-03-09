@@ -112,7 +112,7 @@ new PolicyPack("azure-generic", {
 });
 ```
 
-Executing local code against these policies could result in this nice output.
+Once published in the Pulumi organisation, or, if running outside the Pulumi service, one can execute local code against these policies by running `pulumi preview --policy-pack <path to policy folder>` and see this nice output.
 
 [![Pulumi Policy CrossGuard violation](/media/2020/03/pulumi-policy-crossguard.png)](/media/2020/03/pulumi-policy-crossguard.png)
 
