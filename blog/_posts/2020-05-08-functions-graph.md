@@ -40,7 +40,7 @@ import logging
 import os
 import azure.functions as func
 import azure.mgmt.resourcegraph as rg
-from azure.mgmt.resourcegraph.models import QueryRequest
+from azure.mgmt.resourcegraph.models import QueryRequest, QueryRequestOptions, ResultFormat
 from azure.common.credentials import get_azure_cli_credentials
 from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 from msrestazure.azure_active_directory import MSIAuthentication
@@ -58,10 +58,12 @@ def main(mytimer: func.TimerRequest) -> None:
         subs_list.append(sub.get('subscription_id'))
 
     client = rg.ResourceGraphClient(credentials)
-    request = QueryRequest(subscriptions=subs_list, query="resources | where type == 'microsoft.storage/storageaccounts'| where properties.supportsHttpsTrafficOnly == 'false'")
-    sa = client.resources(request)
+    options = QueryRequestOptions(result_format=ResultFormat.object_array)
 
-    logging.info('Found %s', sa)
+    request = QueryRequest(subscriptions=subs_list, query="resources | where type == 'microsoft.storage/storageaccounts'| where properties.supportsHttpsTrafficOnly == 'false'", options=options)
+    sa = client.resources(request)
+    for resource in response.data:
+        logging.info(resource['id'])
 ```
 
 This is a [timer triggered](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=python){:target="_blank"} Azure Function and is not integrated into any other output bindings, purely used to demonstrate this use case.<br>
