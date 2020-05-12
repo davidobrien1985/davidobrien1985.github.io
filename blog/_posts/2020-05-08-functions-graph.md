@@ -61,7 +61,8 @@ def main(mytimer: func.TimerRequest) -> None:
     options = QueryRequestOptions(result_format=ResultFormat.object_array)
 
     request = QueryRequest(subscriptions=subs_list, query="resources | where type == 'microsoft.storage/storageaccounts'| where properties.supportsHttpsTrafficOnly == 'false'", options=options)
-    sa = client.resources(request)
+
+    response = client.resources(request)
     for resource in response.data:
         logging.info(resource['id'])
 ```
