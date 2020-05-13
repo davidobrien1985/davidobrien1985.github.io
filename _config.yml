@@ -11,7 +11,7 @@ title                    : "Cloud for the win!"
 title_separator          : "-"
 name                     : "David O'Brien"
 description              : "All about automation in the cloud."
-url                      : "https://david-obrien.net" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://cloud-right.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 gh_repo                  : "http://www.github.com/davidobrien1985"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -29,7 +29,7 @@ comments:
 
 github_comments_repository: davidobrien1985/davidobrien1985.github.io
 
-sharing_url              : https://david-obrien.net
+sharing_url              : https://cloud-right.com
 
 defaults:
   -
