@@ -44,3 +44,5 @@ The following git alias will cause git to always create new repositories with th
 As I mentioned, I have not been able to overwrite built-in commands, so I opted to use `init2` as the alias. Executing `git init2` will now create git repositories exactly as I want.
 
 [![git init](/media/2020/06/git-init2.png)](/media/2020/06/git-init2.png)
+
+I tested this on Windows 10 with WSL2. Let me know if you have issues on other platforms.
