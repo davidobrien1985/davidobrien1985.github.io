@@ -63,7 +63,7 @@ Prerequisites:<br>
 
 [![graph app permissions](/media/2020/06/graph_app_permissions.png)](/media/2020/06/graph_app_permissions.png)
 
-We are now ready to execute the following script:
+We are now ready to execute the following script to get the AAD object ID of an AAD Group specified in line 26:
 
 ```python
 import json
