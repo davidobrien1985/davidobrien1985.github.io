@@ -33,7 +33,7 @@ ARM templates (in preview) can now support a `whatif` parameter that returns a l
 
 ## Executing ARM WhatIf via PowerShell
 
-As a simple example you will use the following template as the base: https://github.com/davidobrien1985/azure-examples/blob/main/arm/basic-vnet-with-subnets.json <br>
+As a simple example you will use the following template as the base: [https://github.com/davidobrien1985/azure-examples/blob/main/arm/basic-vnet-with-subnets.json](https://github.com/davidobrien1985/azure-examples/blob/main/arm/basic-vnet-with-subnets.json) <br>
 You first create a Resource Group.
 
 ```powershell
