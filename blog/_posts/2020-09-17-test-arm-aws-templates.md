@@ -28,7 +28,7 @@ Because something is better than nothing I went and looked at options for tools 
 A lot of people like using PowerShell Pester which is great to write tests, but the thing is, you have to write and maintain them yourself, and I believe that is not necessarily what organisations are interested in paying their employees.<br>
 So, as I wasn't able to find any Pester examples with a set of rules extensive enough to cover more than just the most basic of scenarios and at the same time also cover both AWS **and** Azure, I followed the rule I always tell our customers about.
 
-> buy before build
+> Buy before build
 
 On my search I found a great open source tool called <a href="https://github.com/bridgecrewio/checkov" target="_blank">checkov</a> which does exactly what I believe most companies need. It analyses cloud infracode templates for security issues and flags them.
 
@@ -67,5 +67,5 @@ Here's a complete example of testing an Azure ARM template using PowerShell. You
 
 {% gist 00fbd4eb5587be5e663ea0d3166daf15 %}
 
-More information can be found on our GitHub repo: https://github.com/argos-au/argos-iac-testing <br>
+More information can be found on our GitHub repo: <a href="https://github.com/argos-au/argos-iac-testing" target="_blank">https://github.com/argos-au/argos-iac-testing</a> <br>
 I'd love to know more about your use case and if this helps you at all.
