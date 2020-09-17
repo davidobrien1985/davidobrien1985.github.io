@@ -55,7 +55,15 @@ The parameters that need to be sent to the API are the following:
 
 [![Testing AWS CloudFormation](/media/2020/09/test-aws-cloudformation.png)](/media/2020/09/test-aws-cloudformation.png)
 
-Here's an example of testing an Azure ARM template using PowerShell. You want to most likely use code to get the actual template from the file, not inline, this is just for the example:
+Using `cURL` you can call the API like so:
+
+```
+curl --location --request POST 'https://test-iac.argos-security.io/api/iac-test?provider=cloudformation&file_type=json' \
+--header 'Content-Type: application/json' \
+--data-raw '{<insert raw template here>}}'
+```
+
+Here's a complete example of testing an Azure ARM template using PowerShell. You want to most likely use code to get the actual template from the file, not inline, this is just for the example:
 
 {% gist 00fbd4eb5587be5e663ea0d3166daf15 %}
 
