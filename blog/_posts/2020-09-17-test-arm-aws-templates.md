@@ -46,7 +46,7 @@ These are tests / checks an individual now not has to write and maintain, and th
 
 ## Using the ARGOS Test API
 
-The API is accessible at https://test-iac.argos-security.io/api/iac-test <br>
+The API is accessible at <a href="https://test-iac.argos-security.io/api/iac-test">https://test-iac.argos-security.io/api/iac-test</a> <br><br>
 The parameters that need to be sent to the API are the following:
 
 - framework: `arm` (in the case of Azure) or `cloudformation` (in the case of AWS)
