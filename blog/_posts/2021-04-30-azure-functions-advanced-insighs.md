@@ -10,7 +10,7 @@ tags:
   - azure functions
   - devops
   - cloud
-github_comments_issueid: 22
+github_comments_issueid: 24
 ---
 
 I feel like this feature that I am going to talk about here is a real hidden gem and I am not sure how I missed this. I honestly cannot tell you how long it is been around and maybe I am even the last person to learn about it, and if this is the case then this article is purely for me so that I do not forget again.<br>
