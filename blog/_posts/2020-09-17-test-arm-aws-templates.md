@@ -15,7 +15,7 @@ tags:
   - testing
   - devops
   - cloud
-github_comments_issueid: 21
+github_comments_issueid: 22
 ---
 
 Are you already using infrastructure as code (IaC) templates like Azure Resource Manager (ARM) templates or AWS CloudFormation to describe your cloud infrastructure?<br>
