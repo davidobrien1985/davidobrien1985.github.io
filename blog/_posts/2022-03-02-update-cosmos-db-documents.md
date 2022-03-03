@@ -1,6 +1,6 @@
 ---
 title: How To Update Millions of Azure Cosmos DB Documents
-date: 2022-03-02T00:01:30
+date: 2022-03-01T00:01:30
 layout: single-github
 permalink: /2022/03/update-millions-cosmos-db
 categories:
