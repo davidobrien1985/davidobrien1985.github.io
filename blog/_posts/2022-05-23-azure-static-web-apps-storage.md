@@ -1,6 +1,6 @@
 ---
 title: Azure Static Web Apps - What happened to my Storage?
-date: 2022-05-23T00:01:30
+date: 2022-05-22T00:01:30
 layout: single-github
 permalink: /2022/05/azure-static-web-apps-storage
 categories:
