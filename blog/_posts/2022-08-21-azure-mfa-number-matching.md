@@ -10,7 +10,7 @@ tags:
   - multi-factor-authentication
   - mfa
   - security
-github_comments_issueid: 28
+github_comments_issueid: 29
 ---
 
 Multi-factor authentication (MFA) is one of the best ways to protect your identity in an online world. Microsoft even claims that using MFA <a href="https://www.zdnet.com/article/microsoft-using-multi-factor-authentication-blocks-99-9-of-account-hacks/" target="_blank">blocks 99.9% of all automated attacks</a> to your identity.<br>
