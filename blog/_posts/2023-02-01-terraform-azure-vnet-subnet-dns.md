@@ -14,7 +14,7 @@ github_comments_issueid: 31
 
 While I still #heart Pulumi, I still come across terraform in most engagements with customers. Here, I want to give you a quick way of deploying a decent "Getting started" virtual network that will allow you to test many different scenarios and keep iterating easily.<br>
 Deploying this code will cost you a little bit, due to the VPN Gateway (to support P2S or S2S VPN). You can easily comment that out though.<br>
-I know you just want to see the code, so if you do not want to read the rest, just hop over to https://github.com/davidobrien1985/decent-azure-vnet and see for yourself.
+I know you just want to see the code, so if you do not want to read the rest, just hop over to <a href="https://github.com/davidobrien1985/decent-azure-vnet" target="_blank">https://github.com/davidobrien1985/decent-azure-vnet</a> and see for yourself.
 
 ## Deploying the infrastructure with terraform
 
