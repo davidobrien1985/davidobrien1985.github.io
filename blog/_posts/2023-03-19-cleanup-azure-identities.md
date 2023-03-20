@@ -85,6 +85,6 @@ This PowerShell script provides an efficient and automated way to clean up role 
 Feel free to customize the script to suit your specific needs, and consider incorporating it into your regular maintenance tasks to keep your Azure environment clean and well-organized.
 Find the complete script here on GitHub.<br>
 
-{ % gist 8b510deb60f39c18f7183caf5c4b9ac8 %}
+{% gist 8b510deb60f39c18f7183caf5c4b9ac8 %}
 
 To delete the role assignments, run the script with the parameter `-DeleteRoleAssignments $true`. If you don't provide the parameter or set it to $false, the script will only identify and display the "Unknown" role assignments without removing them.
