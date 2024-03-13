@@ -10,10 +10,10 @@ If you are organising an event and want me to speak at it, just get in touch.
 
 These are my already confirmed speaking engagements for the next months:
 
-- [PowerShell + DevOps Global Summit 2020](https://my.eventraft.com/PowerShell2020)
 
 Past speaking gigs:
 
+- [PowerShell + DevOps Global Summit 2020](https://my.eventraft.com/PowerShell2020)
 - Microsoft Ignite The Tour Johannesburg 2020
 - [PowerShell & DevOps Conference Asia 2019, Bangalore/India](http://psconf.asia/)
 - [Global Azure Bootcamp 2019, Melbourne](https://globalazure.me/)
