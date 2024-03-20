@@ -10,6 +10,8 @@ If you are organising an event and want me to speak at it, just get in touch.
 
 These are my already confirmed speaking engagements for the next months:
 
+- [Global Azure Bootcamp 2024, Melbourne/Australia](https://melbourneazurebootcamp.com/)
+- [European Cloud Summit 2024, Wiesbaden/Germany](https://cloudsummit.eu/)
 
 Past speaking gigs:
 
