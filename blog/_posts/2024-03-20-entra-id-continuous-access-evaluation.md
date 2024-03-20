@@ -15,15 +15,19 @@ github_comments_issueid: 35
 
 ## Unlocking the Potential of Continuous Access Evaluation
 
-Traditional methods issue access tokens to APIs for a duration of typically 60 minutes (1 hour) and allow applications to use refresh tokens to ask for new tokens once the original token expired. Unlike traditional methods that rely on this periodic re-evaluation, Continuous Access Evaluation (CAE) offers automated real-time monitoring and decision-making capabilities based on signals from the evaluation of Conditional Access Policies. This means that access rights can be adjusted instantly in response to changing client conditions or emerging threats, ensuring that only the right entities have access at the right times.
+Traditional methods issue access tokens to APIs for a duration of typically 60 minutes (1 hour) and allow applications to use refresh tokens to ask for new tokens once the original token expired.<br>
+Unlike traditional methods that rely on this periodic re-evaluation, Continuous Access Evaluation (CAE) offers automated real-time monitoring and decision-making capabilities based on signals from the evaluation of Conditional Access Policies.<br>
+This means that access rights can be adjusted instantly in response to changing client conditions or emerging threats, ensuring that only the right entities have access at the right times.
 
 ## Safeguarding Workload Identities with Precision
 
-With more and more cloud-based applications leveraging workload identities — which represent applications and services rather than individuals — stringent protection of these is important. CAE specifically addresses the unique challenges associated with securing these non-human entities, providing a mechanism to continuously assess and enforce access policies based on current threat levels and security requirements.
+With more and more cloud-based applications leveraging workload identities — which represent applications and services rather than individuals — stringent protection of these is important.<br>
+CAE specifically addresses the unique challenges associated with securing these non-human entities, providing a mechanism to continuously assess and enforce access policies based on current threat levels and security requirements.
 
 ## Implementing CAE in Entra ID Applications
 
-Integrating CAE into Entra ID Enterprise Applications is an important step to bolster their security measures. The process involves leveraging Microsoft Entra ID's advanced security protocols to monitor access patterns and respond to anomalies in real-time. This proactive stance on security not only mitigates risks but also aligns with regulatory compliance standards, offering peace of mind to businesses and their stakeholders.
+Integrating CAE into Entra ID Enterprise Applications is an important step to bolster their security measures. The process involves leveraging Microsoft Entra ID's advanced security protocols to monitor access patterns and respond to anomalies in real-time.<br>
+This proactive stance on security not only mitigates risks but also aligns with regulatory compliance standards, offering peace of mind to businesses and their stakeholders.
 
 > Developers can opt in to Continuous access evaluation for workload identities when their API requests `xms_cc` as an optional claim. The `xms_cc` claim with a value of `cp1` in the access token is the authoritative way to identify a client application is capable of handling a claims challenge.
 
@@ -32,7 +36,9 @@ One thing to note, if you have the Azure PowerShell `Az.Accounts` installed with
 
 ## Not just a Technical Solution
 
-Adopting new technologies often comes with its set of challenges, and CAE is no exception. However, the key to successfully implementing CAE lies in understanding its operational nuances and being prepared to address potential issues. One commonly overlooked aspect of CAE is the need for a cultural shift within organisations. This shift involves fostering a security-first mindset and ensuring that all stakeholders are aligned with the principles of CAE. This also includes the need for continuous training and awareness programmes to keep everyone informed about the evolving security landscape and implications to their day-to-day operations.
+Adopting new technologies often comes with its set of challenges, and CAE is no exception. However, the key to successfully implementing CAE lies in understanding its operational nuances and being prepared to address potential issues.<br>
+One commonly overlooked aspect of CAE is the need for a cultural shift within organisations. This shift involves fostering a security-first mindset and ensuring that all stakeholders are aligned with the principles of CAE.<br>
+This also includes the need for continuous training and awareness programmes to keep everyone informed about the evolving security landscape and implications to their day-to-day operations.
 
 ## Embracing the Future of Cybersecurity
 
