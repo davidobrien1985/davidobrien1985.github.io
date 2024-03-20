@@ -26,6 +26,7 @@ With more and more cloud-based applications leveraging workload identities — w
 Integrating CAE into Entra ID Enterprise Applications is an important step to bolster their security measures. The process involves leveraging Microsoft Entra ID's advanced security protocols to monitor access patterns and respond to anomalies in real-time. This proactive stance on security not only mitigates risks but also aligns with regulatory compliance standards, offering peace of mind to businesses and their stakeholders.
 
 > Developers can opt in to Continuous access evaluation for workload identities when their API requests `xms_cc` as an optional claim. The `xms_cc` claim with a value of `cp1` in the access token is the authoritative way to identify a client application is capable of handling a claims challenge.
+
 <a href="https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-continuous-access-evaluation-workload#enable-your-application" target="_blank">Microsoft Documentation</a><br>
 One thing to note, if you have the Azure PowerShell `Az.Accounts` installed with version 11.3.0 or later, then you can already leverage CAE with PowerShell. The release notes for Azure PowerShell mention `Enabled Continue Access Evaluation (CAE) for all Service Principals login methods.` <a href="https://learn.microsoft.com/en-us/powershell/azure/release-notes-azureps?view=azps-11.4.0#1130---february-2024" target="_blank">PowerShell release notes</a>
 
