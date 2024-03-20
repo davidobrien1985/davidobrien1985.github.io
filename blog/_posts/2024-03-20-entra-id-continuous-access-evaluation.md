@@ -13,7 +13,7 @@ tags:
 github_comments_issueid: 35
 ---
 
-## Unlocking the Potential of Continuous Access Evaluation
+## What is Continuous Access Evaluation in Entra ID
 
 Traditional methods issue access tokens to APIs for a duration of typically 60 minutes (1 hour) and allow applications to use refresh tokens to ask for new tokens once the original token expired.<br>
 Unlike traditional methods that rely on this periodic re-evaluation, Continuous Access Evaluation (CAE) offers automated real-time monitoring and decision-making capabilities based on signals from the evaluation of Conditional Access Policies.<br>
