@@ -1,13 +1,13 @@
 # main links links
 main:
+  - title: "Automated Cloud Assessments"
+    url: "https://argos-security.io"
   - title: "Conferences"
     url: "/conferences/"
-  - title: "ARGOS Cloud Security"
-    url: "https://argos-security.io"
+  - title: "About me"
+    url: "/about-me/"
   - title: "XIRUS"
     url: "https://xirus.com.au"
-  - title: "About David"
-    url: "/about-me/"
   # - title: "Posts by year"
   #   url: "/year-archive/"
   - title: "Posts by tags"
