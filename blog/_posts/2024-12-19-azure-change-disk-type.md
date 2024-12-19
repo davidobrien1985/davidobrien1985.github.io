@@ -13,8 +13,6 @@ tags:
 github_comments_issueid: 38
 ---
 
-# Azure - Save Money by Changing Disk Type
-
 Here's a quick tip to save money on your Azure VMs by changing the disk type. Especially over the holidays, when you might be running VMs for development or testing purposes, you can save a lot of money by changing the disk type, especially if you are using premium disks.<br>
 Yes, turning off VMs when not in use is a good practice, but changing the disk type can save you even more money.
 
