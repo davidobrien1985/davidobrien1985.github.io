@@ -1,6 +1,6 @@
 ---
 title: Azure Functions - Learnings from executing PowerShell from C#
-date: 2024-04-27T00:01:30
+date: 2025-04-27T00:01:30
 layout: single-github
 permalink: /2025/04/azure-fucntions-byo-powershell/
 categories:
