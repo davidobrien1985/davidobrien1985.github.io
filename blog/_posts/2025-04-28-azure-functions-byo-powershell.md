@@ -32,12 +32,12 @@ The folder structure above shows how we bundled the modules with our code. The `
 ## Executing PowerShell from C#
 
 Executing PowerShell from c# is not an uncommon task, but with Azure Functions, if you're not on Windows and using the PowerShell language worker, it can be a bit tricky. `powershell` is not available on Linux, and `pwsh` is not installed on Flex Consumption. There is, as of now, no way to install third party dependencies in Azure Functions Flex Consumption. Who knows, maybe this will change in the future, but for now, we have to work with what we have.<br>
-So, similar to the way we bundled the modules, we also had to bundle the PowerShell executable with our code. (Shoutout to the ever-so-helpful <a href="https://www.linkedin.com/in/thiagoalmeidaprofile/" target="_blank">Thiago Almeida<b> for the tip!).<br>
+So, similar to the way we bundled the modules, we also had to bundle the PowerShell executable with our code. (Shoutout to the ever-so-helpful <a href="https://www.linkedin.com/in/thiagoalmeidaprofile/" target="_blank"><b>Thiago Almeida</b></a> for the tip!).<br>
 This is how we did it:<br>
 
 - go to the <a href="https://github.com/PowerShell/PowerShell/releases" target="_blank">PowerShell GitHub repository</a> and download the latest release for Linux. The `tar.gz` file is a compressed file that contains the PowerShell executable and all the required files to run PowerShell on Linux.
 - extract the `tar.gz` file and copy the `pwsh` executable and all its dependencies to the `powershell` folder in our code. This way, we can execute PowerShell from c# without having to install it on the Azure Functions host. (Important: Linux is case-sensitive, so make sure to reference the files and folders with the correct casing.)
-- we call the `pwsh` executable from c# and pass the path to the PowerShell script we want to execute as an argument. We also pass the path to the modules folder as an argument, so PowerShell can find the modules when it executes the script.
+- we call the `pwsh` executable from c# and pass the path to the PowerShell script we want to execute as an argument. The modules folder is part of the application, and the PowerShell script itself will do the `Import-Module` using the full path to the `ExchangeOnlineManagement` module, so PowerShell can find it when it executes the script.
 
 [![Call pwsh from c#](/media/2025/04/call-pwsh.png)](/media/2025/04/call-pwsh.png)
 
@@ -77,7 +77,7 @@ await process.WaitForExitAsync();
 ```
 
 The code above shows how we call the `pwsh` executable from c#. We use the `ProcessStartInfo` class to configure the process and redirect the output. We also wait for the process to exit and capture the output and error messages. It's not important for this blog post to explain what the script itself does.<br>
-The important part is that running this code locally works perfectly, but when we deploy it to Azure Functions, we get a strange error message. Remember, we mostly develop on Windows, but our Azure Functions run on Linux. File permissions are a common issue when running code on Linux, and this is where we ran into trouble. The error message we got post deployment was:
+The important part is that running this code locally worked perfectly fine on Windows, but when we deployed it to Azure Functions, we got a strange error message. Remember, we mostly develop on Windows, but our Azure Functions run on Linux. File permissions are a common issue when running code on Linux, and this is where we ran into trouble. The error message we got post deployment was:
 
 ```
 An error occurred trying to start process '/home/site/wwwroot/powershell/pwsh' with working directory '/home/site/wwwroot'. Permission denied
@@ -85,16 +85,16 @@ An error occurred trying to start process '/home/site/wwwroot/powershell/pwsh' w
 
 Huh? Weird. Why? The `pwsh` executable is not executable? We checked the permissions on the file in WSL even and it was set to `-rwxrwxrwx`, which means that the file is executable. So why is it not working?
 
-`-rwxrwxrwx 1 adobrien adobrien    75144 Jan 17 10:18 pwsh*`
+`-rwxrwxrwx 1 user user    75144 Jan 17 10:18 pwsh*`
 
 Is Windows or WSL doing something magic to make it work locally? Is our code somehow using a different version of `pwsh` that is installed on our machine?<br>
-This led us down a rabbit hole of trying to figure out how to make the `pwsh` executable executable on Azure Functions. We tried everything we could think of:
+This led us down a rabbit hole of trying to figure out how to make the `pwsh` executable executable on Azure Functions, believing that this is where the issue was. We tried everything we could think of:
 
 - changing the permissions on the file using `chmod` (which didn't work because the file was already executable)
 - changing the file permissions in `Program.cs` which is executed when the function worker starts. For some reason, this didn't work either.
 - decided to take Windows out of the equation and download the `pwsh` executable during the GitHub Actions build process, instead of bundling it with our code. We then checked the permissions on the file before bundling it into the release package and deploying it to Azure Functions. This also didn't work, as the file was still not executable after deployment.
 
-This gave us a clue that the problem was not with how we called the `pwsh` executable, but how it was deployed.
+This gave us a clue that the problem was not with how we called the `pwsh` executable or Azure Functions itself even, but how it was deployed.
 
 ## The Solution
 
